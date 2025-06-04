@@ -1,1 +1,110 @@
-{}
+{
+    "pf2e-toolbelt": {
+        "settings": {
+            "actionable": {
+                "item": {
+                    "hint": "为装备或消耗品新增添加应用于自身效果或宏的设置栏。",
+                    "name": "物品效果/宏"
+                },
+                "use": {
+                    "hint": "给消耗品添加一个额外的“使用”键，并在使用后发送对应信息。",
+                    "name": "使用消耗品"
+                },
+                "action": {
+                    "hint": "为动作/专长新增添加宏的设置栏。",
+                    "name": "动作宏"
+                },
+                "apply": {
+                    "name": "自动应用于自身"
+                },
+                "title": "动作项",
+                "spell": {
+                    "name": "法术效果/宏",
+                    "hint": "为法术新增添加应用于自身效果或宏的设置栏。"
+                }
+            },
+            "arp": {
+                "enabled": {
+                    "hint": "需要你的世界开启自动符文升级变体（在核心系统设置）。",
+                    "name": "启用"
+                },
+                "title": "自动符文升级",
+                "force": {
+                    "name": "强制更新",
+                    "hint": "当启用此项，符文将始终基于角色等级更新。若"
+                },
+                "price": {
+                    "name": "忽略符文价格"
+                }
+            },
+            "betterInventory": {
+                "coins": {
+                    "hint": "货币重量不被计入负载。",
+                    "name": "无重量货币"
+                }
+            },
+            "betterMovement": {
+                "teleport": {
+                    "hint": "按住已设置的快捷键并点击场景，所选token无需移动立即传送至指定位置。",
+                    "name": "传送Token",
+                    "choices": {
+                        "disabled": "关闭",
+                        "enabled": "启用"
+                    }
+                }
+            },
+            "anonymous": {
+                "title": "匿名化设置",
+                "spell": {
+                    "name": "匿名化NPC法术",
+                    "hint": "由非玩家所有的角色释放的法术会对玩家匿名化。"
+                }
+            },
+            "conditionManager": {
+                "enabled": {
+                    "name": "启用"
+                },
+                "title": "状态管理器"
+            }
+        },
+        "actionable": {
+            "action": {
+                "cancel": "<strong>{name}</strong> 动作被其宏取消。"
+            },
+            "item": {
+                "label": "宏"
+            }
+        },
+        "keybindings": {
+            "betterMovement": {
+                "unselect": {
+                    "name": "传送Token（未选中）"
+                },
+                "teleport": {
+                    "name": "传送Token",
+                    "hint": "当点击场景某处以传送全部选中token时，按此键。"
+                }
+            },
+            "conditionManager": {
+                "manage": {
+                    "name": "管理状态",
+                    "hint": "当点击某状态以调整其持续时间时，长按此键。"
+                }
+            },
+            "droppeth": {
+                "droppeth": {
+                    "hint": "快捷键：将一件物品丢弃在地上。",
+                    "name": "丢弃调整"
+                }
+            }
+        }
+    },
+    "LEVIKTIMES": {
+        "reloadRequired": "需要刷新重载",
+        "emiting": {
+            "label": "发送",
+            "noGm": "GM必须在线才能执行此请求。"
+        },
+        "gmOnly": "仅限GM"
+    }
+}
