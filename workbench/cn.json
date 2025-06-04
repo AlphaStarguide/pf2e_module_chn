@@ -270,7 +270,7 @@
                 "firstPart": "{tokenName}刚刚施放了<strong>{traditionString}</strong>根源中带有{type}特征的法术。<p data-visibility=\"gm\"> (@UUID[{spellUUID}]) </p>",
                 "hint": "秘密施法时，此设置还会发布一条公开消息表明有法术被施放，*除非*您在施法时同时按住 SHIFT 和 CTRL。",
                 "secondPartNoRk": ".<br>你可以尝试使用@UUID[Compendium.pf2e.feats-srd.MjQyTcV8Jiv1Jtln]或@UUID[Compendium.pf2e.feats-srd.2rSyTfPgAmNAo01r]来辨识法术。或者在你的回合中用一个动作来辨识它（更多细节请咨询你的GM）。",
-                "secondPartRK": ".<br>你可以尝试使用@UUID[Compendium.pf2e.feats-srd.MjQyTcV8Jiv1Jtln]或@UUID[Compendium.pf2e.feats-srd.2rSyTfPgAmNAo01r]来辨识该法术。或者在你的回合中用一个动作使用@Check[type:{skill}|dc:{dcRK}|traits:secret,action:recall-knowledge] @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]（或花费10分钟使用@Check[type:{skill}|dc:{dcRK}|traits:secret,action:identify-magic] @UUID[Compendium.pf2e.actionspf2e.Item.eReSHVEPCsdkSL4G]）来辨识它。",
+                "secondPartRK": ".<br>你可以尝试使用@UUID[Compendium.pf2e.feats-srd.MjQyTcV8Jiv1Jtln]或@UUID[Compendium.pf2e.feats-srd.2rSyTfPgAmNAo01r]来辨识该法术。或者在你的回合中用一个动作使用@Check[type:{skill}|dc:{dcRK}|traits:secret,action:recall-knowledge] @UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]（或花费10分钟使用@Check[type:{skill}|dc:{dcRK}|traits:secret,action:identify-magic] @UUID[Compendium.pf2e.actionspf2e.Item.eReSHVEPCsdkSL4G]）来辨识它",
                 "basic": "基础",
                 "noButtonSavePart": "<br><b>{basic} {dataSave} 豁免</b>",
                 "knownBy": "<div><p><b>知晓成员： </b>{spellHavers}</p></div><hr class=\"item-block-divider\">"
