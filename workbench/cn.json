@@ -3,7 +3,7 @@
         "npcRoller": {
             "button-label": "NPC投骰",
             "nav-labels": {
-                "strike": "攻击",
+                "strike": "打击",
                 "ac": "AC",
                 "save": "豁免",
                 "hp": "生命值",
@@ -34,8 +34,7 @@
             },
             "applyPersistentDamage": {
                 "name": "持续伤害自动生效。",
-                "hint": "设置持续伤害是否自动生效。",
-                "wasDamaged": "{damage}伤害已自动生效"
+                "hint": "设置持续伤害是否自动生效。"
             },
             "addUserTargets": {
                 "addFor": "添加目标",
@@ -149,7 +148,6 @@
             "reminderTargeting": {
                 "hint": "勾选此项，在战斗中选择目标时进行提示。",
                 "name": "目标提示",
-                "note": "攻击前请先选择目标。",
                 "error": "{title}已取消，你必须在攻击前选择一个目标。",
                 "no": "无提醒",
                 "reminder": "提醒",
@@ -194,7 +192,6 @@
             "reminderBreathWeapon": {
                 "used": "已使用 ",
                 "name": "再充能提醒（比如吐息武器）",
-                "prefix": "再充能",
                 "defaultName": "吐息",
                 "hint": "勾选此项，为再充能武器设置提醒(比如吐息武器)。",
                 "source": "PF2e Workbench的再充能提醒"
@@ -256,10 +253,6 @@
                 "hint": "勾选此项后，使用Ctrl+单击施法时会私聊施法者和GM法术信息，*除非*一位队伍成员已经学会此咒语。",
                 "name": "Ctrl+单击秘密施法。",
                 "aSpell": "法术"
-            },
-            "castPrivateSpellAlwaysForNPC": {
-                "hint": "勾选此项，NPC施法永远为秘密施法。(按住Ctrl则可公开施法)",
-                "name": "...并且NPC施法永远为秘密施法。"
             },
             "castPrivateSpellWithPublicMessage": {
                 "cantrip": "戏法",
@@ -389,7 +382,6 @@
                 "hasNoHp": "无HP",
                 "hint": "勾选此项，当使用因失去意识/死亡/被击败/无生命值/其他原因而无法攻击的token进行攻击时，进行提示。",
                 "name": "若Token无法攻击，进行提醒",
-                "note": "你确定要继续攻击吗？{actorName} {reason}，因此它不大有能力攻击……",
                 "petrified": "被石化",
                 "unconscious": "失去意识",
                 "error": "由于{actorName} {reason}，{title}已取消。",
@@ -503,7 +495,7 @@
                 "name": "(超绝实验性功能) Housepatcher（一系列房规）。改动后需要刷新(f5)。",
                 "notification": "Housepatcher: 将 {count} 条房规应用于系统合集包中的道具。",
                 "hint": "(超绝实验性功能) 输入一系列json来打包系统合集包。详细说明请见github上的housepatcher.md。",
-                "error": "损坏房规补丁 JSON 已被删除"
+                "error": "损坏房规补丁JSON已被删除"
             },
             "houseRulesSettings": {
                 "hint": "(实验性) 启用并设置多种房规",
@@ -517,11 +509,6 @@
             "reminderBreathWeaponHidden": {
                 "hint": "如果非小队成员施放法术，勾选此项可隐藏提醒器。",
                 "name": "……隐藏非小队成员提醒器。"
-            },
-            "keeleysHeroPointRule": {
-                "name": "Keeley 的英雄点规则",
-                "bonusTag": "较低的重骰结果 +10",
-                "hint": "某位 Paizo 开发者喜欢的房规：若用英雄点重掷的掷骰结果为 10 或更少，则会给掷骰结果一个 +10 的加值。"
             },
             "heropointHandlerNotification": {
                 "hint": "当英雄点处理期将一个英雄点分发出去时，将自动弹出一条提示消息。",
@@ -595,12 +582,12 @@
                 "name": "英雄点变体房规",
                 "no": "正常规则（使用最后骰值）",
                 "useHighestHeroPointRoll": "使用最高骰值",
-                "bonusTagKeeleys": "重骰低值 +10",
+                "bonusTagKeeleys": "低值+10",
                 "bonusTagUseHighestRoll": "使用最高骰值",
                 "keeleysHeroPointRule": "Keeley's 英雄点规则（若d20重骰值低于10，则结果自动+10）"
             },
             "npcMystifierIcon": {
-                "hint": "用于开关神秘化的Font Awesome图标。必须是一个有效的Font Awesome图标类型（如 fa-solid fa-eye-slash 或 fa-solid fa-user-secret）",
+                "hint": "用于开关神秘化的Font Awesome图标。必须是一个有效的Font Awesome图标类型（如`fa-solid fa-eye-slash`或`fa-solid fa-user-secret`）。",
                 "name": "神秘化图标"
             },
             "sheatheHeldItemsAfterEncounter": {
@@ -648,7 +635,7 @@
                 "name": "禁止暂停图标旋转"
             }
         },
-        "spellCardNotFound": "找不到法术卡。在{spell}的最低环位施放该法术。",
+        "spellCardNotFound": "找不到法术卡。以最低环级施放{spell}。",
         "modules": {
             "pf2e-sheet-skill-actions": "pf2e-sheet-skill-actions模组已经不再被维护，它的功能也被集合到Workbench模组内了。请关闭它。",
             "pf2e-toolbox": "pf2e-toolbox模组已经不再被维护，它的大部分功能也被集合到Workbench模组内了。请关闭它。",
@@ -668,7 +655,7 @@
                 },
                 "YouAreTheBestInYourParty": "你是你小队里最擅长这项技能的",
                 "actions": {
-                    "AidToggle": "协助(选项)",
+                    "AidToggle": "协助（选项）",
                     "AvoidNotice": "避人耳目",
                     "Balance": "保持平衡",
                     "Climb": "攀爬",
@@ -676,8 +663,8 @@
                     "CommandAnAnimal": "指挥动物",
                     "Craft": "制作",
                     "Demoralize": "挫败士气",
-                    "CreateADiversionTrick": "分神 - 话术",
-                    "CreateADiversionGesture": "分神 - 姿势干扰",
+                    "CreateADiversionTrick": "分神—话术",
+                    "CreateADiversionGesture": "分神—姿势干扰",
                     "Disarm": "卸武",
                     "Feint": "虚招",
                     "FollowTheExpertToggle": "跟随专家（选项）",
@@ -710,36 +697,32 @@
                     "ForceOpen": "破拆",
                     "Request": "提出请求",
                     "TumbleThrough": "翻滚",
-                    "DecipherWritingReligion": "解译文书 - 宗教",
-                    "DecipherWritingSociety": "解译文书 - 社群",
+                    "DecipherWritingReligion": "解译文书—宗教",
+                    "DecipherWritingSociety": "解译文书—社群",
                     "Perform": "演出",
-                    "SubsistSociety": "求生 - 社群",
-                    "DecipherWritingArcana": "解译文书 - 奥法",
-                    "DecipherWritingOccultism": "解译文书 - 神秘",
-                    "SubsistSurvival": "求生 - 生存",
+                    "SubsistSociety": "求生—社群",
+                    "DecipherWritingArcana": "解译文书—奥法",
+                    "DecipherWritingOccultism": "解译文书—神秘",
+                    "SubsistSurvival": "求生—生存",
                     "DisableDevice": "解除装置",
                     "PalmAnObject": "手上功夫",
                     "Steal": "盗窃",
                     "ConcealAnObject": "隐藏物件",
                     "CreateForgery": "伪造文书",
-                    "AdministerFirstAidStabilize": "进行急救 - 稳定伤势",
-                    "AdministerFirstAidStopBleeding": "进行急救 - 止血",
-                    "Escape": "逃脱 - 最高加值 (??)",
+                    "AdministerFirstAidStabilize": "进行急救—稳定伤势",
+                    "AdministerFirstAidStopBleeding": "进行急救—止血",
+                    "Escape": "逃脱—最高加值（??）",
                     "AidASE": "协助（ASE宏）",
-                    "AidPF2eMacros": "协助（PF2e 宏）",
-                    "CreateADiversionDistractingWords": "分神 - 分心话语",
+                    "AidPF2eMacros": "协助（PF2e宏）",
+                    "CreateADiversionDistractingWords": "分神—分心话语",
                     "Reposition": "移位"
                 },
-                "agileTrait": "(敏捷)",
-                "compendiumNotFound": "未找到合集包 {compendiumName}",
+                "agileTrait": "（灵巧）",
+                "compendiumNotFound": "未找到合集包{compendiumName}",
                 "macroNotFound": "未找到{macroName}宏",
-                "bamActionsPerColumn": {
-                    "name": "基本动作宏: 每行显示的大致动作数量",
-                    "hint": "基本动作宏对话框中，每行显示的大致动作数量。每行显示的动作数将为能填入对话框的最接近数字。"
-                },
                 "downtime": "休整期",
                 "bamShowUnusable": {
-                    "name": "基本动作宏: 显示无法使用的动作。",
+                    "name": "基本动作宏：显示无法使用的动作。",
                     "hint": "是否要显示由于未受训而无法使用的动作。"
                 },
                 "exploration": "探索期",
@@ -761,7 +744,7 @@
                 "selectOneActor": "你必须选择一个人物。",
                 "isPsychic": "仅为增幅心能戏法或心能能力使用聚能点",
                 "notPsychic": "已消耗至少{regain}聚能点",
-                "regainOne": "回复1聚能点。",
+                "regainOne": "回复1点聚能点。",
                 "disabled": "不可用，因为没有能力能回复1点以上的聚能点。",
                 "enabled": "回复{regain}聚能点。<br/>仅<b>当</b>你上次再聚能后{details}的情况下才能点击。"
             },
