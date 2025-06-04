@@ -1,0 +1,416 @@
+{
+    "LEVIKTIMES": {
+        "gmOnly": "GM Only",
+        "reloadRequired": "Requires Reload",
+        "emiting": {
+            "label": "Sending",
+            "noGm": "A GM must be online in order to enact this request."
+        }
+    },
+    "pf2e-toolbelt": {
+        "keybindings": {
+            "conditionManager": {
+                "manage": {
+                    "name": "Manage Condition",
+                    "hint": "Key held when dropping a condition to manage its duration."
+                }
+            },
+            "betterMovement": {
+                "teleport": {
+                    "name": "Teleport Tokens",
+                    "hint": "Key held while clicking on the scene to teleport all selected tokens."
+                },
+                "unselect": {
+                    "name": "Teleport Tokens (Unselect)",
+                    "hint": "Key held while clicking on the scene to teleport all selected tokens. Also unselect the tokens when pressing the keybind to give an unobstructed vision over the whole scene."
+                }
+            },
+            "droppeth": {
+                "droppeth": {
+                    "name": "Droppeth Modifier",
+                    "hint": "Key held when dropping an item on the ground."
+                }
+            }
+        },
+        "settings": {
+            "actionable": {
+                "title": "Actionable",
+                "action": {
+                    "name": "Action Macro",
+                    "hint": "Adds a way to link a macro to actions/feats."
+                },
+                "apply": {
+                    "name": "Auto Self-Applied",
+                    "hint": "The use button for self-applied effect will automatically apply the effect."
+                },
+                "item": {
+                    "name": "Item Effect/Macro",
+                    "hint": "Adds a way to link a self-applied effect or macro to equipment & consumable items."
+                },
+                "spell": {
+                    "name": "Spell Effect/Macro",
+                    "hint": "Adds a way to link a self-applied effect or macro to spells."
+                },
+                "use": {
+                    "name": "Use Consumable",
+                    "hint": "Will add an extra 'use' button for consumables and generate a custom message when used."
+                }
+            },
+            "anonymous": {
+                "title": "Anonymous",
+                "spell": {
+                    "name": "Anonymize NPC spells",
+                    "hint": "Spells casted by a non-player owned actor will be anonymized for players."
+                }
+            },
+            "arp": {
+                "title": "Automatic Rune Progression",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Should your world use the Automatic Rune Progression Variant."
+                },
+                "force": {
+                    "name": "Force Update",
+                    "hint": "When enabled, the runes will always be updated based on actor level. When disabled only the runes that are currently at a lower value than what they should be for that level will be upgraded."
+                },
+                "price": {
+                    "name": "No Rune Price",
+                    "hint": "Should fundamental rune prices be subtracted from the weapon price."
+                },
+                "shield": {
+                    "name": "Shield Rune",
+                    "hint": "Should reinforcing runes also be added to shields."
+                }
+            },
+            "betterEffectsPanel": {
+                "title": "Better Effects Panel",
+                "remove": {
+                    "name": "Remove-Effect Shortcut",
+                    "hint": "Using [Shift + Right Click] on effect icons in the effects-panel will instantly remove all their charges/counters/badges."
+                }
+            },
+            "betterInventory": {
+                "title": "Better Inventory",
+                "coins": {
+                    "name": "Weightless Coins",
+                    "hint": "Coins are weightless in the inventory."
+                },
+                "dropped": {
+                    "name": "No Dropped Bulk",
+                    "hint": "Dropped equipment in an actor's inventory won't be accounted for bulk value calculation."
+                }
+            },
+            "betterMovement": {
+                "title": "Better Movement",
+                "teleport": {
+                    "name": "Teleport Tokens",
+                    "hint": "Clicking on the board while holding the defined keybind will instanlty teleport the selected tokens to location without any travel.",
+                    "choices": {
+                        "disabled": "Disabled",
+                        "enabled": "Enabled",
+                        "select": "Re-Select Tokens"
+                    }
+                },
+                "history": {
+                    "name": "No History Record",
+                    "hint": "Should movement history recording be prevented for you. This makes successive move actions in a same turn less confusing."
+                }
+            },
+            "betterTemplate": {
+                "title": "Better Templates",
+                "target": {
+                    "name": "Auto Target",
+                    "hint": "When placing a template on the board, a new dialog will show up allowing you to target all the tokens inside it."
+                }
+            },
+            "betterTrade": {
+                "title": "Better Trade",
+                "withContent": {
+                    "name": "With Container Content",
+                    "hint": "When a container is moved from one actor to another, should its content go with it."
+                }
+            },
+            "conditionManager": {
+                "title": "Condition Manager",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Drag a condition while holding the defined keybind to open the condition manager allowing you to set its duration."
+                }
+            },
+            "droppeth": {
+                "title": "Droppeth",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Allow users to drop items on the canvas by holding the assigned key."
+                },
+                "light": {
+                    "name": "Light Source",
+                    "hint": "Should the dropped item emit light. It will only be the case if a single item is present in the loot actor."
+                }
+            },
+            "mergeDamage": {
+                "title": "Merge Damages",
+                "merge": {
+                    "name": "Merge Button",
+                    "hint": "Adds a button to damage messages allowing them to be merged with other damage messages."
+                },
+                "inject": {
+                    "name": "Inject Button",
+                    "hint": "Adds a button to damage messages allowing them to be injected to a previous damage message."
+                }
+            },
+            "giveth": {
+                "title": "Giveth",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Should your world allow your players actors to be able to give inventory items to other player-owned actors."
+                },
+                "effect": {
+                    "name": "Include Effects/Conditions",
+                    "hint": "Should players also be able to drop effects & conditions onto actors they do not own.",
+                    "choices": {
+                        "disabled": "Disabled",
+                        "ally": "Allies Only",
+                        "all": "All Actors"
+                    }
+                }
+            },
+            "resourceTracker": {
+                "title": "Resource Tracker",
+                "offline": {
+                    "name": "Show Offlines",
+                    "hint": "Display shared resources from offline users as well."
+                },
+                "show": {
+                    "name": "Display Tracker",
+                    "hint": "Should the resource tracker widget be displayed in your interface. Can be toggled on/off via controls on the left UI."
+                }
+            },
+            "targetHelper": {
+                "title": "Target Helper",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Enabled the 'Target Helper' feature in your world."
+                },
+                "small": {
+                    "name": "Small Damage Buttons",
+                    "hint": "Reduce the size of damage buttons for the extra targets."
+                },
+                "targets": {
+                    "name": "Add Targets to Messages",
+                    "hint": "Will add extra targets to chat messages where damage can be applied and saves can be rolled."
+                },
+                "checks": {
+                    "name": "Upgrade Checks Messages",
+                    "hint": ""
+                }
+            },
+            "underground": {
+                "title": "Underground",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Will allow tokens with negative elevation to remain visible on the board."
+                },
+                "mode": {
+                    "name": "Applied Filter",
+                    "hint": "Which type of filter should be applied to tokens with an elevation below 0.",
+                    "choices": {
+                        "normal": "No Filter",
+                        "greyscale": "Greyscale Filter",
+                        "sepia": "Sepia Filter"
+                    }
+                },
+                "contrast": {
+                    "name": "Contrast",
+                    "hint": "Contrast value when the token has a negative elevation."
+                },
+                "alpha": {
+                    "name": "Opacity",
+                    "hint": "Opacity value when the token has a negative elevation."
+                }
+            },
+            "unided": {
+                "title": "Set Unidentified Image",
+                "create": {
+                    "name": "On Item Creation",
+                    "hint": "Automatically set the un-identifed image of items to be the same as the regular image when the item is created/imported."
+                },
+                "update": {
+                    "name": "On Item Update",
+                    "hint": "Automatically update the un-identifed image when the item's regular image is updated."
+                }
+            }
+        },
+        "actionable": {
+            "action": {
+                "label": "Self-Applied Effect / Macro",
+                "hint": "A single effect item to be applied to the actor that uses this action or a macro that will be executed when this action is used",
+                "cancel": "<strong>{name}</strong> action was cancelled by its macro."
+            },
+            "item": {
+                "label": "Macro",
+                "hint": "A macro that will be executed when this item is used",
+                "cancel": "<strong>{name}</strong> usage was cancelled by its macro."
+            },
+            "spell": {
+                "label": "Macro",
+                "hint": "A macro that will be executed when this spell is cast",
+                "cancel": "<strong>{name}</strong> cast was cancelled by its macro."
+            }
+        },
+        "anonymous": {
+            "spell": {
+                "header": "Is casting a spell..",
+                "context": "Reveal spell to Players"
+            }
+        },
+        "betterTemplate": {
+            "target": {
+                "all": "Both",
+                "allies": "Allies",
+                "dismiss": "Remove Template",
+                "enemies": "Enemies",
+                "neutral": "Include Neutral",
+                "self": "Include Self",
+                "title": "Template Helper",
+                "yes": "Target"
+            }
+        },
+        "conditionManager": {
+            "manager": {
+                "title": "Condition Manager - {name}",
+                "add": "Create",
+                "cancel": "Cancel",
+                "origin": "Origin",
+                "label": "Label",
+                "anonymous": "Anonymous"
+            }
+        },
+        "droppeth": {
+            "dialog": {
+                "title": "Droppeth Item",
+                "prompt": "How many items do you wish to droppeth?"
+            },
+            "error": {
+                "out-of-bounds": "Couldn't create droppeth token at provided location.",
+                "unknown": "Something went wrong when trying to droppeth selected item(s).",
+                "no-scene": "There is no scene available to droppeth."
+            },
+            "message": {
+                "subtitle": "Droppeth Item",
+                "content": {
+                    "item": "{source} droppeth {quantity} × {item} on the ground.",
+                    "container": "{source} droppeth {item} and all its content."
+                }
+            }
+        },
+        "giveth": {
+            "error": "Something went wrong when trying to process a player <strong>Giveth</strong> request.",
+            "dialog": {
+                "title": "Giveth Item",
+                "prompt": "How many items do you wish to giveth?"
+            },
+            "message": {
+                "subtitle": "Giveth Item",
+                "content": {
+                    "item": "{source} giveth {quantity} × {item} to {target}.",
+                    "container": "{source} giveth {item} and all its content to {target}."
+                }
+            }
+        },
+        "mergeDamage": {
+            "buttons": {
+                "split": "Split back to original messages",
+                "merge": "Merge with previous damage message",
+                "inject": "Inject damage to previous message"
+            },
+            "injected": "Damage was injected into this message",
+            "noMatch": "Couldn't find another matching damage message."
+        },
+        "resourceTracker": {
+            "header": {
+                "add": "Add new resource"
+            },
+            "resource": {
+                "title": {
+                    "create": "Create New Resource",
+                    "edit": "Edit Resource"
+                },
+                "name": {
+                    "label": "Resource Name",
+                    "default": "New Resource"
+                },
+                "value": {
+                    "label": "Value",
+                    "min": "Minimum Value",
+                    "max": "Maximum Value",
+                    "current": "Current Value"
+                },
+                "steps": {
+                    "label": "Click Steps",
+                    "step1": "[Click]",
+                    "step2": "[Shift-Click]",
+                    "step3": "[Control-Click]"
+                },
+                "timeout": {
+                    "label": "Timeout (seconds)",
+                    "tooltip": "Time passed in your world before the resource value is decremented by 1"
+                },
+                "edit": "[Right-Click] Edit Resource",
+                "delete": "Delete Resource?",
+                "shared": "Visible to others?",
+                "yes": {
+                    "create": "Create",
+                    "edit": "Edit"
+                },
+                "no": "Cancel",
+                "increase": "{click} increase by {value}",
+                "decrease": "{click} decrease by {value}"
+            }
+        },
+        "targetHelper": {
+            "check-card": {
+                "merge": "Merge with following damage message"
+            },
+            "damage": {
+                "toggle": "Toggle original damage buttons"
+            },
+            "drop": {
+                "added": "You have successfully added a save to the message.",
+                "already": "This message already has a save check linked to it.",
+                "unauth": "You can only do that on messages you are the author of."
+            },
+            "header": {
+                "hidden": "Hidden From Players",
+                "noSave": "This actor cannot roll {save} checks",
+                "select": "Select Target<br>[Double Click] Open Sheet"
+            },
+            "merge": {
+                "none": "Could not find a suitable damage message to merge with."
+            },
+            "reroll": {
+                "title": "Save Check Reroll",
+                "noPoints": "You need at least 1 Hero Point to Reroll.",
+                "yes": "Reroll",
+                "no": "Cancel",
+                "keeley": "Low Reroll"
+            },
+            "rollSaves": "Roll NPC Saves",
+            "setTargets": {
+                "splashTargets": "Set Splash targets",
+                "targets": "Set targets"
+            },
+            "tooltip": {
+                "adjustment": "Adjustment: {value}",
+                "dcWithValue": "DC {dc}",
+                "reroll": "Can reroll the save check",
+                "result": {
+                    "format": "Result: {result}",
+                    "withOffset": "{success} by {offset}",
+                    "withoutOffset": "{success}"
+                }
+            },
+            "unnamed": "Unnamed"
+        }
+    }
+}
