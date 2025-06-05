@@ -15,7 +15,8 @@
                     "name": "动作宏"
                 },
                 "apply": {
-                    "name": "自动应用于自身"
+                    "name": "自动应用于自身",
+                    "hint": "自动应用效果。"
                 },
                 "title": "动作项",
                 "spell": {
@@ -34,14 +35,20 @@
                     "hint": "当启用此项，符文将始终基于角色等级更新。若"
                 },
                 "price": {
-                    "name": "忽略符文价格"
+                    "name": "忽略符文价格",
+                    "hint": "是否在武器价格中忽略基础符文价格。"
+                },
+                "shield": {
+                    "name": "盾牌符文",
+                    "hint": "是否自动给盾牌添加强固符文。"
                 }
             },
             "betterInventory": {
                 "coins": {
                     "hint": "货币重量不被计入负载。",
                     "name": "无重量货币"
-                }
+                },
+                "title": "更轻便的库存"
             },
             "betterMovement": {
                 "teleport": {
@@ -49,8 +56,14 @@
                     "name": "传送Token",
                     "choices": {
                         "disabled": "关闭",
-                        "enabled": "启用"
+                        "enabled": "启用",
+                        "select": "重选Token"
                     }
+                },
+                "title": "更便捷的移动",
+                "history": {
+                    "name": "禁止历史记录",
+                    "hint": "是否禁止记录你的移动历史。这会使同一回合内的连续移动操作不那么混乱。"
                 }
             },
             "anonymous": {
@@ -62,9 +75,72 @@
             },
             "conditionManager": {
                 "enabled": {
-                    "name": "启用"
+                    "name": "启用",
+                    "hint": "拖拽状态时按住设定好的快捷键，即可以打开状态管理栏设置其持续时间。"
                 },
                 "title": "状态管理器"
+            },
+            "betterEffectsPanel": {
+                "remove": {
+                    "name": "效果移除快捷键",
+                    "hint": "使用 [Shift + 鼠标右键] 点击效果图标将无视所有充能/计数/徽标直接移除该效果。"
+                },
+                "title": "更高效的效果面板"
+            },
+            "betterTemplate": {
+                "title": "更方便的测量板",
+                "target": {
+                    "name": "自动选择目标"
+                }
+            },
+            "betterTrade": {
+                "withContent": {
+                    "name": "同步容器内容物",
+                    "hint": "当容器从一名角色转移至另一名角色身上时，是否同步转移其内容物。"
+                },
+                "title": "更便利的交易"
+            },
+            "droppeth": {
+                "title": "丢弃控制",
+                "enabled": {
+                    "hint": "允许用户按住指定快捷键以在场景中丢弃物品。",
+                    "name": "启用"
+                },
+                "light": {
+                    "name": "光源"
+                }
+            },
+            "mergeDamage": {
+                "title": "合并伤害",
+                "merge": {
+                    "name": "合并按钮",
+                    "hint": "为伤害信息添加一个按钮，允许它们与其他伤害信息合并数值。"
+                },
+                "inject": {
+                    "name": "注入按钮",
+                    "hint": "在伤害信息中添加一个按钮，允许它们被注入到上一个伤害信息中。"
+                }
+            },
+            "giveth": {
+                "enabled": {
+                    "name": "启用",
+                    "hint": "你的世界是否允许玩家操控的角色将物品给予其他玩家操控的角色。"
+                },
+                "effect": {
+                    "choices": {
+                        "ally": "仅限盟友",
+                        "disabled": "关闭",
+                        "all": "所有角色"
+                    },
+                    "name": "包括效应/状态"
+                }
+            },
+            "resourceTracker": {
+                "title": "资源追踪",
+                "offline": {
+                    "name": "显示离线者",
+                    "hint": "对离线用户也显示其共享资源"
+                }
             }
         },
         "actionable": {
@@ -78,7 +154,8 @@
         "keybindings": {
             "betterMovement": {
                 "unselect": {
-                    "name": "传送Token（未选中）"
+                    "name": "传送Token（自动取消选中）",
+                    "hint": "按住此键点击场景传送全部选中的token，同时在传送结束后取消所有选中token以便整个场景视野清晰无阻。"
                 },
                 "teleport": {
                     "name": "传送Token",
