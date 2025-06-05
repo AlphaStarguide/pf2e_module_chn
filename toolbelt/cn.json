@@ -16,7 +16,7 @@
                 },
                 "apply": {
                     "name": "自动应用于自身",
-                    "hint": "该按钮会自动将效应应用于自身。"
+                    "hint": "自应用效果的使用键会自动将效应应用。"
                 },
                 "title": "动作项",
                 "spell": {
@@ -51,7 +51,7 @@
                 "title": "更轻便的库存",
                 "dropped": {
                     "name": "丢弃物忽略负载",
-                    "hint": "丢弃于一名角色库存中的装备不会纳入负载值计算。"
+                    "hint": "一名角色丢弃的装备不会纳入负载值计算。"
                 }
             },
             "betterMovement": {
@@ -66,7 +66,7 @@
                 },
                 "title": "更便捷的移动",
                 "history": {
-                    "name": "禁止历史记录",
+                    "name": "禁止记录",
                     "hint": "是否禁止记录你的移动历史。这会使同一回合内的连续移动操作不那么混乱。"
                 }
             },
@@ -106,14 +106,14 @@
                 "title": "更便利的交易"
             },
             "droppeth": {
-                "title": "丢弃控制",
+                "title": "丢弃物品",
                 "enabled": {
                     "hint": "允许用户按住指定快捷键以在场景中丢弃物品。",
                     "name": "启用"
                 },
                 "light": {
                     "name": "光源",
-                    "hint": "如果丢弃物品会发光，那么仅在战利品角色中存在该单个物品时才会发光。"
+                    "hint": "丢弃的物品会发光。仅在战利品角色中存在物品时才会发光。"
                 }
             },
             "mergeDamage": {
@@ -141,12 +141,12 @@
                     "name": "包括效应/状态",
                     "hint": "玩家是否也可以将效果或状态拖给其他玩家操控的角色。"
                 },
-                "title": "传递管理"
+                "title": "交易物品"
             },
             "resourceTracker": {
                 "title": "资源跟踪器",
                 "offline": {
-                    "name": "显示离线者",
+                    "name": "显示离线资源",
                     "hint": "显示来自离线用户的共享资源。"
                 },
                 "show": {
@@ -177,7 +177,7 @@
                     "name": "启用",
                     "hint": "允许负高度的指示物在场景可见。"
                 },
-                "title": "地下管理",
+                "title": "地下",
                 "mode": {
                     "name": "应用滤镜",
                     "choices": {
@@ -251,7 +251,7 @@
         },
         "anonymous": {
             "spell": {
-                "header": "正在施放一个法术…",
+                "header": "正在施放一个法术..",
                 "context": "对玩家揭示法术"
             }
         },
@@ -284,7 +284,7 @@
             },
             "error": {
                 "out-of-bounds": "无法在指定位置创建丢弃指示物。",
-                "no-scene": "该场景无法丢弃物品。",
+                "no-scene": "没有可以丢弃物品的场景。",
                 "unknown": "在尝试丢弃选中物品时出现错误。"
             },
             "message": {
@@ -396,7 +396,7 @@
                 "result": {
                     "format": "结果： {result}",
                     "withoutOffset": "{success}",
-                    "withOffset": "{success} 由 {offset}"
+                    "withOffset": "{offset}的{success}"
                 },
                 "reroll": "允许重骰豁免检定",
                 "adjustment": "调整值： {value}"
