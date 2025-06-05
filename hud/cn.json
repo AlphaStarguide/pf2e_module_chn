@@ -1,1 +1,139 @@
-{}
+{
+    "pf2e-hud": {
+        "actions": {
+            "recall-knowledge": {
+                "lore": "学识技能",
+                "proficiency": "熟练度",
+                "result": "结果",
+                "target": "目标",
+                "dc": "DC",
+                "skill": "技能"
+            },
+            "borrowArcaneSpell": "借阅奥术"
+        },
+        "SHARED": {
+            "spellcasting": {
+                "staff": "法杖",
+                "charges": "充能"
+            },
+            "migration": {
+                "warning": {
+                    "cancel": "取消",
+                    "title": "模组迁移",
+                    "start": "开始迁移",
+                    "content": {
+                        "modules": "以下模组可能要迁移数据：",
+                        "wait": "如果系统正在迁移数据，请在启动前等待"
+                    }
+                },
+                "summary": {
+                    "title": "迁移汇总"
+                }
+            }
+        },
+        "gmOnly": "仅限GM",
+        "hud": {
+            "tempHP": "临时生命值"
+        },
+        "tooltip": {
+            "distance": {
+                "meter": "m",
+                "square": "sq."
+            }
+        },
+        "persistent": {
+            "main": {
+                "shortcut": {
+                    "delete": {
+                        "title": "重制快捷栏"
+                    }
+                },
+                "effects": {
+                    "toggle": "开关效果显示"
+                }
+            },
+            "menu": {
+                "openSheet": "打开角色卡"
+            }
+        },
+        "resources": {
+            "resource": "资源",
+            "menu": {
+                "title": {
+                    "create": "创建新资源",
+                    "edit": "编辑资源"
+                },
+                "delete": "删除该资源？",
+                "min": "最小值",
+                "max": "最大值",
+                "current": "当前值",
+                "name": {
+                    "label": "资源名称",
+                    "default": "新资源"
+                },
+                "button": {
+                    "yes": {
+                        "create": "创建",
+                        "edit": "确认编辑"
+                    },
+                    "no": "取消"
+                },
+                "shared": "对其他人可见？"
+            },
+            "edit": "[右键点击] 编辑资源",
+            "increase": "{click} 增加 {value} 点",
+            "decrease": "{click} 减少 {value} 点",
+            "step3": "[Ctrl+点击]",
+            "step2": "[Shift+点击]",
+            "step1": "[点击]",
+            "add": "添加新资源"
+        },
+        "tracker": {
+            "delay": "延迟回合",
+            "join": "加入回合"
+        },
+        "sidebars": {
+            "actions": {
+                "thrown": "投掷 {increment}/{max} 尺",
+                "ranged": "射程 {max} 尺",
+                "rangedWithIncrement": "射程 {increment}/{max} 尺",
+                "blasts": "元素冲击",
+                "title": "动作",
+                "stances": "架势",
+                "reset": "重置使用次数",
+                "reach": "触及 {reach} 尺"
+            },
+            "skills": {
+                "roll": "掷骰：{name}",
+                "title": "技能",
+                "follow": "跟随专家",
+                "alternate": "[右键点击] 菜单变体"
+            },
+            "annotation": {
+                "pick-up": "拾起",
+                "retrieve": "拔出",
+                "sheathe": "收起"
+            },
+            "spells": {
+                "title": "施法",
+                "cast": "施放法术"
+            },
+            "extras": {
+                "title": "额外选项",
+                "noMacro": "拖拽宏至此",
+                "delete": {
+                    "title": "删除宏"
+                },
+                "use": {
+                    "title": "执行宏"
+                },
+                "edit": {
+                    "title": "编辑宏"
+                }
+            }
+        },
+        "rightClick": "[右键点击]",
+        "leftClick": "[左键点击]",
+        "reload": "需要刷新重载"
+    }
+}
