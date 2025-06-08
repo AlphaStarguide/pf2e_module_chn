@@ -14,9 +14,16 @@
                 "third": "3rd",
                 "fourth": "4th",
                 "fifth": "5th",
-                "sixth": "6th"
+                "sixth": "6th",
+                "specific": "特殊",
+                "unspecific": "非特殊"
             },
-            "borrowArcaneSpell": "借阅奥术"
+            "borrowArcaneSpell": "借阅奥术",
+            "drive": {
+                "drive2": "驱动 <span class=\"action-glyph\">2</span>",
+                "drive1": "驱动 <span class=\"action-glyph\">1</span>",
+                "drive3": "驱动 <span class=\"action-glyph\">3</span>"
+            }
         },
         "SHARED": {
             "spellcasting": {
@@ -49,7 +56,14 @@
         "hud": {
             "tempHP": "临时生命值",
             "alliance": "关系：{value}",
-            "adjustment": "生物调整：{value}"
+            "adjustment": "生物调整：{value}",
+            "resolve": {
+                "title": "使用决心点数",
+                "full": "{name} 耐力值为满值，不需要休息。",
+                "breather": {
+                    "used": "{name} 拥有 {ratio} SP并消耗了一点决心点数，10分钟时间小憩片刻。耐力值已回复。"
+                }
+            }
         },
         "tooltip": {
             "distance": {
@@ -62,7 +76,8 @@
             "main": {
                 "shortcut": {
                     "delete": {
-                        "title": "重制快捷栏"
+                        "title": "重制快捷栏",
+                        "message": "你确定你要将 <strong>{name}</strong> 当前的快捷栏设置删除吗？"
                     },
                     "wrongOrigin": "仅允许HUD侧边栏中的法术创建快捷栏选项。",
                     "confirm": {
@@ -79,18 +94,27 @@
                     },
                     "noChannelElements": "在该角色上无法找到此 <strong>引导元素</strong> 动作。",
                     "owner": {
-                        "title": "复制拥有者快捷栏"
+                        "title": "复制所有者快捷栏",
+                        "message": "你确定要从 <strong>{name}</strong> 的所有者复制所有快捷栏设置与自动化吗？",
+                        "none": "该角色没有任何具备快捷栏设置的所有者。",
+                        "self": "你正在尝试复制自己的设置。"
                     },
                     "navigation": "切换当前快捷栏设置<br>[鼠标中键] 自动化设置",
                     "automation": {
-                        "legend": "宏/效应 UUID"
+                        "legend": "宏/效应 UUID",
+                        "title": "快捷栏设置 ({set}) - 自动化",
+                        "hint": "如果该效果当前存在于角色上，或者宏返回<strong>true</strong>，则该快捷栏设置将自动使用。",
+                        "zero": "首个快捷栏设置不能包含任何自动化。"
                     },
                     "dc": "DC {dc}",
                     "alwaysEnabled": "始终启用",
-                    "wrongType": "你无法以此方式在快捷栏创建选项。"
+                    "wrongType": "你无法以此方式在快捷栏创建选项。",
+                    "unassigned": "未选择",
+                    "wrongActor": "你仅可以在相同的受控角色创建快捷栏选项。"
                 },
                 "effects": {
-                    "toggle": "开关效果显示"
+                    "toggle": "开关效果显示",
+                    "shift": "Shift"
                 }
             },
             "menu": {
@@ -99,10 +123,14 @@
                     "always": "始终在肖像上显示UI",
                     "hover": "仅在悬停于肖像上时显示UI"
                 },
-                "unsetActor": "解绑受控角色"
+                "unsetActor": "解绑受控角色",
+                "setActor": "设置选中指示物为受控角色"
             },
             "portrait": {
                 "selectActor": "设置该角色受控"
+            },
+            "error": {
+                "selectOne": "选择一个NPC/角色指示物以设置你的受控角色。"
             }
         },
         "resources": {
@@ -143,8 +171,10 @@
             "expanded": "已展开，点击折叠",
             "collapsed": "已折叠，点击展开",
             "fake": {
-                "nothing": "未开始"
-            }
+                "nothing": "未开始",
+                "secret": "某些隐秘之事正在发生"
+            },
+            "unknown": "未知"
         },
         "sidebars": {
             "actions": {
@@ -155,22 +185,31 @@
                 "title": "动作",
                 "stances": "架势",
                 "reset": "重置使用次数",
-                "reach": "触及 {reach} 尺"
+                "reach": "触及 {reach} 尺",
+                "outOfCombat": "[Ctrl + 点击] 以强制",
+                "stowedWeapons": {
+                    "shown": "存放武器已显示",
+                    "hidden": "存放武器已隐藏"
+                }
             },
             "skills": {
                 "roll": "掷骰：{name}",
                 "title": "技能",
                 "follow": "跟随专家",
-                "alternate": "[右键点击] 菜单变体"
+                "alternate": "[右键点击] 菜单变体",
+                "proficient": "熟练度"
             },
             "annotation": {
                 "pick-up": "拾起",
                 "retrieve": "拔出",
-                "sheathe": "收起"
+                "sheathe": "收起",
+                "draw": "拖入"
             },
             "spells": {
                 "title": "施法",
-                "cast": "施放法术"
+                "cast": "施放法术",
+                "draw": "拖入消耗品",
+                "broken": "消耗法术"
             },
             "extras": {
                 "title": "额外选项",
@@ -188,6 +227,9 @@
             },
             "filter": {
                 "label": "侧边栏过滤"
+            },
+            "items": {
+                "title": "库存"
             }
         },
         "rightClick": "[右键点击]",
@@ -395,9 +437,12 @@
                 },
                 "autoSet": {
                     "choices": {
-                        "disabled": "禁用"
+                        "disabled": "禁用",
+                        "select": "所选择的指示物token",
+                        "combat": "当前回合的参战者"
                     },
-                    "name": "自动设置角色"
+                    "name": "自动设置角色",
+                    "hint": "只要没有设置受控角色，当前选择的指示物角色或当前回合的参战者将自动设置为受控角色。"
                 },
                 "closeOnSpell": {
                     "hint": "是否在施放法术时，关闭侧边栏。",
@@ -433,11 +478,23 @@
                 },
                 "drawConsumables": {
                     "name": "必须取出消耗品",
-                    "hint": "强制消耗品在使用快捷栏之前必须被携带。这不会影响从法术中拖出的卷轴，只会影响库存中的实际消耗品。"
+                    "hint": "强制在使用快捷栏消耗品前，该消耗品必须持握在手中。这不会影响从法术中拖出的卷轴，只会影响库存中的实际消耗品。"
                 },
                 "autoFillNpc": {
                     "name": "NPC自动填充",
                     "hint": "如果您没有进行任何手动更改，NPC快捷栏将自动填充。"
+                },
+                "keepLast": {
+                    "name": "保持持续受控",
+                    "hint": "当使用“自动设置角色”时，是否保持最后一个有效角色为受控，而不是取消设置。如果你已有受控角色且所选模式为 '所选择的指示物token'，它仍然会恢复到您指定的角色。"
+                },
+                "ownerShortcuts": {
+                    "name": "使用所有者快捷栏",
+                    "hint": "如果你没有对玩家拥有的角色进行任何手动更改，则会使用其所有者快捷栏。"
+                },
+                "shiftEffects": {
+                    "hint": "需要按住shift键才能与效果图标交互。",
+                    "name": "对效果长按Shift"
                 }
             },
             "resources": {
@@ -452,6 +509,10 @@
                 "started": {
                     "name": "仅",
                     "hint": "只有当战斗实际开始（并且有战斗参与者时），跟踪器才会向玩家显示。"
+                },
+                "textureScaling": {
+                    "name": "尺寸缩放",
+                    "hint": "基于指示物尺寸缩放对参展者画像进行缩放。"
                 }
             },
             "time": {
@@ -484,7 +545,8 @@
                 "save": "保存",
                 "cancel": "取消",
                 "title": "编辑化身 - {name}",
-                "reset": ""
+                "reset": "恢复默认",
+                "contain": "容器"
             },
             "healthStatus": {
                 "title": "健康状况",
@@ -494,20 +556,24 @@
                 "import": {
                     "label": "导入健康状况设置",
                     "yes": "导入",
-                    "no": "取消"
+                    "no": "取消",
+                    "error": "导入的数据无效。"
                 },
                 "add": "添加标记",
                 "delete": "删除标记",
                 "export": {
-                    "label": "导出健康状况设置"
-                }
+                    "label": "导出健康状况设置",
+                    "confirm": "健康状况设置已被复制到剪贴板。"
+                },
+                "default": "死亡，奄奄一息，欠佳，受创，微伤，完好"
             }
         },
         "dialogs": {
             "variants": {
                 "dc": "DC",
                 "drag": "拖拽至快捷栏创建选项",
-                "title": "变体动作"
+                "title": "变体动作",
+                "statistic": "统计技能"
             },
             "resolve": {
                 "breather": {
