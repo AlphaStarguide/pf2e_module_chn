@@ -59,9 +59,9 @@
             "adjustment": "生物调整：{value}",
             "resolve": {
                 "title": "使用决心点数",
-                "full": "{name} 耐力值为满值，不需要休息。",
+                "full": "{name}耐力值为满值，不需要休息。",
                 "breather": {
-                    "used": "{name} 拥有 {ratio} SP并消耗了一点决心点数，10分钟时间小憩片刻。耐力值已回复。"
+                    "used": "{name}拥有{ratio}SP并消耗了一点决心点数，10分钟时间小憩片刻。耐力值已回复。"
                 }
             }
         },
@@ -77,36 +77,36 @@
                 "shortcut": {
                     "delete": {
                         "title": "重制快捷栏",
-                        "message": "你确定你要将 <strong>{name}</strong> 当前的快捷栏设置删除吗？"
+                        "message": "你确定你要将<strong>{name}</strong>当前的快捷栏设置删除吗？"
                     },
                     "wrongOrigin": "仅允许HUD侧边栏中的法术创建快捷栏选项。",
                     "confirm": {
-                        "message": "你确定你想要使用 <strong>{name}</strong>？",
+                        "message": "你确定你想要使用<strong>{name}</strong>？",
                         "title": "使用 - {name}"
                     },
                     "draw": {
                         "title": "{type} - {name}",
-                        "message": "你确定你想要 {type} <strong>{name}</strong>？"
+                        "message": "你确定你想要{type}<strong>{name}</strong>？"
                     },
                     "fill": {
                         "title": "自动填充快捷栏",
-                        "message": "你确定你想要为 <strong>{name}</strong> 自动填充全部快捷栏吗？"
+                        "message": "你确定你想要为<strong>{name}</strong>自动填充全部快捷栏吗？"
                     },
-                    "noChannelElements": "在该角色上无法找到此 <strong>引导元素</strong> 动作。",
+                    "noChannelElements": "在该角色上无法找到此<strong>引导元素</strong>动作。",
                     "owner": {
                         "title": "复制所有者快捷栏",
-                        "message": "你确定要从 <strong>{name}</strong> 的所有者复制所有快捷栏设置与自动化吗？",
+                        "message": "你确定要从<strong>{name}</strong>的所有者复制所有快捷栏设置与自动化吗？",
                         "none": "该角色没有任何具备快捷栏设置的所有者。",
                         "self": "你正在尝试复制自己的设置。"
                     },
-                    "navigation": "切换当前快捷栏设置<br>[鼠标中键] 自动化设置",
+                    "navigation": "切换当前快捷栏设置<br>[鼠标中键]自动化设置",
                     "automation": {
                         "legend": "宏/效应 UUID",
                         "title": "快捷栏设置 ({set}) - 自动化",
                         "hint": "如果该效果当前存在于角色上，或者宏返回<strong>true</strong>，则该快捷栏设置将自动使用。",
                         "zero": "首个快捷栏设置不能包含任何自动化。"
                     },
-                    "dc": "DC {dc}",
+                    "dc": "DC{dc}",
                     "alwaysEnabled": "始终启用",
                     "wrongType": "你无法以此方式在快捷栏创建选项。",
                     "unassigned": "未选择",
@@ -157,9 +157,9 @@
                 },
                 "shared": "对其他人可见？"
             },
-            "edit": "[右键点击] 编辑资源",
-            "increase": "{click} 增加 {value} 点",
-            "decrease": "{click} 减少 {value} 点",
+            "edit": "[右键点击]编辑资源",
+            "increase": "{click}增加{value}点",
+            "decrease": "{click}减少{value}点",
             "step3": "[Ctrl+点击]",
             "step2": "[Shift+点击]",
             "step1": "[点击]",
@@ -185,8 +185,8 @@
                 "title": "动作",
                 "stances": "架势",
                 "reset": "重置使用次数",
-                "reach": "触及 {reach} 尺",
-                "outOfCombat": "[Ctrl + 点击] 以强制",
+                "reach": "触及{reach}尺",
+                "outOfCombat": "[Ctrl + 点击]以强制",
                 "stowedWeapons": {
                     "shown": "存放武器已显示",
                     "hidden": "存放武器已隐藏"
@@ -196,7 +196,7 @@
                 "roll": "掷骰：{name}",
                 "title": "技能",
                 "follow": "跟随专家",
-                "alternate": "[右键点击] 菜单变体",
+                "alternate": "[右键点击]菜单变体",
                 "proficient": "熟练度"
             },
             "annotation": {
@@ -420,7 +420,7 @@
                 "subtitle": "受控快捷栏",
                 "noflash": {
                     "name": "禁用闪光",
-                    "hint": "当选择与当前受控角色链接的指示物token时，禁用肖像闪光效果。"
+                    "hint": "当选择与当前受控角色链接的指示物时，禁用肖像闪光效果。"
                 },
                 "closeOnSkill": {
                     "name": "技能掷骰时，关闭侧边栏",
@@ -438,7 +438,7 @@
                 "autoSet": {
                     "choices": {
                         "disabled": "禁用",
-                        "select": "所选择的指示物token",
+                        "select": "所选择的指示物",
                         "combat": "当前回合的参战者"
                     },
                     "name": "自动设置角色",
@@ -467,8 +467,8 @@
                 "autoFillType": {
                     "hint": "剩余槽位填充的优先级顺序。",
                     "choices": {
-                        "two": "动作 -> 消耗品 -> 法术",
-                        "one": "动作 -> 法术 -> 消耗品"
+                        "two": "动作->消耗品->法术",
+                        "one": "动作->法术->消耗品"
                     },
                     "name": "自动填充偏好"
                 },
@@ -486,14 +486,14 @@
                 },
                 "keepLast": {
                     "name": "保持持续受控",
-                    "hint": "当使用“自动设置角色”时，是否保持最后一个有效角色为受控，而不是取消设置。如果你已有受控角色且所选模式为 '所选择的指示物token'，它仍然会恢复到您指定的角色。"
+                    "hint": "当使用“自动设置角色”时，是否保持最后一个有效角色为受控，而不是取消设置。如果你已有受控角色且所选模式为 '所选择的指示物'，它仍然会恢复到您指定的角色。"
                 },
                 "ownerShortcuts": {
                     "name": "使用所有者快捷栏",
                     "hint": "如果你没有对玩家拥有的角色进行任何手动更改，则会使用其所有者快捷栏。"
                 },
                 "shiftEffects": {
-                    "hint": "需要按住shift键才能与效果图标交互。",
+                    "hint": "需要按住Shift键才能与效果图标交互。",
                     "name": "对效果长按Shift"
                 }
             },
@@ -540,7 +540,7 @@
             "avatar": {
                 "src": {
                     "actor": "使用角色画像",
-                    "token": "使用指示物token画像"
+                    "token": "使用指示物画像"
                 },
                 "save": "保存",
                 "cancel": "取消",
@@ -565,7 +565,7 @@
                     "label": "导出健康状况设置",
                     "confirm": "健康状况设置已被复制到剪贴板。"
                 },
-                "default": "死亡，奄奄一息，欠佳，受创，微伤，完好"
+                "default": "死亡, 奄奄一息, 欠佳, 受创, 微伤, 完好"
             }
         },
         "dialogs": {
