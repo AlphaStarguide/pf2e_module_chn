@@ -40,7 +40,7 @@
                 },
                 "error": {
                     "actors": "为世界角色迁移数据时出现了错误。",
-                    "token": "在迁移指示物角色 {uuid} 数据时出现了错误。",
+                    "token": "在迁移指示物角色{uuid}数据时出现了错误。",
                     "users": "为用户迁移数据时出现了错误。"
                 }
             }
@@ -148,9 +148,9 @@
         },
         "sidebars": {
             "actions": {
-                "thrown": "投掷 {increment}/{max} 尺",
-                "ranged": "射程 {max} 尺",
-                "rangedWithIncrement": "射程 {increment}/{max} 尺",
+                "thrown": "投掷{increment}/{max}尺",
+                "ranged": "射程{max}尺",
+                "rangedWithIncrement": "射程{increment}/{max}尺",
                 "blasts": "元素冲击",
                 "title": "动作",
                 "stances": "架势",
@@ -517,7 +517,7 @@
                 "steel": {
                     "hint": "使用一个动作，消耗一个决心点，恢复你一半的耐力。"
                 },
-                "full": "{name} 耐力值已满且不需要休息。"
+                "full": "{name}的耐力值已满且不需要休息。"
             }
         }
     }
