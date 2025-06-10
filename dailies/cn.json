@@ -1,1 +1,7 @@
-{}
+{
+    "pf2e-dailies": {
+        "charges": {
+            "label": "充能"
+        }
+    }
+}
