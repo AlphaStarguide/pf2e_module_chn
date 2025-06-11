@@ -121,7 +121,7 @@
                         "rank": "环级",
                         "traditions": "根源",
                         "source": "来源",
-                        "categories": "物品子类",
+                        "categories": "子类",
                         "category": "类别"
                     },
                     "require": "需要：<strong>{need}</strong>, 已有： <strong>{has}</strong>",
@@ -132,7 +132,7 @@
                     "exclude": "<strong>{item}</strong>被排除在选项之外。",
                     "none": "无",
                     "missing": "未找到： <strong>{need}</strong>",
-                    "wrongDataType": "删除的数据类型无效。"
+                    "wrongDataType": "丢弃的数据类型无效。"
                 },
                 "notes": {
                     "ace": "从奥术、神术、异能或原能法术列表中选择一个四环或更低的法术。<br>该法术不能有开销，施放时间也不能超过10分钟。该法术必须能够以单一生物为目标，且你必须是该法术的有效目标。"
