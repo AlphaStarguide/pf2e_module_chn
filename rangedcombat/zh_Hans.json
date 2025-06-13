@@ -32,6 +32,37 @@
             "hideTokenIcons": {
                 "name": "隐藏指示物效果图标",
                 "hint": "隐藏本模组创建的指示物效果图标。"
+            },
+            "postActionToChat": {
+                "name": "发送动作至聊天栏"
+            },
+            "postAmmunitionToChat": {
+                "name": "发送弹药至聊天栏"
+            },
+            "category": {
+                "chatControls": {
+                    "header": "聊天栏控制",
+                    "description": {
+                        "main": "与发送至聊天栏相关的设置。",
+                        "simple": "简洁：发送描述发生了什么的简短信息。",
+                        "none": "禁止：不发送信息。",
+                        "full": "详细：发送完整的动作或物品。"
+                    }
+                },
+                "ammunitionSystemPlayer": {
+                    "header": "弹药系统（玩家）"
+                },
+                "ammunitionSystemNPC": {
+                    "header": "弹药系统（NPC）"
+                },
+                "ammunitionEffects": {
+                    "header": "弹药效应"
+                }
+            },
+            "postToChat": {
+                "none": "禁止",
+                "simple": "简洁",
+                "full": "详细"
             }
         },
         "huntPrey": {
