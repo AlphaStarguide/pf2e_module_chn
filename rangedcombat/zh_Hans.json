@@ -74,10 +74,13 @@
             "huntTwoTargets": "{token}指定{target1}和{target2}为猎杀目标。",
             "huntOneTarget": "{token}指定{target1}为猎杀目标。",
             "warningNoTarget": "没有选择目标。",
-            "warningTooManyTargets": "你只能指定{maxTargets}猎杀目标。",
+            "warningTooManyTargets": "你只能指定{maxTargets}为猎杀目标。",
             "shareWithOne": "他们可以与一个盟友共享效果。",
             "huntThreeTargets": "{token}指定{target1}、{target2}和{target3}为猎杀目标。",
-            "unknownToken": "未知指示物"
+            "unknownToken": "未知指示物",
+            "precision": {
+                "attackNumber": "攻击猎杀目标"
+            }
         },
         "thrownWeapons": {
             "warningNotEquipped": "{weapon}未被装备！",
@@ -222,11 +225,26 @@
                 "warningNoLesserAlchemicalBombs": "{token}没有能造成能量伤害的次级炼金炸弹。"
             },
             "alchemicalShot": {
-                "warningNoFeat": "{token}没有炼金射击专长。",
-                "warningNotWieldingProperWeapon": "{token}没有持握火器或弩。",
+                "warningNoFeat": "{actor}不具备炼金射击专长。",
+                "warningNotWieldingProperWeapon": "{{actor}没有持握火器或弩。",
                 "warningNoAlchenicalBombs": "{token}没有炼金炸弹。",
                 "tokenPoursBombIntoWeapon": "{token}将{bomb}的内容物倒入{weapon}。",
-                "alchemicalShot": "炼金射击"
+                "alchemicalShot": "炼金射击",
+                "warningNoAlchemicalBombs": "{actor}没有炼金炸弹。"
+            }
+        },
+        "linkCompanion": {
+            "linkedCompanion": "{companion}现在是{master}的伙伴。"
+        },
+        "feat": {
+            "fakeOut": {
+                "config": {
+                    "dc": {
+                        "enemyDC": "敌人AC",
+                        "name": "空枪嘲弄DC"
+                    }
+                },
+                "name": "空枪嘲弄"
             }
         }
     }
