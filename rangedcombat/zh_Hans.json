@@ -18,12 +18,12 @@
                 "hint": "对于装填至少为1的武器，禁止骰攻击检定，除非角色已有该武器的装填状态。"
             },
             "advancedAmmunitionSystemPlayer": {
-                "name": "进阶弹药系统（玩家）",
-                "hint": "追踪连发武器和再装填武器的弹药数量。若武器未装填，这会覆盖“禁止武器射击”的设置。"
+                "name": "进阶弹药系统",
+                "hint": "（仅PC角色）追踪连发武器和再装填武器的弹药数量。若武器未装填，这会覆盖“禁止武器射击”的设置。"
             },
             "advancedThrownWeaponSystemPlayer": {
-                "name": "进阶投掷武器系统（玩家）",
-                "hint": "使用后将投掷武器标记为“放开”，并在下一攻击前要求玩家拔出另一把武器。"
+                "name": "进阶投掷武器系统",
+                "hint": "（仅PC角色）使用后将投掷武器标记为“放开”，并在下一攻击前要求玩家拔出另一把武器。"
             },
             "requiredPermissionToShowMessages": {
                 "name": "查看消息的最低权限",
@@ -188,7 +188,7 @@
         },
         "utils": {
             "singleCharacterSelected": "你必须选择一个角色。",
-            "warningDialog1": "你无法击发此武器：",
+            "warningDialog1": "你无法使用此动作：",
             "warningDialog2": "这是PF2e Ranged Combat模组提供的功能。",
             "warningDialog3": "你可以在<a href=\"https://github.com/JDCalvert/FVTT-PF2e-Ranged-Combat/blob/main/README.md\">这里</a>学习如何使用模组。",
             "buttonOK": "好的",
