@@ -1,0 +1,37 @@
+{
+    "pf2-flat-check":{
+        "settings":{
+            "hideRollValue":{
+                "name": "Show 'Success' or 'Failure' Text",
+                "hint": "Shows a text indicating whether an ability is successful or fails due to the flatcheck."
+            },
+            "ignoreConcealed":{
+                "name": "Ignore the concealed condition",
+                "hint": "If checked, the module ignores the dazzled and concealed conditions."
+            },
+            "ignoreGrabbed":{
+                "name": "Ignore the grabbed condition",
+                "hint": "If checked, the module ignores the grabbed condition."
+            },
+            "ignoreInvisibility":{
+                "name": "Ignore the condition with hidden effects",
+                "hint": "If checked, the module ignores the the following conditions: hidden, invisible, undetected and blinded."
+            },
+            "ignorePassiveActions":{
+                "name": "Surpress flatchecks of passive actions",
+                "hint": "If checked, the module ignores the test from actions with the pf2e passive action symbol."
+            },
+            "ignoreReactionActions":{
+                "name": "Surpress flatchecks of reaction actions",
+                "hint": "If checked, the module ignores the test from actions with the pf2e reaction action symbol."
+            }
+        },
+        "results":{
+            "success":"Success",
+            "failure":"Failure"
+        },
+        "FlatDC":"Flat Check DC is",
+        "attacker":"to attacker.",
+        "is":"is"
+    }
+}
