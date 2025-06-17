@@ -199,7 +199,7 @@
                     "warningNoCompatibleAmmunition": "你没有装备可用于{weapon}的弹药。",
                     "warningNotEnoughAmmunition": "你没有足够弹药来装填{weapon}。",
                     "notEnoughAmmunitionSelectNew": "你为{weapon}选择的弹药数量为零。</p><p>选择新弹药装填。",
-                    "noAmmunitionSelectNew": "你没有为{weapon}选择弹药。</p><p>选择要装填的弹药。"
+                    "noAmmunitionSelectNew": "你没有为{weapon}选择弹药。<br><br>选择要装填的弹药。"
                 },
                 "reload": {
                     "warningNoReloadableWeapons": "你没有可再装填的武器。",
@@ -209,9 +209,9 @@
                     "warningAlreadyFullyLoaded": "{weapon}已装填满。",
                     "warningAlreadyLoadedWithAmmo": "{weapon}已装填{ammo}。",
                     "warningNoCompatibleAmmunition": "你没有装备可用于{weapon}的弹药。",
-                    "noAmmunitionSelectNew": "你没有为{weapon}选择弹药。</p><p>选择要装填的弹药。",
+                    "noAmmunitionSelectNew": "你没有为{weapon}选择弹药。<br><br>选择要装填的弹药。",
                     "warningNotEnoughAmmunition": "你没有足够弹药装填{weapon}。",
-                    "notEnoughAmmunitionSelectNew": "你为{weapon}选择的弹药数量为空。</p><p>选择新弹药装填。",
+                    "notEnoughAmmunitionSelectNew": "你为{weapon}选择的弹药数量为空。<br><br>选择新弹药装填。",
                     "tokenReloadsWeapon": "{token}装填了{weapon}",
                     "withAmmunition": "使用{ammunition}。",
                     "warningNoReloadableCapacityWeapons": "你没有具备弹容特征的可装填武器。"
@@ -293,7 +293,7 @@
                 "tokenLoadsWeaponWithBomb": "{token}用{bomb}装填了{weapon}。",
                 "warningWeaponNotLoaded": "{token}的{weapon}尚未装填炼金炸弹。",
                 "shouldUnloadDialogTitle": "{bomb}已废弃",
-                "shouldUnloadDialogRestWasted": "剩余炸弹将被浪费",
+                "shouldUnloadDialogRestWasted": "剩余炸弹将被浪费。",
                 "shouldUnloadInstead": "确定从{weapon}中卸载{bomb}吗？",
                 "buttonUnload": "确定卸载",
                 "buttonDoNotUnload": "不要卸载",
