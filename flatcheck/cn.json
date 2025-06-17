@@ -1,2 +1,37 @@
 {
+    "pf2-flat-check": {
+        "settings": {
+            "hideRollValue": {
+                "name": "显示‘成功’或'失败'文本",
+                "hint": "显示文本以表明，某个能力是成功使用还是因纯骰检定而失败。"
+            },
+            "ignoreConcealed": {
+                "name": "忽略隐蔽状态",
+                "hint": "若勾选，模组将忽略目眩和隐匿状态的纯骰检定。"
+            },
+            "ignoreGrabbed": {
+                "name": "忽略受擒状态",
+                "hint": "若勾选，模组将忽略受擒状态的纯骰检定。"
+            },
+            "ignoreInvisibility": {
+                "hint": "若勾选，模组将忽略以下状态：藏匿，隐形，无踪和目盲的纯骰检定。",
+                "name": "忽略附带藏匿状态的效果"
+            },
+            "ignoreReactionActions": {
+                "name": "阻止反应动作纯骰检定",
+                "hint": "若勾选，模组将忽略来自带有pf2e反应动作标志的动作的测试。"
+            },
+            "ignorePassiveActions": {
+                "name": "阻止被动动作纯骰检定",
+                "hint": "若勾选，模组将忽略来自带有pf2e被动动作标志的动作的测试。"
+            }
+        },
+        "results": {
+            "success": "成功",
+            "failure": "失败"
+        },
+        "FlatDC": "纯骰检定DC为",
+        "is": "处于",
+        "attacker": "对攻击者。"
+    }
 }
