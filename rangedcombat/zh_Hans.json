@@ -336,6 +336,12 @@
                     "criticalFailure": "你的盟友的检定获得-1环境减值。"
                 }
             }
+        },
+        "module-name": "PF2e远程战斗",
+        "dialog": {
+            "button": {
+                "cancel": "取消"
+            }
         }
     }
 }
