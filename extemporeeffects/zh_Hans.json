@@ -40,6 +40,7 @@
                 "choice_disabled": "禁用"
             }
         },
-        "errorMultipleTokensCustomEffect": "你需要在应用新效果时选中一个指示物。"
+        "errorMultipleTokensCustomEffect": "你需要在应用新效果时选中一个指示物。",
+        "addedPrefixWithOriginToEffectDescription": "<h2>（从{ORIGIN}中生成效果）</h2>\n"
     }
 }
