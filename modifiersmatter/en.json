@@ -1,0 +1,36 @@
+{
+  "pf2e-modifiers-matter": {
+    "Settings": {
+      "show-defense-highlights-to-everyone": {
+        "name": "Show defense highlights to everyone",
+        "hint": "If set to true, defense highlights such as \"Flat-footed -2\" will be shown to everyone, not just GM."
+      },
+      "always-show-defense-conditions": {
+        "name": "Always show defense conditions",
+        "hint": "If set to true, defense highlights such as \"Flat-footed -2\" will be shown constantly, even when they don't matter."
+      },
+      "ignore-crit-fail-over-fail-on-attacks": {
+        "name": "Ignore Crit Fail over Fail on Attacks",
+        "hint": "If set to true, the module will not highlight changes that changed an attack from a fail to a crit fail or vice versa. This is helpful because usually there's no difference between the two cases on attacks;  however, there are some exceptions to this rule, such as Confident Finisher."
+      },
+      "additional-ignored-labels": {
+        "name": "Additional ignored labels",
+        "hint": "Insert text separated by semicolons (;).  Each of these modifier labels will be ignored.  If you feel an existing modifier in the rules should be ignored by default, please suggest it on Github/Discord."
+      }
+    },
+    "Message": {
+      "TargetHas": "Target has:"
+    },
+    "IgnoredModifiers": {
+      "DeviseAStratagem": "Devise a Stratagem",
+      "HuntersEdgeFlurry1": "Hunter's Edge: Flurry",
+      "HuntersEdgeFlurry2": "Flurry",
+      "HuntersEdgeFlurry3": "Effect: Hunter's Edge, Flurry",
+      "BattleForm1": "Nature Incarnate",
+      "BattleForm2": "Form of the Sandpoint Devil",
+      "BattleForm3": "Element Embodied",
+      "BattleForm4": "Avatar",
+      "DrakeheartMutagen": "Drakeheart Mutagen"
+    }
+  }
+}
