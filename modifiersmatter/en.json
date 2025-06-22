@@ -1,31 +1,50 @@
 {
   "pf2e-modifiers-matter": {
     "Settings": {
-      "show-defense-highlights-to-everyone": {
-        "name": "Show defense highlights to everyone",
-        "hint": "If set to true, defense highlights such as \"Flat-footed -2\" will be shown to everyone, not just GM."
+      "always-show-highlights-to-everyone": {
+        "name": "Always show highlights to everyone",
+        "hint": "If enabled, highlights of NPC conditions such as \"Off-guard -2\" always be shown to everyone, even if the \"Show roll breakdowns\" system setting is disabled. This is usually desired, but it does reveal some extra information to the players."
       },
       "always-show-defense-conditions": {
         "name": "Always show defense conditions",
-        "hint": "If set to true, defense highlights such as \"Flat-footed -2\" will be shown constantly, even when they don't matter."
+        "hint": "If enabled, defense highlights such as \"Off-guard -2\" will be shown constantly, even when they don't matter."
       },
       "ignore-crit-fail-over-fail-on-attacks": {
         "name": "Ignore Crit Fail over Fail on Attacks",
-        "hint": "If set to true, the module will not highlight changes that changed an attack from a fail to a crit fail or vice versa. This is helpful because usually there's no difference between the two cases on attacks;  however, there are some exceptions to this rule, such as Confident Finisher."
+        "hint": "If enabled while you're attacking, the module will not highlight changes that changed an attack from a fail to a crit fail or vice versa. This is helpful because usually there's no difference between the two cases on attacks;  however, there are some exceptions to this rule, such as Confident Finisher.  (It's recommended to disable this setting if you're a GM in that case)"
       },
       "additional-ignored-labels": {
         "name": "Additional ignored labels",
         "hint": "Insert text separated by semicolons (;).  Each of these modifier labels will be ignored.  If you feel an existing modifier in the rules should be ignored by default, please suggest it on Github/Discord."
+      },
+      "highlight-potentials-preset": {
+        "name": "Highlight potentials",
+        "hint": "Will display a highlight for you whenever a roll could potentially be upgraded/downgraded with your special ability. Select option based on the kind of modifier that you are able to apply.",
+        "choices": {
+          "disabled": "Disabled (default)",
+          "1_status": "+1 status bonus (Amped Guidance, Nudge Fate)",
+          "2_status": "+2 status bonus (Amped Guidance 6th)",
+          "2_circumstance_ac": "+2 circumstance bonus to AC (Guardian's Deflection)"
+        }
       }
     },
     "Message": {
-      "TargetHas": "Target has:"
+      "CasterHas": "Caster has:",
+      "ActorHas": "Actor has:",
+      "TargetHas": "Target has:",
+      "HasPotential": "(Has potential!)"
     },
     "IgnoredModifiers": {
       "DeviseAStratagem": "Devise a Stratagem",
       "HuntersEdgeFlurry1": "Hunter's Edge: Flurry",
       "HuntersEdgeFlurry2": "Flurry",
       "HuntersEdgeFlurry3": "Effect: Hunter's Edge, Flurry",
+      "SpellAttackHouserule": "Spell attack houserule",
+      "SpellPotency1": "Spell Potency",
+      "SpellPotency2":  "Spell potency",
+      "SkillPotency1": "Skill Potency",
+      "SkillPotency2":  "Skill potency",
+      "StylishCombatant":  "Stylish Combatant",
       "BattleForm1": "Nature Incarnate",
       "BattleForm2": "Form of the Sandpoint Devil",
       "BattleForm3": "Element Embodied",
