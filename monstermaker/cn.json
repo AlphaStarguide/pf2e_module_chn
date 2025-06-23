@@ -3,7 +3,6 @@
     "PF2EMONSTERMAKER.nameLevelRoadmap": "名称 + 等级 + 风格",
     "PF2EMONSTERMAKER.roadmap": "风格",
     "PF2EMONSTERMAKER.strike": "打击",
-
     "PF2EMONSTERMAKER.name": "名称",
     "PF2EMONSTERMAKER.level": "等级",
     "PF2EMONSTERMAKER.str": "力量",
@@ -21,7 +20,6 @@
     "PF2EMONSTERMAKER.strikeBonus": "打击-攻击加值",
     "PF2EMONSTERMAKER.strikeDamage": "打击-伤害",
     "PF2EMONSTERMAKER.spellcasting": "施法",
-
     "PF2EMONSTERMAKER.acrobatics": "特技",
     "PF2EMONSTERMAKER.arcana": "奥法",
     "PF2EMONSTERMAKER.athletics": "运动",
@@ -38,19 +36,16 @@
     "PF2EMONSTERMAKER.stealth": "隐秘",
     "PF2EMONSTERMAKER.survival": "生存",
     "PF2EMONSTERMAKER.thievery": "贼活",
-
     "PF2EMONSTERMAKER.abilityScores": "属性",
     "PF2EMONSTERMAKER.defencePerception": "防御 + 察觉",
     "PF2EMONSTERMAKER.strikes": "打击",
     "PF2EMONSTERMAKER.skills": "技能",
-
-    "PF2EMONSTERMAKER.brute":"蛮力型",
-    "PF2EMONSTERMAKER.magicalStriker":"魔法攻击型",
-    "PF2EMONSTERMAKER.skirmisher":"斥候型",
-    "PF2EMONSTERMAKER.sniper":"狙击型",
-    "PF2EMONSTERMAKER.soldier":"士兵型",
-    "PF2EMONSTERMAKER.spellcaster":"法术施展型",
-
+    "PF2EMONSTERMAKER.brute": "蛮力型",
+    "PF2EMONSTERMAKER.magicalStriker": "魔法攻击型",
+    "PF2EMONSTERMAKER.skirmisher": "斥候型",
+    "PF2EMONSTERMAKER.sniper": "狙击型",
+    "PF2EMONSTERMAKER.soldier": "士兵型",
+    "PF2EMONSTERMAKER.spellcaster": "法术施展型",
     "PF2EMONSTERMAKER.extreme": "强大",
     "PF2EMONSTERMAKER.high": "优秀",
     "PF2EMONSTERMAKER.moderate": "适中",
