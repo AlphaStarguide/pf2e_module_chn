@@ -1,1 +1,21 @@
-{}
+{
+    "pf2e-automations": {
+        "targetType": {
+            "SelfEffect": "使用动作时对自身应用效果",
+            "TargetEffectActorNextTurn": "使用时对目标应用效果，直到角色下一回合",
+            "SelfOrTargetEffect": "使用动作时对自身或一个目标应用效果",
+            "SelfOrTargetsEffect": "使用动作时对自身或全体目标应用效果",
+            "TargetRemoveEffect": "移除目标身上的效果",
+            "TargetRemoveCondition": "移除目标身上的状态",
+            "RunMacro": "运行宏",
+            "SelfRemoveCondition": "移除自身状态",
+            "SelfRemoveEffect": "移除自身效果",
+            "TargetAddCondition": "给目标添加状态",
+            "SelfAddCondition": "给自身添加状态",
+            "TargetsEffect": "使用动作时对所有目标应用效果",
+            "TargetDamage": "对目标造成伤害",
+            "None": "无",
+            "TargetEffect": "使用时对目标应用效果"
+        }
+    }
+}
