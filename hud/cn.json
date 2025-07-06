@@ -285,6 +285,24 @@
             "breather": {
                 "used": "{name}拥有{ratio}点SP，他消耗了一点决心点数与10分钟小憩片刻。耐力值已恢复。"
             }
+        },
+        "shortcuts": {
+            "error": {
+                "wrongType": "你无法创建此类快捷栏选项。",
+                "wrongActor": "你只能为受控角色创建快捷栏选项。"
+            },
+            "tooltip": {
+                "click": {
+                    "control": "[Ctrl+右键点击] 物品弹出",
+                    "shift": "[Shift+右键点击] 移除快捷栏选项"
+                },
+                "reason": {
+                    "dropped": "未携带该物品",
+                    "uses": "无可用物品剩余",
+                    "quantity": "物品数为零",
+                    "match": "该物品不匹配"
+                }
+            }
         }
     }
 }
