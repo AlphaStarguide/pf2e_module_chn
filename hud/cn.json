@@ -38,7 +38,7 @@
                     "always": "始终在肖像上显示UI",
                     "hover": "仅在悬停于肖像上时显示UI"
                 },
-                "editAvatar": "编辑化身",
+                "editAvatar": "编辑头像",
                 "setActor": {
                     "set": "设置选中指示物为受控角色",
                     "unset": "解绑受控角色"
@@ -178,7 +178,7 @@
             "alliance": "关系：{value}"
         },
         "avatar-editor": {
-            "title": "编辑化身 - {name}",
+            "title": "编辑头像 - {name}",
             "cancel": "取消",
             "color": {
                 "background": "背景颜色",
