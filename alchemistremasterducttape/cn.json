@@ -69,7 +69,7 @@
         "SETTING_SIZEBASED_ALCHEMY": "高速炼金：启用基于体型的炼金？",
         "SETTING_SIZEBASED_ALCHEMY_HINT": "调整由高速炼金创建的物品大小以适配生物体型。",
         "SETTING_ENABLE_POWERFUL_ALCHEMY": "启用强效炼金术",
-        "SETTING_ENABLE_POWERFUL_ALCHEMY_HINT": "启用后，制造物品自动跟进并应用职业DC。",
+        "SETTING_ENABLE_POWERFUL_ALCHEMY_HINT": "启用后，制造的灌注物品自动跟进并应用职业DC。",
         "SETTING_LEVELUP_ADD_HIGHER_HINT": "若启用，升级时将添加已知配方的更高等级版本。逐一请求=将对每个配方进行提示；统一请求=将一次性对所有配方进行提示；自动=将自动添加配方。",
         "SETTING_LEVELUP_ADD_HIGHER": "升级提示：升级时添加已知配方的更高等级版本。",
         "SETTING_LEVELUP_HANDLE_LOWER_LEVEL": "升级提示：低等级配方处理",
