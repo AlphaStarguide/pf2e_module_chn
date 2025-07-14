@@ -20,7 +20,8 @@
             "TargetAllyWithinRange": "射程范围内的盟友及自身",
             "SelfDamage": "对自身造成伤害",
             "TurnOnOption": "开启选项",
-            "PartyEffect": "为队伍成员应用效果"
+            "PartyEffect": "为队伍成员应用效果",
+            "DecreaseDamageBadgeEffect": "减少伤害效果的标记值"
         },
         "requirementType": {
             "None": "无",
