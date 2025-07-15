@@ -1,1 +1,90 @@
-{}
+{
+    "pf2e-rpg-numbers": {
+        "module-settings": {
+            "headers": {
+                "debug": "调试",
+                "dmg-numbers": "伤害数字",
+                "check-animations": {
+                    "title": "检定&攻击动画",
+                    "sfx": "检定SFX"
+                },
+                "screen-shake": "受到伤害时晃动屏幕",
+                "token-dmg-shake": {
+                    "title": "指示物伤害晃动"
+                },
+                "shake-on-attack": "攻击时晃动屏幕",
+                "rotate-on-attack": "攻击时旋转",
+                "dodge-on-miss": "目标躲闪",
+                "finishing-move": {
+                    "title": "终结技"
+                },
+                "plus-one": "每个+1都很重要",
+                "critical": "重击",
+                "burst-burrow": "掘地爆炸",
+                "fromSoftware": {
+                    "elden-ring": {
+                        "title": "艾尔登法环弹窗样式",
+                        "death": "你死了"
+                    },
+                    "title": "From Software（FS社）"
+                },
+                "versus": "VS 动画"
+            },
+            "dmg-numbers": {
+                "font-size": {
+                    "hint": "默认伤害字体大小",
+                    "name": "字体大小"
+                },
+                "enabled": {
+                    "name": "启用伤害数字",
+                    "hint": "显示伤害数字"
+                },
+                "on-apply-or-roll": {
+                    "name": "显示在…",
+                    "choices": {
+                        "apply": "应用伤害",
+                        "roll": "掷骰"
+                    }
+                }
+            },
+            "version": "版本",
+            "notes": {
+                "requires-jb2a-premium": {
+                    "name": "JB2A+",
+                    "hint": "此功能的部分或全部特性需要JB2A Premium支持"
+                },
+                "new-feature": {
+                    "hint": "新特性！"
+                }
+            },
+            "enabled": {
+                "name": "启用模组",
+                "hint": "启用模组功能"
+            },
+            "actor-settings": {
+                "player-enabled": {
+                    "name": "为玩家启用角色设置按钮",
+                    "hint": "令角色设置按钮对玩家可见，允许其自定义重击等效果"
+                },
+                "hide-button-text": {
+                    "name": "隐藏标题栏按钮文本",
+                    "hint": "隐藏在各个位置（角色卡，物品卡等）显示的标题栏按钮文本"
+                }
+            }
+        },
+        "controls": {
+            "finishing-move": {
+                "toolclip": {
+                    "heading": "终结技",
+                    "items": {
+                        "description": {
+                            "paragraph": "启用后，当你向聊天栏发送动作或攻击信息时，将显示“终结技”文本"
+                        }
+                    }
+                },
+                "name": "显示终结技"
+            }
+        }
+    },
+    "I18N.LANGUAGE": "英语"
+}
