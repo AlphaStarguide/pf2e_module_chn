@@ -44,6 +44,10 @@
             },
             "persistent": {
                 "title": "Persistent HUD",
+                "autoFill": {
+                    "name": "Auto-Fill NPCs",
+                    "hint": "If you haven't made any manual changes, the shortcut slots will automatically be filled."
+                },
                 "mode": {
                     "name": "Selection Mode",
                     "hint": "Mode of selection for the persistent actor.",
@@ -165,6 +169,11 @@
                 "yes": "Use Resolve"
             }
         },
+        "edit-shortcut": {
+            "image": "Image Path",
+            "name": "Shortcut Name",
+            "yes": "Save"
+        },
         "health-status": {
             "title": "Health Status",
             "enabled": "Enabled",
@@ -203,6 +212,33 @@
                     "set": "Set selected token as persistent actor",
                     "unset": "Unset persistent actor"
                 }
+            },
+            "shortcuts": {
+                "clear": {
+                    "title": "Clear Shortcuts",
+                    "all": "All Shortcuts Sets",
+                    "hint": "Are you sure you want to delete the following shortcuts?",
+                    "set": "Current Set Only",
+                    "yes": "Delete"
+                },
+                "copy": {
+                    "title": "Copy User Shortcuts",
+                    "hint": "Select a user to copy the shortcuts from.",
+                    "label": "User Owner",
+                    "none": "This actor doesn't have any other owner.",
+                    "yes": "Copy"
+                },
+                "fill": {
+                    "title": "Auto-Fill Shortcuts",
+                    "content": "Are you sure you want to auto-fill the shortcuts?",
+                    "yes": "Auto-Fill"
+                },
+                "tab": "Change Shortcuts Set"
+            }
+        },
+        "popup": {
+            "shortcut": {
+                "config": "Customize Shortcut"
             }
         },
         "recall-knowledge": {
@@ -224,21 +260,58 @@
         },
         "rightClick": "[Right-Click]",
         "shortcuts": {
+            "blast": {
+                "cost": {
+                    "label": "Elemental Blast Cost"
+                }
+            },
             "error": {
+                "locked": "The Shortcuts are locked with the Hotbar",
                 "wrongActor": "You can only create shortcuts from the same persistent actor.",
                 "wrongType": "You cannot create a shortcut of that type."
             },
             "tooltip": {
+                "active": "Active",
+                "altUse": {
+                    "blast": "Blast Window",
+                    "skillAction": "Variants Menu",
+                    "strike": "Strike Window",
+                    "toggle": "Select SubOption"
+                },
                 "click": {
-                    "control": "[Ctrl-Right-Click] Item Popup",
-                    "shift": "[Shift-Right-Click] Remove Shortcut"
+                    "control": "[Ctrl-Right-Click]",
+                    "middle": "[Middle-Click] Remove Shortcut",
+                    "popup": "Shortcut Popup"
+                },
+                "disabled": "Disabled",
+                "enabled": "Enabled",
+                "inactive": "Inactive",
+                "subtitle": {
+                    "blast": "Elemental Blast",
+                    "extraAction": "Extra Action",
+                    "macro": "Self-Executed Macro",
+                    "spell": "Spellcasting",
+                    "strike": "Strike Attack",
+                    "toggle": "Roll Option"
                 },
                 "reason": {
+                    "available": "Not Currently Available",
+                    "broken": "Orphan Spell",
+                    "charges": "No Charges Left",
                     "dropped": "Item Not Carried",
-                    "match": "No Match",
-                    "uses": "No Use Remaining",
-                    "quantity": "No Quantity"
+                    "equip": "Not Equipped",
+                    "expended": "Expended Spell",
+                    "focus": "Focus Pool Empty",
+                    "match": "No Matching Item",
+                    "prepared": "Spell Not Prepared",
+                    "quantity": "Quantity Is Zero",
+                    "rank": "Cannot Cast That Rank",
+                    "uses": "No Remaining Uses",
+                    "vessel": "Not Primary Vessel"
                 }
+            },
+            "use": {
+                "toggle": "This toggle is always enabled"
             }
         },
         "sidebar": {
