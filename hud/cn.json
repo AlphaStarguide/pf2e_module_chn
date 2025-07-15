@@ -50,6 +50,26 @@
             "effects": {
                 "shift": "Shift",
                 "toggle": "开关效果显示"
+            },
+            "shortcuts": {
+                "clear": {
+                    "hint": "你确认要删除以下快捷栏吗？",
+                    "all": "全部快捷栏设置",
+                    "yes": "删除",
+                    "set": "仅当前设置",
+                    "title": "清空快捷栏"
+                },
+                "copy": {
+                    "title": "复制用户快捷栏",
+                    "hint": "选择一位用户，复制他的快捷栏设置。",
+                    "none": "该角色没有其他拥有者。",
+                    "yes": "复制"
+                },
+                "fill": {
+                    "title": "自动填充快捷栏",
+                    "content": "你确定你要自动填充快捷栏吗？",
+                    "yes": "自动填充"
+                }
             }
         },
         "rightClick": "[右键点击]",
@@ -114,6 +134,9 @@
                         "combat": "当前回合的参战者",
                         "disabled": "禁用"
                     }
+                },
+                "autoFill": {
+                    "name": "自动填充NPC"
                 }
             },
             "enabled": {
@@ -289,7 +312,8 @@
         "shortcuts": {
             "error": {
                 "wrongType": "你无法创建此类快捷栏选项。",
-                "wrongActor": "你只能为受控角色创建快捷栏选项。"
+                "wrongActor": "你只能为受控角色创建快捷栏选项。",
+                "locked": "快捷栏已被热键锁定"
             },
             "tooltip": {
                 "click": {
@@ -300,7 +324,29 @@
                     "uses": "无可用物品剩余",
                     "quantity": "物品数为零",
                     "match": "该物品不匹配"
+                },
+                "active": "激活",
+                "altUse": {
+                    "blast": "冲击窗口",
+                    "skillAction": "变体菜单",
+                    "strike": "打击窗口",
+                    "toggle": "选择子选项"
                 }
+            },
+            "blast": {
+                "cost": {
+                    "label": "元素冲击消耗"
+                }
+            }
+        },
+        "edit-shortcut": {
+            "image": "图片路径",
+            "name": "快捷栏名称",
+            "yes": "保存"
+        },
+        "popup": {
+            "shortcut": {
+                "config": "自定义快捷栏"
             }
         }
     }
