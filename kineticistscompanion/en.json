@@ -1,0 +1,125 @@
+{
+    "pf2e-kineticists-companion": {
+        "config": {
+            "option": {
+                "always": "Always",
+                "never": "Never",
+                "ask": "Ask Each Time"
+            },
+            "dialog": {
+                "yes": "Yes",
+                "no": "No",
+                "remember-my-answer": "Remember my answer"
+            }
+        },
+        "armor-in-earth": {
+            "name": "Armor in Earth",
+            "config": {
+                "unlimited-duration": {
+                    "name": "Unlimited Duration",
+                    "hint": "Remove the duration from the Armor in Earth effect. Useful for handwaving reusing the impulse periodically during exploration."
+                }
+            }
+        },
+        "dash-of-herbs": {
+            "immune": "{name} is currently immune to Dash of Herbs."
+        },
+        "fresh-produce": {
+            "name": "Fresh Produce",
+            "target-outside-aura": "Your current target is not inside your kinetic aura.",
+            "already-eaten": "{name} has already eaten Fresh Produce in the last ten minutes."
+        },
+        "hardwood-armor": {
+            "name": "Hardwood Armor",
+            "config": {
+                "create-shield": {
+                    "name": "Create Shield"
+                },
+                "unlimited-duration": {
+                    "name": "Unlimited Duration",
+                    "hint": "Remove the duration from the Hardwood Armor effect. Useful for handwaving reusing the impulse periodically during exploration."
+                }
+            },
+            "shield-prompt": {
+                "title": "Hardwood Armor Shield",
+                "content": "Would you like to create a wooden shield in your free hand?"
+            },
+            "shield-destroyed": "{name}'s wooden shield was broken and has decayed."
+        },
+        "ignite-the-sun": {
+            "name": "Ignite the Sun",
+            "config": {
+                "enable": {
+                    "name": "Enable Automation"
+                }
+            },
+            "sustain-prompt": {
+                "title": "Sustain",
+                "content": "Would you like to increase the sun's size?"
+            },
+            "no-gamemaster": {
+                "create": "There is no Gamemaster connected to create the sun.",
+                "sustain": "There is no Gamemaster connected to expand or move the sun.",
+                "delete": "There is no Gamemaster connected to delete the sun."
+            },
+            "no-user": {
+                "roll-damage": "There is no active user able to roll damage for {name}'s Ignite the Sun."
+            }
+        },
+        "metal-carapace": {
+            "name": "Metal Carapace",
+            "config": {
+                "create-shield": {
+                    "name": "Create Shield"
+                },
+                "unlimited-duration": {
+                    "name": "Unlimited Duration",
+                    "hint": "Remove the duration from the Metal Carapace effect. Useful for handwaving reusing the impulse periodically during exploration."
+                }
+            },
+            "shield-prompt": {
+                "title": "Metal Carapace Shield",
+                "content": "Would like to create a Metal Carapace shield in your free hand?"
+            },
+            "shield-destroyed": "{name}'s Metal Carapace Shield was broken and has crumbled to flakes of rust.",
+            "armor-destroyed": "{name}'s Metal Carapace was shattered from the critical hit."
+        },
+        "oceans-balm": {
+            "immune": "{name} is currently immune to healing from Ocean's Balm."
+        },
+        "sustain": {
+            "prompt": {
+                "title": "Sustain",
+                "content": "Choose an effect to sustain",
+                "effect": "Effect"
+            }
+        },
+        "thermal-nimbus": {
+            "name": "Thermal Nimbus",
+            "damage-roll-not-found": "The DamageRoll class was not found, so Thermal Nimbus automation will not function.",
+            "config": {
+                "auto-damage": {
+                    "name": "Automatically Apply Damage",
+                    "hint": "Damage will still roll automatically, but must be applied manually."
+                }
+            }
+        },
+        "timber-sentinel": {
+            "name": "Timber Sentinel",
+            "config": {
+                "enable": {
+                    "name": "Enable Automation"
+                }
+            },
+            "no-gamemaster": {
+                "create": "The Protector Tree could not be created as there is no Gamemaster present.",
+                "intercept": "The Protector Tree did not intercept the Strike as there is no Gamemaster present."
+            },
+            "take-damage": "{name} intercepts the Strike and takes {damage} damage.",
+            "take-damage-destroyed": "{name} intercepts the Strike, takes {damage} damage, and is destroyed."
+        },
+        "torrent-in-the-blood": {
+            "immune": "{name} is currently immune to Torrent in the Blood."
+        }
+    }
+}
