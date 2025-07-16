@@ -26,6 +26,16 @@
                 "name": "Enabled",
                 "hint": "Enables this HUD element on your client."
             },
+            "dice": {
+                "title": "Dice Panel"
+            },
+            "foundrySidebar": {
+                "title": "Foundry Sidebar",
+                "expand": {
+                    "name": "Auto Expand on Load",
+                    "hint": "Force the foundry sidebar to expand on page load."
+                }
+            },
             "global": {
                 "highestSpeed": {
                     "name": "Show Highest Speed",
@@ -61,6 +71,12 @@
             },
             "sidebar": {
                 "title": "Sidebar"
+            },
+            "time": {
+                "title": "Time Tracker",
+                "enabled": {
+                    "hint": "Enables this HUD element on your client. This is overriden when the 'Player Access' system worldclock setting is disabled."
+                }
             },
             "token": {
                 "title": "Token HUD",
@@ -298,6 +314,7 @@
                     "available": "Not Currently Available",
                     "broken": "Orphan Spell",
                     "charges": "No Charges Left",
+                    "combat": "Not In Combat",
                     "dropped": "Item Not Carried",
                     "equip": "Not Equipped",
                     "expended": "Expended Spell",
