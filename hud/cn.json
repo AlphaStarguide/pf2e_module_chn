@@ -63,13 +63,15 @@
                     "title": "复制用户快捷栏",
                     "hint": "选择一位用户，复制他的快捷栏设置。",
                     "none": "该角色没有其他拥有者。",
-                    "yes": "复制"
+                    "yes": "复制",
+                    "label": "权限为拥有的用户"
                 },
                 "fill": {
                     "title": "自动填充快捷栏",
                     "content": "你确定你要自动填充快捷栏吗？",
                     "yes": "自动填充"
-                }
+                },
+                "tab": "更改快捷栏设置"
             }
         },
         "rightClick": "[右键点击]",
@@ -136,7 +138,8 @@
                     }
                 },
                 "autoFill": {
-                    "name": "自动填充NPC"
+                    "name": "自动填充NPC",
+                    "hint": "若你未做任何手动更改，将自动填充快捷栏位。"
                 }
             },
             "enabled": {
@@ -191,7 +194,7 @@
             "sidebar": {
                 "filter": {
                     "name": "应用侧边栏过滤",
-                    "hint": "允许对侧边栏内容进行筛选。"
+                    "hint": "允许对侧边栏内容进行过滤。"
                 }
             }
         },
@@ -317,13 +320,24 @@
             },
             "tooltip": {
                 "click": {
-                    "control": "[Ctrl+右键点击] 物品弹窗"
+                    "control": "[Ctrl+右键点击]",
+                    "middle": "[鼠标中键] 移除快捷栏选项",
+                    "popup": "快捷栏弹窗"
                 },
                 "reason": {
                     "dropped": "未携带该物品",
                     "uses": "无可用物品剩余",
-                    "quantity": "物品数为零",
-                    "match": "该物品不匹配"
+                    "quantity": "物品数量为零",
+                    "match": "未找到可匹配物品",
+                    "available": "当前不可用",
+                    "equip": "未装备该物品",
+                    "focus": "聚能点已耗尽",
+                    "prepared": "该法术未准备",
+                    "rank": "无法以此环级施法",
+                    "broken": "该法术进程无响应",
+                    "charges": "充能已耗尽",
+                    "expended": "法术已消耗",
+                    "vessel": "非主要容器"
                 },
                 "active": "激活",
                 "altUse": {
@@ -331,12 +345,26 @@
                     "skillAction": "变体菜单",
                     "strike": "打击窗口",
                     "toggle": "选择子选项"
-                }
+                },
+                "disabled": "禁用",
+                "enabled": "启用",
+                "subtitle": {
+                    "blast": "元素冲击",
+                    "extraAction": "额外动作",
+                    "macro": "自动执行宏",
+                    "spell": "施法",
+                    "strike": "打击攻击",
+                    "toggle": "掷骰选项"
+                },
+                "inactive": "未激活"
             },
             "blast": {
                 "cost": {
                     "label": "元素冲击消耗"
                 }
+            },
+            "use": {
+                "toggle": "此开关始终处于启用状态"
             }
         },
         "edit-shortcut": {
