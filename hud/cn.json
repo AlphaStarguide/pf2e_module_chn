@@ -137,6 +137,12 @@
             },
             "dice": {
                 "title": "骰子面板"
+            },
+            "foundrySidebar": {
+                "expand": {
+                    "name": "加载时自动展开",
+                    "hint": "强制foundry侧边栏在页面加载时展开。"
+                }
             }
         },
         "dialogs": {
