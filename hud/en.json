@@ -12,6 +12,12 @@
                     "name": "Use Sidebar Filter",
                     "hint": "Allow filtering the current sidebar content."
                 }
+            },
+            "tracker": {
+                "alternate": {
+                    "name": "Alternate Controls",
+                    "hint": "Toggle the combat tracker controls to show additional options."
+                }
             }
         },
         "settings": {
@@ -58,11 +64,19 @@
                     "name": "Auto-Fill NPCs",
                     "hint": "If you haven't made any manual changes, the shortcut slots will automatically be filled."
                 },
-                "mode": {
+                "display": {
+                    "name": "Display Position",
+                    "hint": "Where should the hud be displayed in the  UI.",
+                    "choices": {
+                        "disabled": "Disabled",
+                        "left": "Left Part",
+                        "middle": "Middle Part"
+                    }
+                },
+                "selection": {
                     "name": "Selection Mode",
                     "hint": "Mode of selection for the persistent actor.",
                     "choices": {
-                        "disabled": "Disabled",
                         "manual": "Manual Selection",
                         "select": "On Token Selection",
                         "combat": "Current Combatant"
@@ -115,6 +129,21 @@
                     "name": "Display Health Status",
                     "hint": "Should health state be displayed on the tooltip if enabled in you world."
                 }
+            },
+            "tracker": {
+                "title": "Combat Tracker",
+                "partyAsObserved": {
+                    "name": "Party Alliance as Observed",
+                    "hint": "Consider actors in the 'Party' alliance to be observed by players for the sake of showing health details. Not to be confused with the 'Party' actor."
+                },
+                "started": {
+                    "name": "Only When Started",
+                    "hint": "The tracker will only show up for players if the combat has actually started (on top of needing a combatant participating)."
+                },
+                "textureScaling": {
+                    "name": "Texture Scaling",
+                    "hint": "Invert scales the combatant's image based on the token texture scaling."
+                }
             }
         },
         "actions": {
@@ -123,23 +152,6 @@
                 "drive1": "Drive <span class=\"action-glyph\">1</span>",
                 "drive2": "Drive <span class=\"action-glyph\">2</span>",
                 "drive3": "Drive <span class=\"action-glyph\">3</span>"
-            },
-            "recall-knowledge": {
-                "result": "Result",
-                "modifier": "Mod.",
-                "target": "Target",
-                "first": "1st",
-                "second": "2nd",
-                "third": "3rd",
-                "fourth": "4th",
-                "fifth": "5th",
-                "sixth": "6th",
-                "dc": "DC",
-                "unspecific": "Unspecific",
-                "specific": "Specific",
-                "skill": "Skill",
-                "lore": "Lore Skill",
-                "proficiency": "Proficiency"
             }
         },
         "actor-hud": {
@@ -387,6 +399,19 @@
                 "meter": "m",
                 "square": "sq."
             }
+        },
+        "tracker": {
+            "award": "Award: {xp} XP",
+            "collapsed": "Collapsed, click to expand",
+            "delay": "Delay Turn",
+            "expanded": "Expanded, click to collapse",
+            "fake": {
+                "nothing": "Encounter Not Started",
+                "secret": "Something Secret is Happening"
+            },
+            "force-turn": "Force Combat Turn",
+            "join": "Join Turn",
+            "unknown": "Unknown"
         },
         "use-resolve": {
             "full": "{name} is full of stamina and doesn't need to rest.",
