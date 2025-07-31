@@ -113,6 +113,24 @@
                 "autoFill": {
                     "name": "自动填充NPC",
                     "hint": "若你未做任何手动更改，将自动填充快捷栏位。"
+                },
+                "display": {
+                    "name": "显示位置",
+                    "hint": "HUD要在UI的哪一侧显示。",
+                    "choices": {
+                        "disabled": "禁用",
+                        "left": "左侧",
+                        "middle": "中间"
+                    }
+                },
+                "selection": {
+                    "name": "选择模式",
+                    "hint": "选择受控角色的选取模式。",
+                    "choices": {
+                        "manual": "手动选择",
+                        "combat": "当前回合的参战者",
+                        "select": "所选择的指示物"
+                    }
                 }
             },
             "enabled": {
@@ -141,8 +159,30 @@
             "foundrySidebar": {
                 "expand": {
                     "name": "加载时自动展开",
-                    "hint": "强制foundry侧边栏在页面加载时展开。"
+                    "hint": "强制foundry侧边栏在页面加载完成时展开。"
+                },
+                "title": "Foundry侧边栏"
+            },
+            "time": {
+                "title": "时间追踪",
+                "enabled": {
+                    "hint": "在您的客户端启用此HUD元素。当系统设置中世界时钟的“玩家访问权”被禁用时，该设置将被覆盖。"
                 }
+            },
+            "tracker": {
+                "partyAsObserved": {
+                    "name": "队伍盟友可见",
+                    "hint": "将“队伍”中的盟友角色对玩家可见，以显示其健康状况。注意，不要与“队伍”角色混淆。"
+                },
+                "started": {
+                    "name": "仅在战斗开始时",
+                    "hint": "只有在战斗实际开始（且有参战者参与时），战斗追踪板才会显示给玩家。"
+                },
+                "textureScaling": {
+                    "name": "尺寸缩放",
+                    "hint": "基于指示物尺寸缩放对参战者画像进行缩放。"
+                },
+                "title": "战斗追踪板"
             }
         },
         "dialogs": {
@@ -177,6 +217,12 @@
                 "filter": {
                     "name": "应用侧边栏过滤",
                     "hint": "允许对侧边栏内容进行过滤。"
+                }
+            },
+            "tracker": {
+                "alternate": {
+                    "hint": "切换战斗追踪板的控键显示额外选项。",
+                    "name": "切换控键"
                 }
             }
         },
@@ -319,7 +365,9 @@
                     "broken": "该法术进程无响应",
                     "charges": "充能已耗尽",
                     "expended": "法术已消耗",
-                    "vessel": "非主要容器"
+                    "vessel": "非主要容器",
+                    "combat": "未进入战斗",
+                    "macro": "未找到可匹配的宏"
                 },
                 "active": "激活",
                 "altUse": {
@@ -358,6 +406,19 @@
             "shortcut": {
                 "config": "自定义快捷栏"
             }
+        },
+        "tracker": {
+            "award": "奖励：{xp} XP",
+            "collapsed": "已折叠，点击展开",
+            "delay": "延迟回合",
+            "expanded": "已展开，点击折叠",
+            "fake": {
+                "nothing": "战斗遭遇未开始",
+                "secret": "正有隐秘之事悄然发生"
+            },
+            "join": "加入回合",
+            "unknown": "未知",
+            "force-turn": "强制移动战斗回合至此"
         }
     }
 }
