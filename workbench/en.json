@@ -77,7 +77,7 @@
           "Demoralize": "Demoralize",
           "DisableDevice": "Disable Device",
           "Disarm": "Disarm",
-          "Escape": "Escape - highest (??)",
+          "Escape": "Escape",
           "Feint": "Feint",
           "FollowTheExpertToggle": "Follow the Expert (toggle)",
           "ForceOpen": "Force Open",
@@ -318,8 +318,7 @@
         "no": "No",
         "anySpell": "For any non-attack spell",
         "saveSpell": "For a non-attack save spell",
-        "nonSaveSpell": "For a non-attack non-save spell",
-        "allSpells": "For all spells"
+        "nonSaveSpell": "For a non-attack non-save spell"
       },
       "autoRollDamageForStrike": {
         "hint": "Client setting to autoroll damage for strikes that hit. Note that critical hits roll critical damage.",
@@ -329,10 +328,6 @@
       "autoRollDamageNotifyOnSpellCardNotFound": {
         "hint": "Client setting to notify when a spell attack is rolled and no spell card was found to roll damage for.",
         "name": "Notify when a spell attack is rolled and no spell card was found."
-      },
-      "callHotbarMacro": {
-        "hint": "Call hotbar macro on page {page} position {column}",
-        "name": "Call hotbar macro on page {page} position {column}"
       },
       "handleDyingRecoveryRollAllow": {
         "all": "All",
@@ -432,10 +427,6 @@
       "customPauseText": {
         "hint": "Custom text to use for the pause text. Leave empty to use the default 'Game Paused'.",
         "name": "Custom text to use for the pause text."
-      },
-      "customPauseRelocation": {
-        "hint": "Put the pause image in the middle of the screen, with the text above it.",
-        "name": "Center pause image with text above it."
       },
       "decreaseFrightenedConditionEachTurn": {
         "hint": "Client setting to automatically decrease the frightened condition each turn for characters, npcs and familiars.",
@@ -747,7 +738,7 @@
         "name": "Enable to alter token movement animation."
       },
       "tokenAnimationSpeed": {
-        "hint": "Change to alter token movement animation speed.",
+        "hint": "Change to alter token movement animation speed (default is 6).",
         "name": "Change to alter token movement animation speed."
       },
       "workbenchVersion": {
