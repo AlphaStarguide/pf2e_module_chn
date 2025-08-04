@@ -387,7 +387,7 @@
                 "name": "启用以更改指示物移动动画。"
             },
             "tokenAnimationSpeed": {
-                "hint": "更改此项，调整指示物移动动画速度。",
+                "hint": "更改此项，调整指示物移动动画速度（默认为6）。",
                 "name": "更改此项，调整指示物移动动画速度。"
             },
             "autoCollapseItemActionChatCardContent": {
@@ -702,7 +702,7 @@
                     "CreateForgery": "伪造文书",
                     "AdministerFirstAidStabilize": "进行急救—稳定伤势",
                     "AdministerFirstAidStopBleeding": "进行急救—止血",
-                    "Escape": "逃脱—最高加值（??）",
+                    "Escape": "逃脱",
                     "AidASE": "协助（ASE宏）",
                     "AidPF2eMacros": "协助（PF2e宏）",
                     "CreateADiversionDistractingWords": "分神—分心话语",
