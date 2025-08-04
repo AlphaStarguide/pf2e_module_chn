@@ -233,8 +233,7 @@
                 "nonSaveSpell": "所有非攻击非豁免法术",
                 "saveSpell": "所有非攻击的豁免法术",
                 "no": "否",
-                "anySpell": "所有非攻击法术",
-                "allSpells": "所有法术"
+                "anySpell": "所有非攻击法术"
             },
             "autoRollDamageForStrike": {
                 "hint": "客户端设置打击命中时是否自动掷伤害骰。注意，重击时会骰重击的伤害骰。",
@@ -244,10 +243,6 @@
             "autoRollDamageNotifyOnSpellCardNotFound": {
                 "name": "当法术攻击检定后但无法找到法术卡时通知我。",
                 "hint": "客户端设置当进行了法术攻击检定但无法找到可掷伤害骰的法术卡时如何通知。"
-            },
-            "callHotbarMacro": {
-                "hint": "呼出快捷键页码{page}上第{column}个宏",
-                "name": "呼出快捷键页码{page}上第{column}个宏"
             },
             "castPrivateSpell": {
                 "hint": "勾选此项后，使用Ctrl+单击施法时会私聊施法者和GM法术信息。",
@@ -371,10 +366,6 @@
             "npcMystifierUseEliteWeak": {
                 "name": "使用精英/弱化状态",
                 "hint": "勾选此项，神秘化名称使用精英/弱化。"
-            },
-            "customPauseRelocation": {
-                "hint": "将暂停图标放置在屏幕正中央，提示信息放在图标上方。",
-                "name": "将暂停图标放置在屏幕中央，提示信息放在图标上方。"
             },
             "reminderCannotAttack": {
                 "dead": "已死亡",
