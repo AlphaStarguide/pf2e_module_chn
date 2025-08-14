@@ -232,7 +232,12 @@
                     "reload": "装填",
                     "reloadMagazine": "装填弹匣",
                     "nextChamber": "下一个弹仓",
-                    "unload": "卸载"
+                    "unload": "卸载",
+                    "clearJam": "清理卡弹"
+                },
+                "clearJam": {
+                    "warningNoJammedWeapons": "{actor}未持有卡弹的武器。",
+                    "clearJamMessage": "{actor}清理了{weapon}内的卡弹。"
                 }
             },
             "itemSelect": {
@@ -264,6 +269,9 @@
                         "doNotShow": "确认（不显示信息）"
                     }
                 }
+            },
+            "jammed": {
+                "weaponJammed": "{weapon}已卡弹。"
             }
         },
         "utils": {
@@ -309,6 +317,10 @@
                 "alchemicalShot": "炼金射击",
                 "warningNoAlchemicalBombs": "{actor}没有炼金炸弹。",
                 "pourBombIntoWeapon": "{actor}将{bomb}的成分混合进{weapon}中。"
+            },
+            "riskyReload": {
+                "warningNotWieldingProperWeapon": "{actor}并未持用一把火器。",
+                "weaponJammed": "危险装填且打击失败后，{actor}的武器已哑火卡弹！"
             }
         },
         "linkCompanion": {
@@ -325,6 +337,11 @@
                         "enemyDC": "敌人AC",
                         "name": "空枪嘲弄DC",
                         "hint": "使用空枪嘲弄动作时需要掷骰对抗的DC。标准的协助DC在重制前是20，在重制后是15，尽管某一流行房规使用的是敌人的AC。"
+                    },
+                    "description": "控制模组如何处理空枪嘲弄自动化。",
+                    "fireWeapon": {
+                        "hint": "是否在使用空枪嘲弄时让武器开火，PFS规则明确规定你不能这么做。",
+                        "name": "空枪武器开火"
                     }
                 },
                 "name": "空枪嘲弄",
@@ -341,6 +358,13 @@
         "dialog": {
             "button": {
                 "cancel": "取消"
+            }
+        },
+        "weaponSystem": {
+            "carried": {
+                "worn": "穿戴",
+                "stowed": "存放",
+                "equipped": "装备"
             }
         }
     }
