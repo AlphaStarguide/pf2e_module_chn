@@ -161,8 +161,8 @@
                     "setAsAmmunition": "Set as ammunition"
                 }
             },
-            "itemSelect": {
-                "options": "Options"
+            "jammed": {
+                "weaponJammed": "{weapon} is jammed."
             },
             "check": {
                 "weaponNotLoaded": "{weapon} is not loaded.",
@@ -206,7 +206,12 @@
                     "reload": "Reload",
                     "unload": "Unload",
                     "reloadMagazine": "Reload Magazine",
-                    "nextChamber": "Next Chamber"
+                    "nextChamber": "Next Chamber",
+                    "clearJam": "Clear Jam"
+                },
+                "clearJam": {
+                    "warningNoJammedWeapons": "{actor} has no jammed weapons.",
+                    "clearJamMessage": "{actor} clears the jam on their {weapon}."
                 },
                 "conjureBullet": {
                     "conjuredRound": "Conjured Round",
@@ -267,6 +272,13 @@
                 }
             }
         },
+        "weaponSystem": {
+            "carried": {
+                "equipped": "Equipped",
+                "worn": "Worn",
+                "stowed": "Stowed"
+            }
+        },
         "utils": {
             "singleCharacterSelected": "You must have a single character selected.",
             "warningDialog1": "You cannot perform this action because:",
@@ -308,15 +320,24 @@
                 "warningNoAlchemicalBombs": "{actor} has no alchemical bombs.",
                 "pourBombIntoWeapon": "{actor} pours the contents of {bomb} into their {weapon}.",
                 "alchemicalShot": "Alchemical Shot"
+            },
+            "riskyReload": {
+                "warningNotWieldingProperWeapon": "{actor} is not wielding a firearm.",
+                "weaponJammed": "{actor}'s weapon has jammed after their Risky Reload Strike failed!"
             }
         },
         "feat": {
             "fakeOut": {
                 "config": {
+                    "description": "Controls how the module handles Fake Out automation.",
                     "dc": {
                         "name": "Fake Out DC",
                         "hint": "When using the Fake Out action, the DC to roll against. The standard Aid DC was 20 before the remaster, and is 15 after the remaster, although a popular house-rule is to use the enemy's AC.",
                         "enemyDC": "Enemy AC"
+                    },
+                    "fireWeapon": {
+                        "name": "Fire Weapon",
+                        "hint": "Whether to actually fire the weapon when using Fake Out. Pathfinder Society rules specify that you do not."
                     }
                 },
                 "name": "Fake Out",
