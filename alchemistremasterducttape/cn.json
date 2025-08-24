@@ -188,6 +188,8 @@
         "GM_ONLY": "仅限GM。",
         "INDEX_CLEAR_PROMPT_TITLE": "清除炼金索引？",
         "INDEX_CLEAR_PROMPT_BODY": "这将删除该世界的炼金物品索引缓存。\n\n下一次加载世界或运行重建时，系统将提示您重建索引。\n\n是否继续？",
-        "INDEX_CLEAR_FAILED": "清除炼金索引失败。"
+        "INDEX_CLEAR_FAILED": "清除炼金索引失败。",
+        "INDEX_PROGRESS_TITLE": "为炼金物品建立索引中…",
+        "INDEX_PROGRESS_HINT": "你可以关闭此窗口，索引进程将继续运行。"
     }
 }
