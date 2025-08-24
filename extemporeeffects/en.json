@@ -46,6 +46,9 @@
       "notifications-pause-for-expired-effects": {
         "name": "Pause clock advancement to first expired effect",
         "hint": "Only advance the clock to the first expired effect notification and display a dialog to continue or cancel the advancement of the clock."
+      },
+      "short-stage-badge": {
+        "name": "Shorten \"Stage 2\" to e.g. \"[2/6]\" in effect badges"
       }
     },
     "errorMultipleTokensCustomEffect": "You need to have one token selected to apply a custom new effect.",
@@ -77,6 +80,17 @@
       "days": "days",
       "week": "week",
       "weeks": "weeks"
+    },
+    "durationTextPatterns": {
+      "sustained_ifExact": "sustained",
+      "unlimited_ifExact": "unlimited",
+      "unlimited2_ifExact": "varies",
+      "encounter_ifExact": "until encounter ends",
+      "encounter_ifIncludes": " or more",
+      "1round_ifExact": "until the start of your next turn",
+      "1round_ifIncludes": "for 1 round",
+      "2rounds_ifIncludes": "next turn",
+      "1day_ifIncludes": "daily preparation"
     }
   }
 }
