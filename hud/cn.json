@@ -143,7 +143,7 @@
             },
             "enabled": {
                 "name": "启用",
-                "hint": "在客户端启用HUD元素。"
+                "hint": "在客户端启用该HUD元素。"
             },
             "global": {
                 "highestSpeed": {
