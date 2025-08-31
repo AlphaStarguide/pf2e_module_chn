@@ -190,6 +190,13 @@
         "INDEX_CLEAR_PROMPT_BODY": "这将删除该世界的炼金物品索引缓存。\n\n下一次加载世界或运行重建时，系统将提示您重建索引。\n\n是否继续？",
         "INDEX_CLEAR_FAILED": "清除炼金索引失败。",
         "INDEX_PROGRESS_TITLE": "为炼金物品建立索引中…",
-        "INDEX_PROGRESS_HINT": "你可以关闭此窗口，索引进程将继续运行。"
+        "INDEX_PROGRESS_HINT": "你可以关闭此窗口，索引进程将继续运行。",
+        "VERSATILE_VIALS": "万用制剂",
+        "FIELDVIAL_LBL": "毒理学家课题制剂（毒素）",
+        "ADVFIELDVIAL_LBL": "毒理学家进阶制剂（毒素）",
+        "CHOOSE_WEAPON": "选择一件武器施加毒素",
+        "UNSTABLE_CONCOCTION_BTN": "不稳定调和",
+        "UNSTABLE_CONCOCTION_TITLE": "不稳定调和 Unstable Concoction",
+        "SELECT_FROM_INVENTORY": "从库存中选择"
     }
 }
