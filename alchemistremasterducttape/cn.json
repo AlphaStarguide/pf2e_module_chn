@@ -200,7 +200,7 @@
         "SELECT_FROM_INVENTORY": "从库存中选择",
         "NOTIF_SELECT_WEAPON_FOR_POISON": "选择一件武器涂抹万用制剂（毒理学家）毒素，然后进行打击。",
         "UNSTABLE_CONCOCTION_DESC": "将该炼金消耗品的初始骰面增大一级。当该物品被启动时，需通过一次DC 10的纯骰检定，否则将受到与该物品等级相等的酸蚀伤害。",
-        "UNSTABLE_NOTE": "<strong>不稳定：</strong> 初始效果骰面增大一级。启动时需通过DC 10纯骰检定，否则受到等于物品等级的酸蚀伤害。",
+        "UNSTABLE_NOTE": "<strong>不稳定：</strong> 初始效果骰面增大一级。启动时需通过{check}，否则受到{dmg}点酸蚀伤害",
         "UNSTABLE_CONCOCTION_SELECT_ITEM": "选择所要调和的物品：",
         "UNSTABLE_ACID_DMG": "{itemName}的不稳定反应：{amount}点酸蚀伤害（纯骰检定失败）。",
         "ADV_PERSIST_LABEL": "毒理学家进阶制剂（持续毒素）"
