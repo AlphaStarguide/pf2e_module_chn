@@ -12,7 +12,7 @@
         },
         "settings": {
             "addedHighlight": {
-                "hint": "由本模组添加的临时“物品”会在角色卡与魔宠卡高亮现实。",
+                "hint": "由本模组添加的临时“物品”会在角色卡与魔宠卡高亮显示。",
                 "name": "高亮新增物品"
             },
             "partyMembers": {
@@ -168,7 +168,7 @@
             }
         },
         "error": {
-            "unexpected": "模组<strong>PF2e Dailies</strong>出现意外错误，详情查看控制台（F12）。",
+            "unexpected": "模组<strong>PF2e Dailies</strong>出现意外错误，详情请查看控制台（F12）。",
             "incompatible": "存在一些自定义的每日准备项不兼容当前版本的<strong>PF2e Dailies</strong>。"
         },
         "label": {
