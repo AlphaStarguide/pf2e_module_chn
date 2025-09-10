@@ -6,7 +6,8 @@
                 "drive2": "驱动 <span class=\"action-glyph\">2</span>",
                 "drive1": "驱动 <span class=\"action-glyph\">1</span>",
                 "drive3": "驱动 <span class=\"action-glyph\">3</span>"
-            }
+            },
+            "operateDevice": "启动装置 Operate Device"
         },
         "tooltip": {
             "distance": {
@@ -25,7 +26,8 @@
                 "setActor": {
                     "set": "设置选中指示物为受控角色",
                     "unset": "解绑受控角色"
-                }
+                },
+                "pin": "选择指示物固定"
             },
             "error": {
                 "selectOne": "选择一个NPC/角色指示物以设置你的受控角色。"
@@ -59,10 +61,22 @@
             "ownedActor": {
                 "drag": {
                     "exist": "该场景已存在此角色的指示物。"
-                }
+                },
+                "unpin": "取消固定角色"
             },
             "pan": {
                 "none": "该角色在当前场景中没有任何可活动指示物。"
+            },
+            "patch": {
+                "check-prompt": "生成检定提示",
+                "gm-screen": "打开GM帷幕",
+                "group-perception": "骰掷团体察觉检定",
+                "select-all": "选择玩家指示物",
+                "set-journal": "选择日志入口",
+                "travel-sheet": "计算旅行时间",
+                "identify-menu": "打开鉴定目录",
+                "browser": "打开合集包浏览器",
+                "random-pick": "随机选取目标"
             }
         },
         "rightClick": "[右键点击]",
@@ -113,6 +127,15 @@
                     },
                     "name": "显示模式",
                     "hint": "选择指示物HUD的显示模式。"
+                },
+                "activation": {
+                    "choices": {
+                        "disabled": "禁用",
+                        "first": "单击激活",
+                        "second": "双击激活"
+                    },
+                    "hint": "选择激活指示物HUD的模式。",
+                    "name": "激活模式"
                 }
             },
             "persistent": {
@@ -428,6 +451,26 @@
             "join": "加入回合",
             "unknown": "未知",
             "force-turn": "强制移动战斗回合至此"
+        },
+        "set-journal": {
+            "uuid": {
+                "label": "日志 UUID"
+            },
+            "world": {
+                "label": "本世界日志"
+            },
+            "yes": "设置该日志"
+        },
+        "no-selection": "你需要选择至少一个有效生物。",
+        "group-perception": {
+            "search": "积极搜寻中",
+            "title": "团体察觉检定"
+        },
+        "random-pick": {
+            "title": "点兵点将，点到谁就选谁"
+        },
+        "pin-token": {
+            "notify": "选择要固定在队列中的指示物。"
         }
     }
 }
