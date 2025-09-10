@@ -89,16 +89,24 @@
             "time": {
                 "title": "Time Tracker",
                 "enabled": {
-                    "hint": "Enables this HUD element on your client. This is overriden when the 'Player Access' system worldclock setting is disabled."
+                    "hint": "Enables this HUD element on your client. This is overridden when the 'Player Access' system worldclock setting is disabled."
                 }
             },
             "token": {
                 "title": "Token HUD",
+                "activation": {
+                    "name": "Activation Mode",
+                    "hint": "Select the mode to activate the to token HUD.",
+                    "choices": {
+                        "disabled": "Disabled",
+                        "first": "On First Click",
+                        "second": "On Second Click"
+                    }
+                },
                 "mode": {
                     "name": "Display Mode",
                     "hint": "Select the mode of display of the token HUD.",
                     "choices": {
-                        "disabled": "Disabled",
                         "exploded": "Exploded",
                         "left": "Grouped (Left)",
                         "right": "Grouped (Right)"
@@ -152,7 +160,8 @@
                 "drive1": "Drive <span class=\"action-glyph\">1</span>",
                 "drive2": "Drive <span class=\"action-glyph\">2</span>",
                 "drive3": "Drive <span class=\"action-glyph\">3</span>"
-            }
+            },
+            "operateDevice": "Operate Device"
         },
         "actor-hud": {
             "alliance": "Alliance: {value}",
@@ -202,6 +211,10 @@
             "name": "Shortcut Name",
             "yes": "Save"
         },
+        "group-perception": {
+            "title": "Group Perception Checks",
+            "search": "Is Actively Searching"
+        },
         "health-status": {
             "title": "Health Status",
             "enabled": "Enabled",
@@ -222,6 +235,7 @@
             "default": "Dead, At Death's Door, Not Feeling Good, Seen Better Days, Barely Hurt, Perfectly Fine"
         },
         "leftClick": "[Left-Click]",
+        "no-selection": "You need to select at least one valid creature.",
         "persistent": {
             "effects": {
                 "shift": "Shift",
@@ -236,6 +250,7 @@
                     "hover": "Only show UI when hovering the portrait"
                 },
                 "editAvatar": "Edit Avatar",
+                "pin": "Pin Token",
                 "setActor": {
                     "set": "Set selected token as persistent actor",
                     "unset": "Unset persistent actor"
@@ -244,10 +259,22 @@
             "ownedActor": {
                 "drag": {
                     "exist": "This scene already contains a token for this actor."
-                }
+                },
+                "unpin": "Unpin Actor"
             },
             "pan": {
                 "none": "This actor doesn't have any active token on the current scene."
+            },
+            "patch": {
+                "browser": "Open Compendium Browser",
+                "check-prompt": "Generate Check Prompt",
+                "gm-screen": "Open GM-Screen",
+                "group-perception": "Roll Group Perception",
+                "identify-menu": "Open Identify Menu",
+                "random-pick": "Pick Random Target",
+                "select-all": "Select Player Tokens",
+                "set-journal": "Select Journal Entry",
+                "travel-sheet": "Calculate Travel Duration"
             },
             "shortcuts": {
                 "clear": {
@@ -272,10 +299,16 @@
                 "tab": "Change Shortcuts Set"
             }
         },
+        "pin-token": {
+            "notify": "Select a token to pin as favorite."
+        },
         "popup": {
             "shortcut": {
                 "config": "Customize Shortcut"
             }
+        },
+        "random-pick": {
+            "title": "Eeny, meeny, miny, moe"
         },
         "recall-knowledge": {
             "result": "Result",
@@ -295,6 +328,15 @@
             "proficiency": "Proficiency"
         },
         "rightClick": "[Right-Click]",
+        "set-journal": {
+            "uuid": {
+                "label": "Journal UUID"
+            },
+            "world": {
+                "label": "World Journal"
+            },
+            "yes": "Set Journal"
+        },
         "shortcuts": {
             "blast": {
                 "cost": {
