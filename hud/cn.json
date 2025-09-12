@@ -7,7 +7,7 @@
                 "drive1": "驱动 <span class=\"action-glyph\">1</span>",
                 "drive3": "驱动 <span class=\"action-glyph\">3</span>"
             },
-            "operateDevice": "启动装置 Operate Device"
+            "operateDevice": "操作设备 Operate Device"
         },
         "tooltip": {
             "distance": {
