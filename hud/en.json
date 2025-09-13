@@ -40,6 +40,10 @@
                 "expand": {
                     "name": "Auto Expand on Load",
                     "hint": "Force the foundry sidebar to expand on page load."
+                },
+                "noRollMode": {
+                    "name": "Hide Roll Modes",
+                    "hint": "Roll mode buttons will be removed from the chat."
                 }
             },
             "global": {
@@ -81,6 +85,10 @@
                         "select": "On Token Selection",
                         "combat": "Current Combatant"
                     }
+                },
+                "shiftEffect": {
+                    "name": "Hold Shift for Effects",
+                    "hint": "When enabled, you need to hold the 'shift' key to interact with the hud effect icons."
                 }
             },
             "sidebar": {
@@ -250,7 +258,7 @@
                     "hover": "Only show UI when hovering the portrait"
                 },
                 "editAvatar": "Edit Avatar",
-                "pin": "Pin Token",
+                "pin": "Pin Actor",
                 "setActor": {
                     "set": "Set selected token as persistent actor",
                     "unset": "Unset persistent actor"
