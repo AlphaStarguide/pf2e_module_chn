@@ -509,14 +509,36 @@
                 "treasure": "到达该过滤项的宝物总是会以原价被收购"
             },
             "sheet": {
-                "filters": "设置筛选项"
+                "filters": "设置筛选项",
+                "browser": "从合集包浏览导入",
+                "infiniteAll": {
+                    "tooltip": "商人售卖的物品永远不会被卖空（这不会影响宝物或服务）",
+                    "label": "无限库存"
+                }
             },
             "serviceMenu": {
                 "delete": {
-                    "title": "删除服务"
+                    "title": "删除服务",
+                    "content": "你确定你要删除该服务？"
                 },
                 "enabled": "启用",
-                "export": "导出服务"
+                "export": "导出服务",
+                "buy": "<strong>{buyer}</strong>雇佣了<strong>{seller}</strong>的服务。",
+                "copied": "服务<strong>{label}</strong>已被复制到剪贴板。",
+                "error": "在尝试处理服务请求时出现错误",
+                "give": "<strong>{seller}</strong>免费向<strong>{buyer}</strong>提供服务。",
+                "macro": {
+                    "label": "在服务上执行的宏",
+                    "drop": "拖拽宏至此"
+                },
+                "name": "名称",
+                "noBuyer": "你必须选择一个你拥有的玩家角色/NPC/团队作为服务的对象。",
+                "noFunds": "<strong>{buyer}</strong>没有足够资金雇佣<strong>{seller}</strong>的服务。",
+                "none": "无法找到该服务",
+                "noStock": "<strong>{seller}</strong>不再提供该服务。",
+                "quantity": "负数表示无限库存",
+                "tags": "服务特征",
+                "title": "服务 - {label}"
             },
             "browserFilter": {
                 "create": "创建筛选项",
@@ -533,7 +555,22 @@
                 "edit": "编辑服务",
                 "export": "导出服务",
                 "import": "导入服务",
-                "label": "服务"
+                "label": "服务",
+                "buy": "请求服务",
+                "add": "创建服务",
+                "copied": "<strong>{name}</strong>服务已被复制到剪贴板。",
+                "enabled": "开启/关闭服务",
+                "free": "免费",
+                "give": "免费服务"
+            },
+            "service": {
+                "unwilling": "<strong>{seller}</strong>不愿意再提供该服务。",
+                "buy": "<strong>{buyer}</strong>雇佣了<strong>{seller}</strong>的服务。",
+                "error": "在尝试处理更优质的商人的服务（{service}）时出现错误：<strong>{reason}</strong>。",
+                "give": "<strong>{seller}</strong>免费向<strong>{buyer}</strong>提供服务。",
+                "noBuyer": "你必须选择一个你拥有的玩家角色/NPC/团队作为服务的对象。",
+                "noFunds": "<strong>{buyer}</strong>没有足够资金雇佣<strong>{seller}</strong>的服务。",
+                "noStock": "<strong>{seller}</strong>不再提供该服务。"
             }
         },
         "rollTracker": {
@@ -588,7 +625,7 @@
                 "info": {
                     "session": {
                         "tooltip": "在当前团期结束前，不会有新的结果显示",
-                        "label": "当前正在团期"
+                        "label": "当前正在团期中"
                     },
                     "paused": {
                         "label": "记录已暂停",
@@ -616,8 +653,9 @@
             },
             "clear": {
                 "title": "清空记录",
-                "yes": "清空",
-                "no": "取消"
+                "yes": "清除",
+                "no": "取消",
+                "hint": "你要清除到该日期为止的记录吗？"
             }
         },
         "heroActions": {
@@ -645,7 +683,8 @@
                 },
                 "exchanged": "与{name}交易一个英雄动作",
                 "offer": "提供方：{link}",
-                "receive": "接收方：{link}"
+                "receive": "接收方：{link}",
+                "drawn": "已抽取（{nb}）英雄动作"
             },
             "removeActions": {
                 "all": "所有角色",
@@ -656,12 +695,27 @@
             },
             "sheet": {
                 "action": {
-                    "use": "使用"
+                    "use": "使用",
+                    "discard": "丢弃"
                 },
-                "label": "英雄动作"
+                "label": "英雄动作",
+                "draw": "抽取 {nb}",
+                "give": "授予",
+                "redraw": "重抽",
+                "trade": "交易"
             },
             "trade": {
                 "no": "取消"
+            },
+            "trigger": "触发"
+        },
+        "identify": {
+            "tracker": {
+                "send-to-chat": "发送至聊天",
+                "title": "物品鉴定追踪",
+                "save": {
+                    "label": "更新"
+                }
             }
         }
     },
