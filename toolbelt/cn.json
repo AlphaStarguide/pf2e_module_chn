@@ -241,7 +241,7 @@
             "heroActions": {
                 "enabled": {
                     "name": "启用",
-                    "hint": "是否在你的世界启用英雄点牌组动作。"
+                    "hint": "是否在你的世界启用英雄点卡牌动作。"
                 },
                 "private": {
                     "name": "私密抽取",
@@ -253,12 +253,12 @@
                 },
                 "trade": {
                     "name": "允许交易",
-                    "hint": "启用时，角色间允许彼此交易英雄点动作。"
+                    "hint": "启用时，角色间允许彼此交换英雄点动作。"
                 },
-                "title": "英雄动作 Hero Actions",
+                "title": "英雄动作",
                 "count": {
                     "hint": "若为0，则每个英雄点只能有一个英雄动作。否则，每次抽取的英雄动作数量将与英雄点的可用数量分离，角色必须从设置中重新抽取英雄动作。",
-                    "name": "抽取英雄动作设置"
+                    "name": "英雄动作上限设置"
                 }
             },
             "rollTracker": {
@@ -656,6 +656,16 @@
                 "yes": "清除",
                 "no": "取消",
                 "hint": "你要清除到该日期为止的记录吗？"
+            },
+            "confirm": {
+                "start": "新团期已在<strong>{time}</strong>开启。",
+                "end": "本次团期已在<strong>{time}</strong>结束。",
+                "pause": "掷骰记录已暂停。",
+                "play": "已继续记录掷骰。",
+                "delete": {
+                    "all": "记录已被清除。",
+                    "before": "<strong>{time}</strong>之前的记录已被清除。"
+                }
             }
         },
         "heroActions": {
@@ -663,17 +673,19 @@
                 "onlyCharacter": "英雄动作仅兼容玩家角色",
                 "noDetails": "找不到这个英雄动作的详细信息。",
                 "notEnoughPoint": "该角色没有足够的英雄点",
-                "mustDiscard": "角色必须放弃{nb}动作才能进行交易。",
-                "noOther": "没有其他拥有英雄动作的角色可以交易。",
+                "mustDiscard": "角色必须丢弃{nb}个动作才能进行交换。",
+                "noOther": "没有其他拥有英雄动作的角色可以进行交换。",
                 "noAction": "该角色不拥有任何英雄动作。",
                 "notGM": "你需要成为GM才能授予英雄动作。",
-                "tradeError": "尝试处理<strong>{sender}</strong>和<strong>{receiver}</strong>之间的交易时出现错误。"
+                "tradeError": "尝试处理<strong>{sender}</strong>和<strong>{receiver}</strong>之间的交换时出现错误。"
             },
             "giveActions": {
                 "no": "取消",
                 "title": "授予英雄动作",
                 "withMessage": "生成聊天信息",
-                "yes": "授予动作"
+                "yes": "授予动作",
+                "asDrawn": "授予时设置为抽取",
+                "drawn": "已抽取"
             },
             "message": {
                 "used": {
@@ -681,13 +693,15 @@
                     "mythicPoints": "神话点",
                     "message": "花费一点{type}使用"
                 },
-                "exchanged": "与{name}交易一个英雄动作",
-                "offer": "提供方：{link}",
-                "receive": "接收方：{link}",
-                "drawn": "已抽取（{nb}）英雄动作"
+                "exchanged": "与{name}交换一个英雄动作",
+                "offer": "给出：{link}",
+                "receive": "得到：{link}",
+                "drawn": "已抽取（{nb}）个英雄动作",
+                "given": "被授予（{nb}）个英雄动作",
+                "discarded": "已舍弃（{nb}）个英雄动作"
             },
             "removeActions": {
-                "all": "所有角色",
+                "all": "所有玩家角色",
                 "no": "取消",
                 "removed": "英雄动作已从选定角色中被移除。",
                 "title": "移除英雄动作",
@@ -702,21 +716,114 @@
                 "draw": "抽取 {nb}",
                 "give": "授予",
                 "redraw": "重抽",
-                "trade": "交易"
+                "trade": "交换"
             },
             "trade": {
-                "no": "取消"
+                "no": "取消",
+                "rejected": "<strong>{sender}</strong>与<strong>{receiver}</strong>之间的动作交换被拒绝了。",
+                "request": {
+                    "title": "英雄动作 - 交换请求",
+                    "flavor": "玩家角色<strong>{sender}</strong>想要与<strong>{receiver}</strong>进行交换",
+                    "give": "给出：{give}",
+                    "want": "想要：{want}",
+                    "yes": "同意",
+                    "no": "拒绝"
+                },
+                "select": "选择你要进行交换的玩家角色",
+                "title": "交换英雄动作",
+                "yes": "发送"
             },
-            "trigger": "触发"
+            "trigger": "触发",
+            "table": {
+                "noDraw": "无法为<strong>{name}</strong>从随机表中抽取英雄动作。",
+                "notFound": "该游戏世界无法找到英雄点卡牌表。",
+                "drawError": "在抽取英雄动作的时候出现错误，动作表中可能包含不符合规则的项目。",
+                "noFormulaCompendium": "英雄点卡牌表没有公式，并且是一个合集表。"
+            }
         },
         "identify": {
             "tracker": {
                 "send-to-chat": "发送至聊天",
                 "title": "物品鉴定追踪",
                 "save": {
-                    "label": "更新"
-                }
+                    "label": "更新结果",
+                    "tooltip": "更新当前修改并鉴定物品",
+                    "content": "保存当前修改并自动鉴定以下物品：<br><ul>{items}</ul>",
+                    "title": "更新修改"
+                },
+                "clock": {
+                    "open": "打开世界时钟菜单",
+                    "backward": "将时间往后拨10分钟",
+                    "forward": "将时间往前进10分钟"
+                },
+                "failed": {
+                    "daily": "今日未能鉴定出该物品",
+                    "delay": "未能鉴定出该物品：<br>还剩{hours}小时"
+                },
+                "auto": {
+                    "none": "这里没有能自动鉴定的物品",
+                    "title": "自动鉴定",
+                    "tooltip": "自动鉴定已知物品",
+                    "content": "鉴定团队成员已知的物品：<br><ul>{items}</ul>",
+                    "label": "自动鉴定"
+                },
+                "identified": "已鉴定",
+                "known": {
+                    "full": "已鉴定该物品",
+                    "partial": "已鉴定相似物品：<br>{item}",
+                    "recall": "是否花费一个回忆知识动作<br>并自动成功"
+                },
+                "reset": {
+                    "tooltip": "恢复当前修改",
+                    "label": "重置修改"
+                },
+                "misidentify": "未鉴定开关",
+                "request-checks": "请求检定"
+            },
+            "request": {
+                "hint": "请求为一件物品进行鉴定",
+                "proceed": "你要继续鉴定吗？",
+                "sent": "物品鉴定请求已经发送给GM。"
             }
+        },
+        "shareData": {
+            "config": {
+                "armorRunes": {
+                    "label": "护甲符文",
+                    "hint": "使用来源角色绑定的护甲/护腕的潜能符文与韧性符文。"
+                },
+                "health": {
+                    "label": "健康池",
+                    "hint": "与来源角色共享生命值与耐力值。"
+                },
+                "heroPoints": {
+                    "label": "英雄点",
+                    "hint": "使用来源角色的英雄点。"
+                },
+                "master": {
+                    "label": "来源角色",
+                    "hint": "选择一位要与本角色共享数据的来源角色。"
+                },
+                "skills": {
+                    "label": "技能熟练度",
+                    "hint": "使用来源角色的技能熟练度。"
+                },
+                "spellcasting": {
+                    "label": "施法",
+                    "hint": "使用来源角色的施法熟练度与聚能池。"
+                },
+                "timeEvents": {
+                    "hint": "每当来源角色的回合开始/结束或先攻变化时，相关事件也将令本角色触发。它还将使用来源角色来计算效果的剩余持续时间。",
+                    "label": "时点事件"
+                },
+                "title": "共享数据 - {name}",
+                "unable": "该角色无法作为来源角色被链接。",
+                "weaponRunes": {
+                    "label": "武器符文",
+                    "hint": "使用来源角色绑定的缠手带/武器的基础符文与性能符文。"
+                }
+            },
+            "share": "共享"
         }
     },
     "LEVIKTIMES": {
