@@ -75,6 +75,9 @@
                 "spell": {
                     "name": "匿名化NPC法术",
                     "hint": "由非玩家所有的角色释放的法术会对玩家匿名化。"
+                },
+                "action": {
+                    "name": "匿名化NPC动作"
                 }
             },
             "conditionManager": {
