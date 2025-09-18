@@ -58,8 +58,12 @@
             },
             "anonymous": {
                 "title": "Anonymous",
+                "action": {
+                    "name": "Anonymize NPC Actions",
+                    "hint": "Actions sent to chat by a non-player owned actor will be anonymized for players."
+                },
                 "spell": {
-                    "name": "Anonymize NPC spells",
+                    "name": "Anonymize NPC Spells",
                     "hint": "Spells casted by a non-player owned actor will be anonymized for players."
                 }
             },
@@ -67,19 +71,19 @@
                 "title": "Automatic Rune Progression",
                 "enabled": {
                     "name": "Enabled",
-                    "hint": "Should your world use the Automatic Rune Progression Variant."
+                    "hint": "Should your world use this Variant. It automatically updates weapons and armors giving them fundamental runes/improvements at the appropriate level."
                 },
                 "force": {
                     "name": "Force Update",
-                    "hint": "When enabled, the runes will always be updated based on actor level. When disabled only the runes that are currently at a lower value than what they should be for that level will be upgraded."
+                    "hint": "When enabled, the runes/grade will always be updated based on actor level. When disabled only the runes/grade that are currently at a lower value than what they should be for that level will be upgraded."
                 },
                 "price": {
-                    "name": "No Rune Price",
-                    "hint": "Should fundamental rune prices be subtracted from the weapon price."
+                    "name": "No Rune/Improvement Price",
+                    "hint": "Should fundamental rune/improvement prices be subtracted from the weapon price."
                 },
                 "shield": {
-                    "name": "Shield Rune",
-                    "hint": "Should reinforcing runes also be added to shields."
+                    "name": "Shield Rune/Improvement",
+                    "hint": "Should shields also be updated."
                 }
             },
             "betterEffectsPanel": {
@@ -98,6 +102,22 @@
                 "dropped": {
                     "name": "No Dropped Bulk",
                     "hint": "Dropped equipment in an actor's inventory won't be accounted for bulk value calculation."
+                },
+                "improvised": {
+                    "name": "Improvised Weapon Button",
+                    "hint": "Add a button in the inventory of character actors to create an improvised weapon on the fly."
+                },
+                "mergeItems": {
+                    "name": "Items Merging Button",
+                    "hint": "Add a merge button in the inventory tab to merging stacks of items."
+                },
+                "partyAsObserved": {
+                    "name": "Party Alliance as Observed",
+                    "hint": "Allow players to observe actor sheets while having the 'Limited' permission as long as they belong to the 'party' alliance. Not to be confused with the 'Party' actor."
+                },
+                "splitItem": {
+                    "name": "Allow Item Split",
+                    "hint": "Click on the item quantity number in an actor sheet to split it into multiple entries."
                 }
             },
             "betterMerchant": {
@@ -111,7 +131,7 @@
                 "title": "Better Movement",
                 "teleport": {
                     "name": "Teleport Tokens",
-                    "hint": "Clicking on the board while holding the defined keybind will instanlty teleport the selected tokens to location without any travel.",
+                    "hint": "Clicking on the board while holding the defined keybind will instantly teleport the selected tokens to location without any travel.",
                     "choices": {
                         "disabled": "Disabled",
                         "enabled": "Enabled",
@@ -121,6 +141,17 @@
                 "history": {
                     "name": "No History Record",
                     "hint": "Should movement history recording be prevented for you. This makes successive move actions in a same turn less confusing."
+                }
+            },
+            "betterSheet": {
+                "title": "Better Actor Sheet",
+                "partyAsObserved": {
+                    "name": "Party Alliance as Observed",
+                    "hint": "Allow players to observe actor sheets while having the 'Limited' permission as long as they belong to the 'party' alliance. Not to be confused with the 'Party' actor."
+                },
+                "scribble": {
+                    "name": "Handwritten Character Sheet",
+                    "hint": "A restyling of the character sheet to appear as it was written by hand."
                 }
             },
             "betterTemplate": {
@@ -155,6 +186,22 @@
                     "hint": "Should the dropped item emit light. It will only be the case if a single item is present in the loot actor."
                 }
             },
+            "giveth": {
+                "title": "Giveth",
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "Should your world allow your players actors to be able to give inventory items to other player-owned or party member actors."
+                },
+                "effect": {
+                    "name": "Include Effects/Conditions",
+                    "hint": "Should players also be able to drop effects & conditions onto actors they do not own.",
+                    "choices": {
+                        "disabled": "Disabled",
+                        "ally": "Allies Only",
+                        "all": "All Actors"
+                    }
+                }
+            },
             "heroActions": {
                 "title": "Hero Actions",
                 "count": {
@@ -167,7 +214,7 @@
                 },
                 "private": {
                     "name": "Private Draw",
-                    "hint": "When enabled, the chat message generated will be private to other players."
+                    "hint": "Make the message generated when drawing hero actions private instead. If enabled, trades will be blind to all participants."
                 },
                 "table": {
                     "name": "Table UUID",
@@ -182,7 +229,7 @@
                 "title": "Identify",
                 "delay": {
                     "name": "24 Hours Delay",
-                    "hint": "When enabled, a character will need to wait 24h after failling to identify an item before being able to make another attempt. Otherwise it will be reset on the next day date."
+                    "hint": "When enabled, a character will need to wait 24h after failing to identify an item before being able to make another attempt. Otherwise it will be reset on the next day date."
                 },
                 "enabled": {
                     "name": "Enabled",
@@ -208,27 +255,11 @@
                     "hint": "Adds a button to damage messages allowing them to be injected to a previous damage message."
                 }
             },
-            "giveth": {
-                "title": "Giveth",
-                "enabled": {
-                    "name": "Enabled",
-                    "hint": "Should your world allow your players actors to be able to give inventory items to other player-owned actors."
-                },
-                "effect": {
-                    "name": "Include Effects/Conditions",
-                    "hint": "Should players also be able to drop effects & conditions onto actors they do not own.",
-                    "choices": {
-                        "disabled": "Disabled",
-                        "ally": "Allies Only",
-                        "all": "All Actors"
-                    }
-                }
-            },
             "resourceTracker": {
                 "title": "Resource Tracker",
                 "enabled": {
                     "name": "Enabled",
-                    "hint": "Enabled this tool on your client. The tracker can be toggled on/off via controls on the left UI"
+                    "hint": "Enabled this tool in your world. The tracker can be toggled on/off via controls on the left UI."
                 }
             },
             "rollTracker": {
@@ -266,37 +297,41 @@
             },
             "underground": {
                 "title": "Underground",
+                "alpha": {
+                    "name": "Opacity",
+                    "hint": "Opacity value when the token has a negative elevation."
+                },
+                "contrast": {
+                    "name": "Contrast",
+                    "hint": "Contrast value when the token has a negative elevation."
+                },
                 "enabled": {
                     "name": "Enabled",
                     "hint": "Will allow tokens with negative elevation to remain visible on the board."
                 },
                 "mode": {
                     "name": "Applied Filter",
-                    "hint": "Which type of filter should be applied to tokens with an elevation below 0.",
+                    "hint": "Which type of filter should be applied to tokens with a negative elevation.",
                     "choices": {
                         "normal": "No Filter",
                         "greyscale": "Greyscale Filter",
                         "sepia": "Sepia Filter"
                     }
                 },
-                "contrast": {
-                    "name": "Contrast",
-                    "hint": "Contrast value when the token has a negative elevation."
-                },
-                "alpha": {
-                    "name": "Opacity",
-                    "hint": "Opacity value when the token has a negative elevation."
+                "tiles": {
+                    "name": "Background Tiles",
+                    "hint": "This will also make sure that tiles are drawn behind tokens with negative elevation. NOTE that this may conflict with other modules that also work with tiles."
                 }
             },
             "unided": {
                 "title": "Set Unidentified Image",
                 "create": {
                     "name": "On Item Creation",
-                    "hint": "Automatically set the un-identifed image of items to be the same as the regular image when the item is created/imported."
+                    "hint": "Automatically set the un-identified image of items to be the same as the regular image when the item is created/imported."
                 },
                 "update": {
                     "name": "On Item Update",
-                    "hint": "Automatically update the un-identifed image when the item's regular image is updated."
+                    "hint": "Automatically update the un-identified image when the item's regular image is updated."
                 }
             }
         },
@@ -318,9 +353,35 @@
             }
         },
         "anonymous": {
+            "action": {
+                "header": "Is using an ability..",
+                "context": "Reveal Action to Players"
+            },
             "spell": {
                 "header": "Is casting a spell..",
-                "context": "Reveal spell to Players"
+                "context": "Reveal Spell to Players"
+            }
+        },
+        "betterInventory": {
+            "improvised": {
+                "label": "Improvised Weapon"
+            },
+            "merge": {
+                "none": "There are no items to merge in the inventory.",
+                "title": "Merge Items - {name}",
+                "yes": "Merge"
+            },
+            "sheet": {
+                "improvised": "Create Improvised Weapon",
+                "merge": "Merge Items",
+                "split": "Split Item"
+            },
+            "split": {
+                "quantity": {
+                    "label": "New Stack Quantity"
+                },
+                "title": "Split Item - {name}",
+                "yes": "Split"
             }
         },
         "betterMerchant": {
@@ -357,10 +418,17 @@
             "importServices": {
                 "title": "Import Services - {name}",
                 "yes": "Import",
-                "error": "An error occured while trying to import the services."
+                "error": "An error occurred while trying to import the services."
             },
             "item": {
-                "error": "An error occured while trying to process a better merchant item trade: <strong>{reason}</strong>.",
+                "buy": {
+                    "confirm": {
+                        "content": "Does <strong>{buyer}</strong> want to buy <strong>{item}</strong>?",
+                        "title": "Buy Item - {item}"
+                    },
+                    "noTarget": "You must select a valid actor to buy from this merchant"
+                },
+                "error": "An error occurred while trying to process a better merchant item trade: <strong>{reason}</strong>.",
                 "noStock": "<strong>{actor}</strong> cannot provide the requested quantity of <strong>{item}</strong>.",
                 "unwilling": "<strong>{actor}</strong> isn't willing to part from <strong>{item}</strong>.",
                 "refuse": "<strong>{actor}</strong> isn't interested in buying <strong>{item}</strong>.",
@@ -393,7 +461,7 @@
             },
             "service": {
                 "buy": "<strong>{buyer}</strong> hired the services of <strong>{seller}</strong>.",
-                "error": "An error occured while trying to process a better merchant service ({service}) : <strong>{reason}</strong>.",
+                "error": "An error occurred while trying to process a better merchant service ({service}) : <strong>{reason}</strong>.",
                 "give": "<strong>{seller}</strong> offers their services to <strong>{buyer}</strong> free of charge.",
                 "noBuyer": "You must select one Character/NPC/Party you own as the target of the service.",
                 "noFunds": "<strong>{buyer}</strong> doesn't have the funds to hire the services of <strong>{seller}</strong>.",
@@ -408,7 +476,7 @@
                     "content": "Are you sure you want to delete this Service?"
                 },
                 "enabled": "Enabled",
-                "error": "An error occured while trying to process the service request",
+                "error": "An error occurred while trying to process the service request",
                 "export": "Export Service",
                 "give": "<strong>{seller}</strong> offers their services to <strong>{buyer}</strong> free of charge.",
                 "macro": {
@@ -488,7 +556,7 @@
                 "mustDiscard": "The character must discard {nb} actions to engage in a trade.",
                 "noOther": "There is no other character with Hero Actions available to trade with.",
                 "notGM": "You need to be a GM to give Hero Actions.",
-                "tradeError": "An error occured while trying to process the trade between <strong>{sender}</strong> and <strong>{receiver}</strong>."
+                "tradeError": "An error occurred while trying to process the trade between <strong>{sender}</strong> and <strong>{receiver}</strong>."
             },
             "giveActions": {
                 "asDrawn": "Set as drawn when given",
@@ -761,8 +829,8 @@
                     "hint": "Select a master with whom this actor will share data."
                 },
                 "skills": {
-                    "label": "Skills Proficiencies",
-                    "hint": "Use the master's skills proficiencies."
+                    "label": "Skills Proficiencies & Modifiers",
+                    "hint": "Use the master's skills proficiencies. Also add the master's item modifiers for skills and perception."
                 },
                 "spellcasting": {
                     "label": "Spellcasting",
@@ -803,7 +871,6 @@
             },
             "reroll": {
                 "title": "Save Check Reroll",
-                "noPoints": "You need at least 1 Hero Point to Reroll.",
                 "yes": "Reroll",
                 "no": "Cancel",
                 "keeley": "Low Reroll"
