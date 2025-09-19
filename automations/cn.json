@@ -65,23 +65,28 @@
         "SETTINGS": {
             "updateActorHandlers": {
                 "label": "管理面板",
-                "name": "更新角色面板"
+                "name": "更新角色面板",
+                "hint": " "
             },
             "messageCreateHandlers": {
                 "label": "管理面板",
-                "name": "消息创建面板"
+                "name": "消息创建面板",
+                "hint": " "
             },
             "updateItemHandlers": {
                 "name": "更新物品面板",
-                "label": "管理面板"
+                "label": "管理面板",
+                "hint": " "
             },
             "deleteItemHandlers": {
                 "name": "删除物品面板",
-                "label": "管理面板"
+                "label": "管理面板",
+                "hint": " "
             },
             "createItemHandlers": {
                 "name": "创建物品面板",
-                "label": "管理面板"
+                "label": "管理面板",
+                "hint": " "
             }
         }
     }
