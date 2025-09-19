@@ -74,7 +74,7 @@
                 "select-all": "选择玩家指示物",
                 "set-journal": "选择日志入口",
                 "travel-sheet": "计算旅行时间",
-                "identify-menu": "打开鉴定目录",
+                "identify-menu": "打开鉴定菜单",
                 "browser": "打开合集包浏览器",
                 "random-pick": "随机选取目标"
             }
