@@ -121,7 +121,7 @@
             "betterTrade": {
                 "withContent": {
                     "name": "同步容器内容物",
-                    "hint": "当容器从一名角色转移至另一名角色身上时，是否同步转移其内容物。"
+                    "hint": "当容器从一名角色转移至另一名角色身上时，是否同步转移其内容物。注意，该功能在使用系统交易功能时不生效。"
                 },
                 "title": "更便利的交换"
             },
@@ -158,7 +158,7 @@
                         "disabled": "关闭",
                         "all": "所有角色"
                     },
-                    "name": "包括效应/状态",
+                    "name": "效应/状态",
                     "hint": "玩家是否也可以将效果或状态拖给其他玩家操控的角色。"
                 },
                 "title": "传递管理"
@@ -386,8 +386,9 @@
         },
         "droppeth": {
             "dialog": {
-                "title": "丢弃物品",
-                "prompt": "你希望丢弃多少数量的物品？"
+                "title": "丢弃{item}",
+                "prompt": "你希望丢弃多少数量的物品？",
+                "button": "丢弃"
             },
             "error": {
                 "out-of-bounds": "无法在指定位置创建丢弃指示物。",
@@ -513,8 +514,9 @@
         "betterMerchant": {
             "item": {
                 "sell": {
-                    "prompt": "你想要出售多少物品？",
-                    "title": "出售物品"
+                    "prompt": "{actor}是否想要购买该物品？",
+                    "title": "出售{item}",
+                    "button": "出售"
                 },
                 "unided": "没有哪个神志清醒的人会想随便买些未经鉴定的物品。",
                 "noStock": "<strong>{actor}</strong>无法提供所请求数量的<strong>{item}</strong>。",
