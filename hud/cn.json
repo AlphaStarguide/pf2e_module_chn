@@ -76,7 +76,8 @@
                 "travel-sheet": "计算旅行时间",
                 "identify-menu": "打开鉴定菜单",
                 "browser": "打开合集包浏览器",
-                "random-pick": "随机选取目标"
+                "random-pick": "随机选取目标",
+                "player-screen": "打开玩家帷幕"
             }
         },
         "rightClick": "[右键点击]",
