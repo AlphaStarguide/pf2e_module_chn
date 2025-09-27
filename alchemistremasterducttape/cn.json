@@ -209,6 +209,7 @@
         "HEALING_VIAL_THROW_FLAVOR": "治疗（投掷）：",
         "HEALING_VIAL_CHOICE_DESC": "<h4>选择如何使用你的治疗课题制剂</h4> <p><b>投掷</b> 给任一20尺内的自愿生物，<br>或<br><b>制作</b> 它用于饮用。",
         "BTN_CRAFT": "制作",
-        "HEALING_VIAL_CHOICE_TITLE": "速调制剂（医学专家）"
+        "HEALING_VIAL_CHOICE_TITLE": "速调制剂（医学专家）",
+        "POWERFUL_ALCHEMY": "强效炼金术"
     }
 }
