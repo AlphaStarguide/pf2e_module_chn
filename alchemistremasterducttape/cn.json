@@ -13,7 +13,7 @@
         "BACK": "返回",
         "ADD": "添加",
         "SPECIAL_INGREDIENT": "选择特殊原料",
-        "INJURY_POISON": "伤口毒素",
+        "INJURY_POISON": "伤口型毒素",
         "INVENTORY": "库存",
         "CRAFT": "制作",
         "CRAFT_APPLY_ATTACK": "制作，并应用&攻击",
@@ -210,6 +210,7 @@
         "HEALING_VIAL_CHOICE_DESC": "<h4>选择如何使用你的治疗课题制剂</h4> <p><b>投掷</b> 给任一20尺内的自愿生物，<br>或<br><b>制作</b> 它用于饮用。",
         "BTN_CRAFT": "制作",
         "HEALING_VIAL_CHOICE_TITLE": "速调制剂（医学专家）",
-        "POWERFUL_ALCHEMY": "强效炼金术"
+        "POWERFUL_ALCHEMY": "强效炼金术",
+        "QUICK_ALCHEMY_APPLY_BEFORE_USE": "提前应用于使用："
     }
 }
