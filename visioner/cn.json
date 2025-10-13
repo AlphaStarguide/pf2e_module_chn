@@ -1,5 +1,65 @@
 {
     "PF2E_VISIONER": {
-        "MODULE_TITLE": "PF2E Visioner"
+        "MODULE_TITLE": "PF2E Visioner",
+        "TOKEN_MANAGER": {
+            "TARGET": "目标指示物",
+            "OBSERVER": "观察者指示物",
+            "CANCEL": "取消",
+            "COVER_TAB": "掩蔽"
+        },
+        "VISIBILITY_STATES": {
+            "observed": "可见",
+            "hidden": "藏匿",
+            "undetected": "无踪",
+            "concealed": "隐蔽"
+        },
+        "COVER_STATES": {
+            "none": "无掩蔽",
+            "lesser": "次等掩蔽",
+            "standard": "标准掩蔽",
+            "greater": "高等掩蔽"
+        },
+        "VISUAL_EFFECTS": {
+            "HIDDEN_OVERLAY": "该指示物在你的视线中藏匿",
+            "UNDETECTED_OVERLAY": "该指示物对你处于无踪",
+            "CONCEALED_OVERLAY": "该指示物对你隐匿"
+        },
+        "MECHANICAL_EFFECTS": {
+            "HIDDEN_FLAT_CHECK": "需通过DC 11的纯骰检定以瞄准目标",
+            "CONCEALED_FLAT_CHECK": "需通过DC 5的纯骰检定以瞄准目标",
+            "HIDDEN_TOOLTIP": "藏匿：你对目标为措手不及，且你的攻击、法术或其它效果瞄准目标时，必须通过DC 11的纯骰检定",
+            "CONCEALED_TOOLTIP": "隐蔽：你的攻击，法术或其他效果瞄准目标时，必须通过DC 5的纯骰检定",
+            "UNDETECTED_TOOLTIP": "无踪：你不知道目标所在的位置。你对目标为措手不及且你难以轻易瞄准目标。使用搜索动作有助于找到无踪生物",
+            "VISIBLE_TOOLTIP": "可见：无减值或效果",
+            "BLINDED_OVERRIDE": "所有生物因目盲状态对其自动藏匿",
+            "DAZZLED_OVERRIDE": "所有生物因目眩状态对其自动隐蔽",
+            "NO_COVER_TOOLTIP": "无掩蔽：无加值或减值",
+            "LESSER_COVER_TOOLTIP": "次等掩蔽：为AC提供+1环境加值",
+            "STANDARD_COVER_TOOLTIP": "标准掩蔽：为AC，反射豁免与隐秘检定提供+2物品加值。可以在该掩蔽后进行躲藏。",
+            "GREATER_COVER_TOOLTIP": "高等掩蔽：为AC，反射豁免与隐秘检定提供+4环境加值。可以在该掩蔽后进行躲藏。"
+        },
+        "CONTEXT_MENU": {
+            "MANAGE_TOKEN": "管理指示物",
+            "MANAGE_VISIBILITY": "管理指示物能见度",
+            "MANAGE_COVER": "管理指示物掩蔽",
+            "QUICK_HIDDEN": "设置为藏匿",
+            "QUICK_UNDETECTED": "设为无踪",
+            "QUICK_CONCEALED": "设为隐蔽",
+            "QUICK_OBSERVED": "设为可见",
+            "QUICK_NO_COVER": "设为无掩蔽",
+            "QUICK_LESSER_COVER": "设置次等掩蔽",
+            "QUICK_STANDARD_COVER": "设置标准掩蔽",
+            "QUICK_GREATER_COVER": "设置高等掩蔽"
+        },
+        "NOTIFICATIONS": {
+            "NO_OBSERVER_SELECTED": "请首先选择观察者指示物",
+            "MULTIPLE_OBSERVERS": "已选择多个观察者指示物—请仅选择一个",
+            "NO_SOCKETLIB_INSTALLED": "PF2E Visioner需要启用socketlib模组以便自动刷新客户端屏幕。请启用它。"
+        },
+        "SEEK_AUTOMATION": {
+            "BUTTON_APPLY": "应用搜索结果",
+            "BUTTON_PREVIEW": "预览结果",
+            "BUTTON_TOOLTIP": "基于搜索结果应用能见度变化"
+        }
     }
 }
