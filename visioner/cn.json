@@ -5,7 +5,10 @@
             "TARGET": "目标指示物",
             "OBSERVER": "观察者指示物",
             "CANCEL": "取消",
-            "COVER_TAB": "掩蔽"
+            "COVER_TAB": "掩蔽",
+            "TITLE": "侦测指示物管理器",
+            "COVER_STATE": "掩蔽状态",
+            "NO_TOKENS": "该场景中无可用指示物"
         },
         "VISIBILITY_STATES": {
             "observed": "可见",
@@ -59,7 +62,23 @@
         "SEEK_AUTOMATION": {
             "BUTTON_APPLY": "应用搜索结果",
             "BUTTON_PREVIEW": "预览结果",
-            "BUTTON_TOOLTIP": "基于搜索结果应用能见度变化"
+            "BUTTON_TOOLTIP": "基于搜索结果应用能见度变化",
+            "RANGE_LIMIT_ACTIVE": "激活射程限制：仅显示30尺内的目标",
+            "SETUP_TEMPLATE": "设置搜索测量板",
+            "REMOVE_TEMPLATE": "移除搜索测量板",
+            "SETUP_TEMPLATE_TOOLTIP": "点击任意位置放置15尺爆发范围，对范围内的指示物使用搜索动作",
+            "ENCOUNTER_ONLY": "仅显示遭遇内指示物",
+            "SETTING_NAME": "启用搜索自动化",
+            "SETTING_HINT": "自动为搜索聊天信息添加应用能见度变化的按钮",
+            "OUT_OF_RANGE": "超出射程",
+            "RANGE_LIMIT_ACTIVE_CUSTOM": "激活射程限制：仅显示{distance}尺内的目标",
+            "NO_TARGETS_IN_RANGE": "30尺射程内无有效目标存在",
+            "NO_TARGETS_IN_RANGE_CUSTOM": "{distance}尺射程内无有效目标"
+        },
+        "HIDE_AUTOMATION": {
+            "BUTTON_APPLY": "应用躲藏结果",
+            "BUTTON_PREVIEW": "预览结果",
+            "BUTTON_PROCESSED": "结果已应用"
         }
     }
 }
