@@ -6,9 +6,15 @@
             "OBSERVER": "观察者指示物",
             "CANCEL": "取消",
             "COVER_TAB": "掩蔽",
-            "TITLE": "侦测指示物管理器",
+            "TITLE": "指示物视野管理器",
             "COVER_STATE": "掩蔽状态",
-            "NO_TOKENS": "该场景中无可用指示物"
+            "NO_TOKENS": "该场景中无可用指示物",
+            "VISIBILITY_STATE": "能见度状态",
+            "VISIBILITY_TAB": "能见度",
+            "APPLY": "应用于该指示物",
+            "APPLY_BOTH": "应用于双方",
+            "RESET": "恢复初始状态",
+            "BULK_ACTIONS": "批量操作"
         },
         "VISIBILITY_STATES": {
             "observed": "可见",
@@ -39,7 +45,9 @@
             "NO_COVER_TOOLTIP": "无掩蔽：无加值或减值",
             "LESSER_COVER_TOOLTIP": "次等掩蔽：为AC提供+1环境加值",
             "STANDARD_COVER_TOOLTIP": "标准掩蔽：为AC，反射豁免与隐秘检定提供+2物品加值。可以在该掩蔽后进行躲藏。",
-            "GREATER_COVER_TOOLTIP": "高等掩蔽：为AC，反射豁免与隐秘检定提供+4环境加值。可以在该掩蔽后进行躲藏。"
+            "GREATER_COVER_TOOLTIP": "高等掩蔽：为AC，反射豁免与隐秘检定提供+4环境加值。可以在该掩蔽后进行躲藏。",
+            "UNDETECTED_CONDITION": "全自动应用无踪状态",
+            "VISIBLE_NO_EFFECTS": "无瞄准减值或效果"
         },
         "CONTEXT_MENU": {
             "MANAGE_TOKEN": "管理指示物",
@@ -64,21 +72,212 @@
             "BUTTON_PREVIEW": "预览结果",
             "BUTTON_TOOLTIP": "基于搜索结果应用能见度变化",
             "RANGE_LIMIT_ACTIVE": "激活射程限制：仅显示30尺内的目标",
-            "SETUP_TEMPLATE": "设置搜索测量板",
+            "SETUP_TEMPLATE": "放置搜索测量板",
             "REMOVE_TEMPLATE": "移除搜索测量板",
             "SETUP_TEMPLATE_TOOLTIP": "点击任意位置放置15尺爆发范围，对范围内的指示物使用搜索动作",
             "ENCOUNTER_ONLY": "仅显示遭遇内指示物",
             "SETTING_NAME": "启用搜索自动化",
-            "SETTING_HINT": "自动为搜索聊天信息添加应用能见度变化的按钮",
+            "SETTING_HINT": "自动为<b>搜索</b>聊天信息添加按钮以便应用能见度变更",
             "OUT_OF_RANGE": "超出射程",
             "RANGE_LIMIT_ACTIVE_CUSTOM": "激活射程限制：仅显示{distance}尺内的目标",
             "NO_TARGETS_IN_RANGE": "30尺射程内无有效目标存在",
-            "NO_TARGETS_IN_RANGE_CUSTOM": "{distance}尺射程内无有效目标"
+            "NO_TARGETS_IN_RANGE_CUSTOM": "{distance}尺射程内无有效目标",
+            "BUTTON_PROCESSED": "结果已应用",
+            "NO_UNDETECTED_TOKENS": "{name}的搜索行动未发现藏匿或无踪指示物",
+            "NO_CHANGES": "{name}的搜索行动未发生能见度变化",
+            "RESULTS_APPLIED": "搜索自动化已应用变更：{changes}",
+            "ERROR_PROCESSING": "应用搜索结果时出现错误。请查看控制台了解详情。",
+            "PROCESSING": "正在处理搜索结果……",
+            "PREVIEW_TITLE": "搜索结果预览",
+            "PREVIEW_HINT": "对搜索行动结果进行分析",
+            "ROLL_VS_DC": "掷骰对抗隐秘DC",
+            "OUTCOME": "结果",
+            "VISIBILITY_CHANGE": "能见度变更",
+            "OPEN_RESULTS": "公开搜索结果",
+            "OPEN_RESULTS_TOOLTIP": "打开搜索结果对话框，以进行单独或批量能见度变更"
         },
         "HIDE_AUTOMATION": {
             "BUTTON_APPLY": "应用躲藏结果",
             "BUTTON_PREVIEW": "预览结果",
-            "BUTTON_PROCESSED": "结果已应用"
+            "BUTTON_PROCESSED": "结果已应用",
+            "BUTTON_TOOLTIP": "基于躲藏结果应用能见度变更",
+            "NO_CHANGES": "{name}的躲藏动作未发生任何能见度变更",
+            "RESULTS_APPLIED": "躲藏自动化已应用变更：{changes}",
+            "ERROR_PROCESSING": "应用躲藏结果时出现错误。请查看控制台了解详情。",
+            "PROCESSING": "正在处理躲藏结果……",
+            "PREVIEW_TITLE": "躲藏结果预览",
+            "NO_OBSERVERS": "未发现任何允许{name}进行躲藏动作的观察者",
+            "PREVIEW_HINT": "对躲藏动作结果进行分析",
+            "ROLL_VS_DC": "掷骰对抗察觉DC",
+            "OUTCOME": "结果",
+            "VISIBILITY_CHANGE": "能见度变更",
+            "OPEN_RESULTS": "公开躲藏结果",
+            "ENCOUNTER_ONLY": "仅显示遭遇中指示物",
+            "SETTING_NAME": "启用躲藏自动化",
+            "SETTING_HINT": "自动为<b>躲藏</b>聊天信息添加按钮以便应用能见度变更"
+        },
+        "COVER_OVERRIDE": {
+            "POPUP_OVERRIDE": "快捷键弹窗已覆盖掩蔽状态：{original} → {final}",
+            "DIALOG_OVERRIDE": "掷骰对话框中的掩蔽状态已覆盖：{original} → {final}",
+            "GENERIC_OVERRIDE": "掩蔽状态已覆盖：{original} → {final}"
+        },
+        "SNEAK_AUTOMATION": {
+            "BUTTON_APPLY": "应用潜行结果",
+            "BUTTON_PREVIEW": "预览结果",
+            "BUTTON_PROCESSED": "结果已应用",
+            "BUTTON_TOOLTIP": "基于潜行结果应用能见度变更",
+            "NO_OBSERVERS": "{actor}对所有指示物不可见 - 无需潜行",
+            "NO_CHANGES": "本次潜行动作未发生任何能见度变更",
+            "ERROR_PROCESSING": "应用潜行结果时出现错误",
+            "PROCESSING": "正在处理潜行结果……",
+            "PREVIEW_TITLE": "潜行结果预览",
+            "PREVIEW_HINT": "对潜行动作结果进行分析",
+            "ROLL_VS_DC": "掷骰对抗察觉DC",
+            "OUTCOME": "结果",
+            "VISIBILITY_CHANGE": "能见度变化",
+            "OPEN_RESULTS": "公开潜行结果",
+            "ENCOUNTER_ONLY": "仅显示遭遇中指示物",
+            "SETTING_NAME": "启用潜行自动化",
+            "SETTING_HINT": "自动为<b>潜行</b>聊天信息添加按钮以便应用能见度变更"
+        },
+        "CREATE_A_DIVERSION_AUTOMATION": {
+            "BUTTON_APPLY": "应用分神结果",
+            "BUTTON_TOOLTIP": "应用来自分神动作的能见度变更",
+            "NO_OBSERVERS": "{actor}对所有指示物均不可见 - 无需分神",
+            "NO_CHANGES": "本次分神动作未发生任何能见度变更",
+            "ERROR_PROCESSING": "应用分神结果时出现错误",
+            "PROCESSING": "正在处理分神结果……",
+            "PREVIEW_TITLE": "分神结果预览",
+            "PREVIEW_HINT": "对分神动作结果进行分析",
+            "ROLL_VS_DC": "掷骰对抗察觉DC",
+            "OUTCOME": "结果",
+            "VISIBILITY_CHANGE": "能见度变更",
+            "OPEN_RESULTS": "公开分神结果",
+            "ENCOUNTER_ONLY": "仅显示遭遇中指示物",
+            "SETTING_NAME": "启用分神自动化",
+            "SETTING_HINT": "自动为<b>分神</b>聊天信息添加按钮以便应用能见度变更"
+        },
+        "SETTINGS": {
+            "ENABLE_HOVER_TOOLTIPS": {
+                "name": "启用悬停提示框",
+                "hint": "悬停指示物时显示能见度状态提示"
+            },
+            "ALLOW_PLAYER_TOOLTIPS": {
+                "hint": "若启用，玩家可以在悬停于指示物上时看见基于自身视角的能见度标志提示框"
+            },
+            "TOOLTIP_FONT_SIZE": {
+                "name": "提示框大小",
+                "hint": "选择提示框大小（影响图标与边框尺寸；文本则会进行相应调整）",
+                "CHOICES": {
+                    "tiny": "超小",
+                    "small": "小",
+                    "medium": "中",
+                    "large": "大",
+                    "xlarge": "超大"
+                }
+            },
+            "COLORBLIND_MODE": {
+                "name": "色盲模式",
+                "CHOICES": {
+                    "protanopia": "红色色盲",
+                    "deuteranopia": "绿色色盲",
+                    "tritanopia": "蓝色色盲",
+                    "achromatopsia": "全色盲",
+                    "none": "非色盲模式"
+                },
+                "hint": "选择一项色盲模式调整提示框颜色以提升可视性（客户端设置）"
+            },
+            "IGNORE_ALLIES_DEFAULT": {
+                "name": "忽略盟友（默认）"
+            },
+            "ENABLE_ALL_TOKENS_VISION": {
+                "name": "启用全指示物视觉",
+                "hint": "若启用，所有指示物在默认情况下都将启用视觉功能。"
+            },
+            "DEFAULT_ENCOUNTER_FILTER": {
+                "name": "默认遭遇过滤状态"
+            },
+            "SEEK_USE_TEMPLATE": {
+                "name": "使用搜索测量板（15尺爆发）",
+                "hint": "若启用，将可以放置15尺爆发的测量板"
+            },
+            "LIMIT_SEEK_RANGE": {
+                "name": "限制战斗中搜索范围",
+                "hint": "若启用，战斗中的搜索动作将仅能侦测到指定距离内的目标"
+            },
+            "LIMIT_SEEK_RANGE_DISABLED_BY_TEMPLATE": "禁用范围限制：使用标准测量板",
+            "LIMIT_SEEK_RANGE_OUT_OF_COMBAT": {
+                "name": "限制战斗外搜索范围",
+                "hint": "若启用，战斗外的搜索动作将仅能侦测到指定距离内的目标"
+            },
+            "CUSTOM_SEEK_DISTANCE": {
+                "name": "搜索范围",
+                "hint": "若启用范围限制，在此设置搜索动作的最大距离（尺）"
+            },
+            "CUSTOM_SEEK_DISTANCE_OOC": {
+                "name": "搜索范围（战斗外）",
+                "hint": "若启用战斗外范围限制，在此设置搜索动作的最大距离（尺）"
+            },
+            "USE_HUD_BUTTON": {
+                "name": "使用指示物HUD按钮",
+                "hint": "若启用，为指示物HUD添加能见度按钮。若禁用，在指示物被选择时显示悬浮按钮。"
+            },
+            "BLOCK_PLAYER_TARGET_TOOLTIPS": {
+                "name": "对玩家屏蔽目标能见度提示框",
+                "hint": "若启用，在目标模式下（即其他玩家看悬停指示物时）玩家悬停于指示物上时将不会看到提示框。但当玩家长按O键或Alt键时，仍能看到提示框。"
+            },
+            "INTEGRATE_COVER_VISIBILITY": {
+                "hint": "若启用，某些动作需要满足掩蔽先决条件。例如，躲藏动作仅在执行动作的指示物至少对一名观察者具备标准掩蔽时才能使用。",
+                "name": "将掩蔽状态整合至能见度规则中"
+            },
+            "INTEGRATE_ROLL_OUTCOME": {
+                "name": "将掷骰结果整合至指示物管理器中",
+                "hint": "在指示物管理器中添加一栏，用于显示与当前DC相关的最新掷骰结果及成功度。"
+            },
+            "ENFORCE_RAW": {
+                "name": "强制RAW",
+                "hint": "若启用，某些动作需要满足先决条件。例如，躲藏动作仅能在执行动作的指示物至少对一名观察者隐蔽或具备标准掩蔽时才能使用。"
+            },
+            "DEBUG": {
+                "name": "调试模式",
+                "hint": "启用详细控制台日志记录，以进行故障排查"
+            },
+            "LOOT_PERCEPTION_DC": {
+                "hint": "当一个战利品指示物需要设置察觉DC，但不具备对应系统属性时使用该功能。",
+                "name": "战利品角色默认察觉DC"
+            },
+            "LOOT_STEALTH_DC": {
+                "hint": "当战利品指示物作为搜索目标时所使用的DC。",
+                "name": "战利品角色默认隐秘DC"
+            },
+            "WALL_STEALTH_DC": {
+                "name": "墙体默认隐秘DC",
+                "hint": "当隐藏墙体作为搜索目标时所使用的DC（若墙体未设置明确DC）。"
+            },
+            "HIDE_QUICK_EDIT_TOOL": {
+                "hint": "若启用，快速编辑工具将不会出现在指示物控制工具栏中。",
+                "name": "隐藏快速编辑工具"
+            },
+            "INCLUDE_LOOT_ACTORS": {
+                "name": "将战利品角色纳入能见度管理器中",
+                "hint": "允许为每位观察者分别配置对战利品角色（如宝箱、容器）的能见度状态。仅限视觉效果；不会应用 PF2E 的任何状态。"
+            },
+            "INCLUDE_WALLS": {
+                "name": "将墙壁设为可隐藏物体（实验性）",
+                "hint": "在管理器中引入墙壁以便针对每位观察者设置为可见/藏匿状态。目前的实现形式仅限于视觉层面，并不会改变遮挡或碰撞情况。"
+            },
+            "HIDDEN_WALLS": {
+                "name": "启用隐藏墙体",
+                "hint": "启用每面墙的隐藏切换功能及玩家指示标志。如果隐藏墙体是一扇门，那么它不会阻挡视线。"
+            },
+            "AUTO_COVER": {
+                "name": "自动掩蔽",
+                "hint": "若启用，模组会基于指示物间的路径阻挡程度对指示物应用掩蔽。"
+            },
+            "EXPERIMENTAL_SEE_THROUGH_WALLS": {
+                "name": "实验性：独立指示物透视墙体（仅限客户端）",
+                "hint": "若在你的客户端启用，所选指示物视线将略过你在隐藏墙体列表中标注为“已观察”的墙体。本功能仅为视觉显示且处于初步实验阶段。"
+            }
         }
     }
 }
