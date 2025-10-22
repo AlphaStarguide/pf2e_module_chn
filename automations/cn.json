@@ -159,7 +159,7 @@
             "showEffectRelationship.choices.always": "始终显示效果关系",
             "incapacitation.name": "失能模式",
             "incapacitation.hint": " ",
-            "pingMessage.hint": "能够提示用户各个角色的信息，有助于确定伤害来自于哪一生物"
+            "pingMessage.hint": "提示用户每条聊天信息所归属的生物，有助于确定伤害来自于哪一生物"
         },
         "FormRules": {
             "Title": "房规"
