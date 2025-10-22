@@ -101,11 +101,11 @@
                 "hint": " "
             },
             "Menu": {
-                "hideRollMenu.Name": "躲藏掷骰菜单",
-                "rollSettingsMenu.Name": "掷骰设置菜单",
-                "combatSettingsMenu.Name": "战斗设置菜单",
-                "playerSettingsMenu.Name": "QoL菜单",
-                "incapacitationRollMenu.Name": "失能掷骰菜单"
+                "hideRollMenu.Name": "掷骰隐藏管理",
+                "rollSettingsMenu.Name": "掷骰设置管理",
+                "combatSettingsMenu.Name": "战斗设置管理",
+                "playerSettingsMenu.Name": "QoL管理",
+                "incapacitationRollMenu.Name": "失能检定管理"
             },
             "deleteExploration.name": "战斗开始时删除探索行动",
             "onlySkillBlindRoll.hint": "添加技能，用半角逗号隔开。该设置具有更高优先级",
@@ -162,7 +162,7 @@
             "pingMessage.hint": "能够提示用户各个角色的信息，有助于确定伤害来自于哪一生物"
         },
         "FormRules": {
-            "Title": "规则"
+            "Title": "房规"
         }
     }
 }
