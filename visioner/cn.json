@@ -20,7 +20,8 @@
             "observed": "可见",
             "hidden": "藏匿",
             "undetected": "无踪",
-            "concealed": "隐蔽"
+            "concealed": "隐蔽",
+            "avs": "AVS"
         },
         "COVER_STATES": {
             "none": "无掩蔽",
@@ -31,7 +32,12 @@
         "VISUAL_EFFECTS": {
             "HIDDEN_OVERLAY": "该指示物在你的视线中藏匿",
             "UNDETECTED_OVERLAY": "该指示物对你处于无踪",
-            "CONCEALED_OVERLAY": "该指示物对你隐匿"
+            "CONCEALED_OVERLAY": "该指示物对你隐匿",
+            "UNDETECTED_TOOLTIP": "无踪：你不知道目标所在的位置。你对目标为措手不及且你难以轻易瞄准目标。使用搜索动作有助于找到无踪生物",
+            "DAZZLED_OVERRIDE": "因为目眩状态，所有生物对你处于隐蔽",
+            "CONCEALED_FLAT_CHECK": "瞄准该生物必须进行DC 5纯骰检定",
+            "UNDETECTED_CONDITION": "全自动应用无踪状态",
+            "CONCEALED_TOOLTIP": "隐蔽：你的攻击，法术或其他效果瞄准目标时，必须通过DC 5的纯骰检定"
         },
         "MECHANICAL_EFFECTS": {
             "HIDDEN_FLAT_CHECK": "需通过DC 11的纯骰检定以瞄准目标",
@@ -332,7 +338,87 @@
                 "hint": "若启用，区域外的指示物将对区域内指示物同步其能见度状态"
             },
             "VISIBILITY_UPDATED": "区域能见度已更新{count}个指示物能见度关系",
-            "UPDATE_ERROR": "未能更新区域能见度关系"
+            "UPDATE_ERROR": "未能更新区域能见度关系",
+            "TYPES": {
+                "VISIBILITY": {
+                    "label": "视野能见度"
+                }
+            }
+        },
+        "SENSES": {
+            "LIFESENSE": "生命感知",
+            "LIGHT-PERCEPTION": "光亮感知",
+            "VISION": "视觉",
+            "VISION_DESC": "你用于感知周围环境的标准视觉感官。",
+            "DARKVISION": "黑暗视觉",
+            "SCENT": "灵敏嗅觉",
+            "ECHOLOCATION": "回声定位",
+            "GREATER-DARKVISION": "高等黑暗视觉",
+            "HEARING": "听觉",
+            "TREMORSENSE": "震颤感知",
+            "DARKVISION_DESC": "你可以在黑暗和昏暗光照中视物，如同在明亮光照中，但你在黑暗中只能分辨黑白两色。",
+            "SCENT_DESC": "你的嗅觉感官得到增强，允许你侦测范围内的活物（模糊感官）。",
+            "TREMORSENSE_DESC": "你可以感知范围内地面中的振动（模糊感官）。",
+            "LIFESENSE_DESC": "你可以感知范围内活物与不死生物体内活跃的生命能量（模糊感官）。",
+            "GREATER-DARKVISION_DESC": "你可以在黑暗和昏暗光照中视物，如同在明亮光照中——包括颜色。",
+            "LIGHT-PERCEPTION_DESC": "你可以感知光亮和黑暗。这一感官允许你在自然黑暗中视物，但也会受到魔法黑暗的影响。",
+            "ECHOLOCATION_DESC": "你可以利用声音来导航以及侦测范围内的物体（精确感官）。",
+            "HEARING_DESC": "你可以通过声音侦测到范围内的生物和事件（模糊感官）。"
+        },
+        "SPECIAL_SENSES": {
+            "vision": "视觉",
+            "lifesense": "生命感知",
+            "vision_description": "你用于感知周围环境的标准视觉感官。",
+            "echolocation": "回声定位",
+            "tremorsense": "震颤感知",
+            "scent": "灵敏嗅觉",
+            "tremorsense_description": "你可以感知周遭地面中的振动。你获得震颤感知作为模糊感官。这允许你侦测范围内与地面接触的生物和物体。",
+            "greater_darkvision": "高等黑暗视觉",
+            "hearing": "听觉",
+            "low_light_vision": "昏暗视觉",
+            "infrared_vision": "红外视觉",
+            "truesight": "真景术",
+            "see_the_unseen": "识破无形",
+            "darkvision_description": "你可以在黑暗和昏暗光照中视物，如同在明亮光照中，但你在黑暗中只能分辨黑白两色。",
+            "greater_darkvision_description": "你可以在黑暗和昏暗光照中视物，如同在明亮光照中——包括颜色。",
+            "hearing_description": "你可以通过声音侦测到范围内的生物和事件（模糊感官）。",
+            "low_light_vision_description": "你可以在昏暗光照中视物，如同在明亮光照中。",
+            "truesight_description": "你可以看见事物的本来面貌，忽略范围内的幻术和隐形效果。",
+            "bloodsense": "血液感知",
+            "see_the_unseen_description": "你可以感知到范围内原本无形无迹的现象。",
+            "spiritsense": "精魂感知",
+            "magicsense_description": "你能够感知范围内的魔法区域或效应。",
+            "wavesense": "水波感知",
+            "thoughtsense_description": "你能够侦测到范围内具备思想的生物。",
+            "wavesense_description": "你能够通过范围内的液体介质感知到振波。",
+            "darkvision": "黑暗视觉",
+            "magicsense": "魔法感知",
+            "thoughtsense": "思维感知",
+            "lifesense_description": "你能有限地感知到生命力的存在。你获得生命感知作为10尺范围的模糊感官。你能借此感知到所列范围内活物与不死生物体内活跃的生命能量。你能用生命感知区分属于活物的命能以及属于不死生物的虚能。",
+            "scent_description": "你的嗅觉感官得到增强。你获得灵敏嗅觉作为模糊感官。这允许你通过气味侦测到范围内的活物。",
+            "motion_sense": "运动感知",
+            "echolocation_description": "你可以利用声音来导航和侦测物体。你获得回声定位作为模糊感官。这允许你通过声音反射来侦测范围内的所有生物和物体。",
+            "spiritsense_description": "你能够感知到范围内精魂与不死生物的存在。",
+            "infrared_vision_description": "你能够感知到周遭环境的热能特征。",
+            "bloodsense_description": "你可以通过感知范围内存在的血液来侦测生物的存在及其位置。",
+            "motion_sense_description": "你能够侦测范围内你周围的运动。"
+        },
+        "FEAT": {
+            "CEASELESS_SHADOWS": "阴影不绝"
+        },
+        "AVS_OVERRIDE_DIALOG": {
+            "CLEAR_ALL": "清除所有覆盖设置",
+            "CLOSE": "关闭"
+        },
+        "VISIBILITY_FACTORS": {
+            "REASONS": {
+                "DETECTED_BY_SENSE": "被{sense}（精确感官）侦测到",
+                "DETECTED_BY_SCENT": "被灵敏嗅觉（模糊感官）侦测到",
+                "DETECTED_BY_TREMORSENSE": "被震颤感知侦测到（{acuity}）"
+            }
+        },
+        "SNEAKY_FEAT": {
+            "VISIBILITY_CAPPED": "鬼祟专长"
         }
     }
 }
