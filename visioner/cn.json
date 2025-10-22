@@ -114,7 +114,8 @@
             "OPEN_RESULTS": "公开躲藏结果",
             "ENCOUNTER_ONLY": "仅显示遭遇中指示物",
             "SETTING_NAME": "启用躲藏自动化",
-            "SETTING_HINT": "自动为<b>躲藏</b>聊天信息添加按钮以便应用能见度变更"
+            "SETTING_HINT": "自动为<b>躲藏</b>聊天信息添加按钮以便应用能见度变更",
+            "OPEN_RESULTS_TOOLTIP": "打开躲藏结果对话框，以进行单独或批量能见度变更"
         },
         "COVER_OVERRIDE": {
             "POPUP_OVERRIDE": "快捷键弹窗已覆盖掩蔽状态：{original} → {final}",
@@ -138,7 +139,8 @@
             "OPEN_RESULTS": "公开潜行结果",
             "ENCOUNTER_ONLY": "仅显示遭遇中指示物",
             "SETTING_NAME": "启用潜行自动化",
-            "SETTING_HINT": "自动为<b>潜行</b>聊天信息添加按钮以便应用能见度变更"
+            "SETTING_HINT": "自动为<b>潜行</b>聊天信息添加按钮以便应用能见度变更",
+            "OPEN_RESULTS_TOOLTIP": "打开潜行结果对话框，以进行单独或批量能见度变更"
         },
         "CREATE_A_DIVERSION_AUTOMATION": {
             "BUTTON_APPLY": "应用分神结果",
@@ -155,7 +157,8 @@
             "OPEN_RESULTS": "公开分神结果",
             "ENCOUNTER_ONLY": "仅显示遭遇中指示物",
             "SETTING_NAME": "启用分神自动化",
-            "SETTING_HINT": "自动为<b>分神</b>聊天信息添加按钮以便应用能见度变更"
+            "SETTING_HINT": "自动为<b>分神</b>聊天信息添加按钮以便应用能见度变更",
+            "OPEN_RESULTS_TOOLTIP": "打开分神结果对话框，以进行单独或批量能见度变更"
         },
         "SETTINGS": {
             "ENABLE_HOVER_TOOLTIPS": {
@@ -163,7 +166,8 @@
                 "hint": "悬停指示物时显示能见度状态提示"
             },
             "ALLOW_PLAYER_TOOLTIPS": {
-                "hint": "若启用，玩家可以在悬停于指示物上时看见基于自身视角的能见度标志提示框"
+                "hint": "若启用，玩家可以在悬停于指示物上时看见基于自身视角的能见度标志提示框",
+                "name": "玩家视角提示框"
             },
             "TOOLTIP_FONT_SIZE": {
                 "name": "提示框大小",
@@ -188,14 +192,16 @@
                 "hint": "选择一项色盲模式调整提示框颜色以提升可视性（客户端设置）"
             },
             "IGNORE_ALLIES_DEFAULT": {
-                "name": "忽略盟友（默认）"
+                "name": "忽略盟友（默认）",
+                "hint": "设置“忽略盟友”复选框在 Visioner 对话框和指示物管理器中的默认状态。您可以针对每个对话框实时切换该选项，以便实时筛选结果。"
             },
             "ENABLE_ALL_TOKENS_VISION": {
                 "name": "启用全指示物视觉",
                 "hint": "若启用，所有指示物在默认情况下都将启用视觉功能。"
             },
             "DEFAULT_ENCOUNTER_FILTER": {
-                "name": "默认遭遇过滤状态"
+                "name": "默认遭遇过滤状态",
+                "hint": "若启用，则对话框中的遭遇过滤复选框在遭遇期间将默认被选中"
             },
             "SEEK_USE_TEMPLATE": {
                 "name": "使用搜索测量板（15尺爆发）",
@@ -276,8 +282,57 @@
             },
             "EXPERIMENTAL_SEE_THROUGH_WALLS": {
                 "name": "实验性：独立指示物透视墙体（仅限客户端）",
-                "hint": "若在你的客户端启用，所选指示物视线将略过你在隐藏墙体列表中标注为“已观察”的墙体。本功能仅为视觉显示且处于初步实验阶段。"
+                "hint": "若在你的客户端启用，所选指示物视线将略过你在隐藏墙体列表中标注为“可见”的墙体。本功能仅为视觉显示且处于初步实验阶段。"
+            },
+            "SNEAK_RAW_ENFORCEMENT": {
+                "name": "潜行强制RAW",
+                "hint": "若启用，潜行将遵循RAW规则。若禁用，潜行条件则会更加放宽。"
             }
+        },
+        "UI": {
+            "ENCOUNTER_FILTER_TEXT": "仅显示遭遇中指示物",
+            "COVER_OVERRIDE": "覆盖掩蔽状态",
+            "ROLL": "掷骰"
+        },
+        "WALL": {
+            "VISIBLE_TO_YOU": "隐藏墙体",
+            "observed": "可见",
+            "hidden": "隐藏"
+        },
+        "KEYBINDINGS": {
+            "OPEN_TOKEN_MANAGER": {
+                "hint": "打开所选指示物的指示物管理器",
+                "name": "打开指示物视野管理器"
+            },
+            "OPEN_VISIBILITY_MANAGER": {
+                "name": "打开指示物能见度管理器",
+                "hint": "打开所选指示物的能见度管理器"
+            },
+            "HOLD_COVER_OVERRIDE": {
+                "name": "长按在快速掷骰中覆盖掩蔽",
+                "hint": "当点击打击/攻击动作时长按此键（无对话框），使用Visioner覆盖掩蔽替代掩蔽自动计算。无默认设置；请自行配置按键。"
+            },
+            "TOGGLE_OBSERVER_MODE": {
+                "name": "悬停提示框切换为观察者模式",
+                "hint": "长按此键切换悬停提示框为观察者模式（即显示悬停指示物看其他指示物的能见度）"
+            }
+        },
+        "REGION_BEHAVIOR": {
+            "TYPE_LABEL": "PF2e Visioner 能见度",
+            "VISIBILITY_STATE": {
+                "label": "能见度状态",
+                "hint": "应用于区域内与区域外之间的指示物的能见度状态"
+            },
+            "APPLY_TO_INSIDE_TOKENS": {
+                "label": "应用于区域内指示物",
+                "hint": "若启用，区域内的指示物将对区域内的其他指示物同步其能见度状态"
+            },
+            "TWO_WAY_REGION": {
+                "label": "双向区域",
+                "hint": "若启用，区域外的指示物将对区域内指示物同步其能见度状态"
+            },
+            "VISIBILITY_UPDATED": "区域能见度已更新{count}个指示物能见度关系",
+            "UPDATE_ERROR": "未能更新区域能见度关系"
         }
     }
 }
