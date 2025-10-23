@@ -37,7 +37,9 @@
             "DAZZLED_OVERRIDE": "因为目眩状态，所有生物对你处于隐蔽",
             "CONCEALED_FLAT_CHECK": "瞄准该生物必须进行DC 5纯骰检定",
             "UNDETECTED_CONDITION": "全自动应用无踪状态",
-            "CONCEALED_TOOLTIP": "隐蔽：你的攻击，法术或其他效果瞄准目标时，必须通过DC 5的纯骰检定"
+            "CONCEALED_TOOLTIP": "隐蔽：你的攻击，法术或其他效果瞄准目标时，必须通过DC 5的纯骰检定",
+            "NO_COVER_TOOLTIP": "无掩蔽：无加值或减值",
+            "GREATER_COVER_TOOLTIP": "高等掩蔽：为AC，反射豁免与隐秘检定提供+4环境加值。可以在该掩蔽后进行躲藏。"
         },
         "MECHANICAL_EFFECTS": {
             "HIDDEN_FLAT_CHECK": "需通过DC 11的纯骰检定以瞄准目标",
@@ -53,7 +55,7 @@
             "STANDARD_COVER_TOOLTIP": "标准掩蔽：为AC，反射豁免与隐秘检定提供+2物品加值。可以在该掩蔽后进行躲藏。",
             "GREATER_COVER_TOOLTIP": "高等掩蔽：为AC，反射豁免与隐秘检定提供+4环境加值。可以在该掩蔽后进行躲藏。",
             "UNDETECTED_CONDITION": "全自动应用无踪状态",
-            "VISIBLE_NO_EFFECTS": "无瞄准减值或效果"
+            "VISIBLE_NO_EFFECTS": "瞄准目标时无减值，也无额外效果"
         },
         "CONTEXT_MENU": {
             "MANAGE_TOKEN": "管理指示物",
@@ -71,7 +73,12 @@
         "NOTIFICATIONS": {
             "NO_OBSERVER_SELECTED": "请首先选择观察者指示物",
             "MULTIPLE_OBSERVERS": "已选择多个观察者指示物—请仅选择一个",
-            "NO_SOCKETLIB_INSTALLED": "PF2E Visioner需要启用socketlib模组以便自动刷新客户端屏幕。请启用它。"
+            "NO_SOCKETLIB_INSTALLED": "PF2E Visioner需要启用socketlib模组以便自动刷新客户端屏幕。请启用它。",
+            "SNEAK_CLEAR_GM_ONLY": "只有GM才能清除潜行标记",
+            "SCENE_CLEAR_GM_ONLY": "只有GM才能清除模组场景数据",
+            "DATA_CLEAR_GM_ONLY": "只有GM才能清除模组数据",
+            "NO_ACTIVE_SCENE": "未激活场景。",
+            "PERMISSION_DENIED": "只有GM才能管理指示物可见度与掩蔽"
         },
         "SEEK_AUTOMATION": {
             "BUTTON_APPLY": "应用搜索结果",
@@ -419,6 +426,84 @@
         },
         "SNEAKY_FEAT": {
             "VISIBILITY_CAPPED": "鬼祟专长"
+        },
+        "UI_ACTIONS": {
+            "MANAGE_VISIBILITY": "管理指示物能见度",
+            "MANAGE_COVER": "管理指示物掩蔽",
+            "QUICK_CONCEALED": "设置为隐蔽",
+            "QUICK_OBSERVED": "设置为可见",
+            "QUICK_NO_COVER": "设置为无掩蔽",
+            "QUICK_LESSER_COVER": "设置为次等掩蔽",
+            "QUICK_STANDARD_COVER": "设置为标准掩蔽",
+            "QUICK_GREATER_COVER": "设置为高等掩蔽"
+        },
+        "MOVEMENT": {
+            "walk": "步行",
+            "stride": "行走",
+            "leap": "跳跃",
+            "climb": "攀爬",
+            "fly": "飞行",
+            "swim": "游泳",
+            "burrow": "掘地",
+            "deploy": "部署",
+            "travel": "旅行",
+            "teleport": "传送"
+        },
+        "DIALOG_TITLES": {
+            "HIDE_RESULTS": "躲藏结果",
+            "POINT_OUT_RESULTS": "指出位置结果",
+            "SEEK_RESULTS": "搜索结果",
+            "ACTION_RESULTS": "动作结果",
+            "TAKE_COVER_RESULTS": "寻找掩蔽结果",
+            "COVER_OVERRIDE": "掩蔽设置覆盖",
+            "WALL_SETTINGS": "PF2E Visioner：墙体设置",
+            "TOGGLE_HIDDEN_WALL": "隐藏墙切换（所选墙体）",
+            "QUICK_EDIT": "PF2E Visioner：快速编辑（所选 ↔ 目标）",
+            "PURGE_DATA": "PF2E Visioner：清除数据（场景/所选指示物）",
+            "VISIONER_QUICK_PANEL": "视野快速编辑",
+            "APPLYING_CHANGES": "应用变更",
+            "WALL_QUICK": "PF2E Visioner：墙体设置",
+            "DARKNESS_MODE": "PF2E Visioner：设置黑暗模式",
+            "ATTACK_CONSEQUENCES": "攻击影响结果",
+            "CREATE_DIVERSION_RESULTS": "分神结果",
+            "SNEAK_RESULTS": "潜行结果",
+            "RECOMMENDATIONS": {
+                "HEAL_CHARACTER": "治疗角色",
+                "REMOVE_CONDITIONS": "移除状态",
+                "USE_HIDE_FIRST": "首先使用躲藏动作",
+                "PROCEED_CAUTION": "谨慎行动",
+                "REPOSITION_BEFORE_SNEAK": "潜行前移位",
+                "TAKE_COVER": "寻找掩蔽",
+                "REPOSITION": "移位",
+                "POINT_OUT": "指出位置",
+                "SEEK_ACTION": "搜索动作",
+                "INCREASE_DISTANCE": "增加距离",
+                "AVOID_EXPOSURE": "避免暴露",
+                "TACTICAL_ADVICE": "战术建议",
+                "CONDITIONS": "状态",
+                "HIDE_ACTION": "躲藏动作",
+                "ALTERNATIVE_ACTIONS": "其他动作",
+                "CREATE_DIVERSION": "分神"
+            },
+            "POINT_OUT_ACTION": "PF2E Visioner - 指出位置动作"
+        },
+        "BUTTONS": {
+            "KEEN_EYES": "敏锐视觉",
+            "OBSERVED": "可见",
+            "CONCEALED": "隐蔽",
+            "HIDDEN": "藏匿",
+            "UNDETECTED": "无踪",
+            "NO_COVER": "无掩蔽",
+            "LESSER_COVER": "次等掩蔽",
+            "STANDARD_COVER": "标准掩蔽",
+            "GREATER_COVER": "高等掩蔽",
+            "BRIGHT_LIGHT": "明亮光照",
+            "DIM_LIGHT": "昏暗光照",
+            "DARKNESS": "黑暗",
+            "CANCEL": "取消"
+        },
+        "TOOLTIPS": {
+            "AUTO_COVER_DETECTION": "自动掩蔽检测"
         }
     }
 }
