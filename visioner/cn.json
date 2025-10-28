@@ -298,12 +298,12 @@
                 "hint": "若启用，将可以放置15尺爆发的测量板"
             },
             "LIMIT_SEEK_RANGE": {
-                "name": "限制战斗中搜索范围",
+                "name": "限制战斗搜索射程",
                 "hint": "若启用，战斗中的搜索动作将仅能侦测到指定距离内的目标"
             },
             "LIMIT_SEEK_RANGE_DISABLED_BY_TEMPLATE": "禁用范围限制：使用标准测量板",
             "LIMIT_SEEK_RANGE_OUT_OF_COMBAT": {
-                "name": "限制战斗外搜索范围",
+                "name": "限制探索期搜索射程",
                 "hint": "若启用，战斗外的搜索动作将仅能侦测到指定距离内的目标"
             },
             "CUSTOM_SEEK_DISTANCE": {
@@ -311,7 +311,7 @@
                 "hint": "若启用范围限制，在此设置搜索动作的最大距离（尺）"
             },
             "CUSTOM_SEEK_DISTANCE_OOC": {
-                "name": "搜索范围（战斗外）",
+                "name": "探索期搜索射程：",
                 "hint": "若启用战斗外范围限制，在此设置搜索动作的最大距离（尺）"
             },
             "USE_HUD_BUTTON": {
@@ -344,10 +344,10 @@
             },
             "LOOT_STEALTH_DC": {
                 "hint": "当战利品指示物作为搜索目标时所使用的DC。",
-                "name": "战利品角色默认隐秘DC"
+                "name": "战利品角色隐秘DC"
             },
             "WALL_STEALTH_DC": {
-                "name": "墙体默认隐秘DC",
+                "name": "墙体隐秘DC",
                 "hint": "当隐藏墙体作为搜索目标时所使用的DC（若墙体未设置明确DC）。"
             },
             "HIDE_QUICK_EDIT_TOOL": {
@@ -355,20 +355,20 @@
                 "name": "隐藏快速编辑工具"
             },
             "INCLUDE_LOOT_ACTORS": {
-                "name": "将战利品角色纳入能见度管理器中",
-                "hint": "允许为每位观察者分别配置对战利品角色（如宝箱、容器）的能见度状态。仅限视觉效果；不会应用 PF2E 的任何状态。"
+                "name": "隐藏战利品角色",
+                "hint": "允许在视野管理器中配置战利品角色的条件性能见度状态。\n（仅限视觉效果 - 无状态应用）"
             },
             "INCLUDE_WALLS": {
-                "name": "将墙壁设为可隐藏物体（实验性）",
+                "name": "隐藏墙体",
                 "hint": "在管理器中引入墙壁以便针对每位观察者设置为可见/藏匿状态。目前的实现形式仅限于视觉层面，并不会改变遮挡或碰撞情况。"
             },
             "HIDDEN_WALLS": {
-                "name": "启用隐藏墙体",
+                "name": "隐藏墙体",
                 "hint": "启用每面墙的隐藏切换功能及玩家指示标志。如果隐藏墙体是一扇门，那么它不会阻挡视线。"
             },
             "AUTO_COVER": {
-                "name": "自动掩蔽",
-                "hint": "若启用，模组会基于指示物间的路径阻挡程度对指示物应用掩蔽。"
+                "name": "启用自动掩蔽",
+                "hint": "允许基于相对于墙体与其他指示物间的掩蔽关系对指示物自动应用掩蔽。"
             },
             "EXPERIMENTAL_SEE_THROUGH_WALLS": {
                 "name": "实验性：独立指示物透视墙体（仅限客户端）",
@@ -409,12 +409,151 @@
             "GDV_TOKEN_GRAYSCALE": {
                 "name": "高等黑视：黑&白指示物",
                 "hint": "仅限客户端：当通过（高等）黑暗视觉观察时，应将指示物渲染为灰度图像，以符合规则文本描述（黑白视觉效果）。"
+            },
+            "REMOVE_PLAYER_TARGET_TOOLTIPS": {
+                "name": "移除玩家的目标悬停提示框",
+                "hint": "阻止玩家从目标视角看到所拥有指示物的悬停提示框"
+            },
+            "REMOVE_PLAYER_OBSERVER_TOOLTIPS": {
+                "name": "移除玩家的观察者悬停提示框",
+                "hint": "阻止玩家看到观察者视角的悬停提示框（O键/观察者模式）"
+            },
+            "HIDDEN_WALL_INDICATOR_WIDTH": {
+                "name": "隐藏墙体指示器宽度",
+                "hint": "隐藏墙体视觉指示器的默认宽度（像素）。该功能可以在场景配置中覆盖每个场景。该配置值更大则隐藏墙体在画布上更加明显。"
+            },
+            "DIM_LIGHTING_THRESHOLD": {
+                "name": "昏暗光照阈值",
+                "hint": "确定昏暗光照的默认阈值（0.0-1.0）。低于该值的光亮被视为昏暗光照。该功能可以在场景设置中覆盖每个场景。"
+            },
+            "AVS_CHANGES_INDICATOR_SIZE": {
+                "CHOICES": {
+                    "small": "小",
+                    "medium": "中",
+                    "large": "大",
+                    "xlarge": "超大"
+                }
+            },
+            "MANAGER_ROLL_COMPARISON": {
+                "name": "视野管理器掷骰比较",
+                "hint": "在视野管理器中添加一掷骰比较栏，以比较最新相关掷骰与相关DC"
+            },
+            "AUTO_COVER_GM_RESPECT_FOG": {
+                "name": "GM指示物自动掩蔽可视化",
+                "hint": "GM能够基于指示物的视角看到自动掩蔽可视化的限制"
+            },
+            "AUTO_COVER_IGNORE_DEAD": {
+                "name": "忽略死亡指示物",
+                "hint": "死亡指示物将不提供自动掩蔽"
+            },
+            "TOKEN_INTERSECTION_MODE": {
+                "hint": "如何基于指示物遮挡计算掩蔽",
+                "name": "指示物连线相交模式",
+                "CHOICES": {
+                    "length10": "10% - 相交10%或更多遮挡更多部分",
+                    "any": "任意 - 任意相交，为次等掩蔽；若遮挡指示物体型大于攻击者与目标两级时，为标准掩蔽"
+                }
+            },
+            "AUTO_COVER_VISUALIZATION_COMBAT_ONLY": {
+                "hint": "限制自动掩蔽可视化快捷键只能在战斗中使用",
+                "name": "仅限战斗中自动掩蔽可视化"
+            },
+            "AUTO_COVER_IGNORE_ALLIES": {
+                "name": "忽略盟友指示物",
+                "hint": "盟友指示物将不提供自动掩蔽"
+            },
+            "WALL_STANDARD_THRESHOLD": {
+                "name": "墙体标准掩蔽阈值：",
+                "hint": "目标指示物获得标准掩蔽时，必须被墙体遮蔽部分的百分比"
+            },
+            "WALL_GREATER_THRESHOLD": {
+                "name": "墙体高等掩蔽阈值：",
+                "hint": "目标指示物获得高等掩蔽时，必须被墙体遮蔽部分的百分比"
+            },
+            "WALLS_ALLOW_GREATER": {
+                "name": "允许墙体提供高等掩蔽",
+                "hint": "允许墙体基于配置阈值提供高等掩蔽"
+            },
+            "IGNORE_PRONE_TOKENS": {
+                "name": "忽略倒地指示物",
+                "hint": "倒地指示物将不提供自动掩蔽"
+            },
+            "KEYBIND_OPEN_MANAGER_TARGET_MODE": {
+                "name": "以目标模式打开管理器的快捷键",
+                "hint": "通过快捷键以目标模式而非观察者模式打开视野管理器。"
+            },
+            "VISIONER_QUICK_EDIT_TOOL": {
+                "name": "视野快速编辑工具"
+            },
+            "TOKEN_HUD_BUTTON": {
+                "name": "指示物HUD按钮",
+                "hint": "在Foundry的指示物HUD中添加一个按钮，用于打开视野管理器。若禁用，在选择指示物时会出现一个可移动的浮动按钮"
+            },
+            "VISIONER_SCENE_CONTROLS": {
+                "name": "视野场景控制",
+                "hint": "在左侧边栏的指示物控件和墙体控件添加特定的视野功能按钮。若禁用，这些功能仍可以通过单独的指示物/墙体设置或快捷键访问"
+            },
+            "AUTO_COVER_IGNORE_UNDETECTED": {
+                "name": "忽略无踪指示物",
+                "hint": "根据视野效果，处于无踪状态的指示物将不提供自动掩蔽"
             }
         },
         "UI": {
             "ENCOUNTER_FILTER_TEXT": "仅显示遭遇中指示物",
             "COVER_OVERRIDE": "覆盖掩蔽状态",
-            "ROLL": "掷骰"
+            "ROLL": "掷骰",
+            "APPLY_ALL": "全部应用",
+            "REVERT_ALL": "全部还原",
+            "REMOVE_OVERRIDES": "移除覆盖设置",
+            "CLEAR_BULK_OVERRIDES": "清除批量覆盖",
+            "FILTER_BY_DETECTION_LABEL": "按视窗过滤",
+            "ATTEMPTING_TO_HIDE": "尝试对观察者进行躲藏",
+            "IGNORE_ALLIES": "忽略盟友",
+            "IGNORE_ALLIES_TOOLTIP": "在结果列表中隐藏盟友",
+            "HIDE_FOUNDRY_HIDDEN": "隐藏Foundry不可见指示物",
+            "CONCEALED_TOOLTIP_SHORT": "隐蔽",
+            "SHOW_ONLY_CHANGES_TOOLTIP": "仅显示有能见度变更的行",
+            "ENCOUNTER_FILTER_TOOLTIP": "仅显示当前遭遇中的指示物",
+            "FOUNDRY_HIDDEN": "Foundry不可见",
+            "NO_COVER_STEALTH": "无掩蔽（隐秘+0）",
+            "APPLY_VISIBILITY_CHANGE": "应用该能见度变更",
+            "REVERT_TO_ORIGINAL": "还原至原有能见度",
+            "TOKEN": "指示物",
+            "NAME": "名称",
+            "VISIBILITY_CHANGE": "能见度变更",
+            "ACTIONS": "动作",
+            "APPLY_ALL_CHANGES": "应用全部能见度变更",
+            "REVERT_ALL_CHANGES": "还原所有变更为原有状态",
+            "OVERRIDE_TO_STATE": "覆盖为{label}",
+            "HIDDEN_OR_UNDETECTED": "藏匿或无踪",
+            "NO_COVER_BONUS": "无掩蔽加值（+0）",
+            "STANDARD_COVER_BONUS": "标准掩蔽加值（+2）",
+            "GREATER_COVER_BONUS": "高等掩蔽加值（+4）",
+            "CLOSE_DIALOG": "关闭对话框（结果已自动应用）",
+            "APPLY_NO_COVER_ALL": "对所有观察者应用无掩蔽加值",
+            "APPLY_STANDARD_COVER_ALL": "对所有观察者应用标准掩蔽加值",
+            "APPLY_GREATER_COVER_ALL": "对所有观察者应用高等掩蔽加值",
+            "SET_ALL_PCS_AS": "设置所有PC为{state}",
+            "SET_ALL_NPCS_AS": "设置所有NPC为{state}",
+            "SET_ALL_HAZARDS_OBSERVED": "设置所有危害为可见",
+            "SET_ALL_HAZARDS_HIDDEN": "设置所有危害为藏匿",
+            "SET_ALL_LOOT_OBSERVED": "设置所有战利品为可见",
+            "SET_ALL_LOOT_HIDDEN": "设置所有战利品为藏匿",
+            "SELECT_ALL_ENEMIES": "选择全部敌人指示物",
+            "SWAP_OBSERVER_TARGET": "切换观察者/目标模式",
+            "PF2E_VISIONER": "PF2E Visioner",
+            "WALL_COVER_NONE_SHORT": "无掩蔽",
+            "WALL_COVER_STANDARD_SHORT": "标准掩蔽",
+            "CEASELESS_SHADOWS_UPGRADE_TOOLTIP": "{FEAT}：{FROM} → {TO}（专长升级）",
+            "BULK_SET_VISIBILITY": "批量能见度设置",
+            "FILTER_BY_DETECTION_TOOLTIP": "仅显示处于当前视窗内的指示物",
+            "SELECT_ALL_PARTY": "选择团队内全部指示物",
+            "STANDARD_OR_GREATER_TOOLTIP": "标准或高等",
+            "ACKNOWLEDGE_END_TURN": "确认回合结束位置的验证结果",
+            "HIDE_FOUNDRY_HIDDEN_TOOLTIP": "视觉上隐藏处于Foundry不可见状态的指示物（document.hidden）",
+            "SET_ALL_AS": "设置全部{type}为{state}",
+            "SHOW_ONLY_CHANGES": "仅显示变更",
+            "WALL_COVER_GREATER_SHORT": "高等掩蔽"
         },
         "WALL": {
             "VISIBLE_TO_YOU": "隐藏墙体",
