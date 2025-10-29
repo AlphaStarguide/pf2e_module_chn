@@ -21,7 +21,7 @@
             "hidden": "藏匿",
             "undetected": "无踪",
             "concealed": "隐蔽",
-            "avs": "AVS"
+            "avs": "自动能见度"
         },
         "COVER_STATES": {
             "none": "无掩蔽",
@@ -113,7 +113,14 @@
             "OVERRIDE_CLEAR_FAILED": "无法清除此表的覆盖设置",
             "AVS_ACCEPTED_COUNT": "已接受{count}次变更",
             "NO_ENCOUNTER_TOKENS": "{moduleId}：未找到遭遇中指示物。过滤功能已禁用。",
-            "SNEAK_DEFERRED_RESTORED": "已将{count}个指示物恢复至原始的延迟状态，并带有全部的位置数据"
+            "SNEAK_DEFERRED_RESTORED": "已将{count}个指示物恢复至原始的延迟状态，并带有全部的位置数据",
+            "AVS_REJECTED_ALL": "已拒绝所有自动能见度变更",
+            "AVS_REJECTED": "已拒绝自动能见度变更",
+            "AVS_REJECTED_SINGLE": "已拒绝自动能见度变更：{observerName} → {targetName}",
+            "AVS_ACCEPTED_SINGLE": "接受自动能见度变更：{observerName} → {targetName}",
+            "AVS_ACCEPTED_PLURAL": "接受{count}次自动能见度变更",
+            "AVS_CLEARED_PLURAL": "接受{count}次自动能见度变更",
+            "AVS_ACCEPT_FAILED": "未能接受自动能见度变更"
         },
         "SEEK_AUTOMATION": {
             "BUTTON_APPLY": "应用搜索结果",
@@ -283,7 +290,7 @@
             },
             "IGNORE_ALLIES_DEFAULT": {
                 "name": "“忽略盟友”状态默认设置",
-                "hint": "决定“忽略盟友”复选框在视野管理器/操作对话框中初始是处于启用还是禁用状态，但你仍然可以手动切换。"
+                "hint": "决定“忽略盟友”复选框在视野管理器/操作对话框中初始是处于启用还是禁用状态，但你仍然可以手动切换"
             },
             "ENABLE_ALL_TOKENS_VISION": {
                 "name": "NPC视觉",
@@ -343,12 +350,12 @@
                 "name": "战利品角色默认察觉DC"
             },
             "LOOT_STEALTH_DC": {
-                "hint": "使用搜索动作寻找隐藏的战利品角色时所对抗的默认DC。隐秘DC可以在战利品角色的指示物设置中进行更改。",
+                "hint": "使用搜索动作寻找隐藏的战利品角色时所对抗的默认DC。隐秘DC可以在战利品角色的指示物设置中进行更改",
                 "name": "战利品角色隐秘DC"
             },
             "WALL_STEALTH_DC": {
                 "name": "墙体隐秘DC",
-                "hint": "使用搜索动作寻找隐藏墙体时所对抗的默认DC。隐秘DC可以在墙体设置中进行更改。"
+                "hint": "使用搜索动作寻找隐藏墙体时所对抗的默认DC。隐秘DC可以在墙体设置中进行更改"
             },
             "HIDE_QUICK_EDIT_TOOL": {
                 "hint": "若启用，快捷编辑工具将不会出现在指示物控件栏中。",
@@ -360,15 +367,15 @@
             },
             "INCLUDE_WALLS": {
                 "name": "隐藏墙体",
-                "hint": "可在视野管理器中配置墙体的条件性能见度状态。以及成功搜索出目标时的视觉标识。"
+                "hint": "可在视野管理器中配置墙体的条件性能见度状态。以及成功搜索出目标时的视觉标识"
             },
             "HIDDEN_WALLS": {
                 "name": "隐藏墙体",
-                "hint": "可在视野管理器中配置墙体的条件性能见度状态。以及成功搜索出目标时的视觉标识。"
+                "hint": "可在视野管理器中配置墙体的条件性能见度状态。以及成功搜索出目标时的视觉标识"
             },
             "AUTO_COVER": {
                 "name": "启用自动掩蔽",
-                "hint": "允许基于相对于墙体与其他指示物间的掩蔽关系对指示物自动应用掩蔽。"
+                "hint": "允许基于相对于墙体与其他指示物间的掩蔽关系对指示物自动应用掩蔽"
             },
             "EXPERIMENTAL_SEE_THROUGH_WALLS": {
                 "name": "实验性：独立指示物透视墙体（仅限客户端）",
@@ -432,7 +439,9 @@
                     "medium": "中",
                     "large": "大",
                     "xlarge": "超大"
-                }
+                },
+                "name": "自动能见度变更标识大小",
+                "hint": "控制自动能见度变更浮动标识按钮，及其提示信息的大小。"
             },
             "MANAGER_ROLL_COMPARISON": {
                 "name": "视野管理器掷骰比较",
@@ -567,7 +576,7 @@
             "ATTACK_CONSEQUENCES": "对藏匿/无踪攻击者的攻击后果",
             "HIDE_WALLS": "将隐藏墙体从结果列表隐藏",
             "IGNORE_WALLS": "将隐藏墙体从结果列表隐藏",
-            "AVS_CHANGE_INFO": "移动或光照变化可能导致之前设置的能见度覆盖失效。请仔细查看以下每一项AVS变更后，再决定是否接受或拒绝。",
+            "AVS_CHANGE_INFO": "移动或光照变化可能导致之前设置的能见度覆盖失效。请仔细查看以下每一项自动能见度变更后，再决定是否接受或拒绝。",
             "REJECT_ALL_CHANGES": "拒绝所有变更",
             "ACCEPT_ALL_CHANGES": "接受所有变更",
             "ACCEPT_THIS_CHANGE": "接受该变更",
@@ -708,7 +717,19 @@
             "BULK_ACTION_INFO": "一次性对所有变更应用操作",
             "END_POS_CHECK_END_TURN": "回合结束时将对结束位置进行检查（连续潜行）",
             "END_TURN_VALIDATION": "回合结束验证",
-            "ACCEPT_ALL_CHANGES_IN_TABLE": "接受此表中的所有变更"
+            "ACCEPT_ALL_CHANGES_IN_TABLE": "接受此表中的所有变更",
+            "CURRENTLY_DEFERRED": "现已推迟至回合结束（鬼祟专长）",
+            "DEFER_TO_END_OF_TURN": "将结束位置检查推迟至回合结束（鬼祟专长）",
+            "DEFERRED_ACTIONS_DISABLED": "动作已禁用 - 推迟至回合结束",
+            "REMOVE_DEFER_PROCESS_NOW": "取消推迟并现在处理位置检查",
+            "DEFER_ALL_ELIGIBLE": "将所有符合条件的位置检查推迟至回合结束",
+            "PROCESS_DEFERRED_CHECKS": "对回合结束时的验证进行{count}次推迟位置检查",
+            "AVS_RECOMMENDED": "自动能见度推荐：{label}",
+            "AVS_CHANGE_INFO_TOOLTIP": "移动或光照变化可能导致之前设置的能见度覆盖失效。请仔细查看以下每一项自动能见度变更后，再决定是否接受或拒绝。",
+            "DEFER_ALL_ELIGIBLE_LABEL": "推迟全部符合条件项",
+            "UNDEFER_ALL_BUTTON": "全部取消推迟",
+            "RESTORE_DEFERS_BUTTON": "恢复推迟",
+            "UNDEFER_ALL": "取消所有指示物当前的推迟状态并恢复其原状态"
         },
         "WALL": {
             "VISIBLE_TO_YOU": "隐藏墙体",
@@ -772,6 +793,9 @@
             "TYPES": {
                 "VISIBILITY": {
                     "label": "视野能见度"
+                },
+                "CONCEALMENT": {
+                    "label": "自动能见度隐蔽区域"
                 }
             },
             "CONCEALMENT_ENABLED": {
@@ -842,7 +866,13 @@
         },
         "AVS_OVERRIDE_DIALOG": {
             "CLEAR_ALL": "清除所有覆盖设置",
-            "CLOSE": "关闭"
+            "CLOSE": "关闭",
+            "NO_OVERRIDES": "该指示物当前未启用自动能见度覆盖。",
+            "CLEAR_ALL_CONFIRM_TITLE": "清除所有自动能见度覆盖设置",
+            "OVERRIDE_REMOVED": "自动能见度覆盖已移动：{observer} → {target}",
+            "ERROR_REMOVING_OVERRIDE": "移除AVS覆盖设置时出错",
+            "ERROR_CLEARING_OVERRIDES": "清除AVS覆盖时出错",
+            "ALL_OVERRIDES_CLEARED": "已清除{token}的所有AVS覆盖设置"
         },
         "VISIBILITY_FACTORS": {
             "REASONS": {
@@ -995,7 +1025,8 @@
             "POINT_OUT_ACTION": "PF2E Visioner - 指出位置动作",
             "OVERRIDE_VALIDATION": "覆盖设置验证",
             "END_OF_TURN_SNEAK": "回合结束时的隐秘验证",
-            "END_TURN_POSITION": "回合结束时的位置验证 - {name}"
+            "END_TURN_POSITION": "回合结束时的位置验证 - {name}",
+            "AVS_VALIDATION": "自动能见度变更验证"
         },
         "BUTTONS": {
             "KEEN_EYES": "敏锐视觉",
