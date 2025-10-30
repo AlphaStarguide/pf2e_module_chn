@@ -1,5 +1,6 @@
 {
     "LEVIKTIMES": {
+        "playerOnly": "Player Only",
         "gmOnly": "GM Only",
         "reloadRequired": "Requires Reload",
         "emiting": {
@@ -152,6 +153,14 @@
                 "scribble": {
                     "name": "Handwritten Character Sheet",
                     "hint": "A restyling of the character sheet to appear as it was written by hand."
+                },
+                "showPlayers": {
+                    "name": "Show Avatar to Players",
+                    "hint": "Adds a 'Show Player' button in the actor sheets avatar panel."
+                },
+                "sortList": {
+                    "name": "Sort List Button",
+                    "hint": "Adds sorting buttons to different lists on the actor sheet."
                 }
             },
             "betterTemplate": {
@@ -163,9 +172,20 @@
             },
             "betterTrade": {
                 "title": "Better Trade",
+                "invertTrade": {
+                    "name": "Invert Trade Modifier",
+                    "hint": "Players will no longer have to hold 'shift' to give an item without initiating a trade. (Holding 'shift' will initiate the trade request)"
+                },
                 "withContent": {
                     "name": "With Container Content",
                     "hint": "When a container is moved from one actor to another, should its content go with it. NOTE this doesn't work when using the system trade functionality."
+                }
+            },
+            "betterUI": {
+                "title": "Better User Interface",
+                "unscaleTokenHUD": {
+                    "name": "Unscale Token HUD",
+                    "hint": "Revert the canvas scaling of the token HUD"
                 }
             },
             "conditionManager": {
@@ -419,8 +439,8 @@
             "item": {
                 "buy": {
                     "confirm": {
-                        "content": "Does <strong>{buyer}</strong> want to buy <strong>{item}</strong>?",
-                        "title": "Buy Item - {item}"
+                        "content": "Does <strong>{buyer}</strong> wish to purchase <strong>{item}</strong>?",
+                        "title": "Purchase Item - {item}"
                     },
                     "noTarget": "You must select a valid actor to buy from this merchant"
                 },
@@ -430,7 +450,7 @@
                 "refuse": "<strong>{actor}</strong> isn't interested in buying <strong>{item}</strong>.",
                 "sell": {
                     "button": "Sell",
-                    "prompt": "Does {actor} wish to purchase this item?",
+                    "prompt": "Does {actor} wish to sell this item?",
                     "title": "Sell {item}"
                 },
                 "unided": "Nobody sane would want to buy some random unidentified item."
@@ -441,7 +461,18 @@
                 "infiniteAll": {
                     "label": "Infinite Stocks",
                     "tooltip": "The merchant will never run out of items to sell (does nothing to Treasures or Services)"
+                },
+                "none": "Not for sell",
+                "sellItems": {
+                    "button": "Sell Items",
+                    "noSelection": "You must select a valid selling actor."
                 }
+            },
+            "sellItems": {
+                "empty": "<strong>{name}</strong> doesn't seem to be interested by anything you would have to offer.",
+                "info": "The following prices are colored based on an assumed ratio of <u>1</u> for treasures and <u>0.5</u> for the other items.",
+                "title": "Sell Items - {name}",
+                "sell": "Sell Item"
             },
             "sheetServices": {
                 "add": "Add Service",
@@ -488,6 +519,13 @@
                 "quantity": "Negative number for infinite stock",
                 "tags": "Service Tags",
                 "title": "Service - {label}"
+            }
+        },
+        "betterSheet": {
+            "sortList": {
+                "sheet": {
+                    "tooltip": "Sort Content"
+                }
             }
         },
         "betterTemplate": {
