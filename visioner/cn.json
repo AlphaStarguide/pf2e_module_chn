@@ -508,6 +508,14 @@
             "AUTO_COVER_IGNORE_UNDETECTED": {
                 "name": "忽略无踪指示物",
                 "hint": "根据视野效果，处于无踪状态的指示物将不提供自动掩蔽"
+            },
+            "AVS_ONLY_IN_COMBAT": {
+                "name": "仅在战斗中启用自动能见度",
+                "hint": "若启用，自动能见度系统将只在遭遇期间激活，并且只会跟踪处于遭遇中指示物的能见度。战斗结束后能见度将被重置。"
+            },
+            "ENABLE_CAMERA_VISION_AGGREGATION": {
+                "name": "摄像视野整合",
+                "hint": "若启用，具有旁观者权限的摄像账号在多个团队指示物运行时，将显示所有受控指示物的最佳（最宽松）能见度状态，而非仅显示首个指示物的情况。这对于需要摄像能够看到全部团队成员所看见场景的流媒体情景非常有用。"
             }
         },
         "UI": {
@@ -925,7 +933,8 @@
                 "TARGET_UNDETECTED_CONDITION": "目标处于无踪状态",
                 "HEARD_INVISIBLE_HIDDEN": "被听觉（模糊感官）侦测到 - 隐形生物视为藏匿",
                 "DARKVISION_IN_DARKNESS": "黑暗视觉能在黑暗中如常视物",
-                "TARGET_INVISIBLE_OBSERVER_DEAFENED": "目标处于隐形，且观察者陷入耳聋"
+                "TARGET_INVISIBLE_OBSERVER_DEAFENED": "目标处于隐形，且观察者陷入耳聋",
+                "DETECTED_BY_SENSE_IMPRECISE": "被{sense}（模糊感官）侦测到"
             },
             "NO_TOKEN_SELECTED": "选择至少一个指示物显示能见度因素",
             "STATE_LABEL": "状态",
