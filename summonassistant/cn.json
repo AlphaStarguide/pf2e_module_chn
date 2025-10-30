@@ -1,1 +1,16 @@
-{}
+{
+    "I18N.LANGUAGE": "英语",
+    "pf2e-summons-assistant": {
+        "module-settings": {
+            "name-ownership": {
+                "name": "将召唤者名称添加到召唤生物名称中"
+            },
+            "house-rule": {
+                "rank-upgrade": {
+                    "name": "[房规]召唤法术视为环级+1"
+                }
+            }
+        },
+        "name": "PF2e Summon's Assistant"
+    }
+}
