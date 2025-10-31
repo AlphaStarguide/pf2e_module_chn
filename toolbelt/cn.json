@@ -533,7 +533,7 @@
         "betterMerchant": {
             "item": {
                 "sell": {
-                    "prompt": "{actor}是否想要购买该物品？",
+                    "prompt": "{actor}是否想要出售该物品？",
                     "title": "出售{item}",
                     "button": "出售"
                 },
@@ -581,6 +581,11 @@
                 "infiniteAll": {
                     "tooltip": "商人售卖的物品永远不会被卖空（这不会影响宝物或服务）",
                     "label": "无限库存"
+                },
+                "none": "不对外出售",
+                "sellItems": {
+                    "noSelection": "你必须选择一个有效的销售角色。",
+                    "button": "出售物品"
                 }
             },
             "serviceMenu": {
@@ -638,6 +643,12 @@
                 "noBuyer": "你必须选择一个你拥有的玩家角色/NPC/团队作为服务的对象。",
                 "noFunds": "<strong>{buyer}</strong>没有足够资金雇佣<strong>{seller}</strong>的服务。",
                 "noStock": "<strong>{seller}</strong>不再提供该服务。"
+            },
+            "sellItems": {
+                "empty": "<strong>{name}</strong>似乎对你所提供的任何东西都不感兴趣。",
+                "info": "以下价格是基于一个假设比率标注的，即宝物的价格比率为<u>1</u>，其他物品的价格比率为 <u>0.5</u>。",
+                "title": "出售物品 - {name}",
+                "sell": "出售物品"
             }
         },
         "rollTracker": {
@@ -911,6 +922,13 @@
                 "yes": "分割",
                 "quantity": {
                     "label": "新物品堆的物品数"
+                }
+            }
+        },
+        "betterSheet": {
+            "sortList": {
+                "sheet": {
+                    "tooltip": "整理内容"
                 }
             }
         }
