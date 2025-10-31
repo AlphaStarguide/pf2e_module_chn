@@ -928,7 +928,8 @@
         "betterSheet": {
             "sortList": {
                 "sheet": {
-                    "tooltip": "整理内容"
+                    "tooltip": "整理内容",
+                    "container": "整理容器内容物"
                 }
             }
         }
