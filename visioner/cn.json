@@ -18,7 +18,7 @@
         },
         "VISIBILITY_STATES": {
             "observed": "可见",
-            "hidden": "藏匿",
+            "hidden": "隐藏",
             "undetected": "无踪",
             "concealed": "隐蔽",
             "avs": "自动能见度"
@@ -87,7 +87,7 @@
             "CACHE_CLEARED": "已清除散发光照的指示物缓存",
             "CACHE_UNAVAILABLE": "无法清除缓存",
             "ALL_CACHES_CLEARED": "所有缓存已清除，且能见度已重新计算",
-            "SCENE_CONFIG_RESET": "场景配置标志重置 - 更新操作将恢复",
+            "SCENE_CONFIG_RESET": "场景配置标志重置 - 重载将恢复",
             "SELECT_TWO_TOKENS": "请按顺序选择两个指示物：观察者与目标",
             "AVS_UNAVAILABLE": "PF2E Visioner：自动化能见度系统不可用",
             "NEED_BOTH_TOKENS": "同时需要观察者与目标指示物",
@@ -102,7 +102,7 @@
             "AVS_ACCEPTED_IN_TABLE": "在{group}表中已接受{count}次变更",
             "SNEAK_APPLY_FAILED": "未能应用潜行变更：{errors}",
             "INIT_FAILED": "PF2E Visioner无法初始化：{error}",
-            "NO_VALID_CONSEQUENCES": "未找到有效的攻击影响目标。只有当你对至少一名观察者处于藏匿或无踪状态时，才能看到后果。",
+            "NO_VALID_CONSEQUENCES": "未找到有效的攻击后果目标。只有当你对至少一名观察者处于藏匿或无踪状态时，才能看到后果。",
             "NO_TOKENS_PROVIDED": "无指示物可供清理",
             "VISION_CACHE_UNAVAILABLE": "无法清除视觉缓存",
             "NO_DEFERRED_OUTCOMES": "未找到可验证的推迟结果。",
@@ -199,7 +199,7 @@
             }
         },
         "COVER_OVERRIDE": {
-            "POPUP_OVERRIDE": "快捷键弹窗已覆盖掩蔽状态：{original} → {final}",
+            "POPUP_OVERRIDE": "快捷键弹窗已完成掩蔽状态覆盖：{original} → {final}",
             "DIALOG_OVERRIDE": "掷骰对话框中的掩蔽状态已覆盖：{original} → {final}",
             "GENERIC_OVERRIDE": "掩蔽状态已覆盖：{original} → {final}"
         },
@@ -260,10 +260,10 @@
         "SETTINGS": {
             "ENABLE_HOVER_TOOLTIPS": {
                 "name": "启用悬停提示框",
-                "hint": "悬停指示物时显示能见度状态提示"
+                "hint": "悬停于指示物时显示能见度状态提示信息"
             },
             "ALLOW_PLAYER_TOOLTIPS": {
-                "hint": "若启用，玩家可以在悬停于指示物上时看见基于自身视角的能见度标志提示框",
+                "hint": "若启用，玩家可以在悬停指示物时看见基于自身视角的能见度标志提示框",
                 "name": "玩家视角提示框"
             },
             "TOOLTIP_FONT_SIZE": {
@@ -427,11 +427,11 @@
             },
             "HIDDEN_WALL_INDICATOR_WIDTH": {
                 "name": "隐藏墙体标识宽度",
-                "hint": "隐藏墙体视觉标识的默认宽度（像素）。该功能可以在场景配置中覆盖每个场景。该配置值更大则隐藏墙体在画布上更加明显。"
+                "hint": "隐藏墙体视觉标识的默认宽度（像素）。该项设置可以在每个场景配置中进行单独设置。该配置值更大则隐藏墙体在画布上更加明显。"
             },
             "DIM_LIGHTING_THRESHOLD": {
                 "name": "昏暗光照阈值",
-                "hint": "确定昏暗光照的默认阈值（0.0-1.0）。低于该值的光亮被视为昏暗光照。该功能可以在场景设置中覆盖每个场景。"
+                "hint": "确定昏暗光照的默认阈值（0.0-1.0）。低于该值的光亮被视为昏暗光照。该项设置可以在每个场景配置中进行单独设置。"
             },
             "AVS_CHANGES_INDICATOR_SIZE": {
                 "CHOICES": {
@@ -459,10 +459,10 @@
                 "hint": "如何基于指示物遮挡计算掩蔽",
                 "name": "指示物连线相交模式",
                 "CHOICES": {
-                    "length10": "10% - 相交10%或更多遮挡更多部分",
-                    "any": "任意 - 任意相交，为次等掩蔽；若遮挡指示物体型大于攻击者与目标两级时，为标准掩蔽",
+                    "length10": "10% - 相交10%或遮挡更多部分",
+                    "any": "任意 - 若有任意相交，为次等掩蔽；若遮挡指示物体型大于攻击者与目标两级，为标准掩蔽",
                     "coverage": "侧边遮挡 - 基于侧边遮挡的百分比阈值。50%标准掩蔽/70%高等掩蔽",
-                    "tactical": "战旗 - 边到边的更加精确的计算"
+                    "tactical": "策略 - 从指示物边缘出发连线，更加精确的掩蔽计算"
                 }
             },
             "AUTO_COVER_VISUALIZATION_COMBAT_ONLY": {
@@ -515,7 +515,7 @@
             },
             "ENABLE_CAMERA_VISION_AGGREGATION": {
                 "name": "摄像视野整合",
-                "hint": "若启用，具有旁观者权限的摄像账号在多个团队指示物运行时，将显示所有受控指示物的最佳（最宽松）能见度状态，而非仅显示首个指示物的情况。这对于需要摄像能够看到全部团队成员所看见场景的流媒体情景非常有用。"
+                "hint": "若启用，具有旁观权限的摄像账号在多个团队指示物运行时，将显示所有受控指示物的最佳（最宽松）能见度状态，而非仅显示首个指示物的情况。这对于需要摄像能够看到全部团队成员所看见场景的流媒体情景非常有用。"
             }
         },
         "UI": {
@@ -568,7 +568,7 @@
             "BULK_SET_VISIBILITY": "批量能见度设置",
             "FILTER_BY_DETECTION_TOOLTIP": "仅显示处于当前视窗内的指示物",
             "SELECT_ALL_PARTY": "选择团队内全部指示物",
-            "STANDARD_OR_GREATER_TOOLTIP": "标准或高等",
+            "STANDARD_OR_GREATER_TOOLTIP": "标准或高等掩蔽",
             "ACKNOWLEDGE_END_TURN": "确认回合结束位置的验证结果",
             "HIDE_FOUNDRY_HIDDEN_TOOLTIP": "视觉上隐藏处于Foundry不可见状态的指示物（document.hidden）",
             "SET_ALL_AS": "设置全部{type}为{state}",
@@ -729,7 +729,7 @@
             "CURRENTLY_DEFERRED": "现已推迟至回合结束（鬼祟专长）",
             "DEFER_TO_END_OF_TURN": "将结束位置检查推迟至回合结束（鬼祟专长）",
             "DEFERRED_ACTIONS_DISABLED": "动作已禁用 - 推迟至回合结束",
-            "REMOVE_DEFER_PROCESS_NOW": "取消推迟并现在处理位置检查",
+            "REMOVE_DEFER_PROCESS_NOW": "取消推迟并立即处理位置检查",
             "DEFER_ALL_ELIGIBLE": "将所有符合条件的位置检查推迟至回合结束",
             "PROCESS_DEFERRED_CHECKS": "对回合结束时的验证进行{count}次推迟位置检查",
             "AVS_RECOMMENDED": "自动能见度推荐：{label}",
@@ -771,7 +771,7 @@
             },
             "HOLD_COVER_VISUALIZATION": {
                 "name": "长按掩蔽可视化",
-                "hint": "悬停指示物时长按此键，将掩蔽区域可视化。并显示攻击的最佳位置。"
+                "hint": "悬停指示物时长按此键，使掩蔽区域可视化。并显示攻击的最佳位置。"
             },
             "OPEN_WALL_MANAGER": {
                 "name": "打开墙体管理器",
@@ -877,9 +877,9 @@
             "CLOSE": "关闭",
             "NO_OVERRIDES": "该指示物当前未启用自动能见度覆盖。",
             "CLEAR_ALL_CONFIRM_TITLE": "清除所有自动能见度覆盖设置",
-            "OVERRIDE_REMOVED": "自动能见度覆盖已移动：{observer} → {target}",
-            "ERROR_REMOVING_OVERRIDE": "移除AVS覆盖设置时出错",
-            "ERROR_CLEARING_OVERRIDES": "清除AVS覆盖时出错",
+            "OVERRIDE_REMOVED": "自动能见度覆盖已移除：{observer} → {target}",
+            "ERROR_REMOVING_OVERRIDE": "移除自动能见度覆盖设置时出错",
+            "ERROR_CLEARING_OVERRIDES": "清除自动能见度覆盖时出错",
             "ALL_OVERRIDES_CLEARED": "已清除{token}的所有AVS覆盖设置"
         },
         "VISIBILITY_FACTORS": {
@@ -971,7 +971,7 @@
             "fly": "飞行",
             "swim": "游泳",
             "burrow": "掘地",
-            "deploy": "部署",
+            "deploy": "展开",
             "travel": "旅行",
             "teleport": "传送"
         },
@@ -983,14 +983,14 @@
             "TAKE_COVER_RESULTS": "寻找掩蔽结果",
             "COVER_OVERRIDE": "掩蔽设置覆盖",
             "WALL_SETTINGS": "PF2E Visioner：墙体设置",
-            "TOGGLE_HIDDEN_WALL": "隐藏墙切换（所选墙体）",
+            "TOGGLE_HIDDEN_WALL": "切换墙体隐藏（所选墙体）",
             "QUICK_EDIT": "PF2E Visioner：快捷编辑（所选 ↔ 目标）",
             "PURGE_DATA": "PF2E Visioner：清除数据（场景/所选指示物）",
             "VISIONER_QUICK_PANEL": "视野快捷编辑",
             "APPLYING_CHANGES": "应用变更",
             "WALL_QUICK": "PF2E Visioner：墙体设置",
             "DARKNESS_MODE": "PF2E Visioner：设置黑暗模式",
-            "ATTACK_CONSEQUENCES": "攻击影响结果",
+            "ATTACK_CONSEQUENCES": "攻击后果结果",
             "CREATE_DIVERSION_RESULTS": "分神结果",
             "SNEAK_RESULTS": "潜行结果",
             "RECOMMENDATIONS": {
@@ -1084,7 +1084,7 @@
                 "COVER": "掩蔽",
                 "TOKEN_AUTO_COVER": "指示物自动掩蔽设置",
                 "WALL_AUTO_COVER": "墙壁自动掩蔽设置",
-                "AVS_SETTINGS": "A.V.S.设置",
+                "AVS_SETTINGS": "自动能见度系统设置",
                 "ADVANCED": "进阶"
             }
         },
