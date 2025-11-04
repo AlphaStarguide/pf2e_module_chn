@@ -28,12 +28,12 @@
                 }
             },
             "debug-mode": {
-                "name": "Debug模式",
-                "hint": "在Console终端可以查看消息"
+                "name": "调试模式",
+                "hint": "让控制台接收不同类型的信息"
             }
         },
         "code": {
-            "activation": "启动",
+            "activation": "启动项",
             "activate": "启动",
             "frequency": "频率",
             "granted-by": "效果来自",
