@@ -328,6 +328,18 @@
                     "hint": "撤销指示物HUD的画布缩放设置",
                     "name": "指示物HUD固定缩放"
                 }
+            },
+            "characterImporter": {
+                "enabled": {
+                    "name": "启用",
+                    "hint": "允许用户按步骤导入在Pathbuilder车好的角色。",
+                    "choices": {
+                        "all": "全体用户",
+                        "disabled": "禁用",
+                        "gm": "仅限GM"
+                    }
+                },
+                "title": "角色导入"
             }
         },
         "actionable": {
@@ -931,6 +943,59 @@
                     "tooltip": "整理内容",
                     "container": "整理容器内容物"
                 }
+            }
+        },
+        "characterImporter": {
+            "import": {
+                "code": {
+                    "title": "粘贴JSON代码",
+                    "yes": "解析JSON代码"
+                },
+                "fail": "角色导入失败。",
+                "file": {
+                    "title": "选择JSON文件",
+                    "yes": "解析文件"
+                },
+                "success": "角色导入成功。"
+            },
+            "sheet": {
+                "import": {
+                    "delete": "删除导入数据",
+                    "code": "来自代码",
+                    "file": "来自文件"
+                },
+                "level": {
+                    "import": "打开角色导入菜单",
+                    "cancel": "关闭角色导入菜单"
+                },
+                "data": {
+                    "entry": {
+                        "action": {
+                            "install": "将{match}添加到角色中",
+                            "refresh": "刷新当前物品",
+                            "locked": "无法刷新",
+                            "replace": "将当前数据替换为{match}",
+                            "revert": "取消覆盖设置"
+                        },
+                        "current": "当前",
+                        "drop": "删除{key}",
+                        "match": "替换",
+                        "override": "覆盖"
+                    }
+                },
+                "menu": {
+                    "skills": "技能",
+                    "spells": "法术",
+                    "feats": "专长",
+                    "inventory": "物品",
+                    "core": "核心",
+                    "details": "详情"
+                },
+                "title": "角色导入"
+            },
+            "deleteData": {
+                "title": "删除导入数据",
+                "content": "你确定要从这个角色中删除导入数据吗？<br><br>注意：该操作不会更新角色本身。"
             }
         }
     },
