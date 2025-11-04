@@ -44,7 +44,27 @@
                     "choices": {
                         "apply": "应用伤害",
                         "roll": "掷骰"
+                    },
+                    "hint": "[注意] 如果你选择启用该功能，模组不仅会在玩家看到最终数字时显示抗力/弱点的数值，而且仅会显示你的伤害掷骰的1个数字。"
+                },
+                "duration": {
+                    "name": "持续时间"
+                },
+                "max-font-scale": {
+                    "name": "最大字体缩放比例"
+                },
+                "jitter": {
+                    "name": "散布率%"
+                },
+                "number-scale-type": {
+                    "choices": {
+                        "percentRemainingHealth": "% 剩余生命值",
+                        "percentMaxHealth": "% 最大生命值",
+                        "none": "—"
                     }
+                },
+                "show-only-GM": {
+                    "name": "仅限GM"
                 }
             },
             "version": "版本",
@@ -70,6 +90,129 @@
                     "name": "隐藏标题栏按钮文本",
                     "hint": "隐藏在各个位置（角色卡，物品卡等）显示的标题栏按钮文本"
                 }
+            },
+            "check-animations": {
+                "font-size": {
+                    "name": "字体大小"
+                },
+                "sfx": {
+                    "check-or-attack": {
+                        "name": "在如下掷骰时播放音效…",
+                        "hint": "选择是否在攻击掷骰，或仅在检定时播放音效，抑或两者均播放",
+                        "choices": {
+                            "attacks": "仅限攻击",
+                            "checks": "仅限检定",
+                            "both": "全部掷骰"
+                        }
+                    },
+                    "show-on-token-type": {
+                        "choices": {
+                            "pc": "玩家角色",
+                            "npc": "NPC",
+                            "pc+npc": "玩家角色 & NPC"
+                        }
+                    },
+                    "enabled": {
+                        "name": "启用检定SFX",
+                        "hint": "选择是否在检定结果出现时播放音效"
+                    },
+                    "options": {
+                        "choices": {
+                            "success-or-fail": "成功或失败",
+                            "crits-only": "仅限大成功/大失败",
+                            "all": "全部"
+                        }
+                    },
+                    "volume": {
+                        "name": "SFX音量"
+                    },
+                    "file": {
+                        "criticalSuccess": {
+                            "name": "大成功音效"
+                        },
+                        "success": {
+                            "name": "成功音效"
+                        },
+                        "failure": {
+                            "name": "失败音效"
+                        },
+                        "criticalFailure": {
+                            "name": "大失败音效"
+                        }
+                    }
+                },
+                "color-scheme": {
+                    "name": "颜色主题",
+                    "choices": {
+                        "default": "默认",
+                        "dark": "暗色主题"
+                    }
+                }
+            },
+            "critical": {
+                "default-img": {
+                    "choices": {
+                        "pc-tok-npc-act": "PC：指示物丨NPC：角色",
+                        "pc-act-npc-tok": "PC：角色丨NPC：指示物",
+                        "pc-tok-npc-tok": "PC：指示物丨NPC：指示物",
+                        "pc-act-npc-act": "PC：角色丨NPC：角色"
+                    },
+                    "name": "默认图像"
+                },
+                "volume": {
+                    "name": "音量"
+                },
+                "duration": {
+                    "name": "持续时间"
+                },
+                "type": {
+                    "choices": {
+                        "persona": "女神异闻录5",
+                        "disgaea-7": "魔界战记7",
+                        "fire-emblem": "火焰纹章：觉醒",
+                        "fullscreen": "全屏"
+                    }
+                },
+                "show-on": {
+                    "choices": {
+                        "attacks": "攻击",
+                        "checks": "检定",
+                        "both": "攻击&检定"
+                    }
+                }
+            },
+            "shake-on-attack": {
+                "enabled": {
+                    "name": "启用攻击时震屏"
+                },
+                "type": {
+                    "choices": {
+                        "both": "所有人",
+                        "gm": "仅限GM",
+                        "players": "仅限玩家"
+                    }
+                }
+            },
+            "screen-shake": {
+                "enabled": {
+                    "name": "启用伤害震屏"
+                },
+                "intensity-type": {
+                    "choices": {
+                        "%-current-hp": "% 当前生命值",
+                        "%-max-hp": "% 最大生命值"
+                    }
+                }
+            },
+            "token-dmg-shake": {
+                "scaling": {
+                    "type": {
+                        "choices": {
+                            "%-current-hp": "% 当前生命值",
+                            "%-max-hp": "% 最大生命值"
+                        }
+                    }
+                }
             }
         },
         "controls": {
@@ -83,6 +226,60 @@
                     }
                 },
                 "name": "显示终结技"
+            }
+        },
+        "menu": {
+            "actor-settings": {
+                "critical": {
+                    "headers": {
+                        "default": "默认",
+                        "failure": "大失败",
+                        "strikes": "打击",
+                        "checks": "检定",
+                        "saves": "豁免",
+                        "success": "大成功"
+                    },
+                    "tooltip": {
+                        "test": "使用当前设置测试大成功动画"
+                    },
+                    "volume": {
+                        "name": "音量"
+                    },
+                    "buttons": {
+                        "test": "测试"
+                    }
+                }
+            },
+            "settings": {
+                "buttons": {
+                    "footer": {
+                        "cancel": "取消"
+                    },
+                    "import": "导入设置",
+                    "export": "导出设置"
+                },
+                "notification": {
+                    "save": "已成功保存设置！"
+                }
+            },
+            "import": {
+                "buttons": {
+                    "import": "导入",
+                    "cancel": "取消"
+                },
+                "notification": {
+                    "success": "Pf2e RPG设置已导入！"
+                },
+                "title": "PF2e RPG设置导入",
+                "content": "上传设置JSON文件"
+            }
+        },
+        "display-text": {
+            "outcomes": {
+                "criticalFailure": "大失败",
+                "failure": "失败",
+                "success": "成功",
+                "criticalSuccess": "大成功"
             }
         }
     },
