@@ -1,0 +1,26 @@
+{
+    "PIR": {
+        "settings": {
+            "forGmOnly": {
+                "name": "Show module to all users",
+                "hint": "Turn off to have module only be visible to GMs"
+            },
+            "debug": {
+                "name": "Print debug to console log",
+                "hint": ""
+            }
+        },
+        "script": {
+            "name": "PF2E Item Revitalizer",
+            "title": "Revitalizer Check",
+            "close_button": "Close",
+            "results_title": "Results",
+            "actor": "Actor",
+            "item_type": "Type",
+            "item_name": "Name",
+            "changed_property": "Changed Property",
+            "origin_item": "Origin Item",
+            "actor_item": "Actor's Item"
+        }
+    }
+}
