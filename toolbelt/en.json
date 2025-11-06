@@ -156,7 +156,7 @@
                 },
                 "showPlayers": {
                     "name": "Show Avatar to Players",
-                    "hint": "Adds a 'Show Player' button in the actor sheets avatar panel."
+                    "hint": "Adds a 'Show Players' button in the actor sheets avatar panel."
                 },
                 "sortList": {
                     "name": "Sort List Button",
@@ -581,6 +581,11 @@
                     "file": "From File"
                 },
                 "data": {
+                    "core": {
+                        "attributes": {
+                            "warning": "The imported data doesn't reach the last boost threshold (level {level}).<br>You may want to update it."
+                        }
+                    },
                     "entry": {
                         "action": {
                             "install": "Add {match} to Character",
@@ -912,6 +917,10 @@
                     "label": "Hero Points",
                     "hint": "Use the master's hero points."
                 },
+                "languages": {
+                    "label": "Languages",
+                    "hint": "Add master's languages to this actor."
+                },
                 "master": {
                     "label": "Master",
                     "hint": "Select a master with whom this actor will share data."
@@ -922,7 +931,7 @@
                 },
                 "spellcasting": {
                     "label": "Spellcasting",
-                    "hint": "Use the master's spellcasting proficiency and it's focus pool."
+                    "hint": "Use the master's spellcasting statistic and it's focus pool."
                 },
                 "timeEvents": {
                     "label": "Time Events",
