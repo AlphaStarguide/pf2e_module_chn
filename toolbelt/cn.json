@@ -911,6 +911,10 @@
                 "weaponRunes": {
                     "label": "武器符文",
                     "hint": "使用来源角色绑定的缠手带/武器的基础符文与性能符文。"
+                },
+                "languages": {
+                    "label": "语言",
+                    "hint": "将来源角色所掌握的语言添加至本角色。"
                 }
             },
             "share": "共享"
@@ -981,6 +985,11 @@
                         "drop": "删除{key}",
                         "match": "替换",
                         "override": "覆盖"
+                    },
+                    "core": {
+                        "attributes": {
+                            "warning": "导入数据未达到最新的提升阈值（{level}级）。<br>您可能需要更新它。"
+                        }
                     }
                 },
                 "menu": {
