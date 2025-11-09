@@ -24,6 +24,10 @@
             "ignorePassiveActions": {
                 "name": "阻止被动动作纯骰检定",
                 "hint": "若勾选，模组将忽略来自带有pf2e被动动作标志的动作的测试。"
+            },
+            "usePf2eVisionerAdapter": {
+                "name": "使用PF2e Visioner集成",
+                "hint": "若启用，模组将应用PF2e Visioner提供的能见度调整。"
             }
         },
         "results": {
