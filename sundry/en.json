@@ -1,0 +1,156 @@
+{
+  "I18N.LANGUAGE": "English",
+  "sundry": {
+    "module-settings": {
+      "colorize": {
+        "pf2e-hud": {
+          "persistent": {
+            "name": "[Colorize] PF2e HUD - Persistent HUD",
+            "hint": "Colorize the 'Persistent HUD' feature of 'PF2e HUD'"
+          }
+        },
+        "pf2e-toolbelt": {
+          "target-helper": {
+            "roll": {
+              "name": "[Colorize] PF2e Toolbelt - Target helper Roll Types",
+              "hint": "Colorize the 'Target helper' feature of 'PF2e Toolbelt' so that each roll type is colorized"
+            }
+          }
+        }
+      },
+      "display": {
+        "item-property-runes": {
+          "name": "[Display] Item Property Runes",
+          "hint": "When you go to look an item's sheet will add in the name and description of any Property Runes on the item"
+        },
+        "weapon": {
+          "base-damage": {
+            "name": "[Display] Weapon Base Damage",
+            "hint": "Adds a little display below the price on weapon sheets that displays their base damage (Note: This includes any Striking runes the weapon has)"
+          }
+        }
+      },
+      "hide": {
+        "default-craft-checks": {
+          "name": "[Hide] Default Craft Checks Buttons",
+          "hint": "To Prevent players from using default crafting as opposed to the 'Heroic Crafting' Buttons if using that addon"
+        },
+        "header": {
+          "button-text": {
+            "name": "[Hide] Header Button Text",
+            "hint": "Hides the header buttons' text, but keeps their icons in tact for this with a lot of modules"
+          }
+        },
+        "sell-all-treasure": {
+          "name": "[Hide] Sell All Treasure",
+          "hint": "Hides the 'Sell All Treasure' button to prevent accidentally selling key items"
+        }
+      },
+      "highlight": {
+        "pf2e-toolbelt": {
+          "target-helper": {
+            "roll": {
+              "name": "[Highlight] PF2e Toolbelt - Target Helper Unrolled Roll",
+              "hint": "Highlight unmade rolls by making them glow in the 'Target helper' feature of 'PF2e Toolbelt' to make it more clear to roll it"
+            }
+          }
+        },
+        "languages-known": {
+          "name": "[Highlight] Which party Members know Creature Languages",
+          "hint": "Highlights which languages (on NPC stat block pages) are known by the current active party as well as adds a tooltip to make sure its clear"
+        }
+      },
+      "message": {
+        "user-color": {
+          "name": "User Color for Message Headers",
+          "hint": "Sets the header of messages based on the user color"
+        }
+      },
+      "minify": {
+        "simple-requests": {
+          "name": "[Minify] Simple Requests",
+          "hint": "Makes 'Simple Requests' module HUD a bit smaller so its less in the way"
+        }
+      },
+      "notify": {
+        "spellstrike": {
+          "recharge": {
+            "name": "[Notify] Spellstrike Recharge",
+            "hint": "Adds a little ui notification when your spellstrike should be recharged"
+          }
+        },
+        "start-session": {
+          "journal": {
+            "name": "[Notify] Start of Session Checklist (Journal)",
+            "hint": "This feature when enough players join will open a start of session checklist to ensure you don't forget anything. (To activate this feature set this setting to a Journal or Journal Page UUID)"
+          },
+          "players-needed": {
+            "name": "[Notify] Start of Session Checklist (Players Needed)",
+            "hint": "This is the minimum amount of Non-GM players needed to be active in the game for the checklist to show up (defaults to Player count - 1)"
+          }
+        }
+      },
+      "track": {
+        "reaction-usage": {
+          "name": "[Track] Reaction Usage",
+          "hint": "This feature creates (and increments) an effect on a token that counts if a token has used a reaction. To note it also applies this effect to every token as combat starts if you have all enabled",
+          "choices": {
+            "all": "All Features",
+            "reaction-only": "Only Track Sent Reactions",
+            "off": "Off"
+          }
+        }
+      },
+      "replace": {
+        "pause-text": {
+          "name": "[Replace] Pause Text",
+          "hint": "Allows you to override the base pause text. This supports multiple pause text options from which it will pick randomly, separate each option with either '|' or ';'. (Set this setting blank to get the original pause text) (Also supports a Rolltable of options by setting this to the Table's UUID)"
+        },
+        "pause-img": {
+          "name": "[Replace] Pause Image",
+          "hint": "Allows you to override the base pause image."
+        },
+        "pause-img-class": {
+          "name": "[Replace] Pause Image Class",
+          "hint": "Allows you to replace the class for the pause image (animation) see the options here (https://docs.fontawesome.com/web/style/animate) on fontawesome (Default is 'fa-spin')"
+        }
+      }
+    },
+    "controls": {
+      "player-notes": {
+        "name": "Open Character 'Campaign Notes'",
+        "description": "Opens an editable version of the player's assigned character's 'Campaign Notes' section of their character sheet"
+      }
+    },
+    "notification": {
+      "player-notes": {
+        "updated": "Campaign Notes Updated!",
+        "no-character": "No Notes to open as you have no assigned character nor selected character"
+      },
+      "session-start": {
+        "active": "[Session Start] Enough players have joined the lobby to show you the session start checklist!"
+      },
+      "spellstrike": {
+        "recharged": "Spellstrike Recharged",
+        "conflux": "You just cast a conflux spell which allows you to recharge your spellstrike.",
+        "feature": "You used a feature that recharges your spellstrike",
+        "on-success": "You used a feature that recharges your spellstrike if you succeeded on a roll",
+        "other-option": "Alternatively you can always spend 1 action to recharge, this action has the <b>concentrate</b> trait"
+      }
+    },
+    "display": {
+      "base-damage": "Base Damage",
+      "player-notes": {
+        "title": "Campaign Notes"
+      },
+      "team-members": "members"
+    },
+    "items": {
+      "effects": {
+        "reaction-used": {
+          "name": "Effect: Reaction Used"
+        }
+      }
+    }
+  }
+}
