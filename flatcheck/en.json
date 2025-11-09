@@ -17,6 +17,10 @@
                 "name": "Ignore the condition with hidden effects",
                 "hint": "If checked, the module ignores the the following conditions: hidden, invisible, undetected and blinded."
             },
+            "usePf2eVisionerAdapter":{
+                "name": "Use PF2e Visioner integration",
+                "hint": "If checked, the module will apply visibility adjustments provided by the PF2e Visioner module."
+            },
             "ignorePassiveActions":{
                 "name": "Surpress flatchecks of passive actions",
                 "hint": "If checked, the module ignores the test from actions with the pf2e passive action symbol."
