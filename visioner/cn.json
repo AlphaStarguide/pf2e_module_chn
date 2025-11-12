@@ -780,6 +780,10 @@
             "SHOW_VISIBILITY_FACTORS": {
                 "name": "显示能见度因素",
                 "hint": "按下显示受控指示物对其他指示物能见度状态的详细原因。"
+            },
+            "SHOW_WALL_COVER_LABELS": {
+                "name": "显示墙体掩蔽标签",
+                "hint": "在墙体工具激活时，长按此键显示墙体的掩蔽状态标签（自动，无，次等，标准，高等）。"
             }
         },
         "REGION_BEHAVIOR": {
