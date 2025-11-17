@@ -8,6 +8,16 @@
             "debug": {
                 "hint": " ",
                 "name": "向控制台日志发送调试信息"
+            },
+            "itemIgnoreList": {
+                "name": "忽略角色物品",
+                "hint": "用户的自定义忽略物品列表（以半角逗号分隔）"
+            },
+            "propertyIgnoreList": {
+                "name": "忽略物品性能"
+            },
+            "rulesElementArrayLengthOnly": {
+                "name": "揭示简化规则元素"
             }
         },
         "script": {
@@ -21,6 +31,25 @@
             "name": "PF2E Item Revitalizer",
             "title": "重制检查",
             "changed_property": "已变更属性"
+        },
+        "dialog": {
+            "results": {
+                "table": {
+                    "actor": "角色",
+                    "item_type": "类型",
+                    "actions": "操作",
+                    "actor_item": "角色物品链接",
+                    "origin_item": "原始物品链接"
+                }
+            }
+        },
+        "presenter": {
+            "popup": {
+                "item_success_revitalized": "{name}物品已成功更新"
+            }
+        },
+        "sheet": {
+            "revitalize_button": "更新"
         }
     }
 }
