@@ -741,7 +741,11 @@
             "DEFER_ALL_ELIGIBLE_LABEL": "推迟全部符合条件项",
             "UNDEFER_ALL_BUTTON": "全部取消推迟",
             "RESTORE_DEFERS_BUTTON": "恢复推迟",
-            "UNDEFER_ALL": "取消所有指示物当前的推迟状态并恢复其原状态"
+            "UNDEFER_ALL": "取消所有指示物当前的推迟状态并恢复其原状态",
+            "SET_ALL_WALLS_LESSER_COVER": "设置所有墙体为次等掩蔽",
+            "WALL_COVER_LESSER_TOOLTIP": "至多次等掩蔽 - 墙体基于遮挡阈值至多提供次等掩蔽",
+            "LESSER_MAX": "至多次等",
+            "WALL_COVER_LESSER_SHORT": "次等掩蔽"
         },
         "WALL": {
             "VISIBLE_TO_YOU": "隐藏墙体",
