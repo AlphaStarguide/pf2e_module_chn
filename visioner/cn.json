@@ -236,7 +236,9 @@
                 "DISTRACTING_SHADOWS_LABEL": "潜于阴影",
                 "TERRAIN_STALKER_LABEL": "地形潜伏",
                 "DISTRACTING_SHADOWS_TOOLTIP": "你可以将更大体型的生物作为掩蔽满足躲藏/潜行的先决条件",
-                "VANISH_INTO_THE_LAND_TOOLTIP": "当你处于为地形潜伏专长选择的困难地形中，即使没有掩蔽或未处于隐蔽状态，也可以使用潜行"
+                "VANISH_INTO_THE_LAND_TOOLTIP": "当你处于为地形潜伏专长选择的困难地形中，即使没有掩蔽或未处于隐蔽状态，也可以使用潜行",
+                "OFF_GUARD_PREVENTED_LABEL": "避免陷入措手不及",
+                "OFF_GUARD_PREVENTED_TOOLTIP": "由{EFFECT}避免措手不及减值"
             }
         },
         "CREATE_A_DIVERSION_AUTOMATION": {
@@ -946,7 +948,8 @@
                 "HEARD_INVISIBLE_HIDDEN": "被听觉（模糊感官）侦测到 - 隐形生物视为藏匿",
                 "DARKVISION_IN_DARKNESS": "黑暗视觉能在黑暗中如常视物",
                 "TARGET_INVISIBLE_OBSERVER_DEAFENED": "目标处于隐形，且观察者陷入耳聋",
-                "DETECTED_BY_SENSE_IMPRECISE": "被{sense}（模糊感官）侦测到"
+                "DETECTED_BY_SENSE_IMPRECISE": "被{sense}（模糊感官）侦测到",
+                "RULE_ELEMENT_OVERRIDE": "规则元素覆盖状态"
             },
             "NO_TOKEN_SELECTED": "选择至少一个指示物显示能见度因素",
             "STATE_LABEL": "状态",
@@ -1111,6 +1114,102 @@
                 "REQUIRES_INITIATIVE": "需要先攻",
                 "RANGE": "射程（尺）",
                 "DIRECTION": "方向"
+            },
+            "EFFECT": {
+                "EXAMPLES": {
+                    "BLUR": {
+                        "DESCRIPTION": "目标的形态变得模糊不清。它获得隐蔽。由于该效果的原理，目标的位置仍然是显然的，目标不能使用该隐蔽来躲藏或潜行 。",
+                        "NAME": "朦胧术"
+                    },
+                    "REVEALING_LIGHT": {
+                        "DESCRIPTION": "一道魔法光亮的波浪掠过该区域。由你选择光亮的外观，例如五彩斑斓、无热量的火焰或者闪烁的微尘。受显光尘影响的生物陷入目眩。若该生物处于隐形，则它改为隐蔽。如果目标已由于任何其他原因处于隐蔽状态，则它不再隐蔽。",
+                        "NAME": "显光尘"
+                    },
+                    "THOUSAND_VISIONS": {
+                        "DESCRIPTION": "你展开神识去察看不远将来的无数种光景。这些景象让你能够感知周遭30尺任何的细枝末节。在这个范围内，你不再需要在以隐蔽生物为目标时成功通过纯骰检定。在30尺外，这些景象被太多可能的未来所淹没，让你的任何感知在这个范围外视作模糊感官。",
+                        "NAME": "千象缚景"
+                    },
+                    "DARKVISION_CONDITIONAL": {
+                        "NAME": "黑暗视觉（条件）",
+                        "DESCRIPTION": "仅在黑暗或昏暗光照下使用黑暗视觉。"
+                    },
+                    "FAERIE_FIRE": {
+                        "DESCRIPTION": "在你施放该法术时，处于区域中的所有生物在法术持续时间内会被有色的，无热度的火焰所勾勒出轮廓。该颜色由你选择。可见的生物在受妖火术影响时无法获得隐蔽。如果该生物隐形，在被妖火术影响时为隐蔽，而非无踪。",
+                        "NAME": "妖火术"
+                    },
+                    "BALLISTIC_COVER": {
+                        "DESCRIPTION": "专门为了抵挡子弹而制作的弹道掩体，也适用于其他物理投射物。当生物在弹道掩体后寻找掩蔽时，它对于远程武器和远程无武装攻击的穿刺伤害获得2点抗力。",
+                        "NAME": "弹道掩体"
+                    },
+                    "CLOUDED_FOCUS": {
+                        "NAME": "雾翳聚焦",
+                        "DESCRIPTION": "你使一个生物的感官变得敏锐，但远处的物体对它而言会变得模糊不清或更加黯淡。目标在进行任何精确感官的察觉检定时获得+1状态加值。此外，目标所具有的所有模糊感官都会被提升为精确感官（但不会获得状态加值）。然而，目标的任何感官都无法感知到超过20尺范围的任何事物。"
+                    },
+                    "TOWER_SHIELD": {
+                        "NAME": "塔盾（寻找掩蔽）",
+                        "DESCRIPTION": "当你在举起的塔盾后寻找掩蔽时，你可以为相邻盟友提供标准掩蔽。"
+                    },
+                    "DEPLOYABLE_COVER": {
+                        "NAME": "部署式掩体",
+                        "DESCRIPTION": "这块由帆布、树叶和木头组成的厚垫被安装在一个由柔性金属支柱组成的三脚架上。部署式掩体会完全遮挡住所选方格的一条边，能允许你（和其他人）通过寻找掩蔽动作获得标准掩蔽。"
+                    },
+                    "BLIND_FIGHT": {
+                        "NAME": "盲斗",
+                        "DESCRIPTION": "对你藏匿的敌人不会使你对其措手不及（除非你对它们陷入措手不及的原因并非藏匿）。当你与等级和你相同或更低的无踪生物相邻时，它只视作对你藏匿。"
+                    },
+                    "SEE_INVISIBILITY": {
+                        "NAME": "识破隐形",
+                        "DESCRIPTION": "你能看见隐形的生物和物体。对你而言它们看起来如同半透明一般，并且对你视为隐蔽。"
+                    },
+                    "HEAVY_PRECIPITATION": {
+                        "NAME": "强降水",
+                        "DESCRIPTION": "大雨，大雪或冻雨会降低能见度。处于30尺及以外的生物视为隐蔽。"
+                    },
+                    "THICK_FOG": {
+                        "NAME": "浓雾"
+                    },
+                    "MIRROR_IMAGE": {
+                        "NAME": "镜影术",
+                        "DESCRIPTION": "虚幻镜像能够避免攻击者取得战术优势。来自隐蔽，藏匿或无踪状态的措手不及效果被压制。"
+                    }
+                },
+                "MESSAGES": {
+                    "END_POSITION_DISQUALIFIED": "你的结束位置不满足该动作的使用条件",
+                    "BLUR_SNEAK_BLOCKED": "朦胧术提供的隐蔽无法用于潜行",
+                    "REVEALING_LIGHT_ACTIVE": "在显光尘影响下你无法隐蔽",
+                    "THOUSAND_VISIONS_ACTIVE": "千象缚景忽略30尺内生物的隐蔽状态",
+                    "BLUR_HIDE_BLOCKED": "朦胧术提供的隐蔽无法用于躲藏",
+                    "NO_QUALIFYING_CONCEALMENT": "你获得的隐蔽状态不满足该动作的使用条件",
+                    "NO_QUALIFYING_COVER": "你获得的掩蔽不满足该动作的使用条件",
+                    "CLOUDED_FOCUS_ACTIVE": "雾翳聚焦限制你只能感知到20尺范围内的事物",
+                    "TOWER_SHIELD_ALLY": "盟友受益于你的塔盾",
+                    "START_POSITION_DISQUALIFIED": "你的起始位置不满足该动作的使用条件",
+                    "DEPLOYABLE_COVER_ACTIVE": "当你寻找掩蔽时，部署式掩体为你提供标准掩蔽",
+                    "BLIND_FIGHT_ACTIVE": "盲斗能让你对隐蔽或隐形的敌人做出反应",
+                    "FAERIE_FIRE_ACTIVE": "妖火术揭示了你的所在位置",
+                    "CONCEALMENT_QUALIFICATION_FAILED": "你获得的隐蔽或掩蔽不满足躲藏的使用条件"
+                },
+                "NAME": "PF2e Visioner效果",
+                "OPERATION_TYPES": {
+                    "OVERRIDE_COVER": "覆盖掩蔽",
+                    "PROVIDE_COVER": "提供掩蔽",
+                    "MODIFY_SENSES": "调整感官",
+                    "MODIFY_ACTION_QUALIFICATION": "调整动作使用条件",
+                    "CONDITIONAL_STATE": "条件状态",
+                    "OVERRIDE_VISIBILITY": "覆盖能见度"
+                },
+                "DESCRIPTION": "对法术，物品和专长的进阶能见度，掩蔽及感官方面的改动",
+                "DESCRIPTIONS": {
+                    "MODIFY_SENSES": "调整感官范围及其精确度",
+                    "OVERRIDE_VISIBILITY": "覆盖能见度状态",
+                    "OVERRIDE_COVER": "覆盖掩蔽状态",
+                    "PROVIDE_COVER": "为其他指示物提供掩蔽",
+                    "CONDITIONAL_STATE": "基于状态应用能见度状态",
+                    "MODIFY_ACTION_QUALIFICATION": "控制哪些事项符合使用动作的先决条件"
+                }
+            },
+            "BADGE": {
+                "LABEL": "规则效果"
             }
         },
         "SENSE_PRECISION": {
