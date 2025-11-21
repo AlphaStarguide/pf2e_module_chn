@@ -65,6 +65,14 @@
                 },
                 "show-only-GM": {
                     "name": "仅限GM"
+                },
+                "damage-split": {
+                    "hint": "如何从掷骰结果中分离伤害数值（无：仅显示总和；按类型：根据伤害类型区分，全部：将所有伤害来源分开显示）",
+                    "choices": {
+                        "none": "无",
+                        "by-damage-type": "按伤害类型",
+                        "all": "全部"
+                    }
                 }
             },
             "version": "版本",
