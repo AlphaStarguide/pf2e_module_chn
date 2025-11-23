@@ -1166,11 +1166,16 @@
                         "DESCRIPTION": "大雨，大雪或冻雨会降低能见度。处于30尺及以外的生物视为隐蔽。"
                     },
                     "THICK_FOG": {
-                        "NAME": "浓雾"
+                        "NAME": "浓雾",
+                        "DESCRIPTION": "浓雾占位"
                     },
                     "MIRROR_IMAGE": {
                         "NAME": "镜影术",
                         "DESCRIPTION": "虚幻镜像能够避免攻击者取得战术优势。来自隐蔽，藏匿或无踪状态的措手不及效果被压制。"
+                    },
+                    "CONSECRATE": {
+                        "NAME": "加护术（对不死生物）",
+                        "DESCRIPTION": "占位"
                     }
                 },
                 "MESSAGES": {
