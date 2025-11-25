@@ -36,7 +36,7 @@
             "UNDETECTED_TOOLTIP": "无踪：你不知道目标所在的位置。你对目标为措手不及且你难以轻易瞄准目标。使用搜索动作有助于找到无踪生物",
             "DAZZLED_OVERRIDE": "因为目眩状态，所有生物对你处于隐蔽",
             "CONCEALED_FLAT_CHECK": "瞄准该生物必须进行DC 5纯骰检定",
-            "UNDETECTED_CONDITION": "全自动应用无踪状态",
+            "UNDETECTED_CONDITION": "以系统机制效果应用无踪状态",
             "CONCEALED_TOOLTIP": "隐蔽：你的攻击，法术或其他效果瞄准目标时，必须通过DC 5的纯骰检定",
             "NO_COVER_TOOLTIP": "无掩蔽：无加值或减值",
             "GREATER_COVER_TOOLTIP": "高等掩蔽：为AC，反射豁免与隐秘检定提供+4环境加值。可以在该掩蔽后进行躲藏。"
@@ -54,7 +54,7 @@
             "LESSER_COVER_TOOLTIP": "次等掩蔽：为AC提供+1环境加值",
             "STANDARD_COVER_TOOLTIP": "标准掩蔽：为AC，反射豁免与隐秘检定提供+2物品加值。可以在该掩蔽后进行躲藏。",
             "GREATER_COVER_TOOLTIP": "高等掩蔽：为AC，反射豁免与隐秘检定提供+4环境加值。可以在该掩蔽后进行躲藏。",
-            "UNDETECTED_CONDITION": "全自动应用无踪状态",
+            "UNDETECTED_CONDITION": "以系统机制效果应用无踪状态",
             "VISIBLE_NO_EFFECTS": "瞄准目标时无减值，也无额外效果"
         },
         "CONTEXT_MENU": {
