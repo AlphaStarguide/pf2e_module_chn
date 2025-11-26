@@ -118,7 +118,7 @@
                 },
                 "rule-elements": {
                     "name": "效果：规则元素 Rule Elements",
-                    "description": "该效果专为特定召唤物添加各类规则元素，以补充如打击等自动化。"
+                    "description": "该效果会为特定召唤物添加各类规则元素，以实现诸如打击等自动化操作。"
                 }
             }
         }
