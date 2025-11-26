@@ -146,7 +146,8 @@
             "player-notes": {
                 "title": "战役笔记"
             },
-            "team-members": "成员"
+            "team-members": "成员",
+            "property-runes": "性能符文"
         },
         "items": {
             "effects": {
