@@ -475,6 +475,7 @@
                     "tooltip": "The merchant will never run out of items to sell (does nothing to Treasures or Services)"
                 },
                 "none": "Not for sell",
+                "scrolls": "Create Scrolls",
                 "sellItems": {
                     "button": "Sell Items",
                     "noSelection": "You must select a valid selling actor."
@@ -583,6 +584,8 @@
                 "data": {
                     "core": {
                         "attributes": {
+                            "assign": "Assign Attributes Boosts",
+                            "override": "Use Manual Input Method",
                             "warning": "The imported data doesn't reach the last boost threshold (level {level}).<br>You may want to update it."
                         }
                     },
