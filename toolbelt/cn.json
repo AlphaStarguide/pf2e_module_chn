@@ -918,7 +918,10 @@
                     "hint": "将来源角色所掌握的语言添加至本角色。"
                 }
             },
-            "share": "共享"
+            "share": "共享",
+            "undo": {
+                "msg": "HP损失无法从被绑定的角色上恢复，必须手动进行处理。"
+            }
         },
         "betterInventory": {
             "improvised": {
