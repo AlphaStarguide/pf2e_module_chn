@@ -371,7 +371,8 @@
             "items": "库存",
             "spells": "施法",
             "skills": "技能",
-            "extras": "杂项"
+            "extras": "杂项",
+            "feats": "专长"
         },
         "spellcasting": {
             "charges": "充能",
