@@ -199,7 +199,7 @@
             }
         },
         "COVER_OVERRIDE": {
-            "POPUP_OVERRIDE": "快捷键弹窗已完成掩蔽状态覆盖：{original} → {final}",
+            "POPUP_OVERRIDE": "绑定键弹窗已完成掩蔽状态覆盖：{original} → {final}",
             "DIALOG_OVERRIDE": "掷骰对话框中的掩蔽状态已覆盖：{original} → {final}",
             "GENERIC_OVERRIDE": "掩蔽状态已覆盖：{original} → {final}"
         },
@@ -468,7 +468,7 @@
                 }
             },
             "AUTO_COVER_VISUALIZATION_COMBAT_ONLY": {
-                "hint": "限制自动掩蔽可视化快捷键只能在战斗中使用",
+                "hint": "限制自动掩蔽可视化绑定键只能在战斗中使用",
                 "name": "仅限战斗中自动掩蔽可视化"
             },
             "AUTO_COVER_IGNORE_ALLIES": {
@@ -492,12 +492,12 @@
                 "hint": "倒地指示物将不提供自动掩蔽"
             },
             "KEYBIND_OPEN_MANAGER_TARGET_MODE": {
-                "name": "以目标模式打开管理器的快捷键",
-                "hint": "通过快捷键以目标模式而非观察者模式打开视野管理器。"
+                "name": "以目标模式打开管理器的绑定键",
+                "hint": "通过绑定键以目标模式而非观察者模式打开视野管理器。"
             },
             "VISIONER_QUICK_EDIT_TOOL": {
                 "name": "视野快捷编辑工具",
-                "hint": "在指示物控件侧边栏添加按钮，用于打开视野快捷编辑工具。若禁用，该工具仍可以通过快捷键访问"
+                "hint": "在指示物控件侧边栏添加按钮，用于打开视野快捷编辑工具。若禁用，该工具仍可以通过绑定键访问"
             },
             "TOKEN_HUD_BUTTON": {
                 "name": "指示物HUD按钮",
@@ -505,7 +505,7 @@
             },
             "VISIONER_SCENE_CONTROLS": {
                 "name": "视野场景控制",
-                "hint": "在左侧边栏的指示物控件和墙体控件添加特定的视野功能按钮。若禁用，这些功能仍可以通过单独的指示物/墙体设置或快捷键访问"
+                "hint": "在左侧边栏的指示物控件和墙体控件添加特定的视野功能按钮。若禁用，这些功能仍可以通过单独的指示物/墙体设置或绑定键访问"
             },
             "AUTO_COVER_IGNORE_UNDETECTED": {
                 "name": "忽略无踪指示物",
@@ -584,7 +584,7 @@
             "SET_ALL_AS": "设置全部{type}为{state}",
             "SHOW_ONLY_CHANGES": "仅显示变更",
             "WALL_COVER_GREATER_SHORT": "高等掩蔽",
-            "COVER_OVERRIDDEN_POPUP": "通过快捷键弹窗覆盖掩蔽",
+            "COVER_OVERRIDDEN_POPUP": "通过绑定键弹窗覆盖掩蔽",
             "COVER_OVERRIDDEN_DIALOG": "在掷骰对话框",
             "COVER_OVERRIDDEN_MANUALLY": "手动",
             "END_POSITION_NOT_AVAILABLE": "无法获取结束位置数据",
@@ -751,7 +751,8 @@
             "SET_ALL_WALLS_LESSER_COVER": "设置所有墙体为次等掩蔽",
             "WALL_COVER_LESSER_TOOLTIP": "至多次等掩蔽 - 墙体基于遮挡阈值至多提供次等掩蔽",
             "LESSER_MAX": "至多次等",
-            "WALL_COVER_LESSER_SHORT": "次等掩蔽"
+            "WALL_COVER_LESSER_SHORT": "次等掩蔽",
+            "ENCOUNTER_MASTER_SELECT": "选择"
         },
         "WALL": {
             "VISIBLE_TO_YOU": "隐藏墙体",
