@@ -3,7 +3,7 @@
     "pf2e-chances": {
         "settings": {
             "disable-chatcard-chances": {
-                "name": "在聊天卡中禁用成功率条",
+                "name": "在聊天卡片中禁用成功率条",
                 "hint": "模组将不再在聊天中显示成功率条"
             },
             "disable-modifiers-dialog-chances": {
@@ -14,10 +14,10 @@
                 "name": "谁可以看到成功率条？",
                 "choices": {
                     "default": "默认",
-                    "gm": "仅GM",
+                    "gm": "仅限GM",
                     "all": "所有人"
                 },
-                "hint": "默认意味着玩家只有在被允许获得该信息时才能看到（基于《开拓者第二版》系统中的超游信息设置）"
+                "hint": "默认意味着玩家只有在被允许获得该信息时才能看到（基于《开拓者二版》系统中的超游信息设置）"
             },
             "hide-percentage-labels": {
                 "name": "隐藏百分比数值",
