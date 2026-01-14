@@ -526,11 +526,15 @@
             "DISABLE_AVS_PER_SCENE": {
                 "name": "该场景禁用自动能见度系统",
                 "hint": "若启用，自动能见度系统将在该场景内被禁用，无法自动计算或更新能见度状态。"
+            },
+            "AVS_GM_VISION_WARNING_SUPPRESS": {
+                "name": "关闭GM视野警告",
+                "hint": "仅限客户端：当GM视野阻止自动能见度系统启动时，不要显示“GM视野已激活”警告提示框。"
             }
         },
         "UI": {
             "ENCOUNTER_FILTER_TEXT": "仅显示遭遇中指示物",
-            "COVER_OVERRIDE": "覆盖掩蔽状态",
+            "COVER_OVERRIDE": "掩蔽状态覆盖",
             "ROLL": "掷骰",
             "APPLY_ALL": "全部应用",
             "REVERT_ALL": "全部撤销",
@@ -752,7 +756,15 @@
             "WALL_COVER_LESSER_TOOLTIP": "至多次等掩蔽 - 墙体基于遮挡阈值至多提供次等掩蔽",
             "LESSER_MAX": "至多次等",
             "WALL_COVER_LESSER_SHORT": "次等掩蔽",
-            "ENCOUNTER_MASTER_SELECT": "选择"
+            "ENCOUNTER_MASTER_SELECT": "选择",
+            "SNIPING_DUO_SPOTTER_CHOOSE": "选择此观察手…",
+            "SNIPING_DUO_DIALOG_TITLE": "选择狙击小组观察手",
+            "SNIPING_DUO_NONE": "无",
+            "SNIPING_DUO_COVER_IGNORE_TOOLTIP": "{FEAT}：{ALLY}不会为该次打击提供掩蔽。",
+            "SNIPING_DUO_SPOTTER_LABEL": "狙击小组观察手",
+            "SNIPING_DUO_SPOTTER_TOOLTIP": "选择你的狙击小组观察手（该盟友与你不会为彼此的打击提供次等掩蔽）。",
+            "SNIPING_DUO_SPOTTER_NOT_FOUND": "狙击小组：未找到所选观察手。",
+            "SNIPING_DUO_COVER_OVERRIDE_UNAVAILABLE": "{FEAT}：掩蔽覆盖功能不可用。"
         },
         "WALL": {
             "VISIBLE_TO_YOU": "隐藏墙体",
@@ -770,7 +782,7 @@
             },
             "HOLD_COVER_OVERRIDE": {
                 "name": "长按在快速掷骰中覆盖掩蔽",
-                "hint": "当点击打击/攻击动作时长按此键（无对话框），使用模组覆盖掩蔽替代掩蔽自动计算。无默认设置；请自行配置按键。"
+                "hint": "当点击打击/攻击动作时长按此键（无对话框），使用模组掩蔽状态覆盖替代掩蔽自动计算。无默认设置；请自行配置按键。"
             },
             "TOGGLE_OBSERVER_MODE": {
                 "name": "悬停提示框切换为观察者模式",
@@ -889,7 +901,8 @@
             "motion_sense_description": "你能够侦测范围内你周围的运动。"
         },
         "FEAT": {
-            "CEASELESS_SHADOWS": "阴影不绝"
+            "CEASELESS_SHADOWS": "阴影不绝",
+            "SNIPING_DUO_DEDICATION": "狙击小组入门"
         },
         "AVS_OVERRIDE_DIALOG": {
             "CLEAR_ALL": "清除所有覆盖设置",
@@ -1001,7 +1014,7 @@
             "SEEK_RESULTS": "搜索结果",
             "ACTION_RESULTS": "动作结果",
             "TAKE_COVER_RESULTS": "寻找掩蔽结果",
-            "COVER_OVERRIDE": "掩蔽设置覆盖",
+            "COVER_OVERRIDE": "掩蔽状态覆盖",
             "WALL_SETTINGS": "PF2E Visioner：墙体设置",
             "TOGGLE_HIDDEN_WALL": "切换墙体隐藏（所选墙体）",
             "QUICK_EDIT": "PF2E Visioner：快捷编辑（所选 ↔ 目标）",
@@ -1269,6 +1282,16 @@
             "DESCRIPTION": "选择搜索动作的测量板形状和大小。",
             "LIFESENSE_TOOLTIP": "可以感知到范围内的活物与不死生物（模糊感官）",
             "SENSE_UNSEEN_APPLIED": "察觉未见已应用"
+        },
+        "AVS_GM_VISION_WARNING": {
+            "TITLE": "GM视野已激活",
+            "CLOSE": "无视警告",
+            "DONT_SHOW_AGAIN": "不要再显示此警告"
+        },
+        "OVERRIDE_INDICATOR": {
+            "TOOLTIP_RIGHT_CLICK": "右键点击：接受全部",
+            "TOOLTIP_LEFT_CLICK": "左键点击：打开详情",
+            "TOOLTIP_SHIFT_RIGHT_CLICK": "Shift+右键点击：拒绝全部"
         }
     }
 }
