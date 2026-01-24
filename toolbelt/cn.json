@@ -395,7 +395,8 @@
         "anonymous": {
             "spell": {
                 "header": "正在施放法术..",
-                "context": "对玩家揭示法术"
+                "context": "对玩家揭示法术",
+                "damage": "法术伤害"
             },
             "action": {
                 "header": "正在使用能力…",
