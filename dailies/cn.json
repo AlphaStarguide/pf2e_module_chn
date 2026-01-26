@@ -185,7 +185,8 @@
             "select": "选择{that}",
             "mind-smith": "铸念师",
             "expend": "扩展 #{nb}",
-            "mind-runic": "符文锻造"
+            "mind-runic": "符文锻造",
+            "material": "材料"
         },
         "message": {
             "groups": {
