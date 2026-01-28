@@ -530,6 +530,14 @@
             "AVS_GM_VISION_WARNING_SUPPRESS": {
                 "name": "关闭GM视野警告",
                 "hint": "仅限客户端：当GM视野阻止自动能见度系统启动时，不要显示“GM视野已激活”警告提示框。"
+            },
+            "SHARED_VISION_INDICATOR_SIZE": {
+                "CHOICES": {
+                    "small": "小",
+                    "medium": "中",
+                    "large": "大",
+                    "xlarge": "超大"
+                }
             }
         },
         "UI": {
@@ -764,7 +772,10 @@
             "SNIPING_DUO_SPOTTER_LABEL": "狙击小组观察手",
             "SNIPING_DUO_SPOTTER_TOOLTIP": "选择你的狙击小组观察手（该盟友与你不会为彼此的打击提供次等掩蔽）。",
             "SNIPING_DUO_SPOTTER_NOT_FOUND": "狙击小组：未找到所选观察手。",
-            "SNIPING_DUO_COVER_OVERRIDE_UNAVAILABLE": "{FEAT}：掩蔽覆盖功能不可用。"
+            "SNIPING_DUO_COVER_OVERRIDE_UNAVAILABLE": "{FEAT}：掩蔽覆盖功能不可用。",
+            "VISION_TOKEN": "指示物",
+            "VISION_SHARED_WITH": "仆从",
+            "VISION_ROLE_MINION": "仆从"
         },
         "WALL": {
             "VISIBLE_TO_YOU": "隐藏墙体",
