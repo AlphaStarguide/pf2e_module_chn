@@ -186,7 +186,8 @@
             "mind-smith": "铸念师",
             "expend": "扩展 #{nb}",
             "mind-runic": "符文锻造",
-            "material": "材料"
+            "material": "材料",
+            "feat": "专长 #{nb}"
         },
         "message": {
             "groups": {
