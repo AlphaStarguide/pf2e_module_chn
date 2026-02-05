@@ -91,6 +91,7 @@
             "1round_ifIncludes": "1轮",
             "2rounds_ifIncludes": "下一回合",
             "1day_ifIncludes": "每日准备"
-        }
+        },
+        "effectForRecharge": "再充能"
     }
 }
