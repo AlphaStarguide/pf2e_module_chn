@@ -211,6 +211,8 @@
         "BTN_CRAFT": "制作",
         "HEALING_VIAL_CHOICE_TITLE": "速调制剂（医学专家）",
         "POWERFUL_ALCHEMY": "强效炼金术",
-        "QUICK_ALCHEMY_APPLY_BEFORE_USE": "提前应用于使用："
+        "QUICK_ALCHEMY_APPLY_BEFORE_USE": "提前应用于使用：",
+        "LEVELUP_NO_LOWER_FORMULAS": "没有需要移除的更低等级的配方",
+        "LEVELUP_WAIT_TITLE": "炼金术士导管补丁"
     }
 }
