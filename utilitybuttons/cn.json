@@ -132,6 +132,15 @@
             "docs": {
                 "description": "有关各个功能的描述及相关设置的更多信息，请查阅文档说明：",
                 "button": "打开文档"
+            },
+            "flat-check-target-marker-display": {
+                "choices": {
+                    "all": "描边轮廓与文本",
+                    "textOnly": "仅文本",
+                    "outlineOnly": "仅描边轮廓"
+                },
+                "hint": " ",
+                "name": "在指示物上显示纯骰检定的方式"
             }
         },
         "delay": {
