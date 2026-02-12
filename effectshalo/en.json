@@ -1,0 +1,42 @@
+{
+    "PF2eEffectsHalo": {
+        "Title": "PF2e Effects Halo",
+        "Actor": {
+            "HeaderButton": {
+                "Label": "Effects Halo"
+            }
+        },
+        "Settings": {
+            "EffectBackground": {
+                "Name": "Effect Background Color",
+                "Hint": "The user defined background color applied to effect icons."
+            },
+            "EffectBorder": {
+                "Name": "Effect Border Color",
+                "Hint": "The user defined border color applied to effect icons."
+            },
+            "EffectSpacing": {
+                "Name": "Effect Spacing",
+                "Hint": "The spacing between effect icons on the same row."
+            },
+            "RowSpacing": {
+                "Name": "Row Spacing",
+                "Hint": "The spacing between rows."
+            },
+            "HaloRadius": {
+                "Name": "Halo Radius",
+                "Hint": "Multiplies the radius of the halo around tokens to determine placement of effect icons."
+            }
+        },
+        "Token": {
+            "HaloRadius": {
+                "Label": "Halo Radius",
+                "Hint": "Multiplies the radius of the halo around tokens to determine placement of effect icons."
+            },
+            "ApplyGlobal": {
+                "Label": "Apply Global Halo Radius",
+                "Hint": "Apply the Halo Radius configured under Settings to this token."
+            }
+        }
+    }
+}

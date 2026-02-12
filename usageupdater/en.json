@@ -1,0 +1,48 @@
+{
+  "I18N.LANGUAGE": "English",
+  "pf2e-usage-updater": {
+    "module-settings": {
+      "include-canvas": {
+        "enabled": {
+          "name": "Include Canvas Tokens On Timebased Refreshed",
+          "hint": "When enabled will not just check the party, but also all tokens on the canvas to see to refresh their uses. Note this will have performance implications if you have a large number of actors"
+        }
+      },
+      "automate-item": {
+        "aeon-pearly-white": {
+          "name": "Automate Aeon Stone (Pearly White Spindle)",
+          "hint": "Automates the healing for aeon stone pearly white spindle (currently only out of combat) (Roll: Roll healing, Automatic: Heal actor + msg)",
+          "choices": {
+            "disabled": "Disabled",
+            "roll": "Roll",
+            "auto": "Automatic"
+          }
+        }
+      },
+      "inventory": {
+        "icon": {
+          "enabled": {
+            "name": "Show Cooldown Icons in Inventory",
+            "hint": "Adds icons that show the cooldown of actions to the user if they own the creature"
+          },
+          "gm-only": {
+            "name": "Show only for GMs",
+            "hint": "Locks the feature to adds icons that show the cooldown as a GM only feature, overrides the 'Player Enabled' feature"
+          },
+          "style": {
+            "name": "How to show time remaining?",
+            "hint": "Based on this setting adds text to the tooltip to show the time remaining on the cooldown. Certain settings allow for vague time left than others",
+            "choices": {
+              "disabled": "Disabled",
+              "symbols": "Symbols",
+              "largest-full": "Largest Unit, Full Unit Name",
+              "largest-short": "Largest Unit, Short Unit Name",
+              "all-full": "All Units, Full Unit Name",
+              "all-short": "All Unit, Short Unit Name"
+            }
+          }
+        }
+      }
+    }
+  }
+}
