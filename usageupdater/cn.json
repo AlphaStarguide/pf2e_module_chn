@@ -5,8 +5,12 @@
             "automate-item": {
                 "aeon-pearly-white": {
                     "choices": {
-                        "disabled": "禁用"
-                    }
+                        "disabled": "禁用",
+                        "roll": "掷骰",
+                        "auto": "自动化"
+                    },
+                    "name": "万古石自动化（珍珠白纺锤体）",
+                    "hint": "自动化珍珠白纺锤体万古石的治疗效果，当前仅适用于战斗外（掷骰：自行骰治疗量，自动化：自动治疗角色并发送信息）"
                 }
             },
             "inventory": {
@@ -14,8 +18,17 @@
                     "style": {
                         "choices": {
                             "disabled": "禁用"
-                        }
+                        },
+                        "name": "如何显示剩余时间？"
+                    },
+                    "enabled": {
+                        "name": "在库存栏显示冷却图标"
                     }
+                }
+            },
+            "include-canvas": {
+                "enabled": {
+                    "name": "将画布上的指示物纳入基于时间的刷新机制"
                 }
             }
         }
