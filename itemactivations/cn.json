@@ -69,5 +69,5 @@
             "fortification": "每当你穿戴蚀刻该符文的护甲被重击时，尝试一次@Check[flat|dc:17|showDC:all]检定。若成功，该次攻击变为普通命中。"
         }
     },
-    "I18N.LANGUAGE": "中文"
+    "I18N.LANGUAGE": "简体中文"
 }
