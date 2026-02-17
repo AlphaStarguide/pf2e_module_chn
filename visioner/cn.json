@@ -537,7 +537,9 @@
                     "medium": "中",
                     "large": "大",
                     "xlarge": "超大"
-                }
+                },
+                "name": "共享视野标识大小",
+                "hint": "控制共享视野浮动标识按钮的大小。"
             }
         },
         "UI": {
@@ -775,7 +777,13 @@
             "SNIPING_DUO_COVER_OVERRIDE_UNAVAILABLE": "{FEAT}：掩蔽覆盖功能不可用。",
             "VISION_TOKEN": "指示物",
             "VISION_SHARED_WITH": "仆从",
-            "VISION_ROLE_MINION": "仆从"
+            "VISION_ROLE_MINION": "仆从",
+            "VISION_MASTER": "主人",
+            "VISION_ROLE_MASTER": "主人",
+            "VISION_ROLE_MASTER_MULTIPLE": "主人（{count}个仆从）",
+            "SHARED_VISION_TITLE": "共享视野",
+            "ENCOUNTER_MASTER_NONE": "无（使用默认监测）",
+            "ENCOUNTER_MASTER_CHOOSE": "选择主人…"
         },
         "WALL": {
             "VISIBLE_TO_YOU": "隐藏墙体",
@@ -1303,6 +1311,33 @@
             "TOOLTIP_RIGHT_CLICK": "右键点击：接受全部",
             "TOOLTIP_LEFT_CLICK": "左键点击：打开详情",
             "TOOLTIP_SHIFT_RIGHT_CLICK": "Shift+右键点击：拒绝全部"
+        },
+        "TIMED_OVERRIDE": {
+            "DURATION": "持续时间",
+            "ROUNDS": "轮",
+            "ROUND": "轮",
+            "MINUTES": "分钟",
+            "MINUTE": "分钟",
+            "FOREVER": "永久",
+            "CUSTOM": "自定义",
+            "TOKEN_LABEL": "指示物",
+            "NEW_STATE_LABEL": "新状态",
+            "DIALOG_TITLE": "应用定时覆盖模式",
+            "ROUND_TIMING": "轮次计时",
+            "EXPIRES_AT": "失效时间",
+            "START_OF_TURN": "开始",
+            "END_OF_TURN": "结束",
+            "TIME_REMAINING": "{time}",
+            "ROUNDS_REMAINING": "{count}轮",
+            "PRESET_1_ROUND": "1轮",
+            "PRESET_3_ROUNDS": "3轮",
+            "PRESET_5_ROUNDS": "5轮",
+            "PRESET_1_MIN": "1分钟",
+            "PRESET_5_MIN": "5分钟",
+            "APPLY_BUTTON": "应用",
+            "CANCEL_BUTTON": "取消",
+            "SET_DURATION_FOR_ROW": "为此次覆盖设置持续时间",
+            "TIMER_CANCELLED": "定时器已取消"
         }
     }
 }
