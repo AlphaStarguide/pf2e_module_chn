@@ -120,7 +120,10 @@
             "AVS_ACCEPTED_SINGLE": "接受自动能见度变更：{observerName} → {targetName}",
             "AVS_ACCEPTED_PLURAL": "接受{count}次自动能见度变更",
             "AVS_CLEARED_PLURAL": "接受{count}次自动能见度变更",
-            "AVS_ACCEPT_FAILED": "未能接受自动能见度变更"
+            "AVS_ACCEPT_FAILED": "未能接受自动能见度变更",
+            "VISION_SHARING_REMOVED": "视野共享已移除",
+            "VISION_SHARING_REMOVED_FROM": "已从{name}处移除视野共享",
+            "VISION_SHARING_REMOVE_FAILED": "无法移除视野共享"
         },
         "SEEK_AUTOMATION": {
             "BUTTON_APPLY": "应用搜索结果",
@@ -528,8 +531,8 @@
                 "hint": "若启用，自动能见度系统将在该场景内被禁用，无法自动计算或更新能见度状态。"
             },
             "AVS_GM_VISION_WARNING_SUPPRESS": {
-                "name": "关闭GM视野警告",
-                "hint": "仅限客户端：当GM视野阻止自动能见度系统启动时，不要显示“GM视野已激活”警告提示框。"
+                "name": "关闭GM视角警告",
+                "hint": "仅限客户端：当GM视野阻止自动能见度系统启动时，不要显示“GM视角已激活”警告提示框。"
             },
             "SHARED_VISION_INDICATOR_SIZE": {
                 "CHOICES": {
@@ -540,6 +543,9 @@
                 },
                 "name": "共享视野标识大小",
                 "hint": "控制共享视野浮动标识按钮的大小。"
+            },
+            "AVS_OVERRIDE_VALIDATION_ON_TURN_CHANGE": {
+                "name": "在回合变换时验证自动能见度系统状态覆盖"
             }
         },
         "UI": {
@@ -1303,14 +1309,18 @@
             "SENSE_UNSEEN_APPLIED": "察觉未见已应用"
         },
         "AVS_GM_VISION_WARNING": {
-            "TITLE": "GM视野已激活",
+            "TITLE": "GM视角已激活",
             "CLOSE": "无视警告",
-            "DONT_SHOW_AGAIN": "不要再显示此警告"
+            "DONT_SHOW_AGAIN": "不要再显示此警告",
+            "BODY": "自动能见度系统需要一个多边形视野；而GM视角不会生成这样的多边形。请禁用GM视角后再启用自动能见度系统。"
         },
         "OVERRIDE_INDICATOR": {
             "TOOLTIP_RIGHT_CLICK": "右键点击：接受全部",
             "TOOLTIP_LEFT_CLICK": "左键点击：打开详情",
-            "TOOLTIP_SHIFT_RIGHT_CLICK": "Shift+右键点击：拒绝全部"
+            "TOOLTIP_SHIFT_RIGHT_CLICK": "Shift+右键点击：拒绝全部",
+            "TOOLTIP_HEADER": "有效的更改",
+            "TOOLTIP_NEXT": "接下来：",
+            "QUEUE_POSITION": "{total}分之{current}"
         },
         "TIMED_OVERRIDE": {
             "DURATION": "持续时间",
@@ -1324,9 +1334,9 @@
             "NEW_STATE_LABEL": "新状态",
             "DIALOG_TITLE": "应用定时覆盖模式",
             "ROUND_TIMING": "轮次计时",
-            "EXPIRES_AT": "失效时间",
-            "START_OF_TURN": "开始",
-            "END_OF_TURN": "结束",
+            "EXPIRES_AT": "结束于",
+            "START_OF_TURN": "回合开始",
+            "END_OF_TURN": "回合结束",
             "TIME_REMAINING": "{time}",
             "ROUNDS_REMAINING": "{count}轮",
             "PRESET_1_ROUND": "1轮",
@@ -1337,7 +1347,30 @@
             "APPLY_BUTTON": "应用",
             "CANCEL_BUTTON": "取消",
             "SET_DURATION_FOR_ROW": "为此次覆盖设置持续时间",
-            "TIMER_CANCELLED": "定时器已取消"
+            "TIMER_CANCELLED": "定时器已取消",
+            "OF": "的",
+            "OF_TURN": "{name}的回合",
+            "APPLY_NOW": "现在应用",
+            "APPLY_FOR_DURATION": "在持续时间内应用…",
+            "ACTIVE_TIMER": "激活定时器",
+            "ACTIVE_TIMERS": "已激活定时状态覆盖",
+            "REMAINING": "剩余时间",
+            "CANCEL_TIMER": "取消定时器",
+            "TIMER_TOOLTIP": "状态覆盖结束于：{remaining}",
+            "TIMER_EXPIRED_NOTIFICATION": "对{target}的定时状态覆盖已结束",
+            "NO_COMBAT_FOR_ROUNDS": "没有正在进行的战斗，无法使用基于轮次的持续时间",
+            "NO_DURATION_SELECTED": "首先选择一个持续时间"
+        },
+        "VISION_MASTER_DIALOG": {
+            "TITLE": "选择视野主人",
+            "NO_TOKENS": "没有可用的具备视野的有效指示物",
+            "NONE": "无视野（使用自己的视野）",
+            "MODE_LABEL": "视野共享模式",
+            "PAN": "视角平移至指示物",
+            "MODE_ONE_WAY": "单向（仆从仅自身所见+主人视野）",
+            "MODE_TWO_WAY": "双向（主仆彼此能看到对方的视野）",
+            "MODE_REPLACE": "替代（仆从仅能看到主人视野）",
+            "MODE_REVERSE": "反向（主人只能看到仆从视野）"
         }
     }
 }
