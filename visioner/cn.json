@@ -98,7 +98,7 @@
             "END_TURN_FAILED": "未能成功应用回合结束时的能见度变更。",
             "NO_DEFERRED_POSITIONS": "无需进行推迟位置检查以验证。",
             "PARTY_RESTORE_SUCCESS": "PF2E Visioner：恢复{count}个团队指示物状态",
-            "OVERRIDE_KEEP_FAILED": "无法保持设置覆盖",
+            "OVERRIDE_KEEP_FAILED": "无法保持状态覆写",
             "AVS_ACCEPTED_IN_TABLE": "在{group}表中已接受{count}次变更",
             "SNEAK_APPLY_FAILED": "未能应用潜行变更：{errors}",
             "INIT_FAILED": "PF2E Visioner无法初始化：{error}",
@@ -110,7 +110,7 @@
             "SNEAK_CLEAR_FAILED": "PF2E Visioner：未能清除潜行标记。请查看控制台。",
             "NO_UNDEFERRED_TOKENS": "未找到可恢复至推迟状态的指示物。",
             "VALIDATION_FAILED": "未能处理回合结束时的验证。",
-            "OVERRIDE_CLEAR_FAILED": "无法清除此表的覆盖设置",
+            "OVERRIDE_CLEAR_FAILED": "无法清除此表的状态覆写",
             "AVS_ACCEPTED_COUNT": "已接受{count}次变更",
             "NO_ENCOUNTER_TOKENS": "{moduleId}：未找到遭遇中指示物。过滤功能已禁用。",
             "SNEAK_DEFERRED_RESTORED": "已将{count}个指示物恢复至原始的推迟状态，并带有全部的位置数据",
@@ -121,9 +121,9 @@
             "AVS_ACCEPTED_PLURAL": "接受{count}次自动能见度变更",
             "AVS_CLEARED_PLURAL": "接受{count}次自动能见度变更",
             "AVS_ACCEPT_FAILED": "未能接受自动能见度变更",
-            "VISION_SHARING_REMOVED": "视野共享已移除",
-            "VISION_SHARING_REMOVED_FROM": "已从{name}处移除视野共享",
-            "VISION_SHARING_REMOVE_FAILED": "无法移除视野共享"
+            "VISION_SHARING_REMOVED": "视角共享已移除",
+            "VISION_SHARING_REMOVED_FROM": "已从{name}处取消视角共享",
+            "VISION_SHARING_REMOVE_FAILED": "无法移除视角共享"
         },
         "SEEK_AUTOMATION": {
             "BUTTON_APPLY": "应用搜索结果",
@@ -145,7 +145,7 @@
             "NO_CHANGES": "{name}的搜索行动未发生能见度变化",
             "RESULTS_APPLIED": "搜索自动化已应用变更：{changes}",
             "ERROR_PROCESSING": "应用搜索结果时出现错误。请查看控制台了解详情。",
-            "PROCESSING": "正在处理搜索结果……",
+            "PROCESSING": "正在处理搜索结果…",
             "PREVIEW_TITLE": "搜索结果预览",
             "PREVIEW_HINT": "对搜索行动结果进行分析",
             "ROLL_VS_DC": "掷骰对抗隐秘DC",
@@ -202,7 +202,7 @@
             }
         },
         "COVER_OVERRIDE": {
-            "POPUP_OVERRIDE": "绑定键弹窗已完成掩蔽状态覆盖：{original} → {final}",
+            "POPUP_OVERRIDE": "绑定键弹窗已完成掩蔽状态覆写：{original} → {final}",
             "DIALOG_OVERRIDE": "掷骰对话框中的掩蔽状态已覆盖：{original} → {final}",
             "GENERIC_OVERRIDE": "掩蔽状态已覆盖：{original} → {final}"
         },
@@ -241,7 +241,7 @@
                 "DISTRACTING_SHADOWS_TOOLTIP": "你可以将更大体型的生物作为掩蔽满足躲藏/潜行的先决条件",
                 "VANISH_INTO_THE_LAND_TOOLTIP": "当你处于为地形潜伏专长选择的困难地形中，即使没有掩蔽或未处于隐蔽状态，也可以使用潜行",
                 "OFF_GUARD_PREVENTED_LABEL": "避免陷入措手不及",
-                "OFF_GUARD_PREVENTED_TOOLTIP": "由{EFFECT}避免措手不及减值"
+                "OFF_GUARD_PREVENTED_TOOLTIP": "{EFFECT}避免了因措手不及造成的减值"
             }
         },
         "CREATE_A_DIVERSION_AUTOMATION": {
@@ -372,11 +372,11 @@
             },
             "INCLUDE_WALLS": {
                 "name": "隐藏墙体",
-                "hint": "可在视野管理器中配置墙体的条件性能见度状态。以及成功搜索出目标时的视觉标识"
+                "hint": "可在视野管理器中配置墙体的条件性能见度状态。以及成功搜索出目标时的视觉指示器"
             },
             "HIDDEN_WALLS": {
                 "name": "隐藏墙体",
-                "hint": "可在视野管理器中配置墙体的条件性能见度状态。以及成功搜索出目标时的视觉标识"
+                "hint": "可在视野管理器中配置墙体的条件性能见度状态。以及成功搜索出目标时的视觉指示器"
             },
             "AUTO_COVER": {
                 "name": "启用自动掩蔽",
@@ -412,7 +412,7 @@
             },
             "GDV_VISUAL_OVERRIDE_ENABLED": {
                 "hint": "仅限客户端：当你所选的指示物具备高等黑暗视觉时，将黑暗区域的亮度调高以使视觉效果符合视野规则。",
-                "name": "高等黑暗视觉视效覆盖"
+                "name": "高等黑暗视觉视效覆写"
             },
             "GDV_OVERLAY_ALPHA": {
                 "name": "高等黑视覆盖强度",
@@ -431,8 +431,8 @@
                 "hint": "阻止玩家看到观察者视角的悬停提示框（O键/观察者模式）"
             },
             "HIDDEN_WALL_INDICATOR_WIDTH": {
-                "name": "隐藏墙体标识宽度",
-                "hint": "隐藏墙体视觉标识的默认宽度（像素）。该项设置可以在每个场景配置中进行单独设置。该配置值更大则隐藏墙体在画布上更加明显。"
+                "name": "隐藏墙体指示器宽度",
+                "hint": "隐藏墙体视觉指示器的默认宽度（像素）。该项设置可以在每个场景配置中进行单独设置。该配置值更大则隐藏墙体在画布上更加明显。"
             },
             "DIM_LIGHTING_THRESHOLD": {
                 "name": "昏暗光照阈值",
@@ -445,8 +445,8 @@
                     "large": "大",
                     "xlarge": "超大"
                 },
-                "name": "自动能见度变更标识大小",
-                "hint": "控制自动能见度变更浮动标识按钮，及其提示信息的大小。"
+                "name": "自动能见度变更指示器大小",
+                "hint": "控制自动能见度变更浮动指示器按钮，及其提示信息的大小。"
             },
             "MANAGER_ROLL_COMPARISON": {
                 "name": "视野管理器掷骰比较",
@@ -519,7 +519,7 @@
                 "hint": "若启用，自动能见度系统将只在遭遇期间激活，并且只会跟踪处于遭遇中指示物的能见度。战斗结束后能见度将被重置。"
             },
             "ENABLE_CAMERA_VISION_AGGREGATION": {
-                "name": "摄像视野整合",
+                "name": "摄像视角整合",
                 "hint": "若启用，具有旁观权限的摄像账号在多个团队指示物运行时，将显示所有受控指示物的最佳（最宽松）能见度状态，而非仅显示首个指示物的情况。这对于需要摄像能够看到全部团队成员所看见场景的流媒体情景非常有用。"
             },
             "SEEK_TEMPLATE_SKIP_DIALOG": {
@@ -527,12 +527,12 @@
                 "hint": "若启用，搜索测量板配置对话框将被跳过，并使用默认测量板配置（15尺爆发）。"
             },
             "DISABLE_AVS_PER_SCENE": {
-                "name": "该场景禁用自动能见度系统",
-                "hint": "若启用，自动能见度系统将在该场景内被禁用，无法自动计算或更新能见度状态。"
+                "name": "为该场景禁用自动能见度系统",
+                "hint": "若启用，自动能见度系统将在该场景中被禁用，无法自动计算或更新能见度状态。"
             },
             "AVS_GM_VISION_WARNING_SUPPRESS": {
                 "name": "关闭GM视角警告",
-                "hint": "仅限客户端：当GM视野阻止自动能见度系统启动时，不要显示“GM视角已激活”警告提示框。"
+                "hint": "仅限客户端：当GM视角阻止自动能见度系统启动时，不要显示“GM视角已激活”警告提示框。"
             },
             "SHARED_VISION_INDICATOR_SIZE": {
                 "CHOICES": {
@@ -541,21 +541,26 @@
                     "large": "大",
                     "xlarge": "超大"
                 },
-                "name": "共享视野标识大小",
-                "hint": "控制共享视野浮动标识按钮的大小。"
+                "name": "共享视角指示器大小",
+                "hint": "控制共享视角浮动指示器按钮的大小。"
             },
             "AVS_OVERRIDE_VALIDATION_ON_TURN_CHANGE": {
-                "name": "在回合变换时验证自动能见度系统状态覆盖"
+                "name": "在回合变换时验证自动能见度系统状态覆写",
+                "hint": "若启用，系统将在每个回合开始时检查所有自动能见度系统状态覆写，并当有任何状态覆写激活时显示验证指示器。这有助于确保在战斗过程中状态覆写准确无误。"
+            },
+            "AVS_SKIP_TIMED_OVERRIDE_VALIDATION": {
+                "name": "跳过定时状态覆写验证",
+                "hint": "若启用，具有激活定时器的状态覆写将不会纳入回合变换验证检测范围。这样可以避免在临时状态覆写尚未过期的情况下出现回合变换提示。注意：无论此设置如何，移动验证总是会跳过具有定时器的状态覆写。"
             }
         },
         "UI": {
             "ENCOUNTER_FILTER_TEXT": "仅显示遭遇中指示物",
-            "COVER_OVERRIDE": "掩蔽状态覆盖",
+            "COVER_OVERRIDE": "掩蔽状态覆写",
             "ROLL": "掷骰",
             "APPLY_ALL": "全部应用",
             "REVERT_ALL": "全部撤销",
-            "REMOVE_OVERRIDES": "移除覆盖设置",
-            "CLEAR_BULK_OVERRIDES": "清除批量覆盖",
+            "REMOVE_OVERRIDES": "移除状态覆写",
+            "CLEAR_BULK_OVERRIDES": "清除批量状态覆写",
             "FILTER_BY_DETECTION_LABEL": "按视窗过滤",
             "ATTEMPTING_TO_HIDE": "尝试对观察者进行躲藏",
             "IGNORE_ALLIES": "忽略盟友",
@@ -574,7 +579,7 @@
             "ACTIONS": "动作",
             "APPLY_ALL_CHANGES": "应用全部能见度变更",
             "REVERT_ALL_CHANGES": "撤销所有变更至原状态",
-            "OVERRIDE_TO_STATE": "覆盖为{label}",
+            "OVERRIDE_TO_STATE": "状态覆写为{label}",
             "HIDDEN_OR_UNDETECTED": "藏匿或无踪",
             "NO_COVER_BONUS": "无掩蔽加值（+0）",
             "STANDARD_COVER_BONUS": "标准掩蔽加值（+2）",
@@ -614,7 +619,7 @@
             "ATTACK_CONSEQUENCES": "对藏匿/无踪攻击者的攻击后果",
             "HIDE_WALLS": "将隐藏墙体从结果列表隐藏",
             "IGNORE_WALLS": "将隐藏墙体从结果列表隐藏",
-            "AVS_CHANGE_INFO": "移动或光照变化可能导致之前设置的能见度覆盖失效。请仔细查看以下每一项自动能见度变更后，再决定是否接受或拒绝。",
+            "AVS_CHANGE_INFO": "移动或光照变化可能导致之前设置的能见度状态覆写失效。请仔细查看以下每一项自动能见度变更后，再决定是否接受或拒绝。",
             "REJECT_ALL_CHANGES": "拒绝所有变更",
             "ACCEPT_ALL_CHANGES": "接受所有变更",
             "ACCEPT_THIS_CHANGE": "接受该变更",
@@ -763,7 +768,7 @@
             "DEFER_ALL_ELIGIBLE": "将所有符合条件的位置检查推迟至回合结束",
             "PROCESS_DEFERRED_CHECKS": "对回合结束时的验证进行{count}次推迟位置检查",
             "AVS_RECOMMENDED": "自动能见度推荐：{label}",
-            "AVS_CHANGE_INFO_TOOLTIP": "移动或光照变化可能导致之前设置的能见度覆盖失效。请仔细查看以下每一项自动能见度变更后，再决定是否接受或拒绝。",
+            "AVS_CHANGE_INFO_TOOLTIP": "移动或光照变化可能导致之前设置的能见度状态覆写失效。请仔细查看以下每一项自动能见度变更后，再决定是否接受或拒绝。",
             "DEFER_ALL_ELIGIBLE_LABEL": "推迟全部符合条件项",
             "UNDEFER_ALL_BUTTON": "全部取消推迟",
             "RESTORE_DEFERS_BUTTON": "恢复推迟",
@@ -780,16 +785,28 @@
             "SNIPING_DUO_SPOTTER_LABEL": "狙击小组观察手",
             "SNIPING_DUO_SPOTTER_TOOLTIP": "选择你的狙击小组观察手（该盟友与你不会为彼此的打击提供次等掩蔽）。",
             "SNIPING_DUO_SPOTTER_NOT_FOUND": "狙击小组：未找到所选观察手。",
-            "SNIPING_DUO_COVER_OVERRIDE_UNAVAILABLE": "{FEAT}：掩蔽覆盖功能不可用。",
+            "SNIPING_DUO_COVER_OVERRIDE_UNAVAILABLE": "{FEAT}：掩蔽状态覆写功能不可用。",
             "VISION_TOKEN": "指示物",
             "VISION_SHARED_WITH": "仆从",
             "VISION_ROLE_MINION": "仆从",
             "VISION_MASTER": "主人",
             "VISION_ROLE_MASTER": "主人",
             "VISION_ROLE_MASTER_MULTIPLE": "主人（{count}个仆从）",
-            "SHARED_VISION_TITLE": "共享视野",
+            "SHARED_VISION_TITLE": "共享视角",
             "ENCOUNTER_MASTER_NONE": "无（使用默认监测）",
-            "ENCOUNTER_MASTER_CHOOSE": "选择主人…"
+            "ENCOUNTER_MASTER_CHOOSE": "选择主人…",
+            "ENCOUNTER_MASTER_LABEL": "遭遇中主人",
+            "ENCOUNTER_MASTER_DIALOG_TITLE": "选择遭遇中主人",
+            "ENCOUNTER_MASTER_PAN": "平移至指示物",
+            "VISION_MASTER_LABEL": "视角主人",
+            "VISION_MASTER_CHOOSE": "选择视角主人…",
+            "SNIPING_DUO_PAN": "平移至指示物",
+            "ENCOUNTER_MASTER_TOOLTIP": "选择一个指示物，其在遭遇中的参与情况将决定该指示物的遭遇状态。此功能适用于幻灵、宠物或其他未直接显示于战斗追踪板的伙伴。",
+            "VISION_MASTER_TOOLTIP": "选择一个主人指示物，让此指示物共享其视角。仆从会依据主人指示物的视野范围来进行能见度计算。此功能特别适用于那些应当从其创造者视角进行观察的被召唤生物或魔宠。",
+            "CLICK_TO_PAN": "点击平移至主人指示物",
+            "CLICK_TO_PAN_MINION": "点击平移至仆从指示物",
+            "MIDDLE_CLICK_TO_CYCLE": "中键点击切换仆从",
+            "RIGHT_CLICK_TO_REMOVE": "右键点击取消视角共享"
         },
         "WALL": {
             "VISIBLE_TO_YOU": "隐藏墙体",
@@ -806,8 +823,8 @@
                 "hint": "打开所选指示物的能见度管理器"
             },
             "HOLD_COVER_OVERRIDE": {
-                "name": "长按在快速掷骰中覆盖掩蔽",
-                "hint": "当点击打击/攻击动作时长按此键（无对话框），使用模组掩蔽状态覆盖替代掩蔽自动计算。无默认设置；请自行配置按键。"
+                "name": "长按在快速掷骰中覆写掩蔽状态",
+                "hint": "当点击打击/攻击动作时长按此键（无对话框），使用模组掩蔽状态覆写替代掩蔽自动计算。无默认设置；请自行配置按键。"
             },
             "TOGGLE_OBSERVER_MODE": {
                 "name": "悬停提示框切换为观察者模式",
@@ -930,14 +947,14 @@
             "SNIPING_DUO_DEDICATION": "狙击小组入门"
         },
         "AVS_OVERRIDE_DIALOG": {
-            "CLEAR_ALL": "清除所有覆盖设置",
+            "CLEAR_ALL": "清除所有状态覆写",
             "CLOSE": "关闭",
-            "NO_OVERRIDES": "该指示物当前未启用自动能见度覆盖。",
-            "CLEAR_ALL_CONFIRM_TITLE": "清除所有自动能见度覆盖设置",
-            "OVERRIDE_REMOVED": "自动能见度覆盖已移除：{observer} → {target}",
-            "ERROR_REMOVING_OVERRIDE": "移除自动能见度覆盖设置时出错",
-            "ERROR_CLEARING_OVERRIDES": "清除自动能见度覆盖时出错",
-            "ALL_OVERRIDES_CLEARED": "已清除{token}的所有AVS覆盖设置"
+            "NO_OVERRIDES": "该指示物当前未启用自动能见度状态覆写。",
+            "CLEAR_ALL_CONFIRM_TITLE": "清除所有自动能见度状态覆写",
+            "OVERRIDE_REMOVED": "自动能见度状态覆写已移除：{observer} → {target}",
+            "ERROR_REMOVING_OVERRIDE": "移除自动能见度状态覆写时出错",
+            "ERROR_CLEARING_OVERRIDES": "清除自动能见度状态覆写时出错",
+            "ALL_OVERRIDES_CLEARED": "已清除{token}的所有AVS状态覆写"
         },
         "VISIBILITY_FACTORS": {
             "REASONS": {
@@ -973,7 +990,7 @@
                 "TARGET_NO_SENSES": "目标无法被任何可用感官侦测到",
                 "DARKNESS_BETWEEN_WITH_GREATER_DARKVISION": "观察者与目标间存在高等魔法黑暗区域（{templates}），但观察者具备高等黑暗视觉",
                 "TARGET_IN_DARKNESS_WITH_DARKVISION": "目标处于黑暗区域中（{templates}），但观察者具备黑暗视觉",
-                "DARKNESS_BETWEEN_WITH_DARKVISION": "观察者与目标间存在高等魔法黑暗区域（{templates}）- 即便有黑暗视觉，视野仍被遮蔽",
+                "DARKNESS_BETWEEN_WITH_DARKVISION": "观察者与目标间存在高等魔法黑暗区域（{templates}）- 即便有黑暗视觉，视角仍被遮蔽",
                 "TARGET_IN_MAGICAL_DARKNESS_WITH_DARKVISION": "目标处于魔法黑暗区域中（{templates}），但观察者具备黑暗视觉",
                 "TARGET_IN_MAGICAL_DARKNESS_NO_DARKVISION": "目标处于魔法黑暗区域中（{templates}），且观察者缺乏黑暗视觉",
                 "TARGET_IN_GREATER_DARKNESS_WITH_GREATER_DARKVISION": "目标处于高等魔法黑暗区域中（{templates}），但观察者具有高等黑暗视觉",
@@ -992,7 +1009,7 @@
                 "DARKVISION_IN_DARKNESS": "黑暗视觉能在黑暗中如常视物",
                 "TARGET_INVISIBLE_OBSERVER_DEAFENED": "目标处于隐形，且观察者陷入耳聋",
                 "DETECTED_BY_SENSE_IMPRECISE": "被{sense}（模糊感官）侦测到",
-                "RULE_ELEMENT_OVERRIDE": "规则元素覆盖状态"
+                "RULE_ELEMENT_OVERRIDE": "规则元素覆写状态"
             },
             "NO_TOKEN_SELECTED": "选择至少一个指示物显示能见度因素",
             "STATE_LABEL": "状态",
@@ -1090,7 +1107,7 @@
                 "POSITIONING": "定位"
             },
             "POINT_OUT_ACTION": "PF2E Visioner - 指出位置动作",
-            "OVERRIDE_VALIDATION": "覆盖设置验证",
+            "OVERRIDE_VALIDATION": "状态覆写验证",
             "END_OF_TURN_SNEAK": "回合结束时的隐秘验证",
             "END_TURN_POSITION": "回合结束时的位置验证 - {name}",
             "AVS_VALIDATION": "自动能见度变更验证"
@@ -1173,8 +1190,8 @@
                         "NAME": "千象缚景"
                     },
                     "DARKVISION_CONDITIONAL": {
-                        "NAME": "黑暗视觉（条件）",
-                        "DESCRIPTION": "仅在黑暗或昏暗光照下使用黑暗视觉。"
+                        "NAME": "黑暗视觉（条件性）",
+                        "DESCRIPTION": "黑暗视觉仅能在黑暗或昏暗光照中使用。"
                     },
                     "FAERIE_FIRE": {
                         "DESCRIPTION": "在你施放该法术时，处于区域中的所有生物在法术持续时间内会被有色的，无热度的火焰所勾勒出轮廓。该颜色由你选择。可见的生物在受妖火术影响时无法获得隐蔽。如果该生物隐形，在被妖火术影响时为隐蔽，而非无踪。",
@@ -1206,11 +1223,11 @@
                     },
                     "HEAVY_PRECIPITATION": {
                         "NAME": "强降水",
-                        "DESCRIPTION": "大雨，大雪或冻雨会降低能见度。处于30尺及以外的生物视为隐蔽。"
+                        "DESCRIPTION": "大雨，大雪或冻雨会降低能见度。处于30尺及范围以外的生物视为隐蔽。"
                     },
                     "THICK_FOG": {
                         "NAME": "浓雾",
-                        "DESCRIPTION": "浓雾占位"
+                        "DESCRIPTION": "浓雾严重限制了能见度。10尺范围内的生物视为隐蔽，20尺范围之外的生物则视为藏匿。"
                     },
                     "MIRROR_IMAGE": {
                         "NAME": "镜影术",
@@ -1218,7 +1235,7 @@
                     },
                     "CONSECRATE": {
                         "NAME": "加护术（对不死生物）",
-                        "DESCRIPTION": "占位"
+                        "DESCRIPTION": "被加护的区域使不死生物感到不适。该区域内的不死生物对任何人视为隐蔽。"
                     }
                 },
                 "MESSAGES": {
@@ -1233,24 +1250,24 @@
                     "TOWER_SHIELD_ALLY": "盟友受益于你的塔盾",
                     "START_POSITION_DISQUALIFIED": "你的起始位置不满足该动作的使用条件",
                     "DEPLOYABLE_COVER_ACTIVE": "当你寻找掩蔽时，部署式掩体为你提供标准掩蔽",
-                    "BLIND_FIGHT_ACTIVE": "盲斗能让你对隐蔽或隐形的敌人做出反应",
+                    "BLIND_FIGHT_ACTIVE": "盲斗能让你对难以察觉的敌人做出反应",
                     "FAERIE_FIRE_ACTIVE": "妖火术揭示了你的所在位置",
                     "CONCEALMENT_QUALIFICATION_FAILED": "你获得的隐蔽或掩蔽不满足躲藏的使用条件"
                 },
                 "NAME": "PF2e Visioner效果",
                 "OPERATION_TYPES": {
-                    "OVERRIDE_COVER": "覆盖掩蔽",
+                    "OVERRIDE_COVER": "覆写掩蔽",
                     "PROVIDE_COVER": "提供掩蔽",
                     "MODIFY_SENSES": "调整感官",
                     "MODIFY_ACTION_QUALIFICATION": "调整动作使用条件",
-                    "CONDITIONAL_STATE": "条件状态",
-                    "OVERRIDE_VISIBILITY": "覆盖能见度"
+                    "CONDITIONAL_STATE": "条件性状态",
+                    "OVERRIDE_VISIBILITY": "覆写能见度"
                 },
                 "DESCRIPTION": "对法术，物品和专长的进阶能见度，掩蔽及感官方面的改动",
                 "DESCRIPTIONS": {
                     "MODIFY_SENSES": "调整感官范围及其精确度",
-                    "OVERRIDE_VISIBILITY": "覆盖能见度状态",
-                    "OVERRIDE_COVER": "覆盖掩蔽状态",
+                    "OVERRIDE_VISIBILITY": "覆写能见度状态",
+                    "OVERRIDE_COVER": "覆写掩蔽状态",
                     "PROVIDE_COVER": "为其他指示物提供掩蔽",
                     "CONDITIONAL_STATE": "基于状态应用能见度状态",
                     "MODIFY_ACTION_QUALIFICATION": "控制哪些事项符合使用动作的先决条件"
@@ -1312,7 +1329,7 @@
             "TITLE": "GM视角已激活",
             "CLOSE": "无视警告",
             "DONT_SHOW_AGAIN": "不要再显示此警告",
-            "BODY": "自动能见度系统需要一个多边形视野；而GM视角不会生成这样的多边形。请禁用GM视角后再启用自动能见度系统。"
+            "BODY": "自动能见度系统需要一个多边形视角；而GM视角不会生成这样的多边形。请禁用GM视角后再启用自动能见度系统。"
         },
         "OVERRIDE_INDICATOR": {
             "TOOLTIP_RIGHT_CLICK": "右键点击：接受全部",
@@ -1332,7 +1349,7 @@
             "CUSTOM": "自定义",
             "TOKEN_LABEL": "指示物",
             "NEW_STATE_LABEL": "新状态",
-            "DIALOG_TITLE": "应用定时覆盖模式",
+            "DIALOG_TITLE": "应用定时状态覆写",
             "ROUND_TIMING": "轮次计时",
             "EXPIRES_AT": "结束于",
             "START_OF_TURN": "回合开始",
@@ -1346,31 +1363,31 @@
             "PRESET_5_MIN": "5分钟",
             "APPLY_BUTTON": "应用",
             "CANCEL_BUTTON": "取消",
-            "SET_DURATION_FOR_ROW": "为此次覆盖设置持续时间",
+            "SET_DURATION_FOR_ROW": "为此次状态覆写设置持续时间",
             "TIMER_CANCELLED": "定时器已取消",
             "OF": "的",
             "OF_TURN": "{name}的回合",
             "APPLY_NOW": "现在应用",
             "APPLY_FOR_DURATION": "在持续时间内应用…",
             "ACTIVE_TIMER": "激活定时器",
-            "ACTIVE_TIMERS": "已激活定时状态覆盖",
+            "ACTIVE_TIMERS": "已激活定时状态覆写",
             "REMAINING": "剩余时间",
             "CANCEL_TIMER": "取消定时器",
-            "TIMER_TOOLTIP": "状态覆盖结束于：{remaining}",
-            "TIMER_EXPIRED_NOTIFICATION": "对{target}的定时状态覆盖已结束",
+            "TIMER_TOOLTIP": "状态覆写结束于：{remaining}",
+            "TIMER_EXPIRED_NOTIFICATION": "对{target}的定时状态覆写已结束",
             "NO_COMBAT_FOR_ROUNDS": "没有正在进行的战斗，无法使用基于轮次的持续时间",
             "NO_DURATION_SELECTED": "首先选择一个持续时间"
         },
         "VISION_MASTER_DIALOG": {
-            "TITLE": "选择视野主人",
-            "NO_TOKENS": "没有可用的具备视野的有效指示物",
-            "NONE": "无视野（使用自己的视野）",
-            "MODE_LABEL": "视野共享模式",
-            "PAN": "视角平移至指示物",
-            "MODE_ONE_WAY": "单向（仆从仅自身所见+主人视野）",
-            "MODE_TWO_WAY": "双向（主仆彼此能看到对方的视野）",
-            "MODE_REPLACE": "替代（仆从仅能看到主人视野）",
-            "MODE_REVERSE": "反向（主人只能看到仆从视野）"
+            "TITLE": "选择视角主人",
+            "NO_TOKENS": "没有可用的具备视角的有效指示物",
+            "NONE": "无视角（使用自己的视角）",
+            "MODE_LABEL": "视角共享模式",
+            "PAN": "平移至指示物",
+            "MODE_ONE_WAY": "单向（仆从仅观察自身视角+主人视角）",
+            "MODE_TWO_WAY": "双向（主仆能从彼此视角进行观察）",
+            "MODE_REPLACE": "替代（仆从仅能从主人视角进行观察）",
+            "MODE_REVERSE": "反向（主人只能从仆从视角进行观察）"
         }
     }
 }
