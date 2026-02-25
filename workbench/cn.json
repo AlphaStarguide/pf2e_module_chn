@@ -575,7 +575,9 @@
                 "useHighestHeroPointRoll": "使用最高骰值。",
                 "bonusTagKeeleys": "低值+10",
                 "bonusTagUseHighestRoll": "使用最高骰值",
-                "keeleysHeroPointRule": "Keeley的英雄点规则（若d20重骰值低于10，则结果自动+10）。"
+                "keeleysHeroPointRule": "Keeley的英雄点规则（若d20重骰值低于10，则结果自动+10）。",
+                "bonusTagHeroicRerolls": "Low Reroll is set to 10",
+                "heroicRerolls": "Heroic Rerolls (result less than 10 becomes 10)."
             },
             "npcMystifierIcon": {
                 "hint": "用于开关神秘化的Font Awesome图标。必须是一个有效的Font Awesome图标类型（如`fa-solid fa-eye-slash`或`fa-solid fa-user-secret`）。",
