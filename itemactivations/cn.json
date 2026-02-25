@@ -66,7 +66,18 @@
         },
         "notes": {
             "greater-fortification": "每当你穿戴蚀刻该符文的护甲被重击时，尝试一次@Check[flat|dc:14|showDC:all]检定。若成功，该次攻击变为普通命中。",
-            "fortification": "每当你穿戴蚀刻该符文的护甲被重击时，尝试一次@Check[flat|dc:17|showDC:all]检定。若成功，该次攻击变为普通命中。"
+            "fortification": "每当你穿戴蚀刻该符文的护甲被重击时，尝试一次@Check[flat|dc:17|showDC:all]检定。若成功，该次攻击变为普通命中。",
+            "spellhearts": {
+                "terms": {
+                    "armor": "护甲",
+                    "weapon": "武器"
+                },
+                "items": {
+                    "clay-sphere": {
+                        "weapon": "当你通过启动黏土球来施放化形或变形法术后，武器会变得具有可塑性，并根据你的突发奇想来变化形态。你用附着武器作出的打击具有多用B、多用P和多用S特征，持续1分钟。直至你的下个回合结束为止，使用附着武器所作出打击的伤害骰提升一级。"
+                    }
+                }
+            }
         }
     },
     "I18N.LANGUAGE": "简体中文"
