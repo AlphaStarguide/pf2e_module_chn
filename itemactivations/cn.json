@@ -78,7 +78,10 @@
                     "clay-sphere": {
                         "weapon": "当你通过启动黏土球来施放化形或变形法术后，武器会变得具有可塑性，并根据你的突发奇想来变化形态。你用附着武器作出的打击具有多用B、多用P和多用S特征，持续1分钟。直至你的下个回合结束为止，使用附着武器所作出打击的伤害骰提升一级。"
                     },
-                    "beastmasters-sigil": "咒心召唤一只"
+                    "beastmasters-sigil": "咒心召唤一只",
+                    "brightbloom-posy": {
+                        "weapon": "当你通过启动花束施放植物法术后，花粉会覆盖在你的武器上。你的下次打击成功命中目标的话会使目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}（重击则@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。如果生物尝试恢复，它需要打喷嚏而非干呕（投掷豁免对抗咒心的法术DC）@Check[fortitude|dc:resolve(@item.spellcasting.system.spelldc.dc)|traits:action:retch,disease]。如果你在下回合结束前没有进行打击，则花粉会失去活性。带有植物特征的生物免疫此效果。"
+                    }
                 }
             }
         }
