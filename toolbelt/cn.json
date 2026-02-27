@@ -22,6 +22,10 @@
                 "spell": {
                     "name": "法术宏",
                     "hint": "为法术新增添加宏的设置栏。"
+                },
+                "physical": {
+                    "hint": "添加一个新的规则元素，该元素能够在玩家装备/绑定一件实体物品时生成虚拟动作。",
+                    "name": "实体动作"
                 }
             },
             "arp": {
@@ -366,7 +370,8 @@
                 "hint": "该法术释放时执行的宏",
                 "cancel": "<strong>{name}</strong> 的施放被其宏取消。",
                 "label": "宏"
-            }
+            },
+            "virtual": "该虚拟动作被添加自："
         },
         "keybindings": {
             "betterMovement": {
@@ -435,7 +440,9 @@
             "error": {
                 "out-of-bounds": "无法在指定位置创建丢弃指示物。",
                 "no-scene": "没有可以丢弃物品的场景。",
-                "unknown": "在尝试丢弃选中物品时出现错误。"
+                "unknown": "在尝试丢弃选中物品时出现错误。",
+                "actor": "无法创建丢弃物角色。",
+                "quantity": "你只能丢弃数量大于0的物品。"
             },
             "message": {
                 "subtitle": "丢弃物品",
@@ -1006,7 +1013,11 @@
                         "attributes": {
                             "warning": "导入数据未达到最新的提升阈值（{level}级）。<br>您可能需要更新它。",
                             "assign": "分配属性提升",
-                            "override": "使用手动方式导入"
+                            "override": "使用手动方式导入",
+                            "set": {
+                                "boosts": "属性提升已分配。",
+                                "manual": "属性值已被“手动”分配。"
+                            }
                         }
                     }
                 },
@@ -1034,5 +1045,6 @@
         },
         "gmOnly": "仅限GM",
         "playerOnly": "仅限玩家"
-    }
+    },
+    "PF2E.RuleElement.Actionable": "动作项"
 }
