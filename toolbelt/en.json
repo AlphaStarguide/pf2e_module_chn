@@ -1,4 +1,5 @@
 {
+    "PF2E.RuleElement.Actionable": "Actionable",
     "LEVIKTIMES": {
         "playerOnly": "Player Only",
         "gmOnly": "GM Only",
@@ -47,6 +48,10 @@
                 "item": {
                     "name": "Item Macro",
                     "hint": "Adds a way to link a macro to equipment & consumable items."
+                },
+                "physical": {
+                    "name": "Physical Actions",
+                    "hint": "Adds a new RuleElement that generates virtual actions whenever a physical item is equipped/invested."
                 },
                 "spell": {
                     "name": "Spell Macro",
@@ -184,10 +189,6 @@
                 "invertTrade": {
                     "name": "Invert Trade Modifier",
                     "hint": "Players will no longer have to hold 'shift' to give an item without initiating a trade. (Holding 'shift' will initiate the trade request)"
-                },
-                "withContent": {
-                    "name": "With Container Content",
-                    "hint": "When a container is moved from one actor to another, should its content go with it. NOTE this doesn't work when using the system trade functionality."
                 }
             },
             "betterUI": {
@@ -387,7 +388,8 @@
                 "label": "Macro",
                 "hint": "A macro that will be executed when this spell is cast",
                 "cancel": "<strong>{name}</strong> cast was cancelled by its macro."
-            }
+            },
+            "virtual": "This is a virtual action added by:"
         },
         "anonymous": {
             "action": {
@@ -598,6 +600,10 @@
                         "attributes": {
                             "assign": "Assign Attributes Boosts",
                             "override": "Use Manual Input Method",
+                            "set": {
+                                "boosts": "Attribute boosts were assigned.",
+                                "manual": "Attribute values were \"manually\" assigned."
+                            },
                             "warning": "The imported data doesn't reach the last boost threshold (level {level}).<br>You may want to update it."
                         }
                     },
@@ -643,9 +649,11 @@
                 "title": "Droppeth {item}"
             },
             "error": {
+                "actor": "Couldn't create droppeth actor.",
                 "out-of-bounds": "Couldn't create droppeth token at provided location.",
                 "unknown": "Something went wrong when trying to droppeth selected item(s).",
-                "no-scene": "There is no scene available to droppeth."
+                "no-scene": "There is no scene available to droppeth.",
+                "quantity": "You can only droppeth item with quantity greater than 0."
             },
             "message": {
                 "subtitle": "Droppeth Item",
