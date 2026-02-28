@@ -976,7 +976,7 @@
             "import": {
                 "code": {
                     "title": "粘贴JSON代码",
-                    "yes": "解析JSON代码"
+                    "yes": "解析JSON"
                 },
                 "fail": "角色导入失败。",
                 "file": {
@@ -988,8 +988,8 @@
             "sheet": {
                 "import": {
                     "delete": "删除导入数据",
-                    "code": "来自代码",
-                    "file": "来自文件"
+                    "code": "代码导入",
+                    "file": "文件导入"
                 },
                 "level": {
                     "import": "打开角色导入菜单",
@@ -1006,7 +1006,7 @@
                         },
                         "current": "当前",
                         "drop": "删除{key}",
-                        "match": "替换",
+                        "match": "匹配",
                         "override": "覆盖"
                     },
                     "core": {
@@ -1015,10 +1015,16 @@
                             "assign": "分配属性提升",
                             "override": "使用手动方式导入",
                             "set": {
-                                "boosts": "属性提升已分配。",
+                                "boosts": "属性提升已被分配。",
                                 "manual": "属性值已被“手动”分配。"
                             }
                         }
+                    },
+                    "skills": {
+                        "assign": "分配技能提升",
+                        "current": "当前",
+                        "set": "技能熟练度已被分配。",
+                        "expected": "导入后"
                     }
                 },
                 "menu": {
