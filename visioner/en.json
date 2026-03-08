@@ -110,6 +110,8 @@
       "vision_description": "Your standard visual sense used to perceive your surroundings.",
       "lifesense": "Lifesense",
       "lifesense_description": "You have a limited ability to sense life force. You gain lifesense as an imprecise sense. This allows you to sense the life force of living and undead creatures within the listed range. The sense can distinguish between the vitality energy animating living creatures and the void energy animating undead creatures.",
+      "thoughtsense": "Thoughtsense",
+      "thoughtsense_description": "You sense the minds of thinking creatures. You gain thoughtsense as an imprecise sense with the listed range. This sense has no effect on mindless creatures or objects.",
       "echolocation": "Echolocation",
       "echolocation_description": "You can use sound to navigate and detect objects. You gain echolocation as a precise sense. This allows you to detect all creatures and objects within range through sound reflection.",
       "tremorsense": "Tremorsense",
@@ -337,6 +339,7 @@
     },
     "BUTTONS": {
       "KEEN_EYES": "Keen Eyes",
+      "SENSES_SUPPRESSED": "Senses Suppressed",
       "THAT": "That",
       "OBSERVED": "Observed",
       "CONCEALED": "Concealed",
@@ -366,7 +369,8 @@
     "TOOLTIPS": {
       "AUTO_COVER_DETECTION": "Automatic Cover Detection",
       "KEEN_EYES": "You gain a +2 circumstance bonus when using Seek (System application). Undetected creatures treated as Hidden, Hidden creatures treated as Observed when you Seek.",
-      "THAT_FEATURE": "You spot hidden doors, traps, and hazards more easily (failure will become a success)."
+      "THAT_FEATURE": "You spot hidden doors, traps, and hazards more easily (failure will become a success).",
+      "SENSES_SUPPRESSED": "The following senses are suppressed by a region: {senses}"
     },
     "SETTINGS_MENU": {
       "TITLE": "PF2E Visioner Settings",
@@ -1325,6 +1329,7 @@
         "TARGET_IN_DARKNESS_NO_DARKVISION_SIMPLE": "Target is in darkness, observer lacks darkvision",
         "TARGET_IN_DIM_NO_LOW_LIGHT": "Target is in dim light, observer lacks low-light vision",
         "DETECTED_BY_LIFESENSE": "Detected by lifesense ({acuity})",
+        "DETECTED_BY_THOUGHTSENSE": "Detected by thoughtsense ({acuity})",
         "DETECTED_BY_TREMORSENSE": "Detected by tremorsense ({acuity})",
         "DETECTED_BY_SENSE": "Detected by {sense} (precise)",
         "DETECTED_BY_SENSE_IMPRECISE": "Detected by {sense} (imprecise)",
@@ -1336,7 +1341,8 @@
         "DARKVISION_IN_DARKNESS": "Darkvision sees clearly in darkness",
         "TARGET_INVISIBLE_OBSERVER_DEAFENED": "Target is invisible and observer is deafened",
         "TARGET_INVISIBLE_NO_SENSES": "Target is invisible and cannot be detected by available senses",
-        "TARGET_NO_SENSES": "Target cannot be detected by any available senses"
+        "TARGET_NO_SENSES": "Target cannot be detected by any available senses",
+        "SENSES_SUPPRESSED": "Senses suppressed by region: {senses}"
       }
     },
     "REGION_BEHAVIOR": {
@@ -1350,6 +1356,9 @@
         },
         "VISIBILITY": {
           "label": "Visioner Visibility"
+        },
+        "SENSE_SUPPRESSION": {
+          "label": "Sense Suppression"
         }
       },
       "VISIBILITY_STATE": {
@@ -1382,6 +1391,22 @@
         "override": "Override - Tokens inside always have cover",
         "lineOfSight": "Line of Sight - Cover when ray crosses boundary or both inside",
         "oneWay": "One Way - Cover only for tokens inside when viewed from outside"
+      },
+      "SENSE_SUPPRESSION_ENABLED": {
+        "label": "Enable Sense Suppression",
+        "hint": "If enabled, this region will suppress the selected senses for tokens"
+      },
+      "SENSE_SUPPRESSION_SENSES": {
+        "label": "Suppressed Senses",
+        "hint": "Select which senses are suppressed within this region"
+      },
+      "SENSE_SUPPRESSION_AFFECTS_OBSERVER": {
+        "label": "Affects Observer",
+        "hint": "When enabled, tokens inside this region lose the selected senses (e.g. overpowering stench overwhelms scent)"
+      },
+      "SENSE_SUPPRESSION_AFFECTS_TARGET": {
+        "label": "Affects Target",
+        "hint": "When enabled, tokens inside this region cannot be detected by the selected senses from outside observers"
       },
       "VISIBILITY_UPDATED": "Region visibility updated for {count} token relationships",
       "UPDATE_ERROR": "Failed to update region visibility relationships"
