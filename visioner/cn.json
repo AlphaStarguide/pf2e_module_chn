@@ -1168,7 +1168,8 @@
                 "FAIR": "合理位置数据",
                 "POOR": "糟糕位置数据",
                 "UNRELIABLE": "恶劣位置数据"
-            }
+            },
+            "SENSES_SUPPRESSED": "感官抑制"
         },
         "TOOLTIPS": {
             "AUTO_COVER_DETECTION": "自动掩蔽监测",
