@@ -63,7 +63,13 @@
                     "title": "兼容性检测结果"
                 },
                 "no_changed_items": "✅ 未发现需要变更的资源项目",
-                "searched_actors": "搜索了下列角色："
+                "searched_actors": "搜索了下列角色：",
+                "diff": {
+                    "actor": "角色属性",
+                    "origin": "原始属性",
+                    "copy": "属性差异已复制到剪贴板",
+                    "note": "点击窗口任意位置关闭。点击时长按Ctrl/Cmd键可将差异内容复制到剪贴板上"
+                }
             },
             "selection": {
                 "select_actors_title": "选择你想要运行资源检测的角色",
