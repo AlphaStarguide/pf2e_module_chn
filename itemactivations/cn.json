@@ -81,6 +81,16 @@
                     "beastmasters-sigil": "咒心召唤一只",
                     "brightbloom-posy": {
                         "weapon": "当你通过启动花束施放植物法术后，花粉会覆盖在你的武器上。你的下次打击成功命中目标的话会使目标陷入@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 1}（重击则@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{恶心 Sickened 2}）。如果生物尝试恢复，它需要打喷嚏而非干呕（投掷豁免对抗咒心的法术DC）@Check[fortitude|dc:resolve(@item.spellcasting.system.spelldc.dc)|traits:action:retch,disease]。如果你在下回合结束前没有进行打击，则花粉会失去活性。带有植物特征的生物免疫此效果。"
+                    },
+                    "desolation-locket": {
+                        "weapon": "当你通过启动吊坠施放非戏法法术后，你会散发出@Template[emanation|distance:5]范围的绝望灵光，直到你的下个回合开始。在灵光范围内结束回合的生物必须通过@Check[will|dc:{dc}|traits:emotion,mental]豁免，对抗吊坠的法术DC。否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1} （大失败@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 2}），直到他的下个回合结束。"
+                    },
+                    "enigma-mirror": {
+                        "armor": "当你通过启动镜子施放幻术法术后，选择30尺内的一个盟友。该盟友获得@UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]，仿佛在朦胧的镜中被看见一样，直到你的下个回合结束。",
+                        "weapon": "当你通过启动镜子施放幻术法术后，该武器的幻象副本会在周围的空气中旋转。你获得@UUID[Compendium.pf2e.spells-srd.Item.X56VdA98VedAfGTU]效果影响，直到你的下个回合结束。如果你不再持用附着的武器，则法术效果结束。"
+                    },
+                    "five-feather-wreath": {
+                        "weapon": "当你通过启动花环施放气特征的法术后，你能以单动作飞行5尺，如果该法术不是戏法，则你能以一个自由动作飞行{speed}尺。这必须为你的下一个动作，如果你没有飞行速度，你必须在坚实地表上结束飞行，否则会坠落。"
                     }
                 }
             }
