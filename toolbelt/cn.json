@@ -1067,6 +1067,11 @@
                             "current": "当前",
                             "expected": "导入后"
                         }
+                    },
+                    "spellcasting": {
+                        "add": {
+                            "yes": "创建"
+                        }
                     }
                 },
                 "menu": {
