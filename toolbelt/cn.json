@@ -1088,6 +1088,13 @@
                 "title": "删除导入数据",
                 "content": "你确定要从这个角色中删除导入数据吗？<br><br>注意：该操作不会更新角色本身。"
             }
+        },
+        "autoCover": {
+            "none": "无掩蔽",
+            "greater": "高等掩蔽",
+            "greater-prone": "高等掩蔽（倒地）",
+            "lesser": "次等掩蔽",
+            "standard": "标准掩蔽"
         }
     },
     "LEVIKTIMES": {
