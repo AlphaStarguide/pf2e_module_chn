@@ -1368,7 +1368,8 @@
             "TOOLTIP_SHIFT_RIGHT_CLICK": "Shift+右键点击：拒绝全部",
             "TOOLTIP_HEADER": "有效的更改",
             "TOOLTIP_NEXT": "接下来：",
-            "QUEUE_POSITION": "{total}分之{current}"
+            "QUEUE_POSITION": "{total}分之{current}",
+            "ROW_RIGHT_CLICK": "右键点击以接受该次更改"
         },
         "TIMED_OVERRIDE": {
             "DURATION": "持续时间",
