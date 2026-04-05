@@ -497,7 +497,12 @@
                 "split": "拆分为原信息"
             },
             "noMatch": "无法找到另一条符合条件的伤害信息。",
-            "injected": "伤害已被注入该条信息"
+            "injected": "伤害已被注入该条信息",
+            "menu": {
+                "inject-damage": {
+                    "double": "注入双倍伤害"
+                }
+            }
         },
         "resourceTracker": {
             "header": {
