@@ -54,6 +54,12 @@
             "hint": "Have the actor picker default to showing only actors with art by default"
           }
         }
+      },
+      "reminder": {
+        "message": {
+          "name": "[Reminder] Get Reminder about a Combatants's Minions",
+          "hint": "Get a private chat reminder about a combatant's minions at the start of each round"
+        }
       }
     },
     "message": {
@@ -75,7 +81,8 @@
       },
       "customization": {
         "saved": "Saved the customization of the summon"
-      }
+      },
+      "active-minions": "Active <u data-tooltip='{minionTooltip}'>minion(s)</u> for <b>{summonerName}</b>"
     },
     "dialog": {
       "duplicate-foe": "Did the target fail their save?",
