@@ -1,1 +1,307 @@
-{}
+{
+    "PF2E_LEVELER": {
+        "UI": {
+            "LEVEL": "等级 {level}",
+            "EXPORT": "导出规划",
+            "SELECT_CLASS": "选择职业",
+            "APPLY": "应用选择",
+            "SELECT_SUBCLASS": "选择子职",
+            "UNKNOWN_FEAT_SOURCE": "专长",
+            "SELECT_ANCESTRY": "选择族裔"
+        },
+        "SECTIONS": {
+            "CLASS_FEATURES": "职业特性",
+            "ABILITY_BOOSTS": "属性提升",
+            "CLASS_FEAT": "职业专长",
+            "SKILL_FEAT": "技能专长",
+            "GENERAL_FEAT": "通用专长",
+            "ANCESTRY_FEAT": "族裔专长",
+            "SKILL_INCREASE": "技能提升",
+            "ARCHETYPE_FEAT": "免费变体专长",
+            "MYTHIC_FEAT": "神话专长",
+            "DUAL_CLASS_FEAT": "双职业专长",
+            "CLASS_SPECIFIC": "职业选项",
+            "CUSTOM_FEATS": "自定义专长",
+            "CUSTOM_SKILL_INCREASES": "自定义技能提升",
+            "CUSTOM_SPELLS": "自定义法术"
+        },
+        "FEAT_PICKER": {
+            "TITLE": "选择专长",
+            "LEVEL_RANGE": "等级区间",
+            "ANY_LEVEL": "任意等级",
+            "MIN_LEVEL": "最低{level}级",
+            "MAX_LEVEL": "最高{level}级",
+            "FILTER_RARITY": "稀有度",
+            "DEDICATIONS": "入门",
+            "SKILL_FEATS": "技能专长",
+            "SHOW_ARCHETYPE": "显示变体专长",
+            "HIDE_SKILL_FEATS": "隐藏技能专长",
+            "FEAT_TYPES": "专长类型",
+            "TYPE_CLASS": "职业",
+            "TYPE_ANCESTRY": "族裔",
+            "TYPE_GENERAL": "通用",
+            "TYPE_SKILL": "技能",
+            "TYPE_ARCHETYPE": "变体",
+            "TYPE_MYTHIC": "神话",
+            "TYPE_OTHER": "其他",
+            "ALREADY_TAKEN": "该专长无法被重复选择",
+            "PREREQUISITES": "先决条件",
+            "PREREQ_MET": "满足先决条件",
+            "PREREQ_UNMET": "不满足先决条件",
+            "SELECT": "选择"
+        },
+        "SETTINGS": {
+            "COMPENDIUM_CATEGORIES": {
+                "ANCESTRIES": "族裔",
+                "HERITAGES": "传承",
+                "BACKGROUNDS": "背景",
+                "CLASSES": "职业",
+                "FEATS": "专长",
+                "CLASS_FEATURES": "职业特性",
+                "SPELLS": "法术",
+                "ACTIONS": "动作",
+                "DEITIES": "神祇",
+                "EQUIPMENT": "物品与装备"
+            },
+            "HIDE_UNCOMMON": {
+                "NAME": "隐藏罕见专长"
+            },
+            "HIDE_RARE": {
+                "NAME": "隐藏稀有专长"
+            },
+            "COMPENDIUM_MANAGER": {
+                "SOURCE_COLUMN": "合集包",
+                "AUTO_DETECTED": "自动",
+                "CANCEL": "取消"
+            },
+            "ANCESTRAL_PARAGON": {
+                "NAME": "族裔楷模变体规则"
+            },
+            "SHOW_PREREQUISITES": {
+                "NAME": "显示先决条件"
+            }
+        },
+        "SKILLS": {
+            "UNTRAINED": "未受训",
+            "TRAINED": "受训",
+            "EXPERT": "专家",
+            "MASTER": "大师",
+            "LEGENDARY": "传奇"
+        },
+        "SPELLS": {
+            "FOCUS_POOL": "聚能池：{count}",
+            "TRADITION_FILTER": "根源",
+            "FILTER_RARITY": "稀有度",
+            "FOCUS": "聚能法术",
+            "CANTRIP": "戏法",
+            "RANK_FILTER": "法术环阶"
+        },
+        "CREATION": {
+            "TITLE": "创建角色",
+            "LOADING": "角色构筑器数据加载中…",
+            "BUTTON": "创建角色",
+            "CREATE": "创建角色",
+            "EXPORT": "导出",
+            "IMPORT": "导入",
+            "CONFIRM_TITLE": "创建角色",
+            "LORE_SKILLS": "学识技能",
+            "SPELLS_HINT": "选择你的内在法术。",
+            "AUTO_TRAINED": "职业",
+            "DIVINE_FONT_HEAL": "治疗",
+            "DIVINE_FONT_HARM": "伤害",
+            "KEY_ABILITY": "关键",
+            "WIZARD": {
+                "IMPLEMENT": "奇具",
+                "TACTICS": "战术",
+                "IKONS": "神迹",
+                "IKONS_HINT": "选择三种初始神迹。",
+                "AVAILABLE_IKONS": "可选神迹（{selected}/{count}）",
+                "FOCUS_SPELLS": "聚能法术",
+                "DIVINE_FONT": "神力源泉",
+                "KINETIC_GATE": "元门",
+                "SUBCONSCIOUS_MIND": "潜意识",
+                "ARCANE_THESIS": "奥术论题",
+                "APPARITIONS": "精魄",
+                "CURRICULUM_SPELLS": "课程法术",
+                "REMINDER_PERIOD": "。",
+                "IMPULSES_LABEL": "涌动",
+                "GATE_MODE": "元门模式",
+                "IMPULSES": "涌动（{selected}/{count}）",
+                "AVAILABLE_APPARITIONS": "可选精魄（{selected}/{count}）",
+                "SANCTIFICATION": "祝佑",
+                "SECOND_ELEMENT": "第二元素",
+                "INNOVATION_ITEM": "大发明物品",
+                "INNOVATION_MODIFICATION": "大发明改进",
+                "INNOVATION_DETAILS": "大发明详情"
+            },
+            "AUTO_TRAINED_CLASS": "职业",
+            "AUTO_TRAINED_BACKGROUND": "背景",
+            "STEPS": {
+                "ANCESTRY": "族裔",
+                "HERITAGE": "传承",
+                "BACKGROUND": "背景",
+                "CLASS": "职业",
+                "SUBCLASS": "子职",
+                "DEITY": "神祇",
+                "SANCTIFICATION": "祝佑",
+                "BOOSTS": "属性提升",
+                "LANGUAGES": "语言",
+                "SKILLS": "技能",
+                "FEATS": "专长",
+                "SPELLS": "法术"
+            },
+            "CHAT": {
+                "CHARACTER": "角色",
+                "IMPLEMENT": "奇具",
+                "TACTICS": "战术",
+                "IKONS": "神迹",
+                "KINETIC_GATE": "元门",
+                "DUAL_GATE": "双门",
+                "SINGLE_GATE": "单门",
+                "SECOND_ELEMENT": "第二元素",
+                "IMPULSES": "涌动",
+                "SUBCONSCIOUS_MIND": "潜意识",
+                "ARCANE_THESIS": "奥术论题",
+                "APPARITIONS": "精魄",
+                "NONE": "无",
+                "FOCUS_SPELL": "聚能法术",
+                "FOCUS_SPELLS": "聚能法术",
+                "INNOVATION_ITEM": "大发明物品",
+                "INNOVATION_MOD": "大发明改进"
+            }
+        },
+        "SUMMARY": {
+            "CLASS": "职业",
+            "SKILL": "技能",
+            "GENERAL": "通用",
+            "ANCESTRY": "族裔",
+            "SKILL_INCREASE": "技能+",
+            "ARCHETYPE": "变体",
+            "MYTHIC": "神话",
+            "DUAL_CLASS": "双职业",
+            "SPELLS": "法术"
+        },
+        "MESSAGES": {
+            "BOOSTS_APPLIED": "属性提升：{boosts}",
+            "SKILL_INCREASE": "技能提升："
+        },
+        "ALCHEMIST": {
+            "NAME": "炼金术士",
+            "RESEARCH_FIELD": "研究课题",
+            "SUBCLASS": {
+                "BOMBER": "爆破学家",
+                "CHIRURGEON": "医学专家",
+                "MUTAGENIST": "突变学家",
+                "TOXICOLOGIST": "毒理学家"
+            }
+        },
+        "ANIMIST": {
+            "NAME": "灵媒",
+            "PRACTICE": "灵媒流派",
+            "APPARITIONS": "精魄附灵",
+            "PRIMARY_APPARITION": "主精魄",
+            "SUBCLASS": {
+                "LITURGIST": "礼仪师",
+                "MEDIUM": "通灵师",
+                "SEER": "灵视者",
+                "SHAMAN": "萨满"
+            },
+            "APPARITION": {
+                "CRAFTER": "宝库工匠",
+                "CUSTODIAN": "园林看守",
+                "ECHO": "逝时回声",
+                "IMPOSTOR": "秘所骗徒",
+                "LURKER": "噬暗潜物",
+                "MONARCH": "妖庭君王",
+                "REVELER": "失乐欢宾",
+                "STALKER": "暗枝猎手",
+                "STEWARD": "石火管家",
+                "VANGUARD": "激流先锋",
+                "WITNESS": "古战历客",
+                "SHEPHERD": "迷风牧者",
+                "SPEAKER": "嘶声述者"
+            }
+        },
+        "SORCERER": {
+            "NAME": "术士"
+        },
+        "BARBARIAN": {
+            "NAME": "野蛮人"
+        },
+        "BARD": {
+            "NAME": "吟游诗人"
+        },
+        "CHAMPION": {
+            "NAME": "神卫"
+        },
+        "CLERIC": {
+            "NAME": "牧师"
+        },
+        "COMMANDER": {
+            "NAME": "统帅"
+        },
+        "DAREDEVIL": {
+            "NAME": "狂徒"
+        },
+        "DRUID": {
+            "NAME": "德鲁伊"
+        },
+        "EXEMPLAR": {
+            "NAME": "神源者"
+        },
+        "FIGHTER": {
+            "NAME": "战士"
+        },
+        "GUARDIAN": {
+            "NAME": "守护者"
+        },
+        "GUNSLINGER": {
+            "NAME": "枪手"
+        },
+        "INVENTOR": {
+            "NAME": "发明家"
+        },
+        "INVESTIGATOR": {
+            "NAME": "调查员"
+        },
+        "KINETICIST": {
+            "NAME": "御能师"
+        },
+        "MAGUS": {
+            "NAME": "魔战士"
+        },
+        "MONK": {
+            "NAME": "武僧"
+        },
+        "ORACLE": {
+            "NAME": "先知"
+        },
+        "PSYCHIC": {
+            "NAME": "心能者"
+        },
+        "RANGER": {
+            "NAME": "游侠"
+        },
+        "ROGUE": {
+            "NAME": "游荡者"
+        },
+        "SLAYER": {
+            "NAME": "猎杀者"
+        },
+        "SUMMONER": {
+            "NAME": "召唤师"
+        },
+        "SWASHBUCKLER": {
+            "NAME": "浪客"
+        },
+        "THAUMATURGE": {
+            "NAME": "奇术师"
+        },
+        "WITCH": {
+            "NAME": "女巫"
+        },
+        "WIZARD": {
+            "NAME": "法师"
+        }
+    }
+}
