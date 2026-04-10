@@ -45,13 +45,19 @@
       "ADD_CUSTOM_SPELL": "Add Custom Spell",
       "ADD_CUSTOM_CANTRIP": "Add Custom Cantrip",
       "GRANTED_ITEMS": "Granted Items:",
-      "PARTIAL_BOOST_PENDING": "Partial boost: next boost completes +1",
+      "PARTIALLY_APPLIED": "Partially Applied",
+      "PARTIAL_BOOST_PENDING": "Partial boost: two boosts needed for +1",
+      "PARTIAL_BOOST_COMPLETING": "This completes a pending partial +1 boost",
       "PARTIAL_BOOST_SELECTED": "Completes a partial +1 boost",
       "CUSTOM_SPELL_RANK_REMINDER": "This class gets a new spell rank here. Use the custom plan to note the spells you expect to need at that rank.",
       "LOCKED_FILTER_HINT": "This filter is locked for this picker and cannot be changed.",
       "NOT_SELECTED": "Not selected",
       "BROWSE": "Browse...",
-      "ADD": "Add"
+      "ADD": "Add",
+      "NAME": "Name",
+      "NEXT_LEVEL": "Next Level",
+      "FINISH_PLANNING": "Finish Planning",
+      "SEQUENTIAL_PROGRESS": "Planning level {current} of {target}"
     },
     "SECTIONS": {
       "CLASS_FEATURES": "Class Features",
@@ -70,7 +76,14 @@
       "CUSTOM_LEVEL_PLAN": "Custom Level Plan",
       "CUSTOM_FEATS": "Custom Feats",
       "CUSTOM_SKILL_INCREASES": "Custom Skill Increases",
-      "CUSTOM_SPELLS": "Custom Spells"
+      "CUSTOM_SPELLS": "Custom Spells",
+      "CUSTOM_EQUIPMENT": "Custom Equipment",
+      "EQUIPMENT": "Equipment (Table 10-10)"
+    },
+    "EQUIPMENT": {
+      "ADD": "Add Equipment",
+      "CURRENCY_BUDGET": "Currency budget: {gp} gp",
+      "SLOT_EMPTY": "Level {max} item slot (empty)"
     },
     "ITEM_PICKER": {
       "EQUIPMENT": "Equipment",
@@ -81,11 +94,20 @@
       "REMAINING": "remaining",
       "SHOWING_PARTIAL": "Showing 200 of"
     },
+    "STARTING_WEALTH": {
+      "PERMANENT_ITEMS": "Permanent Items",
+      "SLOT_LABEL": "Level {maxLevel} item slot (empty)",
+      "ITEM_LEVEL": "Lv",
+      "CURRENCY_BUDGET": "Currency ({gp} gp)",
+      "NOT_PERMANENT": "Only permanent items (weapons, armor, shields, equipment) can fill this slot.",
+      "LEVEL_TOO_HIGH": "This item is level {item} but the slot allows up to level {max}."
+    },
     "FEAT_PICKER": {
       "OPTIONS": "Options",
       "TITLE": "Select Feat",
       "SEARCH": "Search feats...",
       "ALL_SKILLS": "All Skills",
+      "SKILL_FILTER": "Filter by skill...",
       "NO_RESULTS": "No feats found",
       "FILTER_LEVEL": "Max Level",
       "LEVEL_RANGE": "Level Range",
@@ -101,6 +123,11 @@
       "PREREQ_UNVERIFIED": "Unverified",
       "PREREQ_UNVERIFIED_HINT": "This prerequisite could not be verified automatically. You can still select the feat unless another prerequisite is explicitly unmet.",
       "PREREQ_UNMET_BLOCKED": "This feat is blocked because one or more prerequisites are explicitly unmet.",
+      "ARCHETYPE_DEDICATION_LOCK": "Complete your current dedication by taking two other feats from that archetype first",
+      "ARCHETYPE_UNLOCK": "Dedication Lv {level}+",
+      "ARCHETYPE_UNLOCK_HINT": "Selectable via dedication starting at level {level}.",
+      "SUBCLASS_LIMITATION": "Subclass/Archetype Limitation",
+      "SUBCLASS_LIMITATION_HINT": "This feat is required by your selected subclass or class-archetype limitation.",
       "SEND_TO_CHAT": "Send to Chat",
       "SELECT": "Select",
       "LEVEL": "Lvl {level}",
@@ -159,14 +186,19 @@
       "TRAIT_FILTER": "Type trait to filter...",
       "GRANTED": "Granted Spells",
       "SPELLBOOK": "Spellbook ({selected}/{count} new spells)",
+      "SPELLBOOK_CANTRIPS": "Cantrip Expansion ({selected}/{count} extra cantrips)",
       "ADD_TO_SPELLBOOK": "Add Spells",
       "ADD_TO_SPELLBOOK_HINT": "Add spell to spellbook",
+      "ADD_CANTRIP_TO_SPELLBOOK": "Add Cantrips",
+      "ADD_CANTRIP_TO_SPELLBOOK_HINT": "Add cantrip to spellbook",
       "ADD_SELECTED": "Add Selected",
       "SELECT": "Select",
       "SELECT_ALL": "Select All",
       "DESELECT_ALL": "Deselect All",
       "SELECTED_COUNT": "{count} selected",
+      "ALREADY_SELECTED": "Already Selected",
       "FOCUS": "Focus Spells",
+      "FOCUS_CANTRIPS": "Focus Cantrips",
       "NEW_FOCUS": "New!",
       "SORT_RANK_DESC": "Rank (Highest to Lowest)",
       "SORT_RANK_ASC": "Rank (Lowest to Highest)",
@@ -185,7 +217,10 @@
       "TITLE": "Character Creation",
       "LOADING": "Loading character builder data...",
       "BUTTON": "Create Character",
+      "EDIT_BUTTON": "Edit Character Creation",
       "SEARCH": "Search...",
+      "HERITAGE_GROUP_ANCESTRY": "Ancestry Heritages",
+      "HERITAGE_GROUP_VERSATILE": "Versatile Heritages",
       "CHANGE": "Change",
       "BACK": "Back",
       "NEXT": "Next",
@@ -199,13 +234,14 @@
       "SKILLS_HINT": "Choose {count} additional skills to train.",
       "LANGUAGES_HINT": "Choose {count} additional languages.",
       "GRANTED_LANGUAGES": "Granted Languages",
+      "GRANTED_LORES": "Granted Lore Skills",
       "ADDITIONAL_LANGUAGES": "Additional Languages",
       "NO_LANGUAGES": "No additional language choices available.",
       "LORE_SKILLS": "Lore Skills",
       "SPELLS_HINT": "Select your initial spells.",
       "AUTO_TRAINED": "Class",
-      "DIVINE_FONT_HEAL": "Heal",
-      "DIVINE_FONT_HARM": "Harm",
+      "DIVINE_FONT_HEAL": "Healing",
+      "DIVINE_FONT_HARM": "Harming",
       "KEY_ABILITY": "KEY",
       "TOTAL": "Total",
       "ANCESTRY_SUGGESTION": "Ancestry suggestion",
@@ -279,6 +315,7 @@
       "STEPS": {
         "ANCESTRY": "Ancestry",
         "HERITAGE": "Heritage",
+        "MIXED_ANCESTRY": "Mixed Ancestry",
         "BACKGROUND": "Background",
         "CLASS": "Class",
         "SUBCLASS": "Subclass",
@@ -451,6 +488,14 @@
         "NAME": "Show Prerequisites",
         "HINT": "Show prerequisite validation status on feats in the picker"
       },
+      "IGNORE_FREE_ARCHETYPE_DEDICATION_LOCK": {
+        "NAME": "Ignore Free Archetype Dedication Lock",
+        "HINT": "When the Free Archetype variant is in use, allow new dedication feats in free archetype slots without requiring two other feats from the current archetype first."
+      },
+      "ENFORCE_SUBCLASS_DEDICATION_REQUIREMENT": {
+        "NAME": "Enforce Subclass Dedication Requirement",
+        "HINT": "When enabled, subclass or class-archetype text such as 'You must select X Dedication as your 2nd-level class feat' restricts the level 2 class feat picker and validation to that dedication."
+      },
       "HIDE_UNCOMMON": {
         "NAME": "Hide Uncommon Feats",
         "HINT": "Hide uncommon and rarer feats from the feat picker by default"
@@ -482,9 +527,17 @@
         "ALPHA_ASC": "Alphabetical (A-Z)",
         "ALPHA_DESC": "Alphabetical (Z-A)"
       },
+      "STARTING_WEALTH": {
+        "MODE_NAME": "Starting Wealth Mode",
+        "MODE_HINT": "How starting equipment budget is determined. Items + Currency uses Table 10-10 with permanent item slots and a currency allowance. Lump Sum uses the flat gold value from Table 10-10. Custom uses a manual gold limit.",
+        "DISABLED": "Disabled",
+        "ITEMS_AND_CURRENCY": "Items + Currency (Table 10-10)",
+        "LUMP_SUM": "Lump Sum (Table 10-10)",
+        "CUSTOM": "Custom Gold Limit"
+      },
       "EQUIPMENT_GOLD_LIMIT": {
-        "NAME": "Starting Equipment Gold Limit",
-        "HINT": "Maximum gold pieces players can spend on starting equipment during character creation. Set to 0 to disable the limit.",
+        "NAME": "Custom Gold Limit",
+        "HINT": "Gold piece budget for Custom wealth mode. Only applies when Starting Wealth Mode is set to Custom.",
         "EXCEEDED": "This item would exceed the starting equipment budget of {limit} gp.",
         "EXCEEDED_TOOLTIP": "Total cost exceeds the set gold limit."
       },
@@ -519,7 +572,10 @@
         "NO_PACK_ASSIGNMENTS": "No compendiums match that search.",
         "CANCEL": "Cancel",
         "SAVE": "Save Changes",
-        "SAVED": "Custom compendium categories saved"
+        "SAVING": "Saving...",
+        "SAVED": "Custom compendium categories saved",
+        "INDEXING_TITLE": "Reindexing Compendiums",
+        "INDEXING_HINT": "PF2E Leveler is rebuilding feat, item, and spell indexes for the updated source selection."
       },
       "COMPENDIUM_CATEGORIES": {
         "ANCESTRIES": "Ancestries",
@@ -531,7 +587,31 @@
         "SPELLS": "Spells",
         "EQUIPMENT": "Items and Equipment",
         "ACTIONS": "Actions",
-        "DEITIES": "Deities"
+        "DEITIES": "Deities",
+        "SKILLS": "Skills",
+        "LANGUAGES": "Languages"
+      },
+      "CONTENT_GUIDANCE": {
+        "NAME": "Suggested Character Options",
+        "LABEL": "Configure Suggestions",
+        "HINT": "Mark character options as suggested, not recommended, or disallowed for players. Suggested items appear with a star badge and sort to the top. Not recommended items keep a warning badge without being blocked. Disallowed items are hidden from players.",
+        "SAVED": "Content guidance saved.",
+        "INTRO": "Mark items as suggested, not recommended, or disallowed. Suggested items get a star badge and sort to the top in pickers. Not recommended items stay available but display a warning badge. Disallowed items are hidden from non-GM users.",
+        "SEARCH": "Search items...",
+        "RECOMMENDED": "Suggested",
+        "NOT_RECOMMENDED": "Not Recommended",
+        "DISALLOWED": "Disallowed",
+        "DEFAULT": "Default",
+        "BADGE_SUGGESTED": "Suggested",
+        "BADGE_NOT_RECOMMENDED": "Not Recommended",
+        "BADGE_DISALLOWED": "Disallowed",
+        "BULK_RARITY": "Bulk by Rarity",
+        "BULK_RECOMMENDED": "Suggest",
+        "BULK_NOT_RECOMMENDED": "Warn",
+        "BULK_DISALLOWED": "Ban",
+        "BULK_DEFAULT": "Clear",
+        "CLEAR_ALL": "Clear Tab",
+        "COUNT": "{count} marked"
       }
     }
   }
