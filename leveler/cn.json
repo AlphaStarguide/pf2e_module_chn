@@ -7,7 +7,11 @@
             "APPLY": "应用选择",
             "SELECT_SUBCLASS": "选择子职",
             "UNKNOWN_FEAT_SOURCE": "专长",
-            "SELECT_ANCESTRY": "选择族裔"
+            "SELECT_ANCESTRY": "选择族裔",
+            "KEY_ABILITY": "关键属性",
+            "TRADITION": "根源",
+            "SPELLCASTING_TYPE": "施法类型",
+            "ADD_SPELLCASTING_ENTRY": "添加法术列表"
         },
         "SECTIONS": {
             "CLASS_FEATURES": "职业特性",
