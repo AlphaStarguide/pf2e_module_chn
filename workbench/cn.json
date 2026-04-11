@@ -383,7 +383,7 @@
                 "no": "无需提醒",
                 "reminder": "提醒",
                 "cancelAttack": "角色无法攻击时取消攻击",
-                "dying": "is dying"
+                "dying": "陷入濒死"
             },
             "tokenAnimation": {
                 "hint": "启用此项更改指示物的移动动画。如有Multilevel Tokens模组，可能会引发问题。",
