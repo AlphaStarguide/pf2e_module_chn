@@ -115,7 +115,9 @@
                 "ignore": "无",
                 "noRunningTimer": "没有计时器在运行",
                 "none": "无角色",
-                "hint": "勾选以启用英雄点处理功能，可设置绑定键开启对话框，该对话框可以重置或增加所有角色的英雄点，为随机（或选定角色）增加1英雄点，以及最重要的，开始计时，默认60分钟后该对话框将重新出现。"
+                "hint": "勾选以启用英雄点处理功能，可设置绑定键开启对话框，该对话框可以重置或增加所有角色的英雄点，为随机（或选定角色）增加1英雄点，以及最重要的，开始计时，默认60分钟后该对话框将重新出现。",
+                "stopShortLabel": "Stop",
+                "submitShortLabel": "Submit"
             },
             "npcMystifierPrefix": {
                 "name": "单词或随机表前缀",
@@ -380,7 +382,8 @@
                 "info": "你确定要{title}吗？{actorName}{reason}，因此没有能力攻击…",
                 "no": "无需提醒",
                 "reminder": "提醒",
-                "cancelAttack": "角色无法攻击时取消攻击"
+                "cancelAttack": "角色无法攻击时取消攻击",
+                "dying": "is dying"
             },
             "tokenAnimation": {
                 "hint": "启用此项更改指示物的移动动画。如有Multilevel Tokens模组，可能会引发问题。",
