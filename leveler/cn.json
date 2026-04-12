@@ -11,7 +11,38 @@
             "KEY_ABILITY": "关键属性",
             "TRADITION": "根源",
             "SPELLCASTING_TYPE": "施法类型",
-            "ADD_SPELLCASTING_ENTRY": "添加法术列表"
+            "ADD_SPELLCASTING_ENTRY": "添加法术列表",
+            "OPEN_PLANNER": "等级规划",
+            "COMPLETE": "已完成",
+            "INCOMPLETE": "未完成",
+            "EMPTY": "无需选择",
+            "NO_PLAN": "尚未创建规划。请选择一个职业以开始。",
+            "UNSUPPORTED_CLASS": "{className}尚未被模组支持。",
+            "SAVE": "保存规划",
+            "CLEAR": "清空规划",
+            "CLEAR_LEVEL": "清空等级",
+            "IMPORT": "导入规划",
+            "IMPORTING_PLAN_TITLE": "导入规划",
+            "CONFIRM_APPLY_TITLE": "应用升级规划",
+            "CONFIRM_APPLY": "是否应用{level}级的规划选择？",
+            "PLANNED": "已规划",
+            "MANUAL_SPELL_NOTE": "该专长会授予一个聚能法术——应用后你需要在角色卡上手动选择具体法术。",
+            "APPLIED": "已应用",
+            "CURRENT": "当前",
+            "CHANGE": "更改",
+            "REMOVE": "移除",
+            "SHOW": "显示",
+            "HIDE": "隐藏",
+            "SELECTED": "已选择",
+            "ADD_CUSTOM_FEAT": "添加自定义专长",
+            "ADD_CUSTOM_SPELL": "添加自定义法术",
+            "ADD_CUSTOM_CANTRIP": "添加自定义戏法",
+            "GRANTED_ITEMS": "赋予的物品：",
+            "PARTIALLY_APPLIED": "部分已应用",
+            "UNSET": "点击以选择",
+            "NOT_SELECTED": "未选择",
+            "NEXT_LEVEL": "下一级",
+            "FINISH_PLANNING": "完成规划"
         },
         "SECTIONS": {
             "CLASS_FEATURES": "职业特性",
@@ -27,7 +58,11 @@
             "CLASS_SPECIFIC": "职业选项",
             "CUSTOM_FEATS": "自定义专长",
             "CUSTOM_SKILL_INCREASES": "自定义技能提升",
-            "CUSTOM_SPELLS": "自定义法术"
+            "CUSTOM_SPELLS": "自定义法术",
+            "SPELLCASTING": "施法",
+            "ABP_POTENCY": "技能潜能（ABP）",
+            "CUSTOM_LEVEL_PLAN": "自定义等级规划",
+            "CUSTOM_EQUIPMENT": "自定义装备"
         },
         "FEAT_PICKER": {
             "TITLE": "选择专长",
@@ -52,7 +87,10 @@
             "PREREQUISITES": "先决条件",
             "PREREQ_MET": "满足先决条件",
             "PREREQ_UNMET": "不满足先决条件",
-            "SELECT": "选择"
+            "SELECT": "选择",
+            "SEARCH": "搜索专长…",
+            "ALL_SKILLS": "所有技能",
+            "SKILL_FILTER": "按技能筛选…"
         },
         "SETTINGS": {
             "COMPENDIUM_CATEGORIES": {
@@ -68,10 +106,12 @@
                 "EQUIPMENT": "物品与装备"
             },
             "HIDE_UNCOMMON": {
-                "NAME": "隐藏罕见专长"
+                "NAME": "隐藏罕见专长",
+                "HINT": "默认在专长选择器中隐藏罕见及更高稀有度的专长"
             },
             "HIDE_RARE": {
-                "NAME": "隐藏稀有专长"
+                "NAME": "隐藏稀有专长",
+                "HINT": "默认在专长选择器中隐藏稀有专长"
             },
             "COMPENDIUM_MANAGER": {
                 "SOURCE_COLUMN": "合集包",
@@ -82,7 +122,33 @@
                 "NAME": "族裔楷模变体规则"
             },
             "SHOW_PREREQUISITES": {
-                "NAME": "显示先决条件"
+                "NAME": "显示先决条件",
+                "HINT": "在选择器中显示专长的先决条件验证状态"
+            },
+            "SHOW_BUTTON": {
+                "NAME": "显示规划按钮",
+                "HINT": "在角色卡上显示「等级规划」按钮"
+            },
+            "AUTO_APPLY": {
+                "NAME": "升级时自动应用",
+                "HINT": "在角色升级时自动弹出提示，应用已规划的选择"
+            },
+            "IGNORE_FREE_ARCHETYPE_DEDICATION_LOCK": {
+                "NAME": "忽略免费变体入门锁定"
+            },
+            "PLAYER_RARITY": {
+                "UNCOMMON_NAME": "允许玩家使用罕见资源",
+                "UNCOMMON_HINT": "允许非GM用户在角色创建和升级工具中查看和选择罕见资源。",
+                "RARE_NAME": "允许玩家使用稀有资源",
+                "RARE_HINT": "允许非GM用户在角色创建和升级工具中查看和选择稀有资源。",
+                "UNIQUE_NAME": "允许玩家使用独特资源",
+                "UNIQUE_HINT": "允许非GM用户在角色创建和升级工具中查看和选择独特资源。"
+            },
+            "FEAT_SORT": {
+                "NAME": "默认专长排序",
+                "HINT": "专长选择器中默认的排序方式",
+                "LEVEL_DESC": "等级（从高到低）",
+                "LEVEL_ASC": "等级（从低到高）"
             }
         },
         "SKILLS": {
@@ -306,6 +372,21 @@
         },
         "WIZARD": {
             "NAME": "法师"
+        },
+        "MODULE_TITLE": "PF2e升级规划器",
+        "EQUIPMENT": {
+            "ADD": "添加装备",
+            "CURRENCY_BUDGET": "货币预算：{gp} gp"
+        },
+        "ITEM_PICKER": {
+            "SEARCH": "搜索装备…",
+            "TOTAL": "总计",
+            "REMAINING": "剩余"
+        },
+        "STARTING_WEALTH": {
+            "PERMANENT_ITEMS": "永久物品",
+            "ITEM_LEVEL": "Lv",
+            "CURRENCY_BUDGET": "货币（{gp} gp）"
         }
     }
 }
