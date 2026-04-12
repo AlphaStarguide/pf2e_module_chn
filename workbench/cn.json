@@ -117,7 +117,9 @@
                 "none": "无角色",
                 "hint": "勾选以启用英雄点处理功能，可设置绑定键开启对话框，该对话框可以重置或增加所有角色的英雄点，为随机（或选定角色）增加1英雄点，以及最重要的，开始计时，默认60分钟后该对话框将重新出现。",
                 "stopShortLabel": "终止",
-                "submitShortLabel": "提交"
+                "submitShortLabel": "提交",
+                "reasonLabel": "Reason for awarding Hero Point (optional)",
+                "reasonPlaceholder": "Good RP!, Creative thinking!, etc."
             },
             "npcMystifierPrefix": {
                 "name": "单词或随机表前缀",
