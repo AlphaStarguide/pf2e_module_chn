@@ -26,6 +26,9 @@
                 "physical": {
                     "hint": "添加一个新的规则元素，该元素能够在玩家装备/绑定一件实体物品时生成虚拟动作。",
                     "name": "实体动作"
+                },
+                "cast": {
+                    "name": "物品施法"
                 }
             },
             "arp": {
@@ -1172,5 +1175,6 @@
         "gmOnly": "仅限GM",
         "playerOnly": "仅限玩家"
     },
-    "PF2E.RuleElement.Actionable": "动作项"
+    "PF2E.RuleElement.Actionable": "动作项",
+    "PF2E.RuleElement.ItemCast": "物品施法"
 }
