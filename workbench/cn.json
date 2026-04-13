@@ -101,7 +101,7 @@
                 "minutesLeft": "当前计时器剩余时间",
                 "addedFor": "{name}的英雄点增加1",
                 "addedToForAll": "所有人的英雄点增加了{heroPoints}",
-                "instructions": "注意，此对话框存在时，计时器暂停。<br>关闭此对话框后，计时器将继续计时。",
+                "instructions": "注意，此对话框存在时，计时器暂停。关闭此对话框后，计时器将继续计时。",
                 "name": "启用英雄点处理器。",
                 "noTimerLabel": "清除并终止计时器。",
                 "resetTo": "重置为",
