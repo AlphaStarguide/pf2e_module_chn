@@ -420,16 +420,21 @@
                 "cancel": "<strong>{name}</strong> action was cancelled by its macro."
             },
             "cast": {
-                "equipped": "Not Equipped"
+                "equipped": "Not Equipped",
+                "label": "Item Spell Cast"
             },
             "generate-cast": {
                 "add": "Add rule",
+                "attribute": "Attribute",
                 "dc": "DC",
                 "empty": "No additional spells were found in the item's description.",
                 "label": "Item Cast",
                 "max": "Max Uses",
+                "predicate": "Predicate",
                 "rank": "Rank",
-                "title": "Generate 'Item Cast' rules from description."
+                "statistic": "Statistic",
+                "title": "Generate 'Item Cast' rules from description.",
+                "tradition": "Tradition"
             },
             "item": {
                 "label": "Macro",
