@@ -413,7 +413,20 @@
                 "cancel": "<strong>{name}</strong> 的施放被其宏取消。",
                 "label": "宏"
             },
-            "virtual": "该虚拟动作被添加自："
+            "virtual": "该虚拟动作被添加自：",
+            "cast": {
+                "label": "物品施法",
+                "equipped": "未装备"
+            },
+            "generate-cast": {
+                "add": "添加规则",
+                "label": "物品施法",
+                "tradition": "根源",
+                "dc": "DC",
+                "predicate": "谓语",
+                "statistic": "数据",
+                "attribute": "属性"
+            }
         },
         "keybindings": {
             "betterMovement": {
