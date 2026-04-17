@@ -42,7 +42,16 @@
             "UNSET": "点击以选择",
             "NOT_SELECTED": "未选择",
             "NEXT_LEVEL": "下一级",
-            "FINISH_PLANNING": "完成规划"
+            "FINISH_PLANNING": "完成规划",
+            "SECOND_CLASS": "第二职业",
+            "SELECT_SECOND_CLASS": "选择第二职业",
+            "PARTIAL_BOOST_PENDING": "部分提升：需要两次提升才能+1",
+            "PARTIAL_BOOST_SELECTED": "完成一次 +1 部分提升",
+            "BROWSE": "浏览…",
+            "ADD": "添加",
+            "NAME": "名称",
+            "WARNING": "存在警告",
+            "NO_CLASS": "为你的角色分配一个职业以开始规划。"
         },
         "SECTIONS": {
             "CLASS_FEATURES": "职业特性",
@@ -62,7 +71,8 @@
             "SPELLCASTING": "施法",
             "ABP_POTENCY": "技能潜能（ABP）",
             "CUSTOM_LEVEL_PLAN": "自定义等级规划",
-            "CUSTOM_EQUIPMENT": "自定义装备"
+            "CUSTOM_EQUIPMENT": "自定义装备",
+            "DUAL_CLASS": "双职业"
         },
         "FEAT_PICKER": {
             "TITLE": "选择专长",
@@ -85,12 +95,23 @@
             "TYPE_OTHER": "其他",
             "ALREADY_TAKEN": "该专长无法被重复选择",
             "PREREQUISITES": "先决条件",
-            "PREREQ_MET": "满足先决条件",
-            "PREREQ_UNMET": "不满足先决条件",
+            "PREREQ_MET": "已满足先决条件",
+            "PREREQ_UNMET": "未满足先决条件",
             "SELECT": "选择",
             "SEARCH": "搜索专长…",
             "ALL_SKILLS": "所有技能",
-            "SKILL_FILTER": "按技能筛选…"
+            "SKILL_FILTER": "按技能筛选…",
+            "NO_RESULTS": "未找到专长",
+            "FILTER_LEVEL": "最高等级",
+            "SORT": "排序",
+            "PREREQ_UNKNOWN": "无法验证先决条件",
+            "PREREQ_UNVERIFIED": "未验证",
+            "PREREQ_UNVERIFIED_HINT": "该先决条件无法自动验证。除非另一个先决条件明确未被满足，否则你仍可选择此专长。",
+            "TYPE_BONUS": "额外",
+            "SELECT_ALL": "全选",
+            "DESELECT_ALL": "取消全选",
+            "ADD_SELECTED": "添加所选项",
+            "SELECTED_COUNT": "已选{count}个"
         },
         "SETTINGS": {
             "COMPENDIUM_CATEGORIES": {
@@ -103,7 +124,9 @@
                 "SPELLS": "法术",
                 "ACTIONS": "动作",
                 "DEITIES": "神祇",
-                "EQUIPMENT": "物品与装备"
+                "EQUIPMENT": "物品与装备",
+                "SKILLS": "技能",
+                "LANGUAGES": "语言"
             },
             "HIDE_UNCOMMON": {
                 "NAME": "隐藏罕见专长",
@@ -116,7 +139,9 @@
             "COMPENDIUM_MANAGER": {
                 "SOURCE_COLUMN": "合集包",
                 "AUTO_DETECTED": "自动",
-                "CANCEL": "取消"
+                "CANCEL": "取消",
+                "ALL": "全选",
+                "DESELECT_ALL": "取消全选"
             },
             "ANCESTRAL_PARAGON": {
                 "NAME": "族裔楷模变体规则"
@@ -149,6 +174,20 @@
                 "HINT": "专长选择器中默认的排序方式",
                 "LEVEL_DESC": "等级（从高到低）",
                 "LEVEL_ASC": "等级（从低到高）"
+            },
+            "CONTENT_GUIDANCE": {
+                "RECOMMENDED": "推荐",
+                "NOT_RECOMMENDED": "不推荐",
+                "DISALLOWED": "禁用",
+                "DEFAULT": "默认",
+                "BADGE_SUGGESTED": "推荐",
+                "BADGE_NOT_RECOMMENDED": "不推荐",
+                "BADGE_DISALLOWED": "禁用",
+                "BULK_RECOMMENDED": "推荐",
+                "BULK_NOT_RECOMMENDED": "不推荐",
+                "BULK_DISALLOWED": "禁用",
+                "BULK_DEFAULT": "清空",
+                "SEARCH": "搜索资源…"
             }
         },
         "SKILLS": {
@@ -156,7 +195,10 @@
             "TRAINED": "受训",
             "EXPERT": "专家",
             "MASTER": "大师",
-            "LEGENDARY": "传奇"
+            "LEGENDARY": "传奇",
+            "TITLE": "选择技能提升",
+            "MAX_RANK": "此等级的最高熟练度",
+            "BOOSTED_BY_FEAT": "由专长提升"
         },
         "SPELLS": {
             "FOCUS_POOL": "聚能池：{count}",
@@ -164,10 +206,37 @@
             "FILTER_RARITY": "稀有度",
             "FOCUS": "聚能法术",
             "CANTRIP": "戏法",
-            "RANK_FILTER": "法术环阶"
+            "RANK_FILTER": "法术环阶",
+            "SLOTS": "法术位",
+            "NEW_RANK": "新增：{rank}环法术！",
+            "ADD": "添加法术",
+            "PLANNED": "已规划法术",
+            "SEARCH": "搜索法术…",
+            "NO_RESULTS": "未找到法术",
+            "SORT": "排序",
+            "ADD_TO_SPELLBOOK": "添加法术",
+            "ADD_TO_SPELLBOOK_HINT": "将法术添加到法术书",
+            "ADD_CANTRIP_TO_SPELLBOOK": "添加戏法",
+            "ADD_CANTRIP_TO_SPELLBOOK_HINT": "将戏法添加到法术书",
+            "ADD_SELECTED": "添加所选项",
+            "SELECT": "选择",
+            "SELECT_ALL": "全选",
+            "DESELECT_ALL": "取消全选",
+            "SELECTED_COUNT": "已选{count}个",
+            "ALREADY_SELECTED": "已选择",
+            "ALREADY_TAKEN": "该法术已在法术书中",
+            "FOCUS_CANTRIPS": "聚能戏法",
+            "NEW_FOCUS": "新增！",
+            "SORT_RANK_DESC": "环级（从高到低）",
+            "SORT_RANK_ASC": "环级（从低到高）",
+            "RANK_NUMBER": "{rank}环",
+            "CATEGORY_SPELL": "法术",
+            "CATEGORY_CANTRIP": "戏法",
+            "CATEGORY_FOCUS": "聚能",
+            "CATEGORY_RITUAL": "仪式"
         },
         "CREATION": {
-            "TITLE": "创建角色",
+            "TITLE": "角色创建",
             "LOADING": "角色构筑器数据加载中…",
             "BUTTON": "创建角色",
             "CREATE": "创建角色",
@@ -218,7 +287,11 @@
                 "LANGUAGES": "语言",
                 "SKILLS": "技能",
                 "FEATS": "专长",
-                "SPELLS": "法术"
+                "SPELLS": "法术",
+                "MIXED_ANCESTRY": "混血族裔",
+                "EQUIPMENT": "装备",
+                "SUMMARY": "汇总",
+                "SUBCLASSCHOICES": "选项"
             },
             "CHAT": {
                 "CHARACTER": "角色",
@@ -237,8 +310,21 @@
                 "FOCUS_SPELL": "聚能法术",
                 "FOCUS_SPELLS": "聚能法术",
                 "INNOVATION_ITEM": "大发明物品",
-                "INNOVATION_MOD": "大发明改进"
-            }
+                "INNOVATION_MOD": "大发明改进",
+                "STARTING_BENEFITS": "初始增益",
+                "CHARACTER_CREATED": "角色已创建",
+                "CHARACTER_READY": "{actorName}已就绪"
+            },
+            "APPLY_OVERLAY": {
+                "EYEBROW": "创建角色中"
+            },
+            "EDIT_BUTTON": "编辑角色创建",
+            "SEARCH": "搜索…",
+            "HERITAGE_GROUP_ANCESTRY": "族裔传承",
+            "HERITAGE_GROUP_VERSATILE": "多用传承",
+            "CHANGE": "更改",
+            "BACK": "返回",
+            "NEXT": "下一步"
         },
         "SUMMARY": {
             "CLASS": "职业",
@@ -249,11 +335,15 @@
             "ARCHETYPE": "变体",
             "MYTHIC": "神话",
             "DUAL_CLASS": "双职业",
-            "SPELLS": "法术"
+            "SPELLS": "法术",
+            "BOOSTS": "提升"
         },
         "MESSAGES": {
             "BOOSTS_APPLIED": "属性提升：{boosts}",
-            "SKILL_INCREASE": "技能提升："
+            "SKILL_INCREASE": "技能提升：",
+            "NO_FEATS": "无",
+            "SPELLS_ADDED": "已添加法术：",
+            "FEATS_SELECTED": "已选专长："
         },
         "ALCHEMIST": {
             "NAME": "炼金术士",
@@ -381,12 +471,25 @@
         "ITEM_PICKER": {
             "SEARCH": "搜索装备…",
             "TOTAL": "总计",
-            "REMAINING": "剩余"
+            "REMAINING": "剩余",
+            "EQUIPMENT": "装备",
+            "QUANTITY": "数量"
         },
         "STARTING_WEALTH": {
             "PERMANENT_ITEMS": "永久物品",
             "ITEM_LEVEL": "Lv",
             "CURRENCY_BUDGET": "货币（{gp} gp）"
+        },
+        "BOOSTS": {
+            "TITLE": "选择{count}个属性提升",
+            "CURRENT": "当前：+{mod}",
+            "PARTIAL": "部分提升（+0.5）",
+            "ALREADY_SELECTED": "已提升"
+        },
+        "PREREQUISITES": {
+            "MET": "已满足所有先决条件",
+            "UNMET": "未满足先决条件",
+            "DETAILS": "先决条件：{details}"
         }
     }
 }
