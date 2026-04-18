@@ -233,7 +233,14 @@
             "CATEGORY_SPELL": "法术",
             "CATEGORY_CANTRIP": "戏法",
             "CATEGORY_FOCUS": "聚能",
-            "CATEGORY_RITUAL": "仪式"
+            "CATEGORY_RITUAL": "仪式",
+            "TRAIT_FILTER": "输入特征以筛选…",
+            "GRANTED": "赋予法术",
+            "SPELLBOOK": "法术书（{selected}/{count}个新法术）",
+            "SPELLBOOK_CANTRIPS": "戏法扩展（{selected}/{count}个额外戏法）",
+            "SORT_ALPHA_ASC": "字母顺序（A-Z）",
+            "SORT_ALPHA_DESC": "字母顺序（Z-A）",
+            "CATEGORY_FILTER": "类别"
         },
         "CREATION": {
             "TITLE": "角色创建",
