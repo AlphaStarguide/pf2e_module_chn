@@ -111,7 +111,8 @@
             "SELECT_ALL": "全选",
             "DESELECT_ALL": "取消全选",
             "ADD_SELECTED": "添加所选项",
-            "SELECTED_COUNT": "已选{count}个"
+            "SELECTED_COUNT": "已选{count}个",
+            "SEND_TO_CHAT": "发送至聊天"
         },
         "SETTINGS": {
             "COMPENDIUM_CATEGORIES": {
@@ -278,7 +279,28 @@
                 "SECOND_ELEMENT": "第二元素",
                 "INNOVATION_ITEM": "大发明物品",
                 "INNOVATION_MODIFICATION": "大发明改进",
-                "INNOVATION_DETAILS": "大发明详情"
+                "INNOVATION_DETAILS": "大发明详情",
+                "TACTICS_HINT": "为你的战术本选择五个初始战术。",
+                "AVAILABLE_TACTICS": "可用战术（{selected}/{count}）",
+                "INNOVATION_DETAILS_HINT": "选择你的大发明基础物品和初始改进。",
+                "INNOVATION_BASE_FIRST": "请先选择大发明基础物品。",
+                "KINETIC_GATE_HINT": "选择你是以单门还是双门创建角色，然后选择你的初始涌动。",
+                "APPARITIONS_HINT": "选择两种要附灵的精魄，然后将其中一个标记为你的主精魄。",
+                "ALLOWS": "可选",
+                "REQUIRES": "必选",
+                "SANCTIFICATION_SUFFIX": "以下祝佑：",
+                "DIVINE_FONT_HINT": "选择你的神力源泉。这决定你将引导治疗法术还是伤害法术。",
+                "GRANTED_FEAT_CHOICE": "赋予专长选择",
+                "REMINDER_PREFIX": "角色创建后出现提示时，请确保你选择",
+                "REMINDER_SUBCLASS_SUFFIX": "作为你的子职选择。",
+                "REMINDER_IMPLEMENT_SUFFIX": "作为你的奇具。",
+                "REMINDER_TACTICS_PREFIX": "角色创建后出现提示时，请确保你选择已选定的统帅战术：",
+                "REMINDER_IKONS_PREFIX": "角色创建后出现提示时，请确保你选择已选定的神迹：",
+                "REMINDER_INNOVATION_PREFIX": "角色创建后出现提示时，请确保你选择已确定的大发明详情：",
+                "REMINDER_KINETIC_PREFIX": "角色创建后出现提示时，请确保你选择已确定的元门选项：",
+                "REMINDER_SUBCONSCIOUS_SUFFIX": "作为你的潜意识。",
+                "REMINDER_THESIS_SUFFIX": "作为你的奥术论题。",
+                "REMINDER_WITH": "以及"
             },
             "AUTO_TRAINED_CLASS": "职业",
             "AUTO_TRAINED_BACKGROUND": "背景",
@@ -331,7 +353,13 @@
             "HERITAGE_GROUP_VERSATILE": "多用传承",
             "CHANGE": "更改",
             "BACK": "返回",
-            "NEXT": "下一步"
+            "NEXT": "下一步",
+            "TOTAL": "总计",
+            "ANCESTRY_SUGGESTION": "族裔推荐",
+            "SELECTED_TACTICS": "已选择战术（{selected}/{count}）",
+            "SELECTED_IKONS": "已选择神迹（{selected}/{count}）",
+            "SELECTED_IMPULSES": "已选择涌动（{selected}/{count}）",
+            "SELECTED_APPARITIONS": "已选择精魄（{selected}/{count}）"
         },
         "SUMMARY": {
             "CLASS": "职业",
