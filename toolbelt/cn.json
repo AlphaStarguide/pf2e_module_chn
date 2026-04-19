@@ -216,6 +216,10 @@
                 "enabled": {
                     "name": "启用",
                     "hint": "在你的世界启用“目标助手” 特性。"
+                },
+                "template": {
+                    "name": "测量板助手",
+                    "hint": "在放置测量板后，将会弹出一个新对话框，允许你将测量板内的所有指示物选为目标。"
                 }
             },
             "underground": {
@@ -640,7 +644,17 @@
                 "reroll": "允许重骰豁免检定",
                 "adjustment": "调整值： {value}"
             },
-            "unnamed": "未命名"
+            "unnamed": "未命名",
+            "template": {
+                "title": "测量板助手",
+                "yes": "目标",
+                "allies": "盟友",
+                "dismiss": "移除测量板",
+                "enemies": "敌人",
+                "self": "包括自身",
+                "neutral": "包括中立角色",
+                "all": "全部"
+            }
         },
         "betterMerchant": {
             "item": {
