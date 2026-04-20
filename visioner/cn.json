@@ -1380,7 +1380,8 @@
             "TITLE": "搜索测量板配置",
             "DESCRIPTION": "选择搜索动作的测量板形状和大小。",
             "LIFESENSE_TOOLTIP": "可以感知到范围内的活物与不死生物（模糊感官）",
-            "SENSE_UNSEEN_APPLIED": "察觉未见已应用"
+            "SENSE_UNSEEN_APPLIED": "察觉未见已应用",
+            "LEVELS": "层级"
         },
         "AVS_GM_VISION_WARNING": {
             "TITLE": "GM视角已激活",
