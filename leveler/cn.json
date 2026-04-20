@@ -189,6 +189,9 @@
                 "BULK_DISALLOWED": "禁用",
                 "BULK_DEFAULT": "清空",
                 "SEARCH": "搜索资源…"
+            },
+            "STARTING_WEALTH": {
+                "DISABLED": "禁用"
             }
         },
         "SKILLS": {
@@ -508,7 +511,8 @@
             "TOTAL": "总计",
             "REMAINING": "剩余",
             "EQUIPMENT": "装备",
-            "QUANTITY": "数量"
+            "QUANTITY": "数量",
+            "CATEGORY": "类别"
         },
         "STARTING_WEALTH": {
             "PERMANENT_ITEMS": "永久物品",
@@ -525,6 +529,14 @@
             "MET": "已满足所有先决条件",
             "UNMET": "未满足先决条件",
             "DETAILS": "先决条件：{details}"
+        },
+        "NOTIFICATIONS": {
+            "PLAN_EXPORTED": "规划已成功导出",
+            "PLAN_IMPORTED": "规划已成功导入",
+            "CREATION_EXPORTED": "角色创建规划已成功导出",
+            "CREATION_IMPORTED": "角色创建规划已成功导入",
+            "PLAN_SAVED": "升级规划已保存",
+            "PLAN_CLEARED": "升级规划已清空"
         }
     }
 }
