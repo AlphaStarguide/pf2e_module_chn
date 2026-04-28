@@ -20,5 +20,9 @@
   "pf2e-unified-spellbook.RankOrdinal.7": "7th",
   "pf2e-unified-spellbook.RankOrdinal.8": "8th",
   "pf2e-unified-spellbook.RankOrdinal.9": "9th",
-  "pf2e-unified-spellbook.RankOrdinal.10": "10th"
+  "pf2e-unified-spellbook.RankOrdinal.10": "10th",
+  "pf2e-unified-spellbook.ShowFocusSpellsOnBottom": "Show focus spells at the end of the list",
+  "pf2e-unified-spellbook.ShowFocusSpellsOnBottomHint": "When activated, focus spells will be displayed at the bottom of the spell list",
+  "pf2e-unified-spellbook.SpellDefense.AC": "AC",
+  "pf2e-unified-spellbook.SpellDefense.Basic": "basic {statistic}"
 }
