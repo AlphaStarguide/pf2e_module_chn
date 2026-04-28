@@ -22,7 +22,7 @@
     "pf2e-unified-spellbook.RankOrdinal.9": "9",
     "pf2e-unified-spellbook.RankOrdinal.10": "10",
     "pf2e-unified-spellbook.ShowFocusSpellsOnBottom": "在列表末尾显示聚能法术",
-    "pf2e-unified-spellbook.ShowFocusSpellsOnBottomHint": "启用后，聚能法术将显示在法术列表的底部",
+    "pf2e-unified-spellbook.ShowFocusSpellsOnBottomHint": "启用时，聚能法术将显示在法术列表的底部",
     "pf2e-unified-spellbook.SpellDefense.AC": "AC",
-    "pf2e-unified-spellbook.SpellDefense.Basic": "基础 {statistic}"
+    "pf2e-unified-spellbook.SpellDefense.Basic": "基础{statistic}"
 }
