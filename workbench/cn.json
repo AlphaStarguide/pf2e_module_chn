@@ -352,8 +352,8 @@
                 "name": "从指定随机表中添加随机词"
             },
             "npcScaler": {
-                "hint": "勾选此项允许调整NPC体型（目前在V13后无效）",
-                "name": "允许调整NPC体型（V12）"
+                "hint": "勾选此项允许调整NPC体型",
+                "name": "允许调整NPC体型"
             },
             "remindersSettings": {
                 "hint": "启用并配置多个提醒器",
