@@ -1,505 +1,162 @@
 {
-    "pf2e-hud": {
-        "keybindings": {
-            "persistent": {
-                "setActor": {
-                    "name": "Set Persistent Actor",
-                    "hint": "Set the selected token's actor as persistent."
+    "I18N.LANGUAGE": "English",
+    "pf2e-item-activations": {
+        "module-settings": {
+            "enabled": {
+                "name": "Enable Module",
+                "hint": "Enables all functionality of module"
+            },
+            "action-type-icon": {
+                "enabled": {
+                    "name": "Overwrite Icon to Action Count Icon",
+                    "hint": "When generating actions will use an action count Icon for all relevant (IE 1, 2, 3 etc.)"
                 }
             },
-            "sidebar": {
-                "filter": {
-                    "name": "Use Sidebar Filter",
-                    "hint": "Allow filtering the current sidebar content."
+            "npc": {
+                "enabled": {
+                    "name": "Enable NPC Activations",
+                    "hint": "Enables all functionality of module for NPCs"
+                },
+                "on-create-token": {
+                    "name": "Add NPC Activations on Token Creation",
+                    "hint": "When NPC tokens are placed, runs a check to Add any missing activations"
                 }
             },
-            "tracker": {
-                "alternate": {
-                    "name": "Alternate Controls",
-                    "hint": "Toggle the combat tracker controls to show additional options."
+            "auto-gen": {
+                "enabled": {
+                    "name": "Enable Automatic Generation",
+                    "hint": "Enables automatic generations for activations that haven't been handcrafted. Note these may have less implementation/functionality."
                 }
+            },
+            "debug-mode": {
+                "name": "Debug Mode",
+                "hint": "Have the console receive messages for different stuff"
             }
         },
-        "settings": {
-            "menus": {
-                "healthStatusMenu": {
-                    "name": "Health Status",
-                    "label": "Config Health Status",
-                    "hint": "Set up Health Status divisions to display in the HUDs."
-                }
-            },
-            "enabled": {
-                "name": "Enabled",
-                "hint": "Enables this HUD element on your client."
-            },
-            "dice": {
-                "title": "Dice Panel"
-            },
-            "foundrySidebar": {
-                "title": "Foundry Sidebar",
-                "expand": {
-                    "name": "Auto Expand on Load",
-                    "hint": "Force the foundry sidebar to expand on page load."
-                },
-                "noFormat": {
-                    "name": "Hide Format Panel",
-                    "hint": "The format panel will be removed from the chat."
-                },
-                "noRollMode": {
-                    "name": "Hide Roll Modes",
-                    "hint": "Roll mode buttons will be removed from the chat."
-                }
-            },
-            "global": {
-                "alwaysFilter": {
-                    "name": "Sidebar Filter Always Visible",
-                    "hint": "The sidebars filter input will always be visible instead of requiring the use of a keybind."
-                },
-                "highestSpeed": {
-                    "name": "Show Highest Speed",
-                    "hint": "If no speed was manually selected, the highest one will always be shown by default even if the land speed isn't 0."
-                },
-                "useModifiers": {
-                    "name": "Use Modifiers",
-                    "hint": "Display modifiers instead of the difficulty value in the different HUD elements."
-                }
-            },
-            "advanced": {
-                "alliance": {
-                    "name": "Alliance Button",
-                    "hint": "Show the alliance/disposition button in the HUD."
-                }
-            },
-            "persistent": {
-                "title": "Persistent HUD",
-                "autoFill": {
-                    "name": "Auto-Fill NPCs",
-                    "hint": "If you haven't made any manual changes, the shortcut slots will automatically be filled."
-                },
-                "display": {
-                    "name": "Display Position",
-                    "hint": "Where should the hud be displayed in the  UI.",
-                    "choices": {
-                        "disabled": "Disabled",
-                        "left": "Left Part",
-                        "middle": "Middle Part"
-                    }
-                },
-                "selection": {
-                    "name": "Selection Mode",
-                    "hint": "Mode of selection for the persistent actor.",
-                    "choices": {
-                        "manual": "Manual Selection",
-                        "select": "On Token Selection",
-                        "combat": "Current Combatant"
-                    }
-                },
-                "shiftEffect": {
-                    "name": "Hold Shift for Effects",
-                    "hint": "When enabled, you need to hold the 'shift' key to interact with the hud effect icons."
-                },
-                "slots": {
-                    "name": "Extra Shortcut Slots",
-                    "hint": "Number of extra shortcut slots to add to the HUD."
-                }
-            },
-            "sidebar": {
-                "title": "Sidebar"
+        "code": {
+            "activation": "Activation",
+            "activate": "Activate",
+            "frequency": "Frequency",
+            "granted-by": "Granted by",
+            "activation-traits": {
+                "command": "command",
+                "envision": "envision",
+                "interact": "interact"
             },
             "time": {
-                "title": "Time Tracker",
-                "enabled": {
-                    "hint": "Enables this HUD element on your client. This is overridden when the 'Player Access' system worldclock setting is disabled."
-                }
+                "turn": "turn",
+                "round": "round",
+                "minute": "minute",
+                "ten-minutes": "10 minutes",
+                "hour": "hour",
+                "twenty-four-hours": "24 hours",
+                "day": "day",
+                "week": "week",
+                "month": "month",
+                "year": "year"
             },
-            "token": {
-                "title": "Token HUD",
-                "activation": {
-                    "name": "Activation Mode",
-                    "hint": "Select the mode to activate the token HUD.",
-                    "choices": {
-                        "disabled": "Disabled",
-                        "first": "On First Click",
-                        "second": "On Second Click"
+            "invalid-activations": {
+                "staff": "You expend a number of charges from the staff to cast a spell from its list."
+            },
+            "per": "per",
+            "count": {
+                "once": "once",
+                "twice": "twice",
+                "three-times": "three times"
+            }
+        },
+        "notes": {
+            "fortification": "Each time the defender is critically hit while wearing the etched armor, attempt a @Check[flat|dc:17|showDC:all]. On a success, it becomes a normal hit.",
+            "greater-fortification": "Each time the defender is critically hit while wearing the etched armor, attempt a @Check[flat|dc:14|showDC:all]. On a success, it becomes a normal hit.",
+            "spellhearts": {
+                "terms": {
+                    "armor": "Armor",
+                    "weapon": "Weapon",
+                    "melee-weapon": "Melee Weapon",
+                    "ranged-weapon": "Ranged Weapon"
+                },
+                "items": {
+                    "beastmasters-sigil": "This summons a",
+                    "brightbloom-posy": {
+                        "weapon": "After you cast a plant spell by activating the posy, pollen coats your weapon. Your next Strike causes the target to be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} on a hit (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical hit). If the creature attempts to recover, it sneezes rather than retching (rolling against the spellheart's spell DC @Check[fortitude|dc:resolve(@item.spellcasting.system.spelldc.dc)|traits:action:retch,disease]. If you don't make a Strike by the end of your next turn, the pollen becomes inert. Plant creatures are immune."
+                    },
+                    "clay-sphere": {
+                        "weapon": "After you cast a morph or polymorph spell by activating the clay sphere, the weapon becomes malleable, shifting its form to your whims. Your Strikes with the affixed weapon have the versatile bludgeoning, versatile piercing, and versatile slashing trait for 1 minute. Until the end of your next turn, Strikes with the affixed weapon have their damage dice increase by one step."
+                    },
+                    "compass-of-luong-phung": "In addition to the effects of the cantrip, the compass itself points in the general direction of a sea dragon for 1 minute, with the point glowing brighter as you get closer. Aligning the compass with the constellation of the Sea Dragon at night instead creates a beam for 1 minute to find Luong Phung again.",
+                    "desolation-locket": {
+                        "weapon": "After you cast a non-cantrip spell by activating the locket, you emanate an aura of hopelessness in a @Template[emanation|distance:5] until the start of your next turn. A creature that ends its turn in the aura must succeed at a @Check[will|dc:{dc}|traits:emotion,mental] saving throw against the locket's spell DC or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) until the end of its next turn."
+                    },
+                    "enigma-mirror": {
+                        "armor": "After you cast an illusion spell by activating the mirror, choose one ally within 30 feet. That ally is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W] as if seen in a misty mirror, until the end of your next turn.",
+                        "weapon": "After you cast an illusion spell by activating the mirror, illusory copies of the weapon swirl in the air around it. You're affected by the @UUID[Compendium.pf2e.spells-srd.Item.X56VdA98VedAfGTU] spell until the end of your next turn. The spell ends if you stop wielding the affixed weapon."
+                    },
+                    "five-feather-wreath": {
+                        "weapon": "After you cast an air spell by Activating the wreath, you can Fly 5 feet as a single action, or you can Fly {speed} feet as a free action if the spell you cast wasn't a cantrip. This must be your next action, and if you don't have a fly Speed, you must end the flight on solid ground or fall."
+                    },
+                    "flaming-star": {
+                        "weapon": "After you cast a fire spell by Activating the star, Your your Strikes with the weapon deal an additional fire damage until the end of your next turn."
+                    },
+                    "foxglove-token": {
+                        "weapon": "After you cast an plant spell by activating the foxglove token, your Strikes with the weapon deal additional poison damage until the end of your next turn."
+                    },
+                    "grim-sandglass": {
+                        "weapon": "After you Cast a Spell by Activating the sandglass, your Strikes with the weapon deal additional void damage until the end of your next turn."
+                    },
+                    "heartmoss": {
+                        "weapon": "After you cast a healing spell by activating the heartmoss, the weapon exudes a soothing scent. Your Strikes with the affixed weapon have the nonlethal trait for 1 minute. Until the end of your next turn, Strikes with the affixed weapon cause the target to be @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{stupefiedLabel} for 1 round if it hits (or for 3 rounds on a critical hit)."
+                    },
+                    "jolt-coil": {
+                        "weapon": "After you cast an electricity spell by activating the coil, your Strikes with the weapon deal additional electricity damage until the end of your next turn."
+                    },
+                    "judgment-thurible": {
+                        "armor": "After you cast a spell by activating the thurible, the thurible casts 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.gMODOGamz88rgHuf]{Protection} on you, with a duration of 1 round.",
+                        "weapon": "After you cast a spell by activating the thurible, the weapon gains a rune that lasts until the end of your next turn. It gains the @UUID[Compendium.pf2e.equipment-srd.Item.DH0kB9Wbr5pDeunX]{Holy} rune if your deity allows holy sanctification or the @UUID[Compendium.pf2e.equipment-srd.Item.gmMrJREf4JSHd2dZ]{Unholy} rune if your deity allows unholy sanctification. If your deity allows both, you can choose which rune the weapon gains. If your deity allows neither, your weapon doesn't gain a rune. (Greater/Major) The extra damage from this rune is 2d6",
+                        "damage-boost": "The extra damage from this rune is 2d6"
+                    },
+                    "lightweave-scarf": {
+                        "weapon": "(visual) After you cast an illusion spell by activating the scarf, the weapon is shrouded in a mesmerizing illusory pattern. Your next Strike causes the target to be @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round if it hits. If you don't make a Strike by the end of your next turn, the illusion ends with no effect."
+                    },
+                    "perfect-droplet": {
+                        "armor": "After you cast a water spell by Activating the droplet, your body becomes mistlike. Until the end of the turn, you can move through enemies' spaces. You can't move through creatures that have the water trait in this way."
+                    },
+                    "pickled-demon-tongue": {
+                        "weapon": "After you cast an acid spell by activating the pickled demon tongue, your Strikes with the weapon deal additional acid damage until the end of your next turn."
+                    },
+                    "polished-demon-horn": {
+                        "weapon": "After you cast an enchantment spell by activating the horn, your Strikes with the weapon deal additional mental damage until the end of your next turn."
+                    },
+                    "resonating-fork": " After you cast a sonic spell by activating the fork, the weapon reverberates with trapped sound waves. Your next Strike causes the target to be @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR] for {duration} if it hits (or for {durationCrit} on a critical hit). If you don't make a Strike by the end of your next turn, the sound waves dissipate with no effect.",
+                    "rime-crystal": {
+                        "weapon": "After you cast an cold spell by activating the crystal, your Strikes with the weapon deal additional cold damage until the end of your next turn."
+                    },
+                    "sanguine-fang": {
+                        "weapon": "After you cast a spell by activating the fang, your Strikes with the weapon deal persistent bleed damage until the end of your next turn."
+                    },
+                    "saurian-spike": {
+                        "weapon": "When you cast a polymorph spell by activating the spike, your battle form is exceptionally fearsome. Each enemy in a @Template[emanation|distance:30] must succeed at a @Check[will|dc:{dc}|traits:auditory,emotion,fear,visual] saving throw or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened {fail}} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened {critFail}} on a critical failure)."
+                    },
+                    "spiny-lodestone": {
+                        "weapon": "After you cast a spell by Activating the spiny lodestone, your Strikes with the weapon deal an additional piercing damage until the end of your next turn."
+                    },
+                    "thorn-triad": {
+                        "armor": "After you cast a plant spell by activating the triad, you gain resistance to bludgeoning and piercing damage and weakness to fire until the end of your next turn, or double the resistance for a non-cantrip spell.",
+                        "weapon": "After you cast a plant spell by activating the triad, thorns erupt from the weapon. Your Strikes with the weapon deal additional persistent bleed damage until the end of your next turn."
+                    },
+                    "trinity-geode": {
+                        "armor": "After you cast an earth spell by Activating the geode, you gain resistance to physical damage (except adamantine) until the end of your next turn, or double the resistance for a non-cantrip spell.",
+                        "weapon": "After you cast an earth spell by activating the geode, your Strikes with the weapon deal additional bludgeoning damage until the end of your next turn."
+                    },
+                    "warding-statuette": {
+                        "weapon": "When you hit with a Strike using the affixed weapon, or when a spell effect you created by activating the statuette hits with a Strike, you can choose a creature adjacent to the creature that was hit. That creature gains a +1 status bonus to AC until the start of your next turn. No more than one creature can benefit from this each turn."
                     }
-                },
-                "mode": {
-                    "name": "Display Mode",
-                    "hint": "Select the mode of display of the token HUD.",
-                    "choices": {
-                        "exploded": "Exploded",
-                        "left": "Grouped (Left)",
-                        "right": "Grouped (Right)"
-                    }
                 }
             },
-            "tooltip": {
-                "title": "Token Tooltip",
-                "delay": {
-                    "name": "Tooltip Delay",
-                    "hint": "Delay in milliseconds before the tooltip shows up on screen."
-                },
-                "distance": {
-                    "name": "Display Distance",
-                    "hint": "Will display the distance between the hovered token and one that is inferred automatically. Note that the module will instead use the scene units if it is anything other than the default value.",
-                    "choices": {
-                        "never": "Never",
-                        "idiot": "In Feet",
-                        "smart": "In Meters",
-                        "weird": "In Squares"
-                    }
-                },
-                "draw": {
-                    "name": "Draw Distance",
-                    "hint": "Draw a line of this thickness between the hovered token and the 'distance' target."
-                },
-                "status": {
-                    "name": "Display Health Status",
-                    "hint": "Should health state be displayed on the tooltip if enabled in you world."
-                }
-            },
-            "tracker": {
-                "title": "Combat Tracker",
-                "partyAsObserved": {
-                    "name": "Party Alliance as Observed",
-                    "hint": "Consider actors in the 'Party' alliance to be observed by players for the sake of showing health details. Not to be confused with the 'Party' actor."
-                },
-                "started": {
-                    "name": "Only When Started",
-                    "hint": "The tracker will only show up for players if the combat has actually started (on top of needing a combatant participating)."
-                },
-                "textureScaling": {
-                    "name": "Texture Scaling",
-                    "hint": "Invert scales the combatant's image based on the token texture scaling."
-                }
-            }
-        },
-        "actions": {
-            "drive": {
-                "drive1": "Drive <span class=\"action-glyph\">1</span>",
-                "drive2": "Drive <span class=\"action-glyph\">2</span>",
-                "drive3": "Drive <span class=\"action-glyph\">3</span>"
-            }
-        },
-        "actor-hud": {
-            "alliance": "Alliance: {value}",
-            "temp": "Temporary Hit Points",
-            "resolve": "Use Resolve Point"
-        },
-        "avatar-editor": {
-            "title": "Edit Avatar - {name}",
-            "cancel": "Cancel",
-            "color": {
-                "background": "Background Color",
-                "enabled": "Enable Background Color"
-            },
-            "contain": "Contain",
-            "reset": "Reset",
-            "save": "Save",
-            "src": {
-                "actor": "Use Actor Image",
-                "token": "Use Token Image",
-                "none": "Couldn't find a valid image source",
-                "video": "Videos are not supported with this feature"
-            }
-        },
-        "dialogs": {
-            "alternates": {
-                "dc": "Difficulty Class",
-                "drag": "Drag to create a shortcut",
-                "statistic": "Statistic",
-                "title": "Action Variants - {label}",
-                "yes": "Use Variants"
-            },
-            "resolve": {
-                "title": "Use Resolve Point",
-                "full": "{name} is full of stamina and doesn't need to rest.",
-                "breather": {
-                    "label": "Take a Breather",
-                    "hint": "Rest for 10 minutes, spend a resolve point and regain all your stamina."
-                },
-                "steel": {
-                    "hint": "Use an action, spend a resolve point and regain half your stamina."
-                },
-                "yes": "Use Resolve"
-            }
-        },
-        "edit-shortcut": {
-            "image": "Image Path",
-            "name": "Shortcut Name",
-            "yes": "Save"
-        },
-        "group-perception": {
-            "title": "Group Perception Checks",
-            "search": "Is Actively Searching"
-        },
-        "health-status": {
-            "title": "Health Status",
-            "enabled": "Enabled",
-            "add": "Add Marker",
-            "delete": "Delete Marker",
-            "save": "Save",
-            "cancel": "Cancel",
-            "import": {
-                "title": "Import Health Status",
-                "yes": "Import",
-                "no": "Cancel",
-                "error": "The data provided is invalid."
-            },
-            "export": {
-                "title": "Export Health Status",
-                "confirm": "Health Status has been copied to clipboard."
-            },
-            "default": "Dead, At Death's Door, Not Feeling Good, Seen Better Days, Barely Hurt, Perfectly Fine"
-        },
-        "leftClick": "[Left-Click]",
-        "no-selection": "You need to select at least one valid creature.",
-        "persistent": {
-            "effects": {
-                "shift": "Shift",
-                "toggle": "Toggle Effects"
-            },
-            "error": {
-                "selectOne": "Select a single NPC/Character token to set as your persistent actor."
-            },
-            "menu": {
-                "clean": {
-                    "always": "Always show UI on portrait",
-                    "hover": "Only show UI when hovering the portrait"
-                },
-                "editAvatar": "Edit Avatar",
-                "lockOwned": {
-                    "lock": "Prevent owned actors selection",
-                    "unlock": "Allow owned actors selection"
-                },
-                "pin": "Pin Actor",
-                "setActor": {
-                    "set": "Set selected token as persistent actor",
-                    "unset": "Unset persistent actor"
-                }
-            },
-            "ownedActor": {
-                "drag": {
-                    "exist": "This scene already contains a token for this actor."
-                },
-                "unpin": "Unpin Actor"
-            },
-            "pan": {
-                "none": "This actor doesn't have any active token on the current scene."
-            },
-            "patch": {
-                "browser": "Open Compendium Browser",
-                "check-prompt": "Generate Check Prompt",
-                "gm-screen": "Open GM-Screen",
-                "group-perception": "Roll Group Perception",
-                "identify-menu": "Open Identify Menu",
-                "player-screen": "Open Player-Screen",
-                "random-pick": "Pick Random Target",
-                "select-all": "Select Player Tokens",
-                "set-journal": "Select Journal Entry",
-                "travel-sheet": "Calculate Travel Duration"
-            },
-            "shortcuts": {
-                "clear": {
-                    "title": "Clear Shortcuts",
-                    "all": "All Shortcuts Sets",
-                    "hint": "Are you sure you want to delete the following shortcuts?",
-                    "set": "Current Set Only",
-                    "yes": "Delete"
-                },
-                "copy": {
-                    "title": "Copy User Shortcuts",
-                    "hint": "Select a user to copy the shortcuts from.",
-                    "label": "User Owner",
-                    "none": "This actor doesn't have any other owner.",
-                    "yes": "Copy"
-                },
-                "fill": {
-                    "title": "Auto-Fill Shortcuts",
-                    "content": "Are you sure you want to auto-fill the shortcuts?",
-                    "yes": "Auto-Fill"
-                },
-                "tab": "Change Shortcuts Set"
-            }
-        },
-        "pin-token": {
-            "notify": "Select a token to pin as favorite."
-        },
-        "popup": {
-            "shortcut": {
-                "config": "Customize Shortcut"
-            }
-        },
-        "random-pick": {
-            "title": "Eeny, meeny, miny, moe"
-        },
-        "recall-knowledge": {
-            "result": "Result",
-            "modifier": "Mod.",
-            "target": "Target",
-            "first": "1st",
-            "second": "2nd",
-            "third": "3rd",
-            "fourth": "4th",
-            "fifth": "5th",
-            "sixth": "6th",
-            "dc": "DC",
-            "unspecific": "Unspecific",
-            "specific": "Specific",
-            "skill": "Skill",
-            "lore": "Lore Skill",
-            "proficiency": "Proficiency"
-        },
-        "rightClick": "[Right-Click]",
-        "set-journal": {
-            "uuid": {
-                "label": "Journal UUID"
-            },
-            "world": {
-                "label": "World Journal"
-            },
-            "yes": "Set Journal"
-        },
-        "shortcuts": {
-            "blast": {
-                "cost": {
-                    "label": "Elemental Blast Cost"
-                }
-            },
-            "error": {
-                "locked": "The Shortcuts are locked with the Hotbar",
-                "notHUD": "You need to drag elements from the HUD itself to create shortcuts.",
-                "notScript": "Only script macros can be added to shortcuts.",
-                "wrongActor": "You can only create shortcuts from the same persistent actor.",
-                "wrongData": "The data provided isn't valid.",
-                "wrongType": "You cannot create a shortcut of that type."
-            },
-            "tooltip": {
-                "active": "Active",
-                "altUse": {
-                    "blast": "Blast Window",
-                    "skillAction": "Variants Menu",
-                    "strike": "Strike Window",
-                    "toggle": "Select SubOption"
-                },
-                "click": {
-                    "control": "[Ctrl-Right-Click]",
-                    "middle": "[Middle-Click] Remove Shortcut",
-                    "popup": "Shortcut Popup"
-                },
-                "disabled": "Disabled",
-                "enabled": "Enabled",
-                "inactive": "Inactive",
-                "subtitle": {
-                    "blast": "Elemental Blast",
-                    "extraAction": "Extra Action",
-                    "macro": "Self-Executed Macro",
-                    "spell": "Spellcasting",
-                    "skillAction": "Skill Action",
-                    "strike": "Strike Attack",
-                    "toggle": "Roll Option"
-                },
-                "reason": {
-                    "available": "Not Currently Available",
-                    "broken": "Orphan Spell",
-                    "charges": "No Charges Left",
-                    "combat": "Not In Combat",
-                    "dropped": "Item Not Carried",
-                    "equip": "Not Equipped",
-                    "expended": "Expended Spell",
-                    "focus": "Focus Pool Empty",
-                    "hands": "No Free Hand",
-                    "macro": "No Matching Macro",
-                    "match": "No Matching Item",
-                    "prepared": "Spell Not Prepared",
-                    "quantity": "Quantity Is Zero",
-                    "rank": "Cannot Cast That Rank",
-                    "tactic": "Not a Prepared Tactic",
-                    "uses": "No Remaining Uses",
-                    "vessel": "Not Primary Vessel"
-                }
-            },
-            "use": {
-                "toggle": "This toggle is always enabled"
-            }
-        },
-        "sidebar": {
-            "filter": "Sidebar Filter",
-            "actions": {
-                "area-fire": "Cone/Line/Burst {range} ft.",
-                "auto-fire": "Cone {range} ft.",
-                "blasts": "Elemental Blasts",
-                "ranged": "Range {max} ft.",
-                "rangedWithIncrement": "Range {increment}/{max} ft.",
-                "reach": "Reach {reach} ft.",
-                "reset": "Reset Uses",
-                "shields": {
-                    "shown": "Shields are displayed",
-                    "hidden": "Shields are hidden"
-                },
-                "stances": "Stances",
-                "stowedWeapons": {
-                    "shown": "Stowed items are displayed",
-                    "hidden": "Stowed items are hidden"
-                },
-                "thrown": "Thrown {increment}/{max} ft."
-            },
-            "extras": {
-                "delete": {
-                    "title": "Delete Macro",
-                    "content": "Are you sure you want to delete this macro?"
-                },
-                "edit": "Edit Macro",
-                "noMacro": "Drop Macros Here",
-                "use": "Run Macro"
-            },
-            "removeEffect": "Remove Effect",
-            "skills": {
-                "alternate": "[Right Click] Variants Menu",
-                "hideUntrained": "Hide Untrained",
-                "proficient": "Proficient"
+            "misc": {
+                "charlatans-gloves-greater": "If you are also wearing a charlatan's cape, whenever you would move an object using telekinetic hand, you may instead have it disappear in a puff of smoke and reappear hovering in a space adjacent to yours. This is a teleportation effect. The item hovers until the end of your turn or until retrieved with an Interact action."
             },
             "spells": {
-                "broken": "Broken Spell",
-                "cast": "Cast the Spell"
-            }
-        },
-        "sidebars": {
-            "actions": "Actions",
-            "extras": "Extras",
-            "feats": "Feats",
-            "items": "Inventory",
-            "skills": "Skills",
-            "spells": "Spellcasting"
-        },
-        "spellcasting": {
-            "charges": "Charges",
-            "staff": "Staff"
-        },
-        "tooltip": {
-            "distance": {
-                "feet": "ft.",
-                "meter": "m",
-                "square": "sq."
-            }
-        },
-        "tracker": {
-            "award": "Award: {xp} XP",
-            "collapsed": "Collapsed, click to expand",
-            "delay": "Delay Turn",
-            "expanded": "Expanded, click to collapse",
-            "fake": {
-                "nothing": "Encounter Not Started",
-                "secret": "Something Secret is Happening"
-            },
-            "force-turn": "Force Combat Turn",
-            "join": "Join Turn",
-            "unknown": "Unknown"
-        },
-        "use-resolve": {
-            "full": "{name} is full of stamina and doesn't need to rest.",
-            "breather": {
-                "used": "{name} has {ratio} SP and spends a resolve point, taking a 10 minute breather. Stamina Refreshed."
+                "joined": "The following spells in this entry are linked together and when one is expended the other will be as well ({spells})"
             }
         }
     }
