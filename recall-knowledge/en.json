@@ -1,0 +1,21 @@
+{
+  "I18N.LANGUAGE": "English",
+  "pf2e-recall-knowledge": {
+    "questions": {
+      "weakest-saving-throw": "What is the creature's weakest saving throw?",
+      "strongest-saving-throw": "What is the creature's strongest saving throw?",
+      "has-resistances": "What resistances does this creature have?",
+      "has-immunities": "What immunities does this creature have?",
+      "has-weaknesses": "What weaknesses does this creature have?",
+      "has-reaction": "Does creature have reaction abilities?",
+      "has-reactive-strike": "Does creature have Reactive Strike?",
+      "has-dead-action": "Does creature have any effects when it dies?",
+      "has-spellcasting": "Does creature have spellcasting?"
+    },
+    "everything-known": "The character has recalled everything they know about the subject.",
+    "no-actor": "Select your token before using this macro.",
+    "no-target": "Need to select target before using this macro.",
+    "question": "<b>Question</b>: ",
+    "request-to-gm": "Request to GM was sent"
+  }
+}
