@@ -1,0 +1,341 @@
+{
+  "pf2e-thaum-vuln": {
+    "settings": {
+      "EVAutomation": {
+        "name": "Use Exploit Vulnerability Automation",
+        "hint": "If true, the module will automatically mark all valid targets for Mortal Weakness, Sympathetic Vulnerabilities, etc. on the current scene. Set to false if you would like to manually update targets using the forceEV macro. You may want to turn this off if you apply the Exploit Vulnerability effects differently than described RAW."
+      },
+      "mystifyNumbers": {
+        "name": "Mystify IWR Values",
+        "hint": "If true, results in the dialog box when exploiting a vulnerability will not appear - only showing the type of damage."
+      },
+      "esotericLoreModifier": {
+        "name": "Esoteric Lore DC Modifier",
+        "hint": "Set a global modifier for the Esoteric Lore DC. If changed, this is typically set to -2 to make Esoteric Lore align with an applicable lore skill for purposes of Recall Knowledge."
+      },
+      "esotericLoreCustomName": {
+        "name": "Custom name for Esoteric Lore",
+        "hint": "The name that will be used for Esoteric Lore if the default variants are not recognized. Useful for localizations."
+      },
+      "enforceHeldImplement": {
+        "name": "Enforce Held Implement",
+        "hint": "Enforces the rule that an implement must be held to use Exploit Vulnerability."
+      },
+      "dailiesHandlesTome": {
+        "name": "PF2e Dailies Handles Tome",
+        "hint": "Allow PF2e Dailies to handle daily Tome implement skill choices."
+      },
+      "reactionCheckerHandlesAmulet": {
+        "name": "PF2e Reaction Checker Handles Amulet",
+        "hint": "Allow PF2e Reaction Checker to handle Amulet's Abeyance."
+      },
+      "moduleHandles": {
+        "amulet": "Module handles Amulet",
+        "bell": "Module handles Bell",
+        "chalice": "Module handles Chalice",
+        "lantern": "Module handles Lantern",
+        "mirror": "Module handles Mirror",
+        "regalia": "Module handles Regalia",
+        "shield": "Module handles Shield",
+        "tome": "Module handles Tome",
+        "wand": "Module handles Wand",
+        "weapon": "Module handles Weapon",
+        "hint": "If true, the Exploit Vulnerability module will handle this implement's effects and it is recommended to delete system-generated implements. If false, the Exploit Vulnerability module will not create effects on this implement when managed and it is recommended to use system-generated implements when managing implements."
+      }
+    },
+    "notifications": {
+      "warn": {
+        "exploitVulnerability": {
+          "targetCount": "Select one Thaumaturge token and target one creature.",
+          "noExploitVulnerability": "This actor does not have the ability to Exploit Vulnerability",
+          "noEsotericLoreSkill": "This actor does not have the Esoteric Lore skill",
+          "noMatchingDC": "No matching DC for target",
+          "noImplements": "You do not have implements selected. Go to the inventory tab on your character sheet, click manage implements, and assign items to your implements.",
+          "noHeldImplement": "You must have one of your implements held in order to Exploit Vulnerability."
+        },
+        "cursedEffigy": {
+          "invalidTarget": "Target only the target of your exploit vulnerability to create a cursed effigy",
+          "noAbility": "You do not have the ability to create a cursed effigy"
+        },
+        "forceEV": {
+          "invalidTargets": "Select one Thaumaturge token and target one or more creatures",
+          "eVNotActivated": "Selected token has not activated Exploit Vulnerability"
+        },
+        "glimpseVulnerability": {
+          "noGlimpseVulnerability": "This actor does not have the ability to Glimpse Vulnerability"
+        },
+        "mortalWeakness": {
+          "noWeakness": "There are no weaknesses on this creature to exploit a Mortal Weakness against."
+        },
+        "shareWeakness": {
+          "noAbility": "The actor does not have the ability to share weakness",
+          "noActiveMW": "The actor does not have a Mortal Weakness effect active",
+          "invalidActorCount": "Select only the Thaumaturge using Share Weakness and try again."
+        },
+        "twinWeakness": {
+          "noValidEV": "Your target must be affected by Personal Antithesis or Mortal Weakness in order to use Twin Weakness",
+          "invalidTargetCount": "Select only one target to use Twin Weakness against",
+          "invalidTarget": "The target of Twin Weakness must also be the target of Personal Antithesis or Mortal Weakness"
+        },
+        "strike": {
+          "invalidDamageType": "Weapon's damage type is set to Untyped which is an invalid damage type for the purposes of Exploit Vulnerability. Weakness will not be applied."
+        },
+        "rootToLife": {
+          "noAbility": "Selected actor does not have Root to Life",
+          "selectOne": "Select only one target for Root to Life",
+          "notDying": "Target is not dying"
+        },
+        "noToken": "No token selected.",
+        "intensifyImplement": {
+          "invalid": "The selected implement's Intensify Implement ability is not currently supported in PF2e Exploit Vulnerability.",
+          "noIntensify": "You do not have the ability to Intensify Vulnerability. Check your sheet to make sure you have Intensify Vulnerability as a feat.",
+          "notHeld": "You must be holding your implement to use Intensify Vulnerability"
+        }
+      },
+      "info": {
+        "recallKnowledge": {
+          "requestSent": "Recall Knowledge request sent to GM"
+        }
+      }
+    },
+    "exploitVulnerability": {
+      "name": "Exploit Vulnerability",
+      "flavor": "You scour your experiences and learning to identify something that might repel your foe. You retrieve an object from your esoterica with the appropriate supernatural qualities, then use your implement to stoke the remnants of its power into a blaze. Select a creature you can see and attempt an Esoteric Lore check against a standard DC for its level, as you retrieve the right object from your esoterica and use your implement to empower it. You gain the following effects until you Exploit Vulnerabilities again.",
+      "frequency": {
+        "label": "Frequency",
+        "text": "once per round"
+      },
+      "requirements": {
+        "label": "Requirements",
+        "text": "You are holding your implement"
+      },
+      "dialog": {
+        "prompt": "Choose the vulnerability to exploit.",
+        "paBonusLabel": "Personal Antithesis Bonus Damage: ",
+        "weaknessLabel": "Weaknesses: ",
+        "resistanceLabel": "Resistances: ",
+        "immunityLabel": "Immunities: ",
+        "except": "except: ",
+        "doublevs": "Double vs.: ",
+        "highestWeaknessLabel": "Highest Weakness"
+      },
+      "degreeOfSuccess": {
+        "criticalSuccess": "You remember the creature's weaknesses, and as you empower your esoterica, you have a flash of insight that grants even more knowledge about the creature. You learn all of the creature's resistances, weaknesses, and immunities, including the amounts of the resistances and weaknesses and any unusual weaknesses or vulnerabilities, such as what spells will pass through a golem's antimagic. You can exploit either the creature's mortal weakness or personal antithesis (see below). Your unarmed and weapon Strikes against the creature also become magical if they weren't already.",
+        "success": "You recall an important fact about the creature, learning its highest weakness (or one of its highest weaknesses, if it has multiple with the same value) but not its other weaknesses, resistances, or immunities. You can exploit either the creature's mortal weakness or personal antithesis. Your unarmed and weapon Strikes against the creature also become magical if they weren't already.",
+        "failure": "Failing to recall a salient weakness about the creature, you instead attempt to exploit a more personal vulnerability. You can exploit only the creature's personal antithesis. Your unarmed and weapon Strikes against the creature also become magical if they weren't already.",
+        "criticalFailure": "You couldn't remember the right object to use and become distracted while you rummage through your esoterica. You become off-guard until the beginning of your next turn."
+      }
+    },
+    "personalAntithesis": {
+      "name": "Personal Antithesis"
+    },
+    "mortalWeakness": {
+      "name": "Mortal Weakness"
+    },
+    "breachedDefenses": {
+      "name": "Breached Defenses",
+      "bypassableLabel": "Highest Bypassable Resistance: ",
+      "bypassedBy": "bypassed by"
+    },
+    "divineDisharmony": {
+      "name": "Divine Disharmony",
+      "flavor": "From your collection of religious trinkets, you pull out opposing divine objects—such as the religious symbols of two deities that are hated enemies—and combine them in a display that causes discordant clashes of divine energy that are especially distracting to the faithful. Roll your choice of a Deception or Intimidation check against the Will DC of a creature you can see within 60 feet, with the following results.  If the creature is particularly devoted to a deity, such as a cleric, celestial, monitor, fiend, or other creature with divine spells, you gain a +2 circumstance bonus to your skill check.  The GM might determine that a creature that despises all deities, such as an alghollthu, is unaffected.",
+      "degreeOfSuccess": {
+        "criticalSuccess": "<strong>Critical Success</strong> The creature is flat-footed to your attacks until the end of your next turn. @UUID[Compendium.pf2e-thaum-vuln.thaumaturge-effects.Item.1Qg5deHGd0ou1EWY]{Effect: Divine Disharmony (Critical Success)}",
+        "success": "<strong>Success</strong> The creature is flat-footed against your attacks until the end of your current turn. @UUID[Compendium.pf2e-thaum-vuln.thaumaturge-effects.Item.lrc7YZ0FrfbljICC]{Effect: Divine Disharmony}"
+      }
+    },
+    "esotericWarden": {
+      "name": "Esoteric Warden",
+      "effect": {
+        "name": "Esoteric Warden Effect"
+      },
+      "flavor": "When you apply antithetical material against a creature successfully, you also ward yourself against its next attacks. When you succeed at your check to Exploit a Vulnerability, you gain a +1 status bonus to your AC against the creature's next attack and a +1 status bonus to your next saving throw against the creature; if you critically succeed, these bonuses are +2 instead. You can gain these bonuses only once per day against a particular creature, and the benefit ends if you Exploit Vulnerability again."
+    },
+    "diverseLore": {
+      "name": "Diverse Lore",
+      "flavor": "When you succeed at your check to Exploit a Vulnerability, compare the result of your Esoteric Lore check to the DC to Recall Knowledge for that creature; if that number would be a success or a critical success, you gain information as if you had succeeded at the Recall Knowledge check. ",
+      "penalty": "Diverse Lore Penalty",
+      "recallKnowledgeNote": "The character's wandering studies mean they've heard rumors or theories about almost every topic... though admittedly, their sources aren't always the most reliable. They can take a –2 penalty to your check to Recall Knowledge with Esoteric Lore to Recall Knowledge about any topic, not just the usual topics available for Esoteric Lore."
+    },
+    "sharedWarding": {
+      "name": "Shared Warding",
+      "flavor": "You ward your allies from the attacks of your foes whenever you apply those protections to yourself. When you gain a status bonus to AC and saves from Esoteric Warden, you can choose to grant the same benefit to all allies within 30 feet.",
+      "prompt": "Would you like to apply your Esoteric Warden effect to all allies within 30 ft.?"
+    },
+    "shareWeakness": {
+      "name": "Share Weakness",
+      "flavor": "You select an object from your esoterica that has great personal value to you, such as a locket or treasured ring, and you grant it to an ally, establishing a personal link that allows your ally to affect an enemy as if they were you. The ally's Strikes apply the weakness from your mortal weakness the same way your Strikes do. This benefit ends when your Exploit Vulnerability ends or you Share Weakness again.",
+      "prompt": "Choose an ally to share your Mortal Weakness effect with."
+    },
+    "ubiquitousWeakness": {
+      "name": "Ubiquitous Weakness",
+      "flavor": "You've nurtured your bonds with your comrades, allowing you to share the benefits of your esoterica. When you use Exploit Vulnerability and choose mortal weakness, select any number of allies within 30 feet of you. Their Strikes apply the weakness from mortal weakness the same way your Strikes do. This benefit ends when you stop benefiting from Exploit Vulnerability. Since this effect depends on magically strengthening your bond to your allies, only allies with whom you've developed a rapport over the course of one or more days gain the benefit.",
+      "prompt": "Would you like to apply your Mortal Weakness effect to all allies within 30 ft.?"
+    },
+    "twinWeakness": {
+      "name": "Twin Weakness",
+      "chatCardHeader": "Damage: Twin Weakness"
+    },
+    "rootToLife": {
+      "title": "Root To Life",
+      "selectActionCount": "Select whether to use one or two action variant.",
+      "outcome": "The creature is no longer dying and is instead unconscious at 0 Hit Points:",
+      "twoActionOutcome": " You may attempt flat checks to remove each source of damage affecting the target."
+    },
+    "esotericLore": {
+      "name": "Esoteric Lore"
+    },
+    "dubiousKnowledge": {
+      "name": "Dubious Knowledge",
+      "degreeOfSuccess": {
+        "failure": "When the character fails (but doesn't critically fail) a Recall Knowledge check using any skill, they learn a bit of true knowledge and a bit of erroneous knowledge, but they don't have any way to differentiate which is which."
+      }
+    },
+    "recallKnowledge": {
+      "name": "Recall Knowledge",
+      "dialog": {
+        "request": "Someone is requesting a Recall Knowledge check using their Esoteric Lore skill.",
+        "featRefLabel": "Action/Feat References:",
+        "dcRefLabel": "DC References:",
+        "rollSettings": "Roll Settings",
+        "targetTypeLabelDefault": "Haunt, Curse, or Creature",
+        "targetTypeLabelDL": "Anything",
+        "rawDC": "Raw DC (excluding any modifiers above):"
+      },
+      "degreeOfSuccess": {
+        "criticalSuccess": "The character recalls the knowledge accurately and gains additional information or context.",
+        "success": "The character recalls the knowledge accurately or gain a useful clue about their current situation.",
+        "criticalFailure": "The character recalls incorrect information or gains an erroneous or misleading clue."
+      },
+      "esotericKnowledgeLabel": "Recall Esoteric Knowledge:"
+    },
+    "manageImplements": {
+      "implementHeader": "Thaumaturge Implements",
+      "manageImplementsButton": "Manage Implements",
+      "clearImplementsButton": "Clear All Implements",
+      "dialog": {
+        "header": "Manage Implements",
+        "confirmButton": "Confirm Changes",
+        "cancelButton": "Cancel Changes"
+      }
+    },
+    "targetManagement": {
+      "evActive": "EV Active:",
+      "evMode": "EV Mode:",
+      "evPrimaryTargetButton": "Target EV Primary Target",
+      "active": "Active",
+      "inactive": "Inactive",
+      "notOnScene": "EV Primary Target Not On Current Scene"
+    },
+    "implements": {
+      "amulet": {
+        "abeyance": {
+          "button": {
+            "label": "Use Amulet's Abeyance",
+            "title": "Amulet's Abeyance Reaction"
+          },
+          "dialog": {
+            "title": "Amulet's Abeyance"
+          }
+        }
+      },
+      "chalice": {
+        "drink": {
+          "dialog": {
+            "choose": "Choose to Sip from the Chalice or Drain the Chalice. Target an adjacent ally to administer the liquid to them, or target no tokens to drink the liquid yourself.",
+            "cooldown": "Chalice refill cooldown: ",
+            "title": "Drink from the Chalice"
+          },
+          "chat": {
+            "reduceStunned": "Reduce the value of the stunned condition if it has a condition value, but not a duration. You can also decrease the drained condition by 1 once per day when you drink from the chalice.",
+            "counteract": "Roll a counteract check against each poison, disease, and curse affecting the drinker.",
+            "counteractLevel": "Chalice counteract Level:"
+          }
+        }
+      },
+      "lantern": {
+        "ruleElements": {
+          "light": "Lanthern Implement Light",
+          "brightLight": "Bright Light Indicator",
+          "isLit": "Lantern Implement Lit",
+          "inLight": "In Lantern Light"
+        }
+      },
+      "regalia": {
+        "frightenedReminder": "Reduce frightened condition by 1 due to Thaumaturge Regalia aura.",
+        "ruleElements": {
+          "initiate": "Regalia Implement Initiate",
+          "adept": "Regalia Implement Adept",
+          "auraInitiate": "Regalia Aura - Initiate",
+          "auraAdept": "Regalia Aura - Adept",
+          "auraParagon": "Regalia Aura - Paragon"
+        }
+      },
+      "tome": {
+        "ruleElements": {
+          "recallKnowledge": "Tome Implement Recall Knowledge",
+          "recallKnowledgeParagon": "Tome Implement Paragon Recall Knowledge",
+          "recallKnowledgeAdeptSuccess": "Tome Implement Adept RK Success",
+          "esotericLoreInitiative": "Tome Paragon Esoteric Lore Initiative",
+          "dailyPreparationFirstSkill": "First Skill Proficiency",
+          "dailyPreparationSecondSkill": "Second Skill Proficiency"
+        },
+        "dailyPreparationDialog": {
+          "title": "Tome Implement Daily Preparation",
+          "prompt": "Would you like to change your Tome Implement skills?",
+          "warningNoTome": "No Tome implement has been managed."
+        },
+        "intensifyFlavor": "<strong>Intensify Vulnerability: Tome.</strong><br>Your tome's power not only reads a creature's present but even records its future actions. When you use Intensify Vulnerability, roll a d20 and set the result aside. At any time until the start of your next turn, you can use the d20 result you set aside for an attack roll to Strike the target of your Exploit Vulnerability, instead of rolling a new d20; this is a fortune effect.",
+        "applyRecallKnowledgeResultButton": "Apply Tome adept result"
+      },
+      "weapon": {
+        "implementsInterruption": {
+          "label": "Implement's Interruption Attack",
+          "title": {
+            "success": "Weapon: Implement's Interruption",
+            "failure": "Implement's Interruption Failure"
+          },
+          "text": {
+            "success": "You disrupt the triggering action.",
+            "failure": "You deal damage to the target: "
+          }
+        }
+      }
+    },
+    "dialog": {
+      "yes": "Yes",
+      "no": "No",
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "none": "none",
+      "oneAction": "One Action",
+      "twoAction": "Two Action",
+      "character": "Character:",
+      "target": "Target:",
+      "manageImplements": {
+        "dragItem": "Drag an item here to designate it as an implement.",
+        "implement": "Implement"
+      },
+      "amuletsAbeyance": {
+        "name": "Amulet's Abeyance",
+        "resistanceValueLabel": "Abeyance Resistance Value:",
+        "allTriggeringDamage": "to all triggering damage",
+        "description": "You forcefully present your amulet to turn away harm. You or a target ally within 15 feet gain resistance to all damage against the triggering damage. The resistance is equal to 2 + your level.",
+        "adeptBenefitLabel": "Adept Benefit",
+        "lingeringResistanceValue": "Lingering Resistance Value:",
+        "paragonBenefitLabel": "Paragon Benefit",
+        "selectAllies": "Click an icon to select who should get the benefit of Amulet's Abeyance",
+        "selectDamageType": "Select a damage type to apply a lingering resistance:",
+        "noResistances": "No damage resistances to apply lingering resistance."
+      },
+      "intensifyImplement": {
+        "content": "Select which of your implements you would like to intensify.",
+        "title": "Intensify Implement"
+      }
+    },
+    "chatCard": {
+      "use": "Use {action}"
+    }
+  }
+}
