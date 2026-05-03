@@ -1,0 +1,157 @@
+{
+  "pf2e-dorako-ui": {
+    "text": {
+      "secret": "Secret",
+      "self-roll": "Self roll",
+      "gm-only": "GM only",
+      "whisper": "Whisper",
+      "from": "From",
+      "to": "to",
+      "send-to-chat": "Send",
+      "default": "Default",
+      "dark": "Dark",
+      "light": "Light",
+      "disabled": "Disabled",
+      "large-chatlog-warning": "Due to large chatlog, some settings will apply on next reload.",
+      "maybe-reload": "Some changes might require a reload.",
+      "prefer-light": "Prefer light",
+      "prefer-dark": "Prefer dark",
+      "bg3": "Baldur's Gate 3",
+      "bg3-brown": "Baldur's Gate 3 (Brown)",
+      "bg3-blue": "Baldur's Gate 3 (Blue)",
+      "dnd5e2": "D&D 5e",
+      "dnd5e2-light": "D&D 5e (Light)",
+      "dnd5e2-dark": "D&D 5e (Dark)",
+      "foundry2": "Foundry 2",
+      "github": "Github",
+      "discord": "Discord",
+      "discord-light": "Discord (Light)",
+      "discord-dark": "Discord (Dark)",
+      "glass": "Glass",
+      "crb": "Core Rulebook",
+      "crb-light": "Core Rulebook (Light)",
+      "crb-dark": "Core Rulebook (Dark)",
+      "no-theme": "No theme",
+      "opaque": "Opaque",
+      "alliance": "Opposition dark",
+      "gm-vs-players": "GM dark",
+      "custom": "⚠️ Do It Yourself 👷",
+      "custom-light": "⚠️ Do It Yourself (Light) 👷",
+      "custom-dark": "⚠️ Do It Yourself (Dark) 👷",
+      "colors": {
+        "red": "Red",
+        "blue": "Blue",
+        "green": "Green",
+        "purple": "Purple",
+        "black": "Black",
+        "player": "Player color",
+        "brown": "Brown"
+      }
+    },
+    "settings": {
+      "reset-changes": "Reset Changes",
+      "theme": {
+        "name": "Theme Settings",
+        "label": "Configure Theme Settings",
+        "hint": "Change theme settings for various applications and UI elements. The D&D 5e theme relies on assets from the D&D 5e system, so it should be installed as well.",
+        "application-theme": {
+          "name": "Application theme",
+          "hint": "Affected by 'Core → User Interface Configuration → Application' color scheme."
+        },
+        "interface-theme": {
+          "name": "Interface theme",
+          "hint": "Affected by 'Core → User Interface Configuration → Interface' color scheme."
+        },
+        "chat-message-standard-theme": {
+          "name": "Chat message (standard) theme",
+          "hint": "Applies to messages from speakers not from the 'opposition' alliance."
+        },
+        "chat-message-opposition-theme": {
+          "name": "Chat message (opposition) theme",
+          "hint": "Applies to messages with speakers from the 'opposition' alliance."
+        },
+        "chat-message-header-style": {
+          "name": "Chat message header theme",
+          "hint": "Only applies to CRB themes."
+        },
+        "border-radius": {
+          "name": "Roundedness",
+          "hint": "(default: 3px) Changes the degree of roundedness in many UI elements."
+        },
+        "sheet-theme-color": {
+          "name": "Sheet theme color",
+          "hint": "Applies to sheets for player characters and vehicles."
+        }
+      },
+      "avatar": {
+        "name": "Avatar Settings",
+        "label": "Configure Avatar Settings",
+        "hint": "Tweaks for chat-message avatars.",
+        "hide-gm-avatar-when-secret": {
+          "hint": "Hides avatars whenever GM rolls secret/private rolls.",
+          "name": "Hide avatar when secret?"
+        },
+        "hide-avatar-when-token-hidden": {
+          "hint": "Hides avatars when the speaker token is hidden.",
+          "name": "Hide avatar when token is hidden?"
+        },
+        "avatar-reacts-to-degree-of-success": {
+          "hint": "A critical success will glow green, and a critical failure becomes muted and dark.",
+          "name": "Avatar reacts to critical rolls?"
+        },
+        "avatar-source": {
+          "choice": {
+            "actor": "Prefer actor image",
+            "token": "Prefer token image",
+            "system": "System implementation (fallback)"
+          },
+          "hint": "Adds an avatar to chat messages.",
+          "name": "Chat avatars"
+        },
+        "use-user-avatar": {
+          "hint": "Configure user avatars by right-clicking users in the lower left area of Foundry.",
+          "name": "Use user avatar as fallback?"
+        }
+      },
+      "misc": {
+        "name": "Miscellaneous Settings",
+        "label": "Configure Misc. Settings",
+        "hint": "Configure settings related to other Dorako UI functionality.",
+        "enable-debug-mode": {
+          "name": "Enable debug mode?",
+          "hint": "Adds buttons to quickly swap Sheet theme"
+        }
+      },
+      "customization": {
+        "name": "Customization",
+        "hint": "Make personalized changes using custom CSS, or opt out of certain Dorako UI styling.",
+
+        "excluded-applications": {
+          "name": "Excluded applications",
+          "hint": "Look in logs for the name of the Application, or ask on Discord."
+        },
+        "custom-css": {
+          "name": "Custom CSS",
+          "hint": "Write CSS in an external editor and paste it in here."
+        },
+        "chatlog-notify-seconds": {
+          "name": "Chat notification duration",
+          "hint": "Amount of seconds to show new chat messages."
+        },
+        "chat-merge": {
+          "hint": "Merges messages sent in a rapid sequence together to save space.",
+          "name": "Enable chat merge?"
+        }
+      },
+      "external-module": {
+        "name": "External Module Settings",
+        "hint": "Adjustments for how other modules are affected by Dorako UI.",
+
+        "colorize-idle-hud": {
+          "name": "Colorize PF2e HUD?",
+          "hint": "Applies a colorized theme to the icons in the main tooltip and persistent HUD."
+        }
+      }
+    }
+  }
+}
