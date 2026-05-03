@@ -1,0 +1,90 @@
+{
+    "PF2ERequestRolls": {
+        "ContextMenuLabel": "Open PF2e Request Rolls",
+        "GMDialog": {
+            "AddGroupButtonTooltip": "Add Group",
+            "AdjustmentLabel": "Adjustment",
+            "AgainstLabel": "Against",
+            "Buttons": {
+                "ActionLabel": "+ Action",
+                "CheckLabel": "+ Check",
+                "ClearAllLabel": "Clear All",
+                "CounteractLabel": "+ Counteract Check",
+                "RequestRollsLabel": "Request Rolls",
+                "SendToChatLabel": "Send to Chat",
+                "ShowHistoryLabel": "Show History"
+            },
+            "ConfirmClearAll": "Really clear everything?",
+            "ConfirmDeleteGroup": "Really delete Group?",
+            "ConfirmDeleteRoll": "Really delete Roll?",
+            "CopyAsInlineLink": "Copy as inline link",
+            "CopyAsInlineLinkConfirmation": "Inline link copied to clipboard",
+            "Counteract": {
+                "DCHint": "If you're counteracting an affliction, the DC is in the affliction's stat block. If it's a spell, use the caster's DC. The GM can also calculate a DC based on the target effect's level.",
+                "Label": "Counteract ($s)",
+                "RankHint": "If an effect is a spell, its rank is the counteract rank. Otherwise, halve its level and round up to determine its counteract rank (minimum counteract rank 0). If an effect's level is unclear and it came from a creature, halve and round up the creature's level."
+            },
+            "GroupHeader": "Group Header",
+            "GroupHeaderPlaceholder": "Enter optional group header",
+            "HistoryLabel": "History",
+            "Label": "Label",
+            "LabelPlaceholder": "Enter optional label",
+            "Macros": {
+                "DropHere": "Drop Macro Here",
+                "Tooltip": "This macro will be executed for each roll result. The macro context will have a <strong>rrData</strong> object that contains information about the requested roll, the rolling actor and the roll outcome.",
+                "Missing": "The Macro with UUID {uuid} is missing!"
+            },
+            "NoActivePlayersWarning": "No active players found!",
+            "NoContentWarning": "Request has no content!",
+            "NoPlayersSelectedWarning": "No players were selected!",
+            "RequestSuccessful": "Successfully requested rolls",
+            "SourceRankLabel": "Source Rank",
+            "SelectPlayersLabel": "Select Players",
+            "StatisticLabel": "Statistic",
+            "TargetRankLabel": "Target Rank",
+            "Title": "Request Rolls",
+            "VariantLabel": "Variant"
+        },
+        "ResultsDialog": {
+            "CounteractLabel": "Counteract",
+            "ResultLabel": "Result",
+            "Title": "Roll Results"
+        },
+        "RollDialog": {
+            "Title": "Requested Rolls"
+        },
+        "SelectPlayersDialog": {
+            "SelectAllLabel": "Select All",
+            "Title": "Select Players"
+        },
+        "Settings": {
+            "CSS": {
+                "GroupContainerName": "Group Container Custom CSS",
+                "GroupContainerHint": "CSS overrides for the roll group container element.",
+                "GroupHeaderName": "Group Header Custom CSS",
+                "GroupHeaderHint": "CSS overrides for the roll group header element.",
+                "OuterContainerName": "Outer Container Custom CSS",
+                "OuterContainerHint": "CSS overrides for the outermost container element.",
+                "RollContainerName": "Roll Container Custom CSS",
+                "RollContainerHint": "CSS overrides for the individual roll container elements."
+            },
+            "GMDialog": {
+                "AlwaysAddName": "Always add name",
+                "AlwaysAddNameHint": "Always append the name of a skill or action to the check label.",
+                "AutoCloseName": "Close GM dialog automatically?",
+                "AutoCloseHint": "Whether the dialog should be closed automatically after a request was sent."
+            },
+            "ResultsDialog": {
+                "ShowName": "Show results dialog?",
+                "ShowHint": "Whether to show the results dialog after a request was sent."
+            },
+            "RollDialog": {
+                "AutoCloseName": "Close roll dialog automatically?",
+                "AutoCloseHint": "Whether the dialog should be closed automatically after a roll was clicked.",
+                "playSoundInBackgroundName": "Play sound in background?",
+                "playSoundInBackgroundHint": "Whether to play a sound when a new roll dialog opens while the browser is in the background."
+            },
+            "OpenSettingsLabel": "Open Settings"
+        }
+    }
+}
