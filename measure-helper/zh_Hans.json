@@ -1,1 +1,35 @@
-{}
+{
+    "pf2e-measure-helper": {
+        "AURA": {
+            "types": {
+                "spell": "施放法术",
+                "enterOnce": "首次进入灵光"
+            }
+        },
+        "DIALOG": {
+            "targetSelect": {
+                "options": {
+                    "enemies": "敌人",
+                    "allies": "盟友"
+                }
+            }
+        },
+        "SETTINGS": {
+            "ignoreHiddenHazard": {
+                "choices": {
+                    "hazard": "忽略危害"
+                }
+            }
+        },
+        "COMMON": {
+            "save": "保存"
+        }
+    },
+    "TYPES": {
+        "RegionBehavior": {
+            "pf2e-measure-helper": {
+                "effectArea": "灵光效果"
+            }
+        }
+    }
+}
