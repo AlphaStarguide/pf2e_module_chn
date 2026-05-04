@@ -1,0 +1,112 @@
+{
+  "TYPES": {
+    "RegionBehavior": {
+      "pf2e-measure-helper": {
+        "effectArea": "Area effect",
+        "effectStartTurn": "Start turn effect"
+      }
+    }
+  },
+  "BEHAVIOR": {
+    "TYPES": {
+      "effectArea": {
+        "TARGET_TYPES": {
+          "ALL": {
+            "label": "All"
+          },
+          "OPPOSITION": {
+            "label": "Actor with opposition alliance"
+          },
+          "PARTY": {
+            "label": "Actor with party alliance"
+          }
+        },
+        "FIELDS": {
+          "item": {
+            "label": "Select source of effect"
+          },
+          "excluded": {
+            "label": "Excluded actor"
+          },
+          "targets": {
+            "label": "Select type of targets for effect"
+          }
+        }
+      }
+    }
+  },
+  "pf2e-measure-helper": {
+    "COMMON": {
+      "save": "Save",
+      "select": "Select"
+    },
+    "AURA": {
+      "window": {
+        "title": "Aura details"
+      },
+      "fields": {
+        "type": "Aura type"
+      },
+      "types": {
+        "startTurn": "Start of turn",
+        "endTurn": "End of turn",
+        "spell": "Cast Spell",
+        "enterOnce": "Enter first time"
+      }
+    },
+    "DIALOG": {
+      "targetSelect": {
+        "title": "Select type of targets",
+        "includeSelf": "Include yourself",
+        "options": {
+          "all": "All",
+          "enemies": "Enemies",
+          "allies": "Allies"
+        }
+      }
+    },
+    "SETTINGS": {
+      "multipleTargets": {
+        "name": "Activate select multiple targets",
+        "choices": {
+          "no": "No",
+          "all": "Select all targets",
+          "selectType": "Select type of targets"
+        }
+      },
+      "ignoreHiddenHazard": {
+        "name": "Ignore hidden tokens",
+        "choices": {
+          "no": "Not ignore",
+          "hazard": "Ignore hazards",
+          "all": "Ignore all hidden tokens"
+        }
+      },
+      "respectWallCenter": {
+        "name": "Select target in template if centers no collision",
+        "hint": "Select target in template if line from token center to template center has no collision"
+      },
+      "deleteRegionAfterTargeting": {
+        "name": "Delete region after targeting",
+        "hint": "Remove the created region after applying multiple-target selection"
+      },
+      "difficultTerrain": {
+        "name": "Set measure template as difficult terrain"
+      },
+      "postAura": {
+        "name": "Post Aura Action based on type of aura",
+        "hint": "Need to set type manually"
+      },
+      "postAuraSameName": {
+        "name": "Auras with same name posted once"
+      },
+      "detectMagic": {
+        "name": "Handle Detect Magic template"
+      },
+      "emanationSpells": {
+        "name": "Handle emanation spells",
+        "hint": "Spells like Courageous Anthem"
+      }
+    }
+  }
+}
