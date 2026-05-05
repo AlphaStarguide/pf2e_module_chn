@@ -161,6 +161,15 @@
                 "border-radius": {
                     "hint": "(默认：3px) 更改部分UI元素的圆润度",
                     "name": "圆润度"
+                },
+                "interface-theme": {
+                    "name": "界面主题"
+                },
+                "chat-message-standard-theme": {
+                    "name": "聊天消息主题（标准）"
+                },
+                "chat-message-opposition-theme": {
+                    "name": "聊天消息主题（对立方）"
                 }
             },
             "avatar": {
@@ -228,18 +237,26 @@
                 },
                 "custom-css": {
                     "name": "自定义CSS",
-                    "hint": "将外部编辑器编译的CSS粘贴到这里"
+                    "hint": "将外部编辑器编写的CSS粘贴到这里。"
                 },
                 "name": "自定义",
-                "hint": "使用自定义CSS进行个性化，或使用Dorako UI的特定风格"
+                "hint": "使用自定义CSS进行个性化修改，或使用Dorako UI的特定风格。",
+                "chat-merge": {
+                    "name": "启用聊天消息合并？",
+                    "hint": "将短时间内同用户连续发送的聊天消息合并，以节省空间。"
+                },
+                "chatlog-notify-seconds": {
+                    "name": "聊天消息通知持续时间",
+                    "hint": "弹出新聊天消息的显示时长（秒）。"
+                }
             },
             "external-module": {
                 "colorize-idle-hud": {
                     "hint": "给tooltip主界面的按钮上色",
-                    "name": "为 PF2e Interactive Token Tooltip 模组上色？"
+                    "name": "为PF2e HUD上色？"
                 },
                 "name": "模组联动设置",
-                "hint": "在这里调整Dorako UI对其它模组的影响"
+                "hint": "在这里调整Dorako UI对其它模组的影响。"
             }
         },
         "text": {
@@ -259,17 +276,29 @@
             "bg3": "博德之门3",
             "bg3-brown": "博德之门3（棕色）",
             "bg3-blue": "博德之门3（蓝色）",
-            "dnd5e2": "DND5e",
-            "dnd5e2-light": "DND5e（明亮）",
-            "glass": "玻璃",
+            "dnd5e2": "D&D 5e",
+            "dnd5e2-light": "D&D 5e（明亮）",
+            "glass": "液态玻璃",
             "crb": "核心规则书",
             "colors": {
                 "red": "红色",
                 "blue": "蓝色",
                 "green": "绿色",
                 "purple": "紫色",
-                "black": "黑色"
-            }
+                "black": "黑色",
+                "player": "玩家颜色",
+                "brown": "棕色"
+            },
+            "dnd5e2-dark": "D&D 5e（黑暗）",
+            "foundry2": "Foundry 2",
+            "github": "Github",
+            "discord": "Discord",
+            "discord-light": "Discord（明亮）",
+            "discord-dark": "Discord（黑暗）",
+            "crb-light": "核心规则书（明亮）",
+            "crb-dark": "核心规则书（黑暗）",
+            "no-theme": "无主题",
+            "opaque": "不透明"
         }
     }
 }
