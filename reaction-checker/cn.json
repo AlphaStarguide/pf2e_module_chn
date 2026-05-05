@@ -65,9 +65,15 @@
     "pf2e-reaction.hotkey-v.hint": "移动时按热键不触发移动反应（1 步）",
     "pf2e-reaction.recall-knowledge.need-fix": "对目标回忆知识的模组结构有所改动，请更新mod",
     "pf2e-reaction.customReactionIcon.name": "自定义反应图标",
-    "pf2e-reaction.customReactionIcon.hint": "",
+    "pf2e-reaction.customReactionIcon.hint": " ",
     "pf2e-reaction.SETTINGS.builtinReactions.categories.actions": "动作",
     "pf2e-reaction.SETTINGS.builtinReactions.categories.feats": "专长",
     "pf2e-reaction.SETTINGS.builtinReactions.categories.spells": "法术",
-    "pf2e-reaction.SETTINGS.builtinReactions.categories.other": "其他"
+    "pf2e-reaction.SETTINGS.builtinReactions.categories.other": "其他",
+    "pf2e-reaction.allReactionEffect.name": "全反应效果",
+    "pf2e-reaction.allReactionEffect.hint": "当一名角色回合开始时，为其添加全反应效果",
+    "pf2e-reaction.SETTINGS.builtinReactions.name": "内置反应动作",
+    "pf2e-reaction.SETTINGS.builtinReactions.label": "管理内置反应动作",
+    "pf2e-reaction.SETTINGS.builtinReactions.hint": "根据分组启用或禁用模组内置反应动作的提示信息",
+    "pf2e-reaction.SETTINGS.builtinReactions.emptyCategory": "尚未给该分组分配任何内置反应动作。"
 }
