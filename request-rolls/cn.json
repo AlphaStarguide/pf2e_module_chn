@@ -1,1 +1,5 @@
-{}
+{
+    "PF2ERequestRolls": {
+        "ContextMenuLabel": "打开PF2e Request Rolls"
+    }
+}
