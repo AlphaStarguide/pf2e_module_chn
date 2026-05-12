@@ -572,6 +572,10 @@
             "ENABLE_STEALTH_INITIATIVE_VISIBILITY": {
                 "name": "遭遇阶段隐秘先攻能见度",
                 "hint": "若启用，PF2e视野管理会处理隐秘先攻遭遇的设置：骰掷隐秘作为先攻的参战者，对那些在先攻顺序先于他们的追踪者生物最初处于无踪或藏匿状态。若已启用PF2e Avoid Notice或其他管理该功能的模组，则可以禁用此选项。"
+            },
+            "SEEK_TEMPLATE_MAX_PLACEMENT_DISTANCE": {
+                "name": "搜索测量板最大放置距离",
+                "hint": "从执行搜索动作的指示物到放置的搜索测量板中心的最大距离（以尺为单位）。若设置为0，则不限放置距离。"
             }
         },
         "UI": {
@@ -827,7 +831,8 @@
             "CLICK_TO_PAN": "点击平移至主人指示物",
             "CLICK_TO_PAN_MINION": "点击平移至仆从指示物",
             "MIDDLE_CLICK_TO_CYCLE": "中键点击切换仆从",
-            "RIGHT_CLICK_TO_REMOVE": "右键点击取消视角共享"
+            "RIGHT_CLICK_TO_REMOVE": "右键点击取消视角共享",
+            "BULK_SET_COVER": "批量掩蔽设置"
         },
         "WALL": {
             "VISIBLE_TO_YOU": "隐藏墙体",
@@ -865,7 +870,7 @@
             },
             "OPEN_WALL_MANAGER": {
                 "name": "打开墙体管理器",
-                "hint": "打开视野墙体管理器对话框，以便批量编辑墙体设置。"
+                "hint": "打开模组的墙体管理器对话框，以便批量编辑墙体设置。"
             },
             "SHOW_VISIBILITY_FACTORS": {
                 "name": "显示能见度因素",
@@ -874,6 +879,10 @@
             "SHOW_WALL_COVER_LABELS": {
                 "name": "显示墙体掩蔽标签",
                 "hint": "在墙体工具激活时，长按此键显示墙体的掩蔽状态标签（自动，无，次等，标准，高等）。"
+            },
+            "OPEN_HAZARD_LOOT_MANAGER": {
+                "name": "打开危害/战利品管理器",
+                "hint": "打开模组的危害/战利品管理器对话框，以便批量编辑场景内战利品与危害的能见度。"
             }
         },
         "REGION_BEHAVIOR": {
