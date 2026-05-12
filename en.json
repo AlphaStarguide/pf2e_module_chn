@@ -1,163 +1,232 @@
 {
-    "I18N.LANGUAGE": "English",
-    "pf2e-item-activations": {
-        "module-settings": {
-            "enabled": {
-                "name": "Enable Module",
-                "hint": "Enables all functionality of module"
-            },
-            "action-type-icon": {
-                "enabled": {
-                    "name": "Overwrite Icon to Action Count Icon",
-                    "hint": "When generating actions will use an action count Icon for all relevant (IE 1, 2, 3 etc.)"
-                }
-            },
-            "npc": {
-                "enabled": {
-                    "name": "Enable NPC Activations",
-                    "hint": "Enables all functionality of module for NPCs"
-                },
-                "on-create-token": {
-                    "name": "Add NPC Activations on Token Creation",
-                    "hint": "When NPC tokens are placed, runs a check to Add any missing activations"
-                }
-            },
-            "auto-gen": {
-                "enabled": {
-                    "name": "Enable Automatic Generation",
-                    "hint": "Enables automatic generations for activations that haven't been handcrafted. Note these may have less implementation/functionality."
-                }
-            },
-            "debug-mode": {
-                "name": "Debug Mode",
-                "hint": "Have the console receive messages for different stuff"
-            }
-        },
-        "code": {
-            "activation": "Activation",
-            "activate": "Activate",
-            "frequency": "Frequency",
-            "granted-by": "Granted by",
-            "activation-traits": {
-                "command": "command",
-                "envision": "envision",
-                "interact": "interact"
-            },
-            "time": {
-                "turn": "turn",
-                "round": "round",
-                "minute": "minute",
-                "ten-minutes": "10 minutes",
-                "hour": "hour",
-                "twenty-four-hours": "24 hours",
-                "day": "day",
-                "week": "week",
-                "month": "month",
-                "year": "year"
-            },
-            "invalid-activations": {
-                "staff": "You expend a number of charges from the staff to cast a spell from its list."
-            },
-            "per": "per",
-            "count": {
-                "once": "once",
-                "twice": "twice",
-                "three-times": "three times"
-            }
-        },
-        "notes": {
-            "fortification": "Each time the defender is critically hit while wearing the etched armor, attempt a @Check[flat|dc:17|showDC:all]. On a success, it becomes a normal hit.",
-            "greater-fortification": "Each time the defender is critically hit while wearing the etched armor, attempt a @Check[flat|dc:14|showDC:all]. On a success, it becomes a normal hit.",
-            "spellhearts": {
-                "terms": {
-                    "armor": "Armor",
-                    "weapon": "Weapon",
-                    "melee-weapon": "Melee Weapon",
-                    "ranged-weapon": "Ranged Weapon"
-                },
-                "items": {
-                    "beastmasters-sigil": "This summons a",
-                    "brightbloom-posy": {
-                        "weapon": "After you cast a plant spell by activating the posy, pollen coats your weapon. Your next Strike causes the target to be @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1} on a hit (@UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2} on a critical hit). If the creature attempts to recover, it sneezes rather than retching (rolling against the spellheart's spell DC @Check[fortitude|dc:resolve(@item.spellcasting.system.spelldc.dc)|traits:action:retch,disease]. If you don't make a Strike by the end of your next turn, the pollen becomes inert. Plant creatures are immune."
-                    },
-                    "clay-sphere": {
-                        "weapon": "After you cast a morph or polymorph spell by activating the clay sphere, the weapon becomes malleable, shifting its form to your whims. Your Strikes with the affixed weapon have the versatile bludgeoning, versatile piercing, and versatile slashing trait for 1 minute. Until the end of your next turn, Strikes with the affixed weapon have their damage dice increase by one step."
-                    },
-                    "compass-of-luong-phung": "In addition to the effects of the cantrip, the compass itself points in the general direction of a sea dragon for 1 minute, with the point glowing brighter as you get closer. Aligning the compass with the constellation of the Sea Dragon at night instead creates a beam for 1 minute to find Luong Phung again.",
-                    "desolation-locket": {
-                        "weapon": "After you cast a non-cantrip spell by activating the locket, you emanate an aura of hopelessness in a @Template[emanation|distance:5] until the start of your next turn. A creature that ends its turn in the aura must succeed at a @Check[will|dc:{dc}|traits:emotion,mental] saving throw against the locket's spell DC or become @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} (@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 2} on a critical failure) until the end of its next turn."
-                    },
-                    "enigma-mirror": {
-                        "armor": "After you cast an illusion spell by activating the mirror, choose one ally within 30 feet. That ally is @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W] as if seen in a misty mirror, until the end of your next turn.",
-                        "weapon": "After you cast an illusion spell by activating the mirror, illusory copies of the weapon swirl in the air around it. You're affected by the @UUID[Compendium.pf2e.spells-srd.Item.X56VdA98VedAfGTU] spell until the end of your next turn. The spell ends if you stop wielding the affixed weapon."
-                    },
-                    "five-feather-wreath": {
-                        "weapon": "After you cast an air spell by Activating the wreath, you can Fly 5 feet as a single action, or you can Fly {speed} feet as a free action if the spell you cast wasn't a cantrip. This must be your next action, and if you don't have a fly Speed, you must end the flight on solid ground or fall."
-                    },
-                    "flaming-star": {
-                        "weapon": "After you cast a fire spell by Activating the star, Your your Strikes with the weapon deal an additional fire damage until the end of your next turn."
-                    },
-                    "foxglove-token": {
-                        "weapon": "After you cast an plant spell by activating the foxglove token, your Strikes with the weapon deal additional poison damage until the end of your next turn."
-                    },
-                    "grim-sandglass": {
-                        "weapon": "After you Cast a Spell by Activating the sandglass, your Strikes with the weapon deal additional void damage until the end of your next turn."
-                    },
-                    "heartmoss": {
-                        "weapon": "After you cast a healing spell by activating the heartmoss, the weapon exudes a soothing scent. Your Strikes with the affixed weapon have the nonlethal trait for 1 minute. Until the end of your next turn, Strikes with the affixed weapon cause the target to be @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{stupefiedLabel} for 1 round if it hits (or for 3 rounds on a critical hit)."
-                    },
-                    "jolt-coil": {
-                        "weapon": "After you cast an electricity spell by activating the coil, your Strikes with the weapon deal additional electricity damage until the end of your next turn."
-                    },
-                    "judgment-thurible": {
-                        "armor": "After you cast a spell by activating the thurible, the thurible casts 3rd-rank @UUID[Compendium.pf2e.spells-srd.Item.gMODOGamz88rgHuf]{Protection} on you, with a duration of 1 round.",
-                        "weapon": "After you cast a spell by activating the thurible, the weapon gains a rune that lasts until the end of your next turn. It gains the @UUID[Compendium.pf2e.equipment-srd.Item.DH0kB9Wbr5pDeunX]{Holy} rune if your deity allows holy sanctification or the @UUID[Compendium.pf2e.equipment-srd.Item.gmMrJREf4JSHd2dZ]{Unholy} rune if your deity allows unholy sanctification. If your deity allows both, you can choose which rune the weapon gains. If your deity allows neither, your weapon doesn't gain a rune. (Greater/Major) The extra damage from this rune is 2d6",
-                        "damage-boost": "The extra damage from this rune is 2d6"
-                    },
-                    "lightweave-scarf": {
-                        "weapon": "(visual) After you cast an illusion spell by activating the scarf, the weapon is shrouded in a mesmerizing illusory pattern. Your next Strike causes the target to be @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round if it hits. If you don't make a Strike by the end of your next turn, the illusion ends with no effect."
-                    },
-                    "perfect-droplet": {
-                        "armor": "After you cast a water spell by Activating the droplet, your body becomes mistlike. Until the end of the turn, you can move through enemies' spaces. You can't move through creatures that have the water trait in this way."
-                    },
-                    "pickled-demon-tongue": {
-                        "weapon": "After you cast an acid spell by activating the pickled demon tongue, your Strikes with the weapon deal additional acid damage until the end of your next turn."
-                    },
-                    "polished-demon-horn": {
-                        "weapon": "After you cast an enchantment spell by activating the horn, your Strikes with the weapon deal additional mental damage until the end of your next turn."
-                    },
-                    "resonating-fork": " After you cast a sonic spell by activating the fork, the weapon reverberates with trapped sound waves. Your next Strike causes the target to be @UUID[Compendium.pf2e.conditionitems.Item.9PR9y0bi4JPKnHPR] for {duration} if it hits (or for {durationCrit} on a critical hit). If you don't make a Strike by the end of your next turn, the sound waves dissipate with no effect.",
-                    "rime-crystal": {
-                        "weapon": "After you cast an cold spell by activating the crystal, your Strikes with the weapon deal additional cold damage until the end of your next turn."
-                    },
-                    "sanguine-fang": {
-                        "weapon": "After you cast a spell by activating the fang, your Strikes with the weapon deal persistent bleed damage until the end of your next turn."
-                    },
-                    "saurian-spike": {
-                        "weapon": "When you cast a polymorph spell by activating the spike, your battle form is exceptionally fearsome. Each enemy in a @Template[emanation|distance:30] must succeed at a @Check[will|dc:{dc}|traits:auditory,emotion,fear,visual] saving throw or become @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened {fail}} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened {critFail}} on a critical failure)."
-                    },
-                    "spiny-lodestone": {
-                        "weapon": "After you cast a spell by Activating the spiny lodestone, your Strikes with the weapon deal an additional piercing damage until the end of your next turn."
-                    },
-                    "thorn-triad": {
-                        "armor": "After you cast a plant spell by activating the triad, you gain resistance to bludgeoning and piercing damage and weakness to fire until the end of your next turn, or double the resistance for a non-cantrip spell.",
-                        "weapon": "After you cast a plant spell by activating the triad, thorns erupt from the weapon. Your Strikes with the weapon deal additional persistent bleed damage until the end of your next turn."
-                    },
-                    "trinity-geode": {
-                        "armor": "After you cast an earth spell by Activating the geode, you gain resistance to physical damage (except adamantine) until the end of your next turn, or double the resistance for a non-cantrip spell.",
-                        "weapon": "After you cast an earth spell by activating the geode, your Strikes with the weapon deal additional bludgeoning damage until the end of your next turn."
-                    },
-                    "warding-statuette": {
-                        "weapon": "When you hit with a Strike using the affixed weapon, or when a spell effect you created by activating the statuette hits with a Strike, you can choose a creature adjacent to the creature that was hit. That creature gains a +1 status bonus to AC until the start of your next turn. No more than one creature can benefit from this each turn."
-                    }
-                }
-            },
-            "misc": {
-                "charlatans-gloves-greater": "If you are also wearing a charlatan's cape, whenever you would move an object using telekinetic hand, you may instead have it disappear in a puff of smoke and reappear hovering in a space adjacent to yours. This is a teleportation effect. The item hovers until the end of your turn or until retrieved with an Interact action."
-            },
-            "spells": {
-                "joined": "The following spells in this entry are linked together and when one is expended the other will be as well ({spells})"
-            }
-        }
-    }
+	"PF2E_ALCHEMIST_REMASTER_DUCTTAPE": {
+		"MODULE_NAME": "PF2e Alchemist Remaster Duct Tape",
+		"ACID":"Acid",
+		"COLD":"Cold",
+		"ELECTRICITY":"Electricity",
+		"FIRE":"Fire",
+		"ADAMANTINE":"Adamantine",
+		"COLD_IRON":"Cold Iron",
+		"DAWNSILVER":"Dawnsilver",
+		"NONE":"- None -",
+		"DMG_TYPE":"Select a Damage Type",
+		"SELECT_WEAPON":"Select a weapon",
+		"OK":"OK",
+		"BACK":"Back",
+		"ADD":"Add",
+		"SPECIAL_INGREDIENT":"Select special ingredient",
+		"INJURY_POISON":"Injury Poison",
+		"INVENTORY": "Inventory",
+		"CRAFT": "Craft",
+		"CRAFT_ATTACK":"Craft and Attack",
+		"CRAFT_APPLY_ATTACK":"Craft, Apply & Attack",
+		"VERSATILE_VIAL":"Versatile Vial",
+		"VERSATILE_VIALS": "Versatile Vials",
+		"QUICK_VIAL":"Quick Vial",
+		"QUICK_VIAL_BOMB":"Quick Vial Bomb",
+		"DOUBLE_BREW_FEAT":"Double Brew Feat",
+		"DOUBLE_BREW":"Double Brew",
+		"WEAPON":"Weapon",
+		"CONSUMABLE":"Consumable",
+		"DISABLED":"Disabled",
+		"TINY_ONLY":"Tiny Only",
+		"ALL_SIZES":"All Sizes",
+		"ASK_ALL":"Ask for all",
+		"ASK_EACH":"Ask for each",
+		"AUTO":"Auto",
+		"ADD_LOWER":"Add lower level versions.",
+		"REMOVE_LOWER":"Remove lower level versions.",
+		"GM":"Game Master",
+		"OWNER":"Owner",
+		"BTN_CLEAR":"Clear",
+		"BTN_YES":"Yes",
+		"BTN_NO":"No",
+		"BTN_USE":"Use",
+		"BTN_CANCEL":"Cancel",
+		"BTN_ROLL_ATK":"Roll Attack",
+
+		"NOTIF_ACTOR_NOTFOUND":"Actor not found.",
+		"NOTIF_ITEM_NOTFOUND":"Item not found.",
+		"NOTIF_ALREADY_MAX_VIALS":"{actorname} already has the maximum number of versatile vials.",
+		"NOTIF_SELECT_TOKEN_FIRST":"Please select a token or assign a character first.",
+		"NOTIF_SELECT_ALCHEMIST":"Please select an Alchemist character.",
+		"NOTIF_ITEM_NOT_WEAPON":"The item is not a weapon.",
+		"NOTIF_ITEM_EQUIPPED":"{itemname} is now equipped.",
+		"NOTIF_NO_VIAL_CONSUME":"No versatile vials available to consume.",
+		"NOTIF_NO_VIAL_AVAIL":"No versatile vials available.",
+		"NOTIF_FAILED_EQUIP_ITEM":"Failed to equip item.",
+		"NOTIF_PLEASE_TARGET":"Please target a token first.",
+		"NOTIF_FAIL_ATK_TEMP_POISONED_WPN":"Failed to perform the attack roll with the temporary poisoned weapon.",
+		"NOTIF_APPLY_EFFECT_ACTOR":"Applied effect {effectname} to {actorname}",
+		"NOTIF_NO_PERMS":"You do not have permission to modify this actor.",
+		"NOTIF_ACTOR_NOT_ASSOC_ITEM":"No actor associated with this item.",
+		"NOTIF_SELECT_WEAPON_FOR_POISON": "Select a weapon for the Toxicologist poison, then make your Strike.",
+		
+		"SETTING_WORKBENCH_NOT_FOUND":"Workbench setting key 'xdy-pf2e-workbench.autoCollapseItemChatCardContent' not found.",
+		"SETTING_MANAGE_HOMEBREW_COMPENDIUM":"Manage Homebrew Compendiums",
+		"SETTING_COMPENDIUM_ALREADY_IN_LIST":"Compendium '{input}' is already in the list.",
+		"SETTING_COMPENDIUM_INVALID":"Compendium '{input}' is not valid or does not contain items.",
+		"SETTING_COMPENDIUM_REMOVED":"Compendium '{compendium}' removed.",
+		"SETTING_COMPENDIUM_LIST_INVALID":"The following compendiums were not valid or were duplicates and were not saved:",
+		"SETTING_SAVED":"Compendiums saved successfully.",
+		"SETTING_REMOVE_TEMP_START_TURN":"Quick Alchemy: remove temporary items at start of turn?",
+		"SETTING_REMOVE_TEMP_END_COMBAT":"Quick Alchemy: remove temporary items at end of combat?",
+		"SETTING_SEND_CHAT_REMOVE_TEMP":"Quick Alchemy: Send chat message when removing temp quick alchemy items?",
+		"SETTING_SEND_CRAFTED_ITEM_TO_CHAT":"Quick Alchemy: Send all crafted items to chat?",
+		"SETTING_SEND_CRAFTED_ITEM_TO_CHAT_HINT":"If enabled, will send an item card to chat for all items made with Quick Alchemy, even the items made choosing 'Craft and attack'.",
+		"SETTING_SIZEBASED_ALCHEMY":"Quick Alchemy: Enable size-based alchemy?",
+		"SETTING_SIZEBASED_ALCHEMY_HINT":"Adjust the size of items created by Quick Alchemy to match the creature's size.",
+		"SETTING_ENABLE_POWERFUL_ALCHEMY":"Enable Powerful Alchemy",
+		"SETTING_ENABLE_POWERFUL_ALCHEMY_HINT":"Enables the auto-update of created items using Class DC.",
+		"SETTING_LEVELUP_ADD_HIGHER":"Level Up: Add higher level version of known formulas upon level up.",
+		"SETTING_LEVELUP_ADD_HIGHER_HINT":"If enabled, when leveled up will add higher level version of known formulas.Ask for each = will prompt for each formula; Ask for all = will prompt for all formulas at once; Auto = will automatically add formulas.",
+		"SETTING_LEVELUP_HANDLE_LOWER_LEVEL":"Level Up: Lower level formula handling:",
+		"SETTING_LEVELUP_HANDLE_LOWER_LEVEL_HINT":"Upon level up, will check for available lower level formulas, or remove them to keep your formula list small. Add lower level versions = Will add lower level versions of known formulas; Remove lower level versions (default) = Will Remove lower level formulas if a higher level is known.",
+		"SETTING_LEVELUP_PROMPT_REMOVE_LOWER_LEVEL":"Level Up: Prompt setting for lower level formulas",
+		"SETTING_LEVELUP_PROMPT_REMOVE_LOWER_LEVEL_HINT":"'Auto': Automatically removes lower level formulas, 'Ask for All': ask once for all, 'Ask for Each': Ask for each formula",
+		"SETTING_LEVELUP_PERMISSION_LEVEL":"Level Up: Permission level to add/remove formulas to actor:",
+		"SETTING_LEVELUP_PERMISSION_LEVEL_HINT":"(If actor owner is not logged in, GM will be prompted)",
+		"SETTING_LEVELUP_SEND_NEW_REMOVED_TO_CHAT":"Level Up: Add the list of new/removed formulas upon level up to chat.",
+		"SETTING_ADD_COMPENDIUM":"Add Compendiums",
+		"SETTING_ADD_COMPENDIUM_LABEL":"Add Hombebrew Item Compendiums",
+		"SETTING_ADD_COMPENDIUM_HINT":"Manage the list of compendiums checked during level up.",
+		"SETTING_VIAL_SEARCH_REMINDER":"Vial search reminder",
+		"SETTING_VIAL_SEARCH_REMINDER_HINT":"When at least 10 minutes in game time pass out of combat, prompt alchemist to add vials.",
+		"SETTING_DISPLAY_MAX_VIAL":"Display when alchemist has max vials already",
+		"SETTING_DISPLAY_MAX_VIAL_HINT":"Enable/Disable max vials messages in chat.",
+		"SETTING_ENABLE_FORMULA_SEARCH":"Enable Formula Search",
+		"SETTING_ENABLE_FORMULA_SEARCH_HINT":"Enables the search/filter for formulas on character sheet.",
+		"SETTING_COLLAPSE_ITEM_DESC_CHAT":"Collapse item description in chat",
+		"SETTING_COLLAPSE_ITEM_DESC_CHAT_HINT":"Shortens chat messages with long item descriptions, click the Eye icon to expand.",
+		"SETTING_DISABLED_WORKBENCH":"This setting is disabled because xdy-pf2e-workbench is managing collapsible content.",
+		"SETTING_DEBUG_LEVEL":"Debug Level",
+		"SETTING_DEBUG_LEVEL_HINT":"Set the debug level for logging. None disables all logging, All includes info, warnings, and errors.",
+		"SETTING_DEBUG_NONE":"None",
+		"SETTING_DEBUG_ERROR":"Errors",
+		"SETTING_DEBUG_WARN":"Warnings",
+		"SETTING_DEBUG_ALL":"All",
+		"SETTING_COMPENDIUM_CHECK":"Compendiums to Check",
+		"SETTING_COMPENDIUM_CHECK_HINT":"List of compendiums to search for higher-level items when characters level up.",
+		"SETTING_SHOW_HELP":"Show Quick Alchemy Help Button",
+		"SETTING_SHOW_HELP_HINT":"Display a help button in the Quick Alchemy dialog that links to the documentation journal entry.",
+		"SETTING_SHOW_FORMULA_DESC_NAME": "Quick Alchemy: Show description panel",
+		"SETTING_SHOW_FORMULA_DESC_HINT": "When enabled, Quick Alchemy dialogs will show an enriched description that updates with your selection.",
+		
+		"QUICK_ALCHEMY":" Quick Alchemy",
+		"QUICK_ALCHEMY_PROMPT_ITEM_TYPE":"Quick Alchemy: Select Item Type",
+		"QUICK_ALCHEMY_PROMPT_TYPE":"What type of item do you wish to craft with Quick Alchemy?",
+		"QUICK_ALCHEMY_NO_PRIOR_COMBATANT": "No valid prior combatant found during combatTurnChange.",
+		"QUICK_ALCHEMY_PLEASE_TARGET":"Please target a token for the attack.",
+		"QUICK_ALCHEMY_MSG_ITEMS_REMOVED":"<p>The following temporary items created with Quick Alchemy were removed from {actorname}'s inventory:</p>",
+		"QUICK_ALCHEMY_NO_DESC":"No description available.",
+		"QUICK_ALCHEMY_ALREADY_CONSUMED_MSG":"<p><strong>Unable to attack!</strong></p><p>Item was already consumed, you must craft another one!</p>",
+		"QUICK_ALCHEMY_CREATED_QV_MSG":"created Quick Vial with Quick Alchemy!",
+		"QUICK_ALCHEMY_PROCESSING_MSG":"Processing {formulacount} formulas, may take a while the first time run...<br>If this window does not close, you may close it.",
+		"QUICK_ALCHEMY_CRAFT_HEALING_VIAL":"Do you want to craft a healing Quick Vial?",
+		"QUICK_ALCHEMY_CHIRURGEON":"Chirurgeon",
+		"QUICK_ALCHEMY_FIELD_VIAL_BOMBER":"Field Vials (Bomber)",
+		"QUICK_ALCHEMY_ADV_VIAL_BOMBER":"Advanced Vials (Bomber)",
+		"QUICK_ALCHEMY_TOXICOLOGIST_OPTIONS":"Toxicologist Options",
+		"QUICK_ALCHEMY_MUTAGENIST_OPTIONS":"Mutagenist Options",
+		"QUICK_ALCHEMY_APPLY_INJURY_POISON":"Do you want to apply the vial as an injury poison or use it as a Quick Vial bomb?",
+		"QUICK_ALCHEMY_CONSUME_VIAL":"Do you want to consume a vial?",
+		"QUICK_ALCHEMY_DB_PROMPT":"Do you also want to use Double Brew to craft another item?",
+		"QUICK_ALCHEMY_QV_DB_PROMPT":"Crafting Quick Vial, do you also want to use Double Brew to craft another item?",
+		"QUICK_ALCHEMY_CHOOSE_ITEM":"Choose Item or leave '-None-'",
+		"QUICK_ALCHEMY_SELECT_ITEM_TYPE":"Select a {itemtype} to craft",
+		"QUICK_ALCHEMY_DB_CRAFT_VV": "You only have {vialcount} versatile vial, use Double Brew to craft another?",
+		"QUICK_ALCHEMY_NO_VV":"You have no more Versatile Vials.",
+		"QUICK_ALCHEMY_10_MIN":"You must spend 10 minutes searching for reagents to craft more.",
+		"QUICK_ALCHEMY_REOPEN_SHEET":"Try opening character sheet then try again.",
+		"QUICK_ALCHEMY_APPLY_BEFORE_USE": "Apply before using:",
+
+		"POWERFUL_ALCHEMY": "Powerful Alchemy",
+		"POWERFUL_ALCHEMY_UPDATED_CLASS_DC":"updated using Class DC",
+		"POWERFUL_ALCHEMY_CLASS_DC_SAVE":"Class DC Save",
+
+		"HEALING_VIAL_CHOICE_TITLE": "Healing Quick Vial",
+		"HEALING_VIAL_CHOICE_DESC": "<h4>Choose how to use your Healing Quick Vial:</h4> <p><b>Throw</b> it up to 20 feet at a willing ally, <br>or <br><b>Craft</b> it for drinking.",
+		"BTN_THROW": "Throw",
+		"BTN_CRAFT": "Craft",
+		"HEALING_VIAL_THROW_FLAVOR": "Heals (thrown):",
+		"COAGULANT_TRAIT": "Coagulant",
+		
+		"FIELDVIAL_LBL": "Toxicologist Field Vial Poison",
+		"ADVFIELDVIAL_LBL": "Toxicologist Advanced Vial Poison",
+		"CHOOSE_WEAPON": "Choose a weapon to poison",
+		"ADV_PERSIST_LABEL": "Toxicologist Advanced Vial Poison (Persistent)", 
+		
+		"UNSTABLE_ALCHEMICAL_CONSUMABLE": "Alchemical Consumable",
+		"UNSTABLE_CONCOCTION_BTN": "Unstable Concoction",
+		"UNSTABLE_CONCOCTION_TITLE": "Unstable Concoction",
+		"UNSTABLE_CONCOCTION_DESC": "Boost the initial dice of an alchemical consumable by one size. On activation, DC 10 flat check or take acid damage equal to the item's level.",
+		"UNSTABLE_NOTE": "<strong>Unstable:</strong> initial dice +1 size; on activation {check} or take {dmg} acid damage", 
+		"SELECT_FROM_INVENTORY": "Select from Inventory",
+		"UNSTABLE_CONCOCTION_SELECT_ITEM": "Select Item to modify:",
+				
+		"FORMULA_SEARCH_SEARCH":"Search Formulas...",
+		
+		"LEVELUP_REMOVEDLOWER_CHAT_MSG":"has removed the following lower-level formulas",
+		"LEVELUP_ADDED_CHAT_MSG":"has learned the following new formulas",
+		"LEVELUP_LEVEL":"Level",
+		"LEVELUP_LOWER_LEVEL_BEING_REPLACED":"has the following lower-level formulas that are being replaced",
+		"LEVELUP_UNLOCKED_FORMULAS":"has unlocked new formulas",
+		"LEVELUP_UNLOCKED_FORMULA":"has unlocked the formula for",
+		"LEVELUP_PROMPT_REMOVE_FORMULAS":"Do you want to remove these formulas?",
+		"LEVELUP_PROMPT_REMOVE_FORMULA":"Do you want to remove it?",
+		"LEVELUP_PROMPT_ADD_FORMULAS":"Do you want to add these formulas?",
+		"LEVELUP_PROMPT_ADD_FORMULA":"Do you want to add it?",
+		"LEVELUP_REMOVE_LOWERLEVEL_FORMULAS":"Remove Lower-Level Formulas",
+		"LEVELUP_NEW_FORMULAS_DISCOVERED":"New Formulas Discovered",
+		"LEVELUP_HIGHER_VERSION": "has a higher version of formula",
+		"LEVELUP_NO_LOWER_FORMULAS": "No lower-level formulas to remove for",
+		"LEVELUP_WAIT_TITLE": "Alchemist Duct Tape",		
+		
+		"VIALSEARCH_MESSAGE":"{actorName} has spent {explorationTime} minutes in exploration mode. Would you like to add {foundVials} versatile vials?",
+		"VIALSEARCH_MAX": "Maximum",
+		"VIALSEARCH_CURRENT":"Current",
+		"VIALSEARCH_ADD_VIALS":"Add Vials",
+		"VIALSEARCH_HAS_MAX_VIALS":"already has the maximum number of versatile vials.",
+		"VIALSEARCH_CHAT_FOUND_VIALS":"{actorname} found {vialcount} versatile vial(s).",
+					
+		"MACRO_ADD_FORMULAS":"Add new formulas?",
+		"MACRO_REMOVE_FORMULAS":"Remove lower level formulas?",
+		"MACRO_PROMPT_STYLE":"Prompt Style:",
+		"MACRO_START_LEVEL":"Start at Level:",
+		"MACRO_ADD_TITLE":"Add Alchemist Formulas",
+		"MACRO_REMOVE_TITLE":"Remove Lower Level Alchemist Formulas",
+		"MACRO_WAIT_TITLE":"Please Wait...",
+		"MACRO_CHECKING_NEW_FORMULAS":"Checking for new Alchemist Formulas...<br><br>This may take a while. It is okay to close this window.",
+		"MACRO_CHECKING_LOWER_FORMULAS":"Checking for lower level Alchemist formulas to clean up...<br><br>This may take a while. It is okay to close this window.",
+	
+		"HEALING_BOMB":"Healing Bomb",
+		"HEALING_BOMB_TITLE": "Ranged Strike: Healing Bomb",
+		"HEALING_BOMB_TRAIT_HEALING": "Healing",
+		"HEALING_BOMB_TRAIT_MANIPULATE": "Manipulate",
+		"HEALING_BOMB_TRAIT_ALCHEMICAL": "Alchemical",
+		"HEALING_BOMB_TRAIT_CONSUMABLE": "Consumable",
+		"HEALING_BOMB_TRAIT_SPLASH": "Splash",
+		"HEALING_BOMB_TRAIT_RANGE30":"Range Increment 30 ft.",
+		"HEALING_BOMB_BUTTON_CHIRURGEON": "Greater Field Discovery Healing",
+		"HEALING_BOMB_BUTTON_HEAL": "Apply Healing",
+		"HEALING_BOMB_BUTTON_ROLLED": "Healing Bomb (Rolled Healing)",
+		"HEALING_BOMB_BUTTON_SPLASH": "Apply Splash Healing",
+		"HEALING_BOMB_SPLASH_APPLIED": "splash healing applied to:",
+		"HEALING_BOMB_BUTTON_FAILURE": "Apply Failure Healing",
+		"HEALING_BOMB_SELECT_CRAFT_INVENTORY":"Do you want to craft a new Elixir of Life<br />or<br />use one from your inventory?",
+		"HEALING_BOMB_CRAFT": "Craft Healing Bomb",
+		"HEALING_BOMB_SELECT_INVENTORY":"Select which Elixir of Life to use from the inventory",
+		
+		"INDEX_PROGRESS_TITLE": "Building Alchemical Index…",
+		"INDEX_PROGRESS_HINT": "You can close this window; indexing will continue.",
+		"INDEX_PROGRESS_PACK": "Scanning {pack}…",
+		"INDEX_DONE_TITLE": "Index Complete",
+		"INDEX_DONE_BODY": "Indexed {count} alchemical item(s).",
+		"GM_ONLY": "GM only.",
+		"INDEX_CLEAR_PROMPT_TITLE": "Clear Alchemical Index?",
+		"INDEX_CLEAR_PROMPT_BODY": "This will remove the cached alchemical item index for this world.\n\nYou'll be prompted to rebuild it next time the world loads or when you run the rebuild.\n\nContinue?",
+		"INDEX_CLEAR_DONE": "Alchemical index cleared.",
+		"INDEX_CLEAR_ABORTED": "Clear cancelled.",
+		"INDEX_CLEAR_FAILED": "Failed to clear the alchemical index."
+	}
 }
