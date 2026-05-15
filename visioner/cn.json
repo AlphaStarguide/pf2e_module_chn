@@ -163,7 +163,8 @@
             "SENSE_UNSEEN_BUTTON": "察觉未见（反应）",
             "SENSE_UNSEEN_TOOLTIP": "以你的察觉未见专长感知到无踪生物，使其对你视为藏匿",
             "SENSE_UNSEEN_APPLIED": "已应用察觉未见",
-            "LIFESENSE_TOOLTIP": "你能感知到范围内的活物与不死生物（模糊感官）"
+            "LIFESENSE_TOOLTIP": "你能感知到范围内的活物与不死生物（模糊感官）",
+            "TEMPLATE_OUT_OF_RANGE": "搜索测量板中心距角色{distance}尺远，超出了至多{max}尺的放置距离限制。"
         },
         "HIDE_AUTOMATION": {
             "BUTTON_APPLY": "应用躲藏结果",
