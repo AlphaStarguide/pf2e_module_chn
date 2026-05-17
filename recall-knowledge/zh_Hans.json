@@ -1,3 +1,21 @@
 {
-    "I18N.LANGUAGE": "简体中文"
+    "I18N.LANGUAGE": "简体中文",
+    "pf2e-recall-knowledge": {
+        "questions": {
+            "weakest-saving-throw": "该生物最薄弱的豁免检定是哪一项？",
+            "strongest-saving-throw": "该生物最强大的豁免检定是哪一项？",
+            "has-resistances": "该生物具有哪些抗力？",
+            "has-immunities": "该生物免疫于什么效果？",
+            "has-weaknesses": "该生物具有哪些弱点？",
+            "has-reaction": "该生物是否具有反应能力？",
+            "has-reactive-strike": "该生物是否具有反应打击？",
+            "has-dead-action": "该生物是否具有在死亡时触发的任意效果？",
+            "has-spellcasting": "该生物是否具有施法能力？"
+        },
+        "no-actor": "在使用宏之前，选择你的指示物。",
+        "no-target": "在使用宏之前，需要选择回忆知识的目标。",
+        "question": "<b>问题</b>： ",
+        "request-to-gm": "已向GM发送请求",
+        "everything-known": "角色已经回忆起他所知晓的有关这一主题的所有内容。"
+    }
 }
