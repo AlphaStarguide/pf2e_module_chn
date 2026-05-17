@@ -1090,13 +1090,18 @@
                     "title": "选择JSON文件",
                     "yes": "解析文件"
                 },
-                "success": "角色导入成功。"
+                "success": "角色导入成功。",
+                "url": {
+                    "title": "输入角色JSON ID",
+                    "yes": "解析URL数据"
+                }
             },
             "sheet": {
                 "import": {
                     "delete": "删除导入数据",
                     "code": "代码导入",
-                    "file": "文件导入"
+                    "file": "文件导入",
+                    "url": "URL导入"
                 },
                 "level": {
                     "import": "打开角色导入菜单",
