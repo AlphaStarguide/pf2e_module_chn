@@ -3,32 +3,109 @@
         "AURA": {
             "types": {
                 "spell": "施放法术",
-                "enterOnce": "首次进入灵光"
+                "enterOnce": "首次进入灵光",
+                "startTurn": "回合开始",
+                "endTurn": "回合结束"
+            },
+            "fields": {
+                "type": "灵光类型"
+            },
+            "window": {
+                "title": "灵光详情"
             }
         },
         "DIALOG": {
             "targetSelect": {
                 "options": {
                     "enemies": "敌人",
-                    "allies": "盟友"
-                }
+                    "allies": "盟友",
+                    "all": "全部"
+                },
+                "includeSelf": "包括自身",
+                "title": "选择目标类型"
             }
         },
         "SETTINGS": {
             "ignoreHiddenHazard": {
                 "choices": {
-                    "hazard": "忽略危害"
-                }
+                    "hazard": "忽略危害",
+                    "all": "忽略所有不可见指示物",
+                    "no": "不忽略"
+                },
+                "name": "忽略不可见指示物"
+            },
+            "multipleTargets": {
+                "choices": {
+                    "all": "选择全部目标",
+                    "selectType": "选择符合类型的目标",
+                    "no": "禁用"
+                },
+                "name": "启用多目标选择"
+            },
+            "deleteRegionAfterTargeting": {
+                "name": "锁定目标后删除区域",
+                "hint": "在完成多目标选择后，删除所创建的区域"
+            },
+            "difficultTerrain": {
+                "name": "将测量板设置为困难地形"
+            },
+            "postAura": {
+                "name": "基于灵光类型，发送灵光动作至聊天",
+                "hint": "需要手动设置灵光类型"
+            },
+            "postAuraSameName": {
+                "name": "同名灵光每轮仅发送一次"
+            },
+            "detectMagic": {
+                "name": "处理侦测魔法测量板"
+            },
+            "emanationSpells": {
+                "name": "处理弥漫范围法术",
+                "hint": "例如“英勇颂歌”这样的法术"
+            },
+            "respectWallCenter": {
+                "hint": "若指示物中心到测量板中心的连线没有被阻挡，则选择测量板内的目标",
+                "name": "若中心连线未被阻挡，选择测量板内的目标"
             }
         },
         "COMMON": {
-            "save": "保存"
+            "save": "保存",
+            "select": "选择"
         }
     },
     "TYPES": {
         "RegionBehavior": {
             "pf2e-measure-helper": {
-                "effectArea": "灵光效果"
+                "effectArea": "灵光效果",
+                "effectStartTurn": "回合开始效果"
+            }
+        }
+    },
+    "BEHAVIOR": {
+        "TYPES": {
+            "effectArea": {
+                "TARGET_TYPES": {
+                    "ALL": {
+                        "label": "全部"
+                    },
+                    "OPPOSITION": {
+                        "label": "敌方角色"
+                    },
+                    "PARTY": {
+                        "label": "盟友角色"
+                    }
+                },
+                "FIELDS": {
+                    "item": {
+                        "label": "选择效果来源"
+                    },
+                    "excluded": {
+                        "label": "除外角色"
+                    },
+                    "targets": {
+                        "label": "选择效果的目标类型"
+                    }
+                }
             }
         }
     }
