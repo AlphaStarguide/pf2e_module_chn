@@ -118,7 +118,9 @@
                             "pc": "玩家角色",
                             "npc": "NPC",
                             "pc+npc": "玩家角色 & NPC"
-                        }
+                        },
+                        "name": "为以下角色播放…",
+                        "hint": "选择为PC，NPC或全部角色播放音效"
                     },
                     "enabled": {
                         "name": "启用检定SFX",
@@ -136,7 +138,8 @@
                     },
                     "file": {
                         "criticalSuccess": {
-                            "name": "大成功音效"
+                            "name": "大成功音效",
+                            "hint": "选择音效（注意：该设置不会影响“成功或失败”设置）"
                         },
                         "success": {
                             "name": "成功音效"
@@ -153,7 +156,7 @@
                     "name": "颜色主题",
                     "choices": {
                         "default": "默认",
-                        "dark": "暗色主题"
+                        "dark": "深色主题"
                     }
                 }
             },
