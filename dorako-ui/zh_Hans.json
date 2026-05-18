@@ -192,15 +192,15 @@
                         "actor": "偏好Actor图像"
                     }
                 },
-                "hint": "配置聊天消息中的头像设置",
-                "label": "配置头像设置",
+                "hint": "对聊天消息中肖像的配置。",
+                "label": "配置肖像设置",
                 "hide-when-token-hidden": {
                     "name": "指示物不可见时隐藏头像？",
                     "hint": "说话者的指示物为不可见时，隐藏聊天消息中的头像"
                 },
                 "hide-gm-avatar-when-secret": {
-                    "hint": "GM进行暗骰/私密掷骰时在聊天隐藏头像",
-                    "name": "暗骰时隐藏头像？"
+                    "hint": "GM进行暗骰/私密掷骰时，在聊天隐藏肖像。",
+                    "name": "暗骰时隐藏肖像？"
                 },
                 "size": {
                     "name": "尺寸",
@@ -224,12 +224,12 @@
                 },
                 "hide-avatar-when-token-hidden": {
                     "hint": "当发言者指示物被隐藏时，隐藏其肖像。",
-                    "name": "当指示物被隐藏时，隐藏肖像？"
+                    "name": "当指示物被隐藏时，隐藏其肖像？"
                 },
                 "avatar-source": {
                     "choice": {
-                        "actor": "偏好角色图像",
-                        "token": "偏好指示物图像"
+                        "actor": "首选角色图像",
+                        "token": "首选指示物图像"
                     },
                     "name": "聊天肖像"
                 }
@@ -320,8 +320,8 @@
             "crb-dark": "核心规则书（深色）",
             "no-theme": "无主题",
             "opaque": "不透明",
-            "prefer-light": "偏好浅色",
-            "prefer-dark": "偏好深色",
+            "prefer-light": "首选浅色",
+            "prefer-dark": "首选深色",
             "gm-vs-players": "GM深色主题",
             "alliance": "敌方深色主题",
             "custom": "⚠️ 请自己动手 👷",
