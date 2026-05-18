@@ -37,7 +37,7 @@
             "ADD_CUSTOM_FEAT": "添加自定义专长",
             "ADD_CUSTOM_SPELL": "添加自定义法术",
             "ADD_CUSTOM_CANTRIP": "添加自定义戏法",
-            "GRANTED_ITEMS": "赋予的物品：",
+            "GRANTED_ITEMS": "授予物品：",
             "PARTIALLY_APPLIED": "部分已应用",
             "UNSET": "点击以选择",
             "NOT_SELECTED": "未选择",
@@ -239,7 +239,7 @@
             "CATEGORY_FOCUS": "聚能",
             "CATEGORY_RITUAL": "仪式",
             "TRAIT_FILTER": "输入特征以筛选…",
-            "GRANTED": "赋予法术",
+            "GRANTED": "授予法术",
             "SPELLBOOK": "法术书（{selected}/{count}个新法术）",
             "SPELLBOOK_CANTRIPS": "戏法扩展（{selected}/{count}个额外戏法）",
             "SORT_ALPHA_ASC": "字母顺序（A-Z）",
@@ -293,7 +293,7 @@
                 "REQUIRES": "必选",
                 "SANCTIFICATION_SUFFIX": "以下祝佑：",
                 "DIVINE_FONT_HINT": "选择你的神力源泉。这决定你将引导治疗法术还是伤害法术。",
-                "GRANTED_FEAT_CHOICE": "赋予专长选择",
+                "GRANTED_FEAT_CHOICE": "授予专长选项",
                 "REMINDER_PREFIX": "角色创建后出现提示时，请确保你选择",
                 "REMINDER_SUBCLASS_SUFFIX": "作为你的子职选择。",
                 "REMINDER_IMPLEMENT_SUFFIX": "作为你的奇具。",
@@ -345,7 +345,8 @@
                 "INNOVATION_MOD": "大发明改进",
                 "STARTING_BENEFITS": "初始增益",
                 "CHARACTER_CREATED": "角色已创建",
-                "CHARACTER_READY": "{actorName}已就绪"
+                "CHARACTER_READY": "{actorName}已就绪",
+                "GRANTED_FEAT_CHOICE": "授予专长选项"
             },
             "APPLY_OVERLAY": {
                 "EYEBROW": "创建角色中"
@@ -362,7 +363,9 @@
             "SELECTED_TACTICS": "已选择战术（{selected}/{count}）",
             "SELECTED_IKONS": "已选择神迹（{selected}/{count}）",
             "SELECTED_IMPULSES": "已选择涌动（{selected}/{count}）",
-            "SELECTED_APPARITIONS": "已选择精魄（{selected}/{count}）"
+            "SELECTED_APPARITIONS": "已选择精魄（{selected}/{count}）",
+            "GRANTED_LANGUAGES": "授予语言",
+            "GRANTED_LORES": "授予学识技能"
         },
         "SUMMARY": {
             "CLASS": "职业",
