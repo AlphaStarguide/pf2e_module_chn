@@ -88,10 +88,10 @@
             "reset-changes": "重置更改",
             "theme": {
                 "name": "主题设置",
-                "label": "配置主题",
+                "label": "配置主题设置",
                 "application-theme": {
                     "name": "进程主题",
-                    "hint": "用于渲染进程窗口",
+                    "hint": "受“核心设置 → 用户界面配置 → 进程主题”配色方案影响。",
                     "choice": {
                         "no-theme": "无主题",
                         "light-theme": "CRB主题（明亮）",
@@ -159,17 +159,27 @@
                     "hint": "不影响Premium模组附带日志"
                 },
                 "border-radius": {
-                    "hint": "(默认：3px) 更改部分UI元素的圆润度",
+                    "hint": "（默认：3px）更改许多UI元素的圆润度。",
                     "name": "圆润度"
                 },
                 "interface-theme": {
                     "name": "界面主题"
                 },
                 "chat-message-standard-theme": {
-                    "name": "聊天消息主题（标准）"
+                    "name": "聊天消息主题（标准）",
+                    "hint": "应用于非“敌方盟友”的发言者的聊天消息。"
                 },
                 "chat-message-opposition-theme": {
-                    "name": "聊天消息主题（对立方）"
+                    "name": "聊天消息主题（敌方）",
+                    "hint": "应用于来自“敌方盟友”的发言者的聊天消息。"
+                },
+                "chat-message-header-style": {
+                    "name": "聊天消息标题主题",
+                    "hint": "仅适用于核心规则书主题。"
+                },
+                "sheet-theme-color": {
+                    "hint": "应用于玩家角色卡与载具卡。",
+                    "name": "角色卡主题颜色"
                 }
             },
             "avatar": {
@@ -209,16 +219,27 @@
                     "hint": "默认倍率0.8"
                 },
                 "use-user-avatar": {
-                    "name": "使用用户肖像做备用？",
-                    "hint": "右键点击Foundry左下区域的用户名，配置用户肖像"
+                    "name": "使用用户肖像作为备用？",
+                    "hint": "右键点击FVTT左下玩家列表区域的用户名，以配置用户肖像。"
+                },
+                "hide-avatar-when-token-hidden": {
+                    "hint": "当发言者指示物被隐藏时，隐藏其肖像。",
+                    "name": "当指示物被隐藏时，隐藏肖像？"
+                },
+                "avatar-source": {
+                    "choice": {
+                        "actor": "偏好角色图像",
+                        "token": "偏好指示物图像"
+                    },
+                    "name": "聊天肖像"
                 }
             },
             "misc": {
-                "name": "其他设置",
-                "label": "杂项设置",
-                "hint": "配置Dorako UI的其他设置",
+                "name": "杂项设置",
+                "label": "配置杂项设置",
+                "hint": "配置与Dorako UI功能相关的其他设置。",
                 "enable-debug-mode": {
-                    "name": "启用Debug模式？",
+                    "name": "启用调试模式？",
                     "hint": "在窗口添加是否启用Dorako UI及黑暗主题的按钮"
                 },
                 "send-to-chat": {
@@ -252,7 +273,7 @@
             },
             "external-module": {
                 "colorize-idle-hud": {
-                    "hint": "给tooltip主界面的按钮上色",
+                    "hint": "为主要提示框与受控HUD中的图标元素应用彩色主题。",
                     "name": "为PF2e HUD上色？"
                 },
                 "name": "模组联动设置",
@@ -267,17 +288,17 @@
             "to": "给",
             "send-to-chat": "发送",
             "default": "默认",
-            "dark": "黑暗",
-            "light": "明亮",
+            "dark": "深色",
+            "light": "浅色",
             "disabled": "禁用",
             "secret": "秘密",
-            "large-chatlog-warning": "由于聊天记录过多，一些设置将在下次刷新时启用。",
-            "maybe-reload": "一些更改需要刷新页面。",
+            "large-chatlog-warning": "由于聊天记录过多，一些设置将在下次重新载入时启用。",
+            "maybe-reload": "部分选项更改可能需要重新载入。",
             "bg3": "博德之门3",
             "bg3-brown": "博德之门3（棕色）",
             "bg3-blue": "博德之门3（蓝色）",
             "dnd5e2": "D&D 5e",
-            "dnd5e2-light": "D&D 5e（明亮）",
+            "dnd5e2-light": "D&D 5e（浅色）",
             "glass": "液态玻璃",
             "crb": "核心规则书",
             "colors": {
@@ -289,16 +310,23 @@
                 "player": "玩家颜色",
                 "brown": "棕色"
             },
-            "dnd5e2-dark": "D&D 5e（黑暗）",
+            "dnd5e2-dark": "D&D 5e（深色）",
             "foundry2": "Foundry 2",
             "github": "Github",
             "discord": "Discord",
-            "discord-light": "Discord（明亮）",
-            "discord-dark": "Discord（黑暗）",
-            "crb-light": "核心规则书（明亮）",
-            "crb-dark": "核心规则书（黑暗）",
+            "discord-light": "Discord（浅色）",
+            "discord-dark": "Discord（深色）",
+            "crb-light": "核心规则书（浅色）",
+            "crb-dark": "核心规则书（深色）",
             "no-theme": "无主题",
-            "opaque": "不透明"
+            "opaque": "不透明",
+            "prefer-light": "偏好浅色",
+            "prefer-dark": "偏好深色",
+            "gm-vs-players": "GM深色主题",
+            "alliance": "敌方深色主题",
+            "custom": "⚠️ 请自己动手 👷",
+            "custom-light": "⚠️ 请自己动手（浅色）👷",
+            "custom-dark": "⚠️ 请自己动手（深色）👷"
         }
     }
 }
