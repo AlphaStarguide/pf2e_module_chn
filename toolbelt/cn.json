@@ -400,6 +400,16 @@
                     "name": "跳过死亡生物",
                     "hint": "是否不让死亡生物提供掩蔽。"
                 }
+            },
+            "betterChat": {
+                "average": {
+                    "choices": {
+                        "disabled": "禁用"
+                    }
+                },
+                "merge": {
+                    "name": "合并按钮"
+                }
             }
         },
         "actionable": {
