@@ -51,7 +51,23 @@
             "ADD": "添加",
             "NAME": "名称",
             "WARNING": "存在警告",
-            "NO_CLASS": "为你的角色分配一个职业以开始规划。"
+            "NO_CLASS": "为你的角色分配一个职业以开始规划。",
+            "IMPORTING_PLAN_HINT": "PF2E Leveler 正在加载并验证您保存的规划数据。",
+            "CONFIRM_CLEAR": "您确定要清空此计划吗？所有已选内容都将丢失。",
+            "CONFIRM_CLEAR_LEVEL": "您确定要清空等级 {level} 吗？该等级的所有选择都将丢失。",
+            "PRIMARY": "主要",
+            "MAKE_PRIMARY": "设为主要",
+            "GRANTED_BY_FEAT": "由专长 {featName} 授予",
+            "SET_BY_FEAT": "由专长 {featName} 设置",
+            "SELECT_ADOPTED_ANCESTRY": "选择此专长授予的族裔 。",
+            "CUSTOM_LEVEL_PLAN_HINT": "使用此部分进行常规职业进度之外的额外规划。自定义选择仍会影响规划器识别、先决条件和已应用的升级选项。",
+            "PARTIAL_BOOST_COMPLETING": "此提升将完成一个待定的 +1 部分提升",
+            "CUSTOM_SPELL_RANK_REMINDER": "此职业在此等级获得新的法术环级。使用自定义规划来记录您在该环级下预期需要的法术。",
+            "LOCKED_FILTER_HINT": "此筛选条件在此选择器中已锁定，无法更改。",
+            "PUBLICATIONS": "出版物",
+            "SEARCH_PUBLICATIONS": "搜索出版物...",
+            "PLANNED_ENTRY": "已规划条目",
+            "SEQUENTIAL_PROGRESS": "正在规划等级 {current} / {target}"
         },
         "SECTIONS": {
             "CLASS_FEATURES": "职业特性",
@@ -72,7 +88,8 @@
             "ABP_POTENCY": "技能潜能（ABP）",
             "CUSTOM_LEVEL_PLAN": "自定义等级规划",
             "CUSTOM_EQUIPMENT": "自定义装备",
-            "DUAL_CLASS": "双职业"
+            "DUAL_CLASS": "双职业",
+            "EQUIPMENT": "装备 (表 10-10)"
         },
         "FEAT_PICKER": {
             "TITLE": "选择专长",
@@ -112,7 +129,22 @@
             "DESELECT_ALL": "取消全选",
             "ADD_SELECTED": "添加所选项",
             "SELECTED_COUNT": "已选{count}个",
-            "SEND_TO_CHAT": "发送至聊天"
+            "SEND_TO_CHAT": "发送至聊天",
+            "TAKEN_AT_LEVEL": "在{level}级选择",
+            "OPTIONS": "选项",
+            "PREREQ_UNMET_BLOCKED": "此专长已被锁定，因为一个或多个先决条件明确未满足。",
+            "ARCHETYPE_DEDICATION_LOCK": "请先从当前变体中选择另外两个专长以完成你当前的变体",
+            "ARCHETYPE_UNLOCK": "入门等级 {level}+",
+            "TRAIT_EXCLUDE": "排除特征",
+            "TRAIT_INCLUDE": "包含特征",
+            "TRAIT_REMOVE": "移除特征筛选",
+            "SUBCLASS_LIMITATION": "子职业/变体限制",
+            "SUBCLASS_LIMITATION_HINT": "您选择的子职业或职业变体限制要求选择此专长。",
+            "LEVEL": "{level} 级",
+            "TAKEN": "已选",
+            "ELIGIBLE_ONLY": "仅显示符合条件项",
+            "HIDE_UNMET": "隐藏未满足先决条件的专长",
+            "ARCHETYPE_UNLOCK_HINT": "可从等级 {level} 开始通过入门专长选择。"
         },
         "SETTINGS": {
             "COMPENDIUM_CATEGORIES": {
@@ -142,10 +174,36 @@
                 "AUTO_DETECTED": "自动",
                 "CANCEL": "取消",
                 "ALL": "全选",
-                "DESELECT_ALL": "取消全选"
+                "DESELECT_ALL": "取消全选",
+                "SAVING": "正在保存...",
+                "SAVED": "自定义合集包类别已保存",
+                "INDEXING_TITLE": "正在重新索引合集包",
+                "INDEXING_HINT": "PF2E Leveler 正在为更新的来源选择重新构建专长、物品和法术索引。",
+                "NAME": "自定义合集包类别",
+                "LABEL": "配置类别",
+                "HINT": "为规划器和角色向导使用的每个 PF2E 内容类别选择要搜索的额外合集包。",
+                "BUILT_IN": "内置默认合集包",
+                "NO_PACKS": "未找到符合该类别的合集包。",
+                "ALL_DISABLED": "此类别中没有可用的自定义合集包。",
+                "PACKAGE": "模组包",
+                "SEARCH": "筛选来源...",
+                "SUMMARY": "内容来源",
+                "CATEGORIES_VIEW": "按类别浏览",
+                "PACK_ASSIGNMENTS_VIEW": "分配合集包",
+                "PACK_ASSIGNMENTS_TITLE": "合集包类别分配",
+                "PACK_ASSIGNMENTS_HINT": "使用此视图可以精确决定哪些合集包对应哪个 PF2E 内容类别。一个合集包可以属于多个类别。内置默认合集包保持锁定，自动检测到的匹配仅作为初始建议。",
+                "APPLY_AUTO_ASSIGNMENTS": "应用自动分配",
+                "APPLY_AUTO_CONFIRM_TITLE": "应用自动分配",
+                "APPLY_AUTO_CONFIRM_BODY": "是否将当前的合集包分配替换为自动检测到的类别匹配项？",
+                "APPLY_AUTO_CONFIRM_YES": "应用自动分配",
+                "PACK_SEARCH_PLACEHOLDER": "搜索合集包或类别...",
+                "CATEGORY_COLUMN": "类别",
+                "NO_PACK_ASSIGNMENTS": "没有符合该搜索条件的合集包。",
+                "SAVE": "保存更改"
             },
             "ANCESTRAL_PARAGON": {
-                "NAME": "族裔楷模变体规则"
+                "NAME": "族裔典范变体规则",
+                "HINT": "启用族裔典范变体规则。角色初始获得 2 个族裔专长，并且在每个奇数等级（3, 5, 7, 9, 11, 13, 15, 17, 19）获得一个额外的族裔专长。这与通用专长中的“族裔典范”无关。"
             },
             "SHOW_PREREQUISITES": {
                 "NAME": "显示先决条件",
@@ -160,7 +218,8 @@
                 "HINT": "在角色升级时自动弹出提示，应用已规划的选择"
             },
             "IGNORE_FREE_ARCHETYPE_DEDICATION_LOCK": {
-                "NAME": "忽略免费变体入门锁定"
+                "NAME": "忽略免费变体入门锁定",
+                "HINT": "启用免费变体规则时，允许在免费变体栏位中选择新的入门专长，而不需要先从当前变体中选择另外两个专长。"
             },
             "PLAYER_RARITY": {
                 "UNCOMMON_NAME": "允许玩家使用罕见资源",
@@ -174,7 +233,9 @@
                 "NAME": "默认专长排序",
                 "HINT": "专长选择器中默认的排序方式",
                 "LEVEL_DESC": "等级（从高到低）",
-                "LEVEL_ASC": "等级（从低到高）"
+                "LEVEL_ASC": "等级（从低到高）",
+                "ALPHA_ASC": "按字母顺序 (A-Z)排列",
+                "ALPHA_DESC": "按字母顺序 (Z-A) 排列"
             },
             "CONTENT_GUIDANCE": {
                 "RECOMMENDED": "推荐",
@@ -188,10 +249,66 @@
                 "BULK_NOT_RECOMMENDED": "不推荐",
                 "BULK_DISALLOWED": "禁用",
                 "BULK_DEFAULT": "清空",
-                "SEARCH": "搜索资源…"
+                "SEARCH": "搜索资源…",
+                "NAME": "推荐的角色选项",
+                "LABEL": "配置推荐选项",
+                "HINT": "将角色选项标记为对玩家“推荐”、“不推荐”或“禁止”。推荐的项会带有星形徽章并排在最前面。不推荐的项会保留警告徽章但不会被阻止。禁止的项可以被隐藏，或者对玩家显示为不可选。",
+                "SAVED": "内容指导已保存。",
+                "INTRO": "将物品标记为推荐、不推荐或禁止。推荐的物品会获得星形徽章并在选择器中排在最前面。不推荐的物品依然可用，但会显示警告徽章。禁止的物品可以被隐藏，或者对非 GM 用户显示为不可选。",
+                "PLAYER_DISALLOWED_MODE": {
+                    "NAME": "玩家禁止的内容",
+                    "HINT": "选择非 GM 用户对被禁止选项的处理方式：是完全隐藏还是保持可见但不可选。",
+                    "HIDDEN": "对玩家隐藏",
+                    "UNSELECTABLE": "显示为不可选"
+                },
+                "GM_OVERRIDE_ALLOWED": "由于您是 GM，所以允许访问",
+                "BADGE_INHERITED": "遗传",
+                "BULK_RARITY": "按稀有度批量操作",
+                "CLEAR_ALL": "清空当前标签页",
+                "COUNT": "已标记 {count} 项",
+                "SOURCES": "来源",
+                "MATCHED_COUNT": "{count} 个物品"
             },
             "STARTING_WEALTH": {
-                "DISABLED": "禁用"
+                "DISABLED": "禁用",
+                "MODE_NAME": "初始财富模式",
+                "MODE_HINT": "如何决定初始装备预算。“物品 + 货币”使用表 10-10 的永久物品和货币。“总额”使用表 10-10 的固定金币价值。“自定义”使用手动设置的金币上限。",
+                "ITEMS_AND_CURRENCY": "物品 + 货币 (表 10-10)",
+                "LUMP_SUM": "固定总额 (表 10-10)",
+                "CUSTOM": "自定义金币上限"
+            },
+            "ALLOW_INCOMPLETE_CREATION": {
+                "NAME": "允许不完整的角色创建",
+                "HINT": "允许玩家在创建角色向导未完成所有步骤时仍应用角色创建。"
+            },
+            "ENFORCE_SUBCLASS_DEDICATION_REQUIREMENT": {
+                "NAME": "强制使用子职业入门要求",
+                "HINT": "启用后，诸如“您必须选择 X 入职专长作为您的 2 级职业专长”的子职业或职业变体文本会会将 2 级职业专长选择器和验证功能限制为仅包含该入门。"
+            },
+            "PLAYER_COMPENDIUM_ACCESS": {
+                "NAME": "玩家内容来源",
+                "LABEL": "配置玩家内容来源",
+                "HINT": "选择非 GM 用户在创建角色和升级工具中可以访问的合集包来源。",
+                "ENABLED_NAME": "限制玩家内容来源",
+                "ENABLED_HINT": "将非 GM 用户限制在“玩家内容来源”中选择的合集包来源。"
+            },
+            "DEFAULT_ELIGIBLE_ONLY": {
+                "NAME": "默认专长选择器仅显示符合条件项",
+                "HINT": "打开专长选择器时，默认启用“仅显示符合条件项”筛选。"
+            },
+            "EQUIPMENT_GOLD_LIMIT": {
+                "NAME": "自定义金币上限",
+                "HINT": "自定义财富模式的金币预算。仅在初始财富模式设置为“自定义”时生效。",
+                "EXCEEDED": "此物品将超过 {limit} gp 的初始装备预算。",
+                "EXCEEDED_TOOLTIP": "总费用超过了设定的金币上限。"
+            },
+            "DUAL_CLASS_SUPPORT": {
+                "NAME": "启用双职业支持",
+                "HINT": "当 PF2E 双职业变体规则激活时，启用 PF2E Leveler 的双职业规划器支持。"
+            },
+            "ADDITIONAL_COMPENDIUMS": {
+                "NAME": "额外专长合集包",
+                "HINT": "用于搜索专长的额外合集包列表，用逗号分隔（例如 'my-module.my-feats'）"
             }
         },
         "SKILLS": {
@@ -210,7 +327,7 @@
             "FILTER_RARITY": "稀有度",
             "FOCUS": "聚能法术",
             "CANTRIP": "戏法",
-            "RANK_FILTER": "法术环阶",
+            "RANK_FILTER": "法术环级",
             "SLOTS": "法术位",
             "NEW_RANK": "新增：{rank}环法术！",
             "ADD": "添加法术",
@@ -244,7 +361,10 @@
             "SPELLBOOK_CANTRIPS": "戏法扩展（{selected}/{count}个额外戏法）",
             "SORT_ALPHA_ASC": "字母顺序（A-Z）",
             "SORT_ALPHA_DESC": "字母顺序（Z-A）",
-            "CATEGORY_FILTER": "类别"
+            "CATEGORY_FILTER": "类别",
+            "RANK": "环级",
+            "ATTUNEMENT_SLOTS": "{selected}/{count} 精魄",
+            "TAKEN": "已选"
         },
         "CREATION": {
             "TITLE": "角色创建",
@@ -346,10 +466,18 @@
                 "STARTING_BENEFITS": "初始增益",
                 "CHARACTER_CREATED": "角色已创建",
                 "CHARACTER_READY": "{actorName}已就绪",
-                "GRANTED_FEAT_CHOICE": "授予专长选项"
+                "GRANTED_FEAT_CHOICE": "授予专长选项",
+                "EQUIPMENT": "初始装备",
+                "CHOICES": "选择"
             },
             "APPLY_OVERLAY": {
-                "EYEBROW": "创建角色中"
+                "EYEBROW": "创建角色中",
+                "CURRENT_PROMPT": "当前 PF2E 提示",
+                "PROMPT": "提示",
+                "USE": "使用",
+                "SOURCE": "来源",
+                "USE_IN_PROMPTS": "在PF2E提示中使用这些",
+                "WIZARD_SELECTION_MISSING": "创建按钮选择缺失"
             },
             "EDIT_BUTTON": "编辑角色创建",
             "SEARCH": "搜索…",
@@ -365,26 +493,44 @@
             "SELECTED_IMPULSES": "已选择涌动（{selected}/{count}）",
             "SELECTED_APPARITIONS": "已选择精魄（{selected}/{count}）",
             "GRANTED_LANGUAGES": "授予语言",
-            "GRANTED_LORES": "授予学识技能"
+            "GRANTED_LORES": "授予学识技能",
+            "CONFIRM_BODY": "是否将所有选择应用到此角色？这将添加族裔、传承、背景、职业、专长和其他选择。",
+            "HIGHER_LEVEL_REDIRECT_TITLE": "打开等级规划器",
+            "HIGHER_LEVEL_REDIRECT_BODY": "此高等级角色已选择族裔和职业。请使用等级规划器而不是创建角色。",
+            "CREATION_COMPLETE": "角色创建成功！",
+            "BOOSTS_HINT": "选择 4 个不同的属性进行提升。",
+            "LANGUAGES_HINT": "选择 {count} 种额外语言。",
+            "ADDITIONAL_LANGUAGES": "额外语言",
+            "NO_LANGUAGES": "没有可用的额外语言选择。",
+            "SKILLS_HINT": "选择额外的 {count} 个技能获得受训。",
+            "PENDING_TITLE": "创建后的额外选择",
+            "PENDING_HINT": "在角色创建后，PF2e 系统会提示您进行以下选择：",
+            "FEAT_CHOICES": "专长选择",
+            "INTELLIGENCE_BONUS_HINT_SINGLE": "智力在此等级提高了您的调整值。请在下方选择 1 个额外的受训技能和 1 种额外语言。",
+            "INTELLIGENCE_BONUS_HINT_MULTI": "智力在此等级提高了您的调整值。请在下方选择 {count} 个额外的受训技能和 {count} 种额外语言。",
+            "INTELLIGENCE_BONUS_SKILLS": "智力奖励技能 ({selected}/{count}",
+            "INTELLIGENCE_BONUS_LANGUAGES": "智力奖励语言 ({selected}/{count}"
         },
         "SUMMARY": {
             "CLASS": "职业",
             "SKILL": "技能",
             "GENERAL": "通用",
             "ANCESTRY": "族裔",
-            "SKILL_INCREASE": "技能+",
+            "SKILL_INCREASE": "技能提升",
             "ARCHETYPE": "变体",
             "MYTHIC": "神话",
             "DUAL_CLASS": "双职业",
             "SPELLS": "法术",
-            "BOOSTS": "提升"
+            "BOOSTS": "提升",
+            "POTENCY": "潜能"
         },
         "MESSAGES": {
             "BOOSTS_APPLIED": "属性提升：{boosts}",
             "SKILL_INCREASE": "技能提升：",
             "NO_FEATS": "无",
             "SPELLS_ADDED": "已添加法术：",
-            "FEATS_SELECTED": "已选专长："
+            "FEATS_SELECTED": "已选专长：",
+            "GLOBAL_HEADER": "{actorName} 已达到等级 {targetLevel}！"
         },
         "ALCHEMIST": {
             "NAME": "炼金术士",
@@ -507,7 +653,8 @@
         "MODULE_TITLE": "PF2e升级规划器",
         "EQUIPMENT": {
             "ADD": "添加装备",
-            "CURRENCY_BUDGET": "货币预算：{gp} gp"
+            "CURRENCY_BUDGET": "货币预算：{gp} gp",
+            "SLOT_EMPTY": "等级 {max} 物品栏位 (空)"
         },
         "ITEM_PICKER": {
             "SEARCH": "搜索装备…",
@@ -515,12 +662,18 @@
             "REMAINING": "剩余",
             "EQUIPMENT": "装备",
             "QUANTITY": "数量",
-            "CATEGORY": "类别"
+            "CATEGORY": "类别",
+            "ALREADY_TAKEN": "这个配方已经选择过了",
+            "TAKEN": "已选择",
+            "SHOWING_PARTIAL": "正在显示前 200 项，共"
         },
         "STARTING_WEALTH": {
             "PERMANENT_ITEMS": "永久物品",
             "ITEM_LEVEL": "Lv",
-            "CURRENCY_BUDGET": "货币（{gp} gp）"
+            "CURRENCY_BUDGET": "货币（{gp} gp）",
+            "SLOT_LABEL": "等级 {maxLevel} 物品栏位（空）",
+            "NOT_PERMANENT": "只有永久物品（武器、护甲、盾牌、装备）才能填入此栏位。",
+            "LEVEL_TOO_HIGH": "此物品为 {item} 级，但该栏位最高允许 {max} 级。"
         },
         "BOOSTS": {
             "TITLE": "选择{count}个属性提升",
@@ -539,7 +692,27 @@
             "CREATION_EXPORTED": "角色创建规划已成功导出",
             "CREATION_IMPORTED": "角色创建规划已成功导入",
             "PLAN_SAVED": "升级规划已保存",
-            "PLAN_CLEARED": "升级规划已清空"
+            "PLAN_CLEARED": "升级规划已清空",
+            "APPLIED": "{actorName} 等级 {level} 的选择已成功应用",
+            "APPLY_FAILED": "该选择应用失败：{error}",
+            "NO_PLAN_FOR_LEVEL": "未找到等级 {level} 的规划",
+            "IMPORT_FAILED": "该规划导入失败：{error}",
+            "INVALID_BOOST_COUNT": "请准确选择 {count} 个属性提升",
+            "MISSING_CLASS": "角色必须拥有一个职业",
+            "LEVEL_UP_START": "{actorName} 正在升级至等级 {targetLevel}...",
+            "LEVEL_UP_COMPLETE": "{actorName} 升级完成！",
+            "DUAL_CLASS_REQUIRED": "请在选择双职业专长之前先选择第二职业。"
+        },
+        "ABP": {
+            "NEW_POTENCY": "新增 +1 技能潜能",
+            "UPGRADE_TO_2": "将一个技能潜能升级至 +2",
+            "UPGRADE_TO_3": "将一个技能潜能升级至 +3",
+            "NOTE": "当您在角色卡中选择技能时，自动成长加值系统 (ABP) 会自动应用技能潜能加值。"
+        },
+        "REMINDERS": {
+            "TITLE": "需要采取的操作",
+            "HEADER": "{actorName} (等级 {level}) 有需要手动操作的选择：",
+            "OK": "明白了"
         }
     }
 }
