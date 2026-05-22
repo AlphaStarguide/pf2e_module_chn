@@ -404,12 +404,22 @@
             "betterChat": {
                 "average": {
                     "choices": {
-                        "disabled": "禁用"
-                    }
+                        "disabled": "禁用",
+                        "standalone": "独立指示条",
+                        "background": "以掷骰公式为背景"
+                    },
+                    "hint": "在伤害消息中添加彩色进度条，以显示你的伤害掷骰结果相对于最低伤害与最高伤害的情况。",
+                    "name": "伤害指示条"
                 },
                 "merge": {
-                    "name": "合并按钮"
-                }
+                    "name": "合并按钮",
+                    "hint": "为伤害消息添加一个按钮，允许它们与其他伤害消息合并其数值。"
+                },
+                "inject": {
+                    "name": "注入按钮",
+                    "hint": "在伤害消息中添加一个按钮，允许它们被注入到上一条伤害消息中。"
+                },
+                "title": "更清晰的聊天消息"
             }
         },
         "actionable": {
@@ -1211,6 +1221,39 @@
             "wall": "来自墙体的掩蔽",
             "override": "掩蔽覆盖",
             "overriden": "被覆盖掩蔽"
+        },
+        "betterChat": {
+            "mergeDamage": {
+                "buttons": {
+                    "inject": "注入伤害至上一条伤害消息",
+                    "menu": {
+                        "inject": "[Shift] 打开伤害注入菜单",
+                        "merge": "[Shift] 打开伤害合并菜单"
+                    },
+                    "merge": "与上一条伤害消息合并",
+                    "split": "拆分为原伤害消息"
+                },
+                "injected": "伤害已被注入该条消息",
+                "menu": {
+                    "inject-damage": {
+                        "double": "以双倍伤害注入",
+                        "full": "以全部伤害注入",
+                        "half": "以一半伤害注入",
+                        "title": "伤害注入菜单",
+                        "yes": "注入"
+                    },
+                    "merge-damage": {
+                        "double": "以双倍伤害合并",
+                        "full": "以全部伤害合并",
+                        "half": "以一半伤害合并",
+                        "title": "伤害合并菜单",
+                        "yes": "合并"
+                    },
+                    "originMerge": "当前消息",
+                    "targetMerge": "上一条消息"
+                },
+                "noMatch": "无法找到另一条匹配的伤害消息。"
+            }
         }
     },
     "LEVIKTIMES": {
