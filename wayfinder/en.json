@@ -1,0 +1,40 @@
+{
+  "wayfinder-pf2e": {
+    "Controls": {
+      "Open": "Open Wayfinder"
+    },
+    "App": {
+      "Title": "Wayfinder",
+      "Subtitle": "Guided PF2E creation and level-up",
+      "TargetLevel": "Target Level",
+      "CurrentLevel": "Current Level",
+      "NoPending": "No Wayfinder-guided steps are pending. PF2E-native or manual choices may still live on the character sheet.",
+      "SaveDraft": "Save Draft",
+      "Apply": "Apply Changes",
+      "ApplyConfirmTitle": "Apply Wayfinder Changes",
+      "ApplyConfirmYes": "Apply",
+      "ApplyConfirmNo": "Cancel",
+      "ClearDraft": "Clear Draft",
+      "IncreaseTarget": "Increase target level",
+      "DecreaseTarget": "Decrease target level",
+      "Guidance": "Wayfinder handles the picks — ancestry, feats, class branches, spells. Ability boosts and skill increases are walked through here too. Anything Wayfinder can't model cleanly hands off to your character sheet."
+    },
+    "Settings": {
+      "ExtraPacks": {
+        "Name": "Extra PF2E compendium allowlist",
+        "Hint": "Comma-separated compendium ids to search in addition to the official PF2E packs, for example world.homebrew-feats,my-module.custom-options."
+      }
+    },
+    "Notifications": {
+      "OwnerOnly": "Only the character's owner can use Wayfinder on this sheet.",
+      "MissingSelections": "Finish the remaining steps before applying.",
+      "NoPendingSteps": "There are no Wayfinder-guided steps to apply. Check the PF2E sheet for any native or manual choices.",
+      "DuplicateSelections": "You can't pick the same option twice in one draft.",
+      "SavedDraft": "Wayfinder draft saved.",
+      "ClearedDraft": "Wayfinder draft cleared.",
+      "Applied": "Wayfinder changes applied.",
+      "ApplyCancelled": "Apply cancelled — your draft is still here.",
+      "ApplyFailed": "Couldn't apply the changes. Your draft is intact — review and try again."
+    }
+  }
+}
