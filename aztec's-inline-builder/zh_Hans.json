@@ -2,11 +2,99 @@
     "PF2E-AZTECS": {
         "Tooltips": {
             "Resolve": {
-                "abs": "返回输入值的绝对值（正值）。（例如，abs(-5) = 5）",
-                "floor": "将值向下取整到最接近的整数。（例如，floor(2.9) = 2）",
-                "ceil": "将值向上取整到最接近的整数。（例如，ceil(2.1) = 3）",
-                "round": "将数值四舍五入到最接近的整数。（例如，round(2.5) = 3）",
-                "ternary": "判断一个条件。如果为真，则返回第一个值；如果为假，则返回第二个值。（例如：condition ? true : false）"
+                "abs": "返回输入值的绝对值（即正值；例如，abs(-5) = 5）",
+                "floor": "将数值向下取整到最接近的整数（例如，floor(2.9) = 2）",
+                "ceil": "将数值向上取整到最接近的整数（例如，ceil(2.1) = 3）",
+                "round": "将数值四舍五入到最接近的整数（例如，round(2.5) = 3）",
+                "ternary": "判断一个条件。如果为真，则返回第一个值；如果为假，则返回第二个值（例如，condition ? true : false）",
+                "none": "直接对路径或公式进行运算，而不将其包裹在特定的数学函数中。",
+                "max": "返回所提供数值的最大值（例如：max(1, 2) = 2）",
+                "min": "返回所提供数值的最小值（例如，min(1, 2) = 1）"
+            }
+        },
+        "Labels": {
+            "SkillCheck": "技能检定",
+            "SavingThrow": "豁免检定",
+            "Damage": "伤害",
+            "Healing": "治疗",
+            "Save": "豁免",
+            "BasicSave": "基础豁免",
+            "Skill": "技能",
+            "AddSkill": "添加技能",
+            "LoreCustom": "学识（自定义）",
+            "LoreName": "学识名称",
+            "Type": "类型",
+            "Template": "测量板",
+            "Action": "动作",
+            "Condition": "状态链接",
+            "ConditionArg": "条件",
+            "RollFormula": "掷骰公式",
+            "Roll": "通用掷骰",
+            "AddSave": "添加豁免",
+            "LorePlaceholder": "例如，吸血鬼",
+            "LevelDC": "基于等级的DC",
+            "Adjustment": "调整值",
+            "Traits": "特征",
+            "CustomLabel": "自定义标签",
+            "CustomLabelPlaceholder": "{Custom label}",
+            "Insert": "插入",
+            "Copy": "复制",
+            "RollLabel": "自定义标签",
+            "Burst": "爆发",
+            "Cone": "锥形",
+            "Emanation": "弥漫",
+            "Line": "线形",
+            "Distance": "距离",
+            "Shape": "形状",
+            "Width": "宽度",
+            "WidthPlaceholder": "默认为5尺",
+            "Variant": "变体",
+            "Value": "数值",
+            "FixedDC": "固定DC",
+            "TraitsPlaceholder": "秘密，操作",
+            "RollFlavor": "风味文本",
+            "ActionSlug": "系统动作",
+            "ConditionValue": "状态值/等级",
+            "Operation": "运算",
+            "IfTrue": "如果为真",
+            "IfFalse": "如果为假",
+            "ResolveData": "运算数据",
+            "AddValue": "添加数值",
+            "Statistic": "数据",
+            "GMRoll": "对玩家隐藏（GM掷骰）"
+        },
+        "Keybinding": "打开内联链接生成器",
+        "Title": "Aztec的内联链接生成器",
+        "KeybindingHint": "唤出交互界面，生成PF2e内联链接。",
+        "Notifications": {
+            "Copied": "已复制内联链接至剪贴板。",
+            "Inserted": "链接已插入。",
+            "NoTextField": "没有激活的文本框，已改为复制链接。",
+            "Unsupported": "目标不支持，已改为复制链接。",
+            "InsertedAndCopied": "链接已插入，并已复制到剪贴板。"
+        },
+        "Operations": {
+            "max": "最大值（max）",
+            "min": "最小值（min）",
+            "abs": "绝对值（abs）",
+            "floor": "向下舍入（floor）",
+            "ceil": "向上舍入（ceil）",
+            "round": "四舍五入（round）",
+            "none": "无（直接值/路径）",
+            "ternary": "三元运算（If/Else）"
+        },
+        "Settings": {
+            "CloseOnInsert": {
+                "Name": "插入链接后关闭窗口",
+                "Hint": "成功插入内联链接后，自动关闭生成器界面。"
+            },
+            "CloseOnCopy": {
+                "Name": "复制链接后关闭窗口",
+                "Hint": "手动复制内联链接后，自动关闭生成器界面。"
+            },
+            "AutoCopyOnInsert": {
+                "Hint": "当你将生成的内联链接插入文本框时，自动复制链接到你的剪贴板。",
+                "Name": "插入链接后自动复制"
             }
         }
     }
