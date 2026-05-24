@@ -88,6 +88,20 @@
         "toggleAll": "全选/取消全选",
         "exportSelected": "导出所选模板",
         "removeSelected": "移除所选模板",
-        "condition": "状态"
+        "condition": "状态",
+        "dealDamage": "造成伤害",
+        "textDestroyedDefault": "被摧毁",
+        "calledShotPartId": "身体部位ID",
+        "calledShotPartName": "身体部位",
+        "removeTemplate": "删除模板",
+        "removeTemplateConfirm": "永久删除“{name}”模板？",
+        "removeTemplatesConfirmCount": "永久删除{count}个模板？",
+        "templateName": "模板名称",
+        "saveNewTemplate": "保存新模板",
+        "confirm": "确认",
+        "cancel": "取消",
+        "damageDice": "伤害骰",
+        "selectTarget": "选择目标",
+        "spellcastingConfig": "施法配置"
     }
 }
