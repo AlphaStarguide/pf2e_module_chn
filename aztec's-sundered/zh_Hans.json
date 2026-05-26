@@ -14,6 +14,10 @@
         "chat": {
             "repair": {
                 "header": "修理：{itemName}"
+            },
+            "sunder": {
+                "eff-hardness": "有效硬度",
+                "current-hp": "当前生命值"
             }
         },
         "sheet-text": {
@@ -62,6 +66,33 @@
             "glass-structure": {
                 "name": "玻璃构造",
                 "examples": "玻璃砖墙"
+            },
+            "paper": {
+                "examples": "书页，纸扇，卷轴",
+                "name": "纸张"
+            },
+            "cloth-thin": {
+                "name": "薄布",
+                "examples": "风筝，丝绸裙，汗衫"
+            },
+            "leather-thin": {
+                "name": "薄皮革"
+            },
+            "leather": {
+                "name": "皮革",
+                "examples": "皮甲，鞍具"
+            },
+            "rope": {
+                "name": "绳索",
+                "examples": "工业用绳，船舶索具"
+            },
+            "stone-thin": {
+                "name": "薄石料",
+                "examples": "黑板，石板砖，石材饰面板"
+            },
+            "stone": {
+                "name": "石料",
+                "examples": "铺路石，雕像"
             }
         },
         "rule-elements": {
