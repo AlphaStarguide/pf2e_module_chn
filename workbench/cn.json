@@ -652,6 +652,28 @@
             "npcMystifierIncludeCreaturesOfThisLevelOrGreaterUsingPartyLevel": {
                 "hint": "Use party level to determine the minimum creature level for trait-based name generation. Overrides manual entry.",
                 "name": "Only use trait-based names for creatures of party level or greater"
+            },
+            "mystifyThreshold": {
+                "namePlCommon": "Mystify threshold (party-relative): Common",
+                "namePlUncommon": "Mystify threshold (party-relative): Uncommon",
+                "namePlRare": "Mystify threshold (party-relative): Rare",
+                "namePlUnique": "Mystify threshold (party-relative): Unique",
+                "nameAbsCommon": "Mystify threshold (absolute): Common",
+                "nameAbsUncommon": "Mystify threshold (absolute): Uncommon",
+                "nameAbsRare": "Mystify threshold (absolute): Rare",
+                "nameAbsUnique": "Mystify threshold (absolute): Unique",
+                "hintPl": "Offset from party level. Item mystified when item level >= party level + offset.",
+                "hintAbs": "Absolute item level. Item mystified when item level >= this value.",
+                "notMystified": "Not mystified",
+                "plus4": "PL+4",
+                "plus3": "PL+3",
+                "plus2": "PL+2",
+                "plus1": "PL+1",
+                "plus0": "PL",
+                "minus1": "PL-1",
+                "minus2": "PL-2",
+                "minus3": "PL-3",
+                "minus4": "PL-4"
             }
         },
         "spellCardNotFound": "找不到法术卡。以最低环级施放{spell}。",
