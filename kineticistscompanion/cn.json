@@ -120,6 +120,9 @@
         },
         "torrent-in-the-blood": {
             "immune": "{name}当前对血中激流临时免疫。"
+        },
+        "util": {
+            "damage-formula-not-found": "未找到{item}的内联伤害掷骰公式。"
         }
     }
 }
