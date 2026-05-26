@@ -626,6 +626,44 @@
             "pauseImageNoSpin": {
                 "hint": "禁止暂停图标旋转。",
                 "name": "禁止暂停图标旋转"
+            },
+            "playerAbcdRarityColour": {
+                "hint": "Client setting to show ancestry, background, class, and deity names in rarity colour on the character sheet.",
+                "name": "Show ancestry, background, class, and deity names in rarity colour on the character sheet."
+            },
+            "showItemLicenseTags": {
+                "hint": "World setting to show a LICENSE:ORC or LICENSE:OGL tag in the details section of item sheets.",
+                "name": "Show license tags on item sheets."
+            },
+            "showCharacterOglTag": {
+                "hint": "World setting to show a LICENSE:OGL tag on character sheets if the character has any OGL-licensed items. Clicking the tag opens a list of OGL items.",
+                "name": "Show OGL tag on character sheets.",
+                "title": "OGL Content",
+                "clickToView": "Click to view OGL-licensed items",
+                "noOglContent": "This character has no OGL-licensed content.",
+                "oglItemsFound": "This character has {count} OGL-licensed item(s):"
+            },
+            "npcMystificationSettings": {
+                "hint": "Enable and configure NPC token mystification",
+                "label": "Manage NPC Token Mystification Settings",
+                "name": "NPC Token Mystification Settings"
+            },
+            "itemMystificationSettings": {
+                "hint": "Configure NPC item mystification",
+                "label": "Manage NPC Item Mystification Settings",
+                "name": "NPC Item Mystification Settings"
+            },
+            "npcMystifierIncludeCreaturesOfThisRarityOrGreater": {
+                "hint": "Use trait-based name generation (settings below) only for creatures of this rarity or greater. All creatures are still mystified — those below this threshold get a simpler name without trait-based components.",
+                "name": "Only use trait-based names for creatures of this rarity or greater"
+            },
+            "npcMystifierIncludeCreaturesOfThisLevelOrGreater": {
+                "hint": "Use trait-based name generation (settings below) only for creatures of this level or greater. -1 disables. All creatures are still mystified.",
+                "name": "Only use trait-based names for creatures of this level or greater"
+            },
+            "npcMystifierIncludeCreaturesOfThisLevelOrGreaterUsingPartyLevel": {
+                "hint": "Use party level to determine the minimum creature level for trait-based name generation. Overrides manual entry.",
+                "name": "Only use trait-based names for creatures of party level or greater"
             }
         },
         "spellCardNotFound": "找不到法术卡。以最低环级施放{spell}。",
