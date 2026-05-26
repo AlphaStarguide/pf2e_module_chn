@@ -416,14 +416,6 @@
                 "hint": "（客户端设置）在角色卡中用稀有度颜色显示法术名。",
                 "name": "在角色卡中用稀有度颜色显示法术名。"
             },
-            "npcMystifyAllPhysicalMagicalItemsOfThisLevelOrGreater": {
-                "hint": "仅在物品等级不低于此数值时将其神秘化。",
-                "name": "仅在物品等级不低于此数值时将其神秘化。"
-            },
-            "npcMystifyAllPhysicalMagicalItemsOfThisRarityOrGreater": {
-                "hint": "仅在物品不低于此稀有度时将其神秘化。",
-                "name": "仅在物品不低于此稀有度时将其神秘化。"
-            },
             "autoGainDyingAtZeroHPIfCriticallyHitOneMore": {
                 "name": "…如果被敌人造成重击伤害，濒死值额外增加1点。",
                 "hint": "如果被敌人角色选为目标并被重击，濒死值额外增加1点。使用上方“受伤”选项中的设置，需要先启用“受伤”设置。",
@@ -518,10 +510,6 @@
             "npcMystifyAllPhysicalMagicalItemsOfThisLevelOrGreaterUsingPartyLevel": {
                 "hint": "仅在物品等级等于或大于队伍等级时才会使物品神秘化。覆盖手动设置。",
                 "name": "仅在物品等级等于或大于队伍等级时才会使物品神秘化。"
-            },
-            "npcMystifyAllPhysicalMagicalItemsOfThisLevelOrGreaterMultiplier": {
-                "hint": "…根据这个乘数修改（好吧，我知道，我应该显示最终值）",
-                "name": "…根据这个乘数修改"
             },
             "autoKillIfDamageHasDeathTrait": {
                 "yes": "是，所有角色",
