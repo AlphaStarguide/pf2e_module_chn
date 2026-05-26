@@ -306,11 +306,6 @@
                 "hint": "设置绑定键移动选定参战者的先攻位置到当前回合参战者之前，这通常是由于当前参战者杀死了他。由于四舍五入，先攻表中可能有多个参战者显示相同的先攻值。",
                 "name": "（世界）设置绑定键将选定参战者的先攻位置移到当前参战者之前。"
             },
-            "mystificationSettings": {
-                "label": "管理NPC神秘化设置",
-                "name": "NPC神秘化设置",
-                "hint": "启用并配置NPC神秘化功能"
-            },
             "npcMystifierDemystifyAllTokensBasedOnTheSameActor": {
                 "hint": "勾选此项，该角色对应的所有指示物都会神秘化。",
                 "name": "解除该角色所有指示物的神秘化"
