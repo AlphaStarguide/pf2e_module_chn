@@ -409,12 +409,12 @@
                 "name": "在拥有先决条件的专长名前标注星号。"
             },
             "playerFeatsRarityColour": {
-                "name": "在人物卡中用稀有度颜色显示专长名。",
-                "hint": "客户端设置在人物卡中用稀有度颜色显示专长名。"
+                "name": "在角色卡中用稀有度颜色显示专长名。",
+                "hint": "（客户端设置）在角色卡中用稀有度颜色显示专长名。"
             },
             "playerSpellsRarityColour": {
-                "hint": "客户端设置在人物卡中用稀有度颜色显示法术名。",
-                "name": "在人物卡中用稀有度颜色显示法术名。"
+                "hint": "（客户端设置）在角色卡中用稀有度颜色显示法术名。",
+                "name": "在角色卡中用稀有度颜色显示法术名。"
             },
             "npcMystifyAllPhysicalMagicalItemsOfThisLevelOrGreater": {
                 "hint": "仅在物品等级不低于此数值时将其神秘化。",
@@ -556,9 +556,9 @@
                 "name": "…默认秘密施法："
             },
             "playerSpellsChangeSendToChat": {
-                "hint": "世界设置将发送至聊天栏的法术改为发送法术物品链接而非完整法术。",
-                "name": "将发送至聊天栏的法术全文改为发送法术物品链接而非完整法术。",
-                "text": "法术已被发送至聊天栏： "
+                "hint": "世界设置将发送至聊天的法术改为发送法术物品链接而非完整法术。",
+                "name": "将发送至聊天的法术全文改为发送法术物品链接而非完整法术。",
+                "text": "法术已被发送至聊天： "
             },
             "autoCollapseItemChatCardMoveEffectLinks": {
                 "hint": "…但是当聊天卡片默认折叠时，将任意效果链接移动到折叠部分外",
@@ -606,7 +606,7 @@
             },
             "heropointHandlerNotificationChat": {
                 "name": "…作为聊天消息或信息发送。",
-                "hint": "勾选使英雄点处理器通过聊天栏进行通知，否则它将处理为临时信息。"
+                "hint": "勾选使英雄点处理器通过聊天进行通知，否则它将处理为临时信息。"
             },
             "heropointHandlerRandomization": {
                 "hint": "随机选择玩家发放英雄点的方式",
@@ -629,7 +629,7 @@
             },
             "playerAbcdRarityColour": {
                 "hint": "Client setting to show ancestry, background, class, and deity names in rarity colour on the character sheet.",
-                "name": "Show ancestry, background, class, and deity names in rarity colour on the character sheet."
+                "name": "在角色卡中用稀有度颜色显示族裔，背景，职业与神祇名。"
             },
             "showItemLicenseTags": {
                 "hint": "World setting to show a LICENSE:ORC or LICENSE:OGL tag in the details section of item sheets.",
@@ -766,7 +766,7 @@
             },
             "buildNpcSpellbookJournal": {
                 "title": "建立NPC法术书日志",
-                "noSpellcastingEntry": "你须打开并选择一个NPC的人物卡，或者选中一个NPC的指示物。另外，该NPC必须有某种施法能力。",
+                "noSpellcastingEntry": "你须打开并选择一个NPC的角色卡，或者选中一个NPC的指示物。另外，该NPC必须有某种施法能力。",
                 "generatedSpellbookFor": "为{name}生成法术书"
             },
             "refocus": {
