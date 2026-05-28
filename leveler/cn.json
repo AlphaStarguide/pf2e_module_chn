@@ -67,7 +67,9 @@
             "PUBLICATIONS": "出版物",
             "SEARCH_PUBLICATIONS": "搜索出版物...",
             "PLANNED_ENTRY": "已规划列表",
-            "SEQUENTIAL_PROGRESS": "正在规划{current}~{target}级"
+            "SEQUENTIAL_PROGRESS": "正在规划{current}~{target}级",
+            "LOADING_PLANNER_DATA": "PF2e升级规划器正在加载规划数据。",
+            "LOADING_LEVEL_DATA": "加载规划数据中…"
         },
         "SECTIONS": {
             "CLASS_FEATURES": "职业特性",
