@@ -93,6 +93,12 @@
             "stone": {
                 "name": "石料",
                 "examples": "铺路石，雕像"
+            },
+            "stone-structure": {
+                "examples": "石墙"
+            },
+            "iron-structure": {
+                "examples": "铁板墙"
             }
         },
         "rule-elements": {
