@@ -102,6 +102,19 @@
         "cancel": "取消",
         "damageDice": "伤害骰",
         "selectTarget": "选择目标",
-        "spellcastingConfig": "施法配置"
+        "spellcastingConfig": "施法配置",
+        "minutes": "分钟",
+        "hours": "小时",
+        "days": "日",
+        "unlimited": "无限",
+        "save": "保存更改",
+        "attacks": "攻击",
+        "abilities": "能力",
+        "passives": "被动",
+        "spellcasting": "施法",
+        "persistent": "持续",
+        "precision": "精准",
+        "splash": "溅射",
+        "damageBtn": "伤害"
     }
 }
