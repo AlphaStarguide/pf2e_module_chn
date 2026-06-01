@@ -51,15 +51,15 @@
             "autoCollapseItemChatCardContent": {
                 "nonCollapsedDefault": "默认展开，点击标题折叠。",
                 "collapsedDefault": "默认折叠，点击标题展开。",
-                "hint": "自动折叠道具对话框内容的客户端设置（除了动作和攻击，选项见下）。",
-                "name": "自动折叠道具对话框的内容。",
+                "hint": "自动折叠物品聊天卡片内容（客户端设置，除了动作和攻击，选项见下）。",
+                "name": "自动折叠物品聊天卡片的内容。",
                 "noCollapse": "从不折叠"
             },
             "autoExpandDamageRolls": {
                 "collapsedAll": "折叠显示所有伤害掷骰（Foundry默认）。",
                 "expandedAll": "展开所有伤害掷骰。",
                 "name": "自动展开伤害掷骰。",
-                "hint": "自动展开伤害掷骰的客户端设置（Foundry默认为折叠所有伤害掷骰）。单击掷骰卡片以展开/折叠。",
+                "hint": "自动展开伤害掷骰（客户端设置，Foundry默认折叠所有伤害掷骰）。单击掷骰卡片以展开/折叠。",
                 "expandedNewest": "新伤害掷骰展开（刷新时展开最近一次伤害掷骰）。",
                 "expandedNew": "新伤害掷骰展开（刷新时展开最近3次伤害掷骰）。"
             },
@@ -209,7 +209,7 @@
                 "hint": "设置谁可以在命中时自动掷伤害骰。保存设置以显示/隐藏客户端自动化设置菜单上的其他选项。"
             },
             "autoReduceStunned": {
-                "hint": "客户端设置在回合开始时自动减少震慑状态值。",
+                "hint": "在回合开始时自动减少震慑状态值（客户端设置）。",
                 "name": "回合开始时自动减少震慑状态值"
             },
             "autoRemoveDyingAtGreaterThanZeroHP": {
@@ -221,7 +221,7 @@
             },
             "decreaseFrightenedConditionEachTurn": {
                 "name": "每回合自动减少惊惧状态值。",
-                "hint": "客户端设置在玩家角色、NPC和魔宠每回合结束时自动减少惊惧状态值。"
+                "hint": "在玩家角色、NPC和魔宠每回合结束时自动降低惊惧状态值（客户端设置）。"
             },
             "autoRemoveUnconsciousAtGreaterThanZeroHP": {
                 "hint": "设置当生命值恢复到0以上时自动移除失去意识状态。",
@@ -232,7 +232,7 @@
                 "hint": "设置在法术攻击命中时自动掷伤害骰。请注意，重击时永远只骰普通伤害。"
             },
             "autoRollDamageForSpellWhenNotAnAttack": {
-                "hint": "客户端设置在施放*非攻击*的法术时自动掷普通伤害骰。如果消息包含了失败的豁免结果，其会自动骰。如果是基础豁免则成功就会自动骰。攻击的话需要成功才会自动骰。如果是攻击且需要豁免的法术，则不会自动骰（比如解离术）。",
+                "hint": "在施放*非攻击*的法术时自动掷普通伤害骰（客户端设置）。如果消息包含了失败的豁免结果，其会自动掷骰。如果是基础豁免则成功就会自动掷骰。攻击的话需要成功才会自动掷骰。如果是攻击且需要豁免的法术，则不会自动掷骰（例如解离术）。",
                 "name": "施放非攻击的法术时自动掷伤害骰。",
                 "nonSaveSpell": "所有非攻击非豁免法术",
                 "saveSpell": "所有非攻击的豁免法术",
@@ -240,13 +240,13 @@
                 "anySpell": "所有非攻击法术"
             },
             "autoRollDamageForStrike": {
-                "hint": "客户端设置打击命中时是否自动掷伤害骰。注意，重击时会骰重击的伤害骰。",
+                "hint": "打击命中时是否自动掷伤害骰（客户端设置）。注意，重击时会骰重击的伤害骰。",
                 "name": "打击命中时自动骰伤害骰。",
                 "strike": "打击"
             },
             "autoRollDamageNotifyOnSpellCardNotFound": {
                 "name": "当法术攻击检定后但无法找到法术卡时通知我。",
-                "hint": "客户端设置当进行了法术攻击检定但无法找到可掷伤害骰的法术卡时如何通知。"
+                "hint": "当已骰掷法术攻击检定，但无法找到可掷伤害骰的法术卡片时如何通知（客户端设置）。"
             },
             "castPrivateSpell": {
                 "hint": "勾选此项后，使用Ctrl+单击施法时会私聊施法者和GM法术信息。",
@@ -393,27 +393,27 @@
             "autoCollapseItemActionChatCardContent": {
                 "nonCollapsedDefault": "默认展开，点击标题折叠。",
                 "noCollapse": "永不折叠",
-                "name": "自动折叠动作对话框内容。",
+                "name": "自动折叠动作聊天卡片内容。",
                 "collapsedDefault": "默认折叠，点击标题展开。",
-                "hint": "自动折叠动作对话框内容的客户端设置。"
+                "hint": "自动折叠动作聊天卡片内容（客户端设置）。"
             },
             "autoCollapseItemAttackChatCardContent": {
                 "collapsedDefault": "默认折叠，点击标题展开。",
-                "name": "自动折叠攻击对话框内容。",
+                "name": "自动折叠攻击聊天卡片内容。",
                 "nonCollapsedDefault": "默认展开，点击标题折叠。",
-                "hint": "自动折叠攻击对话框内容的客户端设置。",
+                "hint": "自动折叠攻击聊天卡片内容（客户端设置）。",
                 "noCollapse": "永不折叠"
             },
             "playerFeatsPrerequisiteHint": {
-                "hint": "客户端设置在拥有先决条件的专长名前标注星号。",
+                "hint": "在拥有先决条件的专长名前标注星号（客户端设置）。",
                 "name": "在拥有先决条件的专长名前标注星号。"
             },
             "playerFeatsRarityColour": {
                 "name": "在角色卡中用稀有度颜色显示专长名。",
-                "hint": "（客户端设置）在角色卡中用稀有度颜色显示专长名。"
+                "hint": "在角色卡中用稀有度颜色显示专长名（客户端设置）。"
             },
             "playerSpellsRarityColour": {
-                "hint": "（客户端设置）在角色卡中用稀有度颜色显示法术名。",
+                "hint": "在角色卡中用稀有度颜色显示法术名（客户端设置）。",
                 "name": "在角色卡中用稀有度颜色显示法术名。"
             },
             "autoGainDyingAtZeroHPIfCriticallyHitOneMore": {
@@ -435,7 +435,7 @@
                 "name": "日志等级",
                 "hint": "日志等级",
                 "trace": "追踪",
-                "debug": "排错",
+                "debug": "调试",
                 "info": "信息",
                 "warn": "警告",
                 "off": "关闭"
@@ -470,7 +470,7 @@
             },
             "handleDyingRecoveryRoll": {
                 "handled": "已自动进行濒死复苏检定{roll} {outcome}。{defeated}。",
-                "hint": "客户端设置在点击复苏按钮后自动进行濒死复苏检定。",
+                "hint": "在点击复苏按钮后，自动进行濒死复苏检定（客户端设置）。",
                 "name": "在点击复苏按钮后自动进行濒死复苏检定。",
                 "defeated": "{name}被击败"
             },
@@ -528,8 +528,8 @@
                 "name": "…遭受重创时自动杀死角色。（已废弃的功能）"
             },
             "playerCraftingRarityColour": {
-                "hint": "客户端设置使角色表内的配方名称显示对应稀有度颜色。",
-                "name": "在角色表中显示配方稀有度颜色。"
+                "hint": "使角色卡内的配方名称显示对应稀有度颜色（客户端设置）。",
+                "name": "在角色卡中显示配方稀有度颜色。"
             },
             "castPrivateSpellWithPublicMessageTraitsBlocklist": {
                 "hint": "不显示于公开消息中的特征，以逗号分隔（如'mental, illusion'）",
@@ -616,30 +616,30 @@
                 "name": "禁止暂停图标旋转"
             },
             "playerAbcdRarityColour": {
-                "hint": "Client setting to show ancestry, background, class, and deity names in rarity colour on the character sheet.",
+                "hint": "使角色卡中的族裔，背景，职业和神祇名称显示对应的稀有度颜色（客户端设置）。",
                 "name": "在角色卡中用稀有度颜色显示族裔，背景，职业与神祇名。"
             },
             "showItemLicenseTags": {
-                "hint": "World setting to show a LICENSE:ORC or LICENSE:OGL tag in the details section of item sheets.",
-                "name": "Show license tags on item sheets."
+                "hint": "在物品卡的详情部分显示“LICENSE:ORC”或“LICENSE:OGL”标签（世界设置）。",
+                "name": "在物品卡内显示许可标签。"
             },
             "showCharacterOglTag": {
-                "hint": "World setting to show a LICENSE:OGL tag on character sheets if the character has any OGL-licensed items. Clicking the tag opens a list of OGL items.",
-                "name": "Show OGL tag on character sheets.",
-                "title": "OGL Content",
-                "clickToView": "Click to view OGL-licensed items",
-                "noOglContent": "This character has no OGL-licensed content.",
-                "oglItemsFound": "This character has {count} OGL-licensed item(s):"
+                "hint": "若角色拥有任何OGL许可资源，则会在角色卡内显示“OGL资源”标签。点击该标签会打开一个OGL资源列表（世界设置）。",
+                "name": "在角色卡内显示OGL标签。",
+                "title": "OGL资源",
+                "clickToView": "点击查看OGL许可资源。",
+                "noOglContent": "该角色未拥有任何OGL许可资源。",
+                "oglItemsFound": "该角色拥有{count}项OGL许可资源："
             },
             "npcMystificationSettings": {
-                "hint": "Enable and configure NPC token mystification",
-                "label": "Manage NPC Token Mystification Settings",
-                "name": "NPC Token Mystification Settings"
+                "hint": "启用和配置NPC指示物神秘化",
+                "label": "管理NPC指示物神秘化设置",
+                "name": "NPC指示物神秘化设置"
             },
             "itemMystificationSettings": {
-                "hint": "Configure NPC item mystification",
-                "label": "Manage NPC Item Mystification Settings",
-                "name": "NPC Item Mystification Settings"
+                "hint": "配置NPC物品神秘化",
+                "label": "管理NPC物品神秘化设置",
+                "name": "NPC物品神秘化设置"
             },
             "npcMystifierIncludeCreaturesOfThisRarityOrGreater": {
                 "hint": "Use trait-based name generation (settings below) only for creatures of this rarity or greater. All creatures are still mystified — those below this threshold get a simpler name without trait-based components.",
