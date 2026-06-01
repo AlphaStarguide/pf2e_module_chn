@@ -70,7 +70,7 @@
                     "hint": "在库存标题栏添加合并按钮，以合并同类物品堆叠。"
                 },
                 "partyAsObserved": {
-                    "hint": "允许玩家查看“受限”权限的角色卡，只要该角色属于队伍的盟友即可。注意不要与“团队”角色混淆。",
+                    "hint": "允许玩家查看“受限”权限的角色卡，只要该角色属于队伍的盟友即可。注意不要与“队伍”角色混淆。",
                     "name": "查看队伍盟友许可"
                 },
                 "splitItem": {
@@ -332,7 +332,7 @@
                 },
                 "partyAsObserved": {
                     "name": "查看队伍盟友许可",
-                    "hint": "允许玩家查看“受限”权限的角色卡，只要该角色属于队伍的盟友即可。注意不要与“团队”角色混淆。"
+                    "hint": "允许玩家查看“受限”权限的角色卡，只要该角色属于队伍的盟友即可。注意不要与“队伍”角色混淆。"
                 },
                 "showPlayers": {
                     "name": "展示肖像给玩家",
@@ -752,7 +752,7 @@
                     "drop": "拖拽宏至此"
                 },
                 "name": "名称",
-                "noBuyer": "你必须选择一个你拥有的玩家角色/NPC/团队作为服务的对象。",
+                "noBuyer": "你必须选择一个你拥有的玩家角色/NPC/队伍作为服务对象。",
                 "noFunds": "<strong>{buyer}</strong>没有足够资金雇佣<strong>{seller}</strong>的服务。",
                 "none": "无法找到该服务",
                 "noStock": "<strong>{seller}</strong>不再提供该服务。",
@@ -788,7 +788,7 @@
                 "buy": "<strong>{buyer}</strong>雇佣了<strong>{seller}</strong>的服务。",
                 "error": "在尝试处理更自定义的商人的服务（{service}）时出现错误：<strong>{reason}</strong>。",
                 "give": "<strong>{seller}</strong>免费向<strong>{buyer}</strong>提供服务。",
-                "noBuyer": "你必须选择一个你拥有的玩家角色/NPC/团队作为服务的对象。",
+                "noBuyer": "你必须选择一个你拥有的玩家角色/NPC/队伍作为服务对象。",
                 "noFunds": "<strong>{buyer}</strong>没有足够资金雇佣<strong>{seller}</strong>的服务。",
                 "noStock": "<strong>{seller}</strong>不再提供该服务。"
             },
@@ -990,7 +990,7 @@
                     "none": "这里没有能自动鉴定的物品",
                     "title": "自动鉴定",
                     "tooltip": "自动鉴定已知物品",
-                    "content": "鉴定团队成员已知的物品：<br><ul>{items}</ul>",
+                    "content": "鉴定队伍成员已知的物品：<br><ul>{items}</ul>",
                     "label": "自动鉴定"
                 },
                 "identified": "已鉴定",
