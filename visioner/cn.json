@@ -98,7 +98,7 @@
             "NO_TOKEN_ID": "未在按钮上找到指示物ID",
             "END_TURN_FAILED": "未能成功应用回合结束时的能见度变更。",
             "NO_DEFERRED_POSITIONS": "无需进行推迟位置检查以验证。",
-            "PARTY_RESTORE_SUCCESS": "PF2E Visioner：恢复{count}个团队指示物状态",
+            "PARTY_RESTORE_SUCCESS": "PF2E Visioner：恢复{count}个队伍指示物状态",
             "OVERRIDE_KEEP_FAILED": "无法保持状态覆写",
             "AVS_ACCEPTED_IN_TABLE": "在{group}表中已接受{count}次变更",
             "SNEAK_APPLY_FAILED": "未能应用潜行变更：{errors}",
@@ -107,7 +107,7 @@
             "NO_TOKENS_PROVIDED": "无指示物可供清理",
             "VISION_CACHE_UNAVAILABLE": "无法清除视觉缓存",
             "NO_DEFERRED_OUTCOMES": "未找到可验证的推迟结果。",
-            "PARTY_RESTORE_FAILED": "PF2E Visioner：无法恢复团队指示物",
+            "PARTY_RESTORE_FAILED": "PF2E Visioner：无法恢复队伍指示物",
             "SNEAK_CLEAR_FAILED": "PF2E Visioner：未能清除潜行标记。请查看控制台。",
             "NO_UNDEFERRED_TOKENS": "未找到可恢复至推迟状态的指示物。",
             "VALIDATION_FAILED": "未能处理回合结束时的验证。",
@@ -523,7 +523,7 @@
             },
             "ENABLE_CAMERA_VISION_AGGREGATION": {
                 "name": "摄像视角整合",
-                "hint": "若启用，具有旁观权限的摄像账号在多个团队指示物运行时，将显示所有受控指示物的最佳（最宽松）能见度状态，而非仅显示首个指示物的情况。这对于需要摄像能够看到全部团队成员所看见场景的流媒体情景非常有用。"
+                "hint": "若启用，具有旁观权限的摄像账号在多个队伍指示物运行时，将显示所有受控指示物的最佳（最宽松）能见度状态，而非仅显示首个指示物的情况。这对于需要摄像能够看到全部队伍成员所看见场景的流媒体情景非常有用。"
             },
             "SEEK_TEMPLATE_SKIP_DIALOG": {
                 "name": "始终跳过“搜索测量板”对话框",
@@ -629,7 +629,7 @@
             "CEASELESS_SHADOWS_UPGRADE_TOOLTIP": "{FEAT}：{FROM} → {TO}（专长升级）",
             "BULK_SET_VISIBILITY": "批量能见度设置",
             "FILTER_BY_DETECTION_TOOLTIP": "仅显示处于当前视窗内的指示物",
-            "SELECT_ALL_PARTY": "选择团队内全部指示物",
+            "SELECT_ALL_PARTY": "选择队伍内全部指示物",
             "STANDARD_OR_GREATER_TOOLTIP": "标准或高等掩蔽",
             "ACKNOWLEDGE_END_TURN": "确认回合结束位置的验证结果",
             "HIDE_FOUNDRY_HIDDEN_TOOLTIP": "视觉上隐藏处于Foundry不可见状态的指示物（document.hidden）",
@@ -660,7 +660,7 @@
             "MARK_WALL_HIDDEN": "将该墙体标记为对玩家隐藏",
             "SET_ALL_WALLS_OBSERVED": "设置列表内所有墙体为可见",
             "SET_ALL_WALLS_HIDDEN": "设置列表内所有墙体为隐藏",
-            "TARGET_ALL_PARTY": "将团队内全部指示物设为目标",
+            "TARGET_ALL_PARTY": "将队伍内全部指示物设为目标",
             "TARGET_ALL_ENEMIES": "将全部敌人指示物设为目标",
             "CLEAR_ALL_SELECTIONS": "清除所有选择与目标",
             "APPLY_COVER_CHANGE": "应用该掩蔽变更",
