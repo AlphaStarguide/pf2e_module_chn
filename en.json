@@ -1,0 +1,106 @@
+{
+   "PF2E-AZTECS": {
+      "Title": "Aztec's Inline Links builder",
+      "Keybinding": "Open Inline Links builder",
+      "KeybindingHint": "Summons the UI to build PF2e Inline Links.",
+      "Notifications": {
+         "Copied": "Copied inline syntax to clipboard.",
+         "Inserted": "Syntax inserted.",
+         "NoTextField": "No text field active. Copied instead.",
+         "Unsupported": "Target unsupported. Copied instead.",
+         "InsertedAndCopied": "Syntax inserted and copied to clipboard."
+      },
+      "Labels": {
+         "Type": "Type",
+         "SkillCheck": "Skill Check",
+         "SavingThrow": "Saving Throw",
+         "Damage": "Damage",
+         "Healing": "Healing",
+         "Template": "Template",
+         "Roll": "Generic roll",
+         "Action": "Actions",
+         "Condition": "Condition link",
+         "Save": "Save",
+         "BasicSave": "Basic Save",
+         "Skill": "Skill",
+         "AddSkill": "Add Skill",
+         "AddSave": "Add Save",
+         "AddHealingPool": "Add Healing Pool",
+         "Untyped": "Untyped",
+         "Vitality": "Vitality",
+         "Void": "Void",
+         "LoreCustom": "Lore (Custom)",
+         "LoreName": "Lore Name",
+         "LorePlaceholder": "e.g. vampire",
+         "LevelDC": "Level-Based DC",
+         "ResolveData": "Resolve Data",
+         "Operation": "Operation",
+         "ConditionArg": "Condition",
+         "IfTrue": "If True",
+         "IfFalse": "If False",
+         "Value": "Value",
+         "AddValue": "Add Value",
+         "FixedDC": "Fixed DC",
+         "Adjustment": "Adjustment",
+         "Traits": "Traits",
+         "TraitsPlaceholder": "secret, manipulate",
+         "CustomLabel": "Custom label",
+         "CustomLabelPlaceholder": "{Custom label}",
+         "Insert": "Insert",
+         "Copy": "Copy",
+         "RollFormula": "Roll formula",
+         "RollFlavor": "Flavour text",
+         "RollLabel": "Custom label",
+         "GMRoll": "Hide from Players (GM roll)",
+         "ActionSlug": "System action",
+         "Variant": "Variant",
+         "Statistic": "Statistic",
+         "ConditionValue": "Condition value/level",
+         "Shape": "Shape",
+         "Burst": "Burst",
+         "Cone": "Cone",
+         "Emanation": "Emanation",
+         "Line": "Line",
+         "Distance": "Distance",
+         "Width": "Width",
+         "WidthPlaceholder": "Default is 5"
+      },
+      "Operations": {
+         "none": "None (Direct Value/Path)",
+         "max": "Maximum (max)",
+         "min": "Minimum (min)",
+         "abs": "Absolute (abs)",
+         "floor": "Floor (floor)",
+         "ceil": "Ceiling (ceil)",
+         "round": "Round (round)",
+         "ternary": "Ternary (If/Else)"
+      },
+      "Tooltips": {
+         "Resolve": {
+            "none": "Directly resolves a path or formula without wrapping it in a specific math function.",
+            "max": "Returns the highest of the provided values. (e.g. max(1, 2) = 2)",
+            "min": "Returns the lowest of the provided values. (e.g. min(1, 2) = 1)",
+            "abs": "Returns the absolute (positive) value of the input. (e.g. abs(-5) = 5)",
+            "floor": "Rounds the value down to the nearest whole number. (e.g. floor(2.9) = 2)",
+            "ceil": "Rounds the value up to the nearest whole number. (e.g. ceil(2.1) = 3)",
+            "round": "Rounds the value to the nearest whole number. (e.g. round(2.5) = 3)",
+            "ternary": "Evaluates a condition. If true, returns the first value; if false, returns the second. (e.g. condition ? true : false)"
+         }
+      },
+
+      "Settings": {
+         "AutoCopyOnInsert": {
+            "Name": "Auto-copy on insert",
+            "Hint": "Automatically copy the generated syntax to your clipboard whenever you insert it into a text field."
+         },
+         "CloseOnInsert": {
+            "Name": "Close window on insert",
+            "Hint": "Automatically close the builder UI after successfully inserting the syntax."
+         },
+         "CloseOnCopy": {
+            "Name": "Close window on copy",
+            "Hint": "Automatically close the builder UI after manually copying the syntax."
+         }
+      }
+   }
+}
