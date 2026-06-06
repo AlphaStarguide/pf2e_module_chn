@@ -8,10 +8,10 @@
         "name": "名称",
         "currentHp": "HP",
         "maxHp": "最大HP",
-        "sfxDamage": "伤害音效",
-        "sfxDestroy": "摧毁音效",
-        "sfxHeal": "治疗音效",
-        "sfxTrigger": "触发音效",
+        "sfxDamage": "伤害声效",
+        "sfxDestroy": "摧毁声效",
+        "sfxHeal": "治疗声效",
+        "sfxTrigger": "触发声效",
         "targetCreature": "以该NPC为目标",
         "addBodyPart": "新增身体部位",
         "edit": "编辑",
@@ -210,7 +210,7 @@
         "disableAbilities": "禁用能力",
         "damageMultiplier": "伤害倍率",
         "dealsDamageToCreature": "同时对NPC造成伤害",
-        "disableDuration": "禁用持续时间",
+        "disableDuration": "失效持续时间",
         "regrowthAnyTurn": "在任意生物的回合结束时再生",
         "regrowthAnyTurnTooltip": "若勾选，战斗期间再生效果将在任意生物的回合结束时生效，若不勾选，则仅在该生物回合结束时生效。",
         "exceptions": "除外",
@@ -218,6 +218,13 @@
         "allDamage": "全部伤害",
         "macroUuid": "宏UUID",
         "macroUuidPh": "宏UUID…",
-        "tplTraitsPh": "例如：龙类，不死，恶魔"
+        "tplTraitsPh": "例如：龙类，不死，恶魔",
+        "browseFiles": "浏览文件",
+        "preview": "预览",
+        "addBodyPartOpt": "新增身体部位…",
+        "scripts": "脚本",
+        "addScript": "添加脚本",
+        "scriptCodePh": "脚本代码（例如：console.log(actor.name)）",
+        "disableRegenDmgTypes": "再生失效伤害类型"
     }
 }
