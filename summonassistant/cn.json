@@ -152,12 +152,12 @@
                 },
                 "blue": {
                     "title": "蓝色",
-                    "text": "穿过墙体的生物会承受@UUID[Compendium.pf2e.spells-srd.Item.znv4ECL7ZtuiagtA]的效果，需尝试一次@Check[fortitude|traits:earth|dc:resolve(@actor.system.resources.dc.value)|basic]豁免",
+                    "text": "穿过墙体的生物会承受@UUID[Compendium.pf2e.spells-srd.Item.znv4ECL7ZtuiagtA]的效果，需尝试一次@Check[fortitude|traits:earth|dc:resolve(@actor.system.resources.dc.value)]豁免",
                     "block": "阻挡穿过墙体的听觉，石化，音波以及视觉效果。"
                 },
                 "indigo": {
                     "title": "靛青",
-                    "text": "穿过墙体的生物会承受@UUID[Compendium.pf2e.spells-srd.Item.8kJbiBEjMWG4VUjs]的效果，需尝试一次@Check[will|traits:incapacitation,emotion,mental|dc:resolve(@actor.system.resources.dc.value)|basic]豁免。",
+                    "text": "穿过墙体的生物会承受@UUID[Compendium.pf2e.spells-srd.Item.8kJbiBEjMWG4VUjs]的效果，需尝试一次@Check[will|traits:incapacitation,emotion,mental|dc:resolve(@actor.system.resources.dc.value)]豁免。",
                     "block": "阻挡穿过墙体的预言系和心灵效果。"
                 },
                 "violet": {
