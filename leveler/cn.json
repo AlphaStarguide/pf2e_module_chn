@@ -667,7 +667,13 @@
             "CATEGORY": "类别",
             "ALREADY_TAKEN": "这个配方已经选择过了",
             "TAKEN": "已选",
-            "SHOWING_PARTIAL": "显示前200项，共"
+            "SHOWING_PARTIAL": "显示前200项，共",
+            "SORT": "排序",
+            "SORT_DEFAULT": "默认",
+            "SORT_LEVEL_ASC": "等级（从低到高）",
+            "SORT_LEVEL_DESC": "等级（从高到低）",
+            "SORT_ALPHA_ASC": "字母顺序（A-Z）",
+            "SORT_ALPHA_DESC": "字母顺序（Z-A）"
         },
         "STARTING_WEALTH": {
             "PERMANENT_ITEMS": "永久物品",
