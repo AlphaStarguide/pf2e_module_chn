@@ -380,7 +380,7 @@
         },
         "sidebars": {
             "actions": "动作",
-            "items": "库存",
+            "items": "物品栏",
             "spells": "施法",
             "skills": "技能",
             "extras": "杂项",
