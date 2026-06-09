@@ -1,1 +1,205 @@
-{}
+{
+    "PF2EATW": {
+        "TabLabel": "测量板",
+        "AutomationEnabled": "启用自动化",
+        "Label": "标签",
+        "Enabled": "启用",
+        "Unit": {
+            "Seconds": "秒",
+            "Rounds": "轮",
+            "Minutes": "分钟",
+            "Hours": "小时",
+            "Days": "日",
+            "Unlimited": "无限"
+        },
+        "Behavior": {
+            "AdjustDarknessLevel": "调整黑暗等级",
+            "ModifyMovementCost": "困难地形",
+            "Environment": "环境",
+            "EnvironmentFeature": "环境特性",
+            "RemoveEffect": "移除效果",
+            "AddCondition": "应用状态",
+            "RemoveCondition": "移除状态",
+            "ApplyRuleElement": "应用规则元素",
+            "DealDamage": "造成伤害",
+            "RollDice": "掷骰",
+            "SavingThrow": "豁免检定",
+            "RollSkill": "技能检定",
+            "ChoiceSet": "选择集",
+            "SendChatMessage": "发送聊天消息",
+            "AddIRW": "添加免疫/抗力/弱点",
+            "PlaySound": "播放音频",
+            "DisplayScrollingText": "显示滚动文本",
+            "ExecuteScript": "执行脚本",
+            "ExecuteMacro": "执行宏",
+            "ApplyActiveEffect": "应用主动效果"
+        },
+        "Field": {
+            "EnvironmentTypes": "环境",
+            "Consequences": "后果",
+            "AddConsequence": "添加后果",
+            "RuleElements": "规则元素",
+            "ChatMessageText": "聊天消息文本",
+            "SaveType": "豁免",
+            "SkillType": "技能",
+            "LoreName": "学识名称",
+            "LoreNamePlaceholder": "例如：工程学识",
+            "DC": "DC",
+            "AddDamage": "添加伤害",
+            "DifficultTerrain": "困难地形",
+            "Condition": "状态",
+            "Damages": "伤害条目",
+            "Choices": "选项",
+            "Duration": "持续时间",
+            "BasicSave": "基础豁免检定",
+            "BasicSaveDamages": "基础豁免伤害",
+            "DamageType": "伤害类型",
+            "WallDestroyableHP": "墙体HP",
+            "WallDestroyableAC": "墙体AC",
+            "WallDestroyableHardness": "硬度",
+            "WallDestroyableActorSize": "每指示物间距（尺）",
+            "WallImmunities": "免疫",
+            "WallResistances": "抗力",
+            "WallWeaknesses": "弱点",
+            "WallMove": "移动",
+            "WallLight": "光亮&黑暗",
+            "WallSound": "声音",
+            "WallDir": "限制方向",
+            "WallDestroyable": "可破坏",
+            "SingleWall": "单层墙",
+            "AddImmunity": "+ 添加免疫…",
+            "AddResistance": "+ 添加抗力…",
+            "AddWeakness": "+ 添加弱点…",
+            "WallStrikeAttack": "攻击调整值",
+            "WallStrikeDamages": "打击伤害",
+            "WallStrikeName": "打击名称",
+            "DarknessMode": "模式",
+            "PrivateToGm": "仅限GM",
+            "BlindToGm": "GM不可见",
+            "TerrainPreset": "地形",
+            "CustomCost": "移动消耗倍率",
+            "IRWValue": "值",
+            "TileEditor": "贴图",
+            "ConfigureTile": "配置贴图",
+            "TileShape": "区域形状",
+            "BrowseFiles": "浏览文件",
+            "ScrollingText": "文本",
+            "Color": "颜色",
+            "FontSize": "字体大小",
+            "MacroUuid": "宏UUID",
+            "Source": "脚本源码"
+        },
+        "TemplateShape": {
+            "Circle": "爆发",
+            "Cone": "锥形",
+            "Rectangle": "矩形",
+            "Ellipse": "椭圆",
+            "Line": "线形",
+            "Ring": "环形",
+            "Square": "方格",
+            "Emanation": "弥漫",
+            "Length": "长度",
+            "Width": "宽度"
+        },
+        "RuleElement": {
+            "Add": "添加规则元素"
+        },
+        "Consequence": {
+            "Damage": "造成伤害",
+            "SavingThrow": "豁免检定",
+            "SkillCheck": "技能检定",
+            "ApplyEffect": "应用效果",
+            "ApplyCondition": "应用状态",
+            "RemoveEffect": "移除效果",
+            "RemoveCondition": "移除状态",
+            "ApplyRuleElement": "应用规则元素",
+            "AddIRW": "添加免疫/抗力/弱点",
+            "ExecuteMacro": "执行宏",
+            "ChatMessage": "聊天消息（原始）",
+            "SendChatMessage": "发送聊天消息",
+            "ScrollingText": "显示滚动文本"
+        },
+        "Save": {
+            "Fortitude": "强韧",
+            "Reflex": "反射",
+            "Will": "意志"
+        },
+        "Choice": {
+            "KindSave": "豁免检定",
+            "KindSkill": "技能检定"
+        },
+        "Skill": {
+            "Acrobatics": "特技",
+            "Arcana": "奥法",
+            "Athletics": "运动",
+            "Crafting": "手艺",
+            "Deception": "欺骗",
+            "Diplomacy": "交涉",
+            "Intimidation": "威吓",
+            "Medicine": "医疗",
+            "Nature": "自然",
+            "Occultism": "神秘",
+            "Performance": "表演",
+            "Religion": "宗教",
+            "Society": "社群",
+            "Stealth": "隐秘",
+            "Survival": "生存",
+            "Thievery": "贼活",
+            "Perception": "察觉",
+            "Lore": "学识（自定义）"
+        },
+        "SaveOutcome": {
+            "CriticalSuccess": "大成功",
+            "Success": "成功",
+            "Failure": "失败",
+            "CriticalFailure": "大失败"
+        },
+        "IRW": {
+            "Immunity": "免疫",
+            "Resistance": "抗力",
+            "Weakness": "弱点"
+        },
+        "IO": {
+            "ImportDialogTitle": "导入自动化",
+            "Export": "导出",
+            "Import": "导入"
+        },
+        "Compendium": {
+            "ImportButton": "导入"
+        },
+        "Move": {
+            "Walk": "步行",
+            "Stride": "行走",
+            "Step": "快步",
+            "Crawl": "爬行",
+            "Climb": "攀爬",
+            "Swim": "游泳",
+            "Fly": "飞行",
+            "Burrow": "掘地",
+            "Jump": "跳跃"
+        },
+        "DamageCategory": {
+            "Normal": "正常",
+            "Persistent": "持续",
+            "Splash": "溅射",
+            "Precision": "精准"
+        },
+        "Terrain": {
+            "Difficult": "困难",
+            "GreaterDifficult": "高等困难"
+        },
+        "PF2eDT": {
+            "None": "无",
+            "Difficult": "困难",
+            "GreaterDifficult": "高等困难"
+        },
+        "Target": {
+            "Allies": "盟友",
+            "Enemies": "敌人"
+        },
+        "ToggleCollapse": "展开/折叠",
+        "AddBehavior": "添加行为",
+        "RemoveBehavior": "删除行为",
+        "Behaviors": "区域行为"
+    }
+}
