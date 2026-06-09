@@ -116,7 +116,7 @@
         "precision": "精准",
         "splash": "溅射",
         "damageBtn": "伤害",
-        "templateNamePh": "例如：巨龙生理结构",
+        "templateNamePh": "例如：龙类生理结构",
         "templateNameRequired": "请先输入模板名称。",
         "noTemplates": "未保存任何模板。",
         "rewriteTemplateConfirm": "是否用当前内容覆盖“{name}”模板？该操作无法撤销。",
@@ -343,6 +343,16 @@
         "lockedEffectChoiceContent": "该效果是由受损的身体部位<strong>{partName}</strong>造成的。你希望治疗该身体部位、手动移除效果，还是取消操作？",
         "details": "详情",
         "acceptedDmgTypes": "特攻伤害类型",
-        "acceptedDmgTypesTooltip": "若为空，则该身体部位会受到所有类型的伤害。若已列明类型，则该部位会忽略不属于这些类型的任何伤害。"
+        "acceptedDmgTypesTooltip": "若为空，则该身体部位会受到所有类型的伤害。若已列明类型，则该部位会忽略不属于这些类型的任何伤害。",
+        "rollRecovery": "骰掷恢复检定",
+        "persistentHeadline": "{actorName}的{partName}受到",
+        "hideMainNpc": "配置部位瞄准NPC主体可见性",
+        "disableMainNpc": "在部位瞄准弹窗中禁止将NPC作为目标",
+        "disableMainNpcTooltip": "以部位瞄准攻击NPC时，你无法将NPC主体作为目标，只能攻击其身体部位。",
+        "connectedBodyPartsTooltip": "只要此列表中勾选的身体部位完好，NPC主体将无法被选为目标。只有当列表中的所有部位被摧毁后，NPC主体才可被选为目标。",
+        "connectedBodyParts": "部位瞄准中与NPC可见性关联的身体部位",
+        "thresholdBreached": "已超出阈值！",
+        "toggleHide": "开关可见性",
+        "untyped": "无名（堆栈）"
     }
 }
