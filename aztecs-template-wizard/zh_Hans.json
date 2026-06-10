@@ -32,7 +32,10 @@
             "DisplayScrollingText": "显示滚动文本",
             "ExecuteScript": "执行脚本",
             "ExecuteMacro": "执行宏",
-            "ApplyActiveEffect": "应用主动效果"
+            "ApplyActiveEffect": "应用主动效果",
+            "AttachLight": "附加光源",
+            "AttachWalls": "附加墙体",
+            "AttachSound": "附加音频"
         },
         "Field": {
             "EnvironmentTypes": "环境",
@@ -87,7 +90,13 @@
             "Color": "颜色",
             "FontSize": "字体大小",
             "MacroUuid": "宏UUID",
-            "Source": "脚本源码"
+            "Source": "脚本源码",
+            "SurfaceMode": "模式",
+            "SoundEditor": "音频",
+            "ConfigureSound": "配置音频",
+            "ReconfigureSound": "重置音频",
+            "SoundFile": "音频文件",
+            "Volume": "音量"
         },
         "TemplateShape": {
             "Circle": "爆发",
@@ -99,10 +108,22 @@
             "Square": "方格",
             "Emanation": "弥漫",
             "Length": "长度",
-            "Width": "宽度"
+            "Width": "宽度",
+            "Angle": "角度",
+            "InnerRadius": "内半径",
+            "Type": "形状",
+            "Size": "大小",
+            "Section": "测量板形状覆盖",
+            "AddVariant": "添加形状变体",
+            "RemoveVariant": "删除形状变体"
         },
         "RuleElement": {
-            "Add": "添加规则元素"
+            "Add": "添加规则元素",
+            "Placeholder": "{\n  \"key\": \"FlatModifier\",\n  \"selector\": \"all-damage\",\n  \"value\": 1\n}",
+            "Empty": "JSON不能为空。",
+            "NotObject": "规则元素必须是JSON对象。",
+            "InvalidJson": "JSON语法无效。",
+            "Format": "JSON格式"
         },
         "Consequence": {
             "Damage": "造成伤害",
@@ -165,7 +186,28 @@
             "Import": "导入"
         },
         "Compendium": {
-            "ImportButton": "导入"
+            "ImportButton": "导入",
+            "SettingName": "模板合集",
+            "MenuName": "模板合集",
+            "MenuLabel": "打开模板合集",
+            "AppTitle": "模板合集",
+            "Save": "保存至模板合集",
+            "ImportFrom": "从模板合集导入",
+            "ImportEmpty": "模板合集空空如也。",
+            "ImportModeReplace": "替换当前自动化设置",
+            "SaveDialogTitle": "保存至模板合集",
+            "SaveDialogPrompt": "将当前自动化设置保存为可复用模板。",
+            "NameLabel": "模板名称",
+            "AddButton": "保存",
+            "EditAutomation": "编辑自动化",
+            "EditAutomationTooltip": "编辑该模板的自动化JSON",
+            "SaveAutomationJson": "保存自动化",
+            "DeleteTooltip": "删除",
+            "ExportOneTooltip": "将该模板导出为JSON",
+            "BulkExport": "全部导出",
+            "BulkImport": "全部导入（替换）",
+            "ImportedReplace": "“{name}”已导入，并已替换该项目的自动化设置。",
+            "SettingHint": "存储已保存的测量板向导模板"
         },
         "Move": {
             "Walk": "步行",
@@ -186,7 +228,8 @@
         },
         "Terrain": {
             "Difficult": "困难",
-            "GreaterDifficult": "高等困难"
+            "GreaterDifficult": "高等困难",
+            "Custom": "自定义倍率"
         },
         "PF2eDT": {
             "None": "无",
@@ -197,9 +240,64 @@
             "Allies": "盟友",
             "Enemies": "敌人"
         },
-        "ToggleCollapse": "展开/折叠",
+        "ToggleCollapse": "展开 / 折叠",
         "AddBehavior": "添加行为",
         "RemoveBehavior": "删除行为",
-        "Behaviors": "区域行为"
+        "Behaviors": "区域行为",
+        "Advanced": "进阶",
+        "UuidList": {
+            "Invalid": "（无效UUID）"
+        },
+        "DarknessMode": {
+            "Override": "覆盖"
+        },
+        "Tracker": {
+            "Delete": "删除区域及其创建的所有内容",
+            "DeleteConfirmTitle": "删除区域？",
+            "DeleteConfirm": "是否删除<strong>{name}</strong>区域及其创建的所有内容？该操作无法撤销。",
+            "NotFound": "该区域已不存在。",
+            "Collapse": "折叠 / 展开",
+            "Title": "激活测量板",
+            "Settings": "打开区域配置面板"
+        },
+        "Setting": {
+            "AutoDamage": "自动应用伤害"
+        },
+        "WallMove": {
+            "Normal": "正常"
+        },
+        "WallSense": {
+            "Normal": "正常"
+        },
+        "ConfirmDelete": {
+            "Title": "确认删除"
+        },
+        "WallStrikeSuggest": {
+            "PlacerSpellAttack": "放置者的法术攻击",
+            "PlacerClassDCMinusTen": "放置者的职业DC - 10",
+            "PlacerClassOrSpellDCMinusTen": "放置者的职业或法术DC - 10"
+        },
+        "DCSuggest": {
+            "PlacerClassDC": "放置者的职业DC",
+            "PlacerSpellDC": "放置者的法术DC",
+            "PlacerClassOrSpellDC": "放置者的职业或法术DC",
+            "PlacerSpellAttack": "放置者的法术攻击",
+            "ActorClassDC": "触发角色的职业DC",
+            "ActorSpellDC": "触发角色的法术DC"
+        },
+        "Trigger": {
+            "Entering": "进入区域",
+            "Leaving": "离开区域",
+            "MovingWithin": "区域内移动"
+        },
+        "Expiration": "失效期",
+        "ExpirationEnabled": "区域失效于",
+        "Error": {
+            "BehaviorCreate": "测量板向导 | 无法为“{name}”创建区域行为。"
+        },
+        "SingleWall": {
+            "DialogTitle": "选择一边",
+            "DialogPrompt": "将墙壁放置在<strong>{name}</strong>区域的哪条边？"
+        }
     }
 }
