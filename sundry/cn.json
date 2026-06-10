@@ -211,6 +211,11 @@
                     "show": "显示玩家列表",
                     "hide": "隐藏玩家列表"
                 }
+            },
+            "action-comparison": {
+                "action": "动作",
+                "free": "自由动作",
+                "reaction": "反应动作"
             }
         }
     },
