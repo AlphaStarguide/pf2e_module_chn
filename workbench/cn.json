@@ -678,6 +678,22 @@
             "experimentalToolbeltSaveIntegration": {
                 "hint": "实验性功能：启用PF2e Toolbelt - 目标助手功能集成，以便自动骰掷豁免法术的伤害。（需要你启用PF2e Toolbelt的目标助手功能，同时启用Workbench自动骰掷豁免法术伤害功能的客户端设置。）",
                 "name": "实验性功能：启用PF2e Toolbelt豁免集成"
+            },
+            "canvasPointer": {
+                "hint": "When enabled, holding the canvas pointer key over the canvas shows a large Font Awesome icon instead of the normal cursor.",
+                "name": "Enable canvas pointer"
+            },
+            "canvasPointerIcon": {
+                "hint": "The Font Awesome icon class(es) to display when the canvas pointer is active (e.g. fa-regular fa-hand-point-down, fa-solid fa-arrow-pointer).",
+                "name": "Canvas pointer icon class"
+            },
+            "canvasPointerBroadcastInterval": {
+                "hint": "How often (in milliseconds) to broadcast the pointer position to other clients. Lower values mean smoother movement but more network traffic. Default: 10.",
+                "name": "Canvas pointer broadcast interval (ms)"
+            },
+            "canvasPointerKey": {
+                "hint": "Hold this key over the canvas to display the configured icon. Release to restore the normal cursor. Default: X.",
+                "name": "Canvas pointer key"
             }
         },
         "spellCardNotFound": "找不到法术卡。以最低环级施放{spell}。",
