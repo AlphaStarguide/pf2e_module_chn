@@ -161,7 +161,8 @@
                 "DEITIES": "神祇",
                 "EQUIPMENT": "物品与装备",
                 "SKILLS": "技能",
-                "LANGUAGES": "语言"
+                "LANGUAGES": "语言",
+                "CLASS_ARCHETYPES": "职业变体"
             },
             "HIDE_UNCOMMON": {
                 "NAME": "隐藏罕见专长",
