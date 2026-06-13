@@ -641,9 +641,9 @@
       "CONTENT_GUIDANCE": {
         "NAME": "Suggested Character Options",
         "LABEL": "Configure Suggestions",
-        "HINT": "Mark character options as allowed, suggested, not recommended, exclusive, or disallowed for players. Suggested items appear with a star badge and sort to the top. Exclusive items limit player choices to the exclusive list for that tab. Disallowed items can be hidden or shown as unselectable for players.",
+        "HINT": "Mark character options as allowed, suggested, not recommended, exclusive, free-archetype exclusive, or disallowed for players. Suggested items appear with a star badge and sort to the top. Exclusive items limit player choices to the exclusive list for that tab. Free-archetype exclusive items limit only free archetype picks. Disallowed items can be hidden or shown as unselectable for players.",
         "SAVED": "Content guidance saved.",
-        "INTRO": "Mark items as allowed, suggested, not recommended, exclusive, or disallowed. Suggested items get a star badge and sort to the top in pickers. Exclusive items limit player choices to the exclusive list for that tab. Disallowed items can be hidden or shown as unselectable for non-GM users.",
+        "INTRO": "Mark items as allowed, suggested, not recommended, exclusive, free-archetype exclusive, or disallowed. Suggested items get a star badge and sort to the top in pickers. Exclusive items limit player choices to the exclusive list for that tab. Free-archetype exclusive items limit only free archetype picks. Disallowed items can be hidden or shown as unselectable for non-GM users.",
         "PLAYER_DISALLOWED_MODE": {
           "NAME": "Player Disallowed Content",
           "HINT": "Choose whether player-disallowed options are hidden entirely or remain visible but unselectable for non-GM users.",
@@ -665,6 +665,7 @@
         "BADGE_ALLOWED": "Allowed",
         "BADGE_SUGGESTED": "Suggested",
         "BADGE_EXCLUSIVE": "Exclusive",
+        "BADGE_FREE_ARCHETYPE_EXCLUSIVE": "FA Exclusive",
         "BADGE_EXCLUSIVE_REQUIRED": "Not in the exclusive list",
         "BADGE_NOT_RECOMMENDED": "Not Recommended",
         "BADGE_DISALLOWED": "Disallowed",
@@ -677,6 +678,8 @@
         "BULK_DISALLOWED": "Ban",
         "BULK_EXCLUSIVE": "Exclusive",
         "BULK_CLEAR_EXCLUSIVE": "Clear Exclusive",
+        "BULK_FREE_ARCHETYPE_EXCLUSIVE": "FA Exclusive",
+        "BULK_CLEAR_FREE_ARCHETYPE_EXCLUSIVE": "Clear FA Exclusive",
         "BULK_DEFAULT": "Clear",
         "CLEAR_ALL": "Clear Tab",
         "COUNT": "{count} marked",
