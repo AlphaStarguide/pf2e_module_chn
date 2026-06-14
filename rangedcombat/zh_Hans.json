@@ -82,6 +82,10 @@
                 "none": "禁止",
                 "simple": "简洁",
                 "full": "详细"
+            },
+            "requireAmmunition": {
+                "name": "需要弹药以发射",
+                "hint": "对于使用弹药的武器，必须完成弹药选择后才能发射。"
             }
         },
         "huntPrey": {
