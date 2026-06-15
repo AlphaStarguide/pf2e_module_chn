@@ -13,7 +13,7 @@
             "Unlimited": "无限"
         },
         "Behavior": {
-            "AdjustDarknessLevel": "调整黑暗等级",
+            "AdjustDarknessLevel": "调整暗度级别",
             "ModifyMovementCost": "困难地形",
             "Environment": "环境",
             "EnvironmentFeature": "环境特性",
@@ -35,7 +35,8 @@
             "ApplyActiveEffect": "应用主动效果",
             "AttachLight": "附加光源",
             "AttachWalls": "附加墙体",
-            "AttachSound": "附加音频"
+            "AttachSound": "附加音频",
+            "AttachTile": "附加图块"
         },
         "Field": {
             "EnvironmentTypes": "环境",
@@ -65,7 +66,7 @@
             "WallResistances": "抗力",
             "WallWeaknesses": "弱点",
             "WallMove": "移动",
-            "WallLight": "光亮&黑暗",
+            "WallLight": "光照和黑暗",
             "WallSound": "声音",
             "WallDir": "限制方向",
             "WallDestroyable": "可破坏",
@@ -82,8 +83,8 @@
             "TerrainPreset": "地形",
             "CustomCost": "移动消耗倍率",
             "IRWValue": "值",
-            "TileEditor": "贴图",
-            "ConfigureTile": "配置贴图",
+            "TileEditor": "图块",
+            "ConfigureTile": "配置图块",
             "TileShape": "区域形状",
             "BrowseFiles": "浏览文件",
             "ScrollingText": "文本",
@@ -96,7 +97,45 @@
             "ConfigureSound": "配置音频",
             "ReconfigureSound": "重置音频",
             "SoundFile": "音频文件",
-            "Volume": "音量"
+            "Volume": "音量",
+            "DarknessModifier": "暗度级别",
+            "AffectedActions": "受影响的移动动作",
+            "AddMovementAction": "添加移动动作…",
+            "EnvironmentTypesHint": "该场景区域的一个或多个环境类型。",
+            "AddEnvironmentType": "添加环境类型…",
+            "Dice": "骰子",
+            "ChatMessageDynamicVariables": "动态变量：@actor.name，@token.name，@target.name，@targetToken.name，@sourceItem.name，@placer.name，@region.name",
+            "ChatMessagePlaceholder": "你好，@actor.name！你已踏入该区域。",
+            "RollOptionsExtraPlaceholder": "例如：feat:fireball，trait:elemental",
+            "AppendRollOptions": "附加额外掷骰选项",
+            "RollOptionsExtra": "额外掷骰选项",
+            "WallSight": "视觉",
+            "WallHasStrike": "添加打击攻击",
+            "ReconfigureTile": "重新配置图块",
+            "AddTile": "添加图块",
+            "TileShapeAny": "任意形状",
+            "TileScale": "图块比例",
+            "EffectUuid": "主动效果UUID",
+            "Triggers": "触发条件",
+            "AddTrigger": "添加触发条件…",
+            "Target": "目标",
+            "AddTarget": "添加目标…",
+            "RollOptionsPlaceholder": "例如：self:trait:dwarf，self:condition:frightened",
+            "RollOptions": "必须具备的掷骰选项",
+            "RollOptionsExclude": "必须不具备的掷骰选项",
+            "RollOptionsExcludePlaceholder": "例如：self:condition:flying，self:effect:ignore-terrain",
+            "RollOptionsHint": "半角逗号分隔。如果指示物所属角色缺少这些掷骰选项中的任意一项，则不会触发该行为。",
+            "RollOptionsExcludeHint": "半角逗号分隔。如果指示物所属角色具有这些掷骰选项中的任意一项，则不会触发该行为。",
+            "TargetHint": "限制该行为所影响的，相对于放置者的目标。",
+            "RemoveConditionStepsTooltip": "递减的步数数量。",
+            "WallStrikeNamePlaceholder": " ",
+            "TilePreserveAspectRatio": "保留图块宽高比",
+            "LightEditor": "光源",
+            "ConfigureLight": "配置光源",
+            "ReconfigureLight": "重新配置光源",
+            "ApplyToEveryone": "应用于每个指示物，而不仅是其主人",
+            "IgnoredByHint": "拥有以下任意物品/效果/专长的角色将忽略此行为。",
+            "IgnoredBy": "忽略对象"
         },
         "TemplateShape": {
             "Circle": "爆发",
@@ -183,7 +222,8 @@
         "IO": {
             "ImportDialogTitle": "导入自动化",
             "Export": "导出",
-            "Import": "导入"
+            "Import": "导入",
+            "ImportDialogPrompt": "请在下方粘贴测量板向导自动化JSON代码。它将替换该项目当前的自动化设置。"
         },
         "Compendium": {
             "ImportButton": "导入",
@@ -207,7 +247,14 @@
             "BulkExport": "全部导出",
             "BulkImport": "全部导入（替换）",
             "ImportedReplace": "“{name}”已导入，并已替换该项目的自动化设置。",
-            "SettingHint": "存储已保存的测量板向导模板"
+            "SettingHint": "存储已保存的测量板向导模板",
+            "SlugLabel": "标识符",
+            "SlugPlaceholder": "例如：wall-of-fire",
+            "NewBlank": "新增自动化",
+            "NewBlankDefaultName": "新模板",
+            "BehaviorCount": "# 行为",
+            "EditTooltip": "编辑名称/标识符",
+            "AddNew": "添加（粘贴JSON）"
         },
         "Move": {
             "Walk": "步行",
@@ -238,7 +285,8 @@
         },
         "Target": {
             "Allies": "盟友",
-            "Enemies": "敌人"
+            "Enemies": "敌人",
+            "All": "全部"
         },
         "ToggleCollapse": "展开 / 折叠",
         "AddBehavior": "添加行为",
@@ -246,10 +294,14 @@
         "Behaviors": "区域行为",
         "Advanced": "进阶",
         "UuidList": {
-            "Invalid": "（无效UUID）"
+            "Invalid": "（无效UUID）",
+            "Add": "再添加一个",
+            "Placeholder": "粘贴或拖入项目UUID…"
         },
         "DarknessMode": {
-            "Override": "覆盖"
+            "Override": "覆盖",
+            "Brighten": "变亮",
+            "Darken": "变暗"
         },
         "Tracker": {
             "Delete": "删除区域及其创建的所有内容",
@@ -258,7 +310,10 @@
             "NotFound": "该区域已不存在。",
             "Collapse": "折叠 / 展开",
             "Title": "激活测量板",
-            "Settings": "打开区域配置面板"
+            "Settings": "打开区域配置面板",
+            "SelectRegion": "在画布上选择区域",
+            "UnnamedRegion": "这个区域",
+            "PanTo": "平移至区域"
         },
         "Setting": {
             "AutoDamage": "自动应用伤害"
@@ -275,7 +330,8 @@
         "WallStrikeSuggest": {
             "PlacerSpellAttack": "放置者的法术攻击",
             "PlacerClassDCMinusTen": "放置者的职业DC - 10",
-            "PlacerClassOrSpellDCMinusTen": "放置者的职业或法术DC - 10"
+            "PlacerClassOrSpellDCMinusTen": "放置者的职业或法术DC - 10",
+            "FlatTen": "固定+10"
         },
         "DCSuggest": {
             "PlacerClassDC": "放置者的职业DC",
@@ -288,7 +344,8 @@
         "Trigger": {
             "Entering": "进入区域",
             "Leaving": "离开区域",
-            "MovingWithin": "区域内移动"
+            "MovingWithin": "区域内移动",
+            "OnPlace": "放置时"
         },
         "Expiration": "失效期",
         "ExpirationEnabled": "区域失效于",
@@ -298,6 +355,41 @@
         "SingleWall": {
             "DialogTitle": "选择一边",
             "DialogPrompt": "将墙壁放置在<strong>{name}</strong>区域的哪条边？"
+        },
+        "Attachable": "可附着",
+        "AttachableHint": "放置测量板时，弹出将该区域附着在相邻或内部指示物的提示框。",
+        "ContiguousHint": "将测量板按顺序多次放置，然后将放置的形状合并为一个自动化区域。",
+        "Contiguous": "连续放置",
+        "AdvancedEnabled": "覆盖区域外观",
+        "AdvancedField": {
+            "Color": "颜色",
+            "Opacity": "不透明度",
+            "Visibility": "可见性",
+            "Transparency": "透明度",
+            "DisplayMeasurements": "显示尺寸"
+        },
+        "Attach": {
+            "DialogPrompt": "选择一个指示物以附着该区域。",
+            "Confirm": "附着",
+            "Cancel": "跳过",
+            "NoneOption": "不附着",
+            "NoCandidates": "该区域内部或相邻处没有指示物。",
+            "DialogTitle": "将区域附着到指示物上"
+        },
+        "Tooltip": {
+            "TriggersDefault": "默认：进入区域。",
+            "TargetDefault": "默认：全部。",
+            "TilePreserveAspectRatio": "勾选后，该图块会保留源图像的宽高比，并放大以完全覆盖整个区域（必要时会在较短轴上溢出）。取消勾选，图块会被拉伸，使其恰好与区域的边界框相匹配。",
+            "ExpressionDC": "支持数字，@路径（例如：@actor.system.attributes.classDC.value），以及算术公式。可用域：actor，token，region，sourceItem，placer。"
+        },
+        "SurfaceMode": {
+            "Add": "添加",
+            "Remove": "移除",
+            "Override": "覆盖"
+        },
+        "Keybinding": {
+            "ShrinkTemplate": "缩小放置测量板",
+            "GrowTemplate": "放大放置测量板"
         }
     }
 }
