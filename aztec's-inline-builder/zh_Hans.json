@@ -64,7 +64,8 @@
             "GMRoll": "对玩家隐藏（GM掷骰）",
             "Untyped": "无名",
             "Vitality": "命能",
-            "Void": "虚能"
+            "Void": "虚能",
+            "AddHealingPool": "添加治疗池"
         },
         "Keybinding": "打开内联链接生成器",
         "Title": "Aztec的内联链接生成器",
