@@ -680,41 +680,41 @@
                 "name": "实验性功能：启用PF2e Toolbelt豁免集成"
             },
             "canvasPointer": {
-                "hint": "When enabled, holding the canvas pointer key over the canvas shows a large Font Awesome icon instead of the normal cursor.",
-                "name": "Enable canvas pointer"
+                "hint": "若启用，在画布上长按画布指示标绑定键会显示巨大的Font Awesome图标，而非常规光标。",
+                "name": "启用画布指示标"
             },
             "canvasPointerIcon": {
-                "hint": "The Font Awesome icon class(es) to display when the canvas pointer is active (e.g. fa-regular fa-hand-point-down, fa-solid fa-arrow-pointer).",
-                "name": "Canvas pointer icon class"
+                "hint": "当画布指示标激活时显示的Font Awesome图标类型（例如：fa-regular fa-hand-point-down，fa-solid fa-arrow-pointer）。",
+                "name": "画布指示标类型"
             },
             "canvasPointerBroadcastInterval": {
-                "hint": "How often (in milliseconds) to broadcast the pointer position to other clients. Lower values mean smoother movement but more network traffic. Default: 10.",
-                "name": "Canvas pointer broadcast interval (ms)"
+                "hint": "向其他客户端广播指示标位置的频率（以毫秒为单位）。数值越低，移动越平滑，但网络流量消耗越大。默认：10ms。",
+                "name": "画布指示标广播间隔（ms）"
             },
             "canvasPointerKey": {
-                "hint": "Hold this key over the canvas to display the configured icon. Release to restore the normal cursor. Default: X.",
-                "name": "Canvas pointer key"
+                "hint": "在画布上长按此键显示已配置好的图标，放开恢复为正常光标。默认键：X。",
+                "name": "画布指示标绑定键"
             },
             "canvasPointerPingMode": {
-                "hint": "What happens when you click while the pointer is active.",
-                "name": "Ping mode",
-                "none": "No ping",
-                "visual": "Visible ping",
-                "sound": "Sound ping",
-                "visualAndSound": "Sound + visible ping"
+                "hint": "当你在指示标激活时点击画布会发生什么。",
+                "name": "高亮信号模式",
+                "none": "无高亮信号",
+                "visual": "视觉高亮信号",
+                "sound": "声音高亮信号",
+                "visualAndSound": "声音+视觉高亮信号"
             },
             "canvasPointerPingSound": {
-                "hint": "The audio file to play when pinging. Leave empty to only show the visual ping.",
-                "name": "Ping sound file"
+                "hint": "发送高亮信号时播放的音频文件。留空则仅显示视觉高亮信号。",
+                "name": "高亮音频文件"
             },
             "canvasPointerPingVolume": {
-                "hint": "Volume for the ping sound (0 to 1). Default: 0.2.",
-                "name": "Ping sound volume"
+                "hint": "声音高亮信号的音量（0-1）。默认：0.2。",
+                "name": "高亮信号音量"
             },
             "canvasFeaturesSettings": {
-                "hint": "Canvas pointer, pings, token animation speed, and pause screen customization.",
-                "label": "Manage Canvas Features Settings",
-                "name": "Canvas Features Settings"
+                "hint": "画布指示标，高亮信号，指示物移动动画速度与暂停界面自定义。",
+                "label": "管理画布功能设置",
+                "name": "画布功能设置"
             }
         },
         "spellCardNotFound": "找不到法术卡。以最低环级施放{spell}。",
