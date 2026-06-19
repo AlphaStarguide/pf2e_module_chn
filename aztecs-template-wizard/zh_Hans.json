@@ -61,7 +61,7 @@
             "WallDestroyableHP": "墙体HP",
             "WallDestroyableAC": "墙体AC",
             "WallDestroyableHardness": "硬度",
-            "WallDestroyableActorSize": "每指示物间距（尺）",
+            "WallDestroyableActorSize": "每角色墙体长度",
             "WallImmunities": "免疫",
             "WallResistances": "抗力",
             "WallWeaknesses": "弱点",
@@ -109,7 +109,7 @@
             "RollOptionsExtraPlaceholder": "例如：feat:fireball，trait:elemental",
             "AppendRollOptions": "附加额外掷骰选项",
             "RollOptionsExtra": "额外掷骰选项",
-            "WallSight": "视觉",
+            "WallSight": "视野",
             "WallHasStrike": "添加打击攻击",
             "ReconfigureTile": "重新配置图块",
             "AddTile": "添加图块",
@@ -127,15 +127,17 @@
             "RollOptionsHint": "半角逗号分隔。如果指示物所属角色缺少这些掷骰选项中的任意一项，则不会触发该行为。",
             "RollOptionsExcludeHint": "半角逗号分隔。如果指示物所属角色具有这些掷骰选项中的任意一项，则不会触发该行为。",
             "TargetHint": "限制该行为所影响的，相对于放置者的目标。",
-            "RemoveConditionStepsTooltip": "递减的步数数量。",
+            "RemoveConditionStepsTooltip": "递减的状态值。",
             "WallStrikeNamePlaceholder": " ",
             "TilePreserveAspectRatio": "保留图块宽高比",
             "LightEditor": "光源",
             "ConfigureLight": "配置光源",
             "ReconfigureLight": "重新配置光源",
-            "ApplyToEveryone": "应用于每个指示物，而不仅是其主人",
+            "ApplyToEveryone": "应用于每个指示物，而非其所有者",
             "IgnoredByHint": "拥有以下任意物品/效果/专长的角色将忽略此行为。",
-            "IgnoredBy": "忽略对象"
+            "IgnoredBy": "忽略对象",
+            "SoundRadiusBoost": "声音传播范围扩大",
+            "IRWType": "类型"
         },
         "TemplateShape": {
             "Circle": "爆发",
@@ -154,7 +156,8 @@
             "Size": "大小",
             "Section": "测量板形状覆盖",
             "AddVariant": "添加形状变体",
-            "RemoveVariant": "删除形状变体"
+            "RemoveVariant": "删除形状变体",
+            "Enabled": "使用实际形状（而非根据放置区域推断）"
         },
         "RuleElement": {
             "Add": "添加规则元素",
@@ -162,7 +165,8 @@
             "Empty": "JSON不能为空。",
             "NotObject": "规则元素必须是JSON对象。",
             "InvalidJson": "JSON语法无效。",
-            "Format": "JSON格式"
+            "Format": "JSON格式",
+            "MissingKey": "规则元素必须包含“key”字段。"
         },
         "Consequence": {
             "Damage": "造成伤害",
@@ -186,7 +190,8 @@
         },
         "Choice": {
             "KindSave": "豁免检定",
-            "KindSkill": "技能检定"
+            "KindSkill": "技能检定",
+            "Add": "添加选项"
         },
         "Skill": {
             "Acrobatics": "特技",
@@ -246,7 +251,7 @@
             "ExportOneTooltip": "将该模板导出为JSON",
             "BulkExport": "全部导出",
             "BulkImport": "全部导入（替换）",
-            "ImportedReplace": "“{name}”已导入，并已替换该项目的自动化设置。",
+            "ImportedReplace": "“{name}”模板已导入，并已替换该项目的自动化设置。",
             "SettingHint": "存储已保存的测量板向导模板",
             "SlugLabel": "标识符",
             "SlugPlaceholder": "例如：wall-of-fire",
@@ -254,7 +259,16 @@
             "NewBlankDefaultName": "新模板",
             "BehaviorCount": "# 行为",
             "EditTooltip": "编辑名称/标识符",
-            "AddNew": "添加（粘贴JSON）"
+            "AddNew": "添加（粘贴JSON）",
+            "TemplateLabel": "模板",
+            "ImportModeAppend": "在当前基础添加该模板的自动化设置",
+            "ImportedAppend": "“{name}”模板已导入该项目的自动化设置。",
+            "ImportModeHint": "添加模式会在已有基础上附加行为，而非替换当前行为。",
+            "SlugHint": "设置后，任何使用相匹配的系统标识符的项目都将自动应用该模板。",
+            "SlugConflictTitle": "标识符已存在",
+            "SlugConflict": "已存在具有“{slug}”标识符的模板。本模板无法以该标识符保存为独立条目，继续操作将覆盖现有模板。",
+            "BulkImportReplace": "整个模板合集（该操作将替换它）",
+            "Empty": "模板合集为空。请在项目卡中保存自动化设置，或使用上方的添加功能（粘贴JSON）。"
         },
         "Move": {
             "Walk": "步行",
@@ -265,7 +279,9 @@
             "Swim": "游泳",
             "Fly": "飞行",
             "Burrow": "掘地",
-            "Jump": "跳跃"
+            "Jump": "跳跃",
+            "Run": "奔跑",
+            "Displace": "换位"
         },
         "DamageCategory": {
             "Normal": "正常",
@@ -316,16 +332,28 @@
             "PanTo": "平移至区域"
         },
         "Setting": {
-            "AutoDamage": "自动应用伤害"
+            "AutoDamage": "自动应用伤害",
+            "AutoDamageHint": "勾选时，造成伤害行为会对触发该行为的角色自动应用已骰出的伤害。",
+            "PromptGm": "应用效果前先提示GM",
+            "TemplateResizeStepHint": "在测量板放置期间调整其大小，区域网格数量会随之增加或减少。右键单击（默认）将减少对应数量方格；双击右键（默认）将增加对应数量方格。",
+            "TemplateResizeStep": "测量板调整格数",
+            "TemplateResizeRmb": "使用绑定键调整测量板大小（默认右键单击）",
+            "TemplateResizeRmbHint": "勾选后，在放置测量板期间，右键单击（默认）会缩小测量板，双击右键（默认）会放大测量板。"
         },
         "WallMove": {
-            "Normal": "正常"
+            "Normal": "正常",
+            "None": "无限制"
         },
         "WallSense": {
-            "Normal": "正常"
+            "Normal": "正常",
+            "None": "无限制",
+            "Limited": "限制",
+            "Proximity": "接近",
+            "Distance": "远离"
         },
         "ConfirmDelete": {
-            "Title": "确认删除"
+            "Title": "确认删除",
+            "Prompt": "你是否确定要删除模板<strong>{name}</strong>？此操作无法撤销。"
         },
         "WallStrikeSuggest": {
             "PlacerSpellAttack": "放置者的法术攻击",
@@ -345,16 +373,25 @@
             "Entering": "进入区域",
             "Leaving": "离开区域",
             "MovingWithin": "区域内移动",
-            "OnPlace": "放置时"
+            "OnPlace": "放置时",
+            "TurnStart": "触发实体在区域内开始其回合",
+            "TurnEnd": "触发实体在区域内结束其回合",
+            "AdjacentTurnStart": "触发实体在相邻区域的位置开始其回合",
+            "AdjacentTurnEnd": "触发实体在相邻区域的位置结束其回合",
+            "RoundStart": "本轮开始时处于区域内",
+            "RoundEnd": "本轮结束时处于区域内",
+            "WhileAdjacent": "仅当相邻区域时",
+            "WhileWithin": "仅当在区域内时",
+            "StandingIn": "在区域内"
         },
         "Expiration": "失效期",
-        "ExpirationEnabled": "区域失效于",
+        "ExpirationEnabled": "区域存续时间",
         "Error": {
             "BehaviorCreate": "测量板向导 | 无法为“{name}”创建区域行为。"
         },
         "SingleWall": {
-            "DialogTitle": "选择一边",
-            "DialogPrompt": "将墙壁放置在<strong>{name}</strong>区域的哪条边？"
+            "DialogTitle": "选择一侧",
+            "DialogPrompt": "将墙壁放置在<strong>{name}</strong>区域的哪一侧？"
         },
         "Attachable": "可附着",
         "AttachableHint": "放置测量板时，弹出将该区域附着在相邻或内部指示物的提示框。",
@@ -366,7 +403,8 @@
             "Opacity": "不透明度",
             "Visibility": "可见性",
             "Transparency": "透明度",
-            "DisplayMeasurements": "显示尺寸"
+            "DisplayMeasurements": "显示尺寸",
+            "HighlightMode": "高亮模式"
         },
         "Attach": {
             "DialogPrompt": "选择一个指示物以附着该区域。",
@@ -380,7 +418,20 @@
             "TriggersDefault": "默认：进入区域。",
             "TargetDefault": "默认：全部。",
             "TilePreserveAspectRatio": "勾选后，该图块会保留源图像的宽高比，并放大以完全覆盖整个区域（必要时会在较短轴上溢出）。取消勾选，图块会被拉伸，使其恰好与区域的边界框相匹配。",
-            "ExpressionDC": "支持数字，@路径（例如：@actor.system.attributes.classDC.value），以及算术公式。可用域：actor，token，region，sourceItem，placer。"
+            "ExpressionDC": "支持数字，@路径（例如：@actor.system.attributes.classDC.value），以及算术公式。可用域：actor，token，region，sourceItem，placer。",
+            "SoundRadiusBoost": "调整自动计算的声音传播范围。",
+            "RegionExpiration": "若禁用，测量板向导将在放置测量板后立即移除该区域。",
+            "BasicSave": "若勾选，该豁免检定除去相应后果，还会额外造成基础豁免伤害。",
+            "AppendRollOptions": "勾选时，会在该次掷骰上额外附加半角逗号分隔的掷骰选项。该项目自身的掷骰选项始终包含在内。",
+            "SingleWall": "勾选时，放置测量板后会提示玩家选择该区域的一侧，且仅在该侧放置一面墙体。",
+            "WallDestroyable": "勾选时，会在墙体上生成一个具有构装体特征的隐藏NPC，具有预先配置好的生命值、AC和硬度。当该角色的生命值降至0时，该角色及其关联的墙体将被移除。",
+            "WallDestroyableActorSize": "单个角色代表的墙体长度。例如：10=每10尺墙体放置一个角色，该角色位于10尺墙体的中点位置。",
+            "WallHasStrike": "勾选时，生成的墙体角色会获得配置好的近战攻击打击项目。",
+            "WallStrikeAttack": "支持数字，@路径（例如：@placer.system.attributes.spellDC.value - 10），以及算术公式。",
+            "Duration": "启用时，创建的效果将在设定时间后失效。",
+            "PrivateToGm": "与GM不可见冲突。",
+            "BlindToGm": "与仅限GM冲突。",
+            "Expression": "支持数字，@路径（例如：@actor.level），以及算术公式。可用域：actor，token，region，sourceItem，placer。"
         },
         "SurfaceMode": {
             "Add": "添加",
@@ -390,6 +441,36 @@
         "Keybinding": {
             "ShrinkTemplate": "缩小放置测量板",
             "GrowTemplate": "放大放置测量板"
+        },
+        "WallDir": {
+            "Both": "两侧",
+            "Left": "外侧",
+            "Right": "内侧"
+        },
+        "Duration": {
+            "Enabled": "效果持续时间"
+        },
+        "Tile": {
+            "NoScene": "先打开场景以配置此图块附件。"
+        },
+        "RegionHL": {
+            "CoveredGridSpaces": "覆盖的网格空间",
+            "TrueShapes": "实际形状",
+            "GridIfPlaceable": "可放置的网格"
+        },
+        "RegionVis": {
+            "RegionLayer": "仅在区域层可见",
+            "GamemasterOnly": "始终对GM可见",
+            "Observers": "始终对观察者可见",
+            "AlwaysForAnyone": "始终对所有人可见",
+            "LayerControlled": "分层控制",
+            "RegionLayerUnlocked": "仅当解锁状态下在区域层可见"
+        },
+        "IrwTag": {
+            "Add": "+ 添加…"
+        },
+        "TagPicker": {
+            "Add": "添加…"
         }
     }
 }
