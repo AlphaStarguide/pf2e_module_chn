@@ -353,7 +353,7 @@
         },
         "ConfirmDelete": {
             "Title": "确认删除",
-            "Prompt": "你是否确定要删除模板<strong>{name}</strong>？此操作无法撤销。"
+            "Prompt": "你确定要删除<strong>{name}</strong>？此操作无法撤销。"
         },
         "WallStrikeSuggest": {
             "PlacerSpellAttack": "放置者的法术攻击",
@@ -448,7 +448,7 @@
             "Right": "内侧"
         },
         "Duration": {
-            "Enabled": "效果持续时间"
+            "Enabled": "有限持续时间"
         },
         "Tile": {
             "NoScene": "先打开场景以配置此图块附件。"
