@@ -82,8 +82,8 @@
                 "player-screen": "打开玩家帷幕"
             }
         },
-        "rightClick": "[右键点击]",
-        "leftClick": "[左键点击]",
+        "rightClick": "[右键单击]",
+        "leftClick": "[左键单击]",
         "settings": {
             "menus": {
                 "healthStatusMenu": {
@@ -369,7 +369,7 @@
             },
             "removeEffect": "移除效果",
             "skills": {
-                "alternate": "[右键点击]菜单变体",
+                "alternate": "[右键单击]菜单变体",
                 "hideUntrained": "隐藏未受训",
                 "proficient": "熟练度"
             },
@@ -407,7 +407,7 @@
             },
             "tooltip": {
                 "click": {
-                    "control": "[Ctrl+右键点击]",
+                    "control": "[Ctrl+右键单击]",
                     "middle": "[鼠标中键] 移除快捷坞选项",
                     "popup": "快捷坞弹窗"
                 },
