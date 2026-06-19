@@ -220,7 +220,7 @@
                 },
                 "use-user-avatar": {
                     "name": "使用用户肖像作为备用？",
-                    "hint": "右键点击FVTT左下玩家列表区域的用户名，以配置用户肖像。"
+                    "hint": "右键单击FVTT左下玩家列表区域的用户名，以配置用户肖像。"
                 },
                 "hide-avatar-when-token-hidden": {
                     "hint": "当发言者指示物被隐藏时，隐藏其肖像。",
