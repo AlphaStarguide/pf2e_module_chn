@@ -10,8 +10,8 @@
             "AUTO_DETECT_HINT": "自动检测具有毒素、疾病或诅咒特征的物品，并提示进行初始豁免",
             "AUTO_PROMPT_SAVES_NAME": "自动提示豁免（非战斗状态）",
             "AUTO_PROMPT_SAVES_HINT": "在非战斗状态下随着游戏时间流逝自动提示进行豁免",
-            "STORYFRAME_NAME": "与 Storyframe 模块集成",
-            "STORYFRAME_HINT": "通过 Storyframe 模块发送豁免和反制掷骰",
+            "STORYFRAME_NAME": "集成Storyframe模组",
+            "STORYFRAME_HINT": "通过Storyframe模组发送豁免和反制掷骰",
             "REQUIRE_CONFIRMATION_NAME": "需要确认豁免",
             "REQUIRE_CONFIRMATION_HINT": "在应用豁免结果前需要GM确认（允许消耗英雄点重骰）",
             "ANONYMIZE_SAVES_NAME": "匿名化豁免消息",
@@ -23,14 +23,14 @@
             "USE_TOKEN_TOOLS_BUTTON_NAME": "使用指示物工具栏按钮",
             "USE_TOKEN_TOOLS_BUTTON_HINT": "将苦难管理器按钮从指示物 HUD 移动到指示物工具侧边栏。该按钮仅在选中指示物时显示，当选中的指示物具有激活的苦难时，该按钮会发红光。",
             "EDITED_AFFLICTIONS_STORE_NAME": "已编辑苦难",
-            "EDITED_AFFLICTIONS_STORE_HINT": "存储 GM 编辑过的苦难定义",
+            "EDITED_AFFLICTIONS_STORE_HINT": "存储GM编辑过的苦难定义",
             "COMMUNITY_DATA_VERSION_NAME": "社区数据版本",
             "COMMUNITY_DATA_VERSION_HINT": "上次导入的社区苦难数据版本",
             "PROMPT_COATING_DURATION_NAME": "提示涂层持续时间",
             "PROMPT_COATING_DURATION_HINT": "启用后，将提示GM选择每种武器涂层的持续时间。禁用时，所有涂层的持续时间为无限，直到被消耗。",
             "COATING_DURATION_UNLIMITED": "无限",
-            "COATING_DURATION_START_NEXT_TURN": "下回合开始",
-            "COATING_DURATION_END_NEXT_TURN": "下回合结束",
+            "COATING_DURATION_START_NEXT_TURN": "下个回合开始",
+            "COATING_DURATION_END_NEXT_TURN": "下个回合结束",
             "COATING_DURATION_1_MIN": "1分钟",
             "COATING_DURATION_10_MIN": "10分钟",
             "COATING_DURATION_1_HOUR": "1小时"
@@ -40,8 +40,8 @@
             "NO_AFFLICTIONS": "没有激活的苦难",
             "ADD_AFFLICTION": "添加苦难",
             "REMOVE_AFFLICTION": "移除苦难",
-            "ROLL_SAVE": "进行豁免",
-            "ROLL_DAMAGE": "骰阶段伤害",
+            "ROLL_SAVE": "骰掷豁免",
+            "ROLL_DAMAGE": "骰掷阶段伤害",
             "TREAT": "治疗",
             "CLEAR_ALL": "清除所有苦难",
             "CLEAR_ALL_CONFIRM_TITLE": "清除所有苦难？",
@@ -57,7 +57,7 @@
             "ROUND": "轮",
             "IN_ROUNDS": "{rounds}轮后",
             "NOW": "现在",
-            "MANUAL_HANDLING_REQUIRED": "此阶段需要 GM 手动处理",
+            "MANUAL_HANDLING_REQUIRED": "此阶段需要GM手动处理",
             "REMOVED_AFFLICTION": "已从 {tokenName} 移除苦难",
             "NO_AFFLICTIONS_TO_CLEAR": "没有可清除的苦难",
             "AT_STAGE_ONE": "{tokenName} 已经处于 {afflictionName} 的阶段 1。请使用“移除苦难”进行治愈。",
@@ -80,7 +80,8 @@
             "REMOVED_FROM_TRACKING_EXPIRES": "已将 {afflictionName} 从追踪中移除。效果将在 {value} {unit} 后过期。",
             "REMOVED_FROM_TRACKING_PERSISTS": "已将 {afflictionName} 从追踪中移除。根据 PF2e 规则，效果和状态将继续保留在 {tokenName} 上。",
             "SOURCE_IMMUNITY_RULE_ENABLED": "启用",
-            "MANAGE_WEAPON_COATINGS_TOOLTIP": "管理武器涂层"
+            "MANAGE_WEAPON_COATINGS_TOOLTIP": "管理武器涂层",
+            "SOURCE_IMMUNITY_OPEN_AFFLICTION": "打开苦难详情"
         },
         "DIALOG": {
             "ADD_AFFLICTION_TITLE": "添加苦难",
@@ -93,7 +94,7 @@
             "INITIAL_SAVE_TITLE": "{afflictionName} - 初始豁免",
             "INITIAL_SAVE_CONTENT": "{actorName} 暴露在了 {afflictionName} 中！",
             "SAVE_DC": "DC {dc} 强韧豁免",
-            "ROLL_SAVE": "进行豁免",
+            "ROLL_SAVE": "骰掷豁免",
             "ROLL_LATER": "稍后豁免",
             "STAGE_SAVE_TITLE": "{afflictionName} - 豁免",
             "STAGE_SAVE_CONTENT": "{actorName} 必须对抗 {afflictionName} 进行豁免！",
@@ -215,7 +216,8 @@
             "IMPORTED_COUNT": "已导入 {count} 个苦难",
             "COMMUNITY_IMPORTED": "已导入 {count} 个社区苦难",
             "EDITING_EXISTING": "正在编辑现有的 {name} 自定义设置",
-            "CREATING_NEW": "正在创建新的 {name} 自定义设置"
+            "CREATING_NEW": "正在创建新的 {name} 自定义设置",
+            "APPLIED_TO_TOKEN": "已将{name}应用至{tokenName}。"
         },
         "NOTIFICATIONS": {
             "NO_DC_FOUND": "未在苦难物品 \"{itemName}\" 中找到 DC。",
@@ -264,11 +266,11 @@
             "CRITICAL_FAILURE": "大失败"
         },
         "ERRORS": {
-            "GM_ONLY_MANAGER": "只有 GM 可以访问苦难管理器",
-            "GM_ONLY_EDITED_MANAGER": "只有 GM 可以访问已编辑苦难管理器",
-            "GM_ONLY_EDITOR": "只有 GM 可以编辑苦难定义",
-            "GM_ONLY_MANAGE": "只有 GM 可以管理苦难",
-            "GM_ONLY_DEFINITIONS": "只有 GM 可以管理苦难定义",
+            "GM_ONLY_MANAGER": "只有GM可以访问苦难管理器",
+            "GM_ONLY_EDITED_MANAGER": "只有GM可以访问已编辑苦难管理器",
+            "GM_ONLY_EDITOR": "只有GM可以编辑苦难定义",
+            "GM_ONLY_MANAGE": "只有GM可以管理苦难",
+            "GM_ONLY_DEFINITIONS": "只有GM可以管理苦难定义",
             "INVALID_DRAG_DATA": "无效的拖拽数据",
             "INVALID_IMPORT_FORMAT": "无效的导入文件格式",
             "COULD_NOT_LOAD_ITEM": "无法加载物品",
@@ -560,7 +562,12 @@
             "FAILED_INITIAL_SAVE_STAGE": "初始豁免失败：阶段增加了 {stageIncrease}（现在为阶段 {newStage}）",
             "MAX_DURATION_UNCHANGED": "最大持续时间未改变",
             "MULTIPLE_EXPOSURE_HEADING": "{afflictionName} - 多次暴露",
-            "STAGE_INCREASED_BY": "阶段增加了 {stageIncrease}（现在为阶段 {newStage}）"
+            "STAGE_INCREASED_BY": "阶段增加了 {stageIncrease}（现在为阶段 {newStage}）",
+            "PERNICIOUS_POISON_HEADING": "{afflictionName} - 恶性毒素",
+            "PERNICIOUS_POISON_NOTE": "成功抵抗该毒素，但仍受到溅射毒素伤害（恶性毒素）",
+            "ONSET_EFFECT_INTERVAL_HEADING": "{afflictionName} - 潜伏期效果",
+            "APPLY_AFFLICTION_BTN": "将苦难应用至目标",
+            "APPLY_AFFLICTION_NO_TARGET": "在应用苦难前，先选择目标指示物。"
         }
     }
 }
