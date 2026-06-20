@@ -68,7 +68,7 @@
                 "addOneForCharacters": "为玩家角色和魔宠增加1",
                 "addWoundedLevel": "为所有人增加1+受伤状态值",
                 "addWoundedLevelForCharacters": "为玩家角色和魔宠增加1+受伤状态值",
-                "hint": "是否在0点生命值时自动增加濒死状态值。",
+                "hint": "是否在0点生命值时自动增加濒死状态值。激活时，将显示额外设置。",
                 "name": "在0点生命值时自动增加濒死状态值。",
                 "orcFerocityMessage": "{name}刚刚使用了@UUID[Compendium.pf2e.feats-srd.PlhPpdwIV0rIAJ8K]，现在可以使用自由动作：@UUID[Compendium.pf2e.actionspf2e.FkfWKq9jhhPzKAbb]",
                 "no": "否",
@@ -206,7 +206,7 @@
                 "name": "设置谁可以在命中时自动掷伤害骰。",
                 "players": "玩家",
                 "none": "无",
-                "hint": "设置谁可以在命中时自动掷伤害骰。保存设置以显示/隐藏客户端自动化设置菜单上的其他选项。"
+                "hint": "设置谁可以在命中时自动掷伤害骰。激活时，将显示额外设置。"
             },
             "autoReduceStunned": {
                 "hint": "在回合开始时自动减少震慑状态值（客户端设置）。",
@@ -249,7 +249,7 @@
                 "hint": "当已骰掷法术攻击检定，但无法找到可掷伤害骰的法术卡片时如何通知（客户端设置）。"
             },
             "castPrivateSpell": {
-                "hint": "勾选此项后，使用Ctrl+单击施法时会私聊施法者和GM法术信息。",
+                "hint": "勾选此项后，使用Ctrl+单击施法时会私聊施法者和GM法术信息。激活时，将显示额外设置。",
                 "name": "Ctrl+单击秘密施法。",
                 "aSpell": "法术"
             },
@@ -260,7 +260,7 @@
                 "savePart": "<br>该未知法术的豁免为：@Check[type:{dataSave}|dc:{dataDC}|traits:{traits}]",
                 "they": "他们",
                 "firstPart": "{tokenName}刚刚施放了<strong>{traditionString}</strong>根源中带有{type}特征的法术。<p data-visibility=\"gm\">（@UUID[{spellUUID}]）</p>",
-                "hint": "秘密施法时，此设置还会发布一条公开消息表明有法术被施放，除非您在施法时同时按住SHIFT和CTRL。",
+                "hint": "秘密施法时，此设置还会发布一条公开消息表明有法术被施放，除非您在施法时同时按住SHIFT和CTRL。激活时，将显示额外设置。",
                 "secondPartNoRk": ".<br>你可以尝试使用@UUID[Compendium.pf2e.feats-srd.MjQyTcV8Jiv1Jtln]或@UUID[Compendium.pf2e.feats-srd.2rSyTfPgAmNAo01r]来辨识法术。或者在你的回合中用一个动作来辨识它（更多细节请咨询你的GM）。",
                 "secondPartRK": ".<br>你可以尝试使用@UUID[Compendium.pf2e.feats-srd.MjQyTcV8Jiv1Jtln]或@UUID[Compendium.pf2e.feats-srd.2rSyTfPgAmNAo01r]来辨识该法术。或者在你的回合中用一个动作使用@Check[type:{skill}|dc:{dcRK}|traits:secret,action:recall-knowledge]的@UUID[Compendium.pf2e.actionspf2e.Item.1OagaWtBpVXExToo]（或花费10分钟使用@Check[type:{skill}|dc:{dcRK}|traits:secret,action:identify-magic]的@UUID[Compendium.pf2e.actionspf2e.Item.eReSHVEPCsdkSL4G]）来辨识它",
                 "basic": "基础",
@@ -268,7 +268,7 @@
                 "knownBy": "<div><p><b>知晓成员： </b>{spellHavers}</p></div><hr class=\"item-block-divider\">"
             },
             "castPrivateSpellWithPublicMessageShowTraits": {
-                "hint": "在公开消息中显示法术特征。",
+                "hint": "在公开消息中显示法术特征。激活时，将显示额外设置。",
                 "name": "…并且在公开消息中显示法术特征。",
                 "traitPart": " 具有以下特征：<strong>{traits}</strong>"
             },
@@ -457,7 +457,7 @@
                 "none": "无",
                 "name": "选择谁可以设置是否在点击角色卡中的复苏按钮后自动进行濒死复苏检定。",
                 "players": "玩家",
-                "hint": "选择谁可以设置是否在拥有者点击角色卡中的复苏按钮后自动进行濒死复苏检定。保存设置以显示/隐藏其他客户端自动化设置选项。"
+                "hint": "选择谁可以设置是否在拥有者点击角色卡中的复苏按钮后自动进行濒死复苏检定。激活时，将显示额外设置。"
             },
             "applyPersistentDamageRecoveryRoll": {
                 "hint": "…并在那之后自动骰恢复检定。需要先启用上面的设置。",
@@ -572,7 +572,7 @@
                 "name": "神秘化图标"
             },
             "sheatheHeldItemsAfterEncounter": {
-                "hint": "角色在遭遇结束后自动将持握武器收起。",
+                "hint": "角色在遭遇结束后自动将持握武器收起。激活时，将显示额外设置。",
                 "name": "角色在遭遇结束后自动将持握武器收起。",
                 "message": "{name}收起：{items}"
             },
@@ -696,7 +696,7 @@
                 "name": "画布指示标绑定键"
             },
             "canvasPointerPingMode": {
-                "hint": "当你在指示标激活时点击画布会发生什么。",
+                "hint": "当你在指示标激活时点击画布会发生什么。激活时，将显示额外设置。",
                 "name": "高亮信号模式",
                 "none": "无高亮信号",
                 "visual": "视觉高亮信号",
