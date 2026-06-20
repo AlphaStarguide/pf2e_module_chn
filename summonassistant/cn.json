@@ -47,6 +47,10 @@
                     "thaumaturge": {
                         "name": "处理奇术师镜奇具",
                         "hint": "特别处理奇术师的镜奇具特性"
+                    },
+                    "bilocation": {
+                        "name": "处理二重身法术",
+                        "hint": "为玩家角色处理二重身法术（例如：克隆+效果移除时删除克隆指示物）"
                     }
                 }
             },
@@ -61,7 +65,7 @@
             "reminder": {
                 "message": {
                     "name": "[提醒] 接收参战者仆从的提醒信息",
-                    "hint": "允许在参战者的每回合开始时，接收其仆从的私密提醒信息"
+                    "hint": "允许在参战者的每回合开始时，接收其仆从的私人提醒信息"
                 }
             },
             "automation": {
@@ -95,8 +99,11 @@
             "active-minions": "<b>{summonerName}</b>当前控制的<u data-tooltip=\"{minionTooltip}\">仆从</u>",
             "thaumaturge": {
                 "mirror-implement": {
-                    "error": "[错误] 你未在该场景中激活自身镜像克隆"
+                    "error": "[错误] 你未在当前场景中激活自身镜像克隆"
                 }
+            },
+            "bilocation": {
+                "error": "[错误] 你未在当前场景中激活二重身克隆"
             }
         },
         "dialog": {
@@ -132,6 +139,9 @@
                     "adept-action": "你使自身镜像碎裂！选择不会碎裂的那个指示物"
                 },
                 "choose": "保留所选指示物"
+            },
+            "bilocation": {
+                "title": "选择要保留的二重身克隆指示物"
             }
         },
         "display-text": {
