@@ -90,8 +90,8 @@
                 "name": "主题设置",
                 "label": "配置主题设置",
                 "application-theme": {
-                    "name": "进程主题",
-                    "hint": "受“核心设置 → 用户界面配置 → 进程主题”配色方案影响。",
+                    "name": "应用程序主题",
+                    "hint": "受“核心设置 → 用户界面配置 → 应用程序主题”配色方案影响。",
                     "choice": {
                         "no-theme": "无主题",
                         "light-theme": "CRB主题（明亮）",
@@ -163,7 +163,8 @@
                     "name": "圆润度"
                 },
                 "interface-theme": {
-                    "name": "界面主题"
+                    "name": "界面主题",
+                    "hint": "受“核心设置 → 用户界面配置 → 界面主题”配色方案影响。"
                 },
                 "chat-message-standard-theme": {
                     "name": "聊天消息主题（标准）",
@@ -180,7 +181,8 @@
                 "sheet-theme-color": {
                     "hint": "应用于玩家角色卡与载具卡。",
                     "name": "角色卡主题颜色"
-                }
+                },
+                "hint": "更改各种应用程序和UI元素的主题设置。"
             },
             "avatar": {
                 "name": "肖像设置",
@@ -199,8 +201,8 @@
                     "hint": "说话者的指示物为不可见时，隐藏聊天消息中的头像"
                 },
                 "hide-gm-avatar-when-secret": {
-                    "hint": "GM进行暗骰/私密掷骰时，在聊天隐藏肖像。",
-                    "name": "暗骰时隐藏肖像？"
+                    "hint": "GM进行秘密掷骰/私人掷骰时，在聊天隐藏肖像。",
+                    "name": "秘密掷骰时隐藏肖像？"
                 },
                 "size": {
                     "name": "尺寸",
@@ -229,9 +231,15 @@
                 "avatar-source": {
                     "choice": {
                         "actor": "首选角色图像",
-                        "token": "首选指示物图像"
+                        "token": "首选指示物图像",
+                        "system": "系统实现（回退）"
                     },
-                    "name": "聊天肖像"
+                    "name": "聊天肖像",
+                    "hint": "在聊天消息中添加肖像。"
+                },
+                "avatar-reacts-to-degree-of-success": {
+                    "hint": "大成功会发出绿色光芒，而大失败会变得黯淡无光。",
+                    "name": "肖像会对大成功/大失败掷骰做出反应吗？"
                 }
             },
             "misc": {
@@ -240,7 +248,7 @@
                 "hint": "配置与Dorako UI功能相关的其他设置。",
                 "enable-debug-mode": {
                     "name": "启用调试模式？",
-                    "hint": "在窗口添加是否启用Dorako UI及黑暗主题的按钮"
+                    "hint": "添加快速切换主题的按钮"
                 },
                 "send-to-chat": {
                     "name": "在窗口标题处添加“发送”按钮？",
@@ -253,8 +261,8 @@
             },
             "customization": {
                 "excluded-applications": {
-                    "name": "除去应用",
-                    "hint": "检查应用的logs，或到Discord询问"
+                    "name": "不使用主题的应用程序",
+                    "hint": "在控制台日志中查找应用程序的名称，或在Discord上询问。"
                 },
                 "custom-css": {
                     "name": "自定义CSS",
@@ -281,7 +289,7 @@
             }
         },
         "text": {
-            "self-roll": "私密掷骰",
+            "self-roll": "自骰",
             "gm-only": "仅GM",
             "whisper": "私聊",
             "from": "来自",
