@@ -291,7 +291,7 @@
                 "background": "背景颜色",
                 "enabled": "启用背景颜色"
             },
-            "contain": "填充头像框",
+            "contain": "填充肖像框",
             "reset": "重置",
             "save": "保存",
             "src": {
