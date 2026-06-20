@@ -28,6 +28,12 @@
                     "hint": "Key held while clicking on the scene to teleport all selected tokens. Also unselect the tokens when pressing the keybind to give an unobstructed vision over the whole scene."
                 }
             },
+            "betterTool": {
+                "removeRegion": {
+                    "name": "Remove Region",
+                    "hint": "Delete the first region found under your cursor."
+                }
+            },
             "droppeth": {
                 "droppeth": {
                     "name": "Droppeth Modifier",
@@ -237,6 +243,9 @@
                     "hint": "Adds sorting buttons to different lists on the actor sheet."
                 }
             },
+            "betterTool": {
+                "title": "Better Tool"
+            },
             "betterTrade": {
                 "title": "Better Trade",
                 "invertTrade": {
@@ -438,6 +447,7 @@
                 "max": "Max Uses",
                 "predicate": "Predicate",
                 "rank": "Rank",
+                "recharge": "Recharge on daily rest?",
                 "statistic": "Statistic",
                 "title": "Generate 'Item Cast' Rules from Description",
                 "tradition": "Tradition"
