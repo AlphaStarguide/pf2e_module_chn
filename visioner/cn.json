@@ -22,7 +22,8 @@
             "undetected": "无踪",
             "concealed": "隐蔽",
             "avs": "自动能见度",
-            "unnoticed": "未发现"
+            "unnoticed": "未发现",
+            "observed_concealed": "可见 + 隐蔽"
         },
         "COVER_STATES": {
             "none": "无掩蔽",
@@ -165,7 +166,9 @@
             "SENSE_UNSEEN_APPLIED": "已应用察觉未见",
             "LIFESENSE_TOOLTIP": "你能感知到范围内的活物与不死生物（模糊感官）",
             "TEMPLATE_OUT_OF_RANGE": "搜索测量板中心距角色{distance}尺远，超出了至多{max}尺的放置距离限制。",
-            "SEARCH_EXPLORATION_ROLL": "搜寻探索行动：搜索（秘密检定）"
+            "SEARCH_EXPLORATION_ROLL": "搜寻探索行动：搜索（秘密检定）",
+            "INVISIBLE_CAP_LABEL": "隐形",
+            "INVISIBLE_CAP_TOOLTIP": "目标是隐形的。视觉搜索可以找到它的位置，但无法使其变为可见；需要使用非视觉的精确感官来观察它。"
         },
         "HIDE_AUTOMATION": {
             "BUTTON_APPLY": "应用躲藏结果",
@@ -578,6 +581,22 @@
             "SEEK_TEMPLATE_MAX_PLACEMENT_DISTANCE": {
                 "name": "搜索测量板最大放置距离",
                 "hint": "从执行搜索动作的指示物到放置的搜索测量板中心的最大距离（以尺为单位）。若设置为0，则不限放置距离。"
+            },
+            "PEEK_SLIT_ANGLE": {
+                "name": "窥视孔角度（度）",
+                "hint": "窥孔锥形视野的的宽度（以度为单位）。"
+            },
+            "PEEK_SWEEP_ANGLE": {
+                "name": "窥视扫掠角（度）",
+                "hint": "窥视孔从起始方向可以向左或向右偏转的角度，以度为单位。"
+            },
+            "PEEK_RANGE": {
+                "name": "窥视距离（尺）",
+                "hint": "窥视视觉线的最大长度，以尺为单位。0 = 无限。"
+            },
+            "CORNER_PEEK_ENABLED": {
+                "name": "启用角落窥视",
+                "hint": "允许指示物在长按窥视绑定键时，在角落处进行窥视。每扇门独立在墙体配置中控制窥视功能。"
             }
         },
         "UI": {
@@ -886,6 +905,10 @@
             "OPEN_HAZARD_LOOT_MANAGER": {
                 "name": "打开危害/战利品管理器",
                 "hint": "打开模组的危害/战利品管理器对话框，以便批量编辑场景内战利品与危害的能见度。"
+            },
+            "HOLD_PEEK": {
+                "name": "开关窥视（角落）",
+                "hint": "按键以开始在最近的拐角处朝光标方向，以定向锥形视野进行窥视；再次按键则停止。该锥形视野在激活期间会跟随光标移动。"
             }
         },
         "REGION_BEHAVIOR": {
@@ -1483,6 +1506,13 @@
             "SOUND_LABEL": "层级地面与声音",
             "SIGHT_HINT": "选择该层级边界是采用原生V14视线碰撞，始终阻挡视线还是从不阻挡视线的模式。",
             "SOUND_HINT": "选择该层级边界是采用原生V14声音碰撞，始终阻挡声音还是从不阻挡声音的模式。"
+        },
+        "PEEK": {
+            "CHECK_LABEL": "透过门窥视",
+            "DC_FIELD_LABEL": "窥视DC",
+            "ALLOW_FIELD_LABEL": "允许窥视",
+            "NOT_ALLOWED": "禁止透过这扇门进行窥视。",
+            "TOO_FAR": "你离门太远，以至于无法透过其进行窥视。"
         }
     }
 }
