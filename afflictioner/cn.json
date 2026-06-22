@@ -33,7 +33,8 @@
             "COATING_DURATION_END_NEXT_TURN": "下个回合结束",
             "COATING_DURATION_1_MIN": "1分钟",
             "COATING_DURATION_10_MIN": "10分钟",
-            "COATING_DURATION_1_HOUR": "1小时"
+            "COATING_DURATION_1_HOUR": "1小时",
+            "ALLOW_PLAYER_WEAPON_COATING_ACCESS_NAME": "允许玩家使用武器涂层标签页"
         },
         "MANAGER": {
             "TITLE": "苦难管理器",
@@ -257,7 +258,8 @@
             "BLOWGUN_POISONER_APPLIED": "吹箭投毒者：{targetName} 对 {afflictionName} 的初始豁免被降低一个等级。",
             "BLOWGUN_POISONER_DEGRADED_TOOLTIP": "吹箭投毒者：豁免结果视为 {to}（实际骰出 {from}）",
             "FAST_RECOVERY_STAGE_CHANGE": "快速恢复：{tokenName} 的豁免使 {afflictionName} 减少了 {stages} 个阶段。",
-            "FAST_RECOVERY_BUTTON_TOOLTIP": "快速恢复：阶段将减少 {stages} 级"
+            "FAST_RECOVERY_BUTTON_TOOLTIP": "快速恢复：阶段将减少 {stages} 级",
+            "STICKY_POISON_TITLE": "黏着毒素"
         },
         "DEGREES": {
             "CRITICAL_SUCCESS": "大成功",
@@ -405,7 +407,11 @@
             "INJECTION_NO_TARGET": "{actorName} hit with {weaponName}, but no target was found for the loaded injection.",
             "INJECTION_NO_TARGET_HINT": "Target a token, then apply the loaded affliction manually if the injection action is used.",
             "INJECTION_EFFECT_NAME": "Loaded Injection: {poisonName} ({weaponName})",
-            "INJECTION_EFFECT_DESCRIPTION": "{weaponName} is loaded with {poisonName} for the injection trait."
+            "INJECTION_EFFECT_DESCRIPTION": "{weaponName} is loaded with {poisonName} for the injection trait.",
+            "TOOLTIP_DOUBLE_STAGE": "阶段{number}：",
+            "TOOLTIP_DOUBLE_COMPONENT": "{poisonName}：{effects}",
+            "DOUBLE_POISON_TOGGLE": "双重毒素",
+            "DOUBLE_POISON_SAVE_TITLE": "双重毒素豁免"
         },
         "VISHKANYA": {
             "DEBILITATION_TITLE": "选择衰弱效果",
@@ -520,8 +526,8 @@
             "FORTITUDE_DC_PARENS": "(DC {dc})",
             "ROLL_FORTITUDE_SAVE": "进行{saveType}豁免",
             "INITIAL_SAVE_HEADING": "{afflictionName} - 初始豁免",
-            "IMMUNITY_HEADING": "Affliction Immunity",
-            "IMMUNITY_NOTICE": "{tokenName} is immune to {afflictionName} ({type}).",
+            "IMMUNITY_HEADING": "苦难免疫",
+            "IMMUNITY_NOTICE": "{tokenName}免疫于{afflictionName}（{type}）。",
             "MAKE_FORTITUDE_RESIST": "进行一次{saveType}豁免以抵抗该苦难",
             "MUST_MAKE_FORTITUDE": "必须进行一次{saveType}豁免",
             "CURRENT_STAGE_LABEL": "当前阶段：",
@@ -567,7 +573,8 @@
             "PERNICIOUS_POISON_NOTE": "成功抵抗该毒素，但仍受到溅射毒素伤害（恶性毒素）",
             "ONSET_EFFECT_INTERVAL_HEADING": "{afflictionName} - 潜伏期效果",
             "APPLY_AFFLICTION_BTN": "将苦难应用至目标",
-            "APPLY_AFFLICTION_NO_TARGET": "在应用苦难前，先选择目标指示物。"
+            "APPLY_AFFLICTION_NO_TARGET": "在应用苦难前，先选择目标指示物。",
+            "UNKNOWN_SOURCE": "未知来源"
         }
     }
 }
