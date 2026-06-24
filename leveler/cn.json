@@ -286,7 +286,9 @@
                 "BULK_FREE_ARCHETYPE_EXCLUSIVE": "免费变体专用",
                 "BULK_CLEAR_FREE_ARCHETYPE_EXCLUSIVE": "清空免费变体专用",
                 "DEFAULT_POLICY": "未标记项目",
-                "BADGE_EXCLUSIVE_REQUIRED": "不在专用列表中"
+                "BADGE_EXCLUSIVE_REQUIRED": "不在专用列表中",
+                "BULK_ARCHETYPE_ONLY_NO_PREREQS": "不具备先决条件的变体专长",
+                "BULK_SPECIAL": "批量筛选标记"
             },
             "STARTING_WEALTH": {
                 "DISABLED": "禁用",
