@@ -207,6 +207,41 @@
                     "name": "[更换] 暂停文本",
                     "hint": "允许你替换默认的暂停文本。该功能支持多条暂停文本随机切换，每条文本用“|”或“;”隔开即可。（若该设置为空则为原始的暂停文本）（且该功能支持填入随机表UUID随机抽取选项）"
                 }
+            },
+            "headers": {
+                "colorize": {
+                    "title": "上色"
+                },
+                "display": {
+                    "title": "显示"
+                },
+                "hide": {
+                    "title": "隐藏"
+                },
+                "highlight": {
+                    "title": "高亮"
+                },
+                "hotkey": {
+                    "title": "绑定键"
+                },
+                "notify": {
+                    "title": "通知"
+                },
+                "track": {
+                    "title": "追踪"
+                },
+                "replace": {
+                    "title": "更换"
+                },
+                "minify": {
+                    "title": "简化"
+                }
+            },
+            "hotkey": {
+                "choices": {
+                    "gm": "仅限GM",
+                    "off": "禁用"
+                }
             }
         },
         "notification": {
