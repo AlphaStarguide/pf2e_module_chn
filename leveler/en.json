@@ -59,6 +59,15 @@
       "LOCKED_FILTER_HINT": "This filter is locked for this picker and cannot be changed.",
       "PUBLICATIONS": "Publications",
       "SEARCH_PUBLICATIONS": "Search publications...",
+      "FILTER_OPTIONS": "Options",
+      "REMASTER_ONLY": "Remaster only",
+      "HIDE_GUNS_TECH": "Hide guns & tech",
+      "GUIDANCE_FILTER": "Guidance",
+      "PUB_GROUP_AP": "Adventure Paths",
+      "PUB_GROUP_AP_GUIDE": "AP Player's Guides",
+      "PUB_GROUP_STANDALONE": "Stand-Alone Adventures",
+      "PUB_GROUP_BLOG": "Blogs",
+      "PUB_GROUP_LOST_OMENS": "Lost Omens",
       "NOT_SELECTED": "Not selected",
       "BROWSE": "Browse...",
       "ADD": "Add",
@@ -530,6 +539,14 @@
         "NAME": "Enforce Subclass Dedication Requirement",
         "HINT": "When enabled, subclass or class-archetype text such as 'You must select X Dedication as your 2nd-level class feat' restricts the level 2 class feat picker and validation to that dedication."
       },
+      "ENABLE_REVIEW_REQUESTS": {
+        "NAME": "Enable player review requests",
+        "HINT": "Adds a \"Request GM review\" button for non-GM players in the Level Planner and Character Creation, letting them send you their build for review. Requests appear in the Player Review Requests panel. Off by default."
+      },
+      "REQUIRE_REVIEW_APPROVAL": {
+        "NAME": "Require GM approval before applying",
+        "HINT": "When on, non-GM players must get a review request approved (Resolved) before they can apply a level-up or finish Character Creation for a character. Approval stays valid until you Reopen or Dismiss the request. Requires the review-request workflow; the request button appears even if 'Enable player review requests' is off. Off by default."
+      },
       "HIDE_UNCOMMON": {
         "NAME": "Hide Uncommon Feats",
         "HINT": "Hide uncommon and rarer feats from the feat picker by default"
@@ -669,10 +686,14 @@
         "BADGE_EXCLUSIVE_REQUIRED": "Not in the exclusive list",
         "BADGE_NOT_RECOMMENDED": "Not Recommended",
         "BADGE_DISALLOWED": "Disallowed",
+        "DISALLOWED_ITEM_REASON": "Marked unavailable by the GM",
+        "DISALLOWED_SOURCE_REASON": "Unavailable: its source ({source}) is disallowed by the GM",
         "GM_OVERRIDE_ALLOWED": "Allowed because you are a GM",
+        "OPEN_SETTINGS": "Open Content Guidance settings",
         "BADGE_INHERITED": "Inherited",
         "BULK_SPECIAL": "Bulk Filters",
         "BULK_RARITY": "Bulk by Rarity",
+        "BULK_GROUP": "Bulk by Group",
         "BULK_ARCHETYPE_ONLY_NO_PREREQS": "Archetype-only feats with no prerequisites",
         "BULK_ALLOWED": "Allow",
         "BULK_RECOMMENDED": "Suggest",
@@ -687,7 +708,59 @@
         "COUNT": "{count} marked",
         "SOURCES": "Sources",
         "MATCHED_COUNT": "{count} items"
+      },
+      "PUBLICATION_FILTER_VISIBILITY": {
+        "NAME": "Disallowed sources in filters",
+        "HINT": "Controls whether sources you have marked Disallowed in Content Guidance still appear in the publication filter lists. Items from disallowed sources are filtered out regardless; this only affects the filter list itself.",
+        "SHOW": "Show in filter lists",
+        "HIDE": "Hide from filter lists",
+        "HIDE_NON_GM": "Hide for players only"
       }
+    },
+    "REVIEW_REQUEST": {
+      "SENT": "Review request sent to the GM.",
+      "RECEIVED": "{name} requested GM review of {item}.",
+      "BUTTON": "Request GM review",
+      "DIALOG_TITLE": "Request GM Review",
+      "DIALOG_PROMPT": "Ask the GM to review \"{item}\". Add an optional note (reasoning, backstory, etc.):",
+      "SUBMIT": "Send request",
+      "PANEL_TITLE": "Review Requests",
+      "MENU_NAME": "Player Review Requests",
+      "MENU_LABEL": "Open Review Requests",
+      "MENU_HINT": "Review item/feat/spell requests your players have sent for approval.",
+      "EMPTY": "No review requests yet.",
+      "INTRO": "Requests your players have sent for GM review. Marking a request resolved or dismissed is informational only — nothing is auto-applied.",
+      "STATUS_PENDING": "Pending",
+      "STATUS_RESOLVED": "Resolved",
+      "STATUS_DISMISSED": "Dismissed",
+      "ACTION_RESOLVE": "Resolve",
+      "ACTION_DISMISS": "Dismiss",
+      "ACTION_REOPEN": "Reopen",
+      "ACTION_DELETE": "Delete request",
+      "REQUESTED_BY": "Requested by {name}",
+      "FOR_CHARACTER": "Character: {actor}",
+      "APPROVAL_REQUIRED": "Your GM must approve a review request for this character before you can apply. Use \"Request GM review\" first."
+    },
+    "PLAN_COMMENTS": {
+      "TITLE": "Comments",
+      "EMPTY": "No comments yet.",
+      "COMPOSER_PLACEHOLDER": "Write a comment…",
+      "REPLY_PLACEHOLDER": "Reply…",
+      "POST": "Post",
+      "RESOLVE": "Resolve",
+      "REOPEN": "Reopen",
+      "RESOLVED_BADGE": "Resolved",
+      "DELETE": "Delete comment",
+      "DROP_HINT": "Drag an item, spell, or feat here to attach it",
+      "PASTE_HINT": "…or paste an item UUID / @UUID link, then Enter",
+      "ATTACH_INVALID": "Couldn't find an item for that UUID.",
+      "ATTACH_REMOVE": "Remove attachment",
+      "READ_ONLY": "You can view comments but not post on this character.",
+      "MARKER_TOOLTIP": "Comments",
+      "AWAITING_TOOLTIP": "Awaiting your reply",
+      "CLOSE": "Close",
+      "NOTIFY": "{author} commented on \"{part}\"",
+      "BADGE_AWAITING": "{count} comment thread(s) awaiting your reply"
     }
   }
 }
