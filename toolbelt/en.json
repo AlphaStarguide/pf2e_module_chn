@@ -375,6 +375,10 @@
                     "name": "Enabled",
                     "hint": "Enable the 'Target Helper' feature in your world."
                 },
+                "expend": {
+                    "name": "Expend Ammo Button",
+                    "hint": "Add a button in area related messages to expend ammunitions/grenades."
+                },
                 "small": {
                     "name": "Small Damage Buttons",
                     "hint": "Reduce the size of damage buttons for the extra targets."
@@ -1137,6 +1141,21 @@
                 "added": "You have successfully added a save to the message.",
                 "already": "This message already has a save check linked to it.",
                 "unauth": "You can only do that on messages you are the author of."
+            },
+            "expend-ammo": {
+                "expend": {
+                    "ammo": "Expend {expend} ammo(s)",
+                    "grenade": "Expend the grenade"
+                },
+                "expended": {
+                    "ammo": "{nb} ammo(s) have been expended",
+                    "grenade": "Grenade has been expended"
+                },
+                "warning": {
+                    "ammo": "Not enough ammo loaded in your weapon",
+                    "error": "Couldn't recpover any valid ammo to expend",
+                    "grenade": "You are out of grenade to throw"
+                }
             },
             "header": {
                 "hidden": "Hidden From Players",
