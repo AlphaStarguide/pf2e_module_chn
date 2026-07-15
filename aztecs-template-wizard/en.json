@@ -1,476 +1,644 @@
 {
-    "PF2EATW": {
-        "TabLabel": "Templates",
-        "AutomationEnabled": "Enable automation",
-        "Label": "Label",
-        "Attachable": "Attachable",
-        "AttachableHint": "On placement, prompt to attach this region to an adjacent or contained token.",
-        "Contiguous": "Contiguous",
-        "ContiguousHint": "Place this template multiple times in sequence, then merge the placed shapes into one automated region.",
-        "Expiration": "Expiration",
-        "ExpirationEnabled": "Region expires after",
-        "Advanced": "Advanced",
-        "AdvancedEnabled": "Override region appearance",
-        "Behaviors": "Region Behaviours",
-        "AddBehavior": "Add behaviour",
-        "RemoveBehavior": "Remove behaviour",
-        "ToggleCollapse": "Expand / collapse",
-        "Enabled": "Enabled",
-        "Unit": {
-            "Seconds": "Seconds",
-            "Rounds": "Rounds",
-            "Minutes": "Minutes",
-            "Hours": "Hours",
-            "Days": "Days",
-            "Unlimited": "Unlimited"
-        },
-        "Behavior": {
-            "AdjustDarknessLevel": "Adjust Darkness Level",
-            "ModifyMovementCost": "Difficult Terrain",
-            "Environment": "Environment",
-            "EnvironmentFeature": "Environment Feature",
-            "ApplyActiveEffect": "Apply Active Effect",
-            "RemoveEffect": "Remove Effect",
-            "AddCondition": "Apply Condition",
-            "RemoveCondition": "Remove Condition",
-            "ApplyRuleElement": "Apply Rule Element",
-            "DealDamage": "Deal Damage",
-            "RollDice": "Roll Dice",
-            "SavingThrow": "Saving Throw",
-            "RollSkill": "Roll Skill",
-            "ChoiceSet": "Choice Set",
-            "SendChatMessage": "Send Chat Message",
-            "AddIRW": "Add Immunity / Resistance / Weakness",
-            "AttachTile": "Attach Tile",
-            "AttachSound": "Attach Sound",
-            "AttachLight": "Attach Light Source",
-            "AttachWalls": "Attach Walls",
-            "PlaySound": "Play Sound",
-            "DisplayScrollingText": "Display Scrolling Text",
-            "ExecuteScript": "Execute Script",
-            "ExecuteMacro": "Execute Macro"
-        },
-        "Field": {
-            "DarknessMode": "Mode",
-            "DarknessModifier": "Darkness",
-            "TerrainPreset": "Terrain",
-            "CustomCost": "Movement cost multiplier",
-            "AffectedActions": "Affected movement actions",
-            "AddMovementAction": "Add movement action…",
-            "EnvironmentTypes": "Environment",
-            "EnvironmentTypesHint": "One or more environment types for this scene region.",
-            "AddEnvironmentType": "Add environment type…",
-            "SurfaceMode": "Mode",
-            "DifficultTerrain": "Difficult Terrain",
-            "Condition": "Condition",
-            "Damages": "Damage entries",
-            "AddDamage": "Add damage",
-            "Dice": "Dice",
-            "Consequences": "Consequences",
-            "AddConsequence": "Add consequence",
-            "RuleElements": "Rule Elements",
-            "ChatMessageText": "Chat message text",
-            "ChatMessageDynamicVariables": "Dynamic variables: @actor.name, @token.name, @target.name, @targetToken.name, @sourceItem.name, @placer.name, @region.name",
-            "ChatMessagePlaceholder": "Hello @actor.name! You stepped on the region.",
-            "SaveType": "Save",
-            "SkillType": "Skill",
-            "LoreName": "Lore name",
-            "LoreNamePlaceholder": "e.g. Engineering Lore",
-            "Choices": "Choices",
-            "DC": "DC",
-            "Duration": "Duration",
-            "PrivateToGm": "Private to Gamemasters",
-            "BlindToGm": "Blind to Gamemasters",
-            "BasicSave": "Basic Saving Throw",
-            "BasicSaveDamages": "Basic save damage",
-            "AppendRollOptions": "Append extra roll options",
-            "RollOptionsExtra": "Extra roll options",
-            "RollOptionsExtraPlaceholder": "e.g. feat:fireball, trait:elemental",
-            "SoundRadiusBoost": "Sound radius boost",
-            "IRWType": "Kind",
-            "IRWValue": "Value",
-            "DamageType": "Damage type",
-            "WallMove": "Movement",
-            "WallLight": "Light & Darkness",
-            "WallSight": "Sight",
-            "WallSound": "Sound",
-            "WallDir": "Restriction Direction",
-            "SingleWall": "Single wall",
-            "WallDestroyable": "Destructible",
-            "WallDestroyableHP": "Wall HP",
-            "WallDestroyableAC": "Wall AC",
-            "WallDestroyableHardness": "Hardness",
-            "WallDestroyableActorSize": "Feet per actor",
-            "WallImmunities": "Immunities",
-            "WallResistances": "Resistances",
-            "WallWeaknesses": "Weaknesses",
-            "AddImmunity": "+ Add immunity…",
-            "AddResistance": "+ Add resistance…",
-            "AddWeakness": "+ Add weakness…",
-            "WallHasStrike": "Add a Strike attack",
-            "WallStrikeName": "Strike name",
-            "WallStrikeNamePlaceholder": " ",
-            "WallStrikeAttack": "Attack modifier",
-            "WallStrikeDamages": "Strike damage",
-            "TileEditor": "Tile",
-            "ConfigureTile": "Configure tile",
-            "ReconfigureTile": "Reconfigure tile",
-            "AddTile": "Add tile",
-            "TileShape": "Region shape",
-            "TileShapeAny": "Any shape",
-            "TileScale": "Tile scale",
-            "TilePreserveAspectRatio": "Preserve tile aspect ratio",
-            "SoundEditor": "Sound",
-            "ConfigureSound": "Configure sound",
-            "ReconfigureSound": "Reconfigure sound",
-            "LightEditor": "Light",
-            "ConfigureLight": "Configure light",
-            "ReconfigureLight": "Reconfigure light",
-            "SoundFile": "Sound file",
-            "Volume": "Volume",
-            "BrowseFiles": "Browse files",
-            "EffectUuid": "Active Effect UUID",
-            "ApplyToEveryone": "Apply to every token, not just owners",
-            "ScrollingText": "Text",
-            "Color": "Color",
-            "FontSize": "Font size",
-            "Source": "Script source",
-            "MacroUuid": "Macro UUID",
-            "IgnoredBy": "Ignored by",
-            "IgnoredByHint": "Actors with any of these items / effects / feats on them ignore this behaviour.",
-            "Triggers": "Triggers",
-            "AddTrigger": "Add trigger…",
-            "Target": "Targets",
-            "AddTarget": "Add target…",
-            "RollOptions": "Must have roll options",
-            "RollOptionsHint": "Comma-separated. Tokens whose actor lacks any of these roll options won't trigger the behaviour.",
-            "RollOptionsPlaceholder": "e.g. self:trait:dwarf, self:condition:frightened",
-            "RollOptionsExclude": "Must not have roll options",
-            "RollOptionsExcludeHint": "Comma-separated. Tokens whose actor has any of these roll options won't trigger the behaviour.",
-            "RollOptionsExcludePlaceholder": "e.g. self:condition:flying, self:effect:ignore-terrain",
-            "TargetHint": "Restricts whom the behaviour affects relative to the placer.",
-            "RemoveConditionStepsTooltip": "How many steps to decrement."
-        },
-        "Trigger": {
-            "OnPlace": "On Placing",
-            "Entering": "Entering",
-            "Leaving": "Leaving",
-            "MovingWithin": "Moving Within",
-            "TurnStart": "Standing in, at start of triggering entity's turn",
-            "TurnEnd": "Standing in, at end of triggering entity's turn",
-            "AdjacentTurnStart": "Adjacent to, at start of triggering entity's turn",
-            "AdjacentTurnEnd": "Adjacent to, at end of triggering entity's turn",
-            "WhileAdjacent": "Only when adjacent",
-            "WhileWithin": "Only when within",
-            "RoundStart": "Standing in, at start of the round",
-            "RoundEnd": "Standing in, at end of the round",
-            "StandingIn": "Standing In"
-        },
-        "IrwTag": {
-            "Add": "+ Add…"
-        },
-        "WallStrikeSuggest": {
-            "FlatTen": "Flat +10",
-            "PlacerSpellAttack": "Placer's Spell Attack",
-            "PlacerClassDCMinusTen": "Placer's Class DC – 10",
-            "PlacerClassOrSpellDCMinusTen": "Placer's Class or Spell DC – 10"
-        },
-        "DCSuggest": {
-            "PlacerClassDC": "Placer's Class DC",
-            "PlacerSpellDC": "Placer's Spell DC",
-            "PlacerClassOrSpellDC": "Placer's Class or Spell DC",
-            "PlacerSpellAttack": "Placer's Spell Attack",
-            "ActorClassDC": "Triggering actor's Class DC",
-            "ActorSpellDC": "Triggering actor's Spell DC"
-        },
-        "Target": {
-            "Allies": "Allies",
-            "Enemies": "Enemies",
-            "All": "All"
-        },
-        "Tooltip": {
-            "TriggersDefault": "Default: Entering.",
-            "TargetDefault": "Default: All.",
-            "RegionExpiration": "When disabled, Template Wizard removes the region immediately after placement handling finishes.",
-            "ExpressionDC": "Accepts numbers, @paths (e.g. @actor.system.attributes.classDC.value), and arithmetic formulas. Available scopes: actor, token, region, sourceItem, placer.",
-            "BasicSave": "If checked, this Saving Throw deals basic-save damage on top of any consequences.",
-            "AppendRollOptions": "When checked, appends extra comma-separated roll options to this roll. The item's own roll options are always included.",
-            "SoundRadiusBoost": "Scales the auto-computed sound radius.",
-            "TilePreserveAspectRatio": "When checked, the tile preserves its source image's aspect ratio and is grown to cover the entire region (overflowing on the shorter axis if needed). When unchecked, the tile is stretched to exactly match the region's bounding box.",
-            "SingleWall": "When checked, placing the template prompts a player to pick one side of the region and only one wall is placed on that side.",
-            "WallDestroyable": "When checked, spawns an invisible NPCs with Construct trait on top of the walls with the configured HP, AC and Hardness. When the actor's HP reaches 0, the actor and its linked walls are removed.",
-            "WallDestroyableActorSize": "Feet of wall covered by a single actor. e.g. 10 = one actor per 10 ft of wall, placed at the midpoint of its 10 ft segment.",
-            "WallHasStrike": "When checked, the spawned wall actor gets a configured melee attack Strike item.",
-            "WallStrikeAttack": "Accepts a numbers, @paths (e.g. @placer.system.attributes.spellDC.value - 10), and arithmetic formulae.",
-            "Duration": "When enabled, the created effect expires after the configured time.",
-            "PrivateToGm": "Mutually exclusive with Blind to Gamemasters.",
-            "BlindToGm": "Mutually exclusive with Private to Gamemasters.",
-            "Expression": "Accepts numbers, @paths (e.g. @actor.level), or arithmetic formulae. Available scopes: actor, token, region, sourceItem, placer."
-        },
-        "Duration": {
-            "Enabled": "Limited duration"
-        },
-        "UuidList": {
-            "Add": "Add another",
-            "Placeholder": "Paste or drop an Item UUID…",
-            "Invalid": "(invalid UUID)"
-        },
-        "DarknessMode": {
-            "Override": "Override",
-            "Brighten": "Brighten",
-            "Darken": "Darken"
-        },
-        "SurfaceMode": {
-            "Add": "Add",
-            "Remove": "Remove",
-            "Override": "Override"
-        },
-        "Terrain": {
-            "Difficult": "Difficult",
-            "GreaterDifficult": "Greater Difficult",
-            "Custom": "Custom multiplier"
-        },
-        "PF2eDT": {
-            "None": "None",
-            "Difficult": "Difficult",
-            "GreaterDifficult": "Greater Difficult"
-        },
-        "DamageCategory": {
-            "Normal": "Normal",
-            "Persistent": "Persistent",
-            "Splash": "Splash",
-            "Precision": "Precision"
-        },
-        "Move": {
-            "Walk": "Walk",
-            "Stride": "Stride",
-            "Step": "Step",
-            "Run": "Run",
-            "Crawl": "Crawl",
-            "Climb": "Climb",
-            "Swim": "Swim",
-            "Fly": "Fly",
-            "Burrow": "Burrow",
-            "Jump": "Jump",
-            "Displace": "Displace"
-        },
-        "TagPicker": {
-            "Add": "Add…"
-        },
-        "ConfirmDelete": {
-            "Title": "Confirm Delete",
-            "Prompt": "Are you sure you want to delete <strong>{name}</strong>? This cannot be undone."
-        },
-        "Tracker": {
-            "Title": "Active Templates",
-            "Collapse": "Collapse / expand",
-            "PanTo": "Pan to region",
-            "SelectRegion": "Select region on canvas",
-            "Settings": "Open region configuration",
-            "Delete": "Delete region and everything it created",
-            "DeleteConfirmTitle": "Delete region?",
-            "DeleteConfirm": "Delete region <strong>{name}</strong> and everything it created? This cannot be undone.",
-            "UnnamedRegion": "this region",
-            "NotFound": "That region no longer exists."
-        },
-        "Setting": {
-            "AutoDamage": "Apply damage automatically",
-            "AutoDamageHint": "When ON, Deal Damage behaviours auto-apply rolled damage to actors that trigger them.",
-            "PromptGm": "Prompt GM before applying effects",
-            "TemplateResizeStep": "Template resize step",
-            "TemplateResizeStepHint": "Grid squares added or removed when resizing a template during placement. Right-click  (by default) shrinks by this amount; double right-click (by default) grows by this amount.",
-            "TemplateResizeRmb": "Resize templates with hotkeys (right-click by default)",
-            "TemplateResizeRmbHint": "When ON, right-click (by default) during template placement shrinks the template and double right-click (by default) grows it."
-        },
-        "Keybinding": {
-            "ShrinkTemplate": "Shrink placing template",
-            "GrowTemplate": "Grow placing template"
-        },
-        "IO": {
-            "Export": "Export",
-            "Import": "Import",
-            "ImportDialogTitle": "Import Automation",
-            "ImportDialogPrompt": "Paste a Template Wizard automation JSON below. It will replace this item's current automation."
-        },
-        "Compendium": {
-            "SettingName": "Templates Compendium",
-            "SettingHint": "Storage for saved Template Wizard templates",
-            "MenuName": "Templates Compendium",
-            "MenuLabel": "Open Templates Compendium",
-            "AppTitle": "Templates Compendium",
-            "Save": "Save to Templates Compendium",
-            "ImportFrom": "Import from Templates Compendium",
-            "ImportButton": "Import",
-            "ImportEmpty": "The Templates Compendium is empty.",
-            "TemplateLabel": "Template",
-            "ImportModeReplace": "Replace the current automation",
-            "ImportModeAppend": "Add this template's automation on top",
-            "ImportModeHint": "Add mode appends behaviours instead of replacing them.",
-            "ImportedReplace": "Imported \"{name}\" and replaced this item's automation.",
-            "ImportedAppend": "Imported \"{name}\" on top of this item's automation.",
-            "SaveDialogTitle": "Save to Templates Compendium",
-            "SaveDialogPrompt": "Save the current automation as a reusable template.",
-            "NameLabel": "Template name",
-            "SlugLabel": "Slug",
-            "SlugPlaceholder": "e.g. wall-of-fire",
-            "SlugHint": "When set, any item created (or rendered) with a matching system.slug gets this template auto-applied.",
-            "SlugConflictTitle": "Slug already exists",
-            "SlugConflict": "A template with slug \"{slug}\" already exists. This template cannot be saved as a separate entry with that slug, so continuing will rewrite the existing template.",
-            "AddButton": "Save",
-            "EditTooltip": "Edit name / slug",
-            "EditAutomation": "Edit Automation",
-            "EditAutomationTooltip": "Edit this template's automation JSON",
-            "SaveAutomationJson": "Save Automation",
-            "DeleteTooltip": "Delete",
-            "ExportOneTooltip": "Export this template as JSON",
-            "NewBlank": "New Automation",
-            "NewBlankDefaultName": "New Template",
-            "AddNew": "Add (paste JSON)",
-            "BulkExport": "Export all",
-            "BulkImport": "Import all (replace)",
-            "BulkImportReplace": "the entire Templates Compendium (this will replace it)",
-            "BehaviorCount": "# Behaviors",
-            "Empty": "The Templates Compendium is empty. Save automations from item sheets, or use Add (paste JSON) above."
-        },
-        "Tile": {
-            "NoScene": "Open a scene first to configure this attachment."
-        },
-        "AdvancedField": {
-            "Color": "Colour",
-            "Opacity": "Opacity",
-            "Transparency": "Transparency",
-            "Visibility": "Visibility",
-            "HighlightMode": "Highlight Mode",
-            "DisplayMeasurements": "Display Measurements"
-        },
-        "Attach": {
-            "DialogTitle": "Attach region to a token",
-            "DialogPrompt": "Choose a token to attach this region to.",
-            "Confirm": "Attach",
-            "Cancel": "Skip",
-            "NoneOption": "Don't attach",
-            "NoCandidates": "No tokens are inside or adjacent to this region."
-        },
-        "SingleWall": {
-            "DialogTitle": "Choose side",
-            "DialogPrompt": "Place the wall on which side of <strong>{name}</strong>?"
-        },
-        "RegionVis": {
-            "RegionLayer": "Only on Region Layer",
-            "RegionLayerUnlocked": "Only on Region Layer when unlocked",
-            "GamemasterOnly": "Always for Gamemaster",
-            "Observers": "Always for Observers",
-            "AlwaysForAnyone": "Always for Anyone",
-            "LayerControlled": "Layer Controlled"
-        },
-        "RegionHL": {
-            "TrueShapes": "True Shapes",
-            "CoveredGridSpaces": "Covered Grid Spaces",
-            "GridIfPlaceable": "Grid if Placeable"
-        },
-        "WallMove": {
-            "None": "None",
-            "Normal": "Normal"
-        },
-        "WallSense": {
-            "None": "None",
-            "Normal": "Normal",
-            "Limited": "Limited",
-            "Proximity": "Proximity",
-            "Distance": "Distance"
-        },
-        "WallDir": {
-            "Both": "Both",
-            "Left": "Left",
-            "Right": "Right"
-        },
-        "Consequence": {
-            "Damage": "Deal Damage",
-            "SavingThrow": "Saving Throw",
-            "SkillCheck": "Skill Check",
-            "ApplyEffect": "Apply Effect",
-            "ApplyCondition": "Apply Condition",
-            "RemoveEffect": "Remove Effect",
-            "RemoveCondition": "Remove Condition",
-            "ApplyRuleElement": "Apply Rule Element",
-            "AddIRW": "Add Immunity / Resistance / Weakness",
-            "ExecuteMacro": "Execute Macro",
-            "ChatMessage": "Chat Message (raw)",
-            "SendChatMessage": "Send Chat Message",
-            "ScrollingText": "Display Scrolling Text"
-        },
-        "Save": {
-            "Fortitude": "Fortitude",
-            "Reflex": "Reflex",
-            "Will": "Will"
-        },
-        "Choice": {
-            "KindSave": "Saving Throw",
-            "KindSkill": "Skill Check",
-            "Add": "Add Choice"
-        },
-        "Skill": {
-            "Acrobatics": "Acrobatics",
-            "Arcana": "Arcana",
-            "Athletics": "Athletics",
-            "Crafting": "Crafting",
-            "Deception": "Deception",
-            "Diplomacy": "Diplomacy",
-            "Intimidation": "Intimidation",
-            "Medicine": "Medicine",
-            "Nature": "Nature",
-            "Occultism": "Occultism",
-            "Performance": "Performance",
-            "Religion": "Religion",
-            "Society": "Society",
-            "Stealth": "Stealth",
-            "Survival": "Survival",
-            "Thievery": "Thievery",
-            "Perception": "Perception",
-            "Lore": "Lore (Custom)"
-        },
-        "SaveOutcome": {
-            "CriticalSuccess": "Critical Success",
-            "Success": "Success",
-            "Failure": "Failure",
-            "CriticalFailure": "Critical Failure"
-        },
-        "IRW": {
-            "Immunity": "Immunity",
-            "Resistance": "Resistance",
-            "Weakness": "Weakness"
-        },
-        "RuleElement": {
-            "Add": "Add rule element",
-            "Format": "Format JSON",
-            "Placeholder": "{\n  \"key\": \"FlatModifier\",\n  \"selector\": \"all-damage\",\n  \"value\": 1\n}",
-            "Empty": "JSON cannot be empty.",
-            "NotObject": "Rule element must be a JSON object.",
-            "MissingKey": "Rule element must have a 'key' field.",
-            "InvalidJson": "Invalid JSON syntax."
-        },
-        "TemplateShape": {
-            "Section": "Template Shape Override",
-            "Enabled": "Use explicit shape (instead of inferring from the placed region)",
-            "AddVariant": "Add shape variant",
-            "RemoveVariant": "Remove shape variant",
-            "Type": "Shape",
-            "Size": "Size",
-            "Length": "Length",
-            "Width": "Width",
-            "Angle": "Angle",
-            "InnerRadius": "Inner radius",
-            "Circle": "Burst",
-            "Cone": "Cone",
-            "Rectangle": "Rectangle",
-            "Ellipse": "Ellipse",
-            "Line": "Line",
-            "Ring": "Ring",
-            "Square": "Square",
-            "Emanation": "Emanation"
-        },
-        "Error": {
-            "BehaviorCreate": "Template Wizard | Failed to create region behaviors for \"{name}\"."
-        }
-    }
+   "PF2EATW": {
+      "TabLabel": "Templates",
+      "AutomationEnabled": "Enable automation",
+      "Label": "Label",
+      "Attachable": "Attachable",
+      "AttachableHint": "On placement, prompt to attach this region to an adjacent or contained token.",
+      "Contiguous": "Contiguous",
+      "ContiguousHint": "Place this template multiple times in sequence, then merge the placed shapes into one automated region.",
+      "Expiration": "Expiration",
+      "ExpirationEnabled": "Region expires",
+      "ExpirationAmount": "Expiration amount",
+      "CurrentTurnEnd": "On current turn end",
+      "Sustained": "Sustained",
+      "SustainedUpTo": "up to",
+      "SustainedLimit": "Sustain maximum duration",
+      "SustainedUnit": "Sustain maximum duration unit",
+      "Advanced": "Advanced",
+      "AdvancedEnabled": "Override region appearance",
+      "Behaviors": "Region Behaviours",
+      "BehaviorTag": "Tag",
+      "AddBehavior": "Add behaviour",
+      "RemoveBehavior": "Remove behaviour",
+      "ToggleCollapse": "Expand / collapse",
+      "Enabled": "Enabled",
+
+      "PlacementRange": {
+         "Max": "Max placement range"
+      },
+
+      "Unit": {
+         "Seconds": "Seconds",
+         "Rounds": "Rounds",
+         "Minutes": "Minutes",
+         "Hours": "Hours",
+         "Days": "Days",
+         "Unlimited": "Unlimited"
+      },
+
+      "Behavior": {
+         "AdjustDarknessLevel": "Adjust Darkness Level",
+         "ModifyMovementCost": "Difficult Terrain",
+         "Environment": "Environment",
+         "EnvironmentFeature": "Environment Feature",
+         "ApplyActiveEffect": "Apply Active Effect",
+         "RemoveEffect": "Remove Effect",
+         "AddCondition": "Apply Condition",
+         "RemoveCondition": "Remove Condition",
+         "ApplyRuleElement": "Apply Rule Element",
+         "DealDamage": "Deal Damage",
+         "RollDice": "Roll Dice",
+         "SavingThrow": "Saving Throw",
+         "RollSkill": "Roll Skill",
+         "ChoiceSet": "Choice Set",
+         "SendChatMessage": "Send Chat Message",
+         "AddIRW": "Add Immunity / Resistance / Weakness",
+         "AttachTile": "Attach Tile",
+         "AttachSound": "Attach Sound",
+         "AttachLight": "Attach Light Source",
+         "AttachWalls": "Attach Walls",
+         "PlaySound": "Play Sound",
+         "DisplayScrollingText": "Display Scrolling Text",
+         "ExecuteScript": "Execute Script",
+         "ExecuteMacro": "Execute Macro"
+      },
+
+      "Field": {
+         "DarknessMode": "Mode",
+         "DarknessModifier": "Darkness",
+         "TerrainPreset": "Terrain",
+         "CustomCost": "Movement cost multiplier",
+         "AffectedActions": "Affected movement actions",
+         "AddMovementAction": "Add movement action…",
+         "EnvironmentTypes": "Environment",
+         "EnvironmentTypesHint": "One or more environment types for this scene region.",
+         "AddEnvironmentType": "Add environment type…",
+         "SurfaceMode": "Mode",
+         "DifficultTerrain": "Difficult Terrain",
+         "Condition": "Condition",
+         "Damages": "Damage entries",
+         "AddDamage": "Add damage",
+         "Dice": "Dice",
+         "Consequences": "Consequences",
+         "AddConsequence": "Add consequence",
+         "RuleElements": "Rule Elements",
+         "ChatMessageText": "Chat message text",
+         "ChatMessageDynamicVariables": "Dynamic variables: @actor.name, @token.name, @target.name, @targetToken.name, @sourceItem.name, @placer.name, @region.name",
+         "ChatMessagePlaceholder": "Hello @actor.name! You stepped on the region.",
+         "SaveType": "Save",
+         "SkillType": "Skill",
+         "LoreName": "Lore name",
+         "LoreNamePlaceholder": "e.g. Engineering Lore",
+         "Choices": "Choices",
+         "DC": "DC",
+         "Duration": "Duration",
+         "PrivateToGm": "Private to Gamemasters",
+         "BlindToGm": "Blind to Gamemasters",
+         "BasicSave": "Basic Saving Throw",
+         "BasicSaveDamages": "Basic save damage",
+         "AppendRollOptions": "Append extra roll options",
+         "RollOptionsExtra": "Extra roll options",
+         "RollOptionsExtraPlaceholder": "e.g. feat:fireball, trait:elemental",
+         "SoundRadiusBoost": "Sound radius boost",
+         "IRWType": "Kind",
+         "IRWValue": "Value",
+         "DamageType": "Damage type",
+         "WallMove": "Movement",
+         "WallLight": "Light & Darkness",
+         "WallSight": "Sight",
+         "WallSound": "Sound",
+         "WallDir": "Restriction Direction",
+         "SingleWall": "Single wall",
+         "WallDestroyable": "Destructible",
+         "WallDestroyableHP": "Wall HP",
+         "WallDestroyableAC": "Wall AC",
+         "WallDestroyableHardness": "Hardness",
+         "WallDestroyableActorSize": "Feet per actor",
+         "WallImmunities": "Immunities",
+         "WallResistances": "Resistances",
+         "WallWeaknesses": "Weaknesses",
+         "AddImmunity": "+ Add immunity…",
+         "AddResistance": "+ Add resistance…",
+         "AddWeakness": "+ Add weakness…",
+         "WallHasStrike": "Add a Strike attack",
+         "WallStrikeName": "Strike name",
+         "WallStrikeNamePlaceholder": "",
+         "WallStrikeAttack": "Attack modifier",
+         "WallStrikeDamages": "Strike damage",
+         "TileEditor": "Tile",
+         "ConfigureTile": "Configure tile",
+         "ReconfigureTile": "Reconfigure tile",
+         "AddTile": "Add tile",
+         "TileShape": "Region shape",
+         "TileShapeAny": "Any shape",
+         "TileScale": "Tile scale",
+         "TilePreserveAspectRatio": "Preserve tile aspect ratio",
+         "SoundEditor": "Sound",
+         "ConfigureSound": "Configure sound",
+         "ReconfigureSound": "Reconfigure sound",
+         "LightEditor": "Light",
+         "ConfigureLight": "Configure light",
+         "ReconfigureLight": "Reconfigure light",
+         "SoundFile": "Sound file",
+         "Volume": "Volume",
+         "BrowseFiles": "Browse files",
+         "EffectUuid": "Active Effect UUID",
+         "ApplyToEveryone": "Apply to every token, not just owners",
+         "ScrollingText": "Text",
+         "Color": "Color",
+         "FontSize": "Font size",
+         "Source": "Script source",
+         "MacroUuid": "Macro UUID",
+         "IgnoredBy": "Ignored by",
+         "IgnoredByHint": "Actors with any of these items / effects / feats on them ignore this behaviour.",
+         "Triggers": "Triggers",
+         "AddTrigger": "Add trigger…",
+         "Target": "Targets",
+         "AddTarget": "Add target…",
+         "IncludePlacer": "Include placer",
+         "RollOptions": "Must have roll options",
+         "RollOptionsHint": "Comma-separated. Tokens whose actor lacks any of these roll options won't trigger the behaviour.",
+         "RollOptionsPlaceholder": "e.g. self:trait:dwarf, self:condition:frightened",
+         "RollOptionsExclude": "Must not have roll options",
+         "RollOptionsExcludeHint": "Comma-separated. Tokens whose actor has any of these roll options won't trigger the behaviour.",
+         "RollOptionsExcludePlaceholder": "e.g. self:condition:flying, self:effect:ignore-terrain",
+         "TargetHint": "Restricts whom the behaviour affects relative to the placer.",
+         "RemoveConditionStepsTooltip": "How many steps to decrement."
+      },
+
+      "Trigger": {
+         "OnPlace": "On Placing",
+         "Entering": "Entering",
+         "Leaving": "Leaving",
+         "MovingWithin": "Moving Within",
+         "TurnStart": "Standing in, at start of triggering entity's turn",
+         "TurnEnd": "Standing in, at end of triggering entity's turn",
+         "AdjacentTurnStart": "Adjacent to, at start of triggering entity's turn",
+         "AdjacentTurnEnd": "Adjacent to, at end of triggering entity's turn",
+         "WhileAdjacent": "Only when adjacent",
+         "WhileWithin": "Only when within",
+         "RoundStart": "Standing in, at start of the round",
+         "RoundEnd": "Standing in, at end of the round",
+         "StandingIn": "Standing In"
+      },
+
+      "IrwTag": {
+         "Add": "+ Add…"
+      },
+
+      "WallStrikeSuggest": {
+         "FlatTen": "Flat +10",
+         "PlacerSpellAttack": "Placer's Spell Attack",
+         "PlacerClassDCMinusTen": "Placer's Class DC – 10",
+         "PlacerClassOrSpellDCMinusTen": "Placer's Class or Spell DC – 10"
+      },
+
+      "DCSuggest": {
+         "PlacerClassDC": "Placer's Class DC",
+         "PlacerSpellDC": "Placer's Spell DC",
+         "PlacerClassOrSpellDC": "Placer's Class or Spell DC",
+         "PlacerSpellAttack": "Placer's Spell Attack",
+         "ActorClassDC": "Triggering actor's Class DC",
+         "ActorSpellDC": "Triggering actor's Spell DC"
+      },
+
+      "Target": {
+         "Allies": "Allies",
+         "Enemies": "Enemies",
+         "All": "All"
+      },
+
+      "Tooltip": {
+         "TriggersDefault": "Default: Entering.",
+         "TargetDefault": "Default: All.",
+         "RegionExpiration": "Unlimited if unchecked",
+         "ExpressionDC": "Accepts numbers, @paths (e.g. @actor.system.attributes.classDC.value), and arithmetic formulas. Available scopes: actor, token, region, sourceItem, placer.",
+         "BasicSave": "If checked, this Saving Throw deals basic-save damage on top of any consequences.",
+         "AppendRollOptions": "When checked, appends extra comma-separated roll options to this roll. The item's own roll options are always included.",
+         "SoundRadiusBoost": "Scales the auto-computed sound radius.",
+         "TilePreserveAspectRatio": "When checked, the tile preserves its source image's aspect ratio and is grown to cover the entire region (overflowing on the shorter axis if needed). When unchecked, the tile is stretched to exactly match the region's bounding box.",
+         "SingleWall": "When checked, placing the template prompts a player to pick one side of the region and only one wall is placed on that side.",
+         "WallDestroyable": "When checked, spawns an invisible NPCs with Construct trait on top of the walls with the configured HP, AC and Hardness. When the actor's HP reaches 0, the actor and its linked walls are removed.",
+         "WallDestroyableActorSize": "Feet of wall covered by a single actor. e.g. 10 = one actor per 10 ft of wall, placed at the midpoint of its 10 ft segment.",
+         "WallHasStrike": "When checked, the spawned wall actor gets a configured melee attack Strike item.",
+         "WallStrikeAttack": "Accepts a numbers, @paths (e.g. @placer.system.attributes.spellDC.value - 10), and arithmetic formulae.",
+         "Duration": "When enabled, the created effect expires after the configured time.",
+         "PrivateToGm": "Mutually exclusive with Blind to Gamemasters.",
+         "BlindToGm": "Mutually exclusive with Private to Gamemasters.",
+         "Expression": "Accepts numbers, @paths (e.g. @actor.level), or arithmetic formulae. Available scopes: actor, token, region, sourceItem, placer."
+      },
+
+      "Duration": {
+         "Enabled": "Limited duration"
+      },
+
+      "UuidList": {
+         "Add": "Add another",
+         "Placeholder": "Paste or drop an Item UUID…",
+         "Invalid": "(invalid UUID)"
+      },
+
+      "DarknessMode": {
+         "Override": "Override",
+         "Brighten": "Brighten",
+         "Darken": "Darken"
+      },
+
+      "SurfaceMode": {
+         "Add": "Add",
+         "Remove": "Remove",
+         "Override": "Override"
+      },
+
+      "Terrain": {
+         "Difficult": "Difficult",
+         "GreaterDifficult": "Greater Difficult",
+         "Custom": "Custom multiplier"
+      },
+
+      "PF2eDT": {
+         "None": "None",
+         "Difficult": "Difficult",
+         "GreaterDifficult": "Greater Difficult"
+      },
+
+      "DamageCategory": {
+         "Normal": "Normal",
+         "Persistent": "Persistent",
+         "Splash": "Splash",
+         "Precision": "Precision"
+      },
+
+      "Move": {
+         "Walk": "Walk",
+         "Stride": "Stride",
+         "Step": "Step",
+         "Run": "Run",
+         "Crawl": "Crawl",
+         "Climb": "Climb",
+         "Swim": "Swim",
+         "Fly": "Fly",
+         "Burrow": "Burrow",
+         "Jump": "Jump",
+         "Displace": "Displace"
+      },
+
+      "TagPicker": {
+         "Add": "Add…"
+      },
+
+      "ConfirmDelete": {
+         "Title": "Confirm Delete",
+         "Prompt": "Are you sure you want to delete <strong>{name}</strong>? This cannot be undone."
+      },
+
+      "Tracker": {
+         "Title": "Active Templates",
+         "Collapse": "Collapse / expand",
+         "PanTo": "Pan to region",
+         "PanToName": "Pan to {name}",
+         "SelectRegion": "Select region on canvas",
+         "Settings": "Open region configuration",
+         "Delete": "Delete region and everything it created",
+         "DeleteConfirmTitle": "Delete region?",
+         "DeleteConfirm": "Delete region <strong>{name}</strong> and everything it created? This cannot be undone.",
+         "UnnamedRegion": "this region",
+         "NotFound": "That region no longer exists."
+      },
+
+      "Setting": {
+         "AutoDamage": "Apply damage automatically",
+         "AutoDamageHint": "When ON, Deal Damage behaviours auto-apply rolled damage to actors that trigger them.",
+         "PromptGm": "Prompt GM before applying effects",
+         "TemplateResizeStep": "Template resize step",
+         "TemplateResizeStepHint": "Grid squares added or removed when resizing a template during placement. Right-click  (by default) shrinks by this amount; double right-click (by default) grows by this amount.",
+         "TemplateResizeRmb": "Resize templates with hotkeys (right-click by default)",
+         "TemplateResizeRmbHint": "When ON, right-click (by default) during template placement shrinks the template and double right-click (by default) grows it.",
+         "RestrictTemplatePlacementRange": "Restrict template placement if out of range",
+         "RestrictTemplatePlacementRangeHint": "When ON, templates cannot be placed farther than the item's configured placement range.",
+         "DrawTemplatePlacementRangeLine": "Draw template placement range guide",
+         "DrawTemplatePlacementRangeLineHint": "Draw a guide line while placing templates that have a maximum placement range.",
+         "TemplatePlacementRangeLineColor": "Template placement range guide colour",
+         "AllowPlayerTemplates": "Allow players to create Templates",
+         "AllowPlayerTemplatesHint": "Allow non-GM users at the selected access level to edit Template Wizard automation on owned items.",
+         "PlayerTemplateAccessLevel": "Access level by role",
+         "PlayerTemplateAccessByUser": "Access level by user",
+         "PlayerTemplateAccessUserIds": "Player Template access users",
+         "ChooseUser": "Choose user",
+         "RemoveUserAccess": "Remove user access",
+         "AccessNone": "None",
+         "AccessTrustedPlayer": "Trusted Player",
+         "AccessPlayer": "Player",
+         "AllowPlayerTemplateCompendiumSave": "Allow saving Templates to the Compendium",
+         "AllowPlayerTemplateImport": "Allow Import",
+         "AllowPlayerTemplateImportHint": "Allow importing Template Wizard automation JSON into an owned template."
+      },
+
+      "Keybinding": {
+         "ShrinkTemplate": "Shrink placing template",
+         "GrowTemplate": "Grow placing template"
+      },
+
+      "IO": {
+         "Export": "Export",
+         "Import": "Import",
+         "Cancel": "Cancel",
+         "ImportDialogTitle": "Import Automation",
+         "ImportDialogPrompt": "Choose a Template Wizard automation JSON file. It will replace this item's current automation.",
+         "AutomationCopied": "Automation JSON copied to clipboard.",
+         "CopiedToClipboard": "Copied to clipboard.",
+         "ExportFailed": "Export failed.",
+         "ImportNotAllowed": "Template Wizard import is not enabled for your role.",
+         "InvalidJson": "Invalid JSON.",
+         "InvalidAutomation": "That doesn't look like a Template Wizard automation.",
+         "AutomationImported": "Automation imported.",
+         "ImportFailed": "Import failed."
+      },
+
+      "Compendium": {
+         "SettingName": "Templates Compendium",
+         "SettingHint": "Storage for saved Template Wizard templates",
+         "MenuName": "Templates Compendium",
+         "MenuLabel": "Open Templates Compendium",
+         "AppTitle": "Templates Compendium",
+         "TemplateAutomationTitle": "Template Automation",
+         "TemplateAutomationsTitle": "Template Automations",
+         "EditTemplateTitle": "Edit Template Automation: {name}",
+         "NewTemplateTitle": "New Template Automation",
+         "Save": "Save to Templates Compendium",
+         "ImportFrom": "Import from Templates Compendium",
+         "ImportButton": "Import",
+         "ImportEmpty": "The Templates Compendium is empty.",
+         "ImportFileTitle": "Import Templates Compendium",
+         "ImportFilePrompt": "Choose a Template Wizard compendium JSON file.",
+         "TemplateLabel": "Template",
+         "ImportModeReplace": "Replace the current automation",
+         "ImportModeAppend": "Append to the current automation",
+         "ImportedReplace": "Imported \"{name}\" and replaced this item's automation.",
+         "ImportedAppend": "Imported \"{name}\" on top of this item's automation.",
+         "ImportFailed": "Compendium import failed.",
+         "InvalidEntry": "That compendium entry does not contain Template Wizard automation.",
+         "ExpectedEntries": "Expected template entries.",
+         "ReplaceMatchingTitle": "Replace matching templates?",
+         "ReplaceMatchingPrompt": "The imported file contains {count} template(s) with slugs already in this compendium.",
+         "ReplaceMatchingChoice": "Replace existing templates with the imported versions? Choosing No keeps the existing templates and skips the matching imported ones.",
+         "ReplaceMatchingMore": "{count} more matching template(s) will use the same choice.",
+         "ImportSummary": "Imported {count} template(s).",
+         "ImportSummaryReplaced": "Replaced {count}.",
+         "ImportSummarySkipped": "Skipped {count}.",
+         "SaveDialogTitle": "Save to Templates Compendium",
+         "SaveDialogPrompt": "Save the current automation as a reusable template.",
+         "SaveNotAllowed": "Saving Template Wizard templates is not enabled for your role.",
+         "SaveSuccess": "Saved to Templates Compendium.",
+         "SaveSuccessSlug": "Saved to Templates Compendium with slug \"{slug}\".",
+         "SaveFailed": "Save failed.",
+         "Name": "Name",
+         "NameLabel": "Template name",
+         "SlugLabel": "Slug",
+         "SlugPlaceholder": "e.g. wall-of-fire",
+         "SlugHint": "When set, any item created (or rendered) with a matching system.slug gets this template auto-applied.",
+         "SlugConflictTitle": "Slug already exists",
+         "SlugConflict": "A template with slug \"{slug}\" already exists. This template cannot be saved as a separate entry with that slug, so continuing will rewrite the existing template.",
+         "AddButton": "Save",
+         "EditTooltip": "Edit name / slug",
+         "EditAutomation": "Edit Automation",
+         "EditAutomationTooltip": "Edit this template's automation JSON",
+         "SaveAutomationJson": "Save Automation",
+         "DeleteTooltip": "Delete",
+         "ExportOneTooltip": "Export this template as JSON",
+         "NewBlank": "New Automation",
+         "NewBlankDefaultName": "New Template",
+         "Untitled": "Untitled",
+         "NoSlug": "no-slug",
+         "SearchTemplates": "Search templates",
+         "NoTemplateAutomations": "No template automations saved.",
+         "BehaviorCountValue": "{count} behavior(s)",
+         "TemplateWizardTool": "Template Wizard",
+         "AddNew": "Add",
+         "BulkExport": "Export all",
+         "BulkImport": "Import all",
+         "BulkImportReplace": "the entire Templates Compendium (this will replace it)",
+         "BehaviorCount": "# Behaviors",
+         "Empty": "The Templates Compendium is empty. Save automations from item sheets, or import a JSON file above."
+      },
+
+      "Tile": {
+         "NoScene": "Open a scene first to configure this attachment."
+      },
+
+      "TemplatePlacement": {
+         "OpenScene": "Open a scene before placing a template."
+      },
+
+      "Sustain": {
+         "Title": "Sustain {name}",
+         "Prompt": "Sustain {name}?",
+         "Confirm": "Sustain",
+         "Decline": "Don't Sustain"
+      },
+
+      "AdvancedField": {
+         "Color": "Colour",
+         "Opacity": "Opacity",
+         "Transparency": "Transparency",
+         "Visibility": "Visibility",
+         "HighlightMode": "Highlight Mode",
+         "DisplayMeasurements": "Display Measurements"
+      },
+
+      "WallRestriction": {
+         "Title": "Wall Restrictions",
+         "Enabled": "Is Restricted",
+         "EnabledHint": "Configure whether the shapes of this Region are constrained by walls.",
+         "TypeLabel": "Restricted By",
+         "Priority": "Priority Threshold",
+         "Type": {
+            "Darkness": "Darkness-blocking Walls and Light Sources with Priority > Threshold",
+            "Light": "Light-blocking Walls and Darkness Sources with Priority >= Threshold",
+            "Move": "Movement-blocking Walls",
+            "Sight": "Sight-blocking Walls and Darkness Sources with Priority >= Threshold",
+            "Sound": "Sound-blocking Walls"
+         }
+      },
+
+      "WallBuilder": {
+         "DialogTitle": "Build Destroyable Wall Actors",
+         "WallActors": "Wall Actors",
+         "Name": "Name",
+         "HP": "HP",
+         "AC": "AC",
+         "Hardness": "Hardness",
+         "SelectedWalls": "Selected walls",
+         "Immunities": "Immunities",
+         "Resistances": "Resistances",
+         "Weaknesses": "Weaknesses",
+         "AddStrike": "Add Strike",
+         "StrikeName": "Strike name",
+         "AttackModifier": "Attack modifier",
+         "Count": "Count",
+         "Die": "Die",
+         "Type": "Type",
+         "Category": "Category",
+         "AddDamage": "Add Damage",
+         "Remove": "Remove",
+         "RemoveDamage": "Remove damage",
+         "Spawn": "Spawn",
+         "DefaultWallName": "Wall",
+         "DefaultStrikeName": "Slam",
+         "GmOnly": "Only a GM can create destroyable wall actors.",
+         "SelectWall": "Select at least one wall on the Walls layer.",
+         "Spawned": "Spawned {count} destroyable wall actor(s).",
+         "NoneCreated": "No destroyable wall actors were created.",
+         "FormReadFailed": "Destroyable wall builder form could not be read.",
+         "AddDamageRequired": "Add at least one damage row for the Strike."
+      },
+
+      "Attach": {
+         "DialogTitle": "Attach region to a token",
+         "DialogPrompt": "Choose a token to attach this region to.",
+         "Confirm": "Attach",
+         "Cancel": "Skip",
+         "NoneOption": "Don't attach",
+         "NoCandidates": "No tokens are inside or adjacent to this region."
+      },
+
+      "SingleWall": {
+         "DialogTitle": "Choose side",
+         "DialogPrompt": "Place the wall on which side of <strong>{name}</strong>?"
+      },
+
+      "RegionVis": {
+         "RegionLayer": "Only on Region Layer",
+         "RegionLayerUnlocked": "Only on Region Layer when unlocked",
+         "GamemasterOnly": "Always for Gamemaster",
+         "Observers": "Always for Observers",
+         "AlwaysForAnyone": "Always for Anyone",
+         "LayerControlled": "Layer Controlled"
+      },
+
+      "RegionHL": {
+         "TrueShapes": "True Shapes",
+         "CoveredGridSpaces": "Covered Grid Spaces",
+         "GridIfPlaceable": "Grid if Placeable"
+      },
+
+      "WallMove": {
+         "None": "None",
+         "Normal": "Normal"
+      },
+
+      "WallSense": {
+         "None": "None",
+         "Normal": "Normal",
+         "Limited": "Limited",
+         "Proximity": "Proximity",
+         "Distance": "Distance"
+      },
+
+      "WallDir": {
+         "Both": "Both",
+         "Left": "Left",
+         "Right": "Right"
+      },
+
+      "Consequence": {
+         "Damage": "Deal Damage",
+         "SavingThrow": "Saving Throw",
+         "SkillCheck": "Skill Check",
+         "ApplyEffect": "Apply Effect",
+         "ApplyCondition": "Apply Condition",
+         "RemoveEffect": "Remove Effect",
+         "RemoveCondition": "Remove Condition",
+         "ApplyRuleElement": "Apply Rule Element",
+         "AddIRW": "Add Immunity / Resistance / Weakness",
+         "ExecuteMacro": "Execute Macro",
+         "ChatMessage": "Chat Message (raw)",
+         "SendChatMessage": "Send Chat Message",
+         "ScrollingText": "Display Scrolling Text"
+      },
+
+      "Save": {
+         "Fortitude": "Fortitude",
+         "Reflex": "Reflex",
+         "Will": "Will"
+      },
+
+      "Choice": {
+         "KindSave": "Saving Throw",
+         "KindSkill": "Skill Check",
+         "Add": "Add Choice"
+      },
+
+      "Skill": {
+         "Acrobatics": "Acrobatics",
+         "Arcana": "Arcana",
+         "Athletics": "Athletics",
+         "Crafting": "Crafting",
+         "Deception": "Deception",
+         "Diplomacy": "Diplomacy",
+         "Intimidation": "Intimidation",
+         "Medicine": "Medicine",
+         "Nature": "Nature",
+         "Occultism": "Occultism",
+         "Performance": "Performance",
+         "Religion": "Religion",
+         "Society": "Society",
+         "Stealth": "Stealth",
+         "Survival": "Survival",
+         "Thievery": "Thievery",
+         "Perception": "Perception",
+         "Lore": "Lore (Custom)"
+      },
+
+      "SaveOutcome": {
+         "CriticalSuccess": "Critical Success",
+         "Success": "Success",
+         "Failure": "Failure",
+         "CriticalFailure": "Critical Failure"
+      },
+
+      "IRW": {
+         "Immunity": "Immunity",
+         "Resistance": "Resistance",
+         "Weakness": "Weakness"
+      },
+
+      "RuleElement": {
+         "Add": "Add rule element",
+         "Format": "Format JSON",
+         "Placeholder": "{\n  \"key\": \"FlatModifier\",\n  \"selector\": \"all-damage\",\n  \"value\": 1\n}",
+         "Empty": "JSON cannot be empty.",
+         "NotObject": "Rule element must be a JSON object.",
+         "MissingKey": "Rule element must have a 'key' field.",
+         "InvalidJson": "Invalid JSON syntax."
+      },
+
+      "TemplateShape": {
+         "Section": "Template Shape Override",
+         "Enabled": "Use explicit shape (instead of inferring from the placed region)",
+         "AddVariant": "Add shape variant",
+         "RemoveVariant": "Remove shape variant",
+         "Type": "Shape",
+         "Size": "Size",
+         "Length": "Length",
+         "Width": "Width",
+         "Angle": "Angle",
+         "InnerRadius": "Inner radius",
+         "Circle": "Burst",
+         "Cone": "Cone",
+         "Rectangle": "Rectangle",
+         "Ellipse": "Ellipse",
+         "Line": "Line",
+         "Ring": "Ring",
+         "Square": "Square",
+         "Emanation": "Emanation"
+      },
+
+      "Error": {
+         "BehaviorCreate": "Template Wizard | Failed to create region behaviors for \"{name}\".",
+         "FilePickerUnavailable": "FilePicker is not available in this Foundry build.",
+         "GmDeleteManagedTemplate": "Only the GM can delete Template Wizard managed templates."
+      }
+   }
 }
