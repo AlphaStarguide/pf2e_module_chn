@@ -228,7 +228,8 @@
             "ImportDialogTitle": "导入自动化",
             "Export": "导出",
             "Import": "导入",
-            "ImportDialogPrompt": "请在下方粘贴测量板向导自动化JSON代码。它将替换该项目当前的自动化设置。"
+            "ImportDialogPrompt": "请在下方粘贴测量板向导自动化JSON代码。它将替换该项目当前的自动化设置。",
+            "Cancel": "取消"
         },
         "Compendium": {
             "ImportButton": "导入",
@@ -268,7 +269,11 @@
             "SlugConflictTitle": "标识符已存在",
             "SlugConflict": "已存在具有“{slug}”标识符的模板。本模板无法以该标识符保存为独立条目，继续操作将覆盖现有模板。",
             "BulkImportReplace": "整个模板合集（该操作将替换它）",
-            "Empty": "模板合集为空。请在项目卡中保存自动化设置，或使用上方的添加功能（粘贴JSON）。"
+            "Empty": "模板合集为空。请在项目卡中保存自动化设置，或使用上方的添加功能（粘贴JSON）。",
+            "Name": "名称",
+            "TemplateAutomationTitle": "模板自动化",
+            "TemplateAutomationsTitle": "模板自动化",
+            "EditTemplateTitle": "编辑模板自动化：{name}"
         },
         "Move": {
             "Walk": "步行",
@@ -338,7 +343,9 @@
             "TemplateResizeStepHint": "在测量板放置期间调整其大小，区域网格数量会随之增加或减少。右键单击（默认）将减少对应数量方格；双击右键（默认）将增加对应数量方格。",
             "TemplateResizeStep": "测量板调整格数",
             "TemplateResizeRmb": "使用绑定键调整测量板大小（默认右键单击）",
-            "TemplateResizeRmbHint": "勾选后，在放置测量板期间，右键单击（默认）会缩小测量板，双击右键（默认）会放大测量板。"
+            "TemplateResizeRmbHint": "勾选后，在放置测量板期间，右键单击（默认）会缩小测量板，双击右键（默认）会放大测量板。",
+            "AccessTrustedPlayer": "受信玩家",
+            "AccessPlayer": "玩家"
         },
         "WallMove": {
             "Normal": "正常",
@@ -471,6 +478,25 @@
         },
         "TagPicker": {
             "Add": "添加…"
-        }
+        },
+        "Sustained": "维持",
+        "SustainedUpTo": "至多",
+        "Sustain": {
+            "Title": "维持{name}",
+            "Prompt": "是否维持{name}？",
+            "Confirm": "维持",
+            "Decline": "不维持"
+        },
+        "WallBuilder": {
+            "Hardness": "硬度",
+            "Immunities": "免疫",
+            "Resistances": "抗力",
+            "Weaknesses": "弱点",
+            "AttackModifier": "攻击调整值"
+        },
+        "PlacementRange": {
+            "Max": "最大放置射程"
+        },
+        "CurrentTurnEnd": "当前回合结束时"
     }
 }
