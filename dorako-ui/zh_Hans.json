@@ -281,7 +281,7 @@
             },
             "external-module": {
                 "colorize-idle-hud": {
-                    "hint": "为主要提示框与受控HUD中的图标元素应用彩色主题。",
+                    "hint": "为主要提示框与主控HUD中的图标元素应用彩色主题。",
                     "name": "为PF2e HUD上色？"
                 },
                 "name": "模组联动设置",
