@@ -477,7 +477,7 @@
             "VALIDATION_FAILED_FOR": "{name} 验证失败：{errors}"
         },
         "MONITOR": {
-            "ROUNDS_UNTIL_SAVE": "距离豁免还有 {rounds} 轮",
+            "ROUNDS_UNTIL_SAVE": "距离豁免还有{rounds}轮",
             "TIME_UNTIL_SAVE": "距离豁免还有 {duration}",
             "NO_STAGE": "无阶段",
             "ACTIVE_AFFLICTIONS_SINGULAR": "激活的苦难",
