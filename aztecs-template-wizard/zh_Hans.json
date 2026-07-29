@@ -128,7 +128,7 @@
             "RollOptionsExcludeHint": "半角逗号分隔。如果指示物所属角色具有这些掷骰选项中的任意一项，则不会触发该行为。",
             "TargetHint": "限制该行为所影响的，相对于放置者的目标。",
             "RemoveConditionStepsTooltip": "递减的状态值。",
-            "WallStrikeNamePlaceholder": " ",
+            "WallStrikeNamePlaceholder": "",
             "TilePreserveAspectRatio": "保留图块宽高比",
             "LightEditor": "光源",
             "ConfigureLight": "配置光源",
@@ -229,7 +229,13 @@
             "Export": "导出",
             "Import": "导入",
             "ImportDialogPrompt": "请在下方粘贴测量板向导自动化JSON代码。它将替换该项目当前的自动化设置。",
-            "Cancel": "取消"
+            "Cancel": "取消",
+            "AutomationCopied": "自动化JSON代码已复制到剪贴板。",
+            "CopiedToClipboard": "已复制到剪贴板。",
+            "ExportFailed": "导出失败。",
+            "InvalidJson": "JSON文件无效。",
+            "ImportFailed": "导入失败。",
+            "AutomationImported": "自动化已导入。"
         },
         "Compendium": {
             "ImportButton": "导入",
@@ -239,7 +245,7 @@
             "AppTitle": "模板合集",
             "Save": "保存至模板合集",
             "ImportFrom": "从模板合集导入",
-            "ImportEmpty": "模板合集空空如也。",
+            "ImportEmpty": "模板合集里什么都没有。",
             "ImportModeReplace": "替换当前自动化设置",
             "SaveDialogTitle": "保存至模板合集",
             "SaveDialogPrompt": "将当前自动化设置保存为可复用模板。",
@@ -251,7 +257,7 @@
             "DeleteTooltip": "删除",
             "ExportOneTooltip": "将该模板导出为JSON",
             "BulkExport": "全部导出",
-            "BulkImport": "全部导入（替换）",
+            "BulkImport": "全部导入",
             "ImportedReplace": "“{name}”模板已导入，并已替换该项目的自动化设置。",
             "SettingHint": "存储已保存的测量板向导模板",
             "SlugLabel": "标识符",
@@ -260,9 +266,9 @@
             "NewBlankDefaultName": "新模板",
             "BehaviorCount": "# 行为",
             "EditTooltip": "编辑名称/标识符",
-            "AddNew": "添加（粘贴JSON）",
+            "AddNew": "添加",
             "TemplateLabel": "模板",
-            "ImportModeAppend": "在当前基础添加该模板的自动化设置",
+            "ImportModeAppend": "添加到当前自动化设置",
             "ImportedAppend": "“{name}”模板已导入该项目的自动化设置。",
             "ImportModeHint": "添加模式会在已有基础上附加行为，而非替换当前行为。",
             "SlugHint": "设置后，任何使用相匹配的系统标识符的项目都将自动应用该模板。",
@@ -273,7 +279,13 @@
             "Name": "名称",
             "TemplateAutomationTitle": "模板自动化",
             "TemplateAutomationsTitle": "模板自动化",
-            "EditTemplateTitle": "编辑模板自动化：{name}"
+            "EditTemplateTitle": "编辑模板自动化：{name}",
+            "ImportFailed": "合集导入失败。",
+            "ReplaceMatchingPrompt": "导入文件中包含{count}个与当前合集存在标识符重复的模板。",
+            "ImportFileTitle": "导入模板合集",
+            "SaveSuccess": "已保存至模板合集。",
+            "SaveSuccessSlug": "已保存至模板合集，标识符为“{slug}”。",
+            "SaveFailed": "保存失败。"
         },
         "Move": {
             "Walk": "步行",
@@ -345,7 +357,14 @@
             "TemplateResizeRmb": "使用绑定键调整测量板大小（默认右键单击）",
             "TemplateResizeRmbHint": "勾选后，在放置测量板期间，右键单击（默认）会缩小测量板，双击右键（默认）会放大测量板。",
             "AccessTrustedPlayer": "受信玩家",
-            "AccessPlayer": "玩家"
+            "AccessPlayer": "玩家",
+            "AllowPlayerTemplateCompendiumSave": "允许将模板保存到合集中",
+            "AllowPlayerTemplateImport": "允许导入模板",
+            "AllowPlayerTemplateImportHint": "允许将测量板向导自动化JSON导入到自建模板中。",
+            "RestrictTemplatePlacementRange": "若超出射程则禁止放置测量板",
+            "ChooseUser": "选择用户",
+            "RemoveUserAccess": "删除用户许可",
+            "AccessNone": "无"
         },
         "WallMove": {
             "Normal": "正常",
@@ -492,7 +511,10 @@
             "Immunities": "免疫",
             "Resistances": "抗力",
             "Weaknesses": "弱点",
-            "AttackModifier": "攻击调整值"
+            "AttackModifier": "攻击调整值",
+            "StrikeName": "打击名称",
+            "DefaultStrikeName": "猛击 Slam",
+            "Name": "名称"
         },
         "PlacementRange": {
             "Max": "最大放置射程"
