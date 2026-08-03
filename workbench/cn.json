@@ -642,7 +642,7 @@
                 "name": "NPC物品神秘化设置"
             },
             "npcMystifierIncludeCreaturesOfThisRarityOrGreater": {
-                "hint": "仅对该稀有度及以上的生物使用基于特征的名称生成（见下方设置）。但所有生物依旧被神秘化，该稀有度以下的生物将获得更简单的名称，其不含基于特征的名称部分。",
+                "hint": "仅对该稀有度及以上的生物使用基于特征的名称生成（见下方设置）。但所有生物依旧被神秘化。",
                 "name": "仅对该稀有度及以上生物赋予基于特征的名称"
             },
             "npcMystifierIncludeCreaturesOfThisLevelOrGreater": {
@@ -919,9 +919,9 @@
             "learnSpellNo": "Skip Check & Cost",
             "learnSpellSkipped": "<strong>{actor}</strong> adds <em>{spellName}</em> without a skill check or material cost.",
             "learnSpellYes": "Learn a Spell",
-            "learnSpellTime10Minutes": "{minutes} minutes",
+            "learnSpellTime10Minutes": "{minutes}分钟",
             "learnSpellTimeHours": "{hours} hour(s)",
-            "noTradition": "no",
+            "noTradition": "无",
             "overrideLearnFailureMessage": "You failed to learn \"{spellName}\" at level {level}. Do you want to override the flag and learn it now?",
             "overrideLearnFailureNo": "No, keep flag",
             "overrideLearnFailureTitle": "Override Learn Failure",
@@ -929,7 +929,7 @@
             "learnSpellBatchLearnAlreadyKnown": "(already known)",
             "traditionMismatch": "{spellName} has the {traditions} tradition(s). Your character does not have a matching spellcasting entry.",
             "yes": "Yes",
-            "no": "No",
+            "no": "无",
             "learnFromScrollTitle": "Learn from Scroll?",
             "learnFromScrollMessage": "Do you want to learn the spell {spellName} from this scroll?",
             "scrollMystified": "This scroll has not been identified. Identify it first before attempting to learn its spell.",
