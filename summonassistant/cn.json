@@ -151,6 +151,13 @@
                 "filter": {
                     "only-with-art": "附带美术资产"
                 }
+            },
+            "create-thrall": {
+                "title": "创造残骸",
+                "options": {
+                    "two": "{iconSummon}召唤了{cnt}个残骸",
+                    "one": "{iconSummon}召唤{cnt}个残骸并立即指挥残骸"
+                }
             }
         },
         "display-text": {
