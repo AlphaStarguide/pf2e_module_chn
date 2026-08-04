@@ -211,6 +211,9 @@
                 "custom": "自定义",
                 "dc": "DC",
                 "title": "更多纯骰检定"
+            },
+            "warning": {
+                "differentLevels": "来源与目标位于不同的场景层级，无法进行光照等级检查。"
             }
         },
         "life-link": {
@@ -247,6 +250,9 @@
             },
             "message-config-check-types": "检定类型",
             "emanation-area": "{origin}，{area}尺"
+        },
+        "common": {
+            "unknown": "未知"
         }
     },
     "PF2E": {
