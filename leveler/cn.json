@@ -740,6 +740,10 @@
             "TITLE": "需进行的操作",
             "HEADER": "{actorName}（{level}）有需要手动操作的选择：",
             "OK": "明白了"
+        },
+        "RUNESMITH": {
+            "NAME": "符文工匠",
+            "RUNIC_REPERTOIRE": "符文库"
         }
     }
 }
