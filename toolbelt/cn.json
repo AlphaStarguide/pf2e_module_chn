@@ -1259,8 +1259,8 @@
                         "title": "伤害合并菜单",
                         "yes": "合并"
                     },
-                    "originMerge": "当前消息",
-                    "targetMerge": "上一条消息"
+                    "originMerge": "上一条消息",
+                    "targetMerge": "当前消息"
                 },
                 "noMatch": "无法找到另一条匹配的伤害消息。"
             }
