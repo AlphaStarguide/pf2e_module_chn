@@ -69,7 +69,12 @@
             "PLANNED_ENTRY": "已规划列表",
             "SEQUENTIAL_PROGRESS": "正在规划{current}~{target}级",
             "LOADING_PLANNER_DATA": "PF2e升级规划器正在加载规划数据。",
-            "LOADING_LEVEL_DATA": "加载规划数据中…"
+            "LOADING_LEVEL_DATA": "加载规划数据中…",
+            "PUB_GROUP_AP": "冒险之路",
+            "PUB_GROUP_AP_GUIDE": "冒险之路玩家手册",
+            "PUB_GROUP_STANDALONE": "独立模组",
+            "PUB_GROUP_BLOG": "博客",
+            "PUB_GROUP_LOST_OMENS": "预言破灭之年"
         },
         "SECTIONS": {
             "CLASS_FEATURES": "职业特性",
@@ -744,6 +749,9 @@
         "RUNESMITH": {
             "NAME": "符文工匠",
             "RUNIC_REPERTOIRE": "符文库"
+        },
+        "NECROMANCER": {
+            "NAME": "死灵师"
         }
     }
 }
