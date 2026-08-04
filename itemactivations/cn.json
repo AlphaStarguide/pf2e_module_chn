@@ -33,7 +33,12 @@
             },
             "show": {
                 "source": {
-                    "name": "显示启动项来源"
+                    "name": "显示启动项来源",
+                    "hint": "显示用于连接到PF2e系统中该启动项来源物品的图标"
+                },
+                "activation-list": {
+                    "name": "显示启动项列表",
+                    "hint": "（在物品卡中）显示当前角色在特定物品上拥有的启动项列表"
                 }
             }
         },
@@ -168,6 +173,13 @@
                 "label": "启动项",
                 "description": "这是由PF2e Item Activations模组添加的启动项"
             }
+        },
+        "ui": {
+            "activations": "启动项",
+            "granted-by": "来自于",
+            "open-item-source": "打开来源物品",
+            "open-activation": "打开启动项",
+            "frequency-status": "{value} / {max}次"
         }
     },
     "I18N.LANGUAGE": "简体中文"
