@@ -23,12 +23,12 @@
             "necromancer": {
                 "handle-living-graveyard-movement": {
                     "name": "[死灵师] 处理活体坟场的移动",
-                    "hint": "若启用，当活体坟场移动时，会往聊天栏发送一条消息，点击该消息将使该坟场（根据规则）生成一个残骸"
+                    "hint": "若启用，当活体坟场移动时，会往聊天栏发送一条消息，点击该消息将使该坟场（根据规则）生成一个奴仆"
                 },
                 "thrall": {
                     "auto-expire": {
-                        "name": "[死灵师] 自动删除过期的残骸",
-                        "hint": "若启用，则当“残骸崩解时间”效果过期时，自动删除该残骸"
+                        "name": "[死灵师] 自动删除过期的奴仆",
+                        "hint": "若启用，则当“奴仆自毁时间”效果过期时，自动删除该奴仆"
                     }
                 }
             },
@@ -78,7 +78,7 @@
         "name": "PF2e Summon's Assistant",
         "message": {
             "living-graveyard": {
-                "thralls": "活体坟场已移动。如果这来自维持法术的效果，你要在其路径上召唤3个新的残骸吗？",
+                "thralls": "活体坟场已移动。如果这来自维持法术的效果，你要在其路径上召唤3个新的奴仆吗？",
                 "summon": "召唤！"
             },
             "wooden-double": "木制替身的溢出伤害已转移给施法者"
@@ -153,10 +153,10 @@
                 }
             },
             "create-thrall": {
-                "title": "创造残骸",
+                "title": "创造奴仆",
                 "options": {
-                    "two": "{iconSummon}召唤了{cnt}个残骸",
-                    "one": "{iconSummon}召唤{cnt}个残骸并立即指挥残骸"
+                    "two": "{iconSummon}召唤了{cnt}个奴仆",
+                    "one": "{iconSummon}召唤{cnt}个奴仆并立即命令奴仆"
                 }
             }
         },
@@ -224,8 +224,8 @@
                     "name": "召唤物归属者"
                 },
                 "thrall-expiration": {
-                    "description": "该效果用于测算这只残骸的崩解时间。",
-                    "name": "效果：残骸崩解时间"
+                    "description": "该效果用于测算这只奴仆的自毁时间。",
+                    "name": "效果：奴仆自毁时间"
                 },
                 "duplicate-foe": {
                     "name": "效果：仿敌拟像 Duplicate Foe",
