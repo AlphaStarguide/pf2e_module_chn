@@ -221,5 +221,18 @@
         "HEALING_BOMB_NO_TARGET": "要投掷治疗炸弹，你必须先选择一个目标。",
         "SETTING_HEALING_BOMB_PC2_ERRATA_HINT": "若启用，治疗炸弹将被视为自动命中目标的交互动作（无需攻击掷骰，射程20尺）。若禁用，则使用原规则，即该动作需进行一次远程攻击掷骰。",
         "HEALING_BOMB_OUT_OF_RANGE": "警告：该目标似乎距你超出20尺范围（勘误射程限制）。"
+    },
+    "ardt": {
+        "moduleName": "PF2e Alchemist Remaster Duct Tape",
+        "acid": "酸蚀",
+        "cold": "寒冷",
+        "electricity": "电击",
+        "fire": "火焰",
+        "adamantine": "精金",
+        "coldIron": "寒铁",
+        "dawnsilver": "朝银",
+        "none": "-无-",
+        "dmgType": "选择一种伤害类型",
+        "selectWeapon": "选择一件武器"
     }
 }
