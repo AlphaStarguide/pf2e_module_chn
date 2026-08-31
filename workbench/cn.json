@@ -41,7 +41,8 @@
                 "clearFor": "清除目标",
                 "title": "选择要为其添加目标的用户",
                 "hint": "绑定键：用于将已选择指示物设为选定用户的目标。",
-                "name": "添加用户目标"
+                "name": "添加用户目标",
+                "userLabel": "User"
             },
             "applyPersistentHealing": {
                 "wasHealed": "{healing}治疗已自动应用。",
@@ -742,7 +743,22 @@
             },
             "learnSpellDestroyScroll": {
                 "hint": "When learning a spell from a scroll, destroy the scroll after learning.",
-                "name": "Destroy Scroll on Learn"
+                "name": "Destroy Scroll on Learn",
+                "onSuccess": "On success",
+                "onUse": "On use",
+                "no": "No"
+            },
+            "selectCurrentCombatantOnTurnStart": {
+                "hint": "Client setting to automatically select the current combatant's token on the start of its turn.",
+                "name": "Automatically select the current combatant on turn start"
+            },
+            "clearCombatantTargetsOnTurnEnd": {
+                "hint": "Client setting to automatically clear the current combatant's targets at the end of its turn.",
+                "name": "Automatically clear combatant's targets on turn end"
+            },
+            "rememberAndReaddCombatantTargets": {
+                "hint": "Client setting to remember the current combatant's targets and automatically re-add them at the start of its next turn.",
+                "name": "Remember combatant's targets and restore them on next turn start"
             }
         },
         "spellCardNotFound": "找不到法术卡。以最低环级施放{spell}。",
@@ -881,7 +897,53 @@
             "learnFromScrollMessage": "Do you want to learn the spell {spellName} from this scroll?",
             "scrollMystified": "This scroll has not been identified. Identify it first before attempting to learn its spell.",
             "pickEntryTitle": "Select Spellcasting Entry",
-            "pickEntryMessage": "Multiple compatible spellcasting entries found. Which one should this spell be added to?"
+            "pickEntryMessage": "Multiple compatible spellcasting entries found. Which one should this spell be added to?",
+            "overrideLearnFailureBatchMessage": "You previously failed to learn one or more of these spells at your current level: {spellName}. Override these flags and learn them now?",
+            "learnFromScrollButton": "Learn Spell from Scroll",
+            "entryTypeFocus": "focus",
+            "entryTypeSpontaneous": "spontaneous",
+            "entryTypePrepared": "prepared",
+            "entryTypeSpellcasting": "spellcasting"
+        },
+        "spellShared": {
+            "alreadyKnown": "{name} is already known by this character.",
+            "currencyCredits": "{amount} credit(s)",
+            "currencyGp": "{amount} gp",
+            "debtItemCreated": "<strong>{actor}</strong> incurred a debt of {amount} for spell-learning materials to learn <em>{spellName}</em>.",
+            "debtItemDescriptionForSpell": "Owes {amount} for spell-learning materials to learn <em>{spellName}</em>.",
+            "debtItemDescriptionNoSpellbook": "Owes {amount} for spell-learning materials.",
+            "debtItemName": "Debt {amount}",
+            "insufficientFundsForLearn": "<strong>{actor}</strong> cannot afford the {cost} required to learn {spellName}. Spell learning is not possible.",
+            "learnAnywayNo": "Do not learn it",
+            "learnAnywayYes": "Learn it anyway",
+            "learnFailureOverridden": "<strong>{actor}</strong> overrode a previous learn failure and added <em>{spellName}</em>.",
+            "learnNoCompatibleEntry": "No compatible spellcasting entry found.",
+            "learnNoSkill": "Could not find skill for the entry tradition.",
+            "learnResultCriticalFailure": "<strong>Critical Failure!</strong> {actor} expends half the materials ({cost}) and fails to learn {spellName}. {hours} were spent. This cost has already been subtracted. You may try again after gaining a level.",
+            "learnResultCriticalSuccess": "<strong>Critical Success!</strong> {actor} expends half the materials ({cost}) and learns {spellName}. Time spent: {hours}. This cost has already been subtracted.",
+            "learnResultFailure": "<strong>Failure.</strong> {actor} fails to learn {spellName}. No materials expended, but {hours} were spent. You may try again after gaining a level.",
+            "learnResultSuccess": "<strong>Success!</strong> {actor} expends the materials ({cost}) and learns {spellName}. Time spent: {hours}. This cost has already been subtracted.",
+            "learnSpellAddPrevented": "The spell could not be added automatically. Please drag it to your character sheet manually.",
+            "learnSpellBatchDialogMessage": "Do you want to use the Learn a Spell rules for {count} spells? Estimated total cost: {cost}, total time: {time} if all skill checks succeed.",
+            "learnSpellBatchDialogTitle": "Learn Spells?",
+            "learnSpellBatchLearnAlreadyKnown": "(already known)",
+            "learnSpellCancel": "Cancel",
+            "learnSpellDialogMessage": "Do you want to use the Learn a Spell rules for {spellName}? Estimated cost: {cost}, time: {time} if all skill checks succeed.",
+            "learnSpellDialogTitle": "Learn a Spell?",
+            "learnSpellFailed": "Failed to process Learn a Spell for <em>{name}</em>. Check the console (F12) for details.",
+            "learnSpellInvalidRank": "Could not determine the rank of this spell. The spell data may be incomplete.",
+            "learnSpellNo": "Skip Check & Cost",
+            "learnSpellSkipped": "<strong>{actor}</strong> adds <em>{spellName}</em> without a skill check or material cost.",
+            "learnSpellTime10Minutes": "{minutes} minutes",
+            "learnSpellTimeHours": "{hours} hour(s)",
+            "learnSpellTimeHoursMinutes": "{hours}h {minutes}m",
+            "learnSpellYes": "Learn a Spell",
+            "no": "No",
+            "spellNotEligible": "{spellName} does not meet the feat-based eligibility requirements for this spellcasting entry.",
+            "traditionMismatch": "{spellName} has the {traditions} tradition(s). Your character does not have a matching spellcasting entry.",
+            "traditionMismatchOverride": "{spellName} has the {traditions} tradition(s). Your character does not have a matching spellcasting entry. Learn it anyway?",
+            "traditionOverrideChat": "<strong>{actorName}</strong> overrides the tradition restriction and learns <em>{spellName}</em> ({traditions}).",
+            "yes": "Yes"
         }
     }
 }
