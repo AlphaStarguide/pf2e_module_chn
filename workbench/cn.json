@@ -42,7 +42,7 @@
                 "title": "选择要为其添加目标的用户",
                 "hint": "绑定键：用于将已选择指示物设为选定用户的目标。",
                 "name": "添加用户目标",
-                "userLabel": "User"
+                "userLabel": "用户"
             },
             "applyPersistentHealing": {
                 "wasHealed": "{healing}治疗已自动应用。",
@@ -233,8 +233,8 @@
                 "hint": "设置在法术攻击命中时自动掷伤害骰。请注意，重击时永远只骰普通伤害。"
             },
             "autoRollDamageForSpellWhenNotAnAttack": {
-                "hint": "在施放*非攻击*的法术时自动掷普通伤害骰（客户端设置）。如果消息包含了失败的豁免结果，其会自动掷骰。如果是基础豁免则成功就会自动掷骰。攻击的话需要成功才会自动掷骰。如果是攻击且需要豁免的法术，则不会自动掷骰（例如解离术）。",
-                "name": "施放非攻击的法术时自动掷伤害骰。",
+                "hint": "在施放*非攻击*法术时自动掷普通伤害骰（客户端设置）。如果消息包含了失败的豁免结果，其会自动掷骰。如果是基础豁免则成功就会自动掷骰。攻击的话需要成功才会自动掷骰。如果是攻击且需要豁免的法术，则不会自动掷骰（例如解离术）。",
+                "name": "施放非攻击法术时自动掷伤害骰。",
                 "nonSaveSpell": "所有非攻击非豁免法术",
                 "saveSpell": "所有非攻击的豁免法术",
                 "no": "否",
@@ -723,7 +723,7 @@
             },
             "borrowArcaneSpellDcAdjustment": {
                 "hint": "Difficulty adjustment applied to the DC when using Borrow an Arcane Spell. Default 0 (but should probably be a bit easier).",
-                "name": "Borrow an Arcane Spell DC Adjustment"
+                "name": "借阅奥术DC调整"
             },
             "repertoireRetrainCost": {
                 "hint": "Houserule: When retraining a repertoire spell, charge the character 7 days of master earn-income at their level.",
@@ -749,7 +749,7 @@
                 "no": "No"
             },
             "selectCurrentCombatantOnTurnStart": {
-                "hint": "Client setting to automatically select the current combatant's token on the start of its turn.",
+                "hint": "在当前参战者回合开始时自动选择其指示物（客户端设置）。",
                 "name": "Automatically select the current combatant on turn start"
             },
             "clearCombatantTargetsOnTurnEnd": {
@@ -900,10 +900,10 @@
             "pickEntryMessage": "Multiple compatible spellcasting entries found. Which one should this spell be added to?",
             "overrideLearnFailureBatchMessage": "You previously failed to learn one or more of these spells at your current level: {spellName}. Override these flags and learn them now?",
             "learnFromScrollButton": "Learn Spell from Scroll",
-            "entryTypeFocus": "focus",
-            "entryTypeSpontaneous": "spontaneous",
-            "entryTypePrepared": "prepared",
-            "entryTypeSpellcasting": "spellcasting"
+            "entryTypeFocus": "聚能",
+            "entryTypeSpontaneous": "自发",
+            "entryTypePrepared": "准备",
+            "entryTypeSpellcasting": "施法"
         },
         "spellShared": {
             "alreadyKnown": "{name} is already known by this character.",
