@@ -158,6 +158,10 @@
                     "two": "{iconSummon}召唤了{cnt}个奴仆",
                     "one": "{iconSummon}召唤{cnt}个奴仆并立即命令奴仆"
                 }
+            },
+            "thrall-destroyed": {
+                "title": "摧毁奴仆？",
+                "content": "你决定摧毁一个奴仆吗？（用于“化为精魂”）"
             }
         },
         "display-text": {
