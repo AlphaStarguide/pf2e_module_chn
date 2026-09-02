@@ -742,7 +742,7 @@
                 "name": "Learn a Spell DC Adjustment"
             },
             "learnSpellDestroyScroll": {
-                "hint": "When learning a spell from a scroll, destroy the scroll after learning.",
+                "hint": "When learning a spell from a scroll, destroy the scroll. 'On use' destroys the scroll regardless of success, 'On success' only destroys on a successful Learn a Spell check.",
                 "name": "Destroy Scroll on Learn",
                 "onSuccess": "On success",
                 "onUse": "On use",
