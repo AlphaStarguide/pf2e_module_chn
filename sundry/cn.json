@@ -159,6 +159,9 @@
                         "reaction-only": "仅追踪发送至聊天的反应动作",
                         "off": "关闭",
                         "all": "全部特性"
+                    },
+                    "reactive-strike": {
+                        "name": "反应动作使用 - 反应打击"
                     }
                 },
                 "flourish-usage": {
