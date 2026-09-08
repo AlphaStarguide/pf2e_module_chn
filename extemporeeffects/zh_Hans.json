@@ -8,7 +8,7 @@
         "openSheetInstructionCtrl": "[Ctrl + Left Click] 打开角色卡",
         "contextMenuExtemporeEffect": "即兴效果",
         "contextMenuApplyEffect": "应用效果",
-        "addedPrefixToEffectName": "效果: ",
+        "addedPrefixToEffectName": "效果： ",
         "addedPrefixToEffectDescription": "<h2>(生成效果)</h2>\n",
         "nameOfQuickUntitledEffect": "快速无命名效果",
         "descriptionOfQuickUntitledEffect": "<h2>(生成效果)</h2>\n随便填入你想要的内容！",
