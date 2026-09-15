@@ -382,7 +382,7 @@
             "EXPIRED": "{weaponName} 上的 {poisonName} 涂层已过期",
             "EFFECT_NAME": "{poisonName} ({weaponName})",
             "EFFECT_DESCRIPTION": "{weaponName} 已涂抹 {poisonName}",
-            "TOXICOLOGIST_APPLIED": "毒药学家：毒素伤害可作为强酸伤害造成",
+            "TOXICOLOGIST_APPLIED": "毒理学家：毒素伤害可视为酸蚀伤害",
             "FIELD_VIAL_HINT": "外勤药瓶：为首次命中添加伤害，回合结束后失效。",
             "FIELD_VIAL_HIT_TITLE": "外勤药瓶：{poisonName}",
             "FIELD_VIAL_HIT_DESC": "{actorName} 使用 {weaponName} 攻击 — 来自外勤药瓶的额外 {damageType} 伤害。",
