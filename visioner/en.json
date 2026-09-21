@@ -910,6 +910,14 @@
         "name": "Hidden Walls",
         "hint": "Allows configuring of walls conditional visibility states within the Visioner manager. Visual indicator when succeeding at Seek"
       },
+      "EXTINGUISH_LIGHT_SWIMMING": {
+        "name": "Extinguish Held Light When Swimming",
+        "hint": "When a token's movement type changes to swimming, automatically turn off any lit held or worn light source (e.g. a torch)."
+      },
+      "RELIGHT_LIGHT_LEAVING_SWIMMING": {
+        "name": "Relight Held Light When Leaving Swimming",
+        "hint": "When a token's movement type changes away from swimming, automatically turn back on any light source this module auto-extinguished."
+      },
       "SYSTEM_CONDITION_OVERRIDES": {
         "name": "System conditions act as Visioner overrides",
         "hint": "When a token has the PF2E Hidden, Concealed, or Undetected condition, force that visibility toward the token for its enemies. Removing the condition reverts to automatic visibility. Manual overrides are never replaced."
@@ -1016,6 +1024,10 @@
         "name": "Require GM Approval for Door Peek",
         "hint": "Players must ask the GM before a door peek starts. The GM receives an approval dialog; GMs can still peek directly."
       },
+      "PLAYER_PEEK_BLOCK_MODE": {
+        "name": "Player Peek Block Mode",
+        "hint": "Controls which player peek types are temporarily blocked from the Token Controls toolbar."
+      },
       "CORNER_PEEK_ENABLED": {
         "name": "Enable Corner Peeking",
         "hint": "Allow tokens to peek around corners with the Hold Peek keybind. Door peeking is controlled per-door in the wall configuration."
@@ -1062,6 +1074,8 @@
       }
     },
     "UI": {
+      "WALL_BLOCKS_SCENT": "Blocks scent",
+      "WALL_BLOCKS_SCENT_HINT": "Stop scent through this wall, independently of sight and sound. Open doors allow scent through.",
       "ENCOUNTER_FILTER_TEXT": "Show only encounter tokens",
       "CEASELESS_SHADOWS_UPGRADE_TOOLTIP": "{FEAT}: {FROM} → {TO} (feat upgrade)",
       "COVER_OVERRIDE": "Cover Override",
@@ -1236,6 +1250,7 @@
       "SNIPING_DUO_PAN": "Pan to token",
       "SNIPING_DUO_SPOTTER_NOT_FOUND": "Sniping Duo: selected spotter not found.",
       "SNIPING_DUO_COVER_IGNORE_TOOLTIP": "{FEAT}: {ALLY} does not provide cover for this Strike.",
+      "STARLIT_SPAN_COVER_IGNORE_TOOLTIP": "Starlit Span: Arcane Cascade ignores lesser cover from allies for this ranged attack.",
       "SNIPING_DUO_COVER_OVERRIDE_UNAVAILABLE": "{FEAT}: cover override unavailable.",
       "COVER_ADJUSTMENT_TOOLTIP": "Cover adjusted by rule element ({SOURCES}): {ORIGINAL} → {FINAL}",
       "FROM_LINKED_DARKNESS": "From linked Darkness template",
@@ -1536,6 +1551,11 @@
       "TOOLTIP": "Failure upgraded to Success due to Sneak Adept feat. It's almost impossible to spot this creature."
     },
     "PEEK": {
+      "BLOCK_MODE_NONE": "Player Peek Blocking: None (click to block corners)",
+      "BLOCK_MODE_CORNER": "Player Peek Blocking: Corners Only (click to block doors)",
+      "BLOCK_MODE_DOOR": "Player Peek Blocking: Doors Only (click to block both)",
+      "BLOCK_MODE_BOTH": "Player Peek Blocking: Both (click to allow all)",
+      "BLOCKED_BY_GM": "Peeking is temporarily blocked by the GM.",
       "CHECK_LABEL": "Peek Through Door",
       "DC_FIELD_LABEL": "Peek DC",
       "ALLOW_FIELD_LABEL": "Allow Peeking",
@@ -1548,6 +1568,21 @@
       "APPROVE": "Approve",
       "DENY": "Deny",
       "PAN_TO_DOOR": "Pan to door"
+    },
+    "WALL_SIMPLIFY": {
+      "TITLE": "Simplify Walls",
+      "DESCRIPTION": "Replaces chains of connected walls that share the same configuration with fewer segments. Every new segment stays within the tolerance of the original outline, so line of sight is preserved visually while Foundry has far fewer edges to process each frame.",
+      "TOLERANCE": "Tolerance (px)",
+      "TOLERANCE_HINT": "Max distance a simplified wall may deviate from the original. 0 merges only perfectly straight runs.",
+      "PREVIEW": "{before} walls → {after} walls ({removed} removed)",
+      "SKIPPED": "Doors and one-way walls are never changed.",
+      "BACKUP_AVAILABLE": "A previous simplification of this scene can be undone ({count} original walls stored).",
+      "APPLY": "Simplify",
+      "UNDO": "Undo last simplification",
+      "CANCEL": "Cancel",
+      "APPLIED": "Walls simplified: {before} → {after}.",
+      "UNDONE": "Wall simplification undone.",
+      "FAILED": "Wall simplification failed. See console."
     }
   }
 }
