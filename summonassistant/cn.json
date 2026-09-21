@@ -162,6 +162,9 @@
             "thrall-destroyed": {
                 "title": "摧毁奴仆？",
                 "content": "你决定摧毁一个奴仆吗？（用于“化为精魂”）"
+            },
+            "wall": {
+                "line": "线形"
             }
         },
         "display-text": {
