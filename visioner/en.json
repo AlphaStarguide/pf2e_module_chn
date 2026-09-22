@@ -922,6 +922,20 @@
         "name": "System conditions act as Visioner overrides",
         "hint": "When a token has the PF2E Hidden, Concealed, or Undetected condition, force that visibility toward the token for its enemies. Removing the condition reverts to automatic visibility. Manual overrides are never replaced."
       },
+      "FLANKING_SIZE_RULE": {
+        "name": "Large Creature Flanking Rule",
+        "hint": "How the flanking line is traced for Large and larger creatures. Pick an option below; each diagram shows the lines that rule would trace on the same scene.",
+        "CHOICES": {
+          "raw": "RAW (center to center)",
+          "anySquare": "Any occupied square",
+          "anyCorner": "Any corner",
+          "lineThrough": "Line through target"
+        },
+        "DIAGRAM": {
+          "flanked": "Flanked",
+          "notFlanked": "Not flanked"
+        }
+      },
       "AUTO_COVER": {
         "name": "Enable Auto-Cover",
         "hint": "Allows cover to be automatically applied based on token coverage in relation to walls and other tokens"
