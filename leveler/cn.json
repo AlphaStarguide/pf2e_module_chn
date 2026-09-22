@@ -752,6 +752,11 @@
         },
         "NECROMANCER": {
             "NAME": "死灵师"
+        },
+        "KEYBINDINGS": {
+            "OPEN_LEVELER": {
+                "NAME": "打开PF2e升级规划器"
+            }
         }
     }
 }
