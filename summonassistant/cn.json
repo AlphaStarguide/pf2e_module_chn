@@ -73,6 +73,12 @@
                     "hint": "限制了具备射程的召唤法术的召唤物生成范围，并将其范围显示在场景上",
                     "name": "召唤物生成范围自动化限制"
                 }
+            },
+            "config": {
+                "ping-summon": {
+                    "name": "生成召唤指示物时高亮显示",
+                    "hint": "创建召唤物指示物的同时生成高亮信号"
+                }
             }
         },
         "name": "PF2e Summon's Assistant",
@@ -105,7 +111,8 @@
             "bilocation": {
                 "error": "[错误] 你未在当前场景中激活二重身克隆"
             },
-            "illusory-creature": "[幻象生物] 选择你的幻象所呈现的生物形态与体型"
+            "illusory-creature": "[幻象生物] 选择你的幻象所呈现的生物形态与体型",
+            "missing-jb2a": "[{moduleName}] 此次召唤依赖JB2A的部分资源，安装并启用该模组后即可使用。如果你不打算使用其资源，可以忽略此消息。"
         },
         "dialog": {
             "duplicate-foe": "该目标豁免失败了吗？",
@@ -122,7 +129,8 @@
             "customize": {
                 "summoned-token": {
                     "title": "自定义召唤物指示物"
-                }
+                },
+                "reset": "重制为默认设置"
             },
             "dancing-weapon": {
                 "choose": "选择该武器",
@@ -164,7 +172,13 @@
                 "content": "你决定摧毁一个奴仆吗？（用于“化为精魂”）"
             },
             "wall": {
-                "line": "线形"
+                "line": "线形",
+                "circle": "环形"
+            },
+            "wall-of-flesh": {
+                "arms": "手臂",
+                "eyes": "眼睛",
+                "mouths": "嘴巴"
             }
         },
         "display-text": {
