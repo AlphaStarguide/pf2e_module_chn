@@ -179,6 +179,9 @@
                 "arms": "手臂",
                 "eyes": "眼睛",
                 "mouths": "嘴巴"
+            },
+            "horde-of-underlings": {
+                "title": "喽啰成群"
             }
         },
         "display-text": {
@@ -229,7 +232,8 @@
                     "block": "阻挡法术从球体外指定目标（区域效果如常穿过）。",
                     "text": "穿过墙体的生物必须尝试一次@Check[will|dc:resolve(@actor.system.resources.dc.value)]豁免，否则陷入@UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续1分钟；若大失败，该生物改为被如@UUID[Compendium.pf2e.spells-srd.Item.5bTt2CvYHPvaR7QQ]的效果送往其他位面"
                 }
-            }
+            },
+            "summon-name-ownership": "{summonerName}的{summonName}"
         },
         "items": {
             "actions": {
