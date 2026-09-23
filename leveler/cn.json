@@ -214,15 +214,15 @@
                 "HINT": "启用族裔楷模变体规则。角色初始获得2个族裔专长，并且在每个奇数等级（3，5，7，9，11，13，15，17，19）获得一个额外族裔专长。该规则与“族裔典范”通用专长无关。"
             },
             "SHOW_PREREQUISITES": {
-                "NAME": "显示先决条件",
+                "NAME": "显示专长先决条件情况",
                 "HINT": "在选择器中显示专长的先决条件验证状态"
             },
             "SHOW_BUTTON": {
                 "NAME": "显示规划按钮",
-                "HINT": "在角色卡上显示「等级规划」按钮"
+                "HINT": "在支持的角色卡上显示「等级规划」按钮。"
             },
             "AUTO_APPLY": {
-                "NAME": "升级时自动应用",
+                "NAME": "升级时弹窗提示应用规划",
                 "HINT": "在角色升级时自动弹出提示，应用已规划的选择"
             },
             "IGNORE_FREE_ARCHETYPE_DEDICATION_LOCK": {
@@ -371,7 +371,7 @@
             "DESELECT_ALL": "取消全选",
             "SELECTED_COUNT": "已选{count}个",
             "ALREADY_SELECTED": "已选择",
-            "ALREADY_TAKEN": "该法术已在法术书中",
+            "ALREADY_TAKEN": "该法术已习得",
             "FOCUS_CANTRIPS": "聚能戏法",
             "NEW_FOCUS": "新增！",
             "SORT_RANK_DESC": "环级（从高到低）",
