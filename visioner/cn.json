@@ -1513,6 +1513,9 @@
             "ALLOW_FIELD_LABEL": "允许窥视",
             "NOT_ALLOWED": "禁止透过这扇门进行窥视。",
             "TOO_FAR": "你离门太远，以至于无法透过其进行窥视。"
+        },
+        "WALL_SIMPLIFY": {
+            "CANCEL": "取消"
         }
     }
 }
