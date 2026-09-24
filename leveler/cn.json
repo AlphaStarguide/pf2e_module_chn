@@ -74,7 +74,8 @@
             "PUB_GROUP_AP_GUIDE": "冒险之路玩家手册",
             "PUB_GROUP_STANDALONE": "独立模组",
             "PUB_GROUP_BLOG": "博客",
-            "PUB_GROUP_LOST_OMENS": "预言破灭之年"
+            "PUB_GROUP_LOST_OMENS": "预言破灭之年",
+            "REMASTER_ONLY": "仅限重制版"
         },
         "SECTIONS": {
             "CLASS_FEATURES": "职业特性",
@@ -218,7 +219,7 @@
                 "HINT": "在选择器中显示专长的先决条件验证状态"
             },
             "SHOW_BUTTON": {
-                "NAME": "显示规划按钮",
+                "NAME": "在角色卡显示「等级规划」按钮",
                 "HINT": "在支持的角色卡上显示「等级规划」按钮。"
             },
             "AUTO_APPLY": {
@@ -235,7 +236,7 @@
                 "RARE_NAME": "允许玩家使用稀有资源",
                 "RARE_HINT": "允许非GM用户在角色创建和升级工具中查看和选择稀有资源。",
                 "UNIQUE_NAME": "允许玩家使用独特资源",
-                "UNIQUE_HINT": "允许非GM用户在角色创建和升级工具中查看和选择独特资源。"
+                "UNIQUE_HINT": "允许非GM用户在角色创建和等级规划中查看和选取独特资源。"
             },
             "FEAT_SORT": {
                 "NAME": "默认专长排序",
@@ -267,7 +268,7 @@
                     "NAME": "玩家禁用资源",
                     "HINT": "选择非GM用户对被禁用资源的处理方式：是完全隐藏，还是保持可见但不可选。",
                     "HIDDEN": "对玩家隐藏",
-                    "UNSELECTABLE": "显示为不可选"
+                    "UNSELECTABLE": "显示为禁用"
                 },
                 "GM_OVERRIDE_ALLOWED": "由于你是GM，所以允许访问",
                 "BADGE_INHERITED": "继承",
@@ -335,6 +336,9 @@
             "ADDITIONAL_COMPENDIUMS": {
                 "NAME": "额外专长合集包",
                 "HINT": "用于搜索专长的额外合集包列表，用逗号分隔（例如 'my-module.my-feats'）"
+            },
+            "REVIEW_WORKFLOW": {
+                "DISABLED": "禁用"
             }
         },
         "SKILLS": {
@@ -390,7 +394,9 @@
             "CATEGORY_FILTER": "类别",
             "RANK": "环级",
             "ATTUNEMENT_SLOTS": "精魄：{selected}/{count}",
-            "TAKEN": "已选"
+            "TAKEN": "已习得",
+            "SIGNATURE_SPELLS": "标志性法术",
+            "CHOOSE_SIGNATURE": "选择标志性法术"
         },
         "CREATION": {
             "TITLE": "角色创建",
@@ -757,6 +763,12 @@
             "OPEN_LEVELER": {
                 "NAME": "打开PF2e升级规划器"
             }
+        },
+        "REVIEW_REQUEST": {
+            "FOR_CHARACTER": "角色：{actor}"
+        },
+        "PLAN_COMMENTS": {
+            "ATTACH_INVALID": "未找到该UUID对应的项目。"
         }
     }
 }
