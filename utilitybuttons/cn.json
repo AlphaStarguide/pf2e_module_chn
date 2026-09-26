@@ -28,15 +28,15 @@
         },
         "settings": {
             "flat-check-in-message": {
-                "name": "聊天信息中的纯骰检定按钮",
-                "hint": "在聊天信息中为兼容的相关状态添加纯骰检定。"
+                "name": "聊天消息中的纯骰检定按钮",
+                "hint": "在聊天消息中为兼容的相关状态添加纯骰检定。"
             },
             "flat-check-config": {
                 "name": "纯骰检定配置"
             },
             "flat-check-auto-roll": {
                 "name": "自动骰掷纯骰检定",
-                "hint": "自动骰掷聊天信息中的纯骰检定",
+                "hint": "自动骰掷聊天消息中的纯骰检定",
                 "choices": {
                     "always": "总是",
                     "user": "用户设置",
@@ -89,7 +89,7 @@
                 "hint": "让玩家选择一名参战角色延迟其回合。他们仍可以随时返回先攻顺序。"
             },
             "delay-create-message": {
-                "name": "延迟/返回先攻时发送聊天信息"
+                "name": "延迟/返回先攻时发送聊天消息"
             },
             "token-hud-remove-combat-toggle": {
                 "name": "移除指示物Hud的切换战斗状态",
