@@ -137,7 +137,7 @@
             "SETUP_TEMPLATE_TOOLTIP": "点击任意位置放置15尺爆发范围，对范围内的指示物使用搜索动作",
             "ENCOUNTER_ONLY": "仅显示遭遇中指示物",
             "SETTING_NAME": "启用搜索自动化",
-            "SETTING_HINT": "自动为<b>搜索</b>聊天信息添加按钮以便应用能见度变更",
+            "SETTING_HINT": "自动为<b>搜索</b>聊天消息添加按钮以便应用能见度变更",
             "OUT_OF_RANGE": "超出射程",
             "RANGE_LIMIT_ACTIVE_CUSTOM": "激活射程限制：仅显示{distance}尺内的目标",
             "NO_TARGETS_IN_RANGE": "30尺射程内无有效目标存在",
@@ -188,7 +188,7 @@
             "OPEN_RESULTS": "公开躲藏结果",
             "ENCOUNTER_ONLY": "仅显示遭遇中指示物",
             "SETTING_NAME": "启用躲藏自动化",
-            "SETTING_HINT": "自动为<b>躲藏</b>聊天信息添加按钮以便应用能见度变更",
+            "SETTING_HINT": "自动为<b>躲藏</b>聊天消息添加按钮以便应用能见度变更",
             "OPEN_RESULTS_TOOLTIP": "打开躲藏结果对话框，以进行单独或批量能见度变更",
             "BADGES": {
                 "TERRAIN_STALKER_LABEL": "地形潜伏",
@@ -229,7 +229,7 @@
             "OPEN_RESULTS": "公开潜行结果",
             "ENCOUNTER_ONLY": "仅显示遭遇中指示物",
             "SETTING_NAME": "启用潜行自动化",
-            "SETTING_HINT": "自动为<b>潜行</b>聊天信息添加按钮以便应用能见度变更",
+            "SETTING_HINT": "自动为<b>潜行</b>聊天消息添加按钮以便应用能见度变更",
             "OPEN_RESULTS_TOOLTIP": "打开潜行结果对话框，以进行单独或批量能见度变更",
             "BADGES": {
                 "TERRAIN_STALKER_TOOLTIP": "已选择困难地形：{selection}（区域：{environments}）",
@@ -265,7 +265,7 @@
             "OPEN_RESULTS": "公开分神结果",
             "ENCOUNTER_ONLY": "仅显示遭遇中指示物",
             "SETTING_NAME": "启用分神自动化",
-            "SETTING_HINT": "自动为<b>分神</b>聊天信息添加按钮以便应用能见度变更",
+            "SETTING_HINT": "自动为<b>分神</b>聊天消息添加按钮以便应用能见度变更",
             "OPEN_RESULTS_TOOLTIP": "打开分神结果对话框，以进行单独或批量能见度变更"
         },
         "SETTINGS": {
