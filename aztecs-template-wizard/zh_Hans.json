@@ -79,7 +79,7 @@
             "WallStrikeName": "打击名称",
             "DarknessMode": "模式",
             "PrivateToGm": "仅限GM",
-            "BlindToGm": "GM不可见",
+            "BlindToGm": "仅GM可见",
             "TerrainPreset": "地形",
             "CustomCost": "移动消耗倍率",
             "IRWValue": "值",
@@ -455,7 +455,7 @@
             "WallHasStrike": "勾选时，生成的墙体角色会获得配置好的近战攻击打击项目。",
             "WallStrikeAttack": "支持数字，@路径（例如：@placer.system.attributes.spellDC.value - 10），以及算术公式。",
             "Duration": "启用时，创建的效果将在设定时间后失效。",
-            "PrivateToGm": "与GM不可见冲突。",
+            "PrivateToGm": "与仅GM可见冲突。",
             "BlindToGm": "与仅限GM冲突。",
             "Expression": "支持数字，@路径（例如：@actor.level），以及算术公式。可用域：actor，token，region，sourceItem，placer。"
         },
