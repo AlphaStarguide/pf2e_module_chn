@@ -718,47 +718,47 @@
                 "name": "画布功能设置"
             },
             "allowDebtItems": {
-                "hint": "When enabled, characters who cannot afford the full cost of learning a spell or paying for a spellbook incur a debt item on their character sheet. When disabled, the action is aborted with a chat message if the character cannot afford it.",
-                "name": "Allow Debt Items"
+                "hint": "启用时，若角色无法负担学习法术或购买法术书的全部费用，则会在其角色卡中生成一张欠条。禁用时，若角色无法负担这笔费用，则会弹出聊天消息终止该操作。",
+                "name": "允许赊账"
             },
             "borrowArcaneSpellDcAdjustment": {
-                "hint": "Difficulty adjustment applied to the DC when using Borrow an Arcane Spell. Default 0 (but should probably be a bit easier).",
+                "hint": "使用借阅奥术时应用的困难等级调整。默认为0（但应更简单些）。",
                 "name": "借阅奥术DC调整"
             },
             "repertoireRetrainCost": {
-                "hint": "Houserule: When retraining a repertoire spell, charge the character 7 days of master earn-income at their level.",
-                "name": "Houserule: Charge for Repertoire Retraining"
+                "hint": "房规：重训法术库内的一个法术时，收取等同于在角色等级的大师技能所赚取7天收入的费用。",
+                "name": "房规：重训法术库收费"
             },
             "repertoireSwapOutCommon": {
-                "hint": "Houserule: When swapping repertoire spells, allow selecting common spells to swap out (replacing them with uncommon or rarer). Default: false.",
-                "name": "Houserule: Allow Swapping Out Common Repertoire Spells"
+                "hint": "房规：替换法术库内的法术时，允许选取常见法术进行替换（并替换为罕见或稀有法术）。默认：禁止。",
+                "name": "房规：允许替换法术库内的常见法术"
             },
             "enableGeneralLearnSpell": {
-                "hint": "When any character adds a spell, prompt to use Learn a Spell rules (with skill check, material cost, and spellbook integration for prepared casters). Skips level-1 characters at 0 XP.",
-                "name": "Enable General Learn a Spell"
+                "hint": "为任何角色添加法术时，弹出使用学习法术规则的提示框（包括技能检定，材料开销和为准备施法者提供的法术书集合）。跳过XP为0的1级角色。",
+                "name": "启用通用学习法术"
             },
             "learnSpellDcAdjustment": {
-                "hint": "Adjust the Learn a Spell DC by this amount (bonus if negative, penalty if positive). Applied after rarity adjustments.",
-                "name": "Learn a Spell DC Adjustment"
+                "hint": "根据此数值调整学习法术的DC（负数为加值，正数为减值）。该调整在稀有度调整后应用。",
+                "name": "学习法术DC调整"
             },
             "learnSpellDestroyScroll": {
-                "hint": "When learning a spell from a scroll, destroy the scroll. 'On use' destroys the scroll regardless of success, 'On success' only destroys on a successful Learn a Spell check.",
-                "name": "Destroy Scroll on Learn",
-                "onSuccess": "On success",
-                "onUse": "On use",
-                "no": "No"
+                "hint": "从卷轴中学习法术期间，何时摧毁卷轴。\"使用时\"则无论成功与否都会摧毁卷轴，\"成功时\"则仅在学习法术检定成功时才会摧毁卷轴。",
+                "name": "学习法术时是否摧毁卷轴",
+                "onSuccess": "成功时",
+                "onUse": "使用时",
+                "no": "不摧毁"
             },
             "selectCurrentCombatantOnTurnStart": {
                 "hint": "在当前参战者回合开始时自动选择其指示物（客户端设置）。",
-                "name": "Automatically select the current combatant on turn start"
+                "name": "回合开始时自动选择当前回合参战者"
             },
             "clearCombatantTargetsOnTurnEnd": {
-                "hint": "Client setting to automatically clear the current combatant's targets at the end of its turn.",
-                "name": "Automatically clear combatant's targets on turn end"
+                "hint": "在当前参战者的回合结束时，自动清空其所选的目标（客户端设置）。",
+                "name": "回合结束时自动清空参战者的目标选择"
             },
             "rememberAndReaddCombatantTargets": {
-                "hint": "Client setting to remember the current combatant's targets and automatically re-add them at the start of its next turn.",
-                "name": "Remember combatant's targets and restore them on next turn start"
+                "hint": "记住当前参战者所选的目标，并自动在其下个回合开始时重新添加所选目标（客户端设置）。",
+                "name": "记住参战者所选的目标，并在下个回合开始时恢复所选"
             }
         },
         "spellCardNotFound": "找不到法术卡。以最低环级施放{spell}。",
@@ -861,7 +861,7 @@
             },
             "buildNpcSpellbookJournal": {
                 "title": "建立NPC法术书日志",
-                "noSpellcastingEntry": "你须打开并选择一个NPC的角色卡，或者选中一个NPC的指示物。另外，该NPC必须有某种施法能力。",
+                "noSpellcastingEntry": "你须打开并选择一个NPC的角色卡，或者选中一个NPC的指示物。另外，该NPC必须具有施法列表。",
                 "generatedSpellbookFor": "为{name}生成法术书"
             },
             "refocus": {
@@ -886,64 +886,64 @@
         },
         "effectItem": "物品效果",
         "spellLearn": {
-            "batchLearnSingleError": "Failed to process {spellName}. Check the console (F12) for details.",
+            "batchLearnSingleError": "无法处理{spellName}。请查看控制台（F12）了解详情。",
             "learnSpellDialogEntry": "法术将被添加到<strong>{entryName}</strong>（{tradition}，{type}）。",
             "noTradition": "无",
-            "overrideLearnFailureMessage": "You failed to learn \"{spellName}\" at level {level}. Do you want to override the flag and learn it now?",
-            "overrideLearnFailureNo": "No, keep flag",
-            "overrideLearnFailureTitle": "Override Learn Failure",
-            "overrideLearnFailureYes": "Yes, learn now",
-            "learnFromScrollTitle": "Learn from Scroll?",
-            "learnFromScrollMessage": "Do you want to learn the spell {spellName} from this scroll?",
-            "scrollMystified": "This scroll has not been identified. Identify it first before attempting to learn its spell.",
-            "pickEntryTitle": "Select Spellcasting Entry",
-            "pickEntryMessage": "Multiple compatible spellcasting entries found. Which one should this spell be added to?",
-            "overrideLearnFailureBatchMessage": "You previously failed to learn one or more of these spells at your current level: {spellName}. Override these flags and learn them now?",
-            "learnFromScrollButton": "Learn Spell from Scroll",
+            "overrideLearnFailureMessage": "你未能在{level}级学会“{spellName}”。是否要覆盖失败标记并立即学习该法术？",
+            "overrideLearnFailureNo": "不学习，保留标记",
+            "overrideLearnFailureTitle": "覆盖学习法术失败",
+            "overrideLearnFailureYes": "是的，立即学习",
+            "learnFromScrollTitle": "是否从卷轴中学习法术？",
+            "learnFromScrollMessage": "你想从这份卷轴中学习法术“{spellName}”吗？",
+            "scrollMystified": "这份卷轴尚未被鉴定。在尝试学习卷轴中的法术之前，请先进行鉴定。",
+            "pickEntryTitle": "选择施法列表",
+            "pickEntryMessage": "已找到多个兼容的施法列表。要将该法术添加到哪个列表？",
+            "overrideLearnFailureBatchMessage": "你此前未能在当前等级学会下列一个或多个法术：{spellName}。是否要覆盖失败标记并立即学习这些法术？",
+            "learnFromScrollButton": "从卷轴中学习法术",
             "entryTypeFocus": "聚能",
             "entryTypeSpontaneous": "自发",
             "entryTypePrepared": "准备",
             "entryTypeSpellcasting": "施法"
         },
         "spellShared": {
-            "alreadyKnown": "{name} is already known by this character.",
-            "currencyCredits": "{amount} credit(s)",
-            "currencyGp": "{amount}gp",
-            "debtItemCreated": "<strong>{actor}</strong> incurred a debt of {amount} for spell-learning materials to learn <em>{spellName}</em>.",
-            "debtItemDescriptionForSpell": "Owes {amount} for spell-learning materials to learn <em>{spellName}</em>.",
-            "debtItemDescriptionNoSpellbook": "Owes {amount} for spell-learning materials.",
-            "debtItemName": "Debt {amount}",
-            "insufficientFundsForLearn": "<strong>{actor}</strong> cannot afford the {cost} required to learn {spellName}. Spell learning is not possible.",
-            "learnAnywayNo": "Do not learn it",
-            "learnAnywayYes": "Learn it anyway",
-            "learnFailureOverridden": "<strong>{actor}</strong> overrode a previous learn failure and added <em>{spellName}</em>.",
-            "learnNoCompatibleEntry": "No compatible spellcasting entry found.",
-            "learnNoSkill": "Could not find skill for the entry tradition.",
-            "learnResultCriticalFailure": "<strong>Critical Failure!</strong> {actor} expends half the materials ({cost}) and fails to learn {spellName}. {hours} were spent. This cost has already been subtracted. You may try again after gaining a level.",
-            "learnResultCriticalSuccess": "<strong>Critical Success!</strong> {actor} expends half the materials ({cost}) and learns {spellName}. Time spent: {hours}. This cost has already been subtracted.",
-            "learnResultFailure": "<strong>Failure.</strong> {actor} fails to learn {spellName}. No materials expended, but {hours} were spent. You may try again after gaining a level.",
-            "learnResultSuccess": "<strong>Success!</strong> {actor} expends the materials ({cost}) and learns {spellName}. Time spent: {hours}. This cost has already been subtracted.",
-            "learnSpellAddPrevented": "The spell could not be added automatically. Please drag it to your character sheet manually.",
-            "learnSpellBatchDialogMessage": "Do you want to use the Learn a Spell rules for {count} spells? Estimated total cost: {cost}, total time: {time} if all skill checks succeed.",
-            "learnSpellBatchDialogTitle": "Learn Spells?",
-            "learnSpellBatchLearnAlreadyKnown": "(already known)",
-            "learnSpellCancel": "Cancel",
-            "learnSpellDialogMessage": "Do you want to use the Learn a Spell rules for {spellName}? Estimated cost: {cost}, time: {time} if all skill checks succeed.",
-            "learnSpellDialogTitle": "Learn a Spell?",
-            "learnSpellFailed": "Failed to process Learn a Spell for <em>{name}</em>. Check the console (F12) for details.",
-            "learnSpellInvalidRank": "Could not determine the rank of this spell. The spell data may be incomplete.",
-            "learnSpellNo": "Skip Check & Cost",
-            "learnSpellSkipped": "<strong>{actor}</strong> adds <em>{spellName}</em> without a skill check or material cost.",
+            "alreadyKnown": "该角色已知晓{name}。",
+            "currencyCredits": "{amount}信用点",
+            "currencyGp": "{amount} gp",
+            "debtItemCreated": "<strong>{actor}</strong>为用于学习<em>{spellName}</em>的法术材料欠下{amount}的欠款。",
+            "debtItemDescriptionForSpell": "在用于学习<em>{spellName}</em>的法术材料上欠款{amount}。",
+            "debtItemDescriptionNoSpellbook": "在用于学习法术的材料上欠款{amount}。",
+            "debtItemName": "欠款 {amount}",
+            "insufficientFundsForLearn": "<strong>{actor}</strong>无法负担学习{spellName}所需的{cost}。无法学习法术。",
+            "learnAnywayNo": "不学习该法术",
+            "learnAnywayYes": "确认学习该法术",
+            "learnFailureOverridden": "<strong>{actor}</strong>覆盖了之前的学习失败并学会<em>{spellName}</em>。",
+            "learnNoCompatibleEntry": "未找到兼容的施法列表。",
+            "learnNoSkill": "找不到与该列表根源相关的技能。",
+            "learnResultCriticalFailure": "<strong>大失败！</strong> {actor}花费{hours}，消耗一半的材料（{cost}）且未能学会{spellName}。此次开销费用已扣除，你可以在升级后再尝试一次。",
+            "learnResultCriticalSuccess": "<strong>大成功！</strong> {actor}花费{hours}，消耗一半的材料（{cost}）并学会了{spellName}。此次开销费用已扣除。",
+            "learnResultFailure": "<strong>失败。</strong> {actor}未能学会{spellName}。没有消耗材料但花费了{hours}。你可以在升级后再尝试一次。",
+            "learnResultSuccess": "<strong>成功！</strong> {actor}花费{hours}，消耗材料（{cost}）并学会了{spellName}。此次开销费用已扣除。",
+            "learnSpellAddPrevented": "无法自动添加该法术。请手动将其拖入你的角色卡中。",
+            "learnSpellBatchDialogMessage": "你要使用“学习法术”规则学习{count}个法术吗？如果所有技能检定均成功，预计总开销为{cost}，总耗时为{time}。",
+            "learnSpellBatchDialogTitle": "是否学习法术？",
+            "learnSpellBatchLearnAlreadyKnown": "（已知）",
+            "learnSpellCancel": "取消",
+            "learnSpellDialogMessage": "你要使用“学习法术”规则学习{spellName}吗？如果所有技能检定成功，预计开销为{cost}，耗时为{time}。",
+            "learnSpellDialogTitle": "是否学习该法术？",
+            "learnSpellFailed": "无法为<em>{name}</em>处理学习法术。请查看控制台（F12）了解详情。",
+            "learnSpellInvalidRank": "无法确定该法术的环级。法术数据可能不完整。",
+            "learnSpellNo": "跳过检定与开销",
+            "learnSpellSkipped": "<strong>{actor}</strong>添加了<em>{spellName}</em>，无需技能检定或材料开销。",
             "learnSpellTime10Minutes": "{minutes}分钟",
-            "learnSpellTimeHours": "{hours} hour(s)",
+            "learnSpellTimeHours": "{hours}小时",
             "learnSpellTimeHoursMinutes": "{hours}小时{minutes}分钟",
-            "learnSpellYes": "Learn a Spell",
-            "no": "No",
-            "spellNotEligible": "{spellName} does not meet the feat-based eligibility requirements for this spellcasting entry.",
-            "traditionMismatch": "{spellName} has the {traditions} tradition(s). Your character does not have a matching spellcasting entry.",
-            "traditionMismatchOverride": "{spellName} has the {traditions} tradition(s). Your character does not have a matching spellcasting entry. Learn it anyway?",
-            "traditionOverrideChat": "<strong>{actorName}</strong> overrides the tradition restriction and learns <em>{spellName}</em> ({traditions}).",
-            "yes": "Yes"
+            "learnSpellYes": "学习法术",
+            "no": "否",
+            "spellNotEligible": "{spellName}不符合该施法列表基于专长的资质要求。",
+            "traditionMismatch": "{spellName}具有{traditions}根源。你的角色没有对应的施法列表。",
+            "traditionMismatchOverride": "{spellName}具有{traditions}根源。你的角色没有对应的施法列表。确认学习该法术？",
+            "traditionOverrideChat": "<strong>{actorName}</strong>跨过根源限制，学会了<em>{spellName}</em>（{traditions}）。",
+            "yes": "是"
         }
     }
 }
