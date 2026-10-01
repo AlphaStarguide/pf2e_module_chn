@@ -128,7 +128,7 @@
             "RollOptionsExcludeHint": "半角逗号分隔。如果指示物所属角色具有这些掷骰选项中的任意一项，则不会触发该行为。",
             "TargetHint": "限制该行为所影响的，相对于放置者的目标。",
             "RemoveConditionStepsTooltip": "递减的状态值。",
-            "WallStrikeNamePlaceholder": "",
+            "WallStrikeNamePlaceholder": " ",
             "TilePreserveAspectRatio": "保留图块宽高比",
             "LightEditor": "光源",
             "ConfigureLight": "配置光源",
@@ -137,7 +137,8 @@
             "IgnoredByHint": "拥有以下任意物品/效果/专长的角色将忽略此行为。",
             "IgnoredBy": "忽略对象",
             "SoundRadiusBoost": "声音传播范围扩大",
-            "IRWType": "类型"
+            "IRWType": "类型",
+            "IncludePlacer": "包含放置者"
         },
         "TemplateShape": {
             "Circle": "爆发",
@@ -228,14 +229,16 @@
             "ImportDialogTitle": "导入自动化",
             "Export": "导出",
             "Import": "导入",
-            "ImportDialogPrompt": "请在下方粘贴测量板向导自动化JSON代码。它将替换该项目当前的自动化设置。",
+            "ImportDialogPrompt": "选择测量板向导自动化JSON文件，它将替换该项目当前的自动化设置。",
             "Cancel": "取消",
             "AutomationCopied": "自动化JSON代码已复制到剪贴板。",
             "CopiedToClipboard": "已复制到剪贴板。",
             "ExportFailed": "导出失败。",
             "InvalidJson": "JSON文件无效。",
             "ImportFailed": "导入失败。",
-            "AutomationImported": "自动化已导入。"
+            "AutomationImported": "自动化已导入。",
+            "ImportNotAllowed": "你的权限无法启用测量板向导导入功能。",
+            "InvalidAutomation": "该文件不包含测量板向导自动化设置。"
         },
         "Compendium": {
             "ImportButton": "导入",
@@ -275,17 +278,34 @@
             "SlugConflictTitle": "标识符已存在",
             "SlugConflict": "已存在具有“{slug}”标识符的模板。本模板无法以该标识符保存为独立条目，继续操作将覆盖现有模板。",
             "BulkImportReplace": "整个模板合集（该操作将替换它）",
-            "Empty": "模板合集为空。请在项目卡中保存自动化设置，或使用上方的添加功能（粘贴JSON）。",
+            "Empty": "模板合集为空。请在项目卡中保存自动化设置，或从上方导入JSON文件。",
             "Name": "名称",
-            "TemplateAutomationTitle": "模板自动化",
-            "TemplateAutomationsTitle": "模板自动化",
-            "EditTemplateTitle": "编辑模板自动化：{name}",
+            "TemplateAutomationTitle": "自动化模板",
+            "TemplateAutomationsTitle": "自动化模板",
+            "EditTemplateTitle": "编辑自动化模板：{name}",
             "ImportFailed": "合集导入失败。",
             "ReplaceMatchingPrompt": "导入文件中包含{count}个与当前合集存在标识符重复的模板。",
             "ImportFileTitle": "导入模板合集",
             "SaveSuccess": "已保存至模板合集。",
             "SaveSuccessSlug": "已保存至模板合集，标识符为“{slug}”。",
-            "SaveFailed": "保存失败。"
+            "SaveFailed": "保存失败。",
+            "NewTemplateTitle": "新增自动化模板",
+            "ImportFilePrompt": "选择测量板向导合集JSON文件。",
+            "InvalidEntry": "该合集文件不包含测量板向导自动化设置。",
+            "ExpectedEntries": "需为模板文件。",
+            "ImportSummary": "已导入{count}个模板。",
+            "ImportSummaryReplaced": "已替换{count}个模板。",
+            "ImportSummarySkipped": "已跳过{count}个模板。",
+            "SaveNotAllowed": "你的权限无法启用保存测量板向导模板功能。",
+            "Untitled": "未命名",
+            "NoSlug": "无标识符",
+            "SearchTemplates": "搜索模板",
+            "NoTemplateAutomations": "未保存自动化模板。",
+            "BehaviorCountValue": "{count}个行为",
+            "TemplateWizardTool": "测量板向导",
+            "ReplaceMatchingTitle": "是否替换匹配的模板？",
+            "ReplaceMatchingChoice": "是否用导入版本的模板替换现有模板？选择“否”将保留现有模板，并跳过匹配的导入版本。",
+            "ReplaceMatchingMore": "{count}个匹配的模板将使用相同选项。"
         },
         "Move": {
             "Walk": "步行",
@@ -346,7 +366,8 @@
             "Settings": "打开区域配置面板",
             "SelectRegion": "在画布上选择区域",
             "UnnamedRegion": "这个区域",
-            "PanTo": "平移至区域"
+            "PanTo": "视角移至区域",
+            "PanToName": "视角移至{name}"
         },
         "Setting": {
             "AutoDamage": "自动应用伤害",
@@ -361,10 +382,19 @@
             "AllowPlayerTemplateCompendiumSave": "允许将模板保存到合集中",
             "AllowPlayerTemplateImport": "允许导入模板",
             "AllowPlayerTemplateImportHint": "允许将测量板向导自动化JSON导入到自建模板中。",
-            "RestrictTemplatePlacementRange": "若超出射程则禁止放置测量板",
+            "RestrictTemplatePlacementRange": "超出范围则禁止放置测量板",
             "ChooseUser": "选择用户",
-            "RemoveUserAccess": "删除用户许可",
-            "AccessNone": "无"
+            "RemoveUserAccess": "删除许可用户",
+            "AccessNone": "无",
+            "RestrictTemplatePlacementRangeHint": "若启用，则测量板不能被放置在项目所配置的放置范围之外。",
+            "PlayerTemplateAccessLevel": "最低许可权限",
+            "PlayerTemplateAccessByUser": "许可用户",
+            "AllowPlayerTemplates": "允许玩家创建模板",
+            "AllowPlayerTemplatesHint": "允许经许可的非GM用户，编辑所拥有项目的测量板向导自动化设置。",
+            "PlayerTemplateAccessUserIds": "玩家模板编辑许可用户",
+            "DrawTemplatePlacementRangeLine": "绘制测量板放置范围引导线",
+            "DrawTemplatePlacementRangeLineHint": "在放置具有最大放置范围的测量板时，绘制具体范围的引导线。",
+            "TemplatePlacementRangeLineColor": "测量板放置范围引导线颜色"
         },
         "WallMove": {
             "Normal": "正常",
@@ -413,7 +443,9 @@
         "Expiration": "失效期",
         "ExpirationEnabled": "区域存续时间",
         "Error": {
-            "BehaviorCreate": "测量板向导 | 无法为“{name}”创建区域行为。"
+            "BehaviorCreate": "测量板向导 | 无法为“{name}”创建区域行为。",
+            "GmDeleteManagedTemplate": "只有GM才能删除测量板向导所管理的模板。",
+            "FilePickerUnavailable": "该Foundry版本的文件选取器无法使用。"
         },
         "SingleWall": {
             "DialogTitle": "选择一侧",
@@ -446,7 +478,7 @@
             "TilePreserveAspectRatio": "勾选后，该图块会保留源图像的宽高比，并放大以完全覆盖整个区域（必要时会在较短轴上溢出）。取消勾选，图块会被拉伸，使其恰好与区域的边界框相匹配。",
             "ExpressionDC": "支持数字，@路径（例如：@actor.system.attributes.classDC.value），以及算术公式。可用域：actor，token，region，sourceItem，placer。",
             "SoundRadiusBoost": "调整自动计算的声音传播范围。",
-            "RegionExpiration": "若禁用，测量板向导将在放置测量板后立即移除该区域。",
+            "RegionExpiration": "若不勾选，则存续时间为无限",
             "BasicSave": "若勾选，该豁免检定除去相应后果，还会额外造成基础豁免伤害。",
             "AppendRollOptions": "勾选时，会在该次掷骰上额外附加半角逗号分隔的掷骰选项。该项目自身的掷骰选项始终包含在内。",
             "SingleWall": "勾选时，放置测量板后会提示玩家选择该区域的一侧，且仅在该侧放置一面墙体。",
@@ -514,11 +546,51 @@
             "AttackModifier": "攻击调整值",
             "StrikeName": "打击名称",
             "DefaultStrikeName": "猛击 Slam",
-            "Name": "名称"
+            "Name": "名称",
+            "HP": "HP",
+            "AC": "AC",
+            "AddStrike": "添加打击",
+            "Type": "类型",
+            "Category": "类别",
+            "Die": "骰",
+            "AddDamage": "添加伤害",
+            "Remove": "删除",
+            "RemoveDamage": "删除伤害",
+            "WallActors": "墙体角色",
+            "DefaultWallName": "墙体",
+            "GmOnly": "只有GM才能创建可破坏的墙体角色。",
+            "Spawned": "已生成{count}个可破坏的墙体角色。",
+            "NoneCreated": "未创建可破坏的墙体角色。",
+            "FormReadFailed": "无法读取可破坏墙体构筑器形式。",
+            "AddDamageRequired": "至少为打击添加一行伤害数据。",
+            "DialogTitle": "构建可破坏的墙体角色",
+            "SelectedWalls": "所选墙体",
+            "Count": "数目",
+            "Spawn": "生成",
+            "SelectWall": "至少在墙体层上选择一个墙体。"
         },
         "PlacementRange": {
-            "Max": "最大放置射程"
+            "Max": "最大放置范围"
         },
-        "CurrentTurnEnd": "当前回合结束时"
+        "CurrentTurnEnd": "当前回合结束时",
+        "ExpirationAmount": "失效时间",
+        "SustainedLimit": "最长维持时间",
+        "SustainedUnit": "最长维持时间单位",
+        "BehaviorTag": "标记",
+        "TemplatePlacement": {
+            "OpenScene": "在放置测量板之前，请先打开场景。"
+        },
+        "WallRestriction": {
+            "Title": "墙体限制",
+            "EnabledHint": "配置该区域的形状是否受墙体限制。",
+            "Enabled": "被限制",
+            "TypeLabel": "受限于",
+            "Priority": "优先级阈值",
+            "Type": {
+                "Sound": "阻挡声音的墙体",
+                "Move": "阻挡移动的墙体",
+                "Sight": "阻挡视野的墙体，且暗度来源优先级 >= 阈值"
+            }
+        }
     }
 }
