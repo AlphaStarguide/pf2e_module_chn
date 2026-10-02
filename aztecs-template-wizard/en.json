@@ -177,7 +177,8 @@
          "Remove": "Remove",
          "SlugPlaceholder": "slug",
          "DCPlaceholder": "15 or @placer.system.attributes.spellDC.value",
-         "MacroUuidPlaceholder": "Macro.xxxxxxxx OR Compendium..."
+         "MacroUuidPlaceholder": "Macro.xxxxxxxx OR Compendium...",
+         "RollOptionsFilterPlaceholder": "roll options"
       },
 
       "Trigger": {
@@ -303,13 +304,18 @@
          "Add": "Add…"
       },
 
+      "Automation": {
+         "MigratedAddIRW": "[migrated addIRW: {kind} {type}{value} — please reconfigure as a top-level Apply IRW behavior]"
+      },
+
       "ConfirmDelete": {
          "Title": "Confirm Delete",
          "Prompt": "Are you sure you want to delete <strong>{name}</strong>? This cannot be undone.",
          "ChoiceLabel": "{name} choice",
          "ConsequenceLabel": "{name} consequence",
          "ShapeVariantLabel": "{name} shape",
-         "BehaviorLabel": "behavior"
+         "BehaviorLabel": "behavior",
+         "SaveConsequenceLabel": "{outcome} → {type}"
       },
 
       "Tracker": {
@@ -520,7 +526,9 @@
          "Confirm": "Attach",
          "Cancel": "Skip",
          "NoneOption": "Don't attach",
-         "NoCandidates": "No tokens are inside or adjacent to this region."
+         "NoCandidates": "No tokens are inside or adjacent to this region.",
+         "CandidateInside": "{name} (inside)",
+         "CandidateAdjacent": "{name} (adjacent)"
       },
 
       "SingleWall": {
@@ -878,7 +886,14 @@
          "EffectIwrNamed": "{flavor}: {kind} {type}",
          "ThatItem": "that item",
          "RestrictedUsing": "{actor} is restricted from using {item}.",
-         "RestrictedAction": "{actor} is restricted from that action."
+         "RestrictedAction": "{actor} is restricted from that action.",
+         "RollDiceTooltip": "Roll {formula}",
+         "SkillRollTooltip": "{skill} Check DC {dc}",
+         "NoSkill": "Actor \"{actor}\" has no \"{skill}\" skill.",
+         "ShapeSize": "{size} {unit}",
+         "ShapeSizeLine": "{size} {unit} x {width} {unit}",
+         "ShapeSizeRing": "{inner} {unit} / {size} {unit}",
+         "TemplateLabel": "{measurement} {type}"
       },
 
       "WallSide": {
