@@ -531,7 +531,7 @@
         },
         "Keybinding": {
             "ShrinkTemplate": "缩小放置测量板",
-            "GrowTemplate": "放大放置测量板"
+            "GrowTemplate": "扩大放置测量板"
         },
         "WallDir": {
             "Both": "两侧",
