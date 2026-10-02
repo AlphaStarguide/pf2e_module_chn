@@ -151,7 +151,8 @@
             "Remove": "删除",
             "SlugPlaceholder": "标识符",
             "DCPlaceholder": "15或@placer.system.attributes.spellDC.value",
-            "MacroUuidPlaceholder": "Macro.xxxxxxxx 或 Compendium..."
+            "MacroUuidPlaceholder": "Macro.xxxxxxxx 或 Compendium...",
+            "RollOptionsFilterPlaceholder": "掷骰选项"
         },
         "TemplateShape": {
             "Circle": "爆发",
@@ -430,7 +431,8 @@
             "ChoiceLabel": "{name}选项",
             "ConsequenceLabel": "{name}后果",
             "ShapeVariantLabel": "{name}形状",
-            "BehaviorLabel": "行为"
+            "BehaviorLabel": "行为",
+            "SaveConsequenceLabel": "{outcome} → {type}"
         },
         "WallStrikeSuggest": {
             "PlacerSpellAttack": "放置者的法术攻击",
@@ -457,7 +459,7 @@
             "AdjacentTurnEnd": "触发实体在相邻区域的位置结束其回合",
             "RoundStart": "本轮开始时处于区域内",
             "RoundEnd": "本轮结束时处于区域内",
-            "WhileAdjacent": "仅当相邻区域时",
+            "WhileAdjacent": "仅当与区域相邻时",
             "WhileWithin": "仅当在区域内时",
             "StandingIn": "在区域内"
         },
@@ -493,7 +495,9 @@
             "Cancel": "跳过",
             "NoneOption": "不附着",
             "NoCandidates": "该区域内部或相邻处没有指示物。",
-            "DialogTitle": "将区域附着到指示物上"
+            "DialogTitle": "将区域附着到指示物上",
+            "CandidateInside": "{name}（内部）",
+            "CandidateAdjacent": "{name}（相邻）"
         },
         "Tooltip": {
             "TriggersDefault": "默认：进入区域。",
@@ -828,7 +832,14 @@
             "RestrictedEffect": "受限制：{name}",
             "PromptApplyToRolled": "在骰出{total}时，对<strong>{name}</strong>应用：",
             "PromptApplyConsequenceToRolled": "是否在骰出{total}时，对<strong>{name}</strong>应用<strong>{consequence}</strong>？",
-            "Restriction": "限制内容"
+            "Restriction": "限制内容",
+            "RollDiceTooltip": "骰{formula}",
+            "SkillRollTooltip": "{skill}检定DC {dc}",
+            "NoSkill": "角色“{actor}”没有“{skill}”技能。",
+            "ShapeSize": "{size}{unit}",
+            "ShapeSizeLine": "{size}{unit}×{width}{unit}",
+            "ShapeSizeRing": "{inner}{unit}/{size}{unit}",
+            "TemplateLabel": "{measurement}{type}"
         },
         "WallSide": {
             "Top": "上",
@@ -842,6 +853,9 @@
         "MoveDirection": {
             "TowardCentre": "靠近区域中心",
             "AwayFromCentre": "远离区域中心"
+        },
+        "Automation": {
+            "MigratedAddIRW": "[已迁移添加IRW：{kind} {type}{value} — 请重新将“应用免疫/抗力/弱点”行为配置到顶层]"
         }
     }
 }
