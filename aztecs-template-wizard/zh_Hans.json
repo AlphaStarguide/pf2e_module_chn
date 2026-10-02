@@ -131,7 +131,7 @@
             "RollOptionsExcludeHint": "半角逗号分隔。如果指示物所属角色具有这些掷骰选项中的任意一项，则不会触发该行为。",
             "TargetHint": "限制该行为所影响的，相对于放置者的目标。",
             "RemoveConditionStepsTooltip": "递减的状态值。",
-            "WallStrikeNamePlaceholder": "",
+            "WallStrikeNamePlaceholder": " ",
             "TilePreserveAspectRatio": "保留图块宽高比",
             "LightEditor": "光源",
             "ConfigureLight": "配置光源",
@@ -385,7 +385,10 @@
             "SelectRegion": "在画布上选择区域",
             "UnnamedRegion": "这个区域",
             "PanTo": "视角移至区域",
-            "PanToName": "视角移至{name}"
+            "PanToName": "视角移至{name}",
+            "RoundShort": "{n}轮",
+            "RoundsShort": "{n}轮",
+            "RoundsRatio": "{current} / {max}轮"
         },
         "Setting": {
             "AutoDamage": "自动应用伤害",
@@ -470,7 +473,10 @@
             "GmDeleteManagedTemplate": "只有GM才能删除测量板向导所管理的模板。",
             "FilePickerUnavailable": "该Foundry版本的文件选取器无法使用。",
             "RollInspector": "无法为该结果打开掷骰检查器。",
-            "SelectTokenOrUuid": "选择一个带有自动化项目的指示物，或上传项目UUID。"
+            "SelectTokenOrUuid": "选择一个带有自动化项目的指示物，或上传项目UUID。",
+            "CardOwnership": "你只能对自己拥有的角色使用测量板向导的卡片控件。",
+            "SpendHeroPoint": "测量板向导无法为该角色消耗英雄点。",
+            "Socketlib": "测量板向导需要socketlib模组才能让玩家执行仅限GM的自动化。"
         },
         "SingleWall": {
             "DialogTitle": "选择一侧",
@@ -839,7 +845,10 @@
             "ShapeSize": "{size}{unit}",
             "ShapeSizeLine": "{size}{unit}×{width}{unit}",
             "ShapeSizeRing": "{inner}{unit}/{size}{unit}",
-            "TemplateLabel": "{measurement}{type}"
+            "TemplateLabel": "{measurement}{type}",
+            "EffectNamedCondition": "{flavor}：状态",
+            "EffectNamedEffect": "{flavor}：效果",
+            "EffectNamedRule": "{flavor}：规则"
         },
         "WallSide": {
             "Top": "上",
