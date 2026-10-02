@@ -417,6 +417,7 @@
         "promptTriggerDeathReaction": "{actorName}的生命值降至0。是否触发{reactionName}死亡反应？",
         "reactionTriggered": "{reactionName}被触发！",
         "bodyPartRegenerationDisabled": "{partName}承受{damageType}点伤害！再生与愈合效果被禁用。",
-        "regenerationDisabledEffectDescription": "愈合，再生和快速治疗被禁用。"
+        "regenerationDisabledEffectDescription": "愈合，再生和快速治疗被禁用。",
+        "vehicle": "载具"
     }
 }
