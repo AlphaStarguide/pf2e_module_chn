@@ -173,7 +173,11 @@
          "Type": "Type",
          "MoveDirection": "Direction",
          "Distance": "Distance",
-         "Restrictions": "Restrictions"
+         "Restrictions": "Restrictions",
+         "Remove": "Remove",
+         "SlugPlaceholder": "slug",
+         "DCPlaceholder": "15 or @placer.system.attributes.spellDC.value",
+         "MacroUuidPlaceholder": "Macro.xxxxxxxx OR Compendium..."
       },
 
       "Trigger": {
@@ -290,7 +294,9 @@
          "Fly": "Fly",
          "Burrow": "Burrow",
          "Jump": "Jump",
-         "Displace": "Displace"
+         "Displace": "Displace",
+         "Deploy": "Deploy",
+         "Travel": "Travel"
       },
 
       "TagPicker": {
@@ -299,7 +305,11 @@
 
       "ConfirmDelete": {
          "Title": "Confirm Delete",
-         "Prompt": "Are you sure you want to delete <strong>{name}</strong>? This cannot be undone."
+         "Prompt": "Are you sure you want to delete <strong>{name}</strong>? This cannot be undone.",
+         "ChoiceLabel": "{name} choice",
+         "ConsequenceLabel": "{name} consequence",
+         "ShapeVariantLabel": "{name} shape",
+         "BehaviorLabel": "behavior"
       },
 
       "Tracker": {
@@ -709,7 +719,8 @@
          "Value": "Value",
          "NewText": "New text",
          "RollOptionsPlaceholder": "comma-separated roll options",
-         "UuidPlaceholder": "Actor or item UUID"
+         "UuidPlaceholder": "Actor or item UUID",
+         "DefinedShape": "Defined shape"
       },
 
       "HeightenAction": {
@@ -786,7 +797,88 @@
          "RerollCheck": "[Click] Reroll the triggering check.",
          "HealTarget": "[Click] Heal this target.",
          "HealHalfTarget": "[Click] Heal half to this target.",
-         "HealDoubleTarget": "[Click] Heal double to this target."
+         "HealDoubleTarget": "[Click] Heal double to this target.",
+         "Total": "Total:",
+         "Healing": "Healing",
+         "Consequence": "Consequence",
+         "SaveDcLabel": "{save} Save (DC {dc})",
+         "SkillDcLabel": "{skill} (DC {dc})",
+         "SkillCheckDcLabel": "{skill} Check (DC {dc})",
+         "HealAmountLabel": "Heal ({amount} {type})",
+         "MoveLabel": "Move {direction} ({distance} ft)",
+         "ApplyConditionLabel": "Apply condition: {condition}",
+         "RemoveConditionLabel": "Remove condition: {condition}",
+         "LoreLabel": "{name} (Lore)",
+         "PlaceTemplate": "Place {label}",
+         "TemplateWizard": "Template Wizard",
+         "DialogChoice": "Template Wizard — Choice",
+         "DialogChoiceNamed": "Template Wizard — {flavor}",
+         "DialogChoiceConsequence": "Template Wizard — Choice Consequence",
+         "DialogRollConsequence": "Template Wizard — Roll Consequence",
+         "DialogSaveConsequence": "Template Wizard — Save Consequence",
+         "DialogSkillConsequence": "Template Wizard — Skill Consequence",
+         "DialogApplyEffects": "Template Wizard — Apply Effects",
+         "ChooseResponseSimple": "Choose how to respond:",
+         "ThisActor": "this actor",
+         "Token": "Token",
+         "TargetLabel": "Target:",
+         "MatchedConsequence": "Matched consequence:",
+         "MatchedConsequences": "Matched consequences:",
+         "RuleElement": "rule element",
+         "RuleElementsPlural": "rule elements",
+         "DealDamageAmount": "Deal damage ({damage})",
+         "ApplyEffectNamed": "Apply effect ({name})",
+         "RemoveEffectNamed": "Remove effect ({name})",
+         "ApplyRuleElementNamed": "Apply rule element: {label}",
+         "SavingThrowDcLabel": "Saving throw: {save} DC {dc}",
+         "RollSkillDcLabel": "Roll skill: {skill} DC {dc}",
+         "BasicSaveDamage": "Basic Save damage",
+         "FlavorSaveConsequenceDamage": "Save consequence damage",
+         "FlavorRollConsequenceDamage": "Roll consequence damage",
+         "EffectSaveConsequence": "Effect: Save consequence",
+         "EffectChoiceConsequence": "Effect: Choice consequence",
+         "EffectSkillConsequence": "Effect: Skill consequence",
+         "EffectNamed": "Effect: {name}",
+         "EffectIwrGroup": "{label}: IWR",
+         "EffectRoll": "Effect: Roll {total}",
+         "EffectIwr": "Effect: {kind} {type}",
+         "PromptApplyToOutcome": "Apply to <strong>{name}</strong> on <em>{outcome}</em>:",
+         "PromptApplyConsequenceToOutcome": "Apply <strong>{consequence}</strong> to <strong>{name}</strong> on <em>{outcome}</em>?",
+         "PromptApplyToRolled": "Apply to <strong>{name}</strong> (rolled {total}):",
+         "PromptApplyConsequenceToRolled": "Apply <strong>{consequence}</strong> to <strong>{name}</strong> (rolled {total})?",
+         "PromptApplyEffectTo": "Apply <strong>{name}</strong> to <strong>{actor}</strong>?",
+         "Basic": "basic",
+         "SavingThrow": "Saving Throw",
+         "SkillCheck": "Skill Check",
+         "DiceRoll": "Dice Roll",
+         "SaveRollTooltip": "{save} Saving Throw DC {dc}",
+         "SaveRollTooltipBasic": "basic {save} Saving Throw DC {dc}",
+         "SaveRollLabel": "{save} Save",
+         "SkillRollLabel": "{skill} Check",
+         "Custom": "Custom",
+         "Template": "Template",
+         "Item": "Item",
+         "Wall": "Wall",
+         "WallSlam": "Wall Slam",
+         "RegionDamage": "Region Damage",
+         "RegionHealing": "Region Healing",
+         "RegionRoll": "Region Roll",
+         "RegionSave": "Region Save",
+         "RegionSkill": "Region Skill",
+         "RegionEffect": "Region Effect",
+         "Choice": "Choice",
+         "Restriction": "Restriction",
+         "RestrictedEffect": "Restricted: {name}",
+         "ThatSpell": "that spell",
+         "NoHeroPoints": "{actor} has no Hero Points.",
+         "RestrictedMoving": "{actor} is restricted from moving.",
+         "RestrictedCasting": "{actor} is restricted from casting {spell}.",
+         "EffectSustained": "Sustained: {name}",
+         "EffectSustainedDescription": "<p>Sustaining {name}.</p>",
+         "EffectIwrNamed": "{flavor}: {kind} {type}",
+         "ThatItem": "that item",
+         "RestrictedUsing": "{actor} is restricted from using {item}.",
+         "RestrictedAction": "{actor} is restricted from that action."
       },
 
       "WallSide": {
@@ -803,7 +895,9 @@
       "Error": {
          "BehaviorCreate": "Template Wizard | Failed to create region behaviors for \"{name}\".",
          "FilePickerUnavailable": "FilePicker is not available in this Foundry build.",
-         "GmDeleteManagedTemplate": "Only the GM can delete Template Wizard managed templates."
+         "GmDeleteManagedTemplate": "Only the GM can delete Template Wizard managed templates.",
+         "RollInspector": "Could not open the Roll Inspector for this result.",
+         "SelectTokenOrUuid": "Select a token with an automated item or pass an item UUID."
       }
    }
 }
