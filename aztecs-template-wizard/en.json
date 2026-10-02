@@ -329,7 +329,10 @@
          "DeleteConfirmTitle": "Delete region?",
          "DeleteConfirm": "Delete region <strong>{name}</strong> and everything it created? This cannot be undone.",
          "UnnamedRegion": "this region",
-         "NotFound": "That region no longer exists."
+         "NotFound": "That region no longer exists.",
+         "RoundShort": "{n} rnd",
+         "RoundsShort": "{n} rnds",
+         "RoundsRatio": "{current} / {max} rnds"
       },
 
       "Setting": {
@@ -893,7 +896,10 @@
          "ShapeSize": "{size} {unit}",
          "ShapeSizeLine": "{size} {unit} x {width} {unit}",
          "ShapeSizeRing": "{inner} {unit} / {size} {unit}",
-         "TemplateLabel": "{measurement} {type}"
+         "TemplateLabel": "{measurement} {type}",
+         "EffectNamedCondition": "{flavor}: Condition",
+         "EffectNamedEffect": "{flavor}: Effect",
+         "EffectNamedRule": "{flavor}: Rule"
       },
 
       "WallSide": {
@@ -912,7 +918,10 @@
          "FilePickerUnavailable": "FilePicker is not available in this Foundry build.",
          "GmDeleteManagedTemplate": "Only the GM can delete Template Wizard managed templates.",
          "RollInspector": "Could not open the Roll Inspector for this result.",
-         "SelectTokenOrUuid": "Select a token with an automated item or pass an item UUID."
+         "SelectTokenOrUuid": "Select a token with an automated item or pass an item UUID.",
+         "CardOwnership": "You can only use Template Wizard card controls for actors you own.",
+         "SpendHeroPoint": "Template Wizard could not spend a Hero Point for this actor.",
+         "Socketlib": "Template Wizard requires socketlib to let players run GM-only automation."
       }
    }
 }
