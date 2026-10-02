@@ -418,6 +418,17 @@
         "reactionTriggered": "{reactionName}被触发！",
         "bodyPartRegenerationDisabled": "{partName}承受{damageType}点伤害！再生与愈合效果被禁用。",
         "regenerationDisabledEffectDescription": "愈合，再生和快速治疗被禁用。",
-        "vehicle": "载具"
+        "vehicle": "载具",
+        "disableModules": "禁用模组",
+        "modifySpeed": "修改速度",
+        "bulkDelta": "+/- 负载",
+        "speedDelta": "+/- 速度",
+        "thresholdDamage": "阈值伤害",
+        "thresholdDamageCardDamage": "阈值伤害",
+        "thresholdDamageCardHalf": "一半",
+        "thresholdDamageCardDouble": "双倍",
+        "consequenceEffectDescription": "后果",
+        "hpPercentageDisplay": "HP：{pct}%",
+        "hpPercentagePrefix": "HP "
     }
 }
