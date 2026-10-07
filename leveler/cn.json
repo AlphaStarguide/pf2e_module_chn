@@ -75,7 +75,10 @@
             "PUB_GROUP_STANDALONE": "独立模组",
             "PUB_GROUP_BLOG": "博客",
             "PUB_GROUP_LOST_OMENS": "预言破灭之年",
-            "REMASTER_ONLY": "仅限重制版"
+            "REMASTER_ONLY": "仅限重制版",
+            "FILTER_OPTIONS": "选项",
+            "HIDE_GUNS_TECH": "隐藏《枪械全书》",
+            "GUIDANCE_FILTER": "资源指引"
         },
         "SECTIONS": {
             "CLASS_FEATURES": "职业特性",
@@ -171,12 +174,12 @@
                 "CLASS_ARCHETYPES": "职业变体"
             },
             "HIDE_UNCOMMON": {
-                "NAME": "隐藏罕见专长",
-                "HINT": "默认在专长选择器中隐藏罕见及更高稀有度的专长"
+                "NAME": "初始专长选择器隐藏罕见专长",
+                "HINT": "当专长选择器打开时，禁用“罕见”稀有度筛选器。拥有权限的用户可以重新启用该筛选器。"
             },
             "HIDE_RARE": {
-                "NAME": "隐藏稀有专长",
-                "HINT": "默认在专长选择器中隐藏稀有专长"
+                "NAME": "初始专长选择器隐藏稀有专长",
+                "HINT": "当专长选择器打开时，禁用“稀有”稀有度筛选器。拥有权限的用户可以重新启用该筛选器。"
             },
             "COMPENDIUM_MANAGER": {
                 "SOURCE_COLUMN": "合集包",
@@ -216,7 +219,7 @@
             },
             "SHOW_PREREQUISITES": {
                 "NAME": "显示专长先决条件情况",
-                "HINT": "在选择器中显示专长的先决条件验证状态"
+                "HINT": "显示哪些专长先决条件已满足、未满足或尚未解决。此设置不会阻止选择。"
             },
             "SHOW_BUTTON": {
                 "NAME": "在角色卡显示「等级规划」按钮",
@@ -224,11 +227,11 @@
             },
             "AUTO_APPLY": {
                 "NAME": "升级时弹窗提示应用规划",
-                "HINT": "在角色升级时自动弹出提示，应用已规划的选择"
+                "HINT": "当角色等级提升时，提示用户应用针对新等级的计划选择。"
             },
             "IGNORE_FREE_ARCHETYPE_DEDICATION_LOCK": {
-                "NAME": "忽略免费变体入门锁定",
-                "HINT": "启用免费变体规则时，允许在免费变体栏位中选择新的入门专长，而不需要先从当前变体中选择另外两个专长。"
+                "NAME": "放松免费变体入门限制",
+                "HINT": "允许在免费变体栏位中选择新的入门专长，而不需要先从当前变体中选择另外两个专长。"
             },
             "PLAYER_RARITY": {
                 "UNCOMMON_NAME": "允许玩家使用罕见资源",
@@ -306,11 +309,11 @@
             },
             "ALLOW_INCOMPLETE_CREATION": {
                 "NAME": "允许应用未完成的角色创建",
-                "HINT": "允许玩家在未完成所有创建角色引导步骤时应用角色创建。"
+                "HINT": "允许GM和玩家在未完成所有创建角色引导步骤时应用角色创建。"
             },
             "ENFORCE_SUBCLASS_DEDICATION_REQUIREMENT": {
                 "NAME": "强制使用子职业入门专长要求",
-                "HINT": "启用后，诸如“你必须选择XX入门专长作为你的2级职业专长”的子职业或职业变体文本会将2级职业专长选择器和验证功能限制为仅包含该入门专长。"
+                "HINT": "达到 2 级时，需要所选子职业或职业变体所指定的入门专长。"
             },
             "PLAYER_COMPENDIUM_ACCESS": {
                 "NAME": "玩家资源来源",
@@ -338,7 +341,15 @@
                 "HINT": "用于搜索专长的额外合集包列表，用逗号分隔（例如 'my-module.my-feats'）"
             },
             "REVIEW_WORKFLOW": {
-                "DISABLED": "禁用"
+                "DISABLED": "禁用",
+                "NAME": "玩家审核流程",
+                "HINT": "控制玩家是否可以请求GM审核，以及应用角色变更前是否需要批准。批准针对该角色，而非某份固定的构筑；在请求被重新开启或驳回之前，批准持续有效。",
+                "OPTIONAL": "可选审核",
+                "REQUIRED": "需要批准"
+            },
+            "ENFORCE_PREREQUISITES": {
+                "NAME": "强制满足专长先决条件",
+                "HINT": "阻止选择未满足先决条件的专长。禁用后仍会显示先决条件的验证结果，但不会阻止选择。"
             }
         },
         "SKILLS": {
@@ -396,7 +407,12 @@
             "ATTUNEMENT_SLOTS": "精魄：{selected}/{count}",
             "TAKEN": "已习得",
             "SIGNATURE_SPELLS": "标志性法术",
-            "CHOOSE_SIGNATURE": "选择标志性法术"
+            "CHOOSE_SIGNATURE": "选择标志性法术",
+            "REPERTOIRE_SWAP": "替换法术库法术",
+            "SWAP_KNOWN": "替换一个已知法术",
+            "NO_REPERTOIRE_SPELLS": "没有可替换的法术库法术。",
+            "NO_SIGNATURE_CANDIDATES": "请先选择该环级的法术库法术。",
+            "REPLACE": "替换{spell}"
         },
         "CREATION": {
             "TITLE": "角色创建",
@@ -541,7 +557,10 @@
             "INTELLIGENCE_BONUS_HINT_SINGLE": "你的智力调整值在该等级提高了。请在下方选择1个额外的受训技能和1种额外语言。",
             "INTELLIGENCE_BONUS_HINT_MULTI": "你的智力调整值在该等级提高了。请在下方选择{count}个额外的受训技能和{count}种额外语言。",
             "INTELLIGENCE_BONUS_SKILLS": "智力奖励技能 ({selected}/{count}",
-            "INTELLIGENCE_BONUS_LANGUAGES": "智力奖励语言 ({selected}/{count}"
+            "INTELLIGENCE_BONUS_LANGUAGES": "智力奖励语言 ({selected}/{count}",
+            "REQUIRED_SKILL_TRAINING": "必选技能受训",
+            "REQUIRED_SKILL_TRAINING_HINT": "请先完成这些授予的技能选择，再继续。",
+            "REQUIRED_SKILL_RESERVED": "请在上方的必选技能受训中选择此项。"
         },
         "SUMMARY": {
             "CLASS": "职业",
@@ -754,15 +773,19 @@
         },
         "RUNESMITH": {
             "NAME": "符文工匠",
-            "RUNIC_REPERTOIRE": "符文库"
+            "RUNIC_REPERTOIRE": "符文库",
+            "REPERTOIRE_LIMITS": "已知{known}个符文；已铭刻{etched}个符文。",
+            "RECORD_INITIAL_RUNES": "创建后，请在角色卡上记录你的{known}个已知符文和{etched}个已铭刻符文。"
         },
         "NECROMANCER": {
             "NAME": "死灵师"
         },
         "KEYBINDINGS": {
             "OPEN_LEVELER": {
-                "NAME": "打开PF2e升级规划器"
-            }
+                "NAME": "打开PF2e升级规划器",
+                "HINT": "为一个选中的角色指示物或分配给你的角色打开等级规划器。"
+            },
+            "NO_ACTOR": "请先选择一个你拥有的角色指示物，或为你的用户分配一个角色。"
         },
         "REVIEW_REQUEST": {
             "FOR_CHARACTER": "角色：{actor}"
