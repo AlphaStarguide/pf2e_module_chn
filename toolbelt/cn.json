@@ -232,6 +232,10 @@
                 "colorblind": {
                     "name": "使用色盲配色方案",
                     "hint": "将豁免结果配色替换为对色盲友好的颜色。"
+                },
+                "skipDice": {
+                    "hint": "不等到骰掷豁免检定的3D骰子动画结束时再更新聊天消息。",
+                    "name": "“Dice So Nice!”加速"
                 }
             },
             "underground": {
