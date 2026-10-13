@@ -653,6 +653,16 @@
         "DISTRACTING_SHADOWS_TOOLTIP": "You may use larger creatures as cover for Hide/Sneak prerequisites"
       }
     },
+    "STEALTH_PREREQ_ITEMS": {
+      "EFFECT_NAME": "Effect: {item}",
+      "DESCRIPTION_HIDE": "You can Hide without cover or concealment.",
+      "DESCRIPTION_HIDE_SNEAK": "You can Hide and Sneak without cover or concealment.",
+      "BUTTON": "Apply Visioner Effect",
+      "BUTTON_TOOLTIP": "Apply an effect that lets the target (or the speaker if none targeted) pass Hide/Sneak cover/concealment prerequisites",
+      "APPLIED": "{item} effect applied to {actor}",
+      "NO_PERMISSION": "You don't own the creature to apply this effect to",
+      "BADGE_TOOLTIP": "Cover/concealment requirement is bypassed by this item effect"
+    },
     "SNEAK_AUTOMATION": {
       "BUTTON_APPLY": "Apply Sneak Results",
       "BUTTON_PREVIEW": "Preview Results",
@@ -751,6 +761,14 @@
         "name": "Encounter Stealth Initiative Visibility",
         "hint": "When enabled, PF2E Visioner handles Stealth-initiative encounter setup: combatants who rolled Stealth are initially undetected and hidden from tracker rows for creatures they beat their perception DC. Leave disabled if PF2e Avoid Notice or another module manages this."
       },
+      "RAISE_PC_SHIELDS_WHEN_DEFENDING": {
+        "name": "Raise PC Shields when Defending",
+        "hint": "At combat start, raise a held, usable shield for each PC using the Defend exploration activity. The benefit lasts until that PC's first turn begins."
+      },
+      "ENRAGE_BARBARIANS_AT_COMBAT_START": {
+        "name": "Enrage Barbarians at Combat Start",
+        "hint": "At combat start, apply Rage for PCs with Quick-Tempered and a Rage action configured with a self-applied effect."
+      },
       "DISABLE_LINE_OF_SIGHT": {
         "name": "Disable Line of Sight Raycasting",
         "hint": "Disable line-of-sight raycasting for visibility. When enabled, visibility will only be calculated for selected tokens using their vision shapes. Visibility results within the visibility shape will be more accurate, but darkvision and unselected token results will only use distance and senses, ignoring walls and obstacles."
@@ -782,6 +800,15 @@
         "name": "Set Default \"Hide Foundry Hidden\" State",
         "hint": "Determines whether the Hide Foundry Hidden checkbox in Visioner Manager/Action dialogs starts enabled or disabled but can still be toggled manually"
       },
+      "HIDE_HIDDEN_TOKEN_HEALTH_ESTIMATES": {
+        "name": "Hide Health Estimates on Hidden Tokens",
+        "hint": "Choose who has PF2e HUD health estimates hidden for Hidden silhouettes, Undetected, and Unnoticed tokens. Distance displays remain visible. Changes apply immediately.",
+        "CHOICES": {
+          "off": "Off",
+          "players": "Players only",
+          "all": "GM & players"
+        }
+      },
       "SNEAK_ALLOW_HIDDEN_UNDETECTED_END_POSITION": {
         "name": "Allow Hidden/Undetected for Sneak End Position",
         "hint": "When enabled, Sneak end positions will also qualify if the target is Hidden or Undetected (in addition to the default Concealed). A plus icon will appear in the dialog to indicate this extended qualification."
@@ -797,6 +824,10 @@
       "SHOW_GM_OBSERVER_VIEW_INDICATOR": {
         "name": "Show GM Observer View Indicator",
         "hint": "Shows the persistent GM Observer View active-mode indicator. Disable this to keep Observer View active without displaying the indicator."
+      },
+      "SHOW_GM_OBSERVER_WALL_HIGHLIGHTS": {
+        "name": "Show Wall Highlights in GM Observer View",
+        "hint": "Draws static wall lines using Foundry's wall and door colors while GM Observer View is active."
       },
       "GM_OBSERVER_VIEW_DARKNESS_OPACITY": {
         "name": "GM Observer View Darkness Strength",
@@ -910,6 +941,10 @@
         "name": "Hidden Walls",
         "hint": "Allows configuring of walls conditional visibility states within the Visioner manager. Visual indicator when succeeding at Seek"
       },
+      "HIDDEN_TILES": {
+        "name": "Hidden Tiles",
+        "hint": "Hide marked tile artwork from players until an observer discovers it. GMs retain normal tile editing access."
+      },
       "EXTINGUISH_LIGHT_SWIMMING": {
         "name": "Extinguish Held Light When Swimming",
         "hint": "When a token's movement type changes to swimming, automatically turn off any lit held or worn light source (e.g. a torch)."
@@ -924,11 +959,12 @@
       },
       "FLANKING_SIZE_RULE": {
         "name": "Large Creature Flanking Rule",
-        "hint": "How the flanking line is traced for Large and larger creatures. Pick an option below; each diagram shows the lines that rule would trace on the same scene.",
+        "hint": "How the flanking line is traced. Pick an option below; each diagram shows the lines that rule would trace on the same scene.",
         "CHOICES": {
           "raw": "RAW (center to center)",
           "anySquare": "Any occupied square",
           "anyCorner": "Any corner",
+          "oppositeArcs": "Opposite arcs (defender's view)",
           "lineThrough": "Line through target"
         },
         "DIAGRAM": {
@@ -1021,6 +1057,10 @@
       "AUTO_COVER_IGNORE_DEAD": {
         "name": "Ignore Dead Tokens",
         "hint": "Dead tokens will not provide Auto-Cover"
+      },
+      "SLOW_DOOR_STEP_DEGREES": {
+        "name": "Slow Door Opening Step (Degrees)",
+        "hint": "Degrees to open or close a door per Shift + mouse wheel step. Smaller values give finer control. Applies to all users immediately; default 1 degree."
       },
       "PEEK_SLIT_ANGLE": {
         "name": "Peek Slit Angle (°)",
@@ -1309,6 +1349,7 @@
       "HAZARDS_LABEL": "Hazards",
       "LOOT_LABEL": "Loot",
       "HIDDEN_WALLS_LABEL": "Hidden Walls",
+      "HIDDEN_TILES_LABEL": "Hidden Tiles",
       "TAKING_COVER_HINT": "Taking cover against observers",
       "CEASELESS_SHADOWS_TAKE_COVER_TOOLTIP": "Ceaseless Shadows upgrades creature cover: lesser cover becomes standard cover, and standard cover becomes greater cover.",
       "SHOW_ONLY_CHANGES_LABEL": "Show only changes",
@@ -1572,6 +1613,7 @@
       "BLOCKED_BY_GM": "Peeking is temporarily blocked by the GM.",
       "CHECK_LABEL": "Peek Through Door",
       "DC_FIELD_LABEL": "Peek DC",
+      "DOOR_SETTINGS_TITLE": "Door Peeking",
       "ALLOW_FIELD_LABEL": "Allow Peeking",
       "NOT_ALLOWED": "Peeking is not allowed through this door.",
       "TOO_FAR": "You are too far from the door to peek through it.",
