@@ -1295,6 +1295,15 @@
                 },
                 "noMatch": "无法找到另一条匹配的伤害消息。"
             }
+        },
+        "regions": {
+            "shared": {
+                "origin": {
+                    "actor": {
+                        "label": "来源角色"
+                    }
+                }
+            }
         }
     },
     "LEVIKTIMES": {
@@ -1307,5 +1316,13 @@
         "playerOnly": "仅限玩家"
     },
     "PF2E.RuleElement.Actionable": "动作项",
-    "PF2E.RuleElement.ItemCast": "物品施法"
+    "PF2E.RuleElement.ItemCast": "物品施法",
+    "TYPES": {
+        "RegionBehavior": {
+            "pf2e-toolbelt": {
+                "difficult-terrain": "[Toolbelt] 困难地形",
+                "effect": "[Toolbelt] 添加效果"
+            }
+        }
+    }
 }
