@@ -730,6 +730,10 @@
         "name": "Allow Player Tooltips",
         "hint": "When enabled, players can see visibility indication tooltips from their perspective when hovering over tokens"
       },
+      "TOOLTIP_BADGE_OPENS_MANAGER": {
+        "name": "Tooltip Badges Open Token Manager",
+        "hint": "Clicking a hover tooltip badge opens the Visioner Token Manager. When off, badges ignore the pointer so clicks reach the token underneath (badge hover labels are not shown)."
+      },
       "TOOLTIP_FONT_SIZE": {
         "name": "Tooltip Size",
         "hint": "Choose tooltip size (affects icon and border size; text adjusts accordingly)",
@@ -1142,6 +1146,15 @@
     "UI": {
       "WALL_BLOCKS_SCENT": "Blocks scent",
       "WALL_BLOCKS_SCENT_HINT": "Stop scent through this wall, independently of sight and sound. Open doors allow scent through.",
+      "WALL_QUICK_NO_WALLS_SELECTED": "Select one or more walls to apply Visioner wall settings.",
+      "WALL_LEDGE": "Ledge",
+      "WALL_LEDGE_HINT": "Treat this wall as the edge of a ledge. Creatures on either side get terrain cover based on how much of them the edge hides, using the wall cover thresholds. Applying sets the wall's sight, light and sound to None; movement is left as is.",
+      "WALL_LEDGE_ELEVATION": "Ledge elevation (ft)",
+      "WALL_LEDGE_ELEVATION_AUTO": "Not set: ledge inactive",
+      "WALL_LEDGE_ELEVATION_INHERITED": "Inherited: {elevation}",
+      "WALL_LEDGE_BADGE": "LEDGE {elevation} ft",
+      "WALL_LEDGE_BADGE_AUTO": "LEDGE (no height)",
+      "WALL_LEDGE_ELEVATION_HINT": "Elevation of the top of the ledge. Leave blank to inherit it from the Wall Height top or the highest raised scene level this wall belongs to. A ledge with no elevation has no effect.",
       "ENCOUNTER_FILTER_TEXT": "Show only encounter tokens",
       "CEASELESS_SHADOWS_UPGRADE_TOOLTIP": "{FEAT}: {FROM} → {TO} (feat upgrade)",
       "COVER_OVERRIDE": "Cover Override",
