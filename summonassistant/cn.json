@@ -293,6 +293,12 @@
                 "bismuth-leopard": "铋石花豹",
                 "jade-serpent": "翠玉蛇"
             }
+        },
+        "traits": {
+            "thrall": {
+                "label": "奴仆",
+                "description": "你身为死灵师能创造的无心智不死生物被称为奴仆。能创造奴仆的法术或能力具有奴仆特征。"
+            }
         }
     }
 }
