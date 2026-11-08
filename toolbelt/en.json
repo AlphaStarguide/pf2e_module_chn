@@ -41,12 +41,6 @@
                     "name": "Remove Region",
                     "hint": "Delete the first region found under your cursor."
                 }
-            },
-            "droppeth": {
-                "droppeth": {
-                    "name": "Droppeth Modifier",
-                    "hint": "Key held when dropping an item on the ground."
-                }
             }
         },
         "settings": {
@@ -126,37 +120,58 @@
             },
             "autoCover": {
                 "title": "Auto Cover",
-                "creature": {
-                    "name": "Creatures Cover",
-                    "hint": "Should creatures provide lesser or standard cover when an attack is rolled.",
+                "coverEnabled": {
+                    "name": "Cover Mode",
+                    "hint": "When manual, the module will not calculate any cover for you but you can still set it in the modifiers popup window.",
                     "choices": {
+                        "both": "Walls and Creatures",
+                        "creature": "Creatures Only",
                         "disabled": "Disabled",
-                        "cross": "Intersect 2 opposite sides",
-                        "zero": "Intersect any side",
-                        "ten": "Any side with 10% margin",
-                        "twenty": "Any side with 20% margin"
+                        "manual": "Manual",
+                        "wall": "Walls Only"
                     }
                 },
-                "dead": {
-                    "name": "Skip Dead Creatures",
+                "creatureDead": {
+                    "name": "[Creature] Skip Dead",
                     "hint": "Should dead creatures not provide cover."
                 },
-                "prone": {
-                    "name": "Skip Prone Creatures",
+                "creatureMode": {
+                    "name": "[Creature] Intersection Mode",
+                    "hint": "Which sides are used when testing if a token is an obstacle.",
+                    "choices": {
+                        "any": "Intersect any side",
+                        "opposite": "Intersect 2 opposite sides"
+                    }
+                },
+                "creatureProne": {
+                    "name": "[Creature] Skip Prone",
                     "hint": "Should prone creatures not provide cover."
                 },
-                "wall": {
-                    "name": "Walls Cover",
-                    "hint": "Should target creatures receive standard cover when the path between them and their attacker is intersected by a wall.",
+                "creatureSide": {
+                    "name": "[Creature] Intersection Scale",
+                    "hint": "Scale ratio for tokens tested as obstacles. Lower than '1' value will shrink the tokens' hitbox."
+                },
+                "spread": {
+                    "hint": "Spread the center of the token into 8 points moving towards the corners. Only use the center at '0' and reach the corners at '0.5'."
+                },
+                "wallDefaultLevel": {
+                    "name": "[Wall] Default Level",
+                    "hint": "The default level of cover a wall provides."
+                },
+                "wallDefaultMode": {
+                    "name": "[Wall] Default Mode",
+                    "hint": "The default mode for walls. When 'Cover if Movement' is selected, the wall will provide cover if it also restricts movement.",
                     "choices": {
-                        "center-center": "Center to Center",
-                        "center-spread": "Center to Spread",
-                        "center-corner": "Center to Corners",
-                        "corner-center": "Corners to Center",
-                        "corner-spread": "Corners to Spread",
-                        "corner-corner": "Corners to Corners",
-                        "disabled": "Disabled"
+                        "move": "Cover if Movement",
+                        "none": "No Cover",
+                        "normal": "Provide Cover"
                     }
+                },
+                "wallOrigin": {
+                    "name": "[Wall] Origin Spread"
+                },
+                "wallTarget": {
+                    "name": "[Wall] Target Spread"
                 }
             },
             "betterChat": {
@@ -295,7 +310,7 @@
                 "title": "Droppeth",
                 "enabled": {
                     "name": "Enabled",
-                    "hint": "Allow users to drop items on the canvas by holding the assigned key."
+                    "hint": "Allow users to drop items on the canvas by holding the assigned key. This completely bypass the system trade."
                 },
                 "light": {
                     "name": "Light Source",
@@ -502,9 +517,13 @@
         },
         "autoCover": {
             "creature": "Cover from Creature",
+            "default": "Default ({entry})",
+            "effect": "Cover",
             "greater": "Greater Cover",
             "greater-prone": "Greater-Prone Cover",
             "lesser": "Lesser Cover",
+            "level": "Cover Level",
+            "mode": "Cover Mode",
             "none": "No Cover",
             "override": "Override Cover",
             "overriden": "Overridden Cover",
@@ -832,8 +851,14 @@
         "droppeth": {
             "dialog": {
                 "button": "Droppeth",
+                "mixed": {
+                    "button": "Giveth",
+                    "multi": "How many items do you wish to droppeth/giveth?",
+                    "single": "Do you wish to droppeth or giveth the item?",
+                    "title": "Droppeth/Giveth: {item}"
+                },
                 "prompt": "How many items do you wish to droppeth?",
-                "title": "Droppeth {item}"
+                "title": "Droppeth: {item}"
             },
             "error": {
                 "actor": "Couldn't create droppeth actor.",
@@ -1232,6 +1257,9 @@
             "merge": {
                 "none": "Could not find a suitable damage message to merge with."
             },
+            "primary-target": {
+                "tooltip": "Roll strike on primary target"
+            },
             "reroll": {
                 "title": "Save Check Reroll",
                 "yes": "Reroll",
@@ -1256,6 +1284,8 @@
             "tooltip": {
                 "adjustment": "Adjustment: {value}",
                 "dcWithValue": "DC {dc}",
+                "discarded": "Discarded Die",
+                "previous": "Previous Die",
                 "reroll": "Can reroll the save check",
                 "result": {
                     "format": "Result: {result}",
