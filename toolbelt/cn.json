@@ -415,6 +415,12 @@
                 "dead": {
                     "name": "忽略死亡生物",
                     "hint": "是否不让死亡生物提供掩蔽。"
+                },
+                "coverEnabled": {
+                    "name": "掩蔽模式",
+                    "choices": {
+                        "disabled": "禁用"
+                    }
                 }
             },
             "betterChat": {
