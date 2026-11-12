@@ -399,7 +399,8 @@
         },
         "spellcasting": {
             "charges": "充能",
-            "staff": "法杖"
+            "staff": "法杖",
+            "server": "法术服务器"
         },
         "use-resolve": {
             "full": "{name}的耐力值已满，不需要休息。",
