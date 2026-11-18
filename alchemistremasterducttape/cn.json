@@ -466,6 +466,10 @@
         "indexClearDone": "炼金物品索引已删除。",
         "indexClearAborted": "删除进程已取消。",
         "indexClearFailed": "删除炼金物品索引失败。",
-        "throwsAt": "将一瓶治疗制剂投掷给"
+        "throwsAt": "将一瓶治疗制剂投掷给",
+        "sf2eAnachronismMissingTitle": "需求模组PF2e Anachronism",
+        "sf2eAnachronismReasonDisabled": "该模组未在本世界安装或未启用。",
+        "sf2eAnachronismReasonNoPack": "该模组已启用，但无法找到其装备合集包。",
+        "sf2eAnachronismMissingBody": "这是一个SF2e游戏世界，其中炼金术士职业及其物品应来自PF2e Anachronism模组。\n\n{reason}\n\n若无该模组，<strong>PF2e Alchemist Remaster Duct Tape</strong>模组将无法正常运行。请先安装并启用PF2e Anachronism模组，然后重新加载世界。"
     }
 }
